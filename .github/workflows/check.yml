@@ -1,0 +1,38 @@
+# workflow זה אחראי על הבדיקה בפועל: האם יש משרות חדשות בחברות שברשימה
+name: Check Jobs
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'     # מריץ אוטומטית כל 3 שעות (בדקה 0 של כל שעה שלישית)
+  workflow_dispatch:           # מאפשר גם הרצה ידנית מהטאב Actions ב-GitHub, לצורך בדיקה
+
+jobs:
+  check:
+    runs-on: ubuntu-latest      # מריץ על מכונה וירטואלית זמנית של גיטהאב עם אובונטו
+
+    steps:
+      - uses: actions/checkout@v4
+        # שלב 1: מוריד את קוד הריפו (כולל companies.json ו-seen_jobs.json) למכונה הזמנית
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+        # שלב 2: מתקין את גרסת פייתון שהסקריפט צריך
+
+      - run: pip install -r requirements.txt
+        # שלב 3: מתקין את הספריות הנדרשות (requests, beautifulsoup4)
+
+      - run: python check_jobs.py
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}   # הטוקן נשלף מ-GitHub Secrets, לא כתוב בקוד
+          CHAT_ID: ${{ secrets.CHAT_ID }}        # כנ"ל לגבי ה-chat_id
+        # שלב 4: מריץ את הבדיקה בפועל - שולף משרות, משווה, שולח התראות אם צריך
+
+      - name: Commit updated state
+        run: |
+          git config user.name "job-bot"                                  # שם המשתמש שיופיע ב-git log
+          git config user.email "bot@users.noreply.github.com"            # אימייל טכני, לא חייב להיות אמיתי
+          git add seen_jobs.json                                          # מסמן את קובץ ה-state לשמירה
+          git diff --staged --quiet || git commit -m "update seen jobs"   # מבצע commit רק אם היה שינוי בפועל
+          git push                                                        # דוחף את השינוי חזרה לריפו
+        # שלב 5: שומר את התמונה העדכנית של המשרות, כדי שהריצה הבאה תדע מה כבר נראה
