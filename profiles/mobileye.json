@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "slug": "mobileye",
+  "name": "Mobileye",
+  "enabled": true,
+  "careers_url": "https://jobs.eu.lever.co/mobileye",
+  "resolved_from": "company name 'Mobileye' - web_search returned both careers.mobileye.com/jobs (branded landing) and jobs.eu.lever.co/mobileye (Lever board) as separate results; picked the Lever one per Step 0.1. Recorded in the project instructions, not re-verified live in this session.",
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "flat_multi_location",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": ["categories.location"],
+    "_note": "Lever's own UI is a flat_multi_location picker (verified in the skill's investigation_playbook.md), but this profile is fetch_type=api, so the picker is never touched. The API returns every posting's location in one call."
+  },
+
+  "api": {
+    "platform": "lever",
+    "endpoint": "https://api.eu.lever.co/v0/postings/mobileye?mode=json",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "id",
+      "title": "text",
+      "location": "categories.location",
+      "url": "hostedUrl"
+    }
+  },
+
+  "health": {
+    "expected_min_jobs": 20,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "VERIFIED live on 2026-08-11: api.eu.lever.co/v0/postings/mobileye returned 122 Israel-relevant postings. expected_min_jobs=20 is a conservative floor well below the observed count, to tolerate normal fluctuation without disabling the health gate; zero_is_plausible=false since a large company like Mobileye genuinely going to 0 open roles would itself be worth a maintenance alert, not silent state loss."
+  },
+
+  "verified_on": "2026-08-11",
+  "notes": "Endpoint and field names come from api_platforms.md, which itself documents this as verified during the original project investigation (not this session). The .eu subdomain matters - api.lever.co (non-EU) 404s for this slug. Live-verified via a direct API call on 2026-08-11 (122 Israel-relevant jobs returned) before this profile was put into production."
+}

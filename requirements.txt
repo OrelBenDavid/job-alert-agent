@@ -1,3 +1,4 @@
-requests
-beautifulsoup4
-anthropic
+requests==2.32.3
+beautifulsoup4==4.12.3
+playwright==1.47.0
+pytest==8.3.3

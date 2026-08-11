@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
-.claude/
+.pytest_cache/
+*.tmp
+.venv/
+venv/

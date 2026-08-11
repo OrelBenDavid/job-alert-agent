@@ -1,38 +1,54 @@
-# workflow זה אחראי על הבדיקה בפועל: האם יש משרות חדשות בחברות שברשימה
-name: Check Jobs
+name: Check job postings
 
 on:
   schedule:
-    - cron: '0 */3 * * *'     # מריץ אוטומטית כל 3 שעות (בדקה 0 של כל שעה שלישית)
-  workflow_dispatch:           # מאפשר גם הרצה ידנית מהטאב Actions ב-GitHub, לצורך בדיקה
+    # כל 3 שעות, UTC. תזמון בפועל עשוי להתעכב 10-30 דק' - זה תקין, לא
+    # אמין ל"מיד ברגע X". ראה הדיון בפרויקט לגבי חישוב תקציב הדקות.
+    - cron: "0 */3 * * *"
+  workflow_dispatch: {}   # הפעלה ידנית - גם לבדיקות וגם לתגובה מיידית לפקודה
+
+concurrency:
+  group: job-alert-check
+  cancel-in-progress: false   # לא מבטלים ריצה באמצע כתיבת state - עדיף שהחדשה תחכה
+
+permissions:
+  contents: write   # דרוש כדי ל-commit את state/ בחזרה לרפו
 
 jobs:
   check:
-    runs-on: ubuntu-latest      # מריץ על מכונה וירטואלית זמנית של גיטהאב עם אובונטו
+    runs-on: ubuntu-latest
+    timeout-minutes: 20   # הגנה שנייה על לולאות שלא נעצרות - לא סומכים רק על MAX_PAGES בקוד
 
     steps:
       - uses: actions/checkout@v4
-        # שלב 1: מוריד את קוד הריפו (כולל companies.json ו-seen_jobs.json) למכונה הזמנית
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-        # שלב 2: מתקין את גרסת פייתון שהסקריפט צריך
+          python-version: "3.12"
 
-      - run: pip install -r requirements.txt
-        # שלב 3: מתקין את הספריות הנדרשות (requests, beautifulsoup4)
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
 
-      - run: python check_jobs.py
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Playwright browser (chromium only)
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run check
+        working-directory: src
         env:
-          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}   # הטוקן נשלף מ-GitHub Secrets, לא כתוב בקוד
-          CHAT_ID: ${{ secrets.CHAT_ID }}        # כנ"ל לגבי ה-chat_id
-        # שלב 4: מריץ את הבדיקה בפועל - שולף משרות, משווה, שולח התראות אם צריך
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python run.py
 
       - name: Commit updated state
         run: |
-          git config user.name "job-bot"                                  # שם המשתמש שיופיע ב-git log
-          git config user.email "bot@users.noreply.github.com"            # אימייל טכני, לא חייב להיות אמיתי
-          git add seen_jobs.json                                          # מסמן את קובץ ה-state לשמירה
-          git diff --staged --quiet || git commit -m "update seen jobs"   # מבצע commit רק אם היה שינוי בפועל
-          git push                                                        # דוחף את השינוי חזרה לריפו
-        # שלב 5: שומר את התמונה העדכנית של המשרות, כדי שהריצה הבאה תדע מה כבר נראה
+          git config user.name "job-alert-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/ profiles/
+          git diff --cached --quiet || git commit -m "state update [skip ci]"
+          git push

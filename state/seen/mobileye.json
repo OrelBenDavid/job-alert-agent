@@ -1,0 +1,495 @@
+{
+  "last_success": "2026-08-11T14:24:50.143668+00:00",
+  "last_count": 122,
+  "consecutive_failures": 0,
+  "jobs": {
+    "bb661a53-79b8-459d-a8df-5dd419d62596": {
+      "title": "3D Algorithm Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d85072cf-3d47-4c42-a760-2c691af6093b": {
+      "title": "AI Algorithm Engineer - Vision Localization Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3934efbd-71a7-4c15-b552-167d73a1375d": {
+      "title": "Algorithm Developer for Geometric Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2a8920e0-6dc6-48a8-b8b7-2f42f432e637": {
+      "title": "Algorithm Developer for Objects Modeling",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "331ce77a-8179-444a-924c-189f131afd50": {
+      "title": "Algorithm Developer for Radar/Lidar Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "c14fbc4f-8047-421b-968f-a3b5bd2c5146": {
+      "title": "Algorithm Developer for Radar/Lidar Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6e32e4d7-2df4-4ff2-b404-a6dba0444e84": {
+      "title": "Algorithm Engineer Senior Technical Expert - Objects Perception",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "18c50dc3-2d92-43f2-9ad2-2fd58739aedb": {
+      "title": "Algorithm Execution Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "055a3a86-a6d4-42ae-a09c-8adb41c5b383": {
+      "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "99456421-9f43-4f5b-98d1-4f2e0695ba04": {
+      "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "20474839-6cb6-4073-a1ee-ee5cf2dd2612": {
+      "title": "Algorithm Team Lead",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
+      "title": "Applied AI Engineer - Temporary Position",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9e98aa76-c451-4caa-91e6-b47755bb4921": {
+      "title": "AV Perception Product Manager - Temporary Position (7 Months replacement)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
+      "title": "Backend Team Lead - REM Engineering",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "8896470f-665d-4888-84a1-2a8a7211597b": {
+      "title": "Business Analyst",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9121911b-de12-40a3-86a6-1c586c192658": {
+      "title": "C++ Developer for Radar Engine Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "c3bb544b-d499-4844-afdc-5abf54fd2073": {
+      "title": "C++ Software developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2a817378-710e-43df-929b-a53ce94f1daa": {
+      "title": "C++ Software Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b284661b-707c-4883-b0bd-30b6c762f1f8": {
+      "title": "C++ Software Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "a0280601-36db-40d7-a52d-996b772d4e84": {
+      "title": "C++ Software Engineer - Compilers Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ed4a7f88-cb21-486a-9bf4-1c2ddf4ceb58": {
+      "title": "Computer Vision & Deep Learning Algorithms Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "de078a5a-f9b1-4f3f-8b02-b19241cbd1c6": {
+      "title": "Corporate Controller",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6a5a0009-af24-4325-8451-e391c691611b": {
+      "title": "Cyber Security Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "fd1f6cd4-ea24-4db6-b7ec-43912ece3b16": {
+      "title": "Cyber Security Execution Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "56a4af6f-946b-4786-89b1-92110e53f6be": {
+      "title": "Data Platform Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e8c3725e-4403-4982-a458-587c6fa25b8f": {
+      "title": "Deep Learning Researcher",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "611eada3-803c-4598-8988-26ad846ef2cc": {
+      "title": "Deep Learning Tech Lead",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "64cad7b5-1016-47e0-901a-4cfb28bcc633": {
+      "title": "Deep Learning Tech Lead",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ded3b18f-e023-491a-b1d2-b029961ea7eb": {
+      "title": "DevOps & Infrastructure Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
+      "title": "Embedded C++ Software Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "62f6ee02-6f82-4044-819e-c7207995cd24": {
+      "title": "Embedded Linux OS Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ac5edc03-9478-4fef-ae4a-20d2609ca6da": {
+      "title": "Embedded Linux OS Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "cbb56190-180f-4d21-8a21-95418a3eb8a5": {
+      "title": "Embedded Linux OS Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "608dac79-7323-419b-a044-8b8e8fd26618": {
+      "title": "Embedded Software Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "301cb720-c476-4fc6-930a-81803be8e3f6": {
+      "title": "Embedded Software Engineer for Architecture Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6c1d0b5f-490a-4eb6-8d9a-5e60dcdd9c45": {
+      "title": "Embedded Software Engineer for Architecture Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d1f956e3-fc71-4a88-90d1-bdaf99fa96f0": {
+      "title": "Embedded SW and Validation Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "999d5e75-7d50-42f1-879b-18035226641f": {
+      "title": "Embedded Team Leader -OS Integration & Automation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "a6add601-41b6-4ac0-96d7-6f733e2af85d": {
+      "title": "Embedded Team Leader -OS Integration & Automation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "fdee723f-1dac-49df-a209-6765d40d3beb": {
+      "title": "Embedded Team Leader -OS Integration & Automation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "a71e09c2-0b0c-4519-9505-81dcb684fe27": {
+      "title": "Execution Project Manager (Temporary Position - Maternity Leave)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f6dde9c3-a4e6-4dc8-befe-10c88ea90a73": {
+      "title": "Experienced Algorithm Validation Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "63c9d68a-ff54-47c0-86b3-4014479ceabb": {
+      "title": "Experienced C++ Developer - Farm Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0029e8b1-bdf1-4d0a-9895-7b5ee22c4837": {
+      "title": "Experienced Control Algorithms Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "7fd694a5-5755-4405-9489-8de1a6eb8f57": {
+      "title": "Experienced Data Analyst",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "48df21e2-84dd-42e7-9d55-f4121d444df8": {
+      "title": "Experienced Deep Learning Algorithm Developer - Road Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "a0c1252a-0f26-47f6-a3f5-99a089c999b0": {
+      "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "de4739b8-eda9-4262-ae5b-c3ee15d86a3c": {
+      "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2da0a061-36d1-4c97-b45e-17aee11fb49b": {
+      "title": "Experienced Deep Learning Optimization Engineer- Compilers Team",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9df72c7f-8ae9-420c-a024-c9a3f1cf2998": {
+      "title": "Experienced Deep Learning Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0099bc89-b239-439f-8ecf-558737296d09": {
+      "title": "Experienced DFT Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "31956c05-66e8-41a4-bed7-08e3e07425a4": {
+      "title": "Experienced DFT Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "422fa926-abc4-4da0-ba57-57ad102f2754": {
+      "title": "Experienced Formal Verification  Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ae0844fc-26c2-4df9-9a11-03e80dbc90e8": {
+      "title": "Experienced Low Level Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e85566dc-9827-4058-a1d2-cc6a63f7e286": {
+      "title": "Experienced Machine Learning Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "49084f32-4a0d-4641-a034-c22310218bb1": {
+      "title": "Experienced Physical Design Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "cc56a225-96a9-4f52-9b11-4303447e0a78": {
+      "title": "Experienced Physical Design Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "791a4827-bd3e-4942-9e72-b00176e0334c": {
+      "title": "Experienced SoC Verification Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d41387e9-f9c3-4a72-8f4b-8ecfad129907": {
+      "title": "Experienced SoC Verification Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "7418fbe2-8467-4389-b43b-2ae50ef57815": {
+      "title": "Experienced Verification Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5b14b84b-0fe5-4628-a107-7c77a82d5c4f": {
+      "title": "Field Engineer in Braunschweig (Germany) - Relocation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "113794c0-7400-406a-9675-ec7f2f8c3881": {
+      "title": "Field Engineer in India (Chennai) - Relocation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e0906011-cc0a-4bda-83cf-4f9a22e3a6f4": {
+      "title": "Forecast Analyst",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d58c12f6-be27-4bbc-9cb7-38558e65b0f1": {
+      "title": "Live Mapping Validation Analyst",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
+      "title": "ML Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e58368d8-ec21-4e5e-871d-40707762b959": {
+      "title": "ML Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ed5da113-bd7b-4654-b115-8c29723e0295": {
+      "title": "Outstanding Graduate Algorithm Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "570619b3-b8ec-478c-916a-04c588feb434": {
+      "title": "Physical Design Expert",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
+      "title": "Product Execution Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "95a8d51f-c038-465e-baca-6e0cd1ffaa95": {
+      "title": "Product Manager for AV Cloud services",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f08cf90a-2e96-4d27-86db-e124676b4d53": {
+      "title": "Radar ATE Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "28b9b2ee-4480-4486-b057-0f554d324151": {
+      "title": "Real-Time Embedded DSP Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
+      "title": "Senior Algorithm Engineer-ML Inference and Data Systems",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "402007d2-e42d-4006-9319-8ea87599ba2e": {
+      "title": "Senior AV Product Manager - Temporary Position (One year replacement)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "fcb6a990-573b-49d1-bfb0-ecb6abc003b7": {
+      "title": "Senior AV Project Manager Team Lead",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "1b03acdd-1eb9-4aa7-9f5b-53fdc890d2b7": {
+      "title": "Senior C++ Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3ee12b13-6cdd-482f-a25a-26bcbacbdde6": {
+      "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2c2e26d6-d40a-40d1-b6f8-510781e9a3f4": {
+      "title": "Senior C++ Software Engineer - Integration & Delivery (CTO Team)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f04fed6a-f0f4-4455-900a-be4ccdddc8ee": {
+      "title": "Senior C++ Software Engineer - Integration & Delivery (CTO Team)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
+      "title": "Senior C++ Software Engineer – Sensor Platform",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ade97368-7948-4dbb-a574-1268ad41cbf0": {
+      "title": "Senior Computer Vision Data Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d1b15808-b89c-4b61-b329-438963133015": {
+      "title": "Senior Data & ML Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b5e33bc9-f6e1-4201-a42d-61cd409b60c5": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "60c33ad2-695a-43ca-a557-5c204dad5820": {
+      "title": "Senior Deep Learning Researcher",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "1fcefccb-abe1-4bfd-b5c2-46be82d3cd4f": {
+      "title": "Senior Embedded Software Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3f7e3421-7963-4d3a-8573-2fb29f8dbade": {
+      "title": "Senior Microsoft Sysadmin",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6f95360f-6d69-4c40-a0fe-3e8f3a1d6f5c": {
+      "title": "Senior Microsoft Sysadmin",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "25f2cd2f-fbac-4101-b913-045cdc4458a3": {
+      "title": "Senior ML Data Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5d044c94-826e-4685-853f-b70069e3f0a9": {
+      "title": "Senior ML Data Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f15e7124-1aab-4301-9fec-547c7c24c6b1": {
+      "title": "Senior Platform Software Project Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "1d83cd20-6e61-44b8-aa23-895c67e9d010": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
+      "title": "Senior Python Developer for Map Management",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "68245f41-2091-471c-9d65-6b4747ea02d5": {
+      "title": "Senior Python Infrastructure Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "7969248d-a14e-4a4e-a316-ff323f6d49ff": {
+      "title": "Senior Python Infrastructure Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "c3489228-75ae-4338-a99d-b8be98e6e79b": {
+      "title": "Senior Python Infrastructure Developer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b02e3f9e-e4a3-4c0f-8214-77606f75b9da": {
+      "title": "Senior Software Engineer - AI Platform (Python & React)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f3de4dd1-fed7-4d16-825a-562746ccfe79": {
+      "title": "Senior Software Engineer - C++ Embedded Systems (Autonomous Driving)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2cd38b8c-4d52-4d86-ae5a-6344b7ca24d9": {
+      "title": "Senior SRE & Linux Infrastructure Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ffd7b3b0-bde6-447f-89cd-1c7f9abf17e5": {
+      "title": "Senior System Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9a5f8911-4fa3-45fd-bc56-48e12533e3f5": {
+      "title": "Senior System Architect for ECU designs",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f566122f-06cb-4359-a7cd-49ee17ec9528": {
+      "title": "Senior System Architect for ECU designs",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "84adcedb-0384-4662-909b-e20fd90d64ea": {
+      "title": "Senior Technical Product Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "89a185bd-9ce6-4a08-a0a7-c16eaac7c80f": {
+      "title": "Senior Technical Product Manager – AV Platform (HW/SW)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "4c272b78-4384-4ceb-88d4-22161fba5d30": {
+      "title": "Senior Thermal-Mechanical Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
+      "title": "Solution Architect for Cloud Communication",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "539e7cc7-1c30-43fd-8a72-a631aba80d26": {
+      "title": "Solution Architect for Cloud Communication",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5d23dc1d-fc84-427d-96cf-cd151087561d": {
+      "title": "Solution Architect for Embedded Autonomous Vehicle System",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
+      "title": "Solution Architect for Embedded Autonomous Vehicle System",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6a585853-ec67-49fb-af6d-68adc60b5977": {
+      "title": "Strategic Account Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5215cdc7-1576-48da-8c92-ca128ddf2c6e": {
+      "title": "System Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5f17d79a-7430-48c6-97b0-f4432bac6b7c": {
+      "title": "System Validation Architect",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
+      "title": "Technical Assistant for Executive VP",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
+      "title": "Technical PM",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "303d899e-2b03-41f7-97d2-824da4e51190": {
+      "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3d955240-fd2d-419d-8035-bf647c3da076": {
+      "title": "Technical Product Strategy Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0f352e1c-39ce-407d-9de3-012ccaf79d3c": {
+      "title": "Technical Project Manager",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
+      "title": "Test Automation Technical Lead",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "c217d67e-d12c-4ee8-afd2-6489873e6776": {
+      "title": "Test Driver for Autonomous Vehicles",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "594b53f5-56ac-44e8-9fcf-b501518315b6": {
+      "title": "Travel Coordinator",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f4848e1c-2f81-46a1-b2ee-e73b0d30a3fb": {
+      "title": "Validation & Analysis Project Manager - Temporary Position",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e5a7fb78-7847-499a-94b8-a66033db3998": {
+      "title": "Validation Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "7837f11d-f347-40ff-b5c7-6e296be994fb": {
+      "title": "Validation Engineer & Embedded System Integration",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    }
+  }
+}
