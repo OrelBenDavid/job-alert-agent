@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "slug": "wix",
+  "name": "Wix",
+  "enabled": true,
+  "careers_url": "https://careers.wix.com/positions",
+  "resolved_from": "company name 'Wix' - web_search for 'Wix careers jobs open positions' surfaced only Wix's own branded page (careers.wix.com/positions) plus third-party aggregators (Glassdoor, Indeed); no ATS-hosted board turned up. A raw HTML fetch and a live browser check of careers.wix.com/positions found no Greenhouse/Lever/Comeet/SmartRecruiters/Ashby/Workable/Recruitee/Workday signature and no JSON-LD JobPosting blocks - the page is built on Wix's own Velo/Thunderbolt platform (the company runs its careers page on its own website builder), so fetch_type=playwright was required per Step 4.",
+  "fetch_type": "playwright",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": "location",
+    "matching_locations": ["tel-aviv", "beer-sheva"],
+    "ui_actions": null,
+    "checked_fields": ["location"],
+    "reapply_after_navigation": false,
+    "_note": "structure is set to 'none' for DISPATCH purposes, even though the site's own picker is actually flat_multi_location (verified: typing 'Israel' into the Location box offers single-select city entries 'Tel Aviv' / 'Beer Sheva' whose accessible checkbox names are the slugs 'tel-aviv'/'beer-sheva', and https://careers.wix.com/locations confirms these are Wix's only two Israel offices). It is deliberately NOT wired up as flat_multi_location here: (1) src/fetchers/browser.py's fetch() branches purely on this field - structure=flat_multi_location forces the _fetch_multi_location() UI-walk path unconditionally, which requires location_filter_selector/location_option_selector this profile does not set (confirmed live: setting structure=flat_multi_location raised KeyError: 'location_filter_selector' when actually run); (2) even if wired up, that template drives the URL with the option's visible display TEXT ('Tel Aviv'), but Wix's ?location= param requires the slug ('tel-aviv') - display text and slug diverge here; (3) live-tested and confirmed broken another way: both a comma-joined value (?location=tel-aviv,beer-sheva) and a repeated param (?location=tel-aviv&location=beer-sheva) leave the page stuck showing generic placeholder cards ('Loading Location'/'Loading Team') instead of filtering, so driving the location UI/URL at all is riskier than not using it. Instead this profile paginates the FULL unfiltered list (36 open positions company-wide as of verified_on) via the ordinary url_param pagination path and applies the standard is_relevant_location() post_fetch check per card - functionally equivalent to a real Israel filter, with zero dispatcher changes needed. matching_locations is documentation of what was observed on verified_on, not read by any code path."
+  },
+
+  "playwright": {
+    "job_selector": ".comp-mopq6bcy8",
+    "title_selector": ".comp-mopq6bd93",
+    "location_selector": ".comp-mopq6bdf10",
+    "link_selector": "[data-testid=\"linkElement\"]",
+    "link_base": "https://careers.wix.com",
+    "pagination": {
+      "method": "url_param",
+      "param_name": "page",
+      "start_value": 1,
+      "max_pages": 20,
+      "out_of_range_behavior": "clamps to page 1's content, verified live: ?page=999 rendered the identical 24-job listing as ?page=1 (only the 'Showing 999 of out 2' label was wrong). Does NOT return an empty list - a naive while-True loop would never terminate on its own.",
+      "next_button_selector": null,
+      "disabled_marker": null,
+      "stop_condition": "the generic template's per-page job-id fingerprint check (breaks once a page's ids match the immediately-preceding page's) plus its hard max_pages cap. Verified live: page 1 = 24 jobs, page 2 = 12 jobs (36 total, distinct ids), page 999 clamps back to page 1's ids - confirming the fingerprint check will terminate the loop one page after the real content ends.",
+      "_note": "investigated on the UNFILTERED listing on purpose - see israel_filter._note for why this profile does not paginate a filtered view."
+    }
+  },
+
+  "health": {
+    "expected_min_jobs": 6,
+    "zero_is_plausible": false,
+    "sentinel": "text \"Find Your Role at Wix\" - present on the page both with results (36 positions) and with zero results for a single-location filter (tested on Beer Sheva, which currently has 0 openings), so its absence means the page didn't render as expected rather than that there are no jobs.",
+    "requires_browser": true
+  },
+
+  "verified_on": "2026-08-11",
+  "notes": "Live-verified TWO ways on 2026-08-11: (a) claude-in-chrome DOM/network investigation, and (b) actually running src/fetchers/browser.py's fetch(profile) end-to-end against the real site (Playwright/Chromium installed for this) - it returned exactly 15 jobs, all Tel Aviv, all with unique non-empty id/title/url, matching the manual browser count. Confirms the selectors, the fingerprint-based pagination stop, and the post_fetch filter all work together as designed, not just individually. One transient issue seen during that same real run: a page.goto for page 2 hit Playwright's default 30s timeout once (this heavy tracker/ads-laden page can be slow to fire the 'load' event) and succeeded cleanly on an immediate retry with no code changes - src/run.py already catches fetch exceptions per-company (does not corrupt saved state, and only escalates to a Telegram maintenance alert after should_alert_failure's repeated-failure threshold), so a one-off timeout like this is expected to be absorbed rather than needing a profile-level fix. Still-unverified risk, not testable from here: GitHub Actions IP ranges are frequently blocked by Cloudflare/Akamai/PerimeterX on careers sites - a page that renders fine from this machine can still 403 from a runner; the first real scheduled run is the actual test of that. Also seen once during investigation (not during the successful fetch() run): a card on page 2 briefly rendered 'Product Marketing Manager - Base44 / Loading Location / Loading Team' before the site's client-side data binding finished. The job_selector/title_selector/location_selector are Wix-internal auto-generated component ids (e.g. comp-mopq6bcy8) tied to this specific published version of the careers page template; they are stable across job postings and across pagination (confirmed via the live fetch() run above returning 15/15 jobs with all fields populated) but will break entirely if Wix's team republishes the page with a different layout - this profile would then need to be rebuilt from scratch, an inherent fragility of profiling a site built on a proprietary page builder rather than static markup."
+}
