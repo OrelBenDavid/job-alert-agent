@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-11T14:49:15.063849+00:00",
-  "last_count": 122,
+  "last_success": "2026-08-11T16:04:59.289424+00:00",
+  "last_count": 121,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -13,10 +13,6 @@
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "2a8920e0-6dc6-48a8-b8b7-2f42f432e637": {
-      "title": "Algorithm Developer for Objects Modeling",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "331ce77a-8179-444a-924c-189f131afd50": {
