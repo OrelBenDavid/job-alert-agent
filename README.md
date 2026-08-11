@@ -63,6 +63,13 @@ cd tests && python -m pytest -v
   מובילאיי מחזירה 122 משרות רלוונטיות לישראל (`expected_min_jobs: 20`,
   `zero_is_plausible: false`), Wiz מחזירה 0 (ה-board האמיתי שלה מכיל כרגע
   רק 2 משרות בסך הכל, שתיהן מחוץ לישראל - `zero_is_plausible: true`
-  נשאר נכון). ה-state כבר נזרע (`state/seed/`), אין seed gap.
-- `wix` — טרם קיים פרופיל. הטרייס הישן (`investigation_playbook.md`)
-  לא כלל את פילטר ה-Israel לפי v2 - דורש פרופיילינג מחדש מלא.
+  נשאר נכון). ה-state כבר נזרע (`state/seen/`), אין seed gap.
+- `wix` — פרופיל `playwright` (אין ATS מוכר, דף הקריירה בנוי על הפלטפורמה
+  של Wix עצמה), **אומת חי** ב-2026-08-11 בשתי דרכים: בדיקת DOM/network
+  בדפדפן, ו-הרצה אמיתית של `fetch()` שהחזירה 15 משרות בתל אביב
+  (`expected_min_jobs: 6`, `zero_is_plausible: false`). הפילטר לישראל
+  רץ `post_fetch` על הרשימה המלאה (לא על ה-location picker של האתר - נשבר
+  כשמנסים לסנן שתי ערים בבת אחת, ראה `israel_filter._note` בפרופיל).
+  **Seed gap פתוח** - אין `state/seen/wix.json`; יש להריץ
+  `python run.py --seed` לפני שההתראות הרגילות ייכנסו לתוקף עבור החברה
+  הזו.
