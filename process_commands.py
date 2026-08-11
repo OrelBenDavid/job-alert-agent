@@ -177,6 +177,8 @@ def handle_add(parts: list[str], companies: list[dict]) -> bool:
         return False
 
     name, url = parts[1], parts[2]                                   # שם החברה וכתובת עמוד הקריירות שלה
+    if not re.match(r"^https?://", url):                             # המשתמש לא כתב http(s):// - נוסיף אוטומטית
+        url = f"https://{url}"
 
     if any(c["name"].lower() == name.lower() for c in companies):    # בודק אם החברה כבר קיימת ברשימה
         send_telegram(f"⚠️ {name} כבר ברשימה")
