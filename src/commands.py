@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Telegram command processing: /add /remove /list. There's no separate
+Telegram command processing: /add /remove /list /jobs. There's no separate
 workflow for commands - this piggybacks on every run of check.yml, because
 a dedicated cron every few minutes would, on its own, burn through the
 entire Actions quota of a private repo (see the project discussion). The
@@ -10,6 +10,12 @@ consequence: response time for a command is up to one cron interval
 v1: /add does NOT do automatic profiling - this is an explicit decision,
 not a forgotten TODO. It only tells Orel that a manual profiling session
 with career-site-profiler is needed.
+
+/jobs <slug> is a live fetch, not a state read - it calls the same
+fetch_jobs() the main check loop uses, so it always reflects the site
+right now rather than whatever was last seen. That also means it costs
+one extra live fetch per invocation (and, for a playwright profile, one
+extra browser launch) - acceptable since commands are infrequent.
 
 Note: the Telegram message strings below (what gets sent back to the user)
 are in Hebrew on purpose - that's product content for the user, who
@@ -23,8 +29,9 @@ from pathlib import Path
 
 import requests
 
-from profiles import PROFILES_DIR
-from notifier import send_message, escape_mdv2
+from profiles import PROFILES_DIR, load_profile, ProfileError
+from fetchers import fetch_jobs
+from notifier import send_message, escape_mdv2, format_job_list_message
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/{method}"
 TELEGRAM_STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "telegram.json"
@@ -92,6 +99,28 @@ def _handle_add(company_name: str) -> str:
            f"להוסיף את החברה\\.")
 
 
+def _handle_jobs(slug: str) -> str:
+    """On-demand snapshot of a company's currently open (Israel-relevant)
+    jobs, straight from the source - unlike /list, which only shows
+    tracked company names from local files."""
+    path = PROFILES_DIR / f"{slug}.json"
+    if not path.exists():
+        return f"❌ לא נמצא פרופיל בשם {escape_mdv2(slug)}"
+
+    try:
+        profile = load_profile(path)
+    except ProfileError as e:
+        return f"❌ פרופיל שגוי: {escape_mdv2(str(e))}"
+
+    try:
+        jobs = fetch_jobs(profile)
+    except Exception as e:
+        return (f"❌ שגיאה בשליפת משרות עבור {escape_mdv2(profile.name)}: "
+               f"{escape_mdv2(str(e))}")
+
+    return format_job_list_message(profile.name, jobs, profile.careers_url)
+
+
 def process_commands() -> None:
     """Called at the start of every run.py invocation, before the job check
     itself."""
@@ -116,6 +145,8 @@ def process_commands() -> None:
             send_message(_handle_remove(arg))
         elif cmd == "/add" and arg:
             send_message(_handle_add(arg))
+        elif cmd == "/jobs" and arg:
+            send_message(_handle_jobs(arg))
         # Unrecognized commands are ignored silently - no need to flood
         # error messages for every typo
 

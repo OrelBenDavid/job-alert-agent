@@ -59,6 +59,38 @@ def format_new_jobs_message(company_name: str, jobs: list[Job]) -> str:
     return "\n".join(lines)
 
 
+# Telegram messages cap out at 4096 chars. A company with 100+ open roles
+# would blow past that (or get rejected outright by the API) if every job
+# were listed - so /jobs shows a bounded sample plus a link to the careers
+# page for the rest, instead of paginating into several messages. 20 was
+# chosen with real headroom, not just under the limit: Mobileye's actual
+# job titles/links measured ~4060/4096 chars at a cap of 30 - too close
+# for companies with longer titles or locations to stay safe at 30.
+_MAX_JOBS_IN_LIST_REPLY = 20
+
+
+def format_job_list_message(company_name: str, jobs: list[Job], careers_url: str) -> str:
+    """Snapshot for the /jobs command - "here's what's open right now",
+    visually distinct from format_new_jobs_message ("here's what's new
+    since last time"). Reuses display()/escape_mdv2 the same way, per the
+    project convention that job-line formatting only ever happens here."""
+    header = f"📋 *{escape_mdv2(company_name)}* — {len(jobs)} open jobs"
+    if not jobs:
+        return f"{header}\n\n_\\(No open Israel\\-relevant jobs right now\\.\\)_"
+
+    shown = jobs[:_MAX_JOBS_IN_LIST_REPLY]
+    lines = [header, ""]
+    for j in shown:
+        title_loc = escape_mdv2(j.display())
+        lines.append(f"• [{title_loc}]({j.url})")
+
+    remaining = len(jobs) - len(shown)
+    if remaining > 0:
+        lines.append("")
+        lines.append(f"_\\+{remaining} more — see [the careers page]({careers_url})\\._")
+    return "\n".join(lines)
+
+
 def format_maintenance_alert(slug: str, message: str) -> str:
     """Maintenance alert - visually distinct from a jobs alert so the two
     are never confused."""
