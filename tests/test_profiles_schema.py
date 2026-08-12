@@ -83,7 +83,8 @@ def test_method_none_reads_as_no_detail_fetch(tmp_path):
 
 def test_inline_block_is_accepted_and_exposed(tmp_path):
     profile = load_profile(_write(tmp_path, detail_fetch={
-        "method": "inline", "inline_field": "content", "content_is_html": True}))
+        "method": "inline", "inline_field": "content", "content_is_html": True,
+        "verified_on_job_url": "https://boards.greenhouse.io/acme/jobs/1"}))
     assert profile.detail_fetch["inline_field"] == "content"
 
 
@@ -95,19 +96,50 @@ def test_html_block_is_accepted(tmp_path):
     assert profile.detail_fetch["method"] == "html"
 
 
+_VERIFIED = {"verified_on_job_url": "https://jobs.lever.co/acme/abc"}
+
+
 @pytest.mark.parametrize("block,message", [
     ({"method": "carrier-pigeon"}, "method invalid"),
-    ({"method": "inline"}, "inline_field"),
-    ({"method": "html"}, "content_selector"),
-    ({"method": "playwright"}, "content_selector"),
-    ({"method": "html", "content_selector": "#d", "url_source": "magic"},
+    (dict(_VERIFIED, method="inline"), "inline_field"),
+    (dict(_VERIFIED, method="html"), "content_selector"),
+    (dict(_VERIFIED, method="playwright"), "content_selector"),
+    (dict(_VERIFIED, method="html", content_selector="#d", url_source="magic"),
      "url_source invalid"),
-    ({"method": "html", "content_selector": "#d", "url_source": "template"},
+    (dict(_VERIFIED, method="html", content_selector="#d", url_source="template"),
      "url_template"),
 ])
 def test_malformed_blocks_fail_at_load_time(tmp_path, block, message):
     with pytest.raises(ProfileError, match=message):
         load_profile(_write(tmp_path, detail_fetch=block))
+
+
+@pytest.mark.parametrize("block", [
+    {"method": "inline", "inline_field": "content"},
+    {"method": "html", "content_selector": "#job-description"},
+    {"method": "playwright", "content_selector": "#job-description"},
+])
+def test_an_unverified_block_is_rejected(tmp_path, block):
+    """A detail_fetch block without the posting URL it was confirmed against
+    is a guess. It fails LOUDLY at load time rather than quietly reading
+    nothing at runtime and tagging every posting undetermined while the
+    profile claims to be filtering. Omitting the block is the correct output
+    when it couldn't be verified - the filter is fail-open."""
+    with pytest.raises(ProfileError, match="verified_on_job_url"):
+        load_profile(_write(tmp_path, detail_fetch=block))
+
+
+def test_method_none_needs_no_verification_url(tmp_path):
+    """"Investigated, nothing reachable" is a finding, not a guess."""
+    profile = load_profile(_write(tmp_path, detail_fetch={"method": "none"}))
+    assert profile.detail_fetch is None
+
+
+def test_both_shipped_detail_fetch_blocks_are_verified():
+    """Guards the two profiles actually in production."""
+    for slug in ("mobileye", "wiz"):
+        cfg = load_profile(PROFILES_DIR / f"{slug}.json").detail_fetch
+        assert cfg["verified_on_job_url"].startswith("https://")
 
 
 def test_current_schema_version_is_three():

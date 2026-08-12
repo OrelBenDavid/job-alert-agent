@@ -6,17 +6,18 @@
   "careers_url": "https://job-boards.greenhouse.io/wizprivate",
   "resolved_from": "company name 'Wiz' - resolved to Greenhouse board_token 'wizprivate' per the project instructions. Not re-resolved via a fresh web_search in this session.",
   "fetch_type": "api",
-
   "israel_filter": {
     "method": "post_fetch",
     "structure": "none",
     "param": null,
     "matching_locations": null,
     "ui_actions_structured": [],
-    "checked_fields": ["location.name", "offices"],
+    "checked_fields": [
+      "location.name",
+      "offices"
+    ],
     "_note": "fetch_type=api on Greenhouse - filtering is a post_fetch check on the API's own location.name AND offices[] (offices is required because Greenhouse frequently reports location.name as 'Multiple Locations')."
   },
-
   "api": {
     "platform": "greenhouse",
     "endpoint": "https://boards-api.greenhouse.io/v1/boards/wizprivate/jobs?content=true",
@@ -29,11 +30,10 @@
       "url": "absolute_url"
     }
   },
-
   "detail_fetch": {
     "method": "inline",
     "inline_field": "content",
-    "url_source": "job_url",
+    "url_source": null,
     "url_template": null,
     "content_selector": null,
     "content_is_html": true,
@@ -42,7 +42,6 @@
     "verified_on_job_url": "https://job-boards.greenhouse.io/wizprivate/jobs/4615184006",
     "_note": "VERIFIED live on 2026-08-12: the ?content=true endpoint this profile already uses returns a populated `content` field (9378 chars on the posting above). content_is_html=true is REQUIRED and is not cosmetic - the field arrives both as HTML and HTML-escaped ('&lt;div class=&quot;content-intro&quot;&gt;...'), confirmed live, so it must be unescaped before being parsed as HTML. Doing only one of the two yields text full of literal '&lt;p&gt;'. inline is the only viable method here: a Greenhouse posting PAGE serves the application form without the description, so method=html would silently read nothing."
   },
-
   "health": {
     "expected_min_jobs": 0,
     "zero_is_plausible": true,
@@ -50,7 +49,6 @@
     "requires_browser": false,
     "_note": "VERIFIED live on 2026-08-12 (the earlier note here said the call was impossible - this environment's egress to boards-api.greenhouse.io was blocked on 2026-08-11 and is open now). The board returns exactly 2 open jobs company-wide, 'DevOps Engineer (NYC)' and 'UK Expert Backend Engineer', located New York City and London - so 0 Israel-relevant jobs. expected_min_jobs=0 with zero_is_plausible=true is therefore CORRECT and should be left alone: this company genuinely has no Israeli openings right now, and tightening the floor would turn a true zero into a false maintenance alert. Revisit if the board grows."
   },
-
   "verified_on": "2026-08-12",
   "notes": "Board token 'wizprivate' comes from the project instructions. Confirmed live on 2026-08-12: the token still resolves and the endpoint returns jobs, so no migration has happened."
 }

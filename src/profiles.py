@@ -85,6 +85,19 @@ def _validate_detail_fetch(block: dict, where: str) -> None:
     if method == "none":
         return   # an explicit "this company has no reachable description"
 
+    # Mandatory for every method except "none", per the skill's schema: a
+    # block without the posting URL it was confirmed against is a guess. That
+    # matters more here than it looks - a guessed block doesn't fail loudly at
+    # runtime, it quietly reads nothing, and every posting from the company
+    # comes back "undetermined" while the profile claims to be filtering.
+    # Omitting detail_fetch entirely is the correct output when unverified.
+    if not block.get("verified_on_job_url"):
+        raise ProfileError(
+            f"{where}detail_fetch.method={method!r} requires "
+            "verified_on_job_url - the real posting URL the field or selector "
+            "was confirmed against. If it wasn't verified, omit the whole "
+            "detail_fetch block instead (the filter is fail-open).")
+
     if method == "inline":
         if not block.get("inline_field"):
             raise ProfileError(

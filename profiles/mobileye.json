@@ -6,17 +6,17 @@
   "careers_url": "https://jobs.eu.lever.co/mobileye",
   "resolved_from": "company name 'Mobileye' - web_search returned both careers.mobileye.com/jobs (branded landing) and jobs.eu.lever.co/mobileye (Lever board) as separate results; picked the Lever one per Step 0.1. Recorded in the project instructions, not re-verified live in this session.",
   "fetch_type": "api",
-
   "israel_filter": {
     "method": "post_fetch",
     "structure": "flat_multi_location",
     "param": null,
     "matching_locations": null,
     "ui_actions_structured": [],
-    "checked_fields": ["categories.location"],
+    "checked_fields": [
+      "categories.location"
+    ],
     "_note": "Lever's own UI is a flat_multi_location picker (verified in the skill's investigation_playbook.md), but this profile is fetch_type=api, so the picker is never touched. The API returns every posting's location in one call."
   },
-
   "api": {
     "platform": "lever",
     "endpoint": "https://api.eu.lever.co/v0/postings/mobileye?mode=json",
@@ -29,13 +29,12 @@
       "url": "hostedUrl"
     }
   },
-
   "detail_fetch": {
     "method": "inline",
     "inline_field": "lists",
     "inline_section_heading": "text",
     "inline_section_content": "content",
-    "url_source": "job_url",
+    "url_source": null,
     "url_template": null,
     "content_selector": null,
     "content_is_html": true,
@@ -44,7 +43,6 @@
     "verified_on_job_url": "https://jobs.eu.lever.co/mobileye/bb661a53-79b8-459d-a8df-5dd419d62596",
     "_note": "VERIFIED live on 2026-08-12. method=inline, NOT html: the same listing call that returns the postings already carries the full description, so per-posting page fetches would buy nothing and cost one request each (cheap-to-expensive rule). inline_field=lists specifically - this was tested field by field against the real parser across 25 Israel-relevant postings: `description` and `descriptionBody` hold only the intro paragraph and produced a number on 0 of 25, while `lists` produced one on 18 of 25 (+3 with seniority signals, 4 with nothing). `lists` is a structured array ([{text: heading, content: '<li>..'}]), not a string, which is why detail.render_sections exists. The section headings it carries are the recruiter-invented ones this design was built around - 'All you need is:' / 'Nice to have:' - and the heading promotion in experience.classify_block is what makes the unmarked bullets under them count. The Lever posting PAGE does also serve the description in static HTML (so method=html would work), but it is strictly more expensive for identical data."
   },
-
   "health": {
     "expected_min_jobs": 20,
     "zero_is_plausible": false,
@@ -52,7 +50,6 @@
     "requires_browser": false,
     "_note": "VERIFIED live on 2026-08-11: api.eu.lever.co/v0/postings/mobileye returned 122 Israel-relevant postings. expected_min_jobs=20 is a conservative floor well below the observed count, to tolerate normal fluctuation without disabling the health gate; zero_is_plausible=false since a large company like Mobileye genuinely going to 0 open roles would itself be worth a maintenance alert, not silent state loss."
   },
-
   "verified_on": "2026-08-12",
   "notes": "Endpoint and field names come from api_platforms.md, which itself documents this as verified during the original project investigation (not this session). The .eu subdomain matters - api.lever.co (non-EU) 404s for this slug. Live-verified via a direct API call on 2026-08-11 (122 Israel-relevant jobs returned) before this profile was put into production, and re-verified on 2026-08-12 when detail_fetch was added (141 postings, 122 Israel-relevant - unchanged)."
 }
