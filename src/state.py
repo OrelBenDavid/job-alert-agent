@@ -98,39 +98,76 @@ def _write_state(slug: str, state: dict) -> None:
     tmp.replace(path)
 
 
-def _collapse_suspicion(slug: str, count: int, state: dict, profile) -> str:
-    """The health gate's decision, as a message - or "" for a healthy run.
+# *** The relative collapse check ***
+#
+# A count that fell to under this fraction of the last healthy run is treated
+# as a collapse regardless of what the profile claims about itself. This is
+# the half of the gate that SCALES: `expected_min_jobs` is a number a human
+# picked on one day, and at a hundred companies those numbers go stale faster
+# than anyone maintains them. A ratio needs no maintenance and follows a
+# company as it grows.
+#
+# 0.4 rather than something tighter because the window is three hours. A
+# company shedding 60% of its open roles inside one cron interval is not
+# ordinary churn on any board this project has measured.
+_COLLAPSE_RATIO = 0.4
 
-    Two thresholds, because a listing can break in two shapes and only one of
-    them used to be caught:
+# ...but only once there is enough of a baseline for the ratio to mean
+# anything. On a board with 4 open roles, one closing is 25% and completely
+# normal; the absolute floor and the zero check cover the small companies.
+_COLLAPSE_MIN_BASELINE = 10
 
-    1. A TOTAL zero after any healthy count. The original gate, and the one
-       that catches a dead job_selector.
+# How many consecutive PARTIAL collapses to hold out for before accepting the
+# lower count as the new normal.
+#
+# This escape hatch is not optional, and it is the difference between the two
+# kinds of gate hit. Freezing state on a total zero is free - there are no
+# jobs to miss. Freezing it on a partial collapse is NOT: process_company
+# returns no new jobs while frozen, so a false positive silently stops
+# detecting real postings at that company, which is precisely the "quiet while
+# looking healthy" failure the gate exists to prevent. Holding for three runs
+# (~9 hours) reports the drop twice - crossing the alert threshold - and then
+# resumes on its own rather than waiting for a human who may be asleep.
+PARTIAL_COLLAPSE_ACCEPT_AFTER = 3
+
+
+def _collapse_suspicion(slug: str, count: int, state: dict,
+                        profile) -> tuple[str, bool]:
+    """The health gate's decision: (message, is_partial). "" means healthy.
+
+    Three thresholds, because a listing can break in more than one shape and
+    only the first used to be caught:
+
+    1. A TOTAL zero after any healthy count. The original gate, and what a
+       dead job_selector looks like.
 
     2. A PARTIAL collapse below `health.expected_min_jobs`, from a run that
-       was itself above that floor. This is what a broken *pagination* looks
-       like - page 1 still parses, pages 2..N silently stop coming - and it
-       was entirely invisible before: the count stays comfortably above zero,
-       so the gate passed, state was rewritten to the truncated set (dropping
-       every id past page 1), and real new postings beyond page 1 were never
-       detected. When the fetch is later fixed, all the dropped ids come back
-       at once as "new". `expected_min_jobs` was documented in the profile
-       schema and the README as doing exactly this, and was in fact read by
-       nothing at all.
+       was itself above that floor. Good at SLOW decay - a company drifting
+       down over months never trips a run-to-run comparison - and dependent on
+       someone having chosen a sane number.
 
-    The `floor <= previous` condition is what keeps this honest: it only fires
-    when the previous run cleared the floor itself, so a floor set too high
-    for a company that has genuinely shrunk produces one gate hit, not a
-    permanent one - and the fix is to lower the number the profile claims.
+    3. A PARTIAL collapse below `_COLLAPSE_RATIO` of the last healthy count.
+       Good at SUDDEN breakage and needs no per-profile number at all, which
+       is what makes it the one that survives a hundred companies.
+
+    2 and 3 cover opposite failure shapes, which is why both are here. Either
+    way, this is what broken *pagination* looks like - page 1 still parses,
+    pages 2..N silently stop coming - and none of it was visible before: the
+    count stays comfortably above zero, so the gate passed, state was
+    rewritten to the truncated set (dropping every id past page 1), and real
+    new postings beyond page 1 were never detected.
+
+    `is_partial` marks the two that must eventually give up and accept the new
+    count - see PARTIAL_COLLAPSE_ACCEPT_AFTER.
     """
     if profile.zero_is_plausible:
-        return ""
+        return "", False
 
     previous = state.get("last_count", 0)
     if count == 0 and previous > 0:
         return (f"{slug}: got 0 jobs after the previous run returned "
                 f"{previous}. State was NOT updated - this is likely a broken "
-                "selector, not 'no open jobs'.")
+                "selector, not 'no open jobs'.", False)
 
     floor = profile.expected_min_jobs
     if floor > 0 and count < floor <= previous:
@@ -138,9 +175,16 @@ def _collapse_suspicion(slug: str, count: int, state: dict, profile) -> str:
                 f"expected_min_jobs floor of {floor}, after the previous run "
                 f"returned {previous}. State was NOT updated - a partial drop "
                 "like this is what broken pagination looks like. If the "
-                "company genuinely shrank, lower expected_min_jobs.")
+                "company genuinely shrank, lower expected_min_jobs.", True)
 
-    return ""
+    if previous >= _COLLAPSE_MIN_BASELINE and count < previous * _COLLAPSE_RATIO:
+        return (f"{slug}: got {count} jobs after the previous run returned "
+                f"{previous} - a drop of more than "
+                f"{(1 - _COLLAPSE_RATIO) * 100:g}% in one cron interval. State "
+                "was NOT updated. This needs no number in the profile: it is "
+                "measured against the company's own last healthy run.", True)
+
+    return "", False
 
 
 def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
@@ -160,12 +204,26 @@ def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     # where that isn't plausible, is not a legitimate outcome - it's most
     # likely a broken selector. State is left untouched, no "new jobs" are
     # sent, but the failure is still reported.
-    suspicion = _collapse_suspicion(slug, count, state, profile)
+    suspicion, is_partial = _collapse_suspicion(slug, count, state, profile)
+    accepted = ""
     if suspicion:
-        state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
-        _write_state(slug, state)   # only the failure counter updates, "jobs" stays as-is
-        return RunResult(slug=slug, status="empty_suspicious", new_jobs=[],
-                         total_fetched=count, message=suspicion)
+        failures = state.get("consecutive_failures", 0) + 1
+        if is_partial and failures >= PARTIAL_COLLAPSE_ACCEPT_AFTER:
+            # Held out long enough. The drop has now been reported on every
+            # one of those runs, so it is not going unnoticed; carrying on
+            # blocking is the more expensive mistake, because it also blocks
+            # every genuinely new posting at this company.
+            accepted = (f"{slug}: accepting {count} jobs as the new normal "
+                        f"after {failures} consecutive runs reporting a "
+                        "collapse. New-job detection resumes from this count. "
+                        "If this was a real breakage rather than a real drop, "
+                        "the jobs it stopped returning are now un-seen and "
+                        "will re-alert once it is fixed.")
+        else:
+            state["consecutive_failures"] = failures
+            _write_state(slug, state)   # only the counter updates, "jobs" stays as-is
+            return RunResult(slug=slug, status="empty_suspicious", new_jobs=[],
+                             total_fetched=count, message=suspicion)
 
     # A healthy run (or a company where 0 is plausible) - do a real diff
     previous_ids = set(state.get("jobs", {}).keys())
@@ -183,7 +241,12 @@ def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     state["consecutive_failures"] = 0
     _write_state(slug, state)
 
-    return RunResult(slug=slug, status="ok", new_jobs=new_jobs, total_fetched=count)
+    # `message` on an "ok" result means "this run was healthy, but something
+    # about it is worth telling the user" - currently only an accepted
+    # collapse. run.py sends it as a maintenance note and then carries on
+    # with the new jobs as normal.
+    return RunResult(slug=slug, status="ok", new_jobs=new_jobs,
+                     total_fetched=count, message=accepted)
 
 
 def seed_company(slug: str, fetched: list[Job]) -> None:

@@ -461,3 +461,83 @@ def test_seeding_never_overwrites_an_unreadable_state_file(tmp_path):
     state_mod.STATE_DIR.mkdir(parents=True, exist_ok=True)
     (state_mod.STATE_DIR / "acme.json").write_text("{broken", encoding="utf-8")
     assert run_mod._needs_seed("acme") is False
+
+
+# ---------------------------------------------------------------------------
+# The relative collapse check - the half of the gate that needs no per-profile
+# number, and therefore the half that survives a hundred companies
+# ---------------------------------------------------------------------------
+
+def test_a_sudden_drop_is_caught_without_any_floor_configured():
+    """expected_min_jobs is a number a human picked on one day. This check
+    measures the company against its own last healthy run instead, so it
+    works on a profile that never set a floor at all."""
+    jobs = [_job(f"id{i}") for i in range(30)]
+    state_mod.seed_company("acme", jobs)
+
+    result = state_mod.process_company("acme", jobs[:4],
+                                       _profile(expected_min_jobs=0))
+    assert result.status == "empty_suspicious"
+    assert "more than 60%" in result.message
+    assert len(state_mod.load_state("acme")["jobs"]) == 30   # nothing dropped
+
+
+def test_ordinary_churn_does_not_trip_the_ratio():
+    jobs = [_job(f"id{i}") for i in range(30)]
+    state_mod.seed_company("acme", jobs)
+    result = state_mod.process_company("acme", jobs[:20], _profile())
+    assert result.status == "ok"
+
+
+def test_a_small_company_is_not_judged_by_the_ratio():
+    """On a board with a handful of roles, one closing is a big percentage
+    and completely normal. The zero check and the floor cover these."""
+    jobs = [_job(f"id{i}") for i in range(6)]
+    state_mod.seed_company("acme", jobs)
+    result = state_mod.process_company("acme", jobs[:1], _profile())
+    assert result.status == "ok"
+
+
+def test_a_partial_collapse_is_accepted_after_holding_out_three_runs():
+    """The escape hatch, and why it is not optional. While the gate holds,
+    process_company returns NO new jobs - so a false positive silently stops
+    detecting real postings at that company, which is the exact failure the
+    gate exists to prevent. It reports the drop twice (crossing the alert
+    threshold), then resumes on its own."""
+    jobs = [_job(f"id{i}") for i in range(30)]
+    state_mod.seed_company("acme", jobs)
+    collapsed = jobs[:4]
+
+    assert state_mod.process_company("acme", collapsed,
+                                     _profile()).status == "empty_suspicious"
+    assert state_mod.process_company("acme", collapsed,
+                                     _profile()).status == "empty_suspicious"
+    # By now the failure counter has crossed the maintenance threshold, so
+    # the user has definitely been told.
+    assert state_mod.should_alert_failure("acme") is True
+
+    third = state_mod.process_company("acme", collapsed, _profile())
+    assert third.status == "ok"
+    assert "accepting 4 jobs as the new normal" in third.message
+
+    saved = state_mod.load_state("acme")
+    assert saved["last_count"] == 4
+    assert saved["consecutive_failures"] == 0
+
+    # And the point of accepting: new postings are detected again.
+    later = state_mod.process_company("acme", collapsed + [_job("fresh")],
+                                      _profile())
+    assert [j.id for j in later.new_jobs] == ["fresh"]
+
+
+def test_a_total_zero_never_auto_accepts():
+    """Freezing on a partial collapse costs real detections, so it has to
+    time out. Freezing on a total zero costs nothing - there are no jobs to
+    miss - so it stays frozen until a human looks."""
+    jobs = [_job(f"id{i}") for i in range(30)]
+    state_mod.seed_company("acme", jobs)
+
+    for _ in range(5):
+        result = state_mod.process_company("acme", [], _profile())
+        assert result.status == "empty_suspicious"
+    assert len(state_mod.load_state("acme")["jobs"]) == 30

@@ -316,6 +316,20 @@ def _run_normal() -> None:
                 notify_maintenance(profile.slug, result.message)
             continue
 
+        if result.message:
+            # A healthy run that still has something to say - today only an
+            # accepted collapse. Sent unconditionally rather than behind the
+            # repeated-failure threshold: it is a one-off statement of fact,
+            # not a symptom that might clear on its own, and it is the last
+            # thing the user hears about a drop before the bot resumes
+            # treating the lower count as normal.
+            print(f"[health gate] {result.message}", file=sys.stderr)
+            try:
+                notify_maintenance(profile.slug, result.message)
+            except Exception as e:
+                print(f"[send error] {profile.slug}: collapse note failed: "
+                      f"{e}", file=sys.stderr)
+
         if result.new_jobs:
             # process_company has ALREADY written every new id to state by
             # this point. The chain only decides what gets shown - a job

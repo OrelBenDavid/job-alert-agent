@@ -17,14 +17,11 @@ GitHub Actions - there is no server.
 - **"New job" detection** always runs on `Job.id` (the ATS's own id, or a
   canonicalized link) and never on display text - so a cosmetic change on the
   company's side can't produce a duplicate alert.
-- **Health gate**, two thresholds: a company that used to return jobs and now
-  returns **0** (a dead `job_selector`), or one whose count **fell below
-  `health.expected_min_jobs`** from a run that was above it (what broken
-  *pagination* looks like - page 1 still parses, pages 2..N stop coming, and
-  the count never reaches zero). Either way state is not overwritten, and a
+- **Health gate**, three thresholds. State is not overwritten and a
   maintenance alert goes out after two consecutive failures. A fetch that
   *raises* is counted the same way (`state.record_failure`) - it reaches the
   same threshold as a suspicious zero, rather than being logged and forgotten.
+  See "Health gate" below for the three and why they don't overlap.
 - **A profile is validated at load, not at fetch.** Anything the fetchers
   actually read is checked up front - the API platform must have a handler, a
   `ui_interaction` filter must carry `ui_actions_structured`, a
@@ -115,6 +112,36 @@ is the likeliest thing to break.
 240 runs/month, so a 2,000-minute free tier affords ~8 min per run - which
 sequential fetching at 100 companies would blow, and concurrent fetching
 comfortably fits. On a public repo this cost does not exist.
+
+## Health gate
+
+The worst failure this project has is not a crash - it is the scraper quietly
+returning *fewer* jobs than exist. The diff only reports what it saw; what it
+didn't see is never mentioned, nothing raises, and the bot goes silent while
+looking perfectly healthy. Three checks, covering three different shapes of
+that (all skipped when `zero_is_plausible`):
+
+| Check | Catches | Needs |
+|---|---|---|
+| count is **0** after a healthy run | a dead `job_selector` | nothing |
+| count below **`health.expected_min_jobs`**, from a run above it | **slow decay** - a drift downwards over weeks never trips a run-to-run comparison | a number in the profile |
+| count below **40% of the last healthy run** (baseline ≥ 10) | **sudden breakage** - broken pagination, page 1 parses and pages 2..N stop coming | nothing |
+
+The last two overlap on a good day and cover opposite failure shapes on a bad
+one, which is why both are there. **The ratio is the one that scales**:
+`expected_min_jobs` is a number a human picked on one day, and at a hundred
+companies those numbers go stale faster than anyone maintains them. Set it
+lazily - roughly half the observed count is fine. It only has to catch the
+decay the ratio can't see.
+
+**Partial collapses time out; a total zero doesn't.** While the gate holds,
+`process_company` returns no new jobs - so a *false* positive on a partial
+collapse silently stops detecting real postings at that company, which is the
+very failure the gate exists to prevent. After
+`PARTIAL_COLLAPSE_ACCEPT_AFTER` (3) consecutive runs it reports the drop one
+last time, accepts the lower count as the new normal, and resumes detecting.
+A total zero has no such cost - there are no jobs to miss - so it stays
+frozen until a human looks.
 
 ## Experience filter
 
