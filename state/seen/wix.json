@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-12T13:27:16.822819+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-12T16:04:32.270674+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-590f9dcc-c15c-57d3-9680-9114a9291310-T1785921299-744000143109760": {
+      "title": "Business Analyst - Channels",
+      "first_seen": "2026-08-12T16:04:32.270674+00:00"
+    },
     "https://careers.wix.com/position/oracle-f77c829d-96e3-5b86-aa4f-9e5684daa24b-T1786530688-744000143080909": {
       "title": "Applied Data Scientist",
       "first_seen": "2026-08-12T12:00:00.186312+00:00"

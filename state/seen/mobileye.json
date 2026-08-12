@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-12T13:27:16.821426+00:00",
-  "last_count": 120,
+  "last_success": "2026-08-12T16:04:32.268815+00:00",
+  "last_count": 118,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -177,10 +177,6 @@
     },
     "7fd694a5-5755-4405-9489-8de1a6eb8f57": {
       "title": "Experienced Data Analyst",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "48df21e2-84dd-42e7-9d55-f4121d444df8": {
-      "title": "Experienced Deep Learning Algorithm Developer - Road Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "a0c1252a-0f26-47f6-a3f5-99a089c999b0": {
@@ -457,10 +453,6 @@
     },
     "3d955240-fd2d-419d-8035-bf647c3da076": {
       "title": "Technical Product Strategy Manager",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
-      "title": "Test Automation Technical Lead",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "c217d67e-d12c-4ee8-afd2-6489873e6776": {
