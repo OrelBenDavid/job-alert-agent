@@ -35,11 +35,29 @@ def test_israel_does_not_need_remote_keyword():
 def test_whole_word_matching_not_substring():
     # "lod" must not match inside "Cloudera" - a real whole-word test
     assert is_israel_location("Cloudera HQ, remote") is False
-    # "us" must not match inside "Austin" - but "usa" still matches when spelled out
+    # and the same rule the other way: "us" sits inside "Jerusalem", which
+    # must not therefore read as a foreign region
+    assert is_qualified_remote("Remote - Jerusalem") is True
     assert is_qualified_remote("Remote - Austin, USA") is False
-    # by contrast: "Austin" alone, with no country mentioned, isn't in the
-    # foreign-city list - this is a known limitation (the list is
-    # countries/regions, not every city on earth), not a whole-word-
-    # matching bug. There's no way to know "Austin" means Texas without
-    # more context.
-    assert is_qualified_remote("Remote - Austin") is True
+
+
+def test_a_remote_job_anchored_to_a_foreign_city_is_dropped():
+    """The gap that used to be recorded here as a known limitation.
+
+    The marker list was countries plus a few capitals, so a remote role
+    naming only a city ("Remote - Austin", "Hybrid - Boston") was kept - a
+    job nobody in Israel can take. Invisible at three companies, a steady
+    trickle at a hundred."""
+    for location in ["Remote - Austin", "Hybrid - Boston", "Remote - New York",
+                     "Remote (Bay Area)", "Remote - Toronto",
+                     "Hybrid - Zurich", "Remote - Bangalore"]:
+        assert is_relevant_location(location) is False, location
+
+
+def test_regions_that_include_israel_are_still_kept():
+    """The other direction, and the reason the list stops where it does:
+    every entry can only ever remove a posting, so anything Israel plausibly
+    sits inside must stay out of it."""
+    for location in ["Remote - EMEA", "Remote - Global", "Remote - Worldwide",
+                     "Remote - Europe", "Remote", "Remote (Israel)"]:
+        assert is_relevant_location(location) is True, location

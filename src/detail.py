@@ -36,14 +36,42 @@ from models import Job
 _HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; job-alert-bot/1.0)"}
 _TIMEOUT = 15
 
-# A hard ceiling on per-run detail requests. On a normal run this is never
-# reached - a 3-hourly cron sees a handful of new postings, which is the
-# whole reason the cost stays near zero. It exists for the abnormal run: a
-# company reworking its board can turn every id over at once, and 300
-# sequential page fetches would blow the workflow's 20-minute timeout and
-# take the state commit down with it. Jobs past the cap keep
-# description=None, so the overflow fails open like every other miss.
+# A hard ceiling on detail requests. On a normal run this is never reached -
+# a 3-hourly cron sees a handful of new postings, which is the whole reason
+# the cost stays near zero. It exists for the abnormal run: a company
+# reworking its board can turn every id over at once, and 300 sequential page
+# fetches would blow the workflow's 20-minute timeout and take the state
+# commit down with it. Jobs past the cap keep description=None, so the
+# overflow fails open like every other miss.
 MAX_DETAIL_FETCHES_PER_RUN = 40
+
+
+class DetailBudget:
+    """The remaining detail-fetch allowance for a WHOLE run.
+
+    The number above was always described as a per-run cap and was in fact
+    enforced per company, because each call re-started its own count. At three
+    companies the difference is invisible; at a hundred it is the difference
+    between 40 requests and 4000, which at a 15s timeout apiece cannot fit in
+    any workflow timeout - and a run killed by the timeout commits no state at
+    all, so the whole run's work is lost and the next run repeats it.
+
+    Constructed once in run.py and passed down. A caller that doesn't pass one
+    gets a fresh budget, which is the old per-call behaviour and is what the
+    unit tests want."""
+
+    def __init__(self, remaining: int | None = None) -> None:
+        # Read at construction, not bound as a default argument, so the
+        # module constant stays patchable.
+        self.remaining = int(MAX_DETAIL_FETCHES_PER_RUN
+                             if remaining is None else remaining)
+
+    def take(self) -> bool:
+        """Claims one fetch. False means the run's allowance is spent."""
+        if self.remaining <= 0:
+            return False
+        self.remaining -= 1
+        return True
 
 
 def normalize_description(raw: str | None, content_is_html: bool) -> str | None:
@@ -165,18 +193,19 @@ def _extract_from_html(markup: str, cfg: dict) -> str | None:
     return str(element) if element else None
 
 
-def _fetch_html_descriptions(jobs: list[Job], cfg: dict, slug: str) -> list[Job]:
+def _fetch_html_descriptions(jobs: list[Job], cfg: dict, slug: str,
+                             budget: DetailBudget) -> list[Job]:
     """One plain GET per posting. Each failure is isolated to its own job."""
     enriched: list[Job] = []
     session = requests.Session()      # reuse the connection across postings
     session.headers.update(_HEADERS)
 
     for index, job in enumerate(jobs):
-        if index >= MAX_DETAIL_FETCHES_PER_RUN:
-            print(f"[detail cap] {slug}: stopping after "
-                  f"{MAX_DETAIL_FETCHES_PER_RUN} detail fetches; the "
-                  f"remaining {len(jobs) - index} jobs stay undetermined "
-                  "(they are still sent, flagged)", file=sys.stderr)
+        if not budget.take():
+            print(f"[detail cap] {slug}: the run's detail-fetch budget is "
+                  f"spent; the remaining {len(jobs) - index} jobs stay "
+                  "undetermined (they are still sent, flagged)",
+                  file=sys.stderr)
             enriched.extend(jobs[index:])
             break
 
@@ -196,7 +225,8 @@ def _fetch_html_descriptions(jobs: list[Job], cfg: dict, slug: str) -> list[Job]
     return enriched
 
 
-def _fetch_playwright_descriptions(jobs: list[Job], cfg: dict, slug: str) -> list[Job]:
+def _fetch_playwright_descriptions(jobs: list[Job], cfg: dict, slug: str,
+                                   budget: DetailBudget) -> list[Job]:
     """Same as the html path, but for postings that only render under JS.
 
     The browser is launched ONCE for the whole company, not per posting -
@@ -214,12 +244,11 @@ def _fetch_playwright_descriptions(jobs: list[Job], cfg: dict, slug: str) -> lis
             page = browser.new_page(user_agent=_HEADERS["User-Agent"])
             try:
                 for index, job in enumerate(jobs):
-                    if index >= MAX_DETAIL_FETCHES_PER_RUN:
-                        print(f"[detail cap] {slug}: stopping after "
-                              f"{MAX_DETAIL_FETCHES_PER_RUN} detail fetches; "
-                              f"the remaining {len(jobs) - index} jobs stay "
-                              "undetermined (still sent, flagged)",
-                              file=sys.stderr)
+                    if not budget.take():
+                        print(f"[detail cap] {slug}: the run's detail-fetch "
+                              f"budget is spent; the remaining "
+                              f"{len(jobs) - index} jobs stay undetermined "
+                              "(still sent, flagged)", file=sys.stderr)
                         enriched.extend(jobs[index:])
                         break
                     try:
@@ -244,11 +273,14 @@ def _fetch_playwright_descriptions(jobs: list[Job], cfg: dict, slug: str) -> lis
     return enriched
 
 
-def enrich(jobs: list[Job], profile) -> list[Job]:
+def enrich(jobs: list[Job], profile, budget: DetailBudget | None = None) -> list[Job]:
     """jobs -> the same jobs, with `description` filled in where possible.
 
     Returns a list of the same length and order in every case, so a caller
-    can never lose a job to the detail layer."""
+    can never lose a job to the detail layer.
+
+    `budget` is the whole run's remaining request allowance, shared across
+    companies. Omitting it gives this call its own fresh budget."""
     if not jobs:
         return jobs
 
@@ -256,15 +288,18 @@ def enrich(jobs: list[Job], profile) -> list[Job]:
     if not cfg:
         return jobs          # v2 profile, or method "none" - all undetermined
 
+    budget = budget if budget is not None else DetailBudget()
+
     method = cfg.get("method")
     if method == "inline":
         # Nothing to do: the listing response already carried the description
         # and the fetcher populated it. Zero extra requests, which is why
-        # inline is checked for before any per-job request is ever built.
+        # inline is checked for before any per-job request is ever built - and
+        # why it does not touch the budget at all.
         return jobs
     if method == "html":
-        return _fetch_html_descriptions(jobs, cfg, profile.slug)
+        return _fetch_html_descriptions(jobs, cfg, profile.slug, budget)
     if method == "playwright":
-        return _fetch_playwright_descriptions(jobs, cfg, profile.slug)
+        return _fetch_playwright_descriptions(jobs, cfg, profile.slug, budget)
 
     return jobs

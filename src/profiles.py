@@ -24,6 +24,23 @@ PROFILES_DIR = Path(__file__).resolve().parent.parent / "profiles"
 # cheap-to-expensive rule the fetch_type dispatch follows.
 DETAIL_METHODS = ("inline", "html", "playwright", "none")
 
+# The ATS platforms that actually have a handler in fetchers/api.py. Kept here
+# as a literal rather than imported from there, because importing the fetchers
+# package pulls in playwright, which a profile-validation pass has no reason
+# to require. tests/test_profiles_schema.py asserts the two stay in sync.
+#
+# Validating this at LOAD time rather than at fetch time is the point: the
+# skill's platform table lists four more platforms (ashby, workable,
+# recruitee, workday) than this project implements, so a profile naming one of
+# them used to validate cleanly and then fail once per run, per company, as a
+# fetch error - which needs two consecutive failures before it says anything.
+IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters")
+
+# The step verbs fetchers/browser.py's _apply_relevance_filter_actions can
+# replay. An unknown verb raises there, mid-fetch; catching it here means a
+# typo fails at load with the filename attached.
+UI_ACTIONS = ("click", "fill", "press", "wait")
+
 
 class ProfileError(Exception):
     """Validation error in a profile - raised with the filename and the
@@ -122,6 +139,98 @@ def _validate_detail_fetch(block: dict, where: str) -> None:
             "missing.")
 
 
+def _validate_israel_filter(data: dict, where: str) -> None:
+    """Validates the parts of `israel_filter` that the fetchers actually read.
+
+    *** Why this is worth failing a load over ***
+
+    Both checks here cover the same class of bug, and it is the nastiest one
+    this project has: a profile that looks complete, runs without raising, and
+    quietly returns the wrong set of jobs.
+
+    `ui_actions_structured` is the machine-readable step list
+    browser._apply_relevance_filter_actions replays. It is easy to author a
+    `ui_interaction` profile with only the prose `ui_actions` field, in which
+    case the loop finds nothing to replay and applies NO location filter at
+    all. Nothing raises: the post_fetch relevance check still keeps the
+    results correct, but pagination is now walking the company's ENTIRE
+    unfiltered listing, and `max_pages` truncates it - so Israeli postings
+    past the cap are never seen, the count stays healthy, and the health gate
+    has nothing to notice. Silent loss, which is the one thing this project
+    exists to prevent.
+
+    `flat_multi_location` has a blunter version of the same problem: the
+    strategy needs two selectors that live in the `playwright` block, and
+    without them it raises KeyError mid-fetch (recorded in wix.json's notes as
+    an actually-observed failure) rather than at load.
+    """
+    israel_filter = data.get("israel_filter")
+    if not isinstance(israel_filter, dict):
+        raise ProfileError(f"{where}israel_filter must be an object")
+
+    method = israel_filter.get("method")
+    if method not in ("url_param", "ui_interaction", "post_fetch"):
+        raise ProfileError(
+            f"{where}israel_filter.method invalid: {method!r}. Expected "
+            "'url_param', 'ui_interaction' or 'post_fetch'.")
+
+    if method == "url_param" and not israel_filter.get("param"):
+        raise ProfileError(
+            f"{where}israel_filter.method='url_param' but param is missing - "
+            "there is no way to know which query parameter carries the filter.")
+
+    if method == "ui_interaction":
+        steps = israel_filter.get("ui_actions_structured")
+        if not steps:
+            raise ProfileError(
+                f"{where}israel_filter.method='ui_interaction' requires a "
+                "non-empty ui_actions_structured list. The prose `ui_actions` "
+                "field is documentation; ui_actions_structured is what gets "
+                "replayed. Without it no filter is applied at runtime and the "
+                "unfiltered listing is paginated instead - silently, and with "
+                "max_pages truncating the results.")
+        if not isinstance(steps, list):
+            raise ProfileError(
+                f"{where}israel_filter.ui_actions_structured must be a list")
+        for index, step in enumerate(steps):
+            if not isinstance(step, dict):
+                raise ProfileError(
+                    f"{where}ui_actions_structured[{index}] must be an object")
+            action = step.get("action")
+            if action not in UI_ACTIONS:
+                raise ProfileError(
+                    f"{where}ui_actions_structured[{index}].action invalid: "
+                    f"{action!r}. Expected one of {UI_ACTIONS}.")
+            if action == "click" and not step.get("selector"):
+                raise ProfileError(
+                    f"{where}ui_actions_structured[{index}] action='click' "
+                    "needs a selector")
+            if action == "fill" and not (step.get("selector") and
+                                         step.get("value") is not None):
+                raise ProfileError(
+                    f"{where}ui_actions_structured[{index}] action='fill' "
+                    "needs both selector and value")
+            if action in ("press", "wait") and step.get("value") is None:
+                raise ProfileError(
+                    f"{where}ui_actions_structured[{index}] action={action!r} "
+                    "needs a value")
+
+    if (israel_filter.get("structure") == "flat_multi_location"
+            and data.get("fetch_type") == "playwright"):
+        block = data.get("playwright") or {}
+        for field_name in ("location_filter_selector", "location_option_selector"):
+            if not block.get(field_name):
+                raise ProfileError(
+                    f"{where}israel_filter.structure='flat_multi_location' "
+                    f"requires playwright.{field_name} - the multi-location "
+                    "walk opens the picker and reads its options, and without "
+                    "this it raises mid-fetch instead of at load.")
+        if not israel_filter.get("param"):
+            raise ProfileError(
+                f"{where}israel_filter.structure='flat_multi_location' "
+                "requires israel_filter.param - the per-city query parameter.")
+
+
 def _validate(data: dict, path: Path) -> None:
     """Checks the fields required by the schema. Doesn't silently patch
     values - a profile with a missing field fails loudly, at load time,
@@ -163,10 +272,22 @@ def _validate(data: dict, path: Path) -> None:
         raise ProfileError(
             f"{where}fetch_type={fetch_type!r} but no {fetch_type!r} block in the profile")
 
+    _validate_israel_filter(data, where)
+
     block = data[fetch_type]
     if fetch_type == "api":
-        if not block.get("platform"):
+        platform = block.get("platform")
+        if not platform:
             raise ProfileError(f"{where}api.platform missing")
+        if platform not in IMPLEMENTED_API_PLATFORMS:
+            raise ProfileError(
+                f"{where}api.platform={platform!r} has no handler in "
+                f"fetchers/api.py. Implemented: {IMPLEMENTED_API_PLATFORMS}. "
+                "Adding one is a dispatcher change (and, per the skill, needs "
+                "a live verification first) - not something a profile can "
+                "declare on its own.")
+        if not block.get("endpoint"):
+            raise ProfileError(f"{where}api.endpoint missing")
         fields = block.get("fields", {})
         for f in ("id", "title", "location", "url"):
             if f not in fields:

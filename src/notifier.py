@@ -6,8 +6,13 @@ of bugs (Telegram requires escaping characters like . - ( ) ! even in plain
 text, not just in formatting syntax).
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
 import os
 import re
+import sys
+import time
+
 import requests
 
 from models import Job
@@ -27,24 +32,102 @@ def escape_mdv2(text: str) -> str:
     return re.sub(f"([{re.escape(_MDV2_SPECIAL)}])", r"\\\1", text)
 
 
+def escape_mdv2_url(url: str) -> str:
+    """Escapes a URL for use INSIDE a MarkdownV2 link destination.
+
+    A different rule from escape_mdv2, and both directions matter. Inside
+    `(...)` Telegram treats only `)` and `\\` as special, so those two must be
+    escaped - an unescaped `)` in a job URL closes the link early and leaves
+    the tail as unescaped text, which Telegram rejects with a 400 on the whole
+    message. Everything else must be left ALONE: running escape_mdv2 over a
+    URL would escape the `-`, `.` and `_` that every real job link contains
+    and deliver a link that 404s."""
+    return url.replace("\\", "\\\\").replace(")", "\\)")
+
+
 def _get_credentials() -> tuple[str, str]:
     token = os.environ["TELEGRAM_BOT_TOKEN"]
     chat_id = os.environ["TELEGRAM_CHAT_ID"]
     return token, chat_id
 
 
+# *** Rate limiting ***
+#
+# Telegram enforces roughly one message per second to a single chat, and
+# answers a burst with 429 + a `retry_after`. Every send in this project goes
+# to the same chat, and a run that finds new jobs at many companies sends them
+# back-to-back in a tight sequential loop - so at three companies this never
+# fires and at a hundred it is the single most likely failure in the whole
+# system. A 429 propagating out of here is not a harmless retry: it is a send
+# failure, which run.py treats as fatal for the company's state.
+#
+# Two defences, because they cover different things: a pacer that keeps a
+# normal run under the limit, and a retry that honours Telegram's own
+# retry_after when the pacer wasn't enough (another client on the same bot, a
+# tightened server-side limit).
+_MIN_SEND_INTERVAL = float(os.environ.get("JOB_ALERT_SEND_INTERVAL", "1.05"))
+_MAX_SEND_ATTEMPTS = 4
+_MAX_RETRY_AFTER = 60      # a longer cooldown than this is not worth holding
+                            # the whole run for - fail and retry next run
+_last_send_at = 0.0
+
+
+def _pace() -> None:
+    """Blocks until at least _MIN_SEND_INTERVAL has passed since the last
+    send. Costs nothing on a normal run (a handful of messages, seconds
+    apart anyway) and is what keeps a mass-alert run under the limit."""
+    global _last_send_at
+    if _MIN_SEND_INTERVAL > 0:
+        wait = _MIN_SEND_INTERVAL - (time.monotonic() - _last_send_at)
+        if wait > 0:
+            time.sleep(wait)
+    _last_send_at = time.monotonic()
+
+
+def _retry_after_seconds(response) -> float | None:
+    """Telegram's requested cooldown, from the JSON body or the header.
+    Returns None if this isn't a throttling response we can honour."""
+    try:
+        value = (response.json().get("parameters") or {}).get("retry_after")
+    except Exception:
+        value = None
+    if value is None:
+        value = response.headers.get("Retry-After")
+    try:
+        seconds = float(value)
+    except (TypeError, ValueError):
+        return None
+    return seconds if 0 <= seconds <= _MAX_RETRY_AFTER else None
+
+
 def send_message(text: str, parse_mode: str = "MarkdownV2") -> None:
-    """Sends a single message. Not swallowed silently: if Telegram returns
-    an error, it propagates - better for the run to fail loudly than for
-    an alert to vanish without a trace."""
+    """Sends a single message, retrying only on an explicit 429.
+
+    Any other error still propagates: if Telegram rejects a message, that has
+    to be loud - better for the run to fail than for an alert to vanish
+    without a trace. A 429 is the one exception, because it is not a rejection
+    at all, it is "ask again in N seconds"."""
     token, chat_id = _get_credentials()
-    r = requests.post(
-        TELEGRAM_API.format(token=token, method="sendMessage"),
-        json={"chat_id": chat_id, "text": text, "parse_mode": parse_mode,
-              "disable_web_page_preview": True},
-        timeout=15,
-    )
-    r.raise_for_status()
+
+    for attempt in range(1, _MAX_SEND_ATTEMPTS + 1):
+        _pace()
+        r = requests.post(
+            TELEGRAM_API.format(token=token, method="sendMessage"),
+            json={"chat_id": chat_id, "text": text, "parse_mode": parse_mode,
+                  "disable_web_page_preview": True},
+            timeout=15,
+        )
+        if r.status_code != 429 or attempt == _MAX_SEND_ATTEMPTS:
+            r.raise_for_status()
+            return
+
+        cooldown = _retry_after_seconds(r)
+        if cooldown is None:
+            r.raise_for_status()
+            return
+        print(f"[telegram] rate limited, waiting {cooldown:g}s "
+              f"(attempt {attempt}/{_MAX_SEND_ATTEMPTS})", file=sys.stderr)
+        time.sleep(cooldown)
 
 
 # Telegram rejects any message over 4096 characters outright, with a 400.
@@ -60,13 +143,35 @@ TELEGRAM_MAX_CHARS = 4096
 _PART_COUNTER_RESERVE = 12
 
 
+def _job_line(job: Job) -> str:
+    """One job as a single MarkdownV2 line - a link when there is a URL,
+    plain text when there isn't.
+
+    *** Why the empty-URL branch exists ***
+
+    A job can legitimately reach here with url="": a card whose link_selector
+    missed on one posting (the id then falls back to company|title|location),
+    or an API field that came back empty. Rendering that as "[label]()" is an
+    empty link destination, which Telegram rejects with a 400 - and that 400
+    is not a small problem. It fails the company's whole batch, which run.py
+    treats as a fatal send failure, which means state is never committed,
+    which means the same broken job is re-detected and re-sent on the NEXT
+    run, and the next, forever. One malformed card would take every alert for
+    every company down permanently. So a missing link costs its own link, and
+    nothing else."""
+    label = escape_mdv2(job.display())
+    if not job.url:
+        return f"• {label}"
+    return f"• [{label}]({escape_mdv2_url(job.url)})"
+
+
 def _job_block(job: Job, tags: dict) -> str:
     """One job's lines: the link, plus its filter tag if it has one.
 
     Kept together as a unit so packing can never split a job from its tag.
     display() is called only here - this is the single place in the whole
     project where "Title — Location" is ever constructed."""
-    lines = [f"• [{escape_mdv2(job.display())}]({job.url})"]
+    lines = [_job_line(job)]
     tag = tags.get(job.id)
     if tag:
         # Indented under its job rather than appended to the link text, so
@@ -145,13 +250,13 @@ def format_job_list_message(company_name: str, jobs: list[Job], careers_url: str
     shown = jobs[:_MAX_JOBS_IN_LIST_REPLY]
     lines = [header, ""]
     for j in shown:
-        title_loc = escape_mdv2(j.display())
-        lines.append(f"• [{title_loc}]({j.url})")
+        lines.append(_job_line(j))   # same link/plain-text rule as an alert
 
     remaining = len(jobs) - len(shown)
     if remaining > 0:
         lines.append("")
-        lines.append(f"_\\+{remaining} more — see [the careers page]({careers_url})\\._")
+        lines.append(f"_\\+{remaining} more — see "
+                     f"[the careers page]({escape_mdv2_url(careers_url)})\\._")
     return "\n".join(lines)
 
 

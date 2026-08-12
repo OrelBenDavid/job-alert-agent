@@ -25,6 +25,7 @@ _BASE = {
     "fetch_type": "api",
     "israel_filter": {"method": "post_fetch"},
     "api": {"platform": "lever",
+            "endpoint": "https://api.lever.co/v0/postings/acme?mode=json",
             "fields": {"id": "id", "title": "text",
                        "location": "categories.location", "url": "hostedUrl"}},
     "health": {"expected_min_jobs": 5},
@@ -144,3 +145,102 @@ def test_both_shipped_detail_fetch_blocks_are_verified():
 
 def test_current_schema_version_is_three():
     assert CURRENT_SCHEMA_VERSION == 3
+
+
+# ---------------------------------------------------------------------------
+# The fields the fetchers actually read
+#
+# Everything below guards the same class of bug, and it is the nastiest one
+# this project has: a profile that looks complete, loads, runs without raising,
+# and quietly returns the wrong set of jobs. Catching these at load time is the
+# difference between a loud "fix your profile" and a company that appears
+# healthy while silently under-reporting.
+# ---------------------------------------------------------------------------
+
+def test_the_implemented_platform_list_matches_the_dispatcher():
+    """profiles.py keeps its own copy so validation doesn't have to import
+    playwright. This is what stops the two drifting."""
+    from fetchers.api import _PLATFORM_DISPATCH
+    from profiles import IMPLEMENTED_API_PLATFORMS
+    assert set(IMPLEMENTED_API_PLATFORMS) == set(_PLATFORM_DISPATCH)
+
+
+def test_a_platform_with_no_handler_is_rejected_at_load(tmp_path):
+    """Ashby is in the skill's table and has no handler here. It used to load
+    cleanly and then fail once per run as an ordinary fetch error - which says
+    nothing until it has failed twice."""
+    api = dict(_BASE["api"], platform="ashby")
+    with pytest.raises(ProfileError, match="no handler"):
+        load_profile(_write(tmp_path, api=api))
+
+
+def test_an_api_profile_without_an_endpoint_is_rejected(tmp_path):
+    api = {k: v for k, v in _BASE["api"].items() if k != "endpoint"}
+    with pytest.raises(ProfileError, match="endpoint"):
+        load_profile(_write(tmp_path, api=api))
+
+
+def test_ui_interaction_without_structured_actions_is_rejected(tmp_path):
+    """The skill documents `ui_actions` (prose) and the fetcher replays
+    `ui_actions_structured`. A profile carrying only the first applies NO
+    location filter at runtime - nothing raises, the post_fetch check keeps
+    the results correct, but pagination now walks the company's ENTIRE
+    unfiltered listing and max_pages truncates it. Israeli postings past the
+    cap are never seen, and the count stays healthy enough that the health
+    gate notices nothing."""
+    with pytest.raises(ProfileError, match="ui_actions_structured"):
+        load_profile(_write(tmp_path, israel_filter={
+            "method": "ui_interaction",
+            "ui_actions": "click the location box, type Israel, press Enter",
+        }))
+
+
+def test_a_valid_structured_action_list_is_accepted(tmp_path):
+    profile = load_profile(_write(tmp_path, israel_filter={
+        "method": "ui_interaction",
+        "ui_actions_structured": [
+            {"action": "click", "selector": "#loc"},
+            {"action": "fill", "selector": "#loc-input", "value": "Israel"},
+            {"action": "press", "value": "Enter"},
+            {"action": "wait", "value": 1500},
+        ],
+    }))
+    assert profile.israel_filter["method"] == "ui_interaction"
+
+
+@pytest.mark.parametrize("step", [
+    {"action": "scroll", "selector": "#x"},        # not a verb the fetcher has
+    {"action": "click"},                            # click with no selector
+    {"action": "fill", "selector": "#x"},           # fill with no value
+    {"action": "press"},                            # press with no key
+])
+def test_a_malformed_action_step_is_rejected(tmp_path, step):
+    """These used to raise from inside the fetch, per company, per run."""
+    with pytest.raises(ProfileError, match="ui_actions_structured"):
+        load_profile(_write(tmp_path, israel_filter={
+            "method": "ui_interaction", "ui_actions_structured": [step]}))
+
+
+def test_url_param_without_a_param_is_rejected(tmp_path):
+    with pytest.raises(ProfileError, match="param"):
+        load_profile(_write(tmp_path, israel_filter={"method": "url_param"}))
+
+
+def test_flat_multi_location_requires_the_selectors_it_walks(tmp_path):
+    """wix.json's notes record hitting exactly this as a live KeyError
+    mid-fetch. It belongs at load time, with the filename attached."""
+    with pytest.raises(ProfileError, match="location_filter_selector"):
+        load_profile(_write(
+            tmp_path,
+            fetch_type="playwright",
+            israel_filter={"method": "post_fetch",
+                           "structure": "flat_multi_location",
+                           "param": "location"},
+            playwright={"job_selector": ".j", "title_selector": ".t",
+                        "location_selector": ".l", "link_selector": "a",
+                        "pagination": {"method": "url_param"}}))
+
+
+def test_an_unknown_israel_filter_method_is_rejected(tmp_path):
+    with pytest.raises(ProfileError, match="israel_filter.method"):
+        load_profile(_write(tmp_path, israel_filter={"method": "magic"}))

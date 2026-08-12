@@ -26,6 +26,7 @@ in English per the project's comment convention.
 
 import json
 import os
+import sys
 from pathlib import Path
 
 import requests
@@ -41,14 +42,31 @@ TELEGRAM_STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "telegr
 
 
 def _load_offset() -> int:
+    """The last update id handled. A missing or unreadable file reads as 0.
+
+    Guarded the same way settings.py and stats.py guard their reads: a
+    truncated telegram.json must degrade to "re-read the last 24h of updates"
+    (Telegram's own retention window), not raise and take the command layer
+    down permanently."""
     if not TELEGRAM_STATE_PATH.exists():
         return 0
-    return json.loads(TELEGRAM_STATE_PATH.read_text(encoding="utf-8")).get("offset", 0)
+    try:
+        stored = json.loads(TELEGRAM_STATE_PATH.read_text(encoding="utf-8"))
+        return int(stored.get("offset", 0))
+    except (json.JSONDecodeError, TypeError, ValueError, OSError) as e:
+        print(f"[commands] unreadable {TELEGRAM_STATE_PATH.name} ({e}); "
+              "starting from offset 0", file=sys.stderr)
+        return 0
 
 
 def _save_offset(offset: int) -> None:
+    """Atomic write, same pattern as state.py/settings.py/stats.py - this
+    file was the one state writer that wasn't, and a half-written offset is
+    what _load_offset above then has to survive."""
     TELEGRAM_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    TELEGRAM_STATE_PATH.write_text(json.dumps({"offset": offset}), encoding="utf-8")
+    tmp = TELEGRAM_STATE_PATH.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps({"offset": offset}), encoding="utf-8")
+    tmp.replace(TELEGRAM_STATE_PATH)
 
 
 def _fetch_updates() -> list[dict]:
@@ -239,39 +257,63 @@ def _handle_stats() -> str:
     return "\n".join(lines)
 
 
+def _dispatch(update: dict) -> None:
+    """Runs one update's command, if it has one."""
+    text = ((update.get("message") or {}).get("text") or "").strip()
+    if not text.startswith("/"):
+        return
+
+    parts = text.split(maxsplit=1)
+    cmd = parts[0].lower()
+    arg = parts[1].strip() if len(parts) > 1 else ""
+
+    if cmd == "/list":
+        send_message(_handle_list())
+    elif cmd == "/remove" and arg:
+        send_message(_handle_remove(arg))
+    elif cmd == "/add" and arg:
+        send_message(_handle_add(arg))
+    elif cmd == "/jobs" and arg:
+        send_message(_handle_jobs(arg))
+    elif cmd == "/filter":
+        send_message(_handle_filter(arg))     # no arg = show current state
+    elif cmd == "/minexp":
+        send_message(_handle_minexp(arg))
+    elif cmd == "/stats":
+        send_message(_handle_stats())
+    # Unrecognized commands are ignored silently - no need to flood
+    # error messages for every typo
+
+
 def process_commands() -> None:
     """Called at the start of every run.py invocation, before the job check
-    itself."""
+    itself.
+
+    *** Why the offset advances even past a command that failed ***
+
+    Each update is isolated, and the offset is saved in a `finally`. The
+    earlier version saved it only after the whole loop succeeded, so any
+    exception - a send that 400s on a reply, an unexpected update shape - left
+    the offset unmoved and Telegram handed the SAME update back on every
+    subsequent run for the 24 hours it retains it. A command that failed once
+    fails identically every time, so that is an infinite retry of a known
+    failure, and for `/jobs <slug>` it is an infinite retry that costs a live
+    fetch (and a browser launch) every run. Handled-and-logged is the only
+    terminating choice; the user's cue that something went wrong is the reply
+    that never arrives.
+    """
     updates = _fetch_updates()
     if not updates:
         return
 
     max_update_id = _load_offset()
-    for update in updates:
-        max_update_id = max(max_update_id, update["update_id"])
-        text = (update.get("message") or {}).get("text", "").strip()
-        if not text.startswith("/"):
-            continue
-
-        parts = text.split(maxsplit=1)
-        cmd = parts[0].lower()
-        arg = parts[1].strip() if len(parts) > 1 else ""
-
-        if cmd == "/list":
-            send_message(_handle_list())
-        elif cmd == "/remove" and arg:
-            send_message(_handle_remove(arg))
-        elif cmd == "/add" and arg:
-            send_message(_handle_add(arg))
-        elif cmd == "/jobs" and arg:
-            send_message(_handle_jobs(arg))
-        elif cmd == "/filter":
-            send_message(_handle_filter(arg))     # no arg = show current state
-        elif cmd == "/minexp":
-            send_message(_handle_minexp(arg))
-        elif cmd == "/stats":
-            send_message(_handle_stats())
-        # Unrecognized commands are ignored silently - no need to flood
-        # error messages for every typo
-
-    _save_offset(max_update_id)
+    try:
+        for update in updates:
+            max_update_id = max(max_update_id, update.get("update_id", 0))
+            try:
+                _dispatch(update)
+            except Exception as e:
+                print(f"[command error] update "
+                      f"{update.get('update_id')}: {e}", file=sys.stderr)
+    finally:
+        _save_offset(max_update_id)

@@ -32,19 +32,59 @@ class RunResult:
                                        # logging and diagnostics
 
 
+class StateUnreadable(Exception):
+    """A company's state file exists but can't be parsed.
+
+    A distinct type, and deliberately NOT folded into "empty state", because
+    the two must lead to opposite actions. Empty state means "never seeded"
+    and run.py skips the company with a seed-gap notice. An unreadable file
+    means the ids ARE on disk and just can't be read right now - treating that
+    as "never seeded" would invite a re-seed that silently swallows every
+    currently-open posting as already-known, which is the one outcome this
+    project is built to prevent.
+
+    It also must not be a bare json.JSONDecodeError escaping into run.py: that
+    read happens in a loop before any company is fetched, so one damaged file
+    took the entire run down - every company, no alerts - which is exactly the
+    failure mode settings.py and stats.py already guard their own reads
+    against."""
+
+
 def _state_path(slug: str) -> Path:
     return STATE_DIR / f"{slug}.json"
+
+
+def _empty_state() -> dict:
+    return {"last_success": None, "last_count": 0,
+            "consecutive_failures": 0, "jobs": {}}
 
 
 def load_state(slug: str) -> dict:
     """Loads a company's existing state. A brand-new company (never seeded)
     gets empty state back - that's expected, and run.py treats it as a case
-    that needs a manual seed, not a normal run."""
+    that needs a manual seed, not a normal run.
+
+    Missing keys are filled from the empty state rather than read straight
+    off disk: an older or hand-edited file lacking `last_count` used to raise
+    KeyError from inside the health gate, mid-run, after the fetch was already
+    paid for."""
     path = _state_path(slug)
     if not path.exists():
-        return {"last_success": None, "last_count": 0,
-                "consecutive_failures": 0, "jobs": {}}
-    return json.loads(path.read_text(encoding="utf-8"))
+        return _empty_state()
+
+    try:
+        stored = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        raise StateUnreadable(f"{slug}: {path.name} could not be read ({e})") from e
+    if not isinstance(stored, dict):
+        raise StateUnreadable(
+            f"{slug}: {path.name} is valid JSON but not an object")
+
+    state = _empty_state()
+    state.update(stored)
+    if not isinstance(state.get("jobs"), dict):
+        raise StateUnreadable(f"{slug}: {path.name} has no readable 'jobs' map")
+    return state
 
 
 def _write_state(slug: str, state: dict) -> None:
@@ -58,31 +98,74 @@ def _write_state(slug: str, state: dict) -> None:
     tmp.replace(path)
 
 
+def _collapse_suspicion(slug: str, count: int, state: dict, profile) -> str:
+    """The health gate's decision, as a message - or "" for a healthy run.
+
+    Two thresholds, because a listing can break in two shapes and only one of
+    them used to be caught:
+
+    1. A TOTAL zero after any healthy count. The original gate, and the one
+       that catches a dead job_selector.
+
+    2. A PARTIAL collapse below `health.expected_min_jobs`, from a run that
+       was itself above that floor. This is what a broken *pagination* looks
+       like - page 1 still parses, pages 2..N silently stop coming - and it
+       was entirely invisible before: the count stays comfortably above zero,
+       so the gate passed, state was rewritten to the truncated set (dropping
+       every id past page 1), and real new postings beyond page 1 were never
+       detected. When the fetch is later fixed, all the dropped ids come back
+       at once as "new". `expected_min_jobs` was documented in the profile
+       schema and the README as doing exactly this, and was in fact read by
+       nothing at all.
+
+    The `floor <= previous` condition is what keeps this honest: it only fires
+    when the previous run cleared the floor itself, so a floor set too high
+    for a company that has genuinely shrunk produces one gate hit, not a
+    permanent one - and the fix is to lower the number the profile claims.
+    """
+    if profile.zero_is_plausible:
+        return ""
+
+    previous = state.get("last_count", 0)
+    if count == 0 and previous > 0:
+        return (f"{slug}: got 0 jobs after the previous run returned "
+                f"{previous}. State was NOT updated - this is likely a broken "
+                "selector, not 'no open jobs'.")
+
+    floor = profile.expected_min_jobs
+    if floor > 0 and count < floor <= previous:
+        return (f"{slug}: got {count} jobs, below the profile's "
+                f"expected_min_jobs floor of {floor}, after the previous run "
+                f"returned {previous}. State was NOT updated - a partial drop "
+                "like this is what broken pagination looks like. If the "
+                "company genuinely shrank, lower expected_min_jobs.")
+
+    return ""
+
+
 def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     """Runs the diff for a single company and updates its state - unless a
     silent-failure was suspected, in which case the state is left exactly
     as it was.
 
-    profile is src.profiles.Profile - only .zero_is_plausible is needed here.
+    profile is src.profiles.Profile - only the two health fields are needed
+    here, .zero_is_plausible and .expected_min_jobs.
     """
     state = load_state(slug)
     now = datetime.now(timezone.utc).isoformat()
     count = len(fetched)
 
     # *** The health gate - the core of the anti "silent zero" mechanism ***
-    # 0 jobs after a healthy count in the past, on a company where 0 isn't
-    # considered plausible, is not a legitimate outcome - it's most likely
-    # a broken selector. State is left untouched, no "new jobs" are sent
-    # (there are 0...), but the failure is still reported.
-    if count == 0 and state["last_count"] > 0 and not profile.zero_is_plausible:
+    # A count that collapsed against a previously healthy run, on a company
+    # where that isn't plausible, is not a legitimate outcome - it's most
+    # likely a broken selector. State is left untouched, no "new jobs" are
+    # sent, but the failure is still reported.
+    suspicion = _collapse_suspicion(slug, count, state, profile)
+    if suspicion:
         state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
         _write_state(slug, state)   # only the failure counter updates, "jobs" stays as-is
-        status = "empty_suspicious"
-        msg = (f"{slug}: got 0 jobs after the previous run returned "
-               f"{state['last_count']}. State was NOT updated - this is "
-               "likely a broken selector, not 'no open jobs'.")
-        return RunResult(slug=slug, status=status, new_jobs=[],
-                         total_fetched=0, message=msg)
+        return RunResult(slug=slug, status="empty_suspicious", new_jobs=[],
+                         total_fetched=count, message=suspicion)
 
     # A healthy run (or a company where 0 is plausible) - do a real diff
     previous_ids = set(state.get("jobs", {}).keys())
@@ -115,6 +198,19 @@ def seed_company(slug: str, fetched: list[Job]) -> None:
         "jobs": {j.id: {"title": j.title, "first_seen": now} for j in fetched},
     }
     _write_state(slug, state)
+
+
+def restore_state(slug: str, previous: dict) -> None:
+    """Puts a company's state file back to a snapshot taken before this run
+    touched it.
+
+    Used for exactly one thing: an alert that could not be sent. State is
+    written BEFORE notification (deliberately - see filters.py), so a failed
+    send leaves jobs recorded as "seen" that the user never saw. Rewinding
+    just that company un-sees them, so the next run re-detects and re-sends
+    them, while every other company's work still commits normally. See the
+    note in run.py on what this replaced."""
+    _write_state(slug, previous)
 
 
 def record_failure(slug: str) -> int:

@@ -40,7 +40,8 @@ def _job(job_id, title="Backend Developer", description=None):
                description=description)
 
 
-_PROFILE = SimpleNamespace(slug="acme", detail_fetch=None, zero_is_plausible=False)
+_PROFILE = SimpleNamespace(slug="acme", detail_fetch=None,
+                           zero_is_plausible=False, expected_min_jobs=0)
 
 _SENIOR = "<h3>Requirements</h3><ul><li>8+ years of experience</li></ul>"
 _JUNIOR = "<h3>Requirements</h3><ul><li>1 year of experience</li></ul>"
@@ -93,44 +94,60 @@ def test_turning_the_filter_off_does_not_replay_suppressed_jobs():
 
 
 # ---------------------------------------------------------------------------
-# A failed send must stay fatal
+# A failed send must never leave jobs marked "seen but never delivered"
 # ---------------------------------------------------------------------------
 
-def test_a_failed_send_exits_non_zero_so_state_is_not_committed(monkeypatch,
-                                                                tmp_path):
-    """The subtle one. State is written BEFORE notification, so swallowing a
-    send error and exiting 0 would let check.yml commit that state - making
-    "seen but never delivered" permanent for those jobs. Exiting non-zero
-    skips the commit step, the ephemeral runner discards the state changes,
-    and the jobs are re-detected next run.
-
-    If someone ever "fixes" this into a quiet warning, this test fails."""
-    profiles_dir = tmp_path / "profiles"
-    profiles_dir.mkdir()
-    (profiles_dir / "acme.json").write_text(json.dumps({
-        "schema_version": 3, "slug": "acme", "name": "Acme", "enabled": True,
-        "careers_url": "https://jobs.lever.co/acme", "fetch_type": "api",
+def _write_profile(profiles_dir, slug, health=None):
+    profiles_dir.mkdir(exist_ok=True)
+    (profiles_dir / f"{slug}.json").write_text(json.dumps({
+        "schema_version": 3, "slug": slug, "name": slug.title(),
+        "enabled": True, "careers_url": f"https://jobs.lever.co/{slug}",
+        "fetch_type": "api",
         "israel_filter": {"method": "post_fetch"},
         "api": {"platform": "lever",
+                "endpoint": f"https://api.lever.co/v0/postings/{slug}",
                 "fields": {"id": "id", "title": "text",
                            "location": "categories.location",
                            "url": "hostedUrl"}},
-        "health": {"expected_min_jobs": 1}, "verified_on": "2026-08-12",
+        "health": health or {"expected_min_jobs": 0},
+        "verified_on": "2026-08-12",
     }), encoding="utf-8")
 
+
+def _arrange_run(monkeypatch, profiles_dir, jobs_by_slug):
+    """Wires _run_normal up to fake profiles and a fake fetch phase."""
     import profiles as profiles_mod
+    from fetchers import FetchOutcome
+
     monkeypatch.setattr(run_mod, "load_enabled",
                         lambda: profiles_mod.load_enabled(profiles_dir))
     monkeypatch.setattr(run_mod, "process_commands", lambda: None)
     # Patched at fetch_all, the concurrent phase's entry point, rather than at
     # the per-company fetch: run.py consumes outcomes, not raw job lists.
-    from fetchers import FetchOutcome
     monkeypatch.setattr(run_mod, "fetch_all",
-                        lambda profiles: {
+                        lambda profiles, deadline=None: {
                             p.slug: FetchOutcome(p.slug,
-                                                 [_job("new1"), _job("new2")],
+                                                 jobs_by_slug[p.slug],
                                                  None, 0.0)
                             for p in profiles})
+
+
+def test_a_failed_send_rewinds_that_company_so_the_jobs_come_back(monkeypatch,
+                                                                  tmp_path):
+    """The subtle one. State is written BEFORE notification, so a company
+    whose alert failed has jobs recorded as "seen" that the user never saw.
+    Committing that would make "seen but never delivered" permanent - the one
+    outcome the whole project exists to prevent.
+
+    The answer is to rewind that company's state to its pre-run snapshot, so
+    the jobs are un-seen and the next run re-detects and re-sends them.
+
+    If someone ever "fixes" this into a quiet warning that leaves the state
+    written, this test fails."""
+    profiles_dir = tmp_path / "profiles"
+    _write_profile(profiles_dir, "acme")
+    _arrange_run(monkeypatch, profiles_dir,
+                 {"acme": [_job("new1"), _job("new2")]})
 
     state_mod.seed_company("acme", [])          # seeded, so it isn't a seed gap
 
@@ -142,15 +159,68 @@ def test_a_failed_send_exits_non_zero_so_state_is_not_committed(monkeypatch,
     monkeypatch.setattr(run_mod, "notify_maintenance",
                         lambda slug, msg: maintenance.append((slug, msg)))
 
+    run_mod._run_normal()       # exits normally - the rewind made it safe
+
+    assert maintenance and maintenance[0][0] == "acme"
+    # Rewound: the undelivered jobs are NOT on disk, so the next run finds
+    # them new again and tries to send them again.
+    assert state_mod.load_state("acme")["jobs"] == {}
+
+
+def test_one_failed_send_does_not_rewind_the_other_companies(monkeypatch,
+                                                             tmp_path):
+    """What the per-company rewind bought. The previous design failed the
+    whole run so that NOTHING was committed, which also un-saw every healthy
+    company's jobs - so one broken company re-sent every other company's
+    alerts on the next run. At three companies that is a duplicate; at a
+    hundred it is a flood, every run, until the broken one is fixed."""
+    profiles_dir = tmp_path / "profiles"
+    _write_profile(profiles_dir, "acme")
+    _write_profile(profiles_dir, "beta")
+    _arrange_run(monkeypatch, profiles_dir,
+                 {"acme": [_job("a1")], "beta": [_job("b1")]})
+
+    state_mod.seed_company("acme", [])
+    state_mod.seed_company("beta", [])
+
+    def send(company_name, jobs, tags=None):
+        if company_name == "Acme":
+            raise RuntimeError("Telegram 429")
+
+    monkeypatch.setattr(run_mod, "notify_new_jobs", send)
+    monkeypatch.setattr(run_mod, "notify_maintenance", lambda slug, msg: None)
+
+    run_mod._run_normal()
+
+    assert state_mod.load_state("acme")["jobs"] == {}          # rewound
+    assert set(state_mod.load_state("beta")["jobs"]) == {"b1"}  # kept
+
+
+def test_a_rewind_that_itself_fails_falls_back_to_failing_the_run(monkeypatch,
+                                                                  tmp_path):
+    """The fallback, and the reason the non-zero exit still exists: if the
+    jobs cannot be un-seen locally, the only remaining way to stop them being
+    committed is to fail the run so check.yml never reaches its commit step."""
+    profiles_dir = tmp_path / "profiles"
+    _write_profile(profiles_dir, "acme")
+    _arrange_run(monkeypatch, profiles_dir, {"acme": [_job("new1")]})
+
+    state_mod.seed_company("acme", [])
+
+    def refuse(*args, **kwargs):
+        raise RuntimeError("Telegram 400")
+
+    def broken_restore(*args, **kwargs):
+        raise OSError("read-only file system")
+
+    monkeypatch.setattr(run_mod, "notify_new_jobs", refuse)
+    monkeypatch.setattr(run_mod, "restore_state", broken_restore)
+    monkeypatch.setattr(run_mod, "notify_maintenance", lambda slug, msg: None)
+
     with pytest.raises(SystemExit) as exit_info:
         run_mod._run_normal()
 
     assert exit_info.value.code == 1        # non-zero => commit step skipped
-    assert maintenance and maintenance[0][0] == "acme"
-
-    # The jobs ARE on disk as seen - which is exactly why the non-zero exit
-    # matters, since that state must never reach the repo.
-    assert set(state_mod.load_state("acme")["jobs"]) == {"new1", "new2"}
 
 
 def test_a_successful_run_exits_normally():

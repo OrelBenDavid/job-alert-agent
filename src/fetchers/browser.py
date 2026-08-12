@@ -13,6 +13,8 @@ instead of being duplicated per company.
 
 from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 
+import os
+import time
 from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright
@@ -41,6 +43,31 @@ _DEFAULT_FIRST_PAGE_TIMEOUT_MS = 30000
 _DEFAULT_NEXT_PAGE_TIMEOUT_MS = 10000
 
 
+# A wall-clock ceiling on ONE company's paginated walk.
+#
+# Every individual Playwright call here is already bounded, but the number of
+# calls is not: url_param with max_pages=20 is up to 20 goto+wait pairs, so a
+# single slow company can legitimately occupy ten minutes. That matters
+# because fetch_all's run deadline can only stop companies that have not
+# STARTED - a thread holding a Chromium cannot be interrupted - so without a
+# per-company ceiling one slow site still drags the run past the workflow
+# timeout, and a timed-out run commits no state at all.
+#
+# Exceeding it RAISES rather than returning what was collected so far.
+# Returning a partial page walk would be a silent truncation, which is the
+# single failure this project refuses to allow: it looks exactly like a
+# healthy company with fewer jobs.
+_DEFAULT_COMPANY_BUDGET_SECONDS = 240
+
+
+class FetchBudgetExceeded(Exception):
+    """One company's paginated walk ran past its wall-clock budget.
+
+    Deliberately an error, not a truncation - see the note above. Treated by
+    run.py exactly like any other fetch failure: state untouched, retried next
+    run, escalated only after the repeated-failure threshold."""
+
+
 class ListingNeverRendered(Exception):
     """The first page of a listing did not produce a single job card.
 
@@ -62,6 +89,32 @@ def _selector_timeouts(cfg: dict) -> tuple[int, int]:
     pag = cfg.get("pagination") or {}
     return (int(pag.get("first_page_timeout_ms", _DEFAULT_FIRST_PAGE_TIMEOUT_MS)),
             int(pag.get("next_page_timeout_ms", _DEFAULT_NEXT_PAGE_TIMEOUT_MS)))
+
+
+def _company_deadline(cfg: dict) -> float:
+    """The absolute monotonic time this company's walk must finish by.
+
+    Profile-overridable via `pagination.max_seconds`, and env-overridable via
+    JOB_ALERT_COMPANY_BUDGET_SECONDS, for the same reason the worker counts
+    are: how long is too long depends on the runner and on the site, neither
+    of which is a property of this code."""
+    pag = cfg.get("pagination") or {}
+    try:
+        default = int(os.environ.get("JOB_ALERT_COMPANY_BUDGET_SECONDS",
+                                     _DEFAULT_COMPANY_BUDGET_SECONDS))
+    except (TypeError, ValueError):
+        default = _DEFAULT_COMPANY_BUDGET_SECONDS
+    return time.monotonic() + max(1, int(pag.get("max_seconds", default)))
+
+
+def _check_budget(deadline: float, profile, what: str) -> None:
+    """Raises once the company's walk has run out of time."""
+    if time.monotonic() > deadline:
+        raise FetchBudgetExceeded(
+            f"{profile.slug}: still {what} after the per-company time budget "
+            "expired. Treated as a fetch failure, NOT as a short listing - "
+            "returning a partial walk would be indistinguishable from a "
+            "company with fewer jobs.")
 
 
 def _await_first_page(page, profile, selector: str, timeout_ms: int,
@@ -203,8 +256,10 @@ def _fetch_url_pages(page, profile, cfg: dict) -> list[Job]:
 
     first_timeout, next_timeout = _selector_timeouts(cfg)
 
+    deadline = _company_deadline(cfg)
     jobs, seen_ids, previous_fingerprint = [], set(), None
     for page_num in range(start, start + max_pages):
+        _check_budget(deadline, profile, f"paginating (page {page_num})")
         sep = "&" if "?" in base_url else "?"
         page_url = f"{base_url}{sep}{page_param}={page_num}"
         page.goto(page_url, timeout=30000)
@@ -264,8 +319,10 @@ def _fetch_click_next(page, profile, cfg: dict) -> list[Job]:
     _apply_relevance_filter_actions(page, profile.israel_filter)
     _await_first_page(page, profile, cfg["job_selector"], first_timeout)
 
+    deadline = _company_deadline(cfg)
     jobs, seen_ids = [], set()
-    for _ in range(max_pages):
+    for page_num in range(max_pages):
+        _check_budget(deadline, profile, f"clicking Next (page {page_num + 1})")
         new_here = 0
         for card in page.query_selector_all(cfg["job_selector"]):
             job = _read_job_card(card, profile.slug,
@@ -306,8 +363,10 @@ def _fetch_scroll(page, profile, cfg: dict) -> list[Job]:
     _apply_relevance_filter_actions(page, profile.israel_filter)
     _await_first_page(page, profile, cfg["job_selector"], first_timeout)
 
+    deadline = _company_deadline(cfg)
     previous_count, stable_rounds = 0, 0
-    for _ in range(max_scrolls):
+    for scroll_num in range(max_scrolls):
+        _check_budget(deadline, profile, f"scrolling (round {scroll_num + 1})")
         if container:
             page.eval_on_selector(container, "el => el.scrollTop = el.scrollHeight")
         else:
@@ -366,10 +425,14 @@ def _fetch_multi_location(page, profile, cfg: dict) -> list[Job]:
     # walk, not per city: every city coming back empty means either the site
     # never rendered or the company genuinely has nothing open anywhere, and
     # the safe reading of that ambiguity is a fetch failure, not zero jobs.
+    deadline = _company_deadline(cfg)
     any_page_rendered = False
     jobs_by_id = {}
     for city in israel_options:
         for page_num in range(start, start + max_pages):
+            # The budget matters most here: this is the one strategy whose
+            # cost is cities x pages, not pages.
+            _check_budget(deadline, profile, f"walking {city} (page {page_num})")
             sep = "&" if "?" in base_url else "?"
             city_url = f"{base_url}{sep}{location_param}={quote(city)}&{page_param}={page_num}"
             page.goto(city_url, timeout=30000)
@@ -423,8 +486,11 @@ def fetch(profile) -> list[Job]:
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page(user_agent=_USER_AGENT)
         try:
+            # new_page() inside the try, not before it: a launch that succeeds
+            # and a new_page() that then fails used to skip browser.close()
+            # entirely, leaking a Chromium per failure in the pool.
+            page = browser.new_page(user_agent=_USER_AGENT)
             if profile.israel_filter.get("structure") == "flat_multi_location":
                 jobs = _fetch_multi_location(page, profile, cfg)
             else:

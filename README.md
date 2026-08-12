@@ -17,12 +17,27 @@ GitHub Actions - there is no server.
 - **"New job" detection** always runs on `Job.id` (the ATS's own id, or a
   canonicalized link) and never on display text - so a cosmetic change on the
   company's side can't produce a duplicate alert.
-- **Health gate**: if a company that used to return jobs suddenly returns 0,
-  that counts as a failure (a broken selector), not "no jobs". State is not
-  overwritten, and a maintenance alert goes out after two consecutive
-  failures. A fetch that *raises* is counted the same way
-  (`state.record_failure`) - it reaches the same threshold as a suspicious
-  zero, rather than being logged and forgotten.
+- **Health gate**, two thresholds: a company that used to return jobs and now
+  returns **0** (a dead `job_selector`), or one whose count **fell below
+  `health.expected_min_jobs`** from a run that was above it (what broken
+  *pagination* looks like - page 1 still parses, pages 2..N stop coming, and
+  the count never reaches zero). Either way state is not overwritten, and a
+  maintenance alert goes out after two consecutive failures. A fetch that
+  *raises* is counted the same way (`state.record_failure`) - it reaches the
+  same threshold as a suspicious zero, rather than being logged and forgotten.
+- **A profile is validated at load, not at fetch.** Anything the fetchers
+  actually read is checked up front - the API platform must have a handler, a
+  `ui_interaction` filter must carry `ui_actions_structured`, a
+  `flat_multi_location` one must carry the selectors it walks. The failure
+  these prevent is the quiet kind: a profile that loads, runs, raises nothing,
+  and returns the wrong set of jobs.
+- **Relevance = Israel, or remote that Israel can actually reach**
+  (`src/relevance.py`, kept in sync with the skill's `RELEVANCE_HELPER`).
+  `Remote`, `Remote - EMEA`, `Remote - Europe`, `Remote - Global` are kept;
+  anything naming a foreign country **or city** is not - `Remote - New York`,
+  `Hybrid - Boston`, `Remote - Zurich`. The city half of that list matters
+  only at scale: with three companies those postings barely appear, with a
+  hundred they are a steady trickle of jobs nobody here can take.
 - **The fetch phase - and only the fetch phase - runs concurrently**
   (`fetchers.fetch_all`). Everything after it stays sequential and in profile
   order. See below.
@@ -69,6 +84,33 @@ Rough wall clock at 100 companies, dominated by the browser count:
 Fixed overhead is ~2 min regardless of company count (checkout, pip install,
 `playwright install --with-deps`, the state commit).
 
+### Time budgets
+
+The estimates above are estimates. A slow site, a cold CDN or a retry can
+double a company's time, so there are two hard budgets, both sized against
+check.yml's `timeout-minutes: 20` rather than against anything in the code:
+
+| Budget | Default | What it does |
+|---|---|---|
+| `JOB_ALERT_FETCH_BUDGET_SECONDS` | 780 (13 min) | Once reached, companies whose fetch hasn't *started* are skipped for this run. Not failures - nothing was tried, so no counter bump and no maintenance alert. |
+| `JOB_ALERT_COMPANY_BUDGET_SECONDS` | 240 | Wall-clock ceiling on one company's paginated walk (`pagination.max_seconds` overrides per profile). Exceeding it **raises** - a partial page walk would be indistinguishable from a company with fewer jobs. |
+
+**Why a budget at all**: the workflow kills the job at 20 minutes, and a
+killed job never reaches the "Commit updated state" step - so every state
+write the run had already made is thrown away, and the next run repeats the
+same work into the same wall. Finishing early with some companies skipped is
+strictly better than finishing none of them. The company budget exists
+because the fetch budget can only stop companies that haven't *started*: a
+thread holding a Chromium can't be interrupted.
+
+The detail layer has a matching budget: `MAX_DETAIL_FETCHES_PER_RUN` (40) is
+a **run-wide** allowance shared by every company, not 40 per company.
+
+**Telegram sends are paced** at ~1/second (`JOB_ALERT_SEND_INTERVAL`) and a
+429 is retried after the `retry_after` Telegram asks for. Every company sends
+to the same chat, so at three companies this never fires and at a hundred it
+is the likeliest thing to break.
+
 **Actions minutes**: only billed on a *private* repo. At 8 runs/day that is
 240 runs/month, so a 2,000-minute free tier affords ~8 min per run - which
 sequential fetching at 100 companies would blow, and concurrent fetching
@@ -110,6 +152,18 @@ of state, each one would look new on every run and its detail page would be
 re-fetched forever. **Accepted consequence:** turning the filter off does not
 retroactively deliver jobs suppressed while it was on. There is no replay
 mechanism, by design.
+
+**What happens when a send fails.** That same ordering means a company whose
+alert failed has jobs recorded as "seen" that the user never saw, and
+committing that would make the loss permanent. So the run **rewinds that one
+company** to its pre-run state - the jobs are un-seen and re-sent next run -
+and every other company still commits. Only if the rewind itself fails does
+the run exit non-zero, which skips the commit step and discards everything.
+
+That fallback used to be the only behaviour, and it had a cost that only
+appears at scale: discarding every company's state meant one broken company
+re-sent *all* the others' alerts on the next run, every run, until it was
+fixed.
 
 **Fail-open**: if no number is found, the posting is **sent**, flagged.
 Losing a relevant job costs far more than two seconds of scrolling. A
@@ -164,6 +218,12 @@ aggregate data and may not hold for Israeli postings.
 2. Save the resulting `profile.json` as `profiles/<slug>.json`.
 3. Run `python run.py --seed` (manually, via `workflow_dispatch` or locally)
    to seed state without firing alerts for every already-open posting.
+   **`--seed` only touches companies that have no state yet**, so it is safe
+   to run after adding profiles in batches: the existing companies cost no
+   fetch and keep their `first_seen` history. `--seed --force` re-seeds
+   everything, which resets that history - rarely what you want.
+   If the fetch budget runs out mid-seed, the companies that were reached are
+   committed; just run `--seed` again for the rest.
 4. From the next cron run, the company is under normal monitoring.
 
 **`/add` in Telegram does NOT do this automatically (deliberate in v1)** - it
@@ -188,9 +248,11 @@ python -m playwright install --with-deps chromium   # only if a playwright compa
 export TELEGRAM_BOT_TOKEN=...
 export TELEGRAM_CHAT_ID=...
 export JOB_ALERT_BROWSER_WORKERS=2   # optional - see "Concurrency and run time"
+export JOB_ALERT_SEND_INTERVAL=0     # optional - disable send pacing locally
 cd src
-python run.py --seed   # the first time
-python run.py          # a normal run
+python run.py --seed           # seeds only companies with no state yet
+python run.py --seed --force   # re-seed everything (resets first_seen)
+python run.py                  # a normal run
 ```
 
 ## Tests
