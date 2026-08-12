@@ -2,22 +2,26 @@ name: Check job postings
 
 on:
   schedule:
-    # כל 3 שעות, UTC. תזמון בפועל עשוי להתעכב 10-30 דק' - זה תקין, לא
-    # אמין ל"מיד ברגע X". ראה הדיון בפרויקט לגבי חישוב תקציב הדקות.
+    # Every 3 hours, UTC. Actual scheduling can be delayed 10-30 min - that's
+    # normal, and it is not reliable for "exactly at X". See the project
+    # discussion on the Actions minute budget.
     - cron: "0 */3 * * *"
-  workflow_dispatch: {}   # הפעלה ידנית - גם לבדיקות וגם לתגובה מיידית לפקודה
+  workflow_dispatch: {}   # Manual run - for testing, and for responding to a
+                          # Telegram command without waiting for the cron
 
 concurrency:
   group: job-alert-check
-  cancel-in-progress: false   # לא מבטלים ריצה באמצע כתיבת state - עדיף שהחדשה תחכה
+  cancel-in-progress: false   # Never cancel a run mid state-write - better to
+                               # make the new run wait
 
 permissions:
-  contents: write   # דרוש כדי ל-commit את state/ בחזרה לרפו
+  contents: write   # Required to commit state/ back to the repo
 
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 20   # הגנה שנייה על לולאות שלא נעצרות - לא סומכים רק על MAX_PAGES בקוד
+    timeout-minutes: 20   # Second line of defence against loops that don't
+                           # terminate - MAX_PAGES in the code is not trusted alone
 
     steps:
       - uses: actions/checkout@v4
