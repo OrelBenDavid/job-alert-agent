@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-12T06:33:39.388721+00:00",
-  "last_count": 120,
+  "last_success": "2026-08-12T07:43:34.004400+00:00",
+  "last_count": 119,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -65,10 +65,6 @@
     },
     "c3bb544b-d499-4844-afdc-5abf54fd2073": {
       "title": "C++ Software developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "2a817378-710e-43df-929b-a53ce94f1daa": {
-      "title": "C++ Software Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "b284661b-707c-4883-b0bd-30b6c762f1f8": {
