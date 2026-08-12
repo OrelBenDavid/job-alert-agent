@@ -47,15 +47,28 @@ def send_message(text: str, parse_mode: str = "MarkdownV2") -> None:
     r.raise_for_status()
 
 
-def format_new_jobs_message(company_name: str, jobs: list[Job]) -> str:
+def format_new_jobs_message(company_name: str, jobs: list[Job],
+                            tags: dict = None) -> str:
     """Builds a grouped message for one company. display() is called only
     here - this is the single place in the whole project where
-    "Title — Location" is ever constructed."""
+    "Title — Location" is ever constructed.
+
+    `tags` maps job.id -> a short label produced by whichever filter had
+    something to say about that job (e.g. the three experience states). It is
+    keyed by id like everything else in this project, and it is optional: a
+    job with no tag renders exactly as it did before the filter chain
+    existed, which is what a run with every filter disabled produces."""
     header = f"🔔 *{escape_mdv2(company_name)}* — {len(jobs)} new jobs"
+    tags = tags or {}
     lines = [header, ""]
     for j in jobs:
         title_loc = escape_mdv2(j.display())
         lines.append(f"• [{title_loc}]({j.url})")
+        tag = tags.get(j.id)
+        if tag:
+            # Indented under its job rather than appended to the link text,
+            # so the tag can never end up inside the clickable label.
+            lines.append(f"   {escape_mdv2(tag)}")
     return "\n".join(lines)
 
 
@@ -98,10 +111,10 @@ def format_maintenance_alert(slug: str, message: str) -> str:
            f"{escape_mdv2(message)}")
 
 
-def notify_new_jobs(company_name: str, jobs: list[Job]) -> None:
+def notify_new_jobs(company_name: str, jobs: list[Job], tags: dict = None) -> None:
     if not jobs:
         return
-    send_message(format_new_jobs_message(company_name, jobs))
+    send_message(format_new_jobs_message(company_name, jobs, tags))
 
 
 def notify_maintenance(slug: str, message: str) -> None:

@@ -22,6 +22,8 @@ from fetchers import fetch_jobs
 from state import process_company, seed_company, should_alert_failure, load_state
 from notifier import notify_new_jobs, notify_maintenance
 from commands import process_commands
+from filters import build_chain, run_chain
+from stats import RunStats, save_stats
 
 
 def _run_seed() -> None:
@@ -35,6 +37,10 @@ def _run_seed() -> None:
         except Exception as e:
             print(f"[seed error] {profile.slug}: {e}", file=sys.stderr)
             continue
+        # No filter chain here, deliberately: a seed sends nothing, so there
+        # is nothing to filter, and running the chain would fire one detail
+        # request per existing posting - hundreds on day one - to decide the
+        # visibility of alerts that are never sent.
         seed_company(profile.slug, jobs)
         print(f"[seed] {profile.slug}: {len(jobs)} jobs saved, no alert sent")
 
@@ -53,6 +59,12 @@ def _run_normal() -> None:
         # Not sent to Telegram - a validation error is a bug in the
         # profile, not an operational event that needs Orel's immediate
         # attention. It'll show up in the run's logs.
+
+    # Built once for the whole run, from the settings file the bot itself
+    # writes over Telegram. Only enabled filters are constructed, so an
+    # empty chain means literally no extra work anywhere below.
+    chain = build_chain()
+    run_stats = RunStats()
 
     had_seed_gap = []
     for profile in profiles:
@@ -81,7 +93,31 @@ def _run_normal() -> None:
             continue
 
         if result.new_jobs:
-            notify_new_jobs(profile.name, result.new_jobs)
+            # process_company has ALREADY written every new id to state by
+            # this point. The chain only decides what gets shown - a job
+            # rejected here is still permanently "seen", so it will never be
+            # re-detected or re-fetched on a later run.
+            try:
+                survivors = run_chain(result.new_jobs, profile, chain, run_stats)
+            except Exception as e:
+                # The filter layer must never cost an alert. If the chain
+                # itself breaks, fall back to sending everything untagged -
+                # the same fail-open direction every decision inside it takes.
+                print(f"[filter error] {profile.slug}: {e}", file=sys.stderr)
+                survivors = [(job, None) for job in result.new_jobs]
+
+            if survivors:
+                jobs_to_send = [job for job, _ in survivors]
+                tags = {job.id: tag for job, tag in survivors if tag}
+                notify_new_jobs(profile.name, jobs_to_send, tags)
+
+            suppressed = len(result.new_jobs) - len(survivors)
+            if suppressed:
+                print(f"[filter] {profile.slug}: {suppressed} of "
+                      f"{len(result.new_jobs)} new jobs suppressed")
+
+    # Written after every company, so the counters cover the whole run.
+    save_stats(run_stats)
 
     if had_seed_gap:
         names = ", ".join(had_seed_gap)
