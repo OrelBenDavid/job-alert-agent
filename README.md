@@ -20,9 +20,59 @@ GitHub Actions - there is no server.
 - **Health gate**: if a company that used to return jobs suddenly returns 0,
   that counts as a failure (a broken selector), not "no jobs". State is not
   overwritten, and a maintenance alert goes out after two consecutive
-  failures.
+  failures. A fetch that *raises* is counted the same way
+  (`state.record_failure`) - it reaches the same threshold as a suspicious
+  zero, rather than being logged and forgotten.
+- **The fetch phase - and only the fetch phase - runs concurrently**
+  (`fetchers.fetch_all`). Everything after it stays sequential and in profile
+  order. See below.
 - **A filter chain** (`src/filters.py`) runs between the diff and the send,
   deciding what is *shown* - not what counts as new. See below.
+
+## Concurrency and run time
+
+A run's cost is almost entirely the fetch loop, and every company is an
+independent call to a different host - so the fetch runs in two pools, sized
+by the resource each kind of fetch actually consumes:
+
+| Pool | Companies | Default | Bounded by |
+|---|---|---|---|
+| `JOB_ALERT_NETWORK_WORKERS` | `api`, `html` | 12 | remote-host politeness; each is a different host |
+| `JOB_ALERT_BROWSER_WORKERS` | `playwright` | 2 | RAM/CPU - one whole Chromium each |
+
+Measured per company: **api ~0.4-1s, playwright ~30s**. That ~30x gap is why
+the two are pooled separately, and why the browser count is the one that
+decides a run's wall clock.
+
+**The browser bound is a correctness limit, not a performance knob.**
+Oversubscribing it doesn't just run slower - contention pushes the
+first-page selector wait past its budget. Measured on the live Wix page: 3
+concurrent Chromiums on a 4-core laptop turned a healthy 16-job fetch into
+**0 jobs on all three**. Raise it only together with a bigger runner
+(GitHub-hosted is 2 vCPU / 7 GB on a private repo, 4 / 16 on a public one).
+
+**Everything downstream of the fetch stays sequential**, in profile order:
+the diff, the state write, the filter chain's shared counters and the
+Telegram send are order- or rate-sensitive, and cost little enough that
+parallelising them would buy noise and risk. Results are consumed in profile
+order however the pool scheduled them, so logs, state writes and alert order
+stay deterministic.
+
+Rough wall clock at 100 companies, dominated by the browser count:
+
+| Mix (api/html/playwright) | Sequential | Concurrent |
+|---|---|---|
+| 80 / 15 / 5 | ~7 min | **~2 min** |
+| 60 / 15 / 25 | ~15 min | **~4 min** |
+| 40 / 20 / 40 | ~24 min (over the 20-min timeout) | **~6 min** |
+
+Fixed overhead is ~2 min regardless of company count (checkout, pip install,
+`playwright install --with-deps`, the state commit).
+
+**Actions minutes**: only billed on a *private* repo. At 8 runs/day that is
+240 runs/month, so a 2,000-minute free tier affords ~8 min per run - which
+sequential fetching at 100 companies would blow, and concurrent fetching
+comfortably fits. On a public repo this cost does not exist.
 
 ## Experience filter
 
@@ -137,6 +187,7 @@ pip install -r requirements.txt
 python -m playwright install --with-deps chromium   # only if a playwright company exists
 export TELEGRAM_BOT_TOKEN=...
 export TELEGRAM_CHAT_ID=...
+export JOB_ALERT_BROWSER_WORKERS=2   # optional - see "Concurrency and run time"
 cd src
 python run.py --seed   # the first time
 python run.py          # a normal run
@@ -165,9 +216,24 @@ cd tests && python -m pytest -v
   postings (`expected_min_jobs: 6`, `zero_is_plausible: false`). The Israel
   filter runs `post_fetch` over the full list rather than the site's location
   picker, which breaks when filtering two cities at once - see
-  `israel_filter._note` in the profile. **Seed gap open** - there is no
-  `state/seen/wix.json`; run `python run.py --seed` before normal alerting
-  takes effect for this company.
+  `israel_filter._note` in the profile. Re-verified on 2026-08-12: selectors
+  intact, 16 then 17 Israel-relevant postings an hour apart (ordinary churn,
+  not drift - the profile was not rebuilt). **Seed gap closed on 2026-08-12**:
+  `state/seen/wix.json` holds 17 ids. Seeded wix alone rather than via a full
+  `run.py --seed`, so mobileye and wiz kept their existing state instead of
+  having every `first_seen` reset to the seed timestamp.
+  - **Fixed on 2026-08-12, found while sizing the fetch pools:** a first run
+    returned **0 jobs without raising**. Not a dead selector - the
+    `comp-*` ids are all still present. The cards on this page land 4-9s
+    after `load` fires, and `_fetch_url_pages` gave *every* page the same
+    flat 10s selector budget while treating expiry as "no more pages". A
+    merely slow first page therefore returned an empty list that is
+    indistinguishable from "no open roles", and the health gate then reports
+    it as a broken selector. Page 1 now gets its own budget (30s, profile-
+    overridable via `pagination.first_page_timeout_ms`), one retry, and then
+    raises `ListingNeverRendered` instead of returning nothing. This is a
+    prerequisite for concurrency, not a side quest: under 3 concurrent
+    browsers the old code returned 0 jobs *every* time.
 
 ### Experience filter status
 

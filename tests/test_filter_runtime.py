@@ -122,8 +122,15 @@ def test_a_failed_send_exits_non_zero_so_state_is_not_committed(monkeypatch,
     monkeypatch.setattr(run_mod, "load_enabled",
                         lambda: profiles_mod.load_enabled(profiles_dir))
     monkeypatch.setattr(run_mod, "process_commands", lambda: None)
-    monkeypatch.setattr(run_mod, "fetch_jobs",
-                        lambda profile: [_job("new1"), _job("new2")])
+    # Patched at fetch_all, the concurrent phase's entry point, rather than at
+    # the per-company fetch: run.py consumes outcomes, not raw job lists.
+    from fetchers import FetchOutcome
+    monkeypatch.setattr(run_mod, "fetch_all",
+                        lambda profiles: {
+                            p.slug: FetchOutcome(p.slug,
+                                                 [_job("new1"), _job("new2")],
+                                                 None, 0.0)
+                            for p in profiles})
 
     state_mod.seed_company("acme", [])          # seeded, so it isn't a seed gap
 

@@ -117,6 +117,28 @@ def seed_company(slug: str, fetched: list[Job]) -> None:
     _write_state(slug, state)
 
 
+def record_failure(slug: str) -> int:
+    """Bumps the consecutive-failure counter without touching `jobs`.
+    Returns the new count.
+
+    This exists because a *raised* fetch error and a suspicious zero are the
+    same event as far as the maintenance alert is concerned, but only the
+    latter used to be counted - process_company's health gate incremented,
+    while an exception out of the fetcher went straight past it to
+    should_alert_failure, which therefore read a counter nothing had ever
+    raised and stayed False forever.
+
+    That gap was mostly theoretical while a slow browser page decayed into an
+    empty list (the health gate caught it). It stopped being theoretical the
+    moment browser.py started raising ListingNeverRendered for exactly that
+    case: without this function, the more accurate error would have alerted
+    LESS than the silent zero it replaced."""
+    state = load_state(slug)
+    state["consecutive_failures"] = state.get("consecutive_failures", 0) + 1
+    _write_state(slug, state)
+    return state["consecutive_failures"]
+
+
 def should_alert_failure(slug: str) -> bool:
     """Whether consecutive failures have crossed the threshold for a
     maintenance alert on Telegram."""
