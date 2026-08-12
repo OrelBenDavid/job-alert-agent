@@ -47,6 +47,15 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Only the FETCH phase is concurrent - see fetchers.fetch_all.
+          # Tuned to a GitHub-hosted runner, which is 2 vCPU / 7 GB on a
+          # private repo (4 / 16 on a public one). The browser number is the
+          # one that matters: each playwright company is a whole Chromium,
+          # and oversubscribing does not just run slower, it pushes the
+          # first-page selector wait past its budget and turns healthy
+          # fetches into failures. Raise it only together with a runner size.
+          JOB_ALERT_NETWORK_WORKERS: "12"
+          JOB_ALERT_BROWSER_WORKERS: "2"
         run: python run.py
 
       - name: Commit updated state

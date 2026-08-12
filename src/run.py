@@ -18,8 +18,9 @@ swallowed as "a new company".
 import sys
 
 from profiles import load_enabled
-from fetchers import fetch_jobs
-from state import process_company, seed_company, should_alert_failure, load_state
+from fetchers import fetch_all
+from state import (process_company, seed_company, should_alert_failure,
+                   load_state, record_failure)
 from notifier import notify_new_jobs, notify_maintenance
 from commands import process_commands
 from filters import build_chain, run_chain
@@ -31,18 +32,19 @@ def _run_seed() -> None:
     for err in errors:
         print(f"[profile error] {err}", file=sys.stderr)
 
+    outcomes = fetch_all(profiles)
+
     for profile in profiles:
-        try:
-            jobs = fetch_jobs(profile)
-        except Exception as e:
-            print(f"[seed error] {profile.slug}: {e}", file=sys.stderr)
+        outcome = outcomes[profile.slug]
+        if not outcome.ok:
+            print(f"[seed error] {profile.slug}: {outcome.error}", file=sys.stderr)
             continue
         # No filter chain here, deliberately: a seed sends nothing, so there
         # is nothing to filter, and running the chain would fire one detail
         # request per existing posting - hundreds on day one - to decide the
         # visibility of alerts that are never sent.
-        seed_company(profile.slug, jobs)
-        print(f"[seed] {profile.slug}: {len(jobs)} jobs saved, no alert sent")
+        seed_company(profile.slug, outcome.jobs)
+        print(f"[seed] {profile.slug}: {len(outcome.jobs)} jobs saved, no alert sent")
 
 
 def _run_normal() -> None:
@@ -68,24 +70,41 @@ def _run_normal() -> None:
 
     had_seed_gap = []
     send_failures = []
+
+    # The seed-gap check is done BEFORE fetching, not inside the loop below,
+    # so an unseeded company costs no request at all. It is a local file read,
+    # so doing it up front is free.
+    eligible = []
     for profile in profiles:
-        state = load_state(profile.slug)
-        if state.get("last_success") is None:
+        if load_state(profile.slug).get("last_success") is None:
             # No state at all - this company was never seeded. Don't run
             # a diff (everything would look "new"); report and skip
             # instead - deliberately, per the decision not to auto-seed.
             had_seed_gap.append(profile.name)
             continue
+        eligible.append(profile)
 
-        try:
-            jobs = fetch_jobs(profile)
-        except Exception as e:
-            print(f"[fetch error] {profile.slug}: {e}", file=sys.stderr)
+    # *** The only concurrent phase of the run. ***
+    # Everything below this line runs sequentially, in profile order, exactly
+    # as it did when the fetch was inline: the state write, the filter chain's
+    # shared counters and the Telegram sends are all order- or rate-sensitive,
+    # and none of them are worth parallelising for what they cost. See
+    # fetchers.fetch_all.
+    outcomes = fetch_all(eligible)
+
+    for profile in eligible:
+        outcome = outcomes[profile.slug]
+        if not outcome.ok:
+            print(f"[fetch error] {profile.slug}: {outcome.error}", file=sys.stderr)
+            # Counted, not just logged - see state.record_failure. A fetch
+            # that raises is the same operational event as a suspicious zero,
+            # and has to reach the same threshold.
+            record_failure(profile.slug)
             if should_alert_failure(profile.slug):
-                notify_maintenance(profile.slug, f"Fetch error: {e}")
+                notify_maintenance(profile.slug, f"Fetch error: {outcome.error}")
             continue
 
-        result = process_company(profile.slug, jobs, profile)
+        result = process_company(profile.slug, outcome.jobs, profile)
 
         if result.status == "empty_suspicious":
             print(f"[health gate] {result.message}", file=sys.stderr)

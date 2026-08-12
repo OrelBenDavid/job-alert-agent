@@ -11,6 +11,8 @@ references/investigation_playbook.md (v2) are implemented here once,
 instead of being duplicated per company.
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
 from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright
@@ -22,6 +24,76 @@ from urls import canonicalize_url
 _USER_AGENT = "Mozilla/5.0 (compatible; job-alert-bot/1.0)"
 _DEFAULT_MAX_PAGES = 50
 _DEFAULT_MAX_SCROLLS = 60
+
+# Two DIFFERENT selector timeouts, because the same expiry means two opposite
+# things depending on which page it happens on.
+#
+# On the FIRST page it means "the listing never rendered" - a slow site, a
+# cold CDN, a runner under load. On any LATER page it means "there is no page
+# N" - the ordinary, expected end of pagination.
+#
+# The first-page budget is deliberately the more generous of the two: it is
+# paid once per company and only on the failure path, whereas shortening it
+# buys nothing but a faster wrong answer. careers.wix.com, the profile this
+# was measured against, renders its cards 4-9s after `load` fires on a warm
+# connection and materially slower on a cold one.
+_DEFAULT_FIRST_PAGE_TIMEOUT_MS = 30000
+_DEFAULT_NEXT_PAGE_TIMEOUT_MS = 10000
+
+
+class ListingNeverRendered(Exception):
+    """The first page of a listing did not produce a single job card.
+
+    A distinct exception type because this is the one browser failure that
+    must NOT be confused with "this company has no open jobs". It propagates
+    out of fetch() so run.py's per-company handler treats it as a fetch
+    error - state untouched, retried next run - instead of it decaying into
+    an empty list that the health gate then reports as a broken selector.
+    """
+
+
+def _selector_timeouts(cfg: dict) -> tuple[int, int]:
+    """(first-page, later-page) selector budgets in ms, profile-overridable.
+
+    Per-profile because "slow" is a property of the site, not of the code: a
+    heavy tracker-laden careers page needs a longer first-page budget than a
+    static one, and hard-coding the worst case would slow every company's
+    failure path down to the slowest company's."""
+    pag = cfg.get("pagination") or {}
+    return (int(pag.get("first_page_timeout_ms", _DEFAULT_FIRST_PAGE_TIMEOUT_MS)),
+            int(pag.get("next_page_timeout_ms", _DEFAULT_NEXT_PAGE_TIMEOUT_MS)))
+
+
+def _await_first_page(page, profile, selector: str, timeout_ms: int,
+                      reload_url: str | None = None) -> None:
+    """Waits for the first page's cards, with ONE retry, then raises.
+
+    The retry is not defensive padding - it is the documented behaviour of
+    the sites being scraped. wix.json's own notes record a `goto` timing out
+    once and succeeding immediately afterwards with no code change, and the
+    same transient shows up under concurrency, when several browsers compete
+    for a 2-core runner. One retry converts the overwhelmingly common
+    transient into a normal run; anything that survives it is a real failure
+    and is raised as one."""
+    try:
+        page.wait_for_selector(selector, timeout=timeout_ms)
+        return
+    except Exception:
+        pass
+
+    try:
+        if reload_url:
+            page.goto(reload_url, timeout=30000)
+            _apply_relevance_filter_actions(page, profile.israel_filter)
+        else:
+            page.reload(timeout=30000)
+            _apply_relevance_filter_actions(page, profile.israel_filter)
+        page.wait_for_selector(selector, timeout=timeout_ms)
+    except Exception as e:
+        raise ListingNeverRendered(
+            f"{profile.slug}: no job card matched {selector!r} within "
+            f"{timeout_ms}ms, on two consecutive attempts. Treated as a fetch "
+            "failure, NOT as zero open jobs.") from e
 
 
 def _read_job_card(card, company: str, link_base: str, cfg: dict,
@@ -92,7 +164,10 @@ def _next_is_unavailable(btn, disabled_marker: str) -> bool:
 
 
 def _fetch_single_page(page, profile, cfg: dict) -> list[Job]:
-    page.wait_for_selector(cfg["job_selector"], timeout=15000)
+    """Reads the cards already on the page. The caller is responsible for
+    having waited for them - every strategy now does that through
+    _await_first_page, so the wait carries the retry and the raise-on-failure
+    behaviour uniformly instead of each strategy inventing its own."""
     jobs = []
     for card in page.query_selector_all(cfg["job_selector"]):
         job = _read_job_card(card, profile.slug, cfg.get("link_base", profile.careers_url), cfg)
@@ -103,8 +178,10 @@ def _fetch_single_page(page, profile, cfg: dict) -> list[Job]:
 
 def _fetch_none(page, profile, cfg: dict) -> list[Job]:
     """pagination.method == none: a single page, no more."""
+    first_timeout, _ = _selector_timeouts(cfg)
     page.goto(profile.careers_url, timeout=30000)
     _apply_relevance_filter_actions(page, profile.israel_filter)
+    _await_first_page(page, profile, cfg["job_selector"], first_timeout)
     return _fetch_single_page(page, profile, cfg)
 
 
@@ -124,15 +201,32 @@ def _fetch_url_pages(page, profile, cfg: dict) -> list[Job]:
     max_pages = int(pag.get("max_pages", _DEFAULT_MAX_PAGES))
     page_param = pag["param_name"]
 
+    first_timeout, next_timeout = _selector_timeouts(cfg)
+
     jobs, seen_ids, previous_fingerprint = [], set(), None
     for page_num in range(start, start + max_pages):
         sep = "&" if "?" in base_url else "?"
-        page.goto(f"{base_url}{sep}{page_param}={page_num}", timeout=30000)
+        page_url = f"{base_url}{sep}{page_param}={page_num}"
+        page.goto(page_url, timeout=30000)
         _apply_relevance_filter_actions(page, profile.israel_filter)   # (1)
-        try:
-            page.wait_for_selector(cfg["job_selector"], timeout=10000)
-        except Exception:
-            break
+
+        # (3) The first page is held to a different standard than the rest.
+        # Treating its timeout as "no more pages" - which is what this loop
+        # used to do for every page alike - silently returned an EMPTY list
+        # whenever the site was merely slow. That is the single worst outcome
+        # available here: it is indistinguishable from a healthy company with
+        # no open roles, and downstream it surfaces as a false "broken
+        # selector" maintenance alert. Measured on wix, where the cards land
+        # 4-9s after `load` and the old flat 10s budget was a coin flip under
+        # any load at all.
+        if page_num == start:
+            _await_first_page(page, profile, cfg["job_selector"],
+                              first_timeout, reload_url=page_url)
+        else:
+            try:
+                page.wait_for_selector(cfg["job_selector"], timeout=next_timeout)
+            except Exception:
+                break   # no page N - the ordinary end of pagination
 
         cards = page.query_selector_all(cfg["job_selector"])
         if not cards:
@@ -165,9 +259,10 @@ def _fetch_click_next(page, profile, cfg: dict) -> list[Job]:
     max_pages = int(pag.get("max_pages", _DEFAULT_MAX_PAGES))
     disabled_marker = pag.get("disabled_marker", "")
 
+    first_timeout, _ = _selector_timeouts(cfg)
     page.goto(profile.careers_url, timeout=30000)
     _apply_relevance_filter_actions(page, profile.israel_filter)
-    page.wait_for_selector(cfg["job_selector"], timeout=15000)
+    _await_first_page(page, profile, cfg["job_selector"], first_timeout)
 
     jobs, seen_ids = [], set()
     for _ in range(max_pages):
@@ -206,9 +301,10 @@ def _fetch_scroll(page, profile, cfg: dict) -> list[Job]:
     container = cfg.get("scroll_container_selector", "")
     stable_rounds_required = 3
 
+    first_timeout, _ = _selector_timeouts(cfg)
     page.goto(profile.careers_url, timeout=30000)
     _apply_relevance_filter_actions(page, profile.israel_filter)
-    page.wait_for_selector(cfg["job_selector"], timeout=15000)
+    _await_first_page(page, profile, cfg["job_selector"], first_timeout)
 
     previous_count, stable_rounds = 0, 0
     for _ in range(max_scrolls):
@@ -261,6 +357,16 @@ def _fetch_multi_location(page, profile, cfg: dict) -> list[Job]:
     israel_options = [o for o in options if is_israel_location(o)]
     page.keyboard.press("Escape")
 
+    _, next_timeout = _selector_timeouts(cfg)
+
+    # (4) Unlike the single-listing strategies, an individual city here may
+    # legitimately render nothing - a real office with no current openings
+    # (wix's Beer Sheva, at the time its profile was written). So the
+    # "did anything render?" question can only be asked across the WHOLE
+    # walk, not per city: every city coming back empty means either the site
+    # never rendered or the company genuinely has nothing open anywhere, and
+    # the safe reading of that ambiguity is a fetch failure, not zero jobs.
+    any_page_rendered = False
     jobs_by_id = {}
     for city in israel_options:
         for page_num in range(start, start + max_pages):
@@ -268,9 +374,10 @@ def _fetch_multi_location(page, profile, cfg: dict) -> list[Job]:
             city_url = f"{base_url}{sep}{location_param}={quote(city)}&{page_param}={page_num}"
             page.goto(city_url, timeout=30000)
             try:
-                page.wait_for_selector(cfg["job_selector"], timeout=10000)
+                page.wait_for_selector(cfg["job_selector"], timeout=next_timeout)
             except Exception:
                 break
+            any_page_rendered = True
 
             cards = page.query_selector_all(cfg["job_selector"])
             if not cards:
@@ -289,6 +396,12 @@ def _fetch_multi_location(page, profile, cfg: dict) -> list[Job]:
 
             if added_here == 0:
                 break
+
+    if not any_page_rendered:
+        raise ListingNeverRendered(
+            f"{profile.slug}: none of the {len(israel_options)} Israel "
+            f"location(s) rendered a single job card. Treated as a fetch "
+            "failure, NOT as zero open jobs.")
 
     return list(jobs_by_id.values())
 
