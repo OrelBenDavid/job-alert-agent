@@ -47,16 +47,77 @@ def send_message(text: str, parse_mode: str = "MarkdownV2") -> None:
     r.raise_for_status()
 
 
-def format_new_jobs_message(company_name: str, jobs: list[Job]) -> str:
-    """Builds a grouped message for one company. display() is called only
-    here - this is the single place in the whole project where
-    "Title — Location" is ever constructed."""
-    header = f"🔔 *{escape_mdv2(company_name)}* — {len(jobs)} new jobs"
-    lines = [header, ""]
-    for j in jobs:
-        title_loc = escape_mdv2(j.display())
-        lines.append(f"• [{title_loc}]({j.url})")
+# Telegram rejects any message over 4096 characters outright, with a 400.
+# A new-jobs alert must never be truncated the way /jobs is - every new job
+# has to be delivered - so an oversized batch is SPLIT across messages
+# instead. Measured against real data: a Mobileye batch breaches the limit at
+# ~30 jobs once experience tags are included (~35 without them), which a
+# company reworking its board can produce in a single 3-hour window.
+TELEGRAM_MAX_CHARS = 4096
+
+# Room reserved for the " \(12/34\)" part counter, which isn't known until
+# after packing decides how many parts there are.
+_PART_COUNTER_RESERVE = 12
+
+
+def _job_block(job: Job, tags: dict) -> str:
+    """One job's lines: the link, plus its filter tag if it has one.
+
+    Kept together as a unit so packing can never split a job from its tag.
+    display() is called only here - this is the single place in the whole
+    project where "Title — Location" is ever constructed."""
+    lines = [f"• [{escape_mdv2(job.display())}]({job.url})"]
+    tag = tags.get(job.id)
+    if tag:
+        # Indented under its job rather than appended to the link text, so
+        # the tag can never end up inside the clickable label.
+        lines.append(f"   {escape_mdv2(tag)}")
     return "\n".join(lines)
+
+
+def format_new_jobs_messages(company_name: str, jobs: list[Job],
+                             tags: dict = None) -> list[str]:
+    """Builds the grouped alert for one company, as one message per chunk.
+
+    Returns a list because a big batch has to span several messages; the
+    common case is a single-element list. Every job is present in exactly one
+    chunk - nothing is dropped, which is the difference between this and
+    format_job_list_message's "+N more" truncation.
+
+    `tags` maps job.id -> a short label produced by whichever filter had
+    something to say about that job. Keyed by id like everything else in this
+    project, and optional: a job with no tag renders exactly as it did before
+    the filter chain existed, which is what a run with every filter disabled
+    produces."""
+    tags = tags or {}
+    header = f"🔔 *{escape_mdv2(company_name)}* — {len(jobs)} new jobs"
+    budget = TELEGRAM_MAX_CHARS - len(header) - _PART_COUNTER_RESERVE - 2
+
+    chunks: list[list[str]] = [[]]
+    used = 0
+    for job in jobs:
+        block = _job_block(job, tags)
+        if len(block) > budget:
+            # Pathological (a title thousands of characters long). Truncate
+            # rather than emit a message Telegram will certainly reject -
+            # a rejected send costs the whole batch, a trimmed line costs
+            # some text.
+            block = block[:budget - 1] + "…"
+        # +1 for the newline joining this block to the previous one.
+        if chunks[-1] and used + 1 + len(block) > budget:
+            chunks.append([])
+            used = 0
+        used += (1 if chunks[-1] else 0) + len(block)
+        chunks[-1].append(block)
+
+    total = len(chunks)
+    messages = []
+    for index, blocks in enumerate(chunks, start=1):
+        # The counter is only added when there really is more than one part,
+        # so the ordinary single-message case looks untouched.
+        counter = f" \\({index}/{total}\\)" if total > 1 else ""
+        messages.append(f"{header}{counter}\n\n" + "\n".join(blocks))
+    return messages
 
 
 # Telegram messages cap out at 4096 chars. A company with 100+ open roles
@@ -71,9 +132,12 @@ _MAX_JOBS_IN_LIST_REPLY = 20
 
 def format_job_list_message(company_name: str, jobs: list[Job], careers_url: str) -> str:
     """Snapshot for the /jobs command - "here's what's open right now",
-    visually distinct from format_new_jobs_message ("here's what's new
-    since last time"). Reuses display()/escape_mdv2 the same way, per the
-    project convention that job-line formatting only ever happens here."""
+    visually distinct from format_new_jobs_messages ("here's what's new
+    since last time"). Truncating with "+N more" is right HERE and wrong
+    there: this is a snapshot the user asked for and can always re-request,
+    while a new-jobs alert is the only time those postings are ever
+    mentioned. Reuses display()/escape_mdv2 the same way, per the project
+    convention that job-line formatting only ever happens in this module."""
     header = f"📋 *{escape_mdv2(company_name)}* — {len(jobs)} open jobs"
     if not jobs:
         return f"{header}\n\n_\\(No open Israel\\-relevant jobs right now\\.\\)_"
@@ -98,10 +162,14 @@ def format_maintenance_alert(slug: str, message: str) -> str:
            f"{escape_mdv2(message)}")
 
 
-def notify_new_jobs(company_name: str, jobs: list[Job]) -> None:
+def notify_new_jobs(company_name: str, jobs: list[Job], tags: dict = None) -> None:
+    """Sends one company's alert, across several messages if the batch is
+    large. Deliberately NOT wrapped in a try/except here or in the caller -
+    see the note in run.py on why a failed send must stay loud."""
     if not jobs:
         return
-    send_message(format_new_jobs_message(company_name, jobs))
+    for message in format_new_jobs_messages(company_name, jobs, tags):
+        send_message(message)
 
 
 def notify_maintenance(slug: str, message: str) -> None:

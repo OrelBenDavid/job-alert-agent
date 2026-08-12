@@ -11,10 +11,14 @@ profiles/<slug>.json, zero code changes here. New code is only needed
 when a new platform shows up.
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
 import requests
 
 from models import Job
 from relevance import is_relevant_location
+from detail import (DEFAULT_SECTION_CONTENT_FIELD, DEFAULT_SECTION_HEADING_FIELD,
+                    normalize_inline_value)
 
 
 def _get_by_path(obj: dict, dotted_path: str):
@@ -27,6 +31,34 @@ def _get_by_path(obj: dict, dotted_path: str):
             return None
         cur = cur.get(part)
     return cur
+
+
+def _inline_description(profile, item: dict) -> str | None:
+    """The cheapest rung of the cheap-to-expensive ladder for descriptions:
+    if the listing response already contains the description text, take it
+    here and no per-posting request is ever built.
+
+    Both live-verified platforms turn out to reach their description this
+    way, for different reasons:
+      - Greenhouse returns the full description under `content` when the
+        endpoint carries ?content=true, while its posting PAGE serves only
+        the application form - so inline is the ONLY path there.
+      - Lever returns it under `lists`, a structured array rather than a
+        string. Its posting page does serve the description, but fetching it
+        would cost one request per posting for data the listing already sent
+        - which the project's cheap-to-expensive rule rules out.
+
+    Returns None for any profile that isn't declared inline - including
+    every v2 profile, which have no detail_fetch at all."""
+    cfg = profile.detail_fetch
+    if not cfg or cfg.get("method") != "inline":
+        return None
+    raw = _get_by_path(item, cfg["inline_field"])
+    return normalize_inline_value(
+        raw,
+        bool(cfg.get("content_is_html", True)),
+        cfg.get("inline_section_heading", DEFAULT_SECTION_HEADING_FIELD),
+        cfg.get("inline_section_content", DEFAULT_SECTION_CONTENT_FIELD))
 
 
 def fetch_lever(profile) -> list[Job]:
@@ -49,6 +81,7 @@ def fetch_lever(profile) -> list[Job]:
             location=location.strip(),
             url=_get_by_path(p, fields["url"]) or "",
             company=profile.slug,
+            description=_inline_description(profile, p),
         ))
     return jobs
 
@@ -77,6 +110,7 @@ def fetch_greenhouse(profile) -> list[Job]:
             location=display_location.strip(),
             url=_get_by_path(j, fields["url"]) or "",
             company=profile.slug,
+            description=_inline_description(profile, j),
         ))
     return jobs
 
@@ -103,6 +137,7 @@ def fetch_comeet(profile) -> list[Job]:
             location=location.strip(),
             url=_get_by_path(p, fields["url"]) or "",
             company=profile.slug,
+            description=_inline_description(profile, p),
         ))
     return jobs
 
@@ -131,6 +166,7 @@ def fetch_smartrecruiters(profile) -> list[Job]:
                 id=job_id, title=p.get("name", "").strip(), location=location,
                 url=_build_sr_url(api, job_id),
                 company=profile.slug,
+                description=_inline_description(profile, p),
             ))
         offset += limit
         if offset >= data.get("totalFound", 0):

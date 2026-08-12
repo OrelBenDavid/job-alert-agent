@@ -6,12 +6,23 @@ companies.json. See the career-site-profiler skill,
 references/profile_schema.md, for the full schema these files must satisfy.
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
 import json
 from pathlib import Path
 from dataclasses import dataclass, field
 
-SUPPORTED_SCHEMA_VERSION = 2
+# v3 adds the optional `detail_fetch` block (how to reach a posting's own
+# description text). v2 is still accepted and simply reads as having no
+# detail_fetch - every existing profile stays valid, untouched, and its jobs
+# resolve to "undetermined", which passes.
+CURRENT_SCHEMA_VERSION = 3
+SUPPORTED_SCHEMA_VERSIONS = (2, 3)
 PROFILES_DIR = Path(__file__).resolve().parent.parent / "profiles"
+
+# The four ways a description can be reached, cheapest first - the same
+# cheap-to-expensive rule the fetch_type dispatch follows.
+DETAIL_METHODS = ("inline", "html", "playwright", "none")
 
 
 class ProfileError(Exception):
@@ -41,18 +52,87 @@ class Profile:
     def zero_is_plausible(self) -> bool:
         return bool(self.health.get("zero_is_plausible", False))
 
+    @property
+    def detail_fetch(self) -> dict | None:
+        """How to reach a posting's description text, or None if this company
+        has no way to (a v2 profile, or method "none"). None is a perfectly
+        normal answer - it means every job from this company reads as
+        "undetermined", which passes and gets flagged."""
+        block = self.raw.get("detail_fetch")
+        if not block or block.get("method") == "none":
+            return None
+        return block
+
+
+def _validate_detail_fetch(block: dict, where: str) -> None:
+    """Validates the optional v3 `detail_fetch` block.
+
+    Held to the same standard as the rest of the schema - a half-specified
+    block fails at load time rather than turning into a silent stream of
+    per-job fetch errors on every run. Note this is the only place where a
+    detail_fetch problem is ever allowed to be fatal: once a run is under way,
+    a broken selector must degrade to "undetermined", never to a company
+    failure (that distinction is the whole point of the detail layer)."""
+    if not isinstance(block, dict):
+        raise ProfileError(f"{where}detail_fetch must be an object")
+
+    method = block.get("method")
+    if method not in DETAIL_METHODS:
+        raise ProfileError(
+            f"{where}detail_fetch.method invalid: {method!r}. "
+            f"Expected one of {DETAIL_METHODS}.")
+
+    if method == "none":
+        return   # an explicit "this company has no reachable description"
+
+    if method == "inline":
+        if not block.get("inline_field"):
+            raise ProfileError(
+                f"{where}detail_fetch.method='inline' but inline_field is "
+                "missing - there's no way to know which listing field holds "
+                "the description.")
+        return   # inline costs no requests, so the url_* fields don't apply
+
+    # html / playwright - both issue one request per new posting
+    if not block.get("content_selector"):
+        raise ProfileError(
+            f"{where}detail_fetch.method={method!r} requires content_selector.")
+
+    url_source = block.get("url_source", "job_url")
+    if url_source not in ("job_url", "template"):
+        raise ProfileError(
+            f"{where}detail_fetch.url_source invalid: {url_source!r}. "
+            "Expected 'job_url' or 'template'.")
+    if url_source == "template" and not block.get("url_template"):
+        raise ProfileError(
+            f"{where}detail_fetch.url_source='template' but url_template is "
+            "missing.")
+
 
 def _validate(data: dict, path: Path) -> None:
-    """Checks the fields required by schema v2. Doesn't silently patch
+    """Checks the fields required by the schema. Doesn't silently patch
     values - a profile with a missing field fails loudly, at load time,
     not silently in the middle of a fetch."""
     where = f"{path.name}: "
 
     version = data.get("schema_version")
-    if version != SUPPORTED_SCHEMA_VERSION:
+    if version not in SUPPORTED_SCHEMA_VERSIONS:
         raise ProfileError(
-            f"{where}schema_version={version!r}, expected {SUPPORTED_SCHEMA_VERSION}. "
-            "Profile is on an old/unknown schema - fix it or re-run the skill.")
+            f"{where}schema_version={version!r}, expected one of "
+            f"{SUPPORTED_SCHEMA_VERSIONS}. Profile is on an old/unknown "
+            "schema - fix it or re-run the skill.")
+
+    if "detail_fetch" in data:
+        if version < CURRENT_SCHEMA_VERSION:
+            # Not ignored silently: a v2 profile carrying a v3 block is a
+            # contradiction, and quietly dropping it would leave the author
+            # convinced the experience filter is working for this company
+            # when it is in fact reading every job as undetermined.
+            raise ProfileError(
+                f"{where}detail_fetch is a v{CURRENT_SCHEMA_VERSION} field but "
+                f"schema_version={version}. Bump schema_version to "
+                f"{CURRENT_SCHEMA_VERSION} or remove the block.")
+        _validate_detail_fetch(data["detail_fetch"], where)
 
     for req in ("slug", "name", "enabled", "careers_url", "fetch_type",
                 "israel_filter", "health", "verified_on"):

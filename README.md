@@ -1,75 +1,199 @@
 # job-alert-agent
 
-בוט טלגרם שעוקב אחרי דפי קריירה של חברות ומתריע על משרות חדשות (רלוונטיות
-לישראל, כולל remote מסויג). רץ כולו על GitHub Actions - אין שרת.
+A Telegram bot that watches companies' careers pages and alerts on new job
+postings (Israel-relevant, including qualified remote). Runs entirely on
+GitHub Actions - there is no server.
 
-## איך זה עובד
+## How it works
 
-- **פרופיל = רישום.** כל חברה היא קובץ `profiles/<slug>.json`, מבנה
-  מלא ב-`SKILL v2` של `career-site-profiler`. אין `companies.json` נפרד.
-- **ה-dispatcher** (`src/fetchers/__init__.py`) קורא `fetch_type` מהפרופיל
-  ומפנה למודול המתאים (`api.py` / `html.py` / `browser.py`), שקוראים בעצמם
-  שדות נוספים (`platform`, `pagination.method`, `israel_filter.structure`)
-  כדי לבחור אסטרטגיה. חברה חדשה על שילוב קיים = קובץ JSON חדש, אפס קוד.
-- **הזיהוי "משרה חדשה"** רץ תמיד על `Job.id` (מזהה ATS או קישור מנורמל),
-  לעולם לא על טקסט תצוגה - כדי ששינוי קוסמטי אצל החברה לא יגרום להתראה
-  כפולה.
-- **שער בריאות**: אם חברה שהחזירה משרות בעבר מחזירה פתאום 0, זה נחשב
-  כשל (סלקטור שנשבר), לא "אין משרות". ה-state לא נדרס, ומתקבלת התראת
-  תחזוקה אחרי שני כשלים רצופים.
+- **A profile IS the registration.** Every company is one
+  `profiles/<slug>.json` file, in the full structure defined by
+  `career-site-profiler`. There is no separate `companies.json`.
+- **The dispatcher** (`src/fetchers/__init__.py`) reads `fetch_type` from the
+  profile and routes to the matching module (`api.py` / `html.py` /
+  `browser.py`), which in turn read further fields (`platform`,
+  `pagination.method`, `israel_filter.structure`) to pick a strategy. A new
+  company on an existing combination = one new JSON file, zero code.
+- **"New job" detection** always runs on `Job.id` (the ATS's own id, or a
+  canonicalized link) and never on display text - so a cosmetic change on the
+  company's side can't produce a duplicate alert.
+- **Health gate**: if a company that used to return jobs suddenly returns 0,
+  that counts as a failure (a broken selector), not "no jobs". State is not
+  overwritten, and a maintenance alert goes out after two consecutive
+  failures.
+- **A filter chain** (`src/filters.py`) runs between the diff and the send,
+  deciding what is *shown* - not what counts as new. See below.
 
-## הוספת חברה
+## Experience filter
 
-1. פתח שיחה עם Claude, בקש להוסיף את החברה - זה מפעיל את הסקיל
-   `career-site-profiler`.
-2. שמור את ה-`profile.json` שהתקבל תחת `profiles/<slug>.json`.
-3. הרץ `python run.py --seed` (ידני, דרך `workflow_dispatch` או מקומית)
-   כדי לזרוע state בלי לשלוח התראות על כל המשרות הקיימות.
-4. מהריצה הבאה של ה-cron החברה נכנסת למעקב הרגיל.
+Default: **ON**, suppressing postings that require **more than one year** of
+experience.
 
-**`/add` בטלגרם לא עושה את זה אוטומטית (v1 מכוון)** - הוא רק אומר
-שצריך סשן פרופיילינג ידני. `/remove <slug>` מכבה חברה (`enabled: false`)
-בלי למחוק היסטוריה. `/list` מציג את כל החברות וסטטוס שלהן (שמות בלבד,
-לא משרות). `/jobs <slug>` שולף בזמן אמת (לא מה-state) את המשרות הפתוחות
-הרלוונטיות לישראל כרגע אצל אותה חברה - עד 20 בהודעה אחת (מגבלת 4096
-תווים של טלגרם), עם קישור לעמוד הקריירות המלא אם יש יותר.
+The experience requirement is not in the job listing (the listing returns
+only `id`/`title`/`location`/`url`), so there is a detail layer
+(`src/detail.py`) that fetches the posting's description according to
+`detail_fetch` in the profile - `inline` (the description already arrived
+with the listing, zero requests), `html`, `playwright`, or `none`.
 
-**פקודות טלגרם לא רצות ברקע.** אין תהליך שמאזין - הן נקראות פעם בכל
-ריצה של ה-cron (piggyback), אז זמן התגובה הוא עד מרווח ה-cron (3 שעות)
-+ עיכוב GitHub הרגיל. זו החלטת עיצוב מכוונת: cron ייעודי לפקודות היה
-שורף לבד את כל מכסת ה-Actions של רפו פרטי.
+**Always check for `inline` before building a per-posting request.** This is
+the project's cheap-to-expensive rule, and it has paid off: both Lever and
+Greenhouse return the full description in the listing itself, so both
+verified companies cost zero extra requests. `inline_field` also supports a
+field that is an **array of sections**
+(`[{text: heading, content: "<li>..."}]`, Lever's shape) and not just a
+string - `detail.render_sections` turns it into HTML before parsing, keeping
+the headings, because the heading is what promotes an unmarked bullet to
+"mandatory".
 
-## הרצה מקומית
+**Order of operations - critical:**
+
+```
+fetch → dedupe → diff against state → NEW jobs
+      → write ALL new ids to state        ← BEFORE filtering
+      → title pre-check → detail fetch → filter chain
+      → notify survivors
+```
+
+State is written **before** filtering on purpose: state means "everything
+ever seen", filtering is presentation only. If suppressed jobs were left out
+of state, each one would look new on every run and its detail page would be
+re-fetched forever. **Accepted consequence:** turning the filter off does not
+retroactively deliver jobs suppressed while it was on. There is no replay
+mechanism, by design.
+
+**Fail-open**: if no number is found, the posting is **sent**, flagged.
+Losing a relevant job costs far more than two seconds of scrolling. A
+detail-layer failure (404, dead selector, timeout) is likewise just
+"undetermined" - it does **not** mark the company as failing, does not block
+the state write, and does not abort the run. That is entirely separate from
+`health` / `expected_min_jobs`, which concern the listing and were left
+untouched.
+
+**Three flag levels** (all three are sent - the flag only sorts them):
+
+| Flag (as sent, in Hebrew) | Meaning |
+|---|---|
+| `✅ ניסיון: עד שנה` | A number was found, and it is at or below the threshold |
+| `⚠️ לא צוינה דרישת ניסיון` | No number found at all |
+| `🔶 לא צוין מספר, יש סימני ותק` | No number, but `proven experience` / an advanced-degree requirement is present |
+
+The third level exists because, per Indeed Hiring Lab data (US, April 2024),
+only ~30% of postings state a number of years - meaning "undetermined" is the
+majority, and without a further split the flag would be meaningless.
+
+**The title pre-check** rejects `senior`/`lead`/`staff`/`principal`/`manager`
+and friends at zero request cost. A junior-sounding title does **not** earn
+an automatic pass: per LinkedIn analysis, ~35% of postings labelled
+"entry-level" still demand 3+ years.
+
+**Commands:**
+
+```
+/filter                    state of every filter
+/filter experience on|off  turn one on or off
+/minexp 2                  change the threshold (in years)
+/minexp strict on|off      in strict mode, "undetermined" is suppressed
+                           instead of sent
+/stats                     counters: rejected by title / number found and
+                           passed / number found and rejected /
+                           undetermined / undetermined with seniority signals
+```
+
+Settings are stored in `state/filters.json`, which the workflow already
+commits - so they can be changed from a phone with no commit and without
+touching the workflow. The `/stats` counters are the only way to tell whether
+the filter genuinely works or merely appears to: the ~30% figure is US
+aggregate data and may not hold for Israeli postings.
+
+## Adding a company
+
+1. Open a conversation with Claude and ask to add the company - this invokes
+   the `career-site-profiler` skill. That skill is also what determines the
+   company's `detail_fetch` (verifying it against a real posting URL) - it is
+   never guessed by hand.
+2. Save the resulting `profile.json` as `profiles/<slug>.json`.
+3. Run `python run.py --seed` (manually, via `workflow_dispatch` or locally)
+   to seed state without firing alerts for every already-open posting.
+4. From the next cron run, the company is under normal monitoring.
+
+**`/add` in Telegram does NOT do this automatically (deliberate in v1)** - it
+only reports that a manual profiling session is needed. `/remove <slug>`
+disables a company (`enabled: false`) without deleting history. `/list` shows
+every company and its status (names only, not jobs). `/jobs <slug>` fetches
+live (not from state) the currently open Israel-relevant postings for that
+company - up to 20 in one message (Telegram's 4096-character limit), with a
+link to the full careers page if there are more.
+
+**Telegram commands do not run in the background.** No process is listening -
+they are read once per cron run (piggybacked), so response time is up to one
+cron interval (3 hours) plus GitHub's usual delay. This is a deliberate
+design decision: a dedicated cron for commands would on its own burn a
+private repo's entire Actions quota.
+
+## Running locally
 
 ```bash
 pip install -r requirements.txt
-python -m playwright install --with-deps chromium   # רק אם יש חברת playwright
+python -m playwright install --with-deps chromium   # only if a playwright company exists
 export TELEGRAM_BOT_TOKEN=...
 export TELEGRAM_CHAT_ID=...
 cd src
-python run.py --seed   # בפעם הראשונה
-python run.py          # ריצה רגילה
+python run.py --seed   # the first time
+python run.py          # a normal run
 ```
 
-## בדיקות
+## Tests
 
 ```bash
 cd tests && python -m pytest -v
 ```
 
-## סטטוס נוכחי
+## Current status
 
-- `mobileye`, `wiz` — פרופילי API (Lever/Greenhouse), **אומתו חי** ב-2026-08-11:
-  מובילאיי מחזירה 122 משרות רלוונטיות לישראל (`expected_min_jobs: 20`,
-  `zero_is_plausible: false`), Wiz מחזירה 0 (ה-board האמיתי שלה מכיל כרגע
-  רק 2 משרות בסך הכל, שתיהן מחוץ לישראל - `zero_is_plausible: true`
-  נשאר נכון). ה-state כבר נזרע (`state/seen/`), אין seed gap.
-- `wix` — פרופיל `playwright` (אין ATS מוכר, דף הקריירה בנוי על הפלטפורמה
-  של Wix עצמה), **אומת חי** ב-2026-08-11 בשתי דרכים: בדיקת DOM/network
-  בדפדפן, ו-הרצה אמיתית של `fetch()` שהחזירה 15 משרות בתל אביב
-  (`expected_min_jobs: 6`, `zero_is_plausible: false`). הפילטר לישראל
-  רץ `post_fetch` על הרשימה המלאה (לא על ה-location picker של האתר - נשבר
-  כשמנסים לסנן שתי ערים בבת אחת, ראה `israel_filter._note` בפרופיל).
-  **Seed gap פתוח** - אין `state/seen/wix.json`; יש להריץ
-  `python run.py --seed` לפני שההתראות הרגילות ייכנסו לתוקף עבור החברה
-  הזו.
+- `mobileye` - API profile (Lever), **live-verified** on 2026-08-11 and again
+  on 2026-08-12: 122 Israel-relevant postings (`expected_min_jobs: 20`,
+  `zero_is_plausible: false`). State is seeded (`state/seen/`), no seed gap.
+- `wiz` - API profile (Greenhouse), **live-verified** on 2026-08-12 (the
+  earlier profile note claiming the endpoint was unreachable was stale - this
+  environment's egress was blocked on 2026-08-11 and is open now). The board
+  has exactly 2 open jobs company-wide, both outside Israel, so it returns 0
+  Israel-relevant postings and `zero_is_plausible: true` remains correct.
+  State is seeded, no seed gap.
+- `wix` - `playwright` profile (no known ATS; the careers page is built on
+  Wix's own platform), **live-verified** on 2026-08-11 two ways: a DOM/network
+  inspection in the browser, and a real `fetch()` run returning 15 Tel Aviv
+  postings (`expected_min_jobs: 6`, `zero_is_plausible: false`). The Israel
+  filter runs `post_fetch` over the full list rather than the site's location
+  picker, which breaks when filtering two cities at once - see
+  `israel_filter._note` in the profile. **Seed gap open** - there is no
+  `state/seen/wix.json`; run `python run.py --seed` before normal alerting
+  takes effect for this company.
+
+### Experience filter status
+
+- **`mobileye` and `wiz` are on `schema_version: 3`** with `detail_fetch`
+  **live-verified on 2026-08-12**, both `method: inline` (zero extra
+  requests):
+  - `mobileye` → `inline_field: lists`. Lever's listing already contains the
+    entire description, so `method: html` is unnecessary. The field was
+    chosen by testing each candidate against the real parser over 25 live
+    postings: `description`/`descriptionBody` hold only the intro paragraph
+    and yielded a number on 0 of 25, while `lists` yielded one on 18.
+  - `wiz` → `inline_field: content` with `content_is_html: true` (the field
+    arrives as HTML **and** HTML-escaped - verified live). This is the only
+    viable path there: a Greenhouse posting page serves only the application
+    form.
+- **Live result on Mobileye:** of 122 Israel-relevant postings, 5 pass the
+  filter (95% suppressed) - 63 rejected by title, 54 on an explicitly stated
+  number of years. The determination rate is **91%**, against the ~30% US
+  baseline the design was planned around: Israeli tech postings state a
+  number far more often than the US average.
+- Note: no Mobileye posting requires one year or less (the lowest found is
+  two years, in 6 postings), which is why `passed_with_number` is 0.
+  `/minexp 2` would open up those 6.
+- **`wix` is still `schema_version: 2` with no `detail_fetch`**, so the
+  filter only works at the title level there and everything else is sent with
+  `⚠️`. That is correct fail-open behaviour, not a bug. Determining how to
+  reach a posting's description there needs a `career-site-profiler` session
+  (the listing is `playwright`, and the posting page itself has not been
+  examined).
