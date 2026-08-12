@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-12T07:43:34.004400+00:00",
-  "last_count": 119,
+  "last_success": "2026-08-12T10:15:21.611278+00:00",
+  "last_count": 122,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -94,6 +94,10 @@
     "56a4af6f-946b-4786-89b1-92110e53f6be": {
       "title": "Data Platform Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
+      "title": "Deep Learning Algorithm Engineer - REM Semantics",
+      "first_seen": "2026-08-12T10:15:21.611278+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -275,6 +279,10 @@
       "title": "Radar ATE Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "17a6552b-f9bc-44b1-a521-0d4e86c90d20": {
+      "title": "Radar Perception Product Manager for AV Sensing",
+      "first_seen": "2026-08-12T10:15:21.611278+00:00"
+    },
     "28b9b2ee-4480-4486-b057-0f554d324151": {
       "title": "Real-Time Embedded DSP Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -370,6 +378,10 @@
     "c3489228-75ae-4338-a99d-b8be98e6e79b": {
       "title": "Senior Python Infrastructure Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
+      "title": "Senior Signal Integrity Engineer-AV Hardware",
+      "first_seen": "2026-08-12T10:15:21.611278+00:00"
     },
     "b02e3f9e-e4a3-4c0f-8214-77606f75b9da": {
       "title": "Senior Software Engineer - AI Platform (Python & React)",

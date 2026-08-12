@@ -1,0 +1,21 @@
+{
+  "last_run_at": "2026-08-12T10:15:21.791240+00:00",
+  "last_run": {
+    "experience": {
+      "rejected_by_title": 2,
+      "passed_with_number": 0,
+      "rejected_with_number": 1,
+      "undetermined": 0,
+      "undetermined_signals": 0
+    }
+  },
+  "totals": {
+    "experience": {
+      "rejected_by_title": 2,
+      "passed_with_number": 0,
+      "rejected_with_number": 1,
+      "undetermined": 0,
+      "undetermined_signals": 0
+    }
+  }
+}
