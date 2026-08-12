@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-12T04:54:44.862965+00:00",
-  "last_count": 121,
+  "last_success": "2026-08-12T06:33:39.388721+00:00",
+  "last_count": 120,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -249,10 +249,6 @@
     },
     "e0906011-cc0a-4bda-83cf-4f9a22e3a6f4": {
       "title": "Forecast Analyst",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "d58c12f6-be27-4bbc-9cb7-38558e65b0f1": {
-      "title": "Live Mapping Validation Analyst",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
