@@ -216,10 +216,12 @@ cd tests && python -m pytest -v
   postings (`expected_min_jobs: 6`, `zero_is_plausible: false`). The Israel
   filter runs `post_fetch` over the full list rather than the site's location
   picker, which breaks when filtering two cities at once - see
-  `israel_filter._note` in the profile. Re-verified on 2026-08-12: **16**
-  Israel-relevant postings, selectors intact. **Seed gap open** - there is no
-  `state/seen/wix.json`; run `python run.py --seed` before normal alerting
-  takes effect for this company.
+  `israel_filter._note` in the profile. Re-verified on 2026-08-12: selectors
+  intact, 16 then 17 Israel-relevant postings an hour apart (ordinary churn,
+  not drift - the profile was not rebuilt). **Seed gap closed on 2026-08-12**:
+  `state/seen/wix.json` holds 17 ids. Seeded wix alone rather than via a full
+  `run.py --seed`, so mobileye and wiz kept their existing state instead of
+  having every `first_seen` reset to the seed timestamp.
   - **Fixed on 2026-08-12, found while sizing the fetch pools:** a first run
     returned **0 jobs without raising**. Not a dead selector - the
     `comp-*` ids are all still present. The cards on this page land 4-9s
