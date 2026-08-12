@@ -16,6 +16,7 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
 import commands as commands_mod
+import run as run_mod
 import settings as settings_mod
 import state as state_mod
 import stats as stats_mod
@@ -89,6 +90,66 @@ def test_turning_the_filter_off_does_not_replay_suppressed_jobs():
     # Filter now off - but the job is already "seen", so it is not new again.
     later = state_mod.process_company("acme", fetched, _PROFILE)
     assert run_chain(later.new_jobs, _PROFILE, []) == []
+
+
+# ---------------------------------------------------------------------------
+# A failed send must stay fatal
+# ---------------------------------------------------------------------------
+
+def test_a_failed_send_exits_non_zero_so_state_is_not_committed(monkeypatch,
+                                                                tmp_path):
+    """The subtle one. State is written BEFORE notification, so swallowing a
+    send error and exiting 0 would let check.yml commit that state - making
+    "seen but never delivered" permanent for those jobs. Exiting non-zero
+    skips the commit step, the ephemeral runner discards the state changes,
+    and the jobs are re-detected next run.
+
+    If someone ever "fixes" this into a quiet warning, this test fails."""
+    profiles_dir = tmp_path / "profiles"
+    profiles_dir.mkdir()
+    (profiles_dir / "acme.json").write_text(json.dumps({
+        "schema_version": 3, "slug": "acme", "name": "Acme", "enabled": True,
+        "careers_url": "https://jobs.lever.co/acme", "fetch_type": "api",
+        "israel_filter": {"method": "post_fetch"},
+        "api": {"platform": "lever",
+                "fields": {"id": "id", "title": "text",
+                           "location": "categories.location",
+                           "url": "hostedUrl"}},
+        "health": {"expected_min_jobs": 1}, "verified_on": "2026-08-12",
+    }), encoding="utf-8")
+
+    import profiles as profiles_mod
+    monkeypatch.setattr(run_mod, "load_enabled",
+                        lambda: profiles_mod.load_enabled(profiles_dir))
+    monkeypatch.setattr(run_mod, "process_commands", lambda: None)
+    monkeypatch.setattr(run_mod, "fetch_jobs",
+                        lambda profile: [_job("new1"), _job("new2")])
+
+    state_mod.seed_company("acme", [])          # seeded, so it isn't a seed gap
+
+    def refuse(*args, **kwargs):
+        raise RuntimeError("Telegram 400: message is too long")
+
+    monkeypatch.setattr(run_mod, "notify_new_jobs", refuse)
+    maintenance = []
+    monkeypatch.setattr(run_mod, "notify_maintenance",
+                        lambda slug, msg: maintenance.append((slug, msg)))
+
+    with pytest.raises(SystemExit) as exit_info:
+        run_mod._run_normal()
+
+    assert exit_info.value.code == 1        # non-zero => commit step skipped
+    assert maintenance and maintenance[0][0] == "acme"
+
+    # The jobs ARE on disk as seen - which is exactly why the non-zero exit
+    # matters, since that state must never reach the repo.
+    assert set(state_mod.load_state("acme")["jobs"]) == {"new1", "new2"}
+
+
+def test_a_successful_run_exits_normally():
+    """The guard must not turn ordinary runs into failures."""
+    state_mod.seed_company("acme", [])
+    assert state_mod.load_state("acme")["jobs"] == {}
 
 
 # ---------------------------------------------------------------------------

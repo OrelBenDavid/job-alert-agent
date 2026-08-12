@@ -67,6 +67,7 @@ def _run_normal() -> None:
     run_stats = RunStats()
 
     had_seed_gap = []
+    send_failures = []
     for profile in profiles:
         state = load_state(profile.slug)
         if state.get("last_success") is None:
@@ -109,7 +110,27 @@ def _run_normal() -> None:
             if survivors:
                 jobs_to_send = [job for job, _ in survivors]
                 tags = {job.id: tag for job, tag in survivors if tag}
-                notify_new_jobs(profile.name, jobs_to_send, tags)
+                # *** A failed send must stay FATAL - see _run_normal's
+                # closing note. It is caught only so the remaining companies
+                # still get processed, and the run still exits non-zero. ***
+                try:
+                    notify_new_jobs(profile.name, jobs_to_send, tags)
+                except Exception as e:
+                    print(f"[send error] {profile.slug}: {e}", file=sys.stderr)
+                    send_failures.append(profile.slug)
+                    try:
+                        # Best effort, and a much simpler message than the one
+                        # that just failed - so the user hears "something
+                        # broke" instead of just going quiet.
+                        notify_maintenance(
+                            profile.slug,
+                            f"Failed to send the new-jobs alert "
+                            f"({len(jobs_to_send)} jobs). They were NOT lost - "
+                            "state is not committed on a failed run, so they "
+                            "will be re-detected and re-sent next run.")
+                    except Exception as inner:
+                        print(f"[send error] {profile.slug}: maintenance alert "
+                              f"also failed: {inner}", file=sys.stderr)
 
             suppressed = len(result.new_jobs) - len(survivors)
             if suppressed:
@@ -123,6 +144,26 @@ def _run_normal() -> None:
         names = ", ".join(had_seed_gap)
         print(f"[seed gap] manual `python run.py --seed` needed for: {names}",
              file=sys.stderr)
+
+    # *** Why a failed send is deliberately fatal ***
+    #
+    # State is written BEFORE notification, so by this point the jobs whose
+    # alert failed are already recorded as "seen" on disk. Swallowing the
+    # error and exiting 0 would let check.yml's "Commit updated state" step
+    # run, making that permanent - the jobs would never be re-detected and
+    # never delivered. Silently losing a relevant job is the single outcome
+    # this whole project is built to prevent.
+    #
+    # Exiting non-zero skips the commit step instead. The runner is
+    # ephemeral, so the state changes are discarded, the previous committed
+    # state survives, and the next run re-detects those jobs and tries again.
+    # A noisy retry is strictly better than a quiet loss.
+    if send_failures:
+        print(f"[run failed] alerts could not be sent for: "
+              f"{', '.join(send_failures)}. Exiting non-zero on purpose so "
+              "state is NOT committed and these jobs are retried next run.",
+              file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
