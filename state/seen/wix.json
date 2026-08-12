@@ -1,0 +1,75 @@
+{
+  "last_success": "2026-08-12T11:43:17.595643+00:00",
+  "last_count": 17,
+  "consecutive_failures": 0,
+  "jobs": {
+    "https://careers.wix.com/position/oracle-f77c829d-96e3-5b86-aa4f-9e5684daa24b-T1786530688-744000143080909": {
+      "title": "Applied Data Scientist",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-b47fb3e1-f81e-5c8a-85af-6c81cd34c50c-T1786523487-744000143055330": {
+      "title": "DevOps Engineer - KubeOps Team",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-56d742ca-136e-55ce-bcb6-30c6a0f0d617-T1786374970-744000143036214": {
+      "title": "FP&A Analyst",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-0e4e1398-eae0-5402-8ce8-24b3324ccae5-T1780850209-744000141887600": {
+      "title": "Designer",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-2656ac50-2531-58c6-9fff-6c628afff2d7-T1785661175-744000141691009": {
+      "title": "Head Of Security - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000141454128": {
+      "title": "Senior AI Product Marketing Manager - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000141453928": {
+      "title": "AI Growth Marketer - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-b627985c-bed6-5ff7-a2e4-90ef99fb9397-T1785824988-744000141416948": {
+      "title": "Animator - Base44 (Temp position)",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-ad345b73-1f3a-593e-9fb7-88d9f49e1ff8-T1785680969-744000141209229": {
+      "title": "Content Designer, Language & Systems",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-0e12307b-4f71-5674-b656-d4dc6e345856-T1785146313-744000140238949": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/REF3088Y-744000140209529": {
+      "title": "AI Creative Gen - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/REF3104C-744000140208660": {
+      "title": "Conversion Rate Optimization (CRO) Manager - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-c8839635-7cc3-5126-b650-db165b1bdea3-T1784825880-744000139343921": {
+      "title": "Revenue Operations Manager - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-ead6eec9-9975-57ae-b516-723b92f32721-T1784615399-744000139247849": {
+      "title": "Head of Customer experience - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-376c470e-478f-5a26-bf9f-0e03811780f3-T1778498280-744000132934678": {
+      "title": "Demand Generation Manager- Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-31ef6155-f134-54a5-89fa-ccad0a958a39-T1774782714-744000132934508": {
+      "title": "Motion Designer - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    },
+    "https://careers.wix.com/position/oracle-61c93244-effb-5796-acd6-51a85405e16b-T1781619782-744000132604976": {
+      "title": "AI Researcher - Foundation Models & Generative AI - Base44",
+      "first_seen": "2026-08-12T11:43:17.595643+00:00"
+    }
+  }
+}
