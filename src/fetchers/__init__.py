@@ -37,8 +37,27 @@ _FETCH_TYPE_DISPATCH = {
 #
 #   network (api/html) - one or a few `requests` calls, a few hundred KB of
 #     RAM, essentially all of it spent waiting on a socket. Cheap enough to
-#     run wide; the only real ceiling is politeness to the remote host, and
-#     each company here is a DIFFERENT host.
+#     run wide; the only real ceiling is politeness to the remote host.
+#
+#     *** That ceiling changed at 145 companies and the old note here was
+#     wrong. *** This comment used to say "each company here is a DIFFERENT
+#     host", which was true of three companies and is not true now: 105 of the
+#     145 profiles are Comeet customers and every one of them resolves to
+#     www.comeet.co, with a further 28 on boards-api.greenhouse.io. So this
+#     pool is not 12 polite requests to 12 strangers - it is a sustained 12-way
+#     burst at two hosts.
+#
+#     Measured, three separate full runs plus a dedicated burst test: 105/105
+#     Comeet endpoints returned 200 at 12 workers, no 429 and no throttling.
+#     That is the evidence for leaving the number at 12. It is NOT evidence
+#     about a GitHub Actions runner, whose egress IPs are shared and far more
+#     likely to be rate-limited than a home connection - that stays unverified
+#     until the first scheduled run.
+#
+#     If Comeet does start throttling, it surfaces as an HTTP error per
+#     company, which is a loud failure reaching a maintenance alert after two
+#     consecutive runs - not a silent zero. The fix would be lowering this
+#     number, which needs no code change (JOB_ALERT_NETWORK_WORKERS).
 #
 #   browser (playwright) - a whole Chromium per company, hundreds of MB and
 #     a real CPU share. A GitHub-hosted runner on a private repo is 2 vCPU /
