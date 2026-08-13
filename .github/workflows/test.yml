@@ -1,0 +1,72 @@
+name: Tests
+
+# *** Why this exists ***
+#
+# Until now check.yml was the only workflow, and it does not run the tests - it
+# runs the bot. So there was no gate at all: a merge went straight to a live
+# scheduled run, and "the tests pass" meant "they passed on someone's laptop".
+# At three companies that was survivable. At 145, where one bad profile load or
+# one relevance-filter regression silently changes what every company reports,
+# it is not.
+#
+# This deliberately runs on the SAME Python as check.yml (3.12) and not on the
+# author's local interpreter, which is 3.9. That gap is the specific thing this
+# catches: the project uses `from __future__ import annotations` so that `X |
+# None` parses on 3.9, and nothing verified that the two interpreters actually
+# agree until this file existed.
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch: {}
+
+# A branch that gets two pushes in quick succession only needs the newer one
+# tested. Unlike check.yml's group, cancelling here is safe - no state is
+# written and nothing is sent.
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read   # strictly less than check.yml needs; this never commits
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"   # must match check.yml
+          cache: pip
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # Deliberately NOT installing Playwright browsers. The suite mocks the
+      # browser layer, so the binaries are never launched - and skipping the
+      # ~200 MB download is what keeps this fast enough to run on every push.
+      # If a test ever genuinely needs a real Chromium, that is a signal the
+      # test is doing too much, not that this step is missing.
+
+      - name: Run tests
+        run: python -m pytest tests -q
+
+      # The suite is fully offline (every fetch is patched), so a failure here
+      # is a real regression rather than a flaky network. That property is
+      # worth keeping: a test that needs the internet does not belong in it.
+      - name: Check that no profile fails to load
+        working-directory: src
+        run: |
+          python -c "
+          from profiles import load_all
+          profiles, errors = load_all()
+          for e in errors:
+              print('PROFILE ERROR:', e)
+          print(f'{len(profiles)} profiles loaded, {len(errors)} errors')
+          raise SystemExit(1 if errors else 0)
+          "
