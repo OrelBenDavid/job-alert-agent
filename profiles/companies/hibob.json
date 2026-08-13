@@ -1,0 +1,20 @@
+{
+  "slug": "hibob",
+  "name": "HiBob",
+  "platform": "hibob",
+  "careers_url": "https://www.hibob.com/careers/",
+  "resolved_from": "Re-resolved on 2026-08-13 after the shortlist's Comeet identifier ('hibob/12.00A') turned out to be dead. The company has moved off Comeet entirely and now runs its hiring on its own product: www.hibob.com/careers/ links every posting to hibob-fa0ad69d0cb34a.careers.hibob.com/jobs/<uuid>, and that site is backed by a JSON endpoint at /api/job-ad. Found by loading the careers page in a browser and reading the network requests - the page source alone showed only Comeet CSS class names left over from the previous integration, which is what made the earlier signature scan misleading.",
+
+  "api": {
+    "endpoint": "https://hibob-fa0ad69d0cb34a.careers.hibob.com/api/job-ad"
+  },
+
+  "health": {
+    "expected_min_jobs": 8,
+    "zero_is_plausible": false,
+    "_note": "Live-verified 2026-08-13: 62 postings total, 17 with country='Israel'. expected_min_jobs=8 is roughly half the observed Israeli count, per the skill's deliberately lazy rule - a tight floor fires on ordinary churn and freezes new-job detection for three runs each time it does. zero_is_plausible=false: this is an Israeli company with a large local R&D presence, so a zero here means something broke."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Everything not stated here is inherited from profiles/_platforms/hibob.json - including the job_url_template, which embeds this tenant's subdomain and would need overriding for any other HiBob customer. Needs seeding before its first normal run."
+}

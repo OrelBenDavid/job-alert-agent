@@ -1,0 +1,79 @@
+{
+  "last_success": "2026-08-13T11:24:10.823521+00:00",
+  "last_count": 18,
+  "consecutive_failures": 0,
+  "jobs": {
+    "F9.66B": {
+      "title": "AI Embedded Engineer",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "C3.D6F": {
+      "title": "AI NPU Simulator - Senior Team Lead",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "82.F6C": {
+      "title": "AI NPU Simulator Software Developer",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "36.F64": {
+      "title": "AI NPU VLSI Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "79.76A": {
+      "title": "AI Software Architect",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "8D.B6A": {
+      "title": "AI Software SDK Senior Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "ED.F64": {
+      "title": "Architecture software tools developer student",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "0A.E66": {
+      "title": "Communication System Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "FA.B61": {
+      "title": "Compiler Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "84.F6F": {
+      "title": "CRM Administrator",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "B4.A6F": {
+      "title": "Director of SW Development Tools",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "87.B50": {
+      "title": "DSP and AI libraries Software Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "05.A6B": {
+      "title": "Emulation & CAD Team Leader",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "7E.754": {
+      "title": "R&D Project Manager",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "4A.767": {
+      "title": "R&D Technical Project Manager, AI Division",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "4C.F6C": {
+      "title": "Senior Compiler Engineer",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "15.F64": {
+      "title": "System Architect",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "E0.E65": {
+      "title": "Wellbeing & Employer Branding Specialist (Maternity Leave Cover)",
+      "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    }
+  }
+}

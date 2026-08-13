@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:34.285348+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "52.A53": {
+      "title": "Chief Architect",
+      "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    },
+    "B4.861": {
+      "title": "Software Engineer, Gen AI",
+      "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    }
+  }
+}

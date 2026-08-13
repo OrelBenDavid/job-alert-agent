@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-13T11:24:49.430840+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "20.F6E": {
+      "title": "DevOps (Student Position)",
+      "first_seen": "2026-08-13T11:24:49.430840+00:00"
+    },
+    "8B.D68": {
+      "title": "Field Marketing Manager",
+      "first_seen": "2026-08-13T11:24:49.430840+00:00"
+    },
+    "8E.F6B": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-08-13T11:24:49.430840+00:00"
+    },
+    "6E.55D": {
+      "title": "Sales Associate",
+      "first_seen": "2026-08-13T11:24:49.430840+00:00"
+    },
+    "7B.D69": {
+      "title": "Sales Manager",
+      "first_seen": "2026-08-13T11:24:49.430840+00:00"
+    }
+  }
+}

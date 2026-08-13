@@ -1,0 +1,63 @@
+{
+  "last_success": "2026-08-13T11:24:41.034113+00:00",
+  "last_count": 14,
+  "consecutive_failures": 0,
+  "jobs": {
+    "67.051": {
+      "title": "Analog Design Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "BE.E51": {
+      "title": "BackEnd (Physical design) Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "EE.640": {
+      "title": "DSP Algorithm Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "BE.E50": {
+      "title": "Mixed Signal Verification Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "B2.F4D": {
+      "title": "Mixed-Signal Verification Team Lead",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "94.65A": {
+      "title": "Production Test Engineer – High-Speed Mixed-Signal ICs",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "5E.15A": {
+      "title": "Senior Analog Design Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "5E.122": {
+      "title": "Senior BackEnd (Physical design) Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "4A.341": {
+      "title": "Senior MXS Verification Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "6F.A3A": {
+      "title": "Senior Verification Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "25.84D": {
+      "title": "System Director Manager",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "06.44C": {
+      "title": "System Validation engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "79.05B": {
+      "title": "VLSI Design Engineer",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    },
+    "BD.42D": {
+      "title": "VLSI DFT Team Leader",
+      "first_seen": "2026-08-13T11:24:41.034113+00:00"
+    }
+  }
+}

@@ -106,6 +106,44 @@ FOREIGN_REGION_MARKERS = [
     "cape town", "johannesburg", "sao paulo", "rio de janeiro",
     "buenos aires", "mexico city", "guadalajara", "monterrey", "bogota",
     "santiago", "lima",
+    # *** US states and Canadian provinces ***
+    #
+    # Added 2026-08-13, after the company count went from 3 to 142 exposed a
+    # leak this list had all along. The countries and cities above are enough
+    # when a location string names one - "Texas, USA, Remote" is rejected on
+    # "usa", and "Remote - New York" on the city. But Greenhouse publishes a
+    # separate `offices[]` array, each entry checked on its own, and its office
+    # names are bare sub-national remote regions with NO country token:
+    # "Remote - Colorado", "Remote - Texas", "Remote - British Columbia".
+    #
+    # Checked alone, those hit the remote keyword, match no marker, and are
+    # therefore kept as qualified remote - the exact "Remote-US" case the
+    # module docstring says is excluded. Measured across the 28 Greenhouse
+    # companies: 31 distinct office strings leaking 151 job-office matches,
+    # 68 jobs at Datadog alone, which would have been ~8% of every alert batch
+    # made up of US roles nobody here can take.
+    #
+    # This was invisible at three companies: Lever and the Wix page never
+    # produce a bare sub-national remote string, so nothing exercised it.
+    #
+    # Full names only, deliberately. Two-letter postal codes are NOT safe here
+    # because matching is whole-word on a padded string: "or" (Oregon) would
+    # match inside "Remote or Hybrid", and "in" / "me" / "ok" / "hi" / "de" /
+    # "id" have the same problem. The two abbreviations below are kept because
+    # neither is an English word and both genuinely rule Israel out.
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho",
+    "illinois", "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine",
+    "maryland", "massachusetts", "michigan", "minnesota", "mississippi",
+    "missouri", "montana", "nebraska", "nevada", "new hampshire", "new jersey",
+    "new mexico", "north carolina", "north dakota", "ohio", "oklahoma",
+    "oregon", "pennsylvania", "rhode island", "south carolina", "south dakota",
+    "tennessee", "texas", "utah", "vermont", "virginia", "washington",
+    "west virginia",
+    "wisconsin", "wyoming", "district of columbia", "dc", "ca",
+    "ontario", "quebec", "british columbia", "alberta", "manitoba",
+    "saskatchewan", "nova scotia", "new brunswick", "newfoundland",
+    "prince edward island", "yukon", "nunavut", "northwest territories",
     # Regional shorthands and timezones
     "apac", "anz", "dach", "benelux", "nordics", "iberia",
     "est", "edt", "pst", "pdt", "cst", "cdt", "mst", "mdt", "bst", "cet",

@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-13T11:24:19.175809+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "FA.B68": {
+      "title": "Backend Team Lead",
+      "first_seen": "2026-08-13T11:24:19.175809+00:00"
+    },
+    "39.B6D": {
+      "title": "Senior PMO",
+      "first_seen": "2026-08-13T11:24:19.175809+00:00"
+    },
+    "F1.F6A": {
+      "title": "VP Product",
+      "first_seen": "2026-08-13T11:24:19.175809+00:00"
+    }
+  }
+}

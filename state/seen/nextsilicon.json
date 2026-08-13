@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:34.268453+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "97.F5B": {
+      "title": "AI Compiler Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "BD.763": {
+      "title": "AI Libraries Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "DA.031": {
+      "title": "Emulation Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "6C.766": {
+      "title": "Hardware Technical Program Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "D3.C61": {
+      "title": "Logic Design Team Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "B9.F2E": {
+      "title": "Network Software Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "64.D47": {
+      "title": "Physical Design Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "A7.F52": {
+      "title": "Physical Design Team Leader",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "3E.E46": {
+      "title": "Senior Design Engineer-CPU",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "E1.26D": {
+      "title": "Senior Logic Design Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "F3.D4A": {
+      "title": "Senior Physical Design Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "EF.26A": {
+      "title": "Software Engineer - CodeGen",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "A3.339": {
+      "title": "Verification Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    }
+  }
+}

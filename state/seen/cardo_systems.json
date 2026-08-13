@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-13T11:24:10.811891+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "D1.C6B": {
+      "title": "Backend Developer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "39.867": {
+      "title": "Embedded Software Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "4A.C68": {
+      "title": "Hardware Manager",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "88.E64": {
+      "title": "Mobile Application Software Manager",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "A8.E6A": {
+      "title": "Order Management Specialist",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "55.D69": {
+      "title": "Product Marketing Manager",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    }
+  }
+}

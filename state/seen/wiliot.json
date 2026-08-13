@@ -1,0 +1,47 @@
+{
+  "last_success": "2026-08-13T11:30:57.420120+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
+  "jobs": {
+    "52.F66": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "91.B62": {
+      "title": "Field Technician",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "6A.D6D": {
+      "title": "Firmware Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "93.D66": {
+      "title": "Frontend Developer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "6B.D60": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "2A.F46": {
+      "title": "Logic Digital Verification Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "14.079": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "A6.D68": {
+      "title": "RF System Integration Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "D2.C6B": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    },
+    "52.451": {
+      "title": "Senior Verification Engineer",
+      "first_seen": "2026-08-13T11:30:57.420120+00:00"
+    }
+  }
+}

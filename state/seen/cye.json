@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-13T11:24:19.151984+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "d2b9d2ff-edb8-4fb4-80ca-9b5cdefa8a57": {
+      "title": "Application Security Specialist",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "3fd1c2c4-f731-4e4b-87b2-d63403563a25": {
+      "title": "BDR Team Lead",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "f8afa49c-c5b1-4c7d-8a86-e1a6edf66787": {
+      "title": "Cyber Architecture Team Lead",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "eee7d9cb-13be-4faf-8ee1-50ba3837cd79": {
+      "title": "Cyber Security Architect",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "874ab08d-922c-4fbd-8ba8-c9109fc9ac2b": {
+      "title": "Cybersecurity Architect (GRC & Risk)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "f2b31c9a-ea8b-4e83-a9d3-1f87ed740cc7": {
+      "title": "Cybersecurity Professional",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "93eb9bab-30e3-4ff4-83e6-09f8f8727a81": {
+      "title": "DFIR",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "ba6f695a-5512-4fcb-bcb0-aa7d42c9c6c4": {
+      "title": "Senior AI Engineer (AI & Innovation)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "54b694d0-6181-4ee7-99d5-128eecd67b5a": {
+      "title": "Surprise Us.",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    }
+  }
+}

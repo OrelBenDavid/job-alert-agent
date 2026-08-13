@@ -1,0 +1,75 @@
+{
+  "last_success": "2026-08-13T11:24:49.428833+00:00",
+  "last_count": 17,
+  "consecutive_failures": 0,
+  "jobs": {
+    "c8e67100-af5c-4e91-b147-952784abb8c3": {
+      "title": "Business Development Representative - German speaking",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "cae6cb8b-2701-4aff-befb-a259c3eb3324": {
+      "title": "DevOps Engineer Cloud Engineering Team",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "2698c9aa-1445-4407-9d58-66aa2d260dc2": {
+      "title": "DevSecOps Engineer",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "3fa072d4-bcab-4165-b42f-a7c58a794c75": {
+      "title": "Full Stack Engineer - AI Applications",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "78942015-2ffc-4cba-aab4-cfb51f1970ad": {
+      "title": "Full Stack Engineer - Big Data Platform",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "8bd1a62a-2a4c-451b-8c1a-170c65c64050": {
+      "title": "Pre-Sales AI Consultant",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "a6e57bde-d152-445b-aec9-8e356dacee8e": {
+      "title": "Product Analyst (Temporary Position)",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "3f89ed0b-d3a8-49c1-9a2a-68662497f16e": {
+      "title": "Product Manager  - Product-Led Growth (PLG) | WalkMe Learning Arc",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "2594252b-3e93-4b2e-918a-8a00ae684fe1": {
+      "title": "QA & Automation Engineer",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "5bc3e506-86a5-49cd-bbd3-6166517712cc": {
+      "title": "Senior C# Developer",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "bdae7789-8774-4991-9ddb-708e2cb676f8": {
+      "title": "Senior Full Stack Engineer - AI Applications",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "8f9b6155-ce75-4756-b5b4-00cd75dbb943": {
+      "title": "Senior Full Stack Engineer - Big Data Platform",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "907d8992-e0c6-48a9-8ff8-ea7421ffe343": {
+      "title": "Senior Full Stack Engineer - Insights",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "5afc2845-be46-487a-9fd0-e72de5096660": {
+      "title": "Senior Professional Services Consultant",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "9165e357-3a66-43eb-b968-f06907572c74": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "01195a47-88c5-4091-a1dd-193ada2c6592": {
+      "title": "Technical Product Manager",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    },
+    "9923a954-7584-4b5d-947b-f175d6b06940": {
+      "title": "Technical Support Engineer",
+      "first_seen": "2026-08-13T11:24:49.428833+00:00"
+    }
+  }
+}

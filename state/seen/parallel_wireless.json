@@ -1,0 +1,39 @@
+{
+  "last_success": "2026-08-13T11:24:34.304909+00:00",
+  "last_count": 8,
+  "consecutive_failures": 0,
+  "jobs": {
+    "e615e732-e7ea-406c-938a-4632b189b7ba": {
+      "title": "Platform Director",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "3c13944f-a46c-4bee-a972-0a52e71d3431": {
+      "title": "Senior AI-Driven Integration & Validation Engineer",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "51a23cf6-8341-49eb-8404-58e6bee73cf9": {
+      "title": "Senior Applied AI Evaluation Engineer - RAN Ticket Intelligence",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "bf96d78d-400a-4b68-914c-bbf93e578d8a": {
+      "title": "Senior RAN Systems Engineer- POC & Technical Evaluation",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "233858ab-104d-42fe-8b5b-f9d86aa8f5a4": {
+      "title": "Senior/Principal Local LLM & Generative AI Platform Engineer",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "870976cd-2100-47c6-af9b-6fa347073189": {
+      "title": "Senior/Principal RAN Digital Twin & AI Simulation Engineer",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "d47fdbd3-a0d5-45a8-94a0-19d2a640e3ae": {
+      "title": "Sr. Principal, DevOps",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "eaf8378b-46aa-4d6e-a73f-124f43cf2ece": {
+      "title": "System Architecture Team Lead (Platform, Cloud)",
+      "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    }
+  }
+}

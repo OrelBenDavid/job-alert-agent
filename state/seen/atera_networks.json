@@ -1,0 +1,63 @@
+{
+  "last_success": "2026-08-13T11:24:10.791826+00:00",
+  "last_count": 14,
+  "consecutive_failures": 0,
+  "jobs": {
+    "F8.B6C": {
+      "title": "Account Executive",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "DA.76E": {
+      "title": "Channel Manager",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "3D.B6A": {
+      "title": "Controller",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "FD.E6A": {
+      "title": "Customer Success Manager - Scale Team",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "99.D69": {
+      "title": "Director FP&A Analyst",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "68.E63": {
+      "title": "Director of Finance",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "EE.E6C": {
+      "title": "Director of Sales",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "05.C6F": {
+      "title": "Enterprise Account Executive",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "9D.B64": {
+      "title": "Head of Alliances & Strategic Partnerships",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "C3.963": {
+      "title": "Outbound Account Executive",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "CF.E6D": {
+      "title": "Sales Development Rep - TLV",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "1C.F6A": {
+      "title": "Senior Platform Engineer",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "81.D69": {
+      "title": "User Acquisition Lead (Maternity Leave Replacement)",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "28.E6E": {
+      "title": "Web QA & Automation Engineer",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    }
+  }
+}

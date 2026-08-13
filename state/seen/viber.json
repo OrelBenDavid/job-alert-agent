@@ -1,0 +1,39 @@
+{
+  "last_success": "2026-08-13T11:24:49.426826+00:00",
+  "last_count": 8,
+  "consecutive_failures": 0,
+  "jobs": {
+    "CC.C69": {
+      "title": "Art Director",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "FE.466-AE.009": {
+      "title": "Backend Team Lead",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "B0.F66": {
+      "title": "Creative Brand & Motion Designer",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "B5.71E": {
+      "title": "Didn't find anything that suits you?",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "23.D65": {
+      "title": "Product Designer",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "16.A6B": {
+      "title": "Senior Data Analyst",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "52.F64": {
+      "title": "Senior Director, Fraud Prevention & Platform Integrity",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "9A.D6B": {
+      "title": "Social Media Manager",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    }
+  }
+}

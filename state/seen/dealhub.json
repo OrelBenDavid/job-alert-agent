@@ -1,0 +1,67 @@
+{
+  "last_success": "2026-08-13T11:24:19.173800+00:00",
+  "last_count": 15,
+  "consecutive_failures": 0,
+  "jobs": {
+    "06.65B": {
+      "title": "Business Development Representative",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "C6.464": {
+      "title": "Director of Customer Success Operations",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "A3.753": {
+      "title": "Enterprise Account Executive",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "70.E6D": {
+      "title": "Full Stack Web / WordPress Developer",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "0A.E61": {
+      "title": "GTM Business Analyst",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "82.E69": {
+      "title": "Head of Social Media",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "D2.A48": {
+      "title": "Java Software Engineer",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "2E.86A": {
+      "title": "Java Team Lead",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "26.46D": {
+      "title": "Pre-Sales Engineer",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "09.E60": {
+      "title": "Product Marketing Manager - GTM Content",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "D9.C6C": {
+      "title": "Python Engineer",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "99.067": {
+      "title": "QA Engineer(Entry Level)",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "10.F60": {
+      "title": "Sales Operations - Student Position",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "9A.E5A": {
+      "title": "Senior Customer Support Specialist",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "B4.550": {
+      "title": "Solution Expert",
+      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    }
+  }
+}

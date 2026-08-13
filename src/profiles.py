@@ -20,6 +20,34 @@ CURRENT_SCHEMA_VERSION = 3
 SUPPORTED_SCHEMA_VERSIONS = (2, 3)
 PROFILES_DIR = Path(__file__).resolve().parent.parent / "profiles"
 
+# *** Platform profiles and thin company records ***
+#
+# Three kinds of file live under profiles/, and the difference is only about
+# how much of a document is written down, never about how it behaves:
+#
+#   profiles/*.json              a full standalone profile. What every company
+#                                was before this existed, and still the right
+#                                answer for a company that doesn't fit a
+#                                platform's shape (wix).
+#   profiles/_platforms/*.json   a PARTIAL document holding everything that is
+#                                identical for every customer of one ATS.
+#   profiles/companies/*.json    a thin record naming a platform plus the few
+#                                fields that genuinely differ per company.
+#
+# A company record is resolved by merging it OVER its platform profile, and the
+# result is then validated exactly like a standalone profile - same schema,
+# same errors, same required fields. Nothing downstream can tell the two apart,
+# which is the point: this is config resolution, not a behaviour registry.
+#
+# In particular the `platform` key selects a FILE and nothing else. The fetch
+# dispatch still reads `fetch_type` and `api.platform` off the resolved
+# document (see fetchers/__init__.py and fetchers/api.py) - there is
+# deliberately no platform-name -> function map anywhere in the resolution
+# path, so a company can override any resolved field, including api.platform,
+# and the dispatcher follows it.
+PLATFORMS_DIR = PROFILES_DIR / "_platforms"
+COMPANIES_DIR = PROFILES_DIR / "companies"
+
 # The four ways a description can be reached, cheapest first - the same
 # cheap-to-expensive rule the fetch_type dispatch follows.
 DETAIL_METHODS = ("inline", "html", "playwright", "none")
@@ -34,7 +62,8 @@ DETAIL_METHODS = ("inline", "html", "playwright", "none")
 # recruitee, workday) than this project implements, so a profile naming one of
 # them used to validate cleanly and then fail once per run, per company, as a
 # fetch error - which needs two consecutive failures before it says anything.
-IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters")
+IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters",
+                             "ashby", "hibob")
 
 # The step verbs fetchers/browser.py's _apply_relevance_filter_actions can
 # replay. An unknown verb raises there, mid-fetch; catching it here means a
@@ -313,13 +342,106 @@ def _validate(data: dict, path: Path) -> None:
             "that prevents 'silent zero' failures, it can't be skipped.")
 
 
-def load_profile(path: Path) -> Profile:
-    """Loads and parses a single profile. Raises ProfileError with details
-    if something's invalid."""
+def _read_json(path: Path) -> dict:
     try:
-        data = json.loads(path.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         raise ProfileError(f"{path.name}: invalid JSON - {e}") from e
+    except OSError as e:
+        raise ProfileError(f"{path.name}: could not be read - {e}") from e
+
+
+def _deep_merge(base: dict, override: dict) -> dict:
+    """`override` merged over `base`, recursing into nested objects.
+
+    The recursion is the whole reason this isn't dict.update(). A company needs
+    to set `api.endpoint` without restating `api.fields` - a flat merge would
+    replace the entire `api` block and drop the field mapping, which is the one
+    thing the platform profile exists to supply. That failure would not be
+    loud, either: `fields` is required by _validate, so it would surface as a
+    schema error on all 142 companies at once, and the temptation would be to
+    paste the field map back into every record.
+
+    Lists and scalars REPLACE rather than merge. A half-overridden list (say,
+    two of a platform's three checked_fields) is never what an author means,
+    and merging them would make it impossible to shorten one.
+    """
+    merged = dict(base)
+    for key, value in override.items():
+        if (key in merged and isinstance(merged[key], dict)
+                and isinstance(value, dict)):
+            merged[key] = _deep_merge(merged[key], value)
+        else:
+            merged[key] = value
+    return merged
+
+
+def _validate_platform(data: dict, path: Path) -> None:
+    """Checks a platform profile's own contribution.
+
+    Deliberately its own pass rather than leaving it to the merged validation.
+    A typo in a platform file is inherited by every company on that platform,
+    so it would otherwise surface as the same confusing error a hundred times
+    over with a hundred company filenames attached and no mention of the file
+    that actually caused it."""
+    where = f"_platforms/{path.name}: "
+    if data.get("fetch_type") is None:
+        raise ProfileError(f"{where}missing 'fetch_type'")
+    if data["fetch_type"] not in ("api", "html", "playwright"):
+        raise ProfileError(f"{where}unknown fetch_type: {data['fetch_type']!r}")
+    # A platform profile must NOT carry per-company identity. Catching it here
+    # rather than letting it merge through is what stops one stray `slug` in a
+    # platform file from silently renaming every company that inherits it.
+    for forbidden in ("slug", "name", "careers_url"):
+        if forbidden in data:
+            raise ProfileError(
+                f"{where}must not define {forbidden!r} - that is a per-company "
+                "field, and a value here would be inherited by every company "
+                "on this platform.")
+
+
+def load_platform(name: str) -> dict:
+    """Loads one platform profile by name. Raises with the list of real ones
+    if it doesn't exist - a typo'd platform name is otherwise a KeyError from
+    somewhere unhelpful."""
+    path = PLATFORMS_DIR / f"{name}.json"
+    if not path.exists():
+        available = sorted(p.stem for p in PLATFORMS_DIR.glob("*.json")) \
+            if PLATFORMS_DIR.exists() else []
+        raise ProfileError(
+            f"unknown platform {name!r} - no profiles/_platforms/{name}.json. "
+            f"Available: {available}")
+    data = _read_json(path)
+    _validate_platform(data, path)
+    return data
+
+
+def resolve_profile(data: dict, path: Path) -> dict:
+    """A profile document as the rest of the project should see it.
+
+    A document with no `platform` key is already complete and passes straight
+    through untouched - which is what keeps every standalone profile, wix
+    included, resolving to exactly the bytes on disk."""
+    platform = data.get("platform")
+    if not platform:
+        return data
+    resolved = _deep_merge(load_platform(platform), data)
+    # `platform` has done its job selecting the file. It is left in the
+    # resolved document on purpose - the importer and any future tooling want
+    # to know which platform a company came from, and _validate ignores keys it
+    # doesn't recognise.
+    return resolved
+
+
+def load_profile(path: Path) -> Profile:
+    """Loads, resolves and parses a single profile. Raises ProfileError with
+    details if something's invalid.
+
+    Validation runs on the RESOLVED document, so a thin company record and a
+    standalone profile are held to identical standards - a company that
+    inherits a broken endpoint fails exactly as loudly as one that spells it
+    out."""
+    data = resolve_profile(_read_json(path), path)
 
     _validate(data, path)
 
@@ -330,17 +452,69 @@ def load_profile(path: Path) -> Profile:
     )
 
 
-def load_all(profiles_dir: Path = PROFILES_DIR) -> list[Profile]:
-    """Loads every profile in the directory. A profile that fails
-    validation is collected as a single error message with its filename -
-    it does not stop the loading of the other profiles, so one broken
-    company doesn't take down the whole run."""
+def profile_paths(profiles_dir: Path = PROFILES_DIR) -> list[Path]:
+    """Every file that is a company, in a stable order.
+
+    Two directories, and the exclusion is the load-bearing part: `_platforms/`
+    is NOT included. Platform files are partial documents with no slug and no
+    careers_url, so loading one as a company would fail validation - which
+    means the underscore prefix is a convention, not the mechanism. The
+    mechanism is that this function globs two named directories rather than
+    walking the tree, so a new subdirectory under profiles/ can never start
+    being picked up as companies by accident.
+    """
+    paths = sorted(profiles_dir.glob("*.json"))
+    companies = profiles_dir / "companies"
+    if companies.is_dir():
+        paths += sorted(companies.glob("*.json"))
+    return paths
+
+
+def find_profile_path(slug: str, profiles_dir: Path = PROFILES_DIR) -> Path | None:
+    """The file defining one company, or None. Root first, then companies/.
+
+    Every caller that used to build `PROFILES_DIR / f"{slug}.json"` by hand
+    must go through this instead. Once a company can live in either directory,
+    that hand-built path silently misses the ones under companies/ - and the
+    Telegram commands failed exactly that way: /remove and /jobs answered
+    'no such profile' for a company that was being monitored perfectly well,
+    and /list showed only whatever was left at the root."""
+    for candidate in (profiles_dir / f"{slug}.json",
+                      profiles_dir / "companies" / f"{slug}.json"):
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def load_all(profiles_dir: Path = PROFILES_DIR) -> tuple[list[Profile], list[str]]:
+    """Loads every profile, standalone and platform-backed alike. A profile
+    that fails validation is collected as a single error message with its
+    filename - it does not stop the loading of the other profiles, so one
+    broken company doesn't take down the whole run.
+
+    A duplicate slug across the two directories is reported rather than
+    silently resolved. At three companies that could not happen; at 142
+    imported ones, a company added by hand at the root and again by the
+    importer under companies/ would otherwise mean two profiles sharing a
+    single state file, each overwriting the other's ids every run - a
+    permanent, silent alert loss for both."""
     profiles, errors = [], []
-    for path in sorted(profiles_dir.glob("*.json")):
+    seen: dict[str, Path] = {}
+    for path in profile_paths(profiles_dir):
         try:
-            profiles.append(load_profile(path))
+            profile = load_profile(path)
         except ProfileError as e:
             errors.append(str(e))
+            continue
+        if profile.slug in seen:
+            errors.append(
+                f"{path.name}: duplicate slug {profile.slug!r}, already defined "
+                f"by {seen[profile.slug].name}. Both would share "
+                f"state/seen/{profile.slug}.json and overwrite each other every "
+                "run. Skipped this one; delete or rename one of the two.")
+            continue
+        seen[profile.slug] = path
+        profiles.append(profile)
     return profiles, errors
 
 

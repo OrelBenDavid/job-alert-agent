@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-13T11:24:10.777326+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "0D.F55": {
+      "title": "BSP Software Design Engineer",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "44.E61": {
+      "title": "Director of AI Enablement",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "58.E63": {
+      "title": "Hardware Verification & Validation Engineer",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "AA.B68": {
+      "title": "Mechanical Assembly Technician",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "7D.864": {
+      "title": "RMA Technician",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "3D.A68": {
+      "title": "Testing Technician",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "3D.A6B": {
+      "title": "Testing Technician Student",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "2D.F62": {
+      "title": "Vendor Scheduler",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "E3.E6B": {
+      "title": "Warehouse Clerk",
+      "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    }
+  }
+}

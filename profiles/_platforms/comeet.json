@@ -1,0 +1,48 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Comeet customer. A company record under profiles/companies/ names \"platform\": \"comeet\" and adds only what differs: slug, name, careers_url, api.endpoint (which carries both the uid and the per-company token) and health. Merged company-over-platform by profiles.resolve_profile, then validated as one document.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "location.name"
+    ],
+    "_note": "VERIFIED live 2026-08-13. post_fetch is the correct and only method here, per SKILL Step 5: the API has no location parameter at all - every query parameter tried (page, limit, offset, skip, and location-shaped ones) was ignored and returned the identical full board. So there is nothing to filter with before fetching; the single call returns every posting worldwide and relevance is decided on location.name. `structure: none` records that Comeet's API exposes no location filter, not that its hosted careers page lacks one."
+  },
+
+  "api": {
+    "platform": "comeet",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "uid",
+      "title": "name",
+      "location": "location.name",
+      "url": "url_comeet_hosted_page"
+    },
+    "_note": "The stable id is `uid` (e.g. '71.E67'), NOT `id` - Comeet has no top-level `id` field, and falling back to the link would produce a different key for the same posting the moment the slug in that URL changed. Verified 238 unique uids across the largest board in the set. `url_comeet_hosted_page` is an absolute www.comeet.com link; `url_active_page` also exists and points at the company's own branded careers page, but it is not always present and sometimes carries a tracking query - the hosted page is the one that is always there."
+  },
+
+  "detail_fetch": {
+    "method": "none",
+    "_note": "DELIBERATELY none, and this is a finding rather than a gap. The listing response carries `details` - an array of {name, value} sections holding the description - so an inline block looked available. It was not written because it could not be verified to the standard the schema requires: `verified_on_job_url` must name a real posting the field was confirmed against, and confirming it per company across 104 companies is not something one platform-level file can honestly assert. The experience filter is fail-open, so the cost of omitting this is that Comeet jobs read as 'undetermined' and are alerted with no experience tag - exactly the documented degradation. Writing a guessed block instead would silently withhold real jobs, which is the outcome the schema's rule exists to prevent. A per-company override may add one once verified."
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Both fields are overridden per company by the importer from that company's live verified count, because they are per-company facts and a platform-level default for them is meaningless. The defaults here are the SAFE direction: expected_min_jobs 0 disables the absolute floor (leaving the relative-collapse gate, which needs no per-profile number), and zero_is_plausible false means a company dropping to zero is treated as a fault rather than shrugged off."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Endpoint template: https://www.comeet.co/careers-api/2.0/company/{uid}/positions?token={token}. One call, a flat JSON array, the entire board - no pagination of any kind (verified against vastdata/43.001, the largest board in the set at 238 postings: page, limit, offset and skip were all ignored and returned the same 238). THE TOKEN IS NOT THE UID - it is a separate per-company public value published in the JSON blob embedded in the company's Comeet-hosted board page (https://www.comeet.co/jobs/{slug}/{uid}), next to its company_uid. Using the uid as the token returns HTTP 400 'Account uid or token are not valid' for every company. The token is resolved ONCE at import time and baked into api.endpoint, never re-resolved at runtime: the board page is ~750 KB against a few KB for the API call, so resolving 104 tokens per run would add ~78 MB to every scheduled execution for data that effectively never changes. If a company's token is ever rotated its fetch returns HTTP 400, which surfaces as an ordinary fetch failure and reaches the maintenance alert after two consecutive runs. Full evidence: _onboarding/verify_report.md."
+}

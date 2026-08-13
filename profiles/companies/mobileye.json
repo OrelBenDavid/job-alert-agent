@@ -1,0 +1,20 @@
+{
+  "slug": "mobileye",
+  "name": "Mobileye",
+  "platform": "lever",
+  "careers_url": "https://jobs.eu.lever.co/mobileye",
+  "resolved_from": "company name 'Mobileye' - web_search returned both careers.mobileye.com/jobs (branded landing) and jobs.eu.lever.co/mobileye (Lever board) as separate results; picked the Lever one per Step 0.1. Carried over unchanged from the standalone profile this record replaced.",
+
+  "api": {
+    "endpoint": "https://api.eu.lever.co/v0/postings/mobileye?mode=json"
+  },
+
+  "health": {
+    "expected_min_jobs": 20,
+    "zero_is_plausible": false,
+    "_note": "Live-verified 2026-08-11 (122 Israel-relevant), 2026-08-12 (122), and 2026-08-13 (117 of 137 postings). expected_min_jobs=20 is a deliberately conservative floor well below the observed count, to tolerate normal fluctuation without disabling the health gate. zero_is_plausible=false: a company this size genuinely reaching 0 open roles would itself be worth a maintenance alert, not a silent state overwrite. Both values carried over unchanged from the standalone profile."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Migrated from a full standalone profiles/mobileye.json to a thin record on 2026-08-13. The resolved document is byte-identical in every field the fetchers read - asserted by tests/test_platform_profiles.py, which pins the resolved endpoint, field map and detail_fetch rather than trusting the migration. THE EU HOST MATTERS and is why api.endpoint is overridden here: api.lever.co (non-EU) 404s for this slug, and mobileye is the only EU-hosted account of the 8 live Lever companies. detail_fetch now comes from the lever platform profile, where it was moved because it is platform behaviour - it was originally verified against this company's posting, which is still the URL recorded there."
+}

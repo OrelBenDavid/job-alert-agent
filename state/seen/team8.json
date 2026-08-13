@@ -1,0 +1,167 @@
+{
+  "last_success": "2026-08-13T11:24:41.070265+00:00",
+  "last_count": 40,
+  "consecutive_failures": 0,
+  "jobs": {
+    "12.E56": {
+      "title": "Bluespine-AI Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "9D.26D": {
+      "title": "Bluespine-Backend/Data Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "D2.C6D": {
+      "title": "Bluespine-Senior Data Engineer, Analytics & Data Infrastructure",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "13.B63": {
+      "title": "Briya- Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "13.B66": {
+      "title": "Briya- Full Stack Engineer (Frontend Oriented)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "13.B6B": {
+      "title": "Briya- Medical Data Analyst",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "97.B51": {
+      "title": "C8 Health- Senior AI Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "97.B54": {
+      "title": "C8 Health- Senior Full Stack Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "F6.D6F": {
+      "title": "Charm Security- Fraud & Data Researcher",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "03.76B": {
+      "title": "Charm Security- Senior Backend Engineer – Platform",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "D0.36A": {
+      "title": "Charm Security-Senior Full Stack Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "F0.157": {
+      "title": "Lumia- Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "2E.055": {
+      "title": "Monogoto- Junior CSM",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "63.73F": {
+      "title": "Monogoto-Full Stack Developer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "5B.E57": {
+      "title": "Panax- Full Stack Developer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "D5.C59": {
+      "title": "Reevol-Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "42.365": {
+      "title": "Reindeer- AI Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "B8.E6F": {
+      "title": "Reindeer- AI Solutions Engineer (IL)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "42.367": {
+      "title": "Reindeer- Software Engineer (Backend)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "B8.E6E": {
+      "title": "Reindeer- Software Engineer (Infrastructure)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "80.A5C": {
+      "title": "Sawmills.ai- BE Engineer, Fully Remote Position",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "BE.959": {
+      "title": "Sawmills.ai- Full Stack Engineer, Fully Remote Position",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "9F.95F": {
+      "title": "Team8 - Cybersecurity Business Development Manager",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "12.56D": {
+      "title": "Team8 - Strategy & Business Operations Manager",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "FB.D63": {
+      "title": "Team8 Cyber Stealth Startup- Business Development Representative (BDR)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "7E.F67": {
+      "title": "Team8 Cyber Stealth Startup- Product Manager, SASE Infrastructure",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "FB.D65": {
+      "title": "Team8 Cyber Stealth Startup-AI GTM Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "7E.F69": {
+      "title": "Team8 Cyber Stealth Startup-Product Manager, AI Security",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "71.36B": {
+      "title": "Team8 Health AI Stealth Startup Founding CTO / Head of Engineering",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "28.E63": {
+      "title": "Team8 Health Stealth Startup- Director of Engineering",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "00.F6E": {
+      "title": "Team8 Health Stealth Startup- Software Development Team Lead",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "2E.86B": {
+      "title": "Team8 Stealth Cyber Startup - Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "22.A61": {
+      "title": "Team8 Stealth Cyber Startup- Founding Vulnerability Researcher",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "DF.367": {
+      "title": "Team8 Stealth Cyber Startup- Software Developer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "B0.E6C": {
+      "title": "Team8 Stealth Mode Startup-Marketing Lead",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "0E.C65": {
+      "title": "Team8 Stealth Mode Startup-Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "2C.F66": {
+      "title": "Team8- Bookkeeper (temporary, 6 months)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "3E.F6A": {
+      "title": "Team8- Business Development Operations Lead: Maternity Leave Cover",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "4B.569": {
+      "title": "Team8-Cyber Startup, Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "13.46A": {
+      "title": "US CPA – Financial Intelligence Architect (Service SMB Focus)",
+      "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    }
+  }
+}

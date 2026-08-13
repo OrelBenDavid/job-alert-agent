@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-13T11:24:41.078385+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "BF.16A": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.078385+00:00"
+    },
+    "12.F1B": {
+      "title": "Senior Vulnerability Researcher",
+      "first_seen": "2026-08-13T11:24:41.078385+00:00"
+    },
+    "E5.46D": {
+      "title": "Vulnerability Researcher",
+      "first_seen": "2026-08-13T11:24:41.078385+00:00"
+    }
+  }
+}

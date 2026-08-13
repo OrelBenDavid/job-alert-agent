@@ -6,9 +6,22 @@ GitHub Actions - there is no server.
 
 ## How it works
 
-- **A profile IS the registration.** Every company is one
-  `profiles/<slug>.json` file, in the full structure defined by
-  `career-site-profiler`. There is no separate `companies.json`.
+- **A profile IS the registration.** Every company is one JSON file, in the
+  structure defined by `career-site-profiler`. There is no separate
+  `companies.json`. A company can be written two ways, and they behave
+  identically because the second resolves into the first at load time:
+  - `profiles/<slug>.json` — a full standalone profile. The right answer for a
+    company that doesn't fit any platform's shape (`wix`).
+  - `profiles/companies/<slug>.json` — a thin record naming a `platform` plus
+    only what differs for that company (endpoint, health numbers). It is merged
+    over `profiles/_platforms/<platform>.json`, which holds everything
+    identical across every customer of that ATS, and the merged document is
+    then validated exactly like a standalone profile.
+
+  `platform` selects a **file**, nothing more. The fetch dispatch still reads
+  `fetch_type` and `api.platform` off the *resolved* document, so there is no
+  platform-name-to-function map anywhere in the resolution path, and a company
+  may override any inherited field.
 - **The dispatcher** (`src/fetchers/__init__.py`) reads `fetch_type` from the
   profile and routes to the matching module (`api.py` / `html.py` /
   `browser.py`), which in turn read further fields (`platform`,
@@ -242,7 +255,11 @@ aggregate data and may not hold for Israeli postings.
    the `career-site-profiler` skill. That skill is also what determines the
    company's `detail_fetch` (verifying it against a real posting URL) - it is
    never guessed by hand.
-2. Save the resulting `profile.json` as `profiles/<slug>.json`.
+2. Save the resulting `profile.json`. If the company sits on an ATS that
+   already has `profiles/_platforms/<platform>.json`, write a thin record to
+   `profiles/companies/<slug>.json` instead — `platform`, `slug`, `name`,
+   `careers_url`, `api.endpoint` and `health`, and let the rest be inherited.
+   Otherwise save the full profile as `profiles/<slug>.json`.
 3. Run `python run.py --seed` (manually, via `workflow_dispatch` or locally)
    to seed state without firing alerts for every already-open posting.
    **`--seed` only touches companies that have no state yet**, so it is safe
@@ -251,6 +268,21 @@ aggregate data and may not hold for Israeli postings.
    everything, which resets that history - rarely what you want.
    If the fetch budget runs out mid-seed, the companies that were reached are
    committed; just run `--seed` again for the rest.
+
+   For a large batch, seed in **stages** rather than all at once:
+
+   ```bash
+   python run.py --seed --limit 25
+   ```
+
+   Re-run it to take the next 25 — because the command skips what is already
+   seeded, repeated runs walk the backlog without repeating a company, and the
+   order is stable so the batches are reproducible. `--only <file>` seeds a
+   named list of slugs instead (one per line, `#` comments allowed). Staging
+   matters because seeding is the one irreversible step in adding a company: it
+   decides which postings count as already-known and are therefore never
+   alerted, so doing 139 in one pass records that decision for ~1,350 postings
+   with no chance to look in between.
 4. From the next cron run, the company is under normal monitoring.
 
 **`/add` in Telegram does NOT do this automatically (deliberate in v1)** - it
@@ -290,9 +322,74 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-- `mobileye` - API profile (Lever), **live-verified** on 2026-08-11 and again
-  on 2026-08-12: 122 Israel-relevant postings (`expected_min_jobs: 20`,
+**145 companies are registered** as of 2026-08-13, up from 3. All 145 load
+with no profile errors, and a full live fetch returns **1,336 Israel-relevant
+postings** (145/145 succeeded).
+
+| Platform | Companies | Shape |
+|---|---:|---|
+| Comeet | 105 | thin records over `_platforms/comeet.json` |
+| Greenhouse | 28 | thin records over `_platforms/greenhouse.json` |
+| Lever | 7 | thin records (1 EU-hosted) |
+| Ashby | 3 | thin records |
+| HiBob | 1 | its own careers product — see below |
+| *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+139 of these were bulk-imported by `_onboarding/import_companies.py` from a
+152-row shortlist that was **live-verified first** (see
+`_onboarding/verify_report.md`): 10 identifiers were dead and skipped, and
+BioCatch's second, abandoned board was dropped by an explicit decision. The
+importer is idempotent and re-runnable.
+
+**All 145 are seeded.** The first 142 in six batches of 25 via
+`--seed --limit 25`; the last three when they were added. A simulated run
+afterwards reported **0 seed gaps, 0 fetch failures, 0 health-gate trips, and
+2 new jobs** (ordinary churn).
+
+**The 10 dead identifiers from the shortlist were re-resolved** — 3 recovered,
+7 deliberately left out. Full findings in
+`_onboarding/dead_rows_reresolution.md`:
+
+- **Viz.ai** → Ashby, slug `Viz.ai` (capital V, literal dot — no lowercase
+  guess would have found it). Listed as *Greenhouse* in the shortlist.
+- **Insightec** → Comeet uid `4A.004`. Also listed as Greenhouse. So for two of
+  the three, the shortlist's *platform* was wrong, not just the identifier.
+- **HiBob** → its own careers product, 17 Israel-relevant roles. Needed a new
+  handler; only a browser found it, because the page source still carries
+  leftover Comeet CSS class names that read as a false positive.
+- The other 7 moved to Workday (Digital Turbine, NeoGames-via-Aristocrat),
+  RippleHire (CyberProof) or BambooHR (Cyberbit) — none implemented here — or
+  self-host with almost nothing open (Deep Instinct 0 Israeli roles, MASSIVit
+  1 non-R&D, REE 1).
+
+This also corrected a **wrong claim in the Phase 1 report**: the 82,866-byte
+Comeet "shell" page was cited as proof of a closed account, but a known-good
+uid with a *wrong slug* returns the same page. The rows were still correctly
+excluded, but the stated evidence was stronger than it was.
+
+**⚠️ The scheduled workflow has not been turned on for this set.** The cron in
+`check.yml` dates from the 3-company era and only fires from the default
+branch, so **merging this branch is what makes it live.**
+
+**A relevance-filter leak was found and fixed while verifying the seed.**
+Greenhouse publishes a separate `offices[]` array whose entries the fetcher
+checks individually, and office names are bare sub-national remote regions with
+no country token — `Remote - Colorado`, `Remote - Texas`. Checked alone those
+hit the remote keyword, matched no foreign marker, and were kept as qualified
+remote: exactly the `Remote-US` case `relevance.py` says it excludes. 31
+distinct office strings were leaking, 68 jobs at Datadog alone. All 50 US
+states and the Canadian provinces are now markers, and the 5 companies whose
+counts changed were re-seeded. Invisible at 3 companies because neither Lever
+nor the Wix page produces that shape of string.
+
+- **14 companies carry `zero_is_plausible: true`** because a live check found
+  their board reachable and non-empty but with no Israel-relevant postings.
+  Without that flag each would fire a false maintenance alert on its first run.
+- `mobileye` - API profile (Lever), **live-verified** on 2026-08-11, 2026-08-12
+  and 2026-08-13: 117-122 Israel-relevant postings (`expected_min_jobs: 20`,
   `zero_is_plausible: false`). State is seeded (`state/seen/`), no seed gap.
+  Migrated to a thin record on 2026-08-13; its hand-chosen health numbers and
+  its EU API host are preserved as per-company overrides.
 - `wiz` - API profile (Greenhouse), **live-verified** on 2026-08-12 (the
   earlier profile note claiming the endpoint was unreachable was stale - this
   environment's egress was blocked on 2026-08-11 and is open now). The board

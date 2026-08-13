@@ -1,0 +1,107 @@
+{
+  "last_success": "2026-08-13T11:24:19.151984+00:00",
+  "last_count": 25,
+  "consecutive_failures": 0,
+  "jobs": {
+    "b39bbd95-5891-4bf8-b460-d485900da7e6": {
+      "title": "Communication PHY Algorithms Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "f0fa08d2-0d69-408c-b45f-05e0cb794660": {
+      "title": "Controller",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4c023bc1-9863-47b6-9143-8e15bd837e22": {
+      "title": "Director of Engineering (Operations)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "dc1b0f80-3ba6-4077-b815-41d3a2ccdeab": {
+      "title": "Field System QA",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "475cd149-568d-475d-a58a-08237828c7d2": {
+      "title": "Global Technical Support  Director",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "51471a5f-c2cb-4902-b698-b9e11d342bfd": {
+      "title": "Lead Hardware Systems Architect & Tech Lead",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "6a52d9de-ec0e-48f7-8c4f-ba409b0dd256": {
+      "title": "Market Intelligence Analyst (Drone & Counter-Drone Systems)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "fa2678b9-ab96-4073-a8e7-00e9fcded9d5": {
+      "title": "NPI/Engineering Mechanical Product Lead",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "511dd4fe-d1f8-488e-945e-729b7cbbfc7f": {
+      "title": "Order Management Specialist",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "adcc4e3b-5386-4411-a551-8d98f2701236": {
+      "title": "Professional Services Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "ad96d5f9-f12e-4b56-a3da-73f50e71a99c": {
+      "title": "Professional Services Engineer – Integrated Solutions",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4d69329f-8dcf-4bb0-a93b-54cb0593803b": {
+      "title": "QA Tester",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "0d303979-2039-4391-adb8-080ba4f1c97e": {
+      "title": "Quality Engineer (Hardware & Manufacturing)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "e80f799c-621d-4360-91e7-42d1d1de43a5": {
+      "title": "Radar & Cyber System Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "2e770567-a9fd-4b51-aaed-7fc4c5802ee2": {
+      "title": "RF Automation Developer Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "b100cfc4-7674-4420-8a36-4cf03dc93591": {
+      "title": "RF/HW & System Validation Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "ecb21abd-803d-4cb9-a6a9-9d5869343e2c": {
+      "title": "Senior Communication PHY Algorithms Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "d778f56f-4093-45a0-80c8-7477d49ecff8": {
+      "title": "Senior Digital Hardware Design Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "e34308fd-301e-4c57-bb61-739689005e8a": {
+      "title": "Senior Embedded Vulnerability Researcher",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "12e2ff81-95ed-4a85-90c9-89603768bc27": {
+      "title": "Senior Mechanical Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "6d4b3594-576b-4f36-9863-fd84b7cebe38": {
+      "title": "Senior Python Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "edfc36d0-0bbf-4bdc-bcae-03256b3ba138": {
+      "title": "Senior RF System & Design Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "180d5569-e174-4fab-8798-a1e2b4532916": {
+      "title": "Senior Software Engineer (Cloud/Backend)",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "53dc8287-8969-472d-8b48-6c9b8901035a": {
+      "title": "System Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "53dee7a1-7f63-4699-a2a8-7eb0a8bbdccf": {
+      "title": "System QA Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    }
+  }
+}

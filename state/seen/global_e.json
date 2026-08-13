@@ -1,0 +1,79 @@
+{
+  "last_success": "2026-08-13T11:24:25.527383+00:00",
+  "last_count": 18,
+  "consecutive_failures": 0,
+  "jobs": {
+    "F8.E6E": {
+      "title": "Application Support Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "D9.963": {
+      "title": "Applicative SQL Server DBA",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "DA.566": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "52.B6B": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "23.F62": {
+      "title": "Customer Service Agent",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "23.F66": {
+      "title": "Data Analyst (Chargeback)",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "26.861": {
+      "title": "Delivery Solution Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "86.D6E": {
+      "title": "FP&A Analyst - Student Position",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "6D.C6C": {
+      "title": "Fraud Analyst - Student position",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C5.D6C": {
+      "title": "Marketing Content Writer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "BC.84D": {
+      "title": "NOC Engineer- Student Position",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "78.86C": {
+      "title": "Payment Operations Analyst",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "32.963": {
+      "title": "Payroll Specialist",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "BD.F6B": {
+      "title": "Product Manager- CRM System",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "1E.E68": {
+      "title": "Security Architect",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "A8.86A": {
+      "title": "Senior Demand Generation Manager (B2B)",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "99.F69": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "40.F66": {
+      "title": "Tax Manager- U.S",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    }
+  }
+}

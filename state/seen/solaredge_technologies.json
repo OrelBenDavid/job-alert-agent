@@ -1,0 +1,151 @@
+{
+  "last_success": "2026-08-13T11:24:41.058684+00:00",
+  "last_count": 36,
+  "consecutive_failures": 0,
+  "jobs": {
+    "22.A6A": {
+      "title": "Analog Chip Designer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "7C.76B": {
+      "title": "Assembly Technician",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "A2.E67": {
+      "title": "Components Reliability Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "F2.B65": {
+      "title": "Embedded Infrastructure Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "25.C5E": {
+      "title": "Embedded Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "0E.860": {
+      "title": "Experienced ATE HW Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "32.E6F": {
+      "title": "Failure Analysis HW Engineer​",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "9D.862": {
+      "title": "Failure Analysis Practical Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "0D.D63": {
+      "title": "Field Service Electrician",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "4D.460": {
+      "title": "Forecast Analyst",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "2B.56F": {
+      "title": "FPGA Designer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "A1.361": {
+      "title": "Hardware Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "D7.766": {
+      "title": "Hardware Engineer - High Power",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "CE.E63": {
+      "title": "Hardware Team Leader – Mixed-Signal Design",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "18.E61": {
+      "title": "Integration Team Leader",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "74.965": {
+      "title": "Integration Technician",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "A4.F6F": {
+      "title": "Junior ATE HW Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "6B.D64": {
+      "title": "Junior Power Control System Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "CF.C62": {
+      "title": "Logistics & Customer Experience Team Leader",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "B5.F64": {
+      "title": "Mechanical Design Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "18.E60": {
+      "title": "Mechanical Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "08.E6F": {
+      "title": "Mechanical Practical Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "B3.B62": {
+      "title": "Mechanical Team Leader – ATE Department",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "C0.D61": {
+      "title": "PCB Layout Designer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "18.E62": {
+      "title": "Power Engineering Tech Lead",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "14.468": {
+      "title": "Quality Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "ED.761": {
+      "title": "Sales Data Analyst",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "F3.C62": {
+      "title": "Senior Analog Hardware Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "75.764": {
+      "title": "Senior Embedded Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "15.16F": {
+      "title": "Senior Frontend Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "F8.263": {
+      "title": "Senior Hardware Engineer- Expert Failure Analysis",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "3F.E69": {
+      "title": "Senior Mechanical Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "55.766": {
+      "title": "Service Project Manager",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "F5.A6C": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "7B.761": {
+      "title": "Technical Service Specialist - Tier 1",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "75.D60": {
+      "title": "Test Technician",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    }
+  }
+}

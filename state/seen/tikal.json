@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-13T11:24:41.074279+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "54.B36": {
+      "title": "Fullstack Teach Lead",
+      "first_seen": "2026-08-13T11:24:41.074279+00:00"
+    },
+    "0A.E62": {
+      "title": "Senior Account Executive",
+      "first_seen": "2026-08-13T11:24:41.074279+00:00"
+    },
+    "13.532": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.074279+00:00"
+    },
+    "03.53C": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-13T11:24:41.074279+00:00"
+    },
+    "68.63E": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:41.074279+00:00"
+    }
+  }
+}

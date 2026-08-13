@@ -1,3 +1,5 @@
+import pytest
+
 from relevance import is_relevant_location, is_israel_location, is_qualified_remote
 
 # (input text, expected relevant?) - real-world cases seen across various
@@ -61,3 +63,76 @@ def test_regions_that_include_israel_are_still_kept():
     for location in ["Remote - EMEA", "Remote - Global", "Remote - Worldwide",
                      "Remote - Europe", "Remote", "Remote (Israel)"]:
         assert is_relevant_location(location) is True, location
+
+
+# ---------------------------------------------------------------------------
+# Sub-national remote regions
+#
+# Regression cover for a leak that survived until the company count went from
+# 3 to 142. Greenhouse publishes a separate `offices[]` array and the fetcher
+# checks each entry ON ITS OWN, so an office named "Remote - Colorado" was
+# tested with no country token anywhere in the string: it hit the remote
+# keyword, matched no marker, and was kept as qualified remote - the exact
+# "Remote-US" case this module's docstring says is excluded.
+#
+# Measured before the fix: 31 distinct office strings leaking 151 job-office
+# matches across the 28 Greenhouse companies, 68 jobs at Datadog alone.
+# Invisible at three companies because neither Lever nor the Wix page ever
+# produces a bare sub-national remote string.
+# ---------------------------------------------------------------------------
+
+US_STATES = [
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+    "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
+    "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine",
+    "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+    "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+    "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+    "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+    "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+    "Washington", "West Virginia", "Wisconsin", "Wyoming",
+]
+
+
+@pytest.mark.parametrize("state", US_STATES)
+def test_remote_in_a_us_state_is_not_relevant(state):
+    """All fifty, parametrised on purpose: the first version of the fix left
+    Texas out, and a spot-check of five would not have caught it."""
+    assert not is_relevant_location(f"Remote - {state}")
+
+
+@pytest.mark.parametrize("province", [
+    "Ontario", "Quebec", "British Columbia", "Alberta", "Manitoba",
+    "Saskatchewan", "Nova Scotia", "New Brunswick",
+])
+def test_remote_in_a_canadian_province_is_not_relevant(province):
+    assert not is_relevant_location(f"Remote - {province}")
+
+
+@pytest.mark.parametrize("office", [
+    "Remote - DC", "Remote (CA)", "Remote - District of Columbia",
+])
+def test_the_observed_abbreviated_office_strings_are_not_relevant(office):
+    """Only abbreviations that are not English words were added. See the
+    comment in relevance.py on why "or"/"in"/"me" are deliberately absent."""
+    assert not is_relevant_location(office)
+
+
+@pytest.mark.parametrize("text", [
+    "Remote or Hybrid",
+    "Tel Aviv or Herzliya",
+    "Remote - Israel, in office 2 days",
+])
+def test_english_words_that_double_as_state_codes_do_not_reject_a_job(text):
+    """The reason full state names were added and two-letter postal codes
+    were not: "or" (Oregon), "in" (Indiana), "me" (Maine) are ordinary words,
+    and matching is whole-word on a padded string. Adding them would silently
+    reject real Israeli postings - the unrecoverable direction."""
+    assert is_relevant_location(text)
+
+
+def test_a_genuinely_unqualified_remote_role_is_still_kept():
+    """The fix must not have turned the qualified-remote rule into a blanket
+    rejection of remote work - EMEA and Global both include Israel."""
+    for text in ("Remote", "Remote - EMEA", "Remote - Global", "Hybrid"):
+        assert is_relevant_location(text), text

@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-13T11:24:34.268453+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "2E.C6E": {
+      "title": "Assistant Controller- EMEA",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "D2.D6D": {
+      "title": "Clinical Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "98.E6B": {
+      "title": "NPI Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "75.D6A": {
+      "title": "Operations Sub-Contractor Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "F1.D65": {
+      "title": "Project Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "85.D6E": {
+      "title": "Technical Project Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    }
+  }
+}

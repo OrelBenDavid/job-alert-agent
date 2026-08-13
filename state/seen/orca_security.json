@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-13T11:24:34.285348+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "6103665004": {
+      "title": "Head of Finance",
+      "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    },
+    "6111515004": {
+      "title": "Security Researcher",
+      "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    },
+    "5263129004": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    }
+  }
+}

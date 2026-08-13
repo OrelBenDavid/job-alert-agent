@@ -13,8 +13,8 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from profiles import (CURRENT_SCHEMA_VERSION, PROFILES_DIR, ProfileError,
-                      load_profile)
+from profiles import (CURRENT_SCHEMA_VERSION, ProfileError,
+                      find_profile_path, load_profile, profile_paths)
 
 _BASE = {
     "schema_version": 3,
@@ -46,7 +46,14 @@ def _write(tmp_path, **overrides):
 # ---------------------------------------------------------------------------
 
 def test_every_shipped_profile_still_loads():
-    for path in sorted(PROFILES_DIR.glob("*.json")):
+    """Covers standalone profiles AND platform-backed company records.
+    Globbing the root alone stopped being sufficient once companies could
+    live under companies/ - it would have passed while every migrated
+    company went unchecked."""
+    paths = profile_paths()
+    assert len(paths) >= 3, paths      # guards the glob itself silently
+                                        # matching nothing
+    for path in paths:
         load_profile(path)          # raises ProfileError if it doesn't
 
 
@@ -139,7 +146,7 @@ def test_method_none_needs_no_verification_url(tmp_path):
 def test_both_shipped_detail_fetch_blocks_are_verified():
     """Guards the two profiles actually in production."""
     for slug in ("mobileye", "wiz"):
-        cfg = load_profile(PROFILES_DIR / f"{slug}.json").detail_fetch
+        cfg = load_profile(find_profile_path(slug)).detail_fetch
         assert cfg["verified_on_job_url"].startswith("https://")
 
 
@@ -166,10 +173,15 @@ def test_the_implemented_platform_list_matches_the_dispatcher():
 
 
 def test_a_platform_with_no_handler_is_rejected_at_load(tmp_path):
-    """Ashby is in the skill's table and has no handler here. It used to load
+    """A platform in the skill's table with no handler here used to load
     cleanly and then fail once per run as an ordinary fetch error - which says
-    nothing until it has failed twice."""
-    api = dict(_BASE["api"], platform="ashby")
+    nothing until it has failed twice.
+
+    The example was `ashby` until 2026-08-13, when Ashby was live-verified and
+    given a real handler. Only the example changed; what is being asserted did
+    not. Workable is the replacement for the same reason Ashby was the
+    original: it is in the skill's platform table and has no handler."""
+    api = dict(_BASE["api"], platform="workable")
     with pytest.raises(ProfileError, match="no handler"):
         load_profile(_write(tmp_path, api=api))
 

@@ -1,0 +1,47 @@
+{
+  "last_success": "2026-08-13T11:24:34.318859+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
+  "jobs": {
+    "15.F61": {
+      "title": "AI Data Engineer",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "62.E67": {
+      "title": "Filmer & Editor",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "90.E65": {
+      "title": "Principal Software Architect",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "A5.D6D": {
+      "title": "Procurement Manager",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "F9.B67": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "37.76F": {
+      "title": "Security Operations & Automation",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "7C.767": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "15.F68": {
+      "title": "Senior BI Analyst",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "F8.661": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "26.D62": {
+      "title": "Social Media Manager",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    }
+  }
+}

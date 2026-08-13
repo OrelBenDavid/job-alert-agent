@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:49.435617+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "DF.665": {
+      "title": "Backend Team Lead (C++)",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "0A.B61": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "07.E65": {
+      "title": "Business Development Manager",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "E6.E6A": {
+      "title": "Flight Test & Evaluation",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "BE.A64": {
+      "title": "Head of C-UAS Product Line",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "00.F63": {
+      "title": "Production Engineer",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "A9.564": {
+      "title": "Program Manager",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "2C.F6B": {
+      "title": "Senior Guidance Engineer",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "B6.D67": {
+      "title": "Senior Program Manager",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "42.F6D": {
+      "title": "SOX Manager",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "BE.A67": {
+      "title": "UAS Operator and Instructor",
+      "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    }
+  }
+}

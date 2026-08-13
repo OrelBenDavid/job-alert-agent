@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:25.527383+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "46.A6A": {
+      "title": "Application Security Lead",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "D4.F61": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C4.F65": {
+      "title": "Business Analyst- Maternity Leave Replacement",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "45.F6B": {
+      "title": "Customer Service Representative",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "ED.F6D": {
+      "title": "EST Pre-Sale expert",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "53.F67": {
+      "title": "Experienced Product Analyst",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "5C.D69": {
+      "title": "Product Management Team Leader – Marketplace",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "B8.E6A": {
+      "title": "SecOps Tech Lead",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "63.E60": {
+      "title": "Senior Director of Service Excellence",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "03.F64": {
+      "title": "Senior Product Manager - Billing",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C8.E6A": {
+      "title": "Senior R&D Program Manager",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "4B.D69": {
+      "title": "Senior Salesforce and Business Applications Analyst",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "E6.859": {
+      "title": "Taxi Line Representative (On site)",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    }
+  }
+}

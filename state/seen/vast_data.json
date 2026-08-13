@@ -1,0 +1,159 @@
+{
+  "last_success": "2026-08-13T11:24:49.422813+00:00",
+  "last_count": 38,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5A.66C": {
+      "title": "Cloud FinOps Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "DB.366": {
+      "title": "Cloud Senior software Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "DB.366-17.10C": {
+      "title": "Cloud Senior software Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "96.61C": {
+      "title": "Customer Support Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "96.614": {
+      "title": "Data Path Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "89.D04": {
+      "title": "Frontend Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "E0.C4F": {
+      "title": "Gen-AI Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "8F.946": {
+      "title": "Graduate QA Automation Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "74.12D": {
+      "title": "Hardware System Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "25.F64": {
+      "title": "HR Administrator - Student Position",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "A3.B25": {
+      "title": "Infrastructure Group manager",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "EA.44C": {
+      "title": "Infrastructure Team Leader",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "EA.44C-17.10C": {
+      "title": "Infrastructure Team Leader",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "F8.921": {
+      "title": "Linux Kernel Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "F8.921-17.10C": {
+      "title": "Linux Kernel Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "96.616": {
+      "title": "Platform Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "10.430": {
+      "title": "Product Owner & Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "81.D6E": {
+      "title": "Project and Release Manager",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "BC.D6E": {
+      "title": "Python Expert developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "A6.31F": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "96.619": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "DB.A2F": {
+      "title": "Quality CI Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "3B.B60": {
+      "title": "Senior AI Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "4D.D42": {
+      "title": "Senior Architect",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "5B.D6C": {
+      "title": "Senior C/C++ Core Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "5B.D6C-17.10C": {
+      "title": "Senior C/C++ Core Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "75.345": {
+      "title": "Senior Infrastructure Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "75.345-E2.101": {
+      "title": "Senior Infrastructure Developer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "CD.B6D": {
+      "title": "Senior Software Engineer - Geektime",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "BF.546": {
+      "title": "Senior Solutions Engineer – Big Data & Data Infrastructure",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "A8.D05": {
+      "title": "Software Engineer -New College Grad",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "A8.D05-17.10C": {
+      "title": "Software Engineer -New College Grad",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "81.A34": {
+      "title": "Software Engineer- New college Grad",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "1F.919": {
+      "title": "SW Development Team Leader",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "1F.919-17.10C": {
+      "title": "SW Development Team Leader",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "9C.749": {
+      "title": "Technical Field Architect - CTO Team",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "91.746": {
+      "title": "UI/UX Designer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
+    "E3.E68": {
+      "title": "VAST On Cloud - Customer Success Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    }
+  }
+}

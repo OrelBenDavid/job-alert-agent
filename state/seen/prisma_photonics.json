@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-13T11:24:34.318859+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "CB.D60": {
+      "title": "Data Operations Team Leader",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "81.D60": {
+      "title": "Director, Sales EMEA",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "0C.B6E": {
+      "title": "DSP Researcher",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "24.D6E": {
+      "title": "Electro Optics Systems Engineer",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "EF.E69": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "A2.D69": {
+      "title": "Senior DevOps",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "34.A40": {
+      "title": "Senior Product Analyst",
+      "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    }
+  }
+}

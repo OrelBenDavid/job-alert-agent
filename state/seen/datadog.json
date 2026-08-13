@@ -1,0 +1,83 @@
+{
+  "last_success": "2026-08-13T11:30:57.414099+00:00",
+  "last_count": 19,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8025860": {
+      "title": "Commercial Account Executive - Israel",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8092637": {
+      "title": "Commercial Sales Engineer (Tel Aviv)",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7965428": {
+      "title": "Manager I, Engineering - AI Platform - Evaluation & Annotation",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8048588": {
+      "title": "Manager I, Engineering - Code Coverage",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8108378": {
+      "title": "Manager I, Engineering - Code Security",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7959705": {
+      "title": "Manager I, Engineering - Husky",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7586019": {
+      "title": "Manager I, Engineering - OrgStore Blueprint",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8102794": {
+      "title": "Manager I, Engineering - Sensitive Data Scanner",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8051068": {
+      "title": "Manager I, Engineering - Source Code Integration",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8112183": {
+      "title": "Senior AI Engineer – Notebooks",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "3851935": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8102624": {
+      "title": "Senior Software Engineer - Action Platform",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7566827": {
+      "title": "Senior Software Engineer (AI)",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7731292": {
+      "title": "Senior Software Engineer (AI)",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8015588": {
+      "title": "Senior Software Engineer - AI (EMEA)",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "4599148": {
+      "title": "Senior Software Engineer - Backend",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "3851927": {
+      "title": "Senior Software Engineer - Distributed Systems",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "8038652": {
+      "title": "Senior Software Engineer - Linux",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    },
+    "7107437": {
+      "title": "Staff Software Engineer - ML Observability",
+      "first_seen": "2026-08-13T11:30:57.414099+00:00"
+    }
+  }
+}

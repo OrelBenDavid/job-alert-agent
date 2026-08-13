@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-13T11:24:19.151984+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4919463101": {
+      "title": "AI Full-Stack Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4875449101": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4900911101": {
+      "title": "VP Customer Success",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4925575101": {
+      "title": "VP Customer Success",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4925576101": {
+      "title": "VP Customer Success",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    }
+  }
+}

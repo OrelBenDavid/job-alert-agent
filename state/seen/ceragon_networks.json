@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:10.811891+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "70.F65": {
+      "title": "Algorithm Engineer- Team Lead",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "C8.769": {
+      "title": "Communication Algorithms Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "BF.C68": {
+      "title": "Content & Marcom Specialist",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "F0.F6B": {
+      "title": "Head of Customer Experience",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "2B.B62": {
+      "title": "HW Board Design Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "59.668": {
+      "title": "Mechanical Design Engineer (R&D)",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "7B.A62": {
+      "title": "Radio Customer Support Expert",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "02.C6A": {
+      "title": "Radio System Integration Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "E8.765": {
+      "title": "RF System Architect",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "27.E62": {
+      "title": "System Linux Administrator",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "9F.66F": {
+      "title": "System Verification & Validation Testing Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "BD.A57": {
+      "title": "Verification Engineer",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "81.E6D": {
+      "title": "VP Business Applications",
+      "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-13T11:24:41.029739+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4D.A49": {
+      "title": "Controller",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "DB.D6E": {
+      "title": "Data Analyst",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "96.D6D": {
+      "title": "Director of IT Operations",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "10.76C": {
+      "title": "Escalation Engineer",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "AC.D6A": {
+      "title": "Financial Operations Analyst",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "C2.C65": {
+      "title": "NOC Team Leader",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "12.66F": {
+      "title": "Sales Engineer",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "B0.754": {
+      "title": "Senior Developer (DevOps and Infrastructure)",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "26.F63": {
+      "title": "Tax Manager",
+      "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    }
+  }
+}

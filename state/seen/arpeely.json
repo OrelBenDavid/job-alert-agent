@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:10.788867+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5A.C6D": {
+      "title": "AdOps Engineer",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "9B.F6B": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "69.766": {
+      "title": "AI Growth Builder",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "55.964": {
+      "title": "AI Product Builder",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "FB.55E": {
+      "title": "C++ Developer",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "83.B60": {
+      "title": "Chief Operating Officer",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "F2.F6B": {
+      "title": "Customer Experience Lead",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "9A.F66": {
+      "title": "Data Scientist Team Lead",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "2D.F69": {
+      "title": "Office Manager",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "42.75D": {
+      "title": "Senior Backend Developer (Core Systems)",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "F3.B65": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "65.866": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    },
+    "6C.168": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:10.788867+00:00"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:10.787360+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5994462004": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6014049004": {
+      "title": "AI Engineering Team Lead",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6105747004": {
+      "title": "AI Expert",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "5995601004": {
+      "title": "Network Researcher",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6016139004": {
+      "title": "Senior Data Analyst",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "5661391004": {
+      "title": "Senior Data Platform Engineer",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "5749729004": {
+      "title": "Software Architect (Hands On)",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6105740004": {
+      "title": "Sr Staff Inbound Product Manager",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6105741004": {
+      "title": "Sr Staff Inbound Product Manager",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "6010132004": {
+      "title": "Staff AI Platform Engineer",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    },
+    "5994162004": {
+      "title": "Streaming Infrastructure DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:10.787360+00:00"
+    }
+  }
+}
