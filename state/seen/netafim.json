@@ -1,0 +1,123 @@
+{
+  "last_success": "2026-08-13T11:24:34.268453+00:00",
+  "last_count": 29,
+  "consecutive_failures": 0,
+  "jobs": {
+    "74.C6D": {
+      "title": "Customer Service Representative",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "63.A66": {
+      "title": "Electrician",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "89.D67": {
+      "title": "Executive Administrator",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "AE.B62": {
+      "title": "Forklift Operator- Marlog",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "B8.566": {
+      "title": "Global Customer Operations Representative",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "B8.566-BF.202": {
+      "title": "Global Customer Operations Representative",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "8F.A68": {
+      "title": "Global Demand & S&OP Planning Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "90.E2A": {
+      "title": "Operator",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "E5.436": {
+      "title": "Operator",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "18.E68": {
+      "title": "Operator- Water Plant",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "17.73C": {
+      "title": "Operator-Yiftah",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "B0.D6C": {
+      "title": "Quality Assurance",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "E2.E65": {
+      "title": "Quality Assurance Manager",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "A8.E69": {
+      "title": "Quality Control-Injection",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "48.E62": {
+      "title": "R&D Mechanical Engineer",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "BF.865": {
+      "title": "Technician-Injection",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "66.B68": {
+      "title": "Treasury Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "66.B68-BF.200": {
+      "title": "Treasury Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "66.B68-BF.201": {
+      "title": "Treasury Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "66.B68-BF.202": {
+      "title": "Treasury Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "66.B68-BF.203": {
+      "title": "Treasury Lead",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "A2.B68": {
+      "title": "Warehouse Forklift",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "83.E67": {
+      "title": "Warehouse operator",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "A9.D6F": {
+      "title": "חשב/ת שכר",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "14.E63": {
+      "title": "מהנדס/ת בקרה",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "C2.E63": {
+      "title": "מנהל.ת אדמיניסטרציה - משרה חלקית",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "0A.E6D": {
+      "title": "מנהל.ת ריצפת ייצור",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "13.B60": {
+      "title": "ראש צוות תשתיות",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "42.E64": {
+      "title": "רכז/ת מצוינות תפעולית מפעלית",
+      "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    }
+  }
+}

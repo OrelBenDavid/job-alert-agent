@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:19.146322+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4F.F60": {
+      "title": "Data Analyst",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "9D.F69": {
+      "title": "Data Science Team Leader",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "89.E6F": {
+      "title": "Field Support Engineer and Asset Manager",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "72.C68": {
+      "title": "Finance Business Partner Team Lead",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "E6.E6E": {
+      "title": "Junior Intelligence Analyst",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "30.F61": {
+      "title": "Operation Planner",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "82.A61": {
+      "title": "Pre-Sales Engineer",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "A5.D6C": {
+      "title": "Product Expert",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "D6.E6B": {
+      "title": "Purchasing Account Manager",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "36.D68": {
+      "title": "Sales - Pre Sales Engineer",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "AC.C6D": {
+      "title": "Senior Product Marketing Manager",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "63.B61": {
+      "title": "Senior Signal Processing & Communications Algorithm Engineer",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    },
+    "6F.F69": {
+      "title": "Sr. Director Sales Engineering",
+      "first_seen": "2026-08-13T11:24:19.146322+00:00"
+    }
+  }
+}

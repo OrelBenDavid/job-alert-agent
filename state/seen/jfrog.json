@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:25.544419+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "7694707": {
+      "title": "Business Development Representative - German Speaker",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8095859": {
+      "title": "Collection Specialist - Maternity Leave Replacement (Temporary position)",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7434101": {
+      "title": "Developer Advocate",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "6861996": {
+      "title": "Director of Product Management - Artifactory",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7939091": {
+      "title": "GenAI & Competitive Intelligence Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8104833": {
+      "title": "IS Product Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7996600": {
+      "title": "Malware Researcher",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8074288": {
+      "title": "R&D Team Leader",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7899047": {
+      "title": "R&D Team Lead - JFrog Security",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7657193": {
+      "title": "Senior Product Manager - JFrog Security",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8102637": {
+      "title": "SMB Account Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    }
+  }
+}

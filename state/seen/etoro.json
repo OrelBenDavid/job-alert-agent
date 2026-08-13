@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:19.185292+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5A.D65": {
+      "title": "Account Manager, Dutch-speaking",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "95.D6B": {
+      "title": "IT Specialist",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    }
+  }
+}

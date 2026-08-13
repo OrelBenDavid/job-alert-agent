@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:19.135360+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "57bafe1d-6591-4d0a-b865-7c588ffd808d": {
+      "title": "IT Manager",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "d44c37c7-d158-43bb-adc6-f433c470c4ee": {
+      "title": "Senior AI Researcher",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "eeb8770a-82a9-494b-a486-2c6e37226551": {
+      "title": "Senior AI Solutions Builder",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "4c8bc538-8447-4946-b795-542577702bbb": {
+      "title": "Senior Collections & AR Specialist",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "ba5ac00c-c76b-4897-812d-1685807a22db": {
+      "title": "Staff Backend Engineer -  Media Management",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "c33b8f99-0f33-4855-9018-8633ffaff056": {
+      "title": "Staff Backend Engineer - Accounts",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "7d5a3660-5cba-4b63-876a-77096b072e8c": {
+      "title": "Staff Backend Engineer - Moderation",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "5cd7d5b3-2577-4c50-89dd-d11e0448a752": {
+      "title": "Staff Backend Engineer- Agent Experience (AX)",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "9c07c819-725b-4491-94b2-f5bacc9dc86a": {
+      "title": "Staff Data Engineer – Data Modeling",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "90a84fa5-9c83-4893-bf2e-1e5cdb34a564": {
+      "title": "Tech Lead – Platform",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "2676dd51-2a88-49e6-acdb-94c692f65885": {
+      "title": "VP, Global Support",
+      "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    }
+  }
+}

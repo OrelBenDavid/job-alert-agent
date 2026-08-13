@@ -1,0 +1,75 @@
+{
+  "last_success": "2026-08-13T11:24:25.544419+00:00",
+  "last_count": 17,
+  "consecutive_failures": 0,
+  "jobs": {
+    "66.95E": {
+      "title": "Cloud Security Lead",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "54.F67": {
+      "title": "Network QA Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "13.E48": {
+      "title": "Product Support Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "40.460": {
+      "title": "QA Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "A3.95D": {
+      "title": "Salesforce Automation Engineer (AI & Processes)",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "A9.86B": {
+      "title": "SecOps IR Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "2F.E68": {
+      "title": "SecOps Lead",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "6E.D38": {
+      "title": "Senior C++ Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "EE.D33": {
+      "title": "Senior Devops Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "EF.D3B": {
+      "title": "Senior Platform Engineer (DevEx / DevOps)",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8E.461": {
+      "title": "Senior Product Security Low-Level Researcher",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8E.468": {
+      "title": "Senior Product Security Researcher",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "78.266": {
+      "title": "Senior Security Researcher",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "4E.D3D": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "37.B57": {
+      "title": "Technical Account Manager - UK",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "9C.A6A": {
+      "title": "Technical Account Manager- APAC",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "71.343": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    }
+  }
+}

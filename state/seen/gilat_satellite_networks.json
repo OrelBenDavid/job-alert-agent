@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:25.527383+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "80.E69": {
+      "title": "Department Administrative Assistant",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "B3.B6B": {
+      "title": "Director, Business Operation and Travel",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:19.151984+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "3F.868": {
+      "title": "Senior Developer - Agentic AI",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "3F.865": {
+      "title": "Senior Product Manager - Agentic AI",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    }
+  }
+}

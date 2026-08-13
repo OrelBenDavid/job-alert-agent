@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:30:57.411396+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "7818971003": {
+      "title": "Backend Engineer - São Paulo",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7832402003": {
+      "title": "Manager, Cyber Research",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7859789003": {
+      "title": "People Partner",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7699687003": {
+      "title": "Principal Full Stack Engineer",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7723453003": {
+      "title": "Principal Product Manager- Integrations",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7677652003": {
+      "title": "Principal/Senior Product Manager",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7824320003": {
+      "title": "Senior DevEx/DevOps Engineer",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7809795003": {
+      "title": "Senior Product Manager (CAM)",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7779601003": {
+      "title": "Senior Product Manager (Exposures)",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7748661003": {
+      "title": "Senior Product Security Architect",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    },
+    "7809799003": {
+      "title": "Senior Security Researcher",
+      "first_seen": "2026-08-13T11:30:57.411396+00:00"
+    }
+  }
+}

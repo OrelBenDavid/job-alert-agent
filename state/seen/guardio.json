@@ -1,0 +1,107 @@
+{
+  "last_success": "2026-08-13T11:24:25.544419+00:00",
+  "last_count": 25,
+  "consecutive_failures": 0,
+  "jobs": {
+    "CD.B67": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "B9.264": {
+      "title": "CISO",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "72.C6D": {
+      "title": "Controller",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "2B.D61": {
+      "title": "Creative AI specialist",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "F6.B68": {
+      "title": "Creative Strategist",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "7B.76C": {
+      "title": "Data Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "C0.E6D": {
+      "title": "Director of Data",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "AA.D67": {
+      "title": "Engineering Team Lead",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "B8.440": {
+      "title": "Fullstack Growth Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "CD.C6A": {
+      "title": "Head of Business Development",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "BF.F63": {
+      "title": "Head of Research — Guardio Labs",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "14.E66": {
+      "title": "Legal Compliance Counsel",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "2D.F64": {
+      "title": "Lifecycle & Automation Lead",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "6E.C60": {
+      "title": "People Operations & Analytics",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "37.760": {
+      "title": "Personal Assistant",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "C9.06F": {
+      "title": "Product Designer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "9D.C53": {
+      "title": "Product Growth Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "0B.B60": {
+      "title": "Senior BI Developer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "A3.E67": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "A8.96A": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "57.E61": {
+      "title": "Strategy Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "18.342": {
+      "title": "Talent Acquisition Specialist",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "9D.C56": {
+      "title": "Technical Growth Product Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "FB.D62": {
+      "title": "User Acquisition Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "AD.F6E": {
+      "title": "User Acquisition Manager - Mobile",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    }
+  }
+}

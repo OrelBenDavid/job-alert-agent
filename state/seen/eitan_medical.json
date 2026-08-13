@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-13T11:24:19.179824+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "29.B6B": {
+      "title": "Digital Health SW QA Engineer",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    },
+    "FC.C66": {
+      "title": "QA Specialist",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    },
+    "AD.F63": {
+      "title": "Senior DevOps",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    },
+    "E2.269": {
+      "title": "מלחימ.ה",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    },
+    "6E.E6C": {
+      "title": "מנהל.ת חשבונות",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    },
+    "B8.E38": {
+      "title": "עובד.ת יצור",
+      "first_seen": "2026-08-13T11:24:19.179824+00:00"
+    }
+  }
+}

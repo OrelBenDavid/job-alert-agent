@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-13T11:24:41.055720+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "ED.C6B": {
+      "title": "DevEx Tech Lead",
+      "first_seen": "2026-08-13T11:24:41.055720+00:00"
+    },
+    "BD.C68": {
+      "title": "Director of AI Enablement",
+      "first_seen": "2026-08-13T11:24:41.055720+00:00"
+    },
+    "74.D63": {
+      "title": "IT System Administrator",
+      "first_seen": "2026-08-13T11:24:41.055720+00:00"
+    },
+    "2C.F6D": {
+      "title": "Lead AI Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.055720+00:00"
+    }
+  }
+}

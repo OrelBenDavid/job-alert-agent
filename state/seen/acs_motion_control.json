@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:10.757126+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "95.D6C": {
+      "title": "AI Transformation Senior Manager",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "86.D6C": {
+      "title": "Control Engineer",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "D1.B36": {
+      "title": "Electronics Technician in Production",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "68.964": {
+      "title": "NPI Project Manager",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "F8.66B": {
+      "title": "Purchasing Coordinator",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "FA.16C": {
+      "title": "R&D Hardware Engineer (Board Designer)",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "B9.B6A": {
+      "title": "Sales Administrator",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "17.E67": {
+      "title": "Senior IT Infrastructure & Systems Administrator",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "95.D61": {
+      "title": "Senior Manager, Software Architecture & AI Enablement",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "6B.A6E": {
+      "title": "אורז/ת במחלקת משלוחים",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "68.960": {
+      "title": "מרכיב.ה/מריצ.ה מכני בייצור",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    }
+  }
+}

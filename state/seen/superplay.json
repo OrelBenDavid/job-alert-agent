@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:41.061693+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "88.E47": {
+      "title": "2D Artist",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "3F.B56": {
+      "title": "2D Team Lead",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "7D.A6B": {
+      "title": "3D Animator",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "28.E6C": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "FB.F66": {
+      "title": "Head of BI",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "45.06B": {
+      "title": "Monetization Manager",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "5D.866": {
+      "title": "Motion Graphic Artist",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "D1.C67": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "76.F6E": {
+      "title": "Talent Acquisition Specialist (Temporary for 9 months)",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "FB.F62": {
+      "title": "Technical Artist",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "15.A65": {
+      "title": "UI UX Designer",
+      "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    }
+  }
+}

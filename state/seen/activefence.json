@@ -1,0 +1,79 @@
+{
+  "last_success": "2026-08-13T11:24:10.757126+00:00",
+  "last_count": 18,
+  "consecutive_failures": 0,
+  "jobs": {
+    "2D.A6D": {
+      "title": "Account Manager",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "99.B62": {
+      "title": "AI Software Engineer",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "C8.866": {
+      "title": "Android Security Research Team Lead",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "04.B64": {
+      "title": "Application Security Researcher",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "DF.C68": {
+      "title": "FP&A Lead",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "15.766": {
+      "title": "Fraud Threat Analyst",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "DD.067": {
+      "title": "Freelancer - AI CBRN Experts",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "EE.F52": {
+      "title": "Freelancer - AI Red Team Experts",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "5C.061": {
+      "title": "Freelancer - Cyber Threat Experts",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "9F.F5D": {
+      "title": "Freelancer - GenAI Experts",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "AC.06A": {
+      "title": "Freelancer - OSINT/WEBINT Experts",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "DD.E69": {
+      "title": "Global Talent Acquisition Team Lead",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "E0.E61": {
+      "title": "Malware Research (Mid-Level)",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "5D.46F": {
+      "title": "Malware Researcher",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "5E.E62": {
+      "title": "Mobile Threat Analyst",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "A5.C6E": {
+      "title": "Senior Software Developer — Malware Research Platform",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "71.B65": {
+      "title": "Sr. Director of Business Applications & Systems",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "92.E62": {
+      "title": "Technical Fraud Threat Analyst",
+      "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    }
+  }
+}

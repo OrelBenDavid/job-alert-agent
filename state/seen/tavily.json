@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-13T11:24:41.068259+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "70bcbe09-fc44-4512-922b-92031be7df8a": {
+      "title": "Data Engineer",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "0253a9ab-9079-4581-a964-4120eeb244d1": {
+      "title": "Accounts Receivable Manager",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "2bf1e995-6aa1-49a6-9929-e72f6d787274": {
+      "title": "Software Engineer - Web Crawling",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "3b3b6621-e607-4b04-815e-e46ad4350cd7": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "96902937-4896-44cc-b4f3-5d57c3cb8c22": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "8c708859-1333-4cea-b1c1-5343a2b038ea": {
+      "title": "IT and Security Analyst",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "58948731-c993-4127-a723-a96b1dcd841c": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "9d01e3b7-8113-4242-8ed1-ec10427db469": {
+      "title": "Data Analyst",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    },
+    "da01ae52-a047-48c9-a015-439eeb4f651d": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:41.068259+00:00"
+    }
+  }
+}

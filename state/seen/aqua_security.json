@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-13T11:24:10.785353+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "9E.F63": {
+      "title": "IT Support Engineer",
+      "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    },
+    "98.E6E": {
+      "title": "Senior IT Systems Engineer",
+      "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    },
+    "75.C62": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    },
+    "03.36A": {
+      "title": "Senior Security Researcher",
+      "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    },
+    "1D.F68": {
+      "title": "Senior Software Architect, AI Products",
+      "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    }
+  }
+}

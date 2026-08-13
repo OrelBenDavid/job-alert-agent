@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-13T11:24:19.151984+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "FF.049": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "10.96B": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "99.83B": {
+      "title": "Explore New Opportunities",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    }
+  }
+}

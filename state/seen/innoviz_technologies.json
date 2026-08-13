@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:25.544419+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "AB.D60": {
+      "title": "ATE (Automatic Test Equipment) Systems Technician",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "23.F64": {
+      "title": "C/C++ Software Tools Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "EB.D60": {
+      "title": "Director of Corporate Communications",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "CF.E6E": {
+      "title": "Director of Sales & Business Development - EU Defense & Security",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "54.C6F": {
+      "title": "Embedded Software Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "B4.F6D": {
+      "title": "Embedded Software Engineer - Lidar Firmware",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "85.659": {
+      "title": "EMC Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "34.E6A": {
+      "title": "Simulation Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "0F.F63": {
+      "title": "Software Engineer – Industrial Systems & ATE",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "32.F65": {
+      "title": "System Failure Analysis Engineer",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "4D.066": {
+      "title": "System Qualification Technician",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:25.544419+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "0D.F6D": {
+      "title": "Head of Finance Applications",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "5B.D63": {
+      "title": "Staff Product Manager",
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    }
+  }
+}

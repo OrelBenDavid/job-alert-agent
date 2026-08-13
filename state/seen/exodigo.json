@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-13T11:24:19.185292+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "22.F6B": {
+      "title": "BIM Modeler",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "94.D62": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "EF.E68": {
+      "title": "Customer Success Operations Specialist",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "4E.E46": {
+      "title": "Engineering Map Lead",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "8B.567": {
+      "title": "Experiment Field Operator",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "DF.E68": {
+      "title": "Field Operations - Global Team",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "85.549": {
+      "title": "Field Operations Employee",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "D0.E6E": {
+      "title": "Hardware Team Lead",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "6D.54E": {
+      "title": "Production Employee",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "13.260": {
+      "title": "Senior Software Engineer - Data Acquistion (Field Team)",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "62.942": {
+      "title": "Signal Analyst",
+      "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    }
+  }
+}

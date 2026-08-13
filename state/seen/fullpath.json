@@ -1,0 +1,55 @@
+{
+  "last_success": "2026-08-13T11:24:25.527383+00:00",
+  "last_count": 12,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5B.D67": {
+      "title": "Billing Operations Specialist",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "5B.D67-41.10D": {
+      "title": "Billing Operations Specialist",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "5E.B69": {
+      "title": "Customer Success Manager",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "EF.566": {
+      "title": "Customer Success Manager, Enterprise",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "E8.663": {
+      "title": "Head of Product - CRM",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "E8.663-41.10D": {
+      "title": "Head of Product - CRM",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C2.E61": {
+      "title": "Junior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "1D.F62": {
+      "title": "Prompt Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "1D.F62-41.10D": {
+      "title": "Prompt Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "09.D52": {
+      "title": "Regional Sales Manager (Nationwide – Future Openings)",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "97.069": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "97.069-D7.209": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    }
+  }
+}

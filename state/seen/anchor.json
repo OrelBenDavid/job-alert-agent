@@ -1,0 +1,39 @@
+{
+  "last_success": "2026-08-13T11:24:10.783347+00:00",
+  "last_count": 8,
+  "consecutive_failures": 0,
+  "jobs": {
+    "B0.24B": {
+      "title": "Backend Developer",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "56.65F": {
+      "title": "Director of Customer Success",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "ED.760": {
+      "title": "Director Of Finance and Compliance",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "AB.C53-58.304": {
+      "title": "Director of Sales",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "B9.D41": {
+      "title": "Senior Backend Developer",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "77.D42": {
+      "title": "Senior Full Stack Developer",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "70.16F": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "4D.82E": {
+      "title": "We always look for great people!",
+      "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    }
+  }
+}

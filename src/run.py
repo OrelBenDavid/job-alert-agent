@@ -21,6 +21,9 @@ of them. That matters most on a seed of many companies at once, which is
 exactly when the whole set is least likely to fit in one run.
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
+import argparse
 import os
 import sys
 import time
@@ -76,7 +79,20 @@ def _needs_seed(slug: str) -> bool:
         return False
 
 
-def _run_seed(force: bool = False) -> None:
+def _read_company_list(path: str) -> list[str]:
+    """Slugs from a plain-text file, one per line. `#` comments and blank
+    lines are ignored, so a batch file can carry a note about why."""
+    slugs = []
+    with open(path, encoding="utf-8") as handle:
+        for line in handle:
+            line = line.split("#", 1)[0].strip()
+            if line:
+                slugs.append(line)
+    return slugs
+
+
+def _run_seed(force: bool = False, limit: int | None = None,
+              only: str | None = None) -> None:
     """Seeds companies that have no state yet.
 
     *** Why it skips the ones already seeded ***
@@ -94,24 +110,55 @@ def _run_seed(force: bool = False) -> None:
 
     `--force` re-seeds everything, for the rare case of deliberately
     resetting a company's history.
+
+    *** Why batching exists ***
+
+    `--limit N` seeds only the first N companies still needing it, and
+    `--only <file>` seeds a named list. Seeding is the one irreversible step
+    in adding a company - it decides which postings are treated as "already
+    known" and therefore never alerted - and doing 139 companies in one pass
+    records ~1,350 of those decisions with no chance to look in between.
+    Because the command is idempotent and skips what is already seeded,
+    running it repeatedly with --limit walks through the backlog in
+    reviewable chunks, and the order is stable (profiles load sorted by
+    path), so the batches are reproducible rather than arbitrary.
     """
     profiles, errors = load_enabled()
     for err in errors:
         print(f"[profile error] {err}", file=sys.stderr)
 
+    if only:
+        wanted = set(_read_company_list(only))
+        missing = wanted - {p.slug for p in profiles}
+        if missing:
+            # Named but absent: a typo'd slug must not be silently skipped, or
+            # the company looks seeded when nothing happened to it.
+            print(f"[seed] not found (or disabled): {', '.join(sorted(missing))}",
+                  file=sys.stderr)
+        profiles = [p for p in profiles if p.slug in wanted]
+
     if not force:
         already = [p.name for p in profiles if not _needs_seed(p.slug)]
         profiles = [p for p in profiles if _needs_seed(p.slug)]
         if already:
-            print(f"[seed] already seeded, skipped: {', '.join(already)} "
+            print(f"[seed] already seeded, skipped: {len(already)} companies "
                   "(use --force to re-seed and reset their first_seen)")
+
+    remaining = 0
+    if limit is not None and len(profiles) > limit:
+        remaining = len(profiles) - limit
+        profiles = profiles[:limit]
+
     if not profiles:
         print("[seed] nothing to seed")
         return
 
+    print(f"[seed] seeding {len(profiles)} companies"
+          + (f", {remaining} left for the next run" if remaining else ""))
     outcomes = fetch_all(profiles,
                          deadline=time.monotonic() + _fetch_budget_seconds())
 
+    seeded, total_jobs = 0, 0
     for profile in profiles:
         outcome = outcomes.get(profile.slug)
         if outcome is None or not outcome.ok:
@@ -127,7 +174,15 @@ def _run_seed(force: bool = False) -> None:
         # request per existing posting - hundreds on day one - to decide the
         # visibility of alerts that are never sent.
         seed_company(profile.slug, outcome.jobs)
+        seeded += 1
+        total_jobs += len(outcome.jobs)
         print(f"[seed] {profile.slug}: {len(outcome.jobs)} jobs saved, no alert sent")
+
+    print(f"[seed] batch done: {seeded} companies, {total_jobs} postings "
+          "recorded as already-known (no alerts sent)")
+    if remaining:
+        print(f"[seed] {remaining} companies still unseeded - run --seed again "
+              "to continue")
 
 
 def _crossed_threshold(slug: str) -> bool:
@@ -490,8 +545,36 @@ def _run_normal() -> None:
         sys.exit(1)
 
 
+def _parse_args(argv: list[str]):
+    """argparse rather than the old `"--seed" in sys.argv`, now that seed
+    takes options. --limit and --only are seed-only on purpose: there is no
+    coherent meaning for "check a quarter of the companies", and offering it
+    would invite a partial scheduled run that looks complete."""
+    parser = argparse.ArgumentParser(
+        description="Job alert agent. No arguments = a normal run.")
+    parser.add_argument("--seed", action="store_true",
+                        help="record current postings as already-known and "
+                             "send nothing. Manual only, never scheduled.")
+    parser.add_argument("--force", action="store_true",
+                        help="with --seed: re-seed companies that already "
+                             "have state, resetting their first_seen.")
+    parser.add_argument("--limit", type=int, default=None, metavar="N",
+                        help="with --seed: seed at most N companies, then "
+                             "stop. Re-run to continue with the next batch.")
+    parser.add_argument("--only", default=None, metavar="FILE",
+                        help="with --seed: seed only the slugs listed in "
+                             "FILE, one per line (# comments allowed).")
+    args = parser.parse_args(argv)
+    if not args.seed and (args.limit is not None or args.only or args.force):
+        parser.error("--limit, --only and --force only apply with --seed")
+    if args.limit is not None and args.limit < 1:
+        parser.error("--limit must be at least 1")
+    return args
+
+
 if __name__ == "__main__":
-    if "--seed" in sys.argv:
-        _run_seed(force="--force" in sys.argv)
+    args = _parse_args(sys.argv[1:])
+    if args.seed:
+        _run_seed(force=args.force, limit=args.limit, only=args.only)
     else:
         _run_normal()

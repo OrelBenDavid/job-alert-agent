@@ -1,0 +1,71 @@
+{
+  "last_success": "2026-08-13T11:24:25.510473+00:00",
+  "last_count": 16,
+  "consecutive_failures": 0,
+  "jobs": {
+    "BA.96C": {
+      "title": "Agentic AI Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "1F.A5E": {
+      "title": "Data Science Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "1F.A5E-9D.50A": {
+      "title": "Data Science Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "DB.D6C": {
+      "title": "Data Scientist - Deep Learning Forecasting",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "DB.D6C-9D.50A": {
+      "title": "Data Scientist - Deep Learning Forecasting",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "7C.C69": {
+      "title": "Data Scientist Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "7C.C69-9D.50A": {
+      "title": "Data Scientist Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "12.D61": {
+      "title": "Devops Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "12.D61-76.406": {
+      "title": "Devops Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "AA.D62": {
+      "title": "ML Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "AA.D62-9D.50A": {
+      "title": "ML Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "B8.E68": {
+      "title": "MLOps Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "B8.E68-9D.50A": {
+      "title": "MLOps Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "93.D6E": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "40.F62": {
+      "title": "Support Engineer",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "A5.D67": {
+      "title": "Tableau Expert",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    }
+  }
+}

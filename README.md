@@ -268,6 +268,21 @@ aggregate data and may not hold for Israeli postings.
    everything, which resets that history - rarely what you want.
    If the fetch budget runs out mid-seed, the companies that were reached are
    committed; just run `--seed` again for the rest.
+
+   For a large batch, seed in **stages** rather than all at once:
+
+   ```bash
+   python run.py --seed --limit 25
+   ```
+
+   Re-run it to take the next 25 — because the command skips what is already
+   seeded, repeated runs walk the backlog without repeating a company, and the
+   order is stable so the batches are reproducible. `--only <file>` seeds a
+   named list of slugs instead (one per line, `#` comments allowed). Staging
+   matters because seeding is the one irreversible step in adding a company: it
+   decides which postings count as already-known and are therefore never
+   alerted, so doing 139 in one pass records that decision for ~1,350 postings
+   with no chance to look in between.
 4. From the next cron run, the company is under normal monitoring.
 
 **`/add` in Telegram does NOT do this automatically (deliberate in v1)** - it
@@ -325,10 +340,25 @@ postings in 39.6s** (142/142 succeeded).
 BioCatch's second, abandoned board was dropped by an explicit decision. The
 importer is idempotent and re-runnable.
 
-**⚠️ The 139 imported companies are NOT seeded yet.** Until they are, each
-reports a seed gap and sends nothing — which is the intended behaviour, not a
-fault. Seeding is manual and staged; see *Adding a company*. The scheduled run
-should not be relied on for them until that is done.
+**All 142 are seeded.** Done in six batches of 25 via `--seed --limit 25`,
+1,371 postings recorded as already-known, no alerts sent. A simulated run
+immediately afterwards reported **0 seed gaps, 0 fetch failures, 0 health-gate
+trips, 0 companies below their floor, and 1 new job** (ordinary churn).
+
+**⚠️ The scheduled workflow has not been turned on for this set.** The cron in
+`check.yml` dates from the 3-company era and only fires from the default
+branch, so **merging this branch is what makes it live.**
+
+**A relevance-filter leak was found and fixed while verifying the seed.**
+Greenhouse publishes a separate `offices[]` array whose entries the fetcher
+checks individually, and office names are bare sub-national remote regions with
+no country token — `Remote - Colorado`, `Remote - Texas`. Checked alone those
+hit the remote keyword, matched no foreign marker, and were kept as qualified
+remote: exactly the `Remote-US` case `relevance.py` says it excludes. 31
+distinct office strings were leaking, 68 jobs at Datadog alone. All 50 US
+states and the Canadian provinces are now markers, and the 5 companies whose
+counts changed were re-seeded. Invisible at 3 companies because neither Lever
+nor the Wix page produces that shape of string.
 
 - **14 companies carry `zero_is_plausible: true`** because a live check found
   their board reachable and non-empty but with no Israel-relevant postings.

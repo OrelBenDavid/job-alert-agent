@@ -1,0 +1,8 @@
+# Companies whose Israel-relevant count changed when the sub-national
+# remote-region leak was fixed on 2026-08-13. Re-seeded with --force so the
+# first scheduled run does not read the drop as a collapse.
+axonius
+datadog
+navan
+one_zero_digital_bank
+wiliot

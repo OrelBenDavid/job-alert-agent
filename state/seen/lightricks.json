@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-13T11:24:25.560848+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8644790002": {
+      "title": "Commercial Operations Analyst",
+      "first_seen": "2026-08-13T11:24:25.560848+00:00"
+    },
+    "8557860002": {
+      "title": "Data Scientist- Machine Learning & AI",
+      "first_seen": "2026-08-13T11:24:25.560848+00:00"
+    },
+    "8399749002": {
+      "title": "Research Scientist - Audiovisual Understanding, Model Foundations",
+      "first_seen": "2026-08-13T11:24:25.560848+00:00"
+    },
+    "8439227002": {
+      "title": "Research Scientist - LTX Model Applications",
+      "first_seen": "2026-08-13T11:24:25.560848+00:00"
+    },
+    "7069923002": {
+      "title": "Security Guard",
+      "first_seen": "2026-08-13T11:24:25.560848+00:00"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "last_success": "2026-08-13T11:24:34.297495+00:00",
+  "last_count": 15,
+  "consecutive_failures": 0,
+  "jobs": {
+    "7787982003": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7785835003": {
+      "title": "BI Team Lead",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7811459003": {
+      "title": "Data Analyst (Maternity leave)",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7667230003": {
+      "title": "Data Science Group Lead",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7770197003": {
+      "title": "Director of Procurement",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7720946003": {
+      "title": "Lead Data Scientist",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7733045003": {
+      "title": "Principal Data Scientist",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7809535003": {
+      "title": "Procurement Manager",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7720945003": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7501813003": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7763481003": {
+      "title": "Senior HR Business Partner (HRBP)",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7797491003": {
+      "title": "Senior Linux Systems Administrator",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7731816003": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7712850003": {
+      "title": "Software Engineer- Data Platform",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "7812750003": {
+      "title": "Systems Administrator",
+      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    }
+  }
+}

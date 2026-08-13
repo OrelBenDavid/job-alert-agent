@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T11:24:41.038127+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "E2.F64": {
+      "title": "Software Engineer — OnePlatform Team",
+      "first_seen": "2026-08-13T11:24:41.038127+00:00"
+    },
+    "F3.B6B": {
+      "title": "Strategic Partnerships Manager - Demand",
+      "first_seen": "2026-08-13T11:24:41.038127+00:00"
+    }
+  }
+}

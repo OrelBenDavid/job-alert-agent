@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-13T11:24:19.148327+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "AF.A61": {
+      "title": "Backend Engineer - Data Pipeline",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "53.E60": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "85.D6F": {
+      "title": "Program Manager",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "9D.C6D": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "85.F67": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "03.B6E": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "62.E68": {
+      "title": "Site Reliability Engineer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "FB.254": {
+      "title": "Software Engineer (Coralogix AI)",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "0B.D6A": {
+      "title": "Solution Engineer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "45.B52": {
+      "title": "Solutions Engineer (Pre-Sales)",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "4B.75E": {
+      "title": "Technical Account Manager - Team Lead",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "C1.D6F": {
+      "title": "Technical Support Engineer",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "B5.F66": {
+      "title": "VP Operations",
+      "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    }
+  }
+}

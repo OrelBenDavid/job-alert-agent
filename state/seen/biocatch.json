@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-13T11:24:10.791826+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "D2.C6C": {
+      "title": "Back-End Team Leader - Server Group",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "F9.06C": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "DE.C6E": {
+      "title": "Incident Response Engineer",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "F6.B6E": {
+      "title": "IT Team Lead",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "1A.C6C": {
+      "title": "Senior DevOps Infra Engineer",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "32.F6C": {
+      "title": "Software Infrastructure Developer (Agentic AI Focus)",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "7D.B66": {
+      "title": "Technical Knowledge Manager",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "71.E69": {
+      "title": "Technical Product Manager",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "68.E64": {
+      "title": "Technical Support Specialist - Student Position",
+      "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    }
+  }
+}
