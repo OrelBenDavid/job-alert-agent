@@ -1,43 +1,6 @@
 {
-  "last_success": "2026-08-13T12:34:58.661161+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-13T13:20:54.151455+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "22702028-c1c6-4147-b099-0bc62d81b978": {
-      "title": "Regional Sales Manager (United Kingdom)",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
-      "title": "Backend Developer",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "246ae954-d395-45ab-82c9-28b15d1fb6c4": {
-      "title": "Security Researcher",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "6a5a3bf1-f4c6-465d-a11f-f4a045e45352": {
-      "title": "Devops Engineer",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "684e5591-fcab-4a45-92f1-3348a56b6b8f": {
-      "title": "Integration Engineer",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "bfb6b4aa-82a8-4697-9b52-b0be554f0beb": {
-      "title": "Regional Sales Manager (Nordics & Benelux)",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "3f324589-520d-40e3-bfd4-a13eef648b81": {
-      "title": "Head Of Architecture",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "bcad7bb3-0eb5-439c-bbdf-5132e8e5ebfe": {
-      "title": "Senior Frontend Engineer",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
-    "f78b955f-4316-43d5-9964-73ba0b04bb26": {
-      "title": "Cyber Security Analyst",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    }
-  }
+  "jobs": {}
 }
