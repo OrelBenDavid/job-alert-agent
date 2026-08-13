@@ -1,0 +1,153 @@
+tier,company,ats,id,api_endpoint,rnd_jobs,total_jobs,category,size,top_cities,hiring_evidence,id_source
+A,Mobileye,lever,mobileye,https://api.lever.co/v0/postings/mobileye?mode=json  (EU: api.eu.lever.co),64,87,Automotive,l,ירושלים,live R&D jobs in feed,web_search(URL observed)
+A,SolarEdge Technologies,comeet,SolarEdge/71.00A,https://www.comeet.co/careers-api/2.0/company/71.00A/positions?token=71.00A,25,38,Sustainable Technology,l,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,VAST Data,comeet,vastdata/43.001,https://www.comeet.co/careers-api/2.0/company/43.001/positions?token=43.001,25,30,Cloud Computing,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,DriveNets,comeet,drivenets/72.006,https://www.comeet.co/careers-api/2.0/company/72.006/positions?token=72.006,22,25,Productivity,l,רעננה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Island,comeet,island/09.00A,https://www.comeet.co/careers-api/2.0/company/09.00A/positions?token=09.00A,16,21,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Aidoc,comeet,Aidoc/B4.007,https://www.comeet.co/careers-api/2.0/company/B4.007/positions?token=B4.007,15,18,Health,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Wiz,greenhouse,wizprivate,https://boards-api.greenhouse.io/v1/boards/wizprivate/jobs,13,22,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+A,BIRD Aerosystems,comeet,birdaero/97.006,https://www.comeet.co/careers-api/2.0/company/97.006/positions?token=97.006,12,16,Aerospace,m,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,CEVA,comeet,ceva/76.005,https://www.comeet.co/careers-api/2.0/company/76.005/positions?token=76.005,12,14,Productivity,l,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,WalkMe,lever,walkme,https://api.lever.co/v0/postings/walkme?mode=json  (EU: api.eu.lever.co),11,17,Productivity,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+A,Cellebrite,comeet,Cellebrite/C3.00F,https://www.comeet.co/careers-api/2.0/company/C3.00F/positions?token=C3.00F,10,14,Cybersecurity,l,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Cross River Technologies,comeet,crossriver/C7.00F,https://www.comeet.co/careers-api/2.0/company/C7.00F/positions?token=C7.00F,10,16,Fintech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,D-Fend Solutions,lever,d-fendsolutions,https://api.lever.co/v0/postings/d-fendsolutions?mode=json  (EU: api.eu.lever.co),10,12,Aerospace,m,רעננה,live R&D jobs in feed,techmap/companies
+A,Ceragon Networks,comeet,Ceragon/D3.003,https://www.comeet.co/careers-api/2.0/company/D3.003/positions?token=D3.003,9,14,Telecommunications,l,ראש העין,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Forter,greenhouse,forter,https://boards-api.greenhouse.io/v1/boards/forter/jobs,9,13,Fintech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Transmit Security,greenhouse,transmitsecurity,https://boards-api.greenhouse.io/v1/boards/transmitsecurity/jobs,9,11,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Fireblocks,greenhouse,fireblocks,https://boards-api.greenhouse.io/v1/boards/fireblocks/jobs,8,11,Fintech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; web_search(URL observed)
+A,Retym,comeet,retym/C6.003,https://www.comeet.co/careers-api/2.0/company/C6.003/positions?token=C6.003,8,13,Productivity,s,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Silverfort,comeet,silverfort/54.007,https://www.comeet.co/careers-api/2.0/company/54.007/positions?token=54.007,8,10,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Armis,greenhouse,armissecurity,https://boards-api.greenhouse.io/v1/boards/armissecurity/jobs,7,10,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+A,Arpeely,comeet,arpeely/57.001,https://www.comeet.co/careers-api/2.0/company/57.001/positions?token=57.001,7,14,AdTech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Cloudinary,lever,cloudinary,https://api.lever.co/v0/postings/cloudinary?mode=json  (EU: api.eu.lever.co),7,11,Cloud Computing,l,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Enercon,comeet,enercon/A4.00D,https://www.comeet.co/careers-api/2.0/company/A4.00D/positions?token=A4.00D,7,10,Aerospace,m,נתניה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,HiBob,comeet,hibob/12.00A,https://www.comeet.co/careers-api/2.0/company/12.00A/positions?token=12.00A,7,15,Productivity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Moon Active,comeet,moonactive/A2.00C,https://www.comeet.co/careers-api/2.0/company/A2.00C/positions?token=A2.00C,7,20,Gaming,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Navan,greenhouse,TripActions,https://boards-api.greenhouse.io/v1/boards/TripActions/jobs,7,9,E-commerce & Retail,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Netafim,comeet,netafim/B7.002,https://www.comeet.co/careers-api/2.0/company/B7.002/positions?token=B7.002,7,18,Sustainable Technology,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,NextSilicon,comeet,nextsilicon/18.007,https://www.comeet.co/careers-api/2.0/company/18.007/positions?token=18.007,7,15,Semiconductors,l,גבעתיים,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Wiliot,comeet,wiliot/F6.003,https://www.comeet.co/careers-api/2.0/company/F6.003/positions?token=F6.003,7,8,IoT,l,קיסריה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,ACS Motion Control,comeet,ACS/14.000,https://www.comeet.co/careers-api/2.0/company/14.000/positions?token=14.000,6,12,Robotics & Automation,m,יקנעם עילית,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,ActiveFence,comeet,activefence/D5.005,https://www.comeet.co/careers-api/2.0/company/D5.005/positions?token=D5.005,6,12,Cybersecurity,l,בנימינה גבעת עדה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Aitech,comeet,aitechsystems/88.004,https://www.comeet.co/careers-api/2.0/company/88.004/positions?token=88.004,6,7,Aerospace,l,כפר סבא,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Fetcherr,comeet,fetcherr/68.006,https://www.comeet.co/careers-api/2.0/company/68.006/positions?token=68.006,6,7,AI/ML,m,נתניה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Innoviz Technologies,comeet,innoviz/52.004,https://www.comeet.co/careers-api/2.0/company/52.004/positions?token=52.004,6,8,Cybersecurity,l,Rosh Haayin,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,mPrest,comeet,mprest/38.005,https://www.comeet.co/careers-api/2.0/company/38.005/positions?token=38.005,6,8,IoT,m,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Parallel Wireless,lever,parallelwireless,https://api.lever.co/v0/postings/parallelwireless?mode=json  (EU: api.eu.lever.co),6,6,Telecommunications,l,צור יגאל,live R&D jobs in feed,techmap/companies
+A,Plus500,comeet,plus500/A1.00F,https://www.comeet.co/careers-api/2.0/company/A1.00F/positions?token=A1.00F,6,21,Fintech,l,חיפה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Riverside.fm,comeet,riverside-fm/66.009,https://www.comeet.co/careers-api/2.0/company/66.009/positions?token=66.009,6,14,AI/ML,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,SimilarWeb,greenhouse,similarweb,https://boards-api.greenhouse.io/v1/boards/similarweb/jobs,6,19,Productivity,l,גבעתיים,live R&D jobs in feed,techmap/companies; web_search(URL observed)
+A,Claroty,comeet,Claroty/F2.004,https://www.comeet.co/careers-api/2.0/company/F2.004/positions?token=F2.004,5,9,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,CYE,lever,CYE,https://api.lever.co/v0/postings/CYE?mode=json  (EU: api.eu.lever.co),5,6,Cybersecurity,m,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,DealHub,comeet,dealhub/86.005,https://www.comeet.co/careers-api/2.0/company/86.005/positions?token=86.005,5,14,Productivity,l,חולון,live R&D jobs in feed,techmap/companies; techmap/jobs(live); web_search(URL observed)
+A,Final,comeet,final/C0.009,https://www.comeet.co/careers-api/2.0/company/C0.009/positions?token=C0.009,5,5,Fintech,l,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Guardio,comeet,guardio/57.000,https://www.comeet.co/careers-api/2.0/company/57.000/positions?token=57.000,5,23,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,JFrog,greenhouse,jfrog,https://boards-api.greenhouse.io/v1/boards/jfrog/jobs,5,10,Cloud Computing,l,נתניה,live R&D jobs in feed,techmap/companies; web_search(URL observed)
+A,Port,comeet,port/59.004,https://www.comeet.co/careers-api/2.0/company/59.004/positions?token=59.004,5,9,Productivity,m,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+A,Tipalti,greenhouse,tipaltisolutions,https://boards-api.greenhouse.io/v1/boards/tipaltisolutions/jobs,5,5,Fintech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Vectorious Medical Technologies,comeet,vectoriousmedtech/68.003,https://www.comeet.co/careers-api/2.0/company/68.003/positions?token=68.003,5,6,Health,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Aqua Security,comeet,aquasec/91.001,https://www.comeet.co/careers-api/2.0/company/91.001/positions?token=91.001,4,7,Cybersecurity,l,רמת גן,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Axonius,greenhouse,axonius,https://boards-api.greenhouse.io/v1/boards/axonius/jobs,4,9,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; web_search(URL observed)
+A,BioCatch,comeet,biocatch/03.00E,https://www.comeet.co/careers-api/2.0/company/03.00E/positions?token=03.00E,4,7,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,BioCatch,lever,biocatch,https://api.lever.co/v0/postings/biocatch?mode=json  (EU: api.eu.lever.co),4,7,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+A,Cardo Systems,comeet,cardosystems/F2.003,https://www.comeet.co/careers-api/2.0/company/F2.003/positions?token=F2.003,4,6,Telecommunications,m,רעננה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Checkmarx,comeet,checkmarx/C0.008,https://www.comeet.co/careers-api/2.0/company/C0.008/positions?token=C0.008,4,4,Cybersecurity,l,Ramat Gan,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Coralogix,comeet,coralogix/06.004,https://www.comeet.co/careers-api/2.0/company/06.004/positions?token=06.004,4,13,Cloud Computing,l,רמת גן,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Eitan Medical,comeet,eitanmedical/C6.00F,https://www.comeet.co/careers-api/2.0/company/C6.00F/positions?token=C6.00F,4,5,Health,l,נתניה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Global-e,comeet,global-e/62.002,https://www.comeet.co/careers-api/2.0/company/62.002/positions?token=62.002,4,17,Productivity,l,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Lightricks,greenhouse,lightricks,https://boards-api.greenhouse.io/v1/boards/lightricks/jobs,4,5,Digital Media,l,ירושלים,live R&D jobs in feed,techmap/companies; web_search(URL observed)
+A,ONE ZERO Digital Bank,comeet,onezerobank/36.00A,https://www.comeet.co/careers-api/2.0/company/36.00A/positions?token=36.00A,4,13,Fintech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Playtika,greenhouse,playtikaltd,https://boards-api.greenhouse.io/v1/boards/playtikaltd/jobs,4,16,Gaming,l,הרצליה,live R&D jobs in feed,web_search(URL observed)
+A,Rapyd Financial Network,comeet,rapyd/73.00E,https://www.comeet.co/careers-api/2.0/company/73.00E/positions?token=73.00E,4,10,Fintech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Skai,comeet,skai/22.00A,https://www.comeet.co/careers-api/2.0/company/22.00A/positions?token=22.00A,4,5,AdTech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Taboola,greenhouse,taboola,https://boards-api.greenhouse.io/v1/boards/taboola/jobs,4,19,AdTech,l,רמת גן,live R&D jobs in feed,techmap/companies
+A,Zero Networks,comeet,zeronetworks/39.00F,https://www.comeet.co/careers-api/2.0/company/39.00F/positions?token=39.00F,4,5,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Anchor,comeet,anchorfintech/87.00D,https://www.comeet.co/careers-api/2.0/company/87.00D/positions?token=87.00D,3,6,Fintech,s,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Exodigo,comeet,exodigo/89.005,https://www.comeet.co/careers-api/2.0/company/89.005/positions?token=89.005,3,9,Robotics & Automation,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,FullPath,comeet,fullpath/54.002,https://www.comeet.co/careers-api/2.0/company/54.002/positions?token=54.002,3,5,Automotive,l,תל אביב-יפו; ירושלים,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Gett,comeet,gett/A0.002,https://www.comeet.co/careers-api/2.0/company/A0.002/positions?token=A0.002,3,11,Automotive,l,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Gloat,comeet,gloat/E5.000,https://www.comeet.co/careers-api/2.0/company/E5.000/positions?token=E5.000,3,7,Productivity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Imagen,comeet,imagen-ai/78.00F,https://www.comeet.co/careers-api/2.0/company/78.00F/positions?token=78.00F,3,4,Digital Media,m,גבעתיים,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Kaltura,comeet,kaltura/E2.00D,https://www.comeet.co/careers-api/2.0/company/E2.00D/positions?token=E2.00D,3,8,Digital Media,l,בני ברק,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,KMS Lighthouse,comeet,kmslh/97.008,https://www.comeet.co/careers-api/2.0/company/97.008/positions?token=97.008,3,3,Productivity,m,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Landa Digital Printing,comeet,landacorp/A4.000,https://www.comeet.co/careers-api/2.0/company/A4.000/positions?token=A4.000,3,5,Digital Media,l,גבעת ברנר,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Orca Security,greenhouse,orcasecurity,https://boards-api.greenhouse.io/v1/boards/orcasecurity/jobs,3,4,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,Personetics Technologies,comeet,personetics/83.00A,https://www.comeet.co/careers-api/2.0/company/83.00A/positions?token=83.00A,3,8,AI/ML,l,גבעתיים,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Prisma Photonics,comeet,prismaphotonics/18.00C,https://www.comeet.co/careers-api/2.0/company/18.00C/positions?token=18.00C,3,6,IoT,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Shopic,comeet,shopic/E6.002,https://www.comeet.co/careers-api/2.0/company/E6.002/positions?token=E6.002,3,3,E-commerce & Retail,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,ThetaRay,comeet,thetaray/72.00F,https://www.comeet.co/careers-api/2.0/company/72.00F/positions?token=72.00F,3,4,Fintech,m,הוד השרון,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Toka,comeet,toka/46.00D,https://www.comeet.co/careers-api/2.0/company/46.00D/positions?token=46.00D,3,3,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Viz.ai,greenhouse,vizai,https://boards-api.greenhouse.io/v1/boards/vizai/jobs,3,3,Health,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+A,WeTrip,comeet,weski/F8.00C,https://www.comeet.co/careers-api/2.0/company/F8.00C/positions?token=F8.00C,3,5,E-commerce & Retail,s,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+A,Zafran Security,ashby,zafran-security,https://api.ashbyhq.com/posting-api/job-board/zafran-security,3,3,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+B,Altair,comeet,altair-semi/88.003,https://www.comeet.co/careers-api/2.0/company/88.003/positions?token=88.003,2,3,AI/ML,xs,יקנעם עילית,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Capitolis,greenhouse,capitolis,https://boards-api.greenhouse.io/v1/boards/capitolis/jobs,2,2,Fintech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+B,Chargeflow,comeet,chargeflow/29.001,https://www.comeet.co/careers-api/2.0/company/29.001/positions?token=29.001,2,5,Fintech,m,מודיעין מכבים רעות,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Cognyte,comeet,cognyte/F2.009,https://www.comeet.co/careers-api/2.0/company/F2.009/positions?token=F2.009,2,12,Cybersecurity,l,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Cycode,comeet,cycode/A8.00D,https://www.comeet.co/careers-api/2.0/company/A8.00D/positions?token=A8.00D,2,2,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Digital Turbine,lever,digitalturbine,https://api.lever.co/v0/postings/digitalturbine?mode=json  (EU: api.eu.lever.co),2,4,AdTech,xl,פתח תקווה,live R&D jobs in feed,techmap/companies
+B,Legit Security,comeet,legitsecurity.com/37.004,https://www.comeet.co/careers-api/2.0/company/37.004/positions?token=37.004,2,4,Cybersecurity,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Optibus,comeet,optibus/D1.00C,https://www.comeet.co/careers-api/2.0/company/D1.00C/positions?token=D1.00C,2,2,AI/ML,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Placer.ai,greenhouse,placerlabs,https://boards-api.greenhouse.io/v1/boards/placerlabs/jobs,2,2,AI/ML,l,רמת גן,live R&D jobs in feed,techmap/companies
+B,Riskified,greenhouse,riskified,https://boards-api.greenhouse.io/v1/boards/riskified/jobs,2,4,Fintech,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+B,SuperPlay,comeet,superplay/28.003,https://www.comeet.co/careers-api/2.0/company/28.003/positions?token=28.003,2,13,Gaming,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Tikal,comeet,tikalk/68.00C,https://www.comeet.co/careers-api/2.0/company/68.00C/positions?token=68.00C,2,4,Productivity,l,תל אביב,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Viber,comeet,viber/04.002,https://www.comeet.co/careers-api/2.0/company/04.002/positions?token=04.002,2,7,Digital Media,l,בני ברק,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Windward,comeet,windward/31.002,https://www.comeet.co/careers-api/2.0/company/31.002/positions?token=31.002,2,4,Automotive,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,XTEND,comeet,xtend/85.00A,https://www.comeet.co/careers-api/2.0/company/85.00A/positions?token=85.00A,2,10,Aerospace,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,365Scores,comeet,365scores/B3.006,https://www.comeet.co/careers-api/2.0/company/B3.006/positions?token=B3.006,1,10,Digital Media,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,8fig,comeet,8fig/08.004,https://www.comeet.co/careers-api/2.0/company/08.004/positions?token=08.004,1,2,Fintech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Agora,comeet,agora/08.007,https://www.comeet.co/careers-api/2.0/company/08.007/positions?token=08.007,1,3,Fintech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Atera Networks,comeet,atera/63.00B,https://www.comeet.co/careers-api/2.0/company/63.00B/positions?token=63.00B,1,10,Productivity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Clinch,comeet,clinch/42.007,https://www.comeet.co/careers-api/2.0/company/42.007/positions?token=42.007,1,2,AdTech,m,קיסריה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Coro,comeet,coro/08.00A,https://www.comeet.co/careers-api/2.0/company/08.00A/positions?token=08.00A,1,1,Cybersecurity,l,תל אביב,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Cymulate,greenhouse,cymulate,https://boards-api.greenhouse.io/v1/boards/cymulate/jobs,1,2,Cybersecurity,l,חולון,live R&D jobs in feed,web_search(URL observed)
+B,Cynet,comeet,cynet/33.00D,https://www.comeet.co/careers-api/2.0/company/33.00D/positions?token=33.00D,1,3,Cybersecurity,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Daisy,comeet,daisy/67.002,https://www.comeet.co/careers-api/2.0/company/67.002/positions?token=67.002,1,2,Fintech,m,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Datadog,greenhouse,datadog,https://boards-api.greenhouse.io/v1/boards/datadog/jobs,1,3,Cloud Computing,xl,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+B,Driivz,comeet,driivz/C4.00B,https://www.comeet.co/careers-api/2.0/company/C4.00B/positions?token=C4.00B,1,3,Automotive,m,הוד השרון,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,GK8,comeet,gk8/E8.000,https://www.comeet.co/careers-api/2.0/company/E8.000/positions?token=E8.000,1,2,Fintech,m,רמת גן,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,LSports,comeet,lsports/26.002,https://www.comeet.co/careers-api/2.0/company/26.002/positions?token=26.002,1,1,Digital Media,m,אשקלון,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Lumenis,comeet,lumenis/A1.00C,https://www.comeet.co/careers-api/2.0/company/A1.00C/positions?token=A1.00C,1,6,Health,l,יוקנעם עילית,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Lusha,comeet,lusha/73.00B,https://www.comeet.co/careers-api/2.0/company/73.00B/positions?token=73.00B,1,4,AdTech,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,MASSIVit 3D Printing Technologies,comeet,massivit/39.007,https://www.comeet.co/careers-api/2.0/company/39.007/positions?token=39.007,1,1,Productivity,m,לוד,live R&D jobs in feed,techmap/companies
+B,MDClone,comeet,mdclone/66.004,https://www.comeet.co/careers-api/2.0/company/66.004/positions?token=66.004,1,2,Health,m,באר שבע,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Pagaya,greenhouse,pagayais,https://boards-api.greenhouse.io/v1/boards/pagayais/jobs,1,2,Fintech,l,תל אביב-יפו,live R&D jobs in feed,web_search(URL observed)
+B,Pentera,comeet,pentera/C5.00D,https://www.comeet.co/careers-api/2.0/company/C5.00D/positions?token=C5.00D,1,7,Cybersecurity,l,פתח תקווה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Percepto,comeet,percepto/44.000,https://www.comeet.co/careers-api/2.0/company/44.000/positions?token=44.000,1,3,Robotics & Automation,m,מודיעין מכבים רעות,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Playstudios,comeet,playstudios/E2.00B,https://www.comeet.co/careers-api/2.0/company/E2.00B/positions?token=E2.00B,1,3,Gaming,l,תל אביב-יפו,live R&D jobs in feed,techmap/companies
+B,Rise,comeet,risecodes/A9.000,https://www.comeet.co/careers-api/2.0/company/A9.000/positions?token=A9.000,1,1,Productivity,m,רמת השרון,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,ScyllaDB,comeet,scylladb/E4.006,https://www.comeet.co/careers-api/2.0/company/E4.006/positions?token=E4.006,1,1,Cloud Computing,l,הרצליה,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,SodaStream,comeet,sodastream/40.008,https://www.comeet.co/careers-api/2.0/company/40.008/positions?token=40.008,1,3,E-commerce & Retail,l,כפר סבא,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Surecomp,comeet,Surecomp/24.00E,https://www.comeet.co/careers-api/2.0/company/24.00E/positions?token=24.00E,1,3,Fintech,l,כפר סבא,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,Sweet Security,greenhouse,sweetsecurity,https://boards-api.greenhouse.io/v1/boards/sweetsecurity/jobs,1,2,Cybersecurity,s,רעננה,live R&D jobs in feed,web_search(URL observed)
+B,Waterfall Security Solutions,comeet,waterfall-security/C7.009,https://www.comeet.co/careers-api/2.0/company/C7.009/positions?token=C7.009,1,5,Cybersecurity,m,ראש העין,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+B,WSC Sports Technologies,comeet,wsc-sports/93.007,https://www.comeet.co/careers-api/2.0/company/93.007/positions?token=93.007,1,1,Digital Media,l,רמת גן,live R&D jobs in feed,techmap/companies; techmap/jobs(live)
+C,AI21 Labs,comeet,ai21/E6.001,https://www.comeet.co/careers-api/2.0/company/E6.001/positions?token=E6.001,0,0,AI/ML,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Aiven,greenhouse,aiven36,https://boards-api.greenhouse.io/v1/boards/aiven36/jobs,0,0,Cloud Computing,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Bookaway,comeet,Bookaway/64.006,https://www.comeet.co/careers-api/2.0/company/64.006/positions?token=64.006,0,0,Productivity,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Browzwear,comeet,browzwear/03.000,https://www.comeet.co/careers-api/2.0/company/03.000/positions?token=03.000,0,0,AR/VR,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Cyberbit,comeet,Cyberbit/C3.00E,https://www.comeet.co/careers-api/2.0/company/C3.00E/positions?token=C3.00E,0,0,Cybersecurity,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Cybereason,greenhouse,cybereason,https://boards-api.greenhouse.io/v1/boards/cybereason/jobs,0,0,Cybersecurity,l,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,CyberProof,comeet,cyberproof/75.00F,https://www.comeet.co/careers-api/2.0/company/75.00F/positions?token=75.00F,0,0,Cybersecurity,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Deep Instinct,comeet,deepinstinct/72.00A,https://www.comeet.co/careers-api/2.0/company/72.00A/positions?token=72.00A,0,0,Cybersecurity,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Duda,greenhouse,duda,https://boards-api.greenhouse.io/v1/boards/duda/jobs,0,0,AI/ML,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,eToro,comeet,etoro/41.009,https://www.comeet.co/careers-api/2.0/company/41.009/positions?token=41.009,0,2,Fintech,l,תל אביב-יפו,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,Fabric,comeet,fabric/52.009,https://www.comeet.co/careers-api/2.0/company/52.009/positions?token=52.009,0,0,E-commerce & Retail,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Gilat Satellite Networks,comeet,gilat/39.005,https://www.comeet.co/careers-api/2.0/company/39.005/positions?token=39.005,0,2,Telecommunications,l,פתח תקווה,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,Gong,greenhouse,gongio,https://boards-api.greenhouse.io/v1/boards/gongio/jobs,0,0,,,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,Guesty,comeet,guesty/10.000,https://www.comeet.co/careers-api/2.0/company/10.000/positions?token=10.000,0,2,E-commerce & Retail,l,תל אביב-יפו,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,Insightec,greenhouse,insightec,https://boards-api.greenhouse.io/v1/boards/insightec/jobs,0,1,Health,l,טירת כרמל,large known R&D org; hiring NOT verified,techmap/companies
+C,LiveU,comeet,liveu/90.00C,https://www.comeet.co/careers-api/2.0/company/90.00C/positions?token=90.00C,0,3,Telecommunications,l,כפר סבא,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,NeoGames,comeet,neogames/16.00C,https://www.comeet.co/careers-api/2.0/company/16.00C/positions?token=16.00C,0,0,Gaming,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Novidea Software,comeet,novidea/E5.00A,https://www.comeet.co/careers-api/2.0/company/E5.00A/positions?token=E5.00A,0,0,Fintech,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Optimove,greenhouse,optimove,https://boards-api.greenhouse.io/v1/boards/optimove/jobs,0,1,AdTech,l,תל אביב-יפו,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,Panaya,comeet,panaya/61.00C,https://www.comeet.co/careers-api/2.0/company/61.00C/positions?token=61.00C,0,2,AI/ML,l,הוד השרון,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,REE Automotive,comeet,ree/D3.00B,https://www.comeet.co/careers-api/2.0/company/D3.00B/positions?token=D3.00B,0,0,Automotive,l,,large known R&D org; hiring NOT verified,techmap/companies
+C,Sauce,lever,Sauce,https://api.lever.co/v0/postings/Sauce?mode=json  (EU: api.eu.lever.co),0,0,,,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,SentinelOne,greenhouse,sentinellabs,https://boards-api.greenhouse.io/v1/boards/sentinellabs/jobs,0,0,,,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,Tavily,ashby,tavily,https://api.ashbyhq.com/posting-api/job-board/tavily,0,0,,,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,Team8,comeet,team8/61.003,https://www.comeet.co/careers-api/2.0/company/61.003/positions?token=61.003,0,0,,,,large known R&D org; hiring NOT verified,web_search(URL observed)
+C,Trigo,comeet,trigo/A6.005,https://www.comeet.co/careers-api/2.0/company/A6.005/positions?token=A6.005,0,2,Robotics & Automation,l,תל אביב-יפו,large known R&D org; hiring NOT verified,techmap/companies; techmap/jobs(live)
+C,Verifone,greenhouse,verifone,https://boards-api.greenhouse.io/v1/boards/verifone/jobs,0,1,Telecommunications,l,ראש העין,large known R&D org; hiring NOT verified,techmap/companies
