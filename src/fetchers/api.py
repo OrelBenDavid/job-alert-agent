@@ -115,10 +115,98 @@ def fetch_greenhouse(profile) -> list[Job]:
     return jobs
 
 
+def _secondary_locations(job: dict, field: str | None) -> list[str]:
+    """Ashby's extra locations for one posting, as plain strings.
+
+    *** Read the caveat before changing this ***
+
+    Both Ashby boards in the shortlist returned `secondaryLocations: []` on
+    every posting on 2026-08-13, so the element shape could NOT be verified
+    against a real response - only the field's existence and its emptiness
+    were. Per the project convention, that is written down rather than
+    asserted: the documented shape is `[{"location": "..."}]`, and this
+    accepts both that and a bare string, because guessing one and getting it
+    wrong costs a silently dropped job.
+
+    Fails safe in the direction that matters. A posting is only ever ADDED by
+    this, never removed, so a wrong guess cannot corrupt results - the worst
+    case is a posting whose ONLY Israeli location is a secondary one going
+    unseen, which is the same outcome as not reading the field at all."""
+    if not field:
+        return []
+    out = []
+    for entry in _get_by_path(job, field) or []:
+        if isinstance(entry, dict):
+            value = entry.get("location") or entry.get("name") or ""
+        else:
+            value = entry
+        if isinstance(value, str) and value:
+            out.append(value)
+    return out
+
+
+def fetch_ashby(profile) -> list[Job]:
+    """Ashby: one call, everything in `jobs`, no pagination.
+
+    VERIFIED live on 2026-08-13 against zafran-security (26 postings) and
+    tavily (18). Shape: {"jobs": [...], "apiVersion": 1} - no cursor, no
+    total, no page parameter. The board is small on both, so "does not
+    paginate" is confirmed only at that size (see _onboarding/verify_report.md).
+
+    `secondary_location_field` in the profile is optional and defaults to
+    nothing being read - see _secondary_locations for why it is handled
+    defensively rather than confidently.
+
+    `isListed` is deliberately NOT filtered on: it was true for all 44
+    postings across both boards, so a filter on it has never been exercised
+    against a false value, and dropping postings on an untested predicate is
+    exactly the silent loss this project avoids."""
+    api = profile.raw["api"]
+    r = requests.get(api["endpoint"], timeout=20)
+    r.raise_for_status()
+    data = r.json()
+
+    fields = api["fields"]
+    jobs = []
+    for j in data.get("jobs", []):
+        location = _get_by_path(j, fields["location"]) or ""
+        secondary = _secondary_locations(j, fields.get("secondary_location"))
+        if not (is_relevant_location(location)
+                or any(is_relevant_location(s) for s in secondary)):
+            continue
+        # Same rule as Greenhouse's offices fallback: show something real when
+        # the primary field is empty but a secondary one carried the match.
+        display_location = location or ", ".join(secondary)
+        jobs.append(Job(
+            id=str(_get_by_path(j, fields["id"]) or ""),
+            title=(_get_by_path(j, fields["title"]) or "").strip(),
+            location=display_location.strip(),
+            url=_get_by_path(j, fields["url"]) or "",
+            company=profile.slug,
+            description=_inline_description(profile, j),
+        ))
+    return jobs
+
+
 def fetch_comeet(profile) -> list[Job]:
-    """Comeet: the token was never verified against a live company - see
-    api_platforms.md. location_query_param in the profile, if present, is
-    passed as a param; otherwise {}."""
+    """Comeet: one call, a flat array of positions, no pagination.
+
+    VERIFIED live on 2026-08-13 (this docstring previously recorded the token
+    as never verified against a live company). Two things were established
+    then and both matter here:
+
+      - The API token is NOT the company uid. It is a separate per-company
+        public value, resolved once at import time and baked into the profile's
+        endpoint - never re-resolved at runtime, because resolving it costs a
+        ~750 KB board-page fetch against a few KB for this call.
+      - Every pagination parameter tried (page/limit/offset/skip) is IGNORED:
+        the largest board in the set returned all 238 postings, with 238
+        unique uids, no matter what was appended.
+
+    The stable id is `uid` and the per-posting link is
+    `url_comeet_hosted_page`; both come off the profile's field mapping.
+    location_query_param in the profile, if present, is passed as a param;
+    otherwise {}."""
     api = profile.raw["api"]
     params = api.get("extra_params", {})
     r = requests.get(api["endpoint"], params=params, timeout=20)
@@ -188,7 +276,9 @@ _PLATFORM_DISPATCH = {
     "greenhouse": fetch_greenhouse,
     "comeet": fetch_comeet,
     "smartrecruiters": fetch_smartrecruiters,
-    # ashby/workable/recruitee/workday: planned but not implemented - per
+    "ashby": fetch_ashby,   # added 2026-08-13, after a live verification
+                             # against both boards in the shortlist
+    # workable/recruitee/workday: planned but not implemented - per
     # api_platforms.md they're UNVERIFIED. Only added after a live
     # verification, never before.
 }
@@ -201,6 +291,6 @@ def fetch(profile) -> list[Job]:
     if handler is None:
         raise NotImplementedError(
             f"{profile.slug}: api platform not implemented: {platform!r}. "
-            "If this is Ashby/Workable/Recruitee/Workday - it needs a live "
+            "If this is Workable/Recruitee/Workday - it needs a live "
             "verification against api_platforms.md first, then a handler.")
     return handler(profile)

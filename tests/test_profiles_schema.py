@@ -166,10 +166,15 @@ def test_the_implemented_platform_list_matches_the_dispatcher():
 
 
 def test_a_platform_with_no_handler_is_rejected_at_load(tmp_path):
-    """Ashby is in the skill's table and has no handler here. It used to load
+    """A platform in the skill's table with no handler here used to load
     cleanly and then fail once per run as an ordinary fetch error - which says
-    nothing until it has failed twice."""
-    api = dict(_BASE["api"], platform="ashby")
+    nothing until it has failed twice.
+
+    The example was `ashby` until 2026-08-13, when Ashby was live-verified and
+    given a real handler. Only the example changed; what is being asserted did
+    not. Workable is the replacement for the same reason Ashby was the
+    original: it is in the skill's platform table and has no handler."""
+    api = dict(_BASE["api"], platform="workable")
     with pytest.raises(ProfileError, match="no handler"):
         load_profile(_write(tmp_path, api=api))
 

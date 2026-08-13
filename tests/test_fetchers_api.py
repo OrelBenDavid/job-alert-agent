@@ -100,6 +100,129 @@ def test_greenhouse_inline_content_is_unescaped_by_the_fetcher():
     assert read_experience(jobs[0].description).min_years == 1.0
 
 
+def _ashby_profile(tmp_path, **api_overrides):
+    """A minimal Ashby profile on disk. Built here rather than pointed at a
+    shipped profile because the two Ashby companies are imported in bulk in
+    Phase 3, and a test should not depend on a generated file."""
+    import json
+    api = {"platform": "ashby",
+           "endpoint": "https://api.ashbyhq.com/posting-api/job-board/acme",
+           "fields": {"id": "id", "title": "title", "location": "location",
+                      "url": "jobUrl"}}
+    api.update(api_overrides)
+    data = {
+        "schema_version": 3, "slug": "acme", "name": "Acme", "enabled": True,
+        "careers_url": "https://jobs.ashbyhq.com/acme", "fetch_type": "api",
+        "israel_filter": {"method": "post_fetch"}, "api": api,
+        "health": {"expected_min_jobs": 1}, "verified_on": "2026-08-13",
+    }
+    path = tmp_path / "acme.json"
+    path.write_text(json.dumps(data), encoding="utf-8")
+    return load_profile(path)
+
+
+def test_ashby_filters_to_relevant_locations(tmp_path):
+    """The shape verified live on 2026-08-13: a flat `jobs` array, `location`
+    as a plain string, `jobUrl` absolute."""
+    from fetchers import api as api_mod
+
+    profile = _ashby_profile(tmp_path)
+    fake = {"jobs": [
+        {"id": "a-1", "title": "Backend Engineer", "location": "Tel Aviv",
+         "secondaryLocations": [], "jobUrl": "https://jobs.ashbyhq.com/acme/a-1"},
+        {"id": "a-2", "title": "Account Executive", "location": "New York",
+         "secondaryLocations": [], "jobUrl": "https://jobs.ashbyhq.com/acme/a-2"},
+        {"id": "a-3", "title": "Support Lead", "location": "EMEA Remote",
+         "secondaryLocations": [], "jobUrl": "https://jobs.ashbyhq.com/acme/a-3"},
+        {"id": "a-4", "title": "Sales Rep", "location": "US Remote",
+         "secondaryLocations": [], "jobUrl": "https://jobs.ashbyhq.com/acme/a-4"},
+    ], "apiVersion": 1}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    # Tel Aviv and the unqualified EMEA remote; not New York, not US Remote.
+    assert {j.id for j in jobs} == {"a-1", "a-3"}
+    assert all(j.company == "acme" for j in jobs)
+    assert all(j.url.startswith("https://jobs.ashbyhq.com/acme/") for j in jobs)
+
+
+def test_ashby_reads_secondary_locations_in_both_documented_shapes(tmp_path):
+    """secondaryLocations was EMPTY on both live boards, so its element shape
+    could not be verified - the fetcher accepts a dict and a bare string for
+    that reason. This pins that tolerance so a later "tidy-up" doesn't quietly
+    narrow it to whichever shape the author happened to assume."""
+    from fetchers import api as api_mod
+
+    profile = _ashby_profile(tmp_path, fields={
+        "id": "id", "title": "title", "location": "location",
+        "url": "jobUrl", "secondary_location": "secondaryLocations"})
+    fake = {"jobs": [
+        {"id": "b-1", "title": "Dict shape", "location": "Berlin",
+         "secondaryLocations": [{"location": "Tel Aviv"}],
+         "jobUrl": "https://jobs.ashbyhq.com/acme/b-1"},
+        {"id": "b-2", "title": "String shape", "location": "Berlin",
+         "secondaryLocations": ["Haifa"],
+         "jobUrl": "https://jobs.ashbyhq.com/acme/b-2"},
+        {"id": "b-3", "title": "No Israeli location anywhere",
+         "location": "Berlin", "secondaryLocations": [{"location": "Paris"}],
+         "jobUrl": "https://jobs.ashbyhq.com/acme/b-3"},
+    ], "apiVersion": 1}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert {j.id for j in jobs} == {"b-1", "b-2"}
+
+
+def test_ashby_ignores_secondary_locations_when_unmapped(tmp_path):
+    """No `secondary_location` in the field map means the field is not read at
+    all - a profile opts in. Guards the default staying off."""
+    from fetchers import api as api_mod
+
+    profile = _ashby_profile(tmp_path)
+    fake = {"jobs": [
+        {"id": "c-1", "title": "Engineer", "location": "Berlin",
+         "secondaryLocations": [{"location": "Tel Aviv"}],
+         "jobUrl": "https://jobs.ashbyhq.com/acme/c-1"},
+    ], "apiVersion": 1}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert jobs == []
+
+
+def test_ashby_populates_description_from_description_html(tmp_path):
+    """Ashby returns real HTML in descriptionHtml - NOT HTML-escaped the way
+    Greenhouse's `content` arrives, so it needs no unescaping pass."""
+    from fetchers import api as api_mod
+    from experience import read_experience
+
+    import json
+    profile = _ashby_profile(tmp_path)
+    raw = json.loads((tmp_path / "acme.json").read_text(encoding="utf-8"))
+    raw["detail_fetch"] = {
+        "method": "inline", "inline_field": "descriptionHtml",
+        "content_is_html": True,
+        "verified_on_job_url": "https://jobs.ashbyhq.com/acme/a-1"}
+    (tmp_path / "acme.json").write_text(json.dumps(raw), encoding="utf-8")
+    profile = load_profile(tmp_path / "acme.json")
+
+    fake = {"jobs": [{
+        "id": "a-1", "title": "Backend Engineer", "location": "Tel Aviv",
+        "secondaryLocations": [], "jobUrl": "https://jobs.ashbyhq.com/acme/a-1",
+        "descriptionHtml": "<h3>Requirements</h3><ul><li>4+ years of experience"
+                           " in backend development</li></ul>",
+    }], "apiVersion": 1}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert jobs[0].description is not None
+    assert read_experience(jobs[0].description).min_years == 4.0
+
+
 def test_greenhouse_multiple_locations_resolved_via_offices():
     from fetchers import api as api_mod
 
