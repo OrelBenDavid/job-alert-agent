@@ -166,12 +166,31 @@ Skipped in Phase 3, per the plan. None of these is a bug in the verification.
 | C | REE Automotive | comeet | `ree/D3.00B` | board page = generic 404 shell |
 
 All 7 dead Comeet accounts return a byte-for-byte identical 82,866-byte page — Comeet's
-generic "no such board" shell, not a real board. That is a positive identification of a
-closed/migrated account rather than an inference from a missing token.
+generic "no such board" shell.
 
-These are dead *identifiers*, which is not the same as "not hiring". Several (HiBob,
-Deep Instinct, REE) are real companies that have most likely moved ATS. Re-resolving
-them is a Phase 6-ish task, not a blocker.
+> **Correction, 2026-08-13.** This section originally called that shell "a positive
+> identification of a closed/migrated account rather than an inference from a missing
+> token." **That was wrong**, and the re-resolution pass proved it: the board-page URL is
+> `/jobs/{slug}/{uid}`, and a *known-good* uid with a wrong **slug** returns the same
+> 82,866-byte shell. So the test distinguished "this slug/uid pair has no board page"
+> from nothing else — it could not tell a dead account from a stale slug. REE Automotive
+> is the concrete counter-example: its uid `D3.00B` was correct all along and its Comeet
+> account is live, but the CSV's slug did not resolve, so token resolution failed and the
+> row was written off. The *rows* were still correctly excluded from the import — none of
+> them would have fetched — but the stated reason was stronger than the evidence.
+
+These are dead *identifiers*, which is not the same as "not hiring", and all ten were
+re-resolved on 2026-08-13. Three came back on a working board and are now imported:
+
+| Company | Was | Actually on | Result |
+|---|---|---|---|
+| Viz.ai | greenhouse `vizai` | **Ashby** `Viz.ai` | imported, 2 Israel-relevant |
+| Insightec | greenhouse `insightec` | **Comeet** uid `4A.004` | imported, 5 Israel-relevant |
+| HiBob | comeet `hibob/12.00A` | **HiBob's own product** | imported, 17 Israel-relevant |
+
+Note that Viz.ai and Insightec were both listed as *Greenhouse* in the shortlist and are
+on neither — the platform column was wrong, not just the token. The remaining seven are
+covered in `dead_rows_reresolution.md`.
 
 ---
 

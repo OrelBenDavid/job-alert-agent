@@ -63,7 +63,7 @@ DETAIL_METHODS = ("inline", "html", "playwright", "none")
 # them used to validate cleanly and then fail once per run, per company, as a
 # fetch error - which needs two consecutive failures before it says anything.
 IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters",
-                             "ashby")
+                             "ashby", "hibob")
 
 # The step verbs fetchers/browser.py's _apply_relevance_filter_actions can
 # replay. An unknown verb raises there, mid-fetch; catching it here means a

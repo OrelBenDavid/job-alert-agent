@@ -242,3 +242,145 @@ def test_greenhouse_multiple_locations_resolved_via_offices():
     ids = {j.id for j in jobs}
     assert ids == {"1"}   # only the job with a Tel Aviv office got through,
                           # despite the generic "Multiple Locations" name
+
+
+# ---------------------------------------------------------------------------
+# HiBob's own careers product
+# ---------------------------------------------------------------------------
+
+def test_hibob_sends_the_referer_the_endpoint_requires():
+    """The endpoint returns 401 to a plain request and 200 with a Referer of
+    the site's own origin. It is a soft anti-scraping check, not auth - but
+    dropping the header turns every run into a fetch failure, so it is pinned
+    here rather than left to a comment. The Referer is DERIVED from the
+    endpoint so the two cannot drift apart."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("hibob"))
+    captured = {}
+
+    def fake_get(url, **kwargs):
+        captured["url"] = url
+        captured["headers"] = kwargs.get("headers") or {}
+        return _fake_response({"jobAdDetails": []})
+
+    with patch.object(api_mod.requests, "get", side_effect=fake_get):
+        api_mod.fetch(profile)
+
+    assert captured["headers"].get("Referer") == \
+        "https://hibob-fa0ad69d0cb34a.careers.hibob.com/"
+    assert "Mozilla" in captured["headers"].get("User-Agent", "")
+
+
+def test_hibob_filters_on_country_not_the_two_letter_site_code():
+    """`site` carries 'IL' and `country` carries 'Israel'. Two-letter codes
+    must never become relevance keywords - 'il' is far too short to match
+    safely - so the profile points at country, and this pins that."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("hibob"))
+    fake = {"jobAdDetails": [
+        {"id": "u-1", "title": "Backend Engineer", "site": "IL",
+         "country": "Israel", "requirements": "<li>3+ years</li>"},
+        {"id": "u-2", "title": "Account Executive", "site": "US",
+         "country": "United States", "requirements": "<li>5+ years</li>"},
+        {"id": "u-3", "title": "Designer", "site": "UK",
+         "country": "United Kingdom", "requirements": ""},
+    ]}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert {j.id for j in jobs} == {"u-1"}
+    assert jobs[0].location == "Israel"
+
+
+def test_hibob_builds_the_job_url_from_the_template():
+    """The listing carries no per-posting link, only a UUID. A blank url would
+    render as an unlinked bullet forever, so the template is mandatory."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("hibob"))
+    fake = {"jobAdDetails": [
+        {"id": "abc-123", "title": "QA Engineer", "site": "IL",
+         "country": "Israel", "requirements": "<li>2+ years</li>"},
+    ]}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert jobs[0].url == (
+        "https://hibob-fa0ad69d0cb34a.careers.hibob.com/jobs/abc-123")
+
+
+def test_hibob_reads_requirements_not_the_marketing_description():
+    """SKILL Step 3c.1: `description` holds company boilerplate and the role
+    summary; `requirements` holds the qualification bullets. Pointing at
+    description would validate, return content on every posting, and determine
+    nothing - the failure that looks exactly like success."""
+    from fetchers import api as api_mod
+    from experience import read_experience
+
+    profile = load_profile(find_profile_path("hibob"))
+    assert profile.detail_fetch["inline_field"] == "requirements"
+
+    fake = {"jobAdDetails": [{
+        "id": "u-1", "title": "Backend Engineer", "site": "IL",
+        "country": "Israel",
+        "description": "<p>HiBob helps modern businesses. Founded 2015.</p>",
+        "requirements": "<ul><li>6+ years of backend experience</li></ul>",
+    }]}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    # 6 comes from `requirements`. The description names a year (2015) and
+    # must not be read at all.
+    assert read_experience(jobs[0].description).min_years == 6.0
+
+
+def test_hibob_prepends_the_requirements_heading_the_parser_needs():
+    """inline_prefix, and it is load-bearing rather than cosmetic.
+
+    experience.classify_block decides what a bullet means from the heading
+    above it, and HiBob's `requirements` field is bare "<ul><li>…" with no
+    heading - so its bullets were never classified as requirements. Measured
+    live across 17 Israel-relevant postings: 2 yielded a number bare, 17
+    yielded one behind a synthetic "<h3>Requirements</h3>". This asserts the
+    prefix is actually applied, because without it the field looks populated,
+    parses cleanly, and silently determines almost nothing."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("hibob"))
+    assert profile.detail_fetch["inline_prefix"] == "<h3>Requirements</h3>"
+
+    fake = {"jobAdDetails": [{
+        "id": "u-1", "title": "Backend Engineer", "site": "IL",
+        "country": "Israel",
+        "requirements": "<ul><li>3-5 years of experience in automation</li></ul>",
+    }]}
+
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert jobs[0].description.startswith("<h3>Requirements</h3>")
+
+
+def test_inline_prefix_is_off_unless_a_profile_asks_for_it(tmp_path):
+    """It must stay opt-in. Prepending a requirements heading to a field that
+    is NOT requirements would promote nice-to-haves into hard requirements and
+    start suppressing jobs the user should see."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("wiz"))   # greenhouse, no prefix
+    assert "inline_prefix" not in (profile.detail_fetch or {})
+
+    fake = {"jobs": [{
+        "id": 1, "title": "Backend Engineer", "location": {"name": "Tel Aviv"},
+        "offices": [{"name": "Tel Aviv"}], "absolute_url": "https://x/1",
+        "content": "<ul><li>4+ years</li></ul>",
+    }]}
+    with patch.object(api_mod.requests, "get", return_value=_fake_response(fake)):
+        jobs = api_mod.fetch(profile)
+
+    assert not jobs[0].description.startswith("<h3>")

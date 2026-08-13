@@ -322,16 +322,17 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-**142 companies are registered** as of 2026-08-13, up from 3. All 142 load
-with no profile errors, and a full live fetch returns **1,373 Israel-relevant
-postings in 39.6s** (142/142 succeeded).
+**145 companies are registered** as of 2026-08-13, up from 3. All 145 load
+with no profile errors, and a full live fetch returns **1,336 Israel-relevant
+postings** (145/145 succeeded).
 
 | Platform | Companies | Shape |
 |---|---:|---|
-| Comeet | 104 | thin records over `_platforms/comeet.json` |
+| Comeet | 105 | thin records over `_platforms/comeet.json` |
 | Greenhouse | 28 | thin records over `_platforms/greenhouse.json` |
 | Lever | 7 | thin records (1 EU-hosted) |
-| Ashby | 2 | thin records |
+| Ashby | 3 | thin records |
+| HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
 
 139 of these were bulk-imported by `_onboarding/import_companies.py` from a
@@ -340,10 +341,31 @@ postings in 39.6s** (142/142 succeeded).
 BioCatch's second, abandoned board was dropped by an explicit decision. The
 importer is idempotent and re-runnable.
 
-**All 142 are seeded.** Done in six batches of 25 via `--seed --limit 25`,
-1,371 postings recorded as already-known, no alerts sent. A simulated run
-immediately afterwards reported **0 seed gaps, 0 fetch failures, 0 health-gate
-trips, 0 companies below their floor, and 1 new job** (ordinary churn).
+**All 145 are seeded.** The first 142 in six batches of 25 via
+`--seed --limit 25`; the last three when they were added. A simulated run
+afterwards reported **0 seed gaps, 0 fetch failures, 0 health-gate trips, and
+2 new jobs** (ordinary churn).
+
+**The 10 dead identifiers from the shortlist were re-resolved** — 3 recovered,
+7 deliberately left out. Full findings in
+`_onboarding/dead_rows_reresolution.md`:
+
+- **Viz.ai** → Ashby, slug `Viz.ai` (capital V, literal dot — no lowercase
+  guess would have found it). Listed as *Greenhouse* in the shortlist.
+- **Insightec** → Comeet uid `4A.004`. Also listed as Greenhouse. So for two of
+  the three, the shortlist's *platform* was wrong, not just the identifier.
+- **HiBob** → its own careers product, 17 Israel-relevant roles. Needed a new
+  handler; only a browser found it, because the page source still carries
+  leftover Comeet CSS class names that read as a false positive.
+- The other 7 moved to Workday (Digital Turbine, NeoGames-via-Aristocrat),
+  RippleHire (CyberProof) or BambooHR (Cyberbit) — none implemented here — or
+  self-host with almost nothing open (Deep Instinct 0 Israeli roles, MASSIVit
+  1 non-R&D, REE 1).
+
+This also corrected a **wrong claim in the Phase 1 report**: the 82,866-byte
+Comeet "shell" page was cited as proof of a closed account, but a known-good
+uid with a *wrong slug* returns the same page. The rows were still correctly
+excluded, but the stated evidence was stronger than it was.
 
 **⚠️ The scheduled workflow has not been turned on for this set.** The cron in
 `check.yml` dates from the 3-company era and only fires from the default

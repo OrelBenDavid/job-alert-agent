@@ -1,0 +1,20 @@
+{
+  "slug": "insightec",
+  "name": "Insightec",
+  "platform": "comeet",
+  "careers_url": "https://insightec.com/careers/",
+  "resolved_from": "Re-resolved on 2026-08-13 after the shortlist's identifier turned out to be dead. bot_shortlist.csv had this as Greenhouse board 'insightec', which 404s - the platform was wrong, not just the token. Found by the skill's Step 1b: insightec.com/careers/ loads the Comeet WordPress plugin and its page source carries the widget config verbatim - comeet_uid '4A.004' and its token. careers_url is the company's own page rather than a comeet.co board URL because the Comeet board slug was never observed; the uid is what the API needs and it is verified.",
+
+  "api": {
+    "endpoint": "https://www.comeet.co/careers-api/2.0/company/4A.004/positions?token=A4447DC2910A44148829105C6452201ECC3354"
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "_note": "Live-verified 2026-08-13: 22 positions on the board, 5 Israel-relevant (Haifa, Kiryat Ono, plus EMEA-remote roles). No absolute floor at this size - a drop to zero is covered by the total-zero check, and a floor on 5 postings fires on ordinary churn. zero_is_plausible=false: this is a real Israeli R&D site."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Everything not stated here is inherited from profiles/_platforms/comeet.json, including detail_fetch: none. The uid/token pair was confirmed with a live API call returning 22 positions with populated uid and url_comeet_hosted_page fields."
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-13T12:03:53.803704+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "b91dbb83-7901-4927-909f-514e8c0e23f6": {
+      "title": "Senior Platform Engineer",
+      "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    },
+    "323418e1-348b-4ebe-a654-db7ec48449c6": {
+      "title": "Senior Algorithm Developer",
+      "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    }
+  }
+}

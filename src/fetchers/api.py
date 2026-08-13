@@ -54,6 +54,29 @@ def _inline_description(profile, item: dict) -> str | None:
     if not cfg or cfg.get("method") != "inline":
         return None
     raw = _get_by_path(item, cfg["inline_field"])
+
+    # *** inline_prefix ***
+    #
+    # Some platforms expose the requirements as their OWN field, already
+    # separated from the marketing copy - which sounds ideal and parses badly.
+    # experience.classify_block decides what a bullet means from the heading
+    # above it, and a field that is nothing but "<ul><li>…" has no heading at
+    # all, so its bullets are never classified as requirements.
+    #
+    # Measured on HiBob, 17 Israel-relevant postings: the bare `requirements`
+    # field yielded a years-of-experience number on 2, and the identical
+    # content behind a synthetic "<h3>Requirements</h3>" yielded one on all 17.
+    # The text was always there; only the signal that it was requirements text
+    # was missing.
+    #
+    # This is a per-profile string rather than something inferred, because
+    # prepending a requirements heading to a field that is NOT requirements
+    # would do the opposite of help - it would promote nice-to-haves into
+    # hard requirements and start suppressing jobs the user should see.
+    prefix = cfg.get("inline_prefix") or ""
+    if prefix and isinstance(raw, str):
+        raw = prefix + raw
+
     return normalize_inline_value(
         raw,
         bool(cfg.get("content_is_html", True)),
@@ -188,6 +211,66 @@ def fetch_ashby(profile) -> list[Job]:
     return jobs
 
 
+def fetch_hibob(profile) -> list[Job]:
+    """HiBob's own careers product, on the company's own subdomain.
+
+    VERIFIED live on 2026-08-13 against hibob-fa0ad69d0cb34a.careers.hibob.com
+    (62 postings, 17 in Israel). Added for a single company, which is unusual -
+    the justification is that HiBob dogfoods its own hiring product, so there
+    is no third-party ATS to point at, and 17 Israeli roles is more than most
+    companies in this project's corpus contribute.
+
+    *** The Referer header is required, not decoration ***
+
+    The endpoint returns HTTP 401 to a plain request and 200 with the same URL
+    once Referer (and a browser-ish User-Agent) are set. That is a soft
+    anti-scraping check rather than authentication - no cookie or token is
+    involved - but it means this handler cannot share the bare requests.get
+    the other platforms use. It is also the most likely thing to break here: if
+    the check is ever tightened, this returns 401, which surfaces as an
+    ordinary fetch error and reaches a maintenance alert after two consecutive
+    runs. That is the loud failure, which is the acceptable one.
+
+    Response shape: {"filterGroups": {...}, "jobAdDetails": [...]}. Location
+    lives in `country` as a full name ("Israel"), NOT in `site`, which carries
+    a two-letter code ("IL") that the relevance filter does not and should not
+    match - "il" is far too short to be a safe keyword.
+    """
+    api = profile.raw["api"]
+    endpoint = api["endpoint"]
+    # Derived from the endpoint rather than stored separately: the two must
+    # agree, and a profile that could set them independently would eventually
+    # set them inconsistently.
+    origin = "/".join(endpoint.split("/")[:3])
+    r = requests.get(endpoint, timeout=20, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0",
+        "Accept": "application/json",
+        "Referer": origin + "/",
+    })
+    r.raise_for_status()
+    data = r.json()
+
+    fields = api["fields"]
+    jobs = []
+    for j in data.get("jobAdDetails", []):
+        location = _get_by_path(j, fields["location"]) or ""
+        if not is_relevant_location(location):
+            continue
+        job_id = str(_get_by_path(j, fields["id"]) or "")
+        jobs.append(Job(
+            id=job_id,
+            title=(_get_by_path(j, fields["title"]) or "").strip(),
+            location=location.strip(),
+            # The listing carries no per-posting link, only an id - so the URL
+            # is built from the template in the profile. url is mandatory on
+            # Job, and a blank one would render as an unlinked bullet forever.
+            url=api["job_url_template"].replace("{id}", job_id),
+            company=profile.slug,
+            description=_inline_description(profile, j),
+        ))
+    return jobs
+
+
 def fetch_comeet(profile) -> list[Job]:
     """Comeet: one call, a flat array of positions, no pagination.
 
@@ -278,6 +361,8 @@ _PLATFORM_DISPATCH = {
     "smartrecruiters": fetch_smartrecruiters,
     "ashby": fetch_ashby,   # added 2026-08-13, after a live verification
                              # against both boards in the shortlist
+    "hibob": fetch_hibob,   # added 2026-08-13; single-company, see the
+                             # handler for why that was judged worth it
     # workable/recruitee/workday: planned but not implemented - per
     # api_platforms.md they're UNVERIFIED. Only added after a live
     # verification, never before.

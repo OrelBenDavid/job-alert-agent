@@ -1,0 +1,53 @@
+{
+  "_kind": "platform profile",
+  "_readme": "HiBob's own careers product. Unusually, this platform profile currently has exactly ONE customer - HiBob itself, which dogfoods its own hiring product. It is still written as a platform rather than folded into a standalone profile because the shape is a product's shape, not a company's: any other HiBob customer using the hosted careers site would differ only in subdomain.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "country"
+    ],
+    "_note": "VERIFIED live 2026-08-13. post_fetch per SKILL Step 5. The response DOES carry a filterGroups.sites list including an 'IL' entry, so a server-side filter appears to exist - but the single call already returns every posting, so filtering client-side costs nothing extra and avoids depending on a parameter whose name was never verified. `country` is the field checked, NOT `site`: site carries a two-letter code ('IL') and country carries the full name ('Israel'). Two-letter codes must not become relevance keywords - 'il' is far too short to match safely against arbitrary location text."
+  },
+  "api": {
+    "platform": "hibob",
+    "paginated": false,
+    "location_query_param": null,
+    "job_url_template": "https://hibob-fa0ad69d0cb34a.careers.hibob.com/jobs/{id}",
+    "fields": {
+      "id": "id",
+      "title": "title",
+      "location": "country",
+      "url": "job_url_template"
+    },
+    "_note": "The listing carries NO per-posting link field - only a UUID id - so the job URL is built from job_url_template, which is why that key exists here and on no other platform. `url` in the field map is a placeholder for schema compliance and is not read by the handler. The template is verified: the ids returned by the API match the /jobs/<uuid> links published on the company's own careers page. NOTE the template embeds this customer's subdomain, so a second HiBob customer would have to override it."
+  },
+  "detail_fetch": {
+    "method": "inline",
+    "inline_field": "requirements",
+    "url_source": null,
+    "url_template": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://hibob-fa0ad69d0cb34a.careers.hibob.com/jobs/96caecc5-aca2-4cb7-9799-e661e2c00b0b",
+    "_note": "VERIFIED live 2026-08-13 against the posting above ('Integration Engineer'). inline_field is `requirements` and NOT `description`, chosen the way SKILL Step 3c.1 requires - by reading the actual values rather than taking the first non-empty field. `description` holds the company boilerplate and the role summary; `requirements` is the separate field carrying the qualification bullets. Measured across the 17 Israel-relevant postings: requirements yielded a years-of-experience number on 2, description on 0, responsibilities on 0, benefits on 0. inline_prefix is what makes this field usable at all, and it is not cosmetic. The field arrives as bare '<ul><li>...' with NO heading, and experience.classify_block decides what a bullet means from the heading above it - so unheaded bullets are never classified as requirements. Prepending a synthetic '<h3>Requirements</h3>' took the same content from 2/17 to 17/17. The text was always there; only the signal that it was requirements text was missing. This is safe here precisely because the field IS the requirements section - applying the same prefix to a mixed description field would promote nice-to-haves into hard requirements and start suppressing jobs the user should see.",
+    "inline_prefix": "<h3>Requirements</h3>"
+  },
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company - see the same note in comeet.json."
+  },
+  "verified_on": "2026-08-13",
+  "notes": "Endpoint template: https://<tenant>.careers.hibob.com/api/job-ad. One call, everything in `jobAdDetails`, no pagination parameter of any kind observed. THE REFERER HEADER IS REQUIRED: the endpoint returns HTTP 401 to a plain request and 200 to the same URL with a browser-like User-Agent and a Referer of the site's own origin. No cookie or token is involved, so this is a soft anti-scraping check rather than authentication - but it is the most likely thing about this platform to break, and if it is tightened the fetch returns 401, which surfaces as an ordinary fetch failure and reaches a maintenance alert after two consecutive runs. fetchers/api.fetch_hibob derives the Referer from the endpoint so the two cannot drift apart. This platform was added for a single company; the justification is that HiBob runs its own hiring product so there is no third-party ATS to point at, and it contributes 17 Israeli roles, more than most companies in this project's corpus."
+}

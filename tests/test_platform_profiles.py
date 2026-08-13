@@ -23,7 +23,7 @@ from profiles import (COMPANIES_DIR, PLATFORMS_DIR, PROFILES_DIR, ProfileError,
                       _deep_merge, find_profile_path, load_all, load_platform,
                       load_profile, profile_paths)
 
-PLATFORMS = ("comeet", "greenhouse", "lever", "ashby")
+PLATFORMS = ("comeet", "greenhouse", "lever", "ashby", "hibob")
 
 
 # ---------------------------------------------------------------------------
@@ -193,9 +193,17 @@ def test_wix_is_still_a_standalone_playwright_profile():
 
 def test_platform_files_are_not_loaded_as_companies():
     """profiles/_platforms/*.json are partial documents. If they were picked
-    up as companies they'd fail validation, once per platform, every run."""
-    names = {p.name for p in profile_paths()}
-    assert not (names & {f"{n}.json" for n in PLATFORMS})
+    up as companies they'd fail validation, once per platform, every run.
+
+    Asserted on the PATH rather than the filename: a company may legitimately
+    share its name with its platform (hibob is both, since the company runs
+    its own hiring product), so a filename check would report a collision that
+    isn't one - and would have to be weakened to pass, losing the real
+    guarantee. What actually matters is that nothing under _platforms/ is ever
+    returned as a company."""
+    for path in profile_paths():
+        assert path.parent != PLATFORMS_DIR, path
+    assert not any(p.parent.name == "_platforms" for p in profile_paths())
 
 
 def test_load_all_finds_both_standalone_and_platform_backed_companies():
@@ -305,14 +313,28 @@ def test_biocatch_is_the_comeet_board_not_the_abandoned_lever_one():
     assert "comeet.co" in profile.raw["api"]["endpoint"]
 
 
-def test_no_dead_row_from_phase_one_was_imported():
-    """The ten identifiers that 404'd. Importing one would mean a company that
-    fails every run forever and alerts about it every other run."""
+def test_no_unresolved_dead_row_from_phase_one_was_imported():
+    """Of the ten identifiers that 404'd in Phase 1, three were later
+    re-resolved to a working board on a different platform and re-added
+    (hibob, viz_ai, insightec - see their `resolved_from`). The other seven
+    moved to platforms with no handler here, or self-host. Importing one of
+    those would mean a company that fails every run forever."""
     slugs = {p.slug for p in load_all()[0]}
-    for dead in ("hibob", "viz_ai", "digital_turbine", "massivit_3d_printing_"
-                 "technologies", "cyberbit", "cyberproof", "deep_instinct",
-                 "insightec", "neogames", "ree_automotive"):
+    for dead in ("digital_turbine", "massivit_3d_printing_technologies",
+                 "cyberbit", "cyberproof", "deep_instinct", "neogames",
+                 "ree_automotive"):
         assert dead not in slugs, dead
+
+
+@pytest.mark.parametrize("slug,platform", [
+    ("hibob", "hibob"), ("viz_ai", "ashby"), ("insightec", "comeet")])
+def test_the_re_resolved_companies_landed_on_the_right_platform(slug, platform):
+    """All three were on a DIFFERENT platform in the shortlist than they
+    actually use - the identifiers weren't just stale, the platform was wrong.
+    viz_ai and insightec were both listed as Greenhouse."""
+    profile = load_profile(find_profile_path(slug))
+    assert profile.raw["platform"] == platform
+    assert "Re-resolved on 2026-08-13" in profile.raw["resolved_from"]
 
 
 def test_find_profile_path_locates_a_company_in_either_directory():

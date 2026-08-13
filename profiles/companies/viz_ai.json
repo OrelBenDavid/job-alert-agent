@@ -1,0 +1,20 @@
+{
+  "slug": "viz_ai",
+  "name": "Viz.ai",
+  "platform": "ashby",
+  "careers_url": "https://jobs.ashbyhq.com/Viz.ai",
+  "resolved_from": "Re-resolved on 2026-08-13 after the shortlist's identifier turned out to be dead. bot_shortlist.csv had this as Greenhouse board 'vizai', which 404s - the platform itself was wrong, not just the token. Found by the skill's Step 1b: www.viz.ai/careers is a landing page whose 'View open positions' link goes to www.viz.ai/jobs, and that page embeds an Ashby iframe (jobs.ashbyhq.com/Viz.ai?embed=js). The slug is 'Viz.ai' verbatim - capital V and a literal dot - which is why no lowercase slug guess would ever have found it.",
+
+  "api": {
+    "endpoint": "https://api.ashbyhq.com/posting-api/job-board/Viz.ai"
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "_note": "Live-verified 2026-08-13: 15 postings on the board, 2 Israel-relevant (Senior Platform Engineer and Senior Algorithm Developer, both Tel Aviv). No absolute floor: below ~12 postings a floor causes more false alarms than it catches, and a drop to zero is already covered by the total-zero check. zero_is_plausible stays false because this company demonstrably does hire in Tel Aviv, so a zero would be worth a look."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Everything not stated here is inherited from profiles/_platforms/ashby.json. descriptionHtml was populated on all 15 postings, so the inherited detail_fetch applies."
+}
