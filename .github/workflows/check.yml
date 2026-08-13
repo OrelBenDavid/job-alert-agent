@@ -63,6 +63,14 @@ jobs:
           # Finishing early with some companies skipped is the better failure.
           JOB_ALERT_FETCH_BUDGET_SECONDS: "780"    # stop starting new fetches
           JOB_ALERT_COMPANY_BUDGET_SECONDS: "240"  # cap one company's page walk
+          # How many new jobs in ONE run is implausible enough to be treated as
+          # a state problem rather than hiring. Above this the alerts are held
+          # and the affected companies are rewound (so nothing is lost) and a
+          # single warning is sent instead - see state.flood_decision. Measured
+          # basis: a full live run across all 141 API companies returns ~1,350
+          # Israel-relevant postings in total, so 50 genuinely new ones inside
+          # one 3-hour window is ~4% of the whole corpus turning over.
+          JOB_ALERT_MAX_NEW_JOBS: "50"
         run: python run.py
 
       - name: Commit updated state

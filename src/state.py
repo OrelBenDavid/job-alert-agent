@@ -303,3 +303,131 @@ def should_alert_failure(slug: str) -> bool:
     maintenance alert on Telegram."""
     state = load_state(slug)
     return state.get("consecutive_failures", 0) >= FAILURE_ALERT_THRESHOLD
+
+
+# ---------------------------------------------------------------------------
+# The implausible-volume gate - the run-level twin of the health gate above
+# ---------------------------------------------------------------------------
+#
+# The per-company gate catches a company that went QUIET. This catches the
+# opposite failure, which only exists at scale: a run in which a great many
+# companies simultaneously report a great many new jobs.
+#
+# That shape is almost never a hiring spree. It is what losing or resetting
+# state looks like - every currently-open posting reads as new at once, so at
+# 141 companies the bot would deliver something like 1,350 postings across 141
+# messages. The per-company health gate cannot see this at all: it only ever
+# asks whether a count COLLAPSED, and "everything is new" collapses nothing.
+#
+# What makes this worth its own mechanism rather than a cap is where the jobs
+# go. state is written BEFORE notification, so simply declining to send would
+# mark all 1,350 as seen and they would never be alerted again - the exact
+# silent loss this project exists to prevent. So a suppressed flood REWINDS the
+# companies it suppressed (see run.py), leaving those jobs un-seen and
+# re-detected next run.
+
+# What counts as implausible, measured against reality rather than guessed: a
+# full live run across all 141 imported companies returns ~1,350 Israel-relevant
+# postings in total. A three-hour window producing more than 50 genuinely NEW
+# ones - about 4% of the entire corpus turning over between two runs - is not
+# something any board in this project has been observed to do.
+DEFAULT_IMPLAUSIBLE_NEW_JOBS = 50
+
+# ...and the escape hatch, for exactly the same reason PARTIAL_COLLAPSE_ACCEPT_
+# AFTER exists. Suppressing is not free: while suppressed, nothing is
+# delivered. If the volume is real - a seed gap closing, a genuine hiring
+# surge, a threshold set too low - holding forever would mean the bot warns
+# and never delivers, which is a worse failure than the flood. Two consecutive
+# runs (~6 hours) report the volume twice, crossing the user's attention
+# threshold, and then it gives up and sends.
+FLOOD_ACCEPT_AFTER = 2
+
+RUN_STATE_PATH = STATE_DIR.parent / "run.json"
+
+
+def implausible_new_jobs_threshold() -> int:
+    """Env-overridable, and a bad value falls back rather than raising - the
+    same rule the worker counts and fetch budget follow."""
+    import os
+    try:
+        return max(1, int(os.environ.get("JOB_ALERT_MAX_NEW_JOBS",
+                                         DEFAULT_IMPLAUSIBLE_NEW_JOBS)))
+    except (TypeError, ValueError):
+        return DEFAULT_IMPLAUSIBLE_NEW_JOBS
+
+
+def load_run_state() -> dict:
+    """Run-level state. An unreadable or absent file reads as zeros.
+
+    Deliberately NOT raising the way load_state does: this file only carries a
+    counter for the flood gate, and failing a run over it would let a
+    cosmetic problem block every alert - the opposite of what the gate is
+    for."""
+    if not RUN_STATE_PATH.exists():
+        return {"flood_suppressed_runs": 0, "last_suppressed_at": None}
+    try:
+        stored = json.loads(RUN_STATE_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"flood_suppressed_runs": 0, "last_suppressed_at": None}
+    if not isinstance(stored, dict):
+        return {"flood_suppressed_runs": 0, "last_suppressed_at": None}
+    stored.setdefault("flood_suppressed_runs", 0)
+    stored.setdefault("last_suppressed_at", None)
+    return stored
+
+
+def _write_run_state(state: dict) -> None:
+    RUN_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    tmp = RUN_STATE_PATH.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(state, ensure_ascii=False, indent=2),
+                   encoding="utf-8")
+    tmp.replace(RUN_STATE_PATH)
+
+
+def record_flood_suppressed() -> int:
+    """Counts one suppressed run and returns the new consecutive count."""
+    state = load_run_state()
+    state["flood_suppressed_runs"] = state.get("flood_suppressed_runs", 0) + 1
+    state["last_suppressed_at"] = datetime.now(timezone.utc).isoformat()
+    _write_run_state(state)
+    return state["flood_suppressed_runs"]
+
+
+def clear_flood_counter() -> None:
+    """Resets the counter after a run that sent normally. Only writes when
+    there is something to reset, so an ordinary run doesn't touch the file and
+    doesn't put a line in the state commit."""
+    state = load_run_state()
+    if not state.get("flood_suppressed_runs"):
+        return
+    state["flood_suppressed_runs"] = 0
+    _write_run_state(state)
+
+
+def flood_decision(new_job_count: int) -> tuple[bool, str]:
+    """(suppress, message) for a run about to send `new_job_count` jobs.
+
+    Returns suppress=False and an empty message for any ordinary run, so the
+    common path costs one comparison and no file read beyond the counter."""
+    threshold = implausible_new_jobs_threshold()
+    if new_job_count <= threshold:
+        return False, ""
+
+    suppressed_so_far = load_run_state().get("flood_suppressed_runs", 0)
+    if suppressed_so_far >= FLOOD_ACCEPT_AFTER:
+        return False, (
+            f"{new_job_count} new jobs - still above the plausible limit of "
+            f"{threshold}, but this is run {suppressed_so_far + 1} in a row "
+            "reporting it, so they are being sent rather than held any longer. "
+            "If this was a state problem rather than real hiring, expect a "
+            "large batch now and normal volume afterwards.")
+
+    return True, (
+        f"{new_job_count} new jobs in a single run, which is above the "
+        f"plausible limit of {threshold}. At this volume it is usually lost or "
+        "reset state making every open posting look new, not real hiring - so "
+        "the alerts were NOT sent.\n\n"
+        "The jobs are NOT lost: the affected companies were rewound, so they "
+        "are un-seen and will be re-detected next run. If the volume is "
+        f"genuine, it will be sent automatically after {FLOOD_ACCEPT_AFTER} "
+        "consecutive runs report it.")

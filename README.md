@@ -307,9 +307,37 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-- `mobileye` - API profile (Lever), **live-verified** on 2026-08-11 and again
-  on 2026-08-12: 122 Israel-relevant postings (`expected_min_jobs: 20`,
+**142 companies are registered** as of 2026-08-13, up from 3. All 142 load
+with no profile errors, and a full live fetch returns **1,373 Israel-relevant
+postings in 39.6s** (142/142 succeeded).
+
+| Platform | Companies | Shape |
+|---|---:|---|
+| Comeet | 104 | thin records over `_platforms/comeet.json` |
+| Greenhouse | 28 | thin records over `_platforms/greenhouse.json` |
+| Lever | 7 | thin records (1 EU-hosted) |
+| Ashby | 2 | thin records |
+| *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+139 of these were bulk-imported by `_onboarding/import_companies.py` from a
+152-row shortlist that was **live-verified first** (see
+`_onboarding/verify_report.md`): 10 identifiers were dead and skipped, and
+BioCatch's second, abandoned board was dropped by an explicit decision. The
+importer is idempotent and re-runnable.
+
+**⚠️ The 139 imported companies are NOT seeded yet.** Until they are, each
+reports a seed gap and sends nothing — which is the intended behaviour, not a
+fault. Seeding is manual and staged; see *Adding a company*. The scheduled run
+should not be relied on for them until that is done.
+
+- **14 companies carry `zero_is_plausible: true`** because a live check found
+  their board reachable and non-empty but with no Israel-relevant postings.
+  Without that flag each would fire a false maintenance alert on its first run.
+- `mobileye` - API profile (Lever), **live-verified** on 2026-08-11, 2026-08-12
+  and 2026-08-13: 117-122 Israel-relevant postings (`expected_min_jobs: 20`,
   `zero_is_plausible: false`). State is seeded (`state/seen/`), no seed gap.
+  Migrated to a thin record on 2026-08-13; its hand-chosen health numbers and
+  its EU API host are preserved as per-company overrides.
 - `wiz` - API profile (Greenhouse), **live-verified** on 2026-08-12 (the
   earlier profile note claiming the endpoint was unreachable was stale - this
   environment's egress was blocked on 2026-08-11 and is open now). The board

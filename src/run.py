@@ -28,7 +28,9 @@ import time
 from profiles import load_enabled
 from fetchers import fetch_all
 from state import (process_company, seed_company, should_alert_failure,
-                   load_state, record_failure, restore_state, StateUnreadable)
+                   load_state, record_failure, restore_state, StateUnreadable,
+                   flood_decision, record_flood_suppressed,
+                   clear_flood_counter, FLOOD_ACCEPT_AFTER)
 from notifier import notify_new_jobs, notify_maintenance
 from commands import process_commands
 from detail import DetailBudget
@@ -211,6 +213,86 @@ def _rewind_after_failed_send(profile, previous_states: dict, job_count: int,
               f"{inner}", file=sys.stderr)
 
 
+def _rewind_suppressed_flood(pending: list, previous_states: dict) -> int:
+    """Un-sees every job in a flood that was withheld. Returns how many
+    companies could not be rewound.
+
+    This is what makes withholding safe. State is written before notification,
+    so a withheld batch is already recorded as seen; without this the gate
+    would trade a noisy flood for a silent, permanent loss of every job in it -
+    strictly the worse outcome, and the one the whole project is built to
+    avoid."""
+    failed = 0
+    for profile, _jobs, _tags in pending:
+        previous = previous_states.get(profile.slug)
+        try:
+            if previous is None:
+                raise KeyError("no pre-run snapshot for this company")
+            restore_state(profile.slug, previous)
+        except Exception as e:
+            print(f"[flood gate] {profile.slug}: could not rewind state ({e})",
+                  file=sys.stderr)
+            failed += 1
+    return failed
+
+
+def _deliver(pending: list, previous_states: dict,
+             send_failures: list) -> None:
+    """Sends every company's alert, unless the run's total volume is
+    implausible - see state.flood_decision.
+
+    Sending happens here, after the whole loop, rather than per company inside
+    it. That is the only way the volume gate can exist at all: it is a
+    judgement about the run, and by the time company #1 has been sent it is
+    too late to decide the run was a flood."""
+    total = sum(len(jobs) for _, jobs, _ in pending)
+    if not total:
+        clear_flood_counter()
+        return
+
+    suppress, message = flood_decision(total)
+
+    if suppress:
+        rewind_failures = _rewind_suppressed_flood(pending, previous_states)
+        count = record_flood_suppressed()
+        print(f"[flood gate] {total} new jobs across {len(pending)} companies "
+              f"withheld (run {count} of {FLOOD_ACCEPT_AFTER}); state rewound",
+              file=sys.stderr)
+        # The biggest contributors, so the message says something actionable
+        # about WHICH companies produced the volume.
+        top = sorted(pending, key=lambda p: -len(p[1]))[:5]
+        detail = ", ".join(f"{p.name} ({len(jobs)})" for p, jobs, _ in top)
+        try:
+            notify_maintenance(
+                "run", f"{message}\n\nBiggest contributors: {detail}")
+        except Exception as e:
+            print(f"[send error] flood warning failed: {e}", file=sys.stderr)
+
+        if rewind_failures:
+            # Same fallback as a failed send: if the jobs could not be un-seen,
+            # the only way to stop them being lost is to commit nothing.
+            send_failures.append(f"{rewind_failures} companies (flood rewind)")
+        return
+
+    if message:
+        # Accepted after holding out - said once, plainly, before the batch.
+        print(f"[flood gate] {message}", file=sys.stderr)
+        try:
+            notify_maintenance("run", message)
+        except Exception as e:
+            print(f"[send error] flood note failed: {e}", file=sys.stderr)
+
+    for profile, jobs, tags in pending:
+        try:
+            notify_new_jobs(profile.name, jobs, tags)
+        except Exception as e:
+            print(f"[send error] {profile.slug}: {e}", file=sys.stderr)
+            _rewind_after_failed_send(profile, previous_states, len(jobs),
+                                      send_failures)
+
+    clear_flood_counter()
+
+
 def _run_normal() -> None:
     try:
         process_commands()
@@ -239,6 +321,9 @@ def _run_normal() -> None:
     unreadable_state = []
     send_failures = []
     not_fetched = []
+    # (profile, jobs, tags) per company with something to send. Held until
+    # every company is processed - see _deliver.
+    pending = []
 
     # The seed-gap check is done BEFORE fetching, not inside the loop below,
     # so an unseeded company costs no request at all. It is a local file read,
@@ -346,14 +431,14 @@ def _run_normal() -> None:
                 survivors = [(job, None) for job in result.new_jobs]
 
             if survivors:
-                jobs_to_send = [job for job, _ in survivors]
-                tags = {job.id: tag for job, tag in survivors if tag}
-                try:
-                    notify_new_jobs(profile.name, jobs_to_send, tags)
-                except Exception as e:
-                    print(f"[send error] {profile.slug}: {e}", file=sys.stderr)
-                    _rewind_after_failed_send(profile, previous_states,
-                                              len(jobs_to_send), send_failures)
+                # Collected rather than sent here. The implausible-volume gate
+                # below is a decision about the RUN, so it cannot be made until
+                # every company has been processed - sending inside this loop
+                # would already have delivered the first companies' share of a
+                # flood before the total was known.
+                pending.append((profile,
+                                [job for job, _ in survivors],
+                                {job.id: tag for job, tag in survivors if tag}))
 
             suppressed = len(result.new_jobs) - len(survivors)
             if suppressed:
@@ -362,6 +447,8 @@ def _run_normal() -> None:
 
     # Written after every company, so the counters cover the whole run.
     save_stats(run_stats)
+
+    _deliver(pending, previous_states, send_failures)
 
     if had_seed_gap:
         names = ", ".join(had_seed_gap)
