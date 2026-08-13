@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-13T19:13:23.061210+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-13T21:55:39.273525+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "6020309004": {
@@ -13,10 +13,6 @@
     },
     "6105003004": {
       "title": "Manager, Software Engineering",
-      "first_seen": "2026-08-13T11:24:41.076387+00:00"
-    },
-    "6142587004": {
-      "title": "Partner Marketing Manager",
       "first_seen": "2026-08-13T11:24:41.076387+00:00"
     },
     "6132604004": {
