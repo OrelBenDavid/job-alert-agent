@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-13T11:24:41.066252+00:00",
-  "last_count": 29,
+  "last_success": "2026-08-13T12:34:58.652134+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -97,10 +97,6 @@
     },
     "8070135": {
       "title": "Senior Site Reliability Engineer (SRE)",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8073785": {
-      "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "7903594": {

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-13T11:24:41.044983+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-13T12:34:58.647984+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
-    "7712012003": {
-      "title": "Senior Backend Engineer- Prompt Security",
-      "first_seen": "2026-08-13T11:24:41.044983+00:00"
-    },
     "7818768003": {
       "title": "Senior Backend Engineer- Prompt Security",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
