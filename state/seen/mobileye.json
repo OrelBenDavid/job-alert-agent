@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-13T04:59:36.361922+00:00",
-  "last_count": 118,
+  "last_success": "2026-08-13T07:45:43.226120+00:00",
+  "last_count": 116,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -247,6 +247,10 @@
       "title": "Forecast Analyst",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "fb3e3992-2521-445d-8b69-a98aa1a2595e": {
+      "title": "IT Specialist – MENTEE",
+      "first_seen": "2026-08-13T07:45:43.226120+00:00"
+    },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -345,10 +349,6 @@
     },
     "5d044c94-826e-4685-853f-b70069e3f0a9": {
       "title": "Senior ML Data Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "f15e7124-1aab-4301-9fec-547c7c24c6b1": {
-      "title": "Senior Platform Software Project Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "1d83cd20-6e61-44b8-aa23-895c67e9d010": {
@@ -459,16 +459,8 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "594b53f5-56ac-44e8-9fcf-b501518315b6": {
-      "title": "Travel Coordinator",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "f4848e1c-2f81-46a1-b2ee-e73b0d30a3fb": {
       "title": "Validation & Analysis Project Manager - Temporary Position",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "e5a7fb78-7847-499a-94b8-a66033db3998": {
-      "title": "Validation Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
