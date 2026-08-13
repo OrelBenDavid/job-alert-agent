@@ -6,9 +6,22 @@ GitHub Actions - there is no server.
 
 ## How it works
 
-- **A profile IS the registration.** Every company is one
-  `profiles/<slug>.json` file, in the full structure defined by
-  `career-site-profiler`. There is no separate `companies.json`.
+- **A profile IS the registration.** Every company is one JSON file, in the
+  structure defined by `career-site-profiler`. There is no separate
+  `companies.json`. A company can be written two ways, and they behave
+  identically because the second resolves into the first at load time:
+  - `profiles/<slug>.json` — a full standalone profile. The right answer for a
+    company that doesn't fit any platform's shape (`wix`).
+  - `profiles/companies/<slug>.json` — a thin record naming a `platform` plus
+    only what differs for that company (endpoint, health numbers). It is merged
+    over `profiles/_platforms/<platform>.json`, which holds everything
+    identical across every customer of that ATS, and the merged document is
+    then validated exactly like a standalone profile.
+
+  `platform` selects a **file**, nothing more. The fetch dispatch still reads
+  `fetch_type` and `api.platform` off the *resolved* document, so there is no
+  platform-name-to-function map anywhere in the resolution path, and a company
+  may override any inherited field.
 - **The dispatcher** (`src/fetchers/__init__.py`) reads `fetch_type` from the
   profile and routes to the matching module (`api.py` / `html.py` /
   `browser.py`), which in turn read further fields (`platform`,
@@ -242,7 +255,11 @@ aggregate data and may not hold for Israeli postings.
    the `career-site-profiler` skill. That skill is also what determines the
    company's `detail_fetch` (verifying it against a real posting URL) - it is
    never guessed by hand.
-2. Save the resulting `profile.json` as `profiles/<slug>.json`.
+2. Save the resulting `profile.json`. If the company sits on an ATS that
+   already has `profiles/_platforms/<platform>.json`, write a thin record to
+   `profiles/companies/<slug>.json` instead — `platform`, `slug`, `name`,
+   `careers_url`, `api.endpoint` and `health`, and let the rest be inherited.
+   Otherwise save the full profile as `profiles/<slug>.json`.
 3. Run `python run.py --seed` (manually, via `workflow_dispatch` or locally)
    to seed state without firing alerts for every already-open posting.
    **`--seed` only touches companies that have no state yet**, so it is safe

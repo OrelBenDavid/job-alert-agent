@@ -1,0 +1,58 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Ashby customer. A company record under profiles/companies/ names \"platform\": \"ashby\" and adds only what differs: slug, name, careers_url, api.endpoint and health.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "location",
+      "secondaryLocations"
+    ],
+    "_note": "VERIFIED live 2026-08-13. post_fetch per SKILL Step 5 - the posting API takes no location parameter, so the one call returns every posting and relevance is decided afterwards. `location` is a plain string here, not a nested object as on Comeet and Greenhouse. secondaryLocations is listed as a checked field because the fetcher does read it when mapped, but see the api._note - its element shape is UNVERIFIED."
+  },
+
+  "api": {
+    "platform": "ashby",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "id",
+      "title": "title",
+      "location": "location",
+      "url": "jobUrl",
+      "secondary_location": "secondaryLocations"
+    },
+    "_note": "`secondary_location` is mapped, and the honest status of it is: the FIELD was verified to exist and to be present on every posting, but it was EMPTY on all 44 postings across both live Ashby boards, so its element shape could not be confirmed against a real response. fetchers._secondary_locations therefore accepts both the documented [{\"location\": \"...\"}] and a bare string. This is recorded as unverified rather than asserted, per the project rule. It fails safe in the only direction available: the field can only ever ADD a posting to the results, so a wrong guess cannot corrupt anything - the worst case is a posting whose only Israeli location is a secondary one going unseen, which is identical to not reading the field at all. `id` is Ashby's own UUID and is stable; `jobUrl` is absolute."
+  },
+
+  "detail_fetch": {
+    "method": "inline",
+    "inline_field": "descriptionHtml",
+    "url_source": null,
+    "url_template": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://jobs.ashbyhq.com/zafran-security/656516a7-d4f7-4ff3-86b8-89461acc2dde",
+    "_note": "VERIFIED live 2026-08-13 against the posting named above ('Backend Developer', descriptionHtml 5,100 characters). Populated on 44 of 44 postings across both boards, and an end-to-end fetch through the real fetcher produced descriptions of 3,000-6,000 characters and parsed a years-of-experience number out of them. Unlike Greenhouse's `content`, Ashby's descriptionHtml arrives as REAL HTML and is not additionally HTML-escaped, so it needs no unescaping pass - content_is_html=true still applies because it is HTML that must be stripped to text. inline is correct on the cheap-to-expensive rule: the listing call already carries the full body, so a per-posting request would buy nothing."
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Endpoint template: https://api.ashbyhq.com/posting-api/job-board/{slug}. One call, response {\"jobs\": [...], \"apiVersion\": 1} - no cursor, no total, no page parameter, so there is nothing to paginate with. Verified against both Ashby companies in the shortlist (zafran-security 26 postings, tavily 18) and end-to-end through the real fetcher, which returned 9 Israel-relevant from each, matching the independent verification counts exactly. CAVEAT worth keeping: both boards are small, so 'does not paginate' is confirmed only up to 26 postings - much weaker evidence than Greenhouse's 437 or Comeet's 238. If an Ashby company with a large board is ever added, re-test this before trusting it. `isListed` was true on all 44 postings and is deliberately NOT filtered on: dropping postings on a predicate never observed to be false is the kind of silent loss this project avoids. Full evidence: _onboarding/verify_report.md."
+}

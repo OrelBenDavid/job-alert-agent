@@ -1,0 +1,20 @@
+{
+  "slug": "wiz",
+  "name": "Wiz",
+  "platform": "greenhouse",
+  "careers_url": "https://job-boards.greenhouse.io/wizprivate",
+  "resolved_from": "company name 'Wiz' - resolved to Greenhouse board_token 'wizprivate' per the project instructions, confirmed live on 2026-08-12 and again on 2026-08-13. Carried over unchanged from the standalone profile this record replaced.",
+
+  "api": {
+    "endpoint": "https://boards-api.greenhouse.io/v1/boards/wizprivate/jobs?content=true"
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": true,
+    "_note": "KEEP BOTH VALUES AS THEY ARE. Verified live 2026-08-12 and again 2026-08-13: this board has a handful of open jobs company-wide and none of them are in Israel, so it genuinely returns 0 Israel-relevant postings. expected_min_jobs=0 with zero_is_plausible=true is therefore correct, and tightening either one would turn a true zero into a recurring false maintenance alert. Revisit only if the board grows an Israeli presence. Carried over unchanged from the standalone profile."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Migrated from a full standalone profiles/wiz.json to a thin record on 2026-08-13. The resolved document is byte-identical in every field the fetchers read - asserted by tests/test_platform_profiles.py. detail_fetch now comes from the greenhouse platform profile, where it was moved because it is platform behaviour; the posting URL it was verified against is this company's, and is still the one recorded there."
+}

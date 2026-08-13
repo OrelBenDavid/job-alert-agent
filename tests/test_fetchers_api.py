@@ -4,7 +4,7 @@ from unittest.mock import patch, MagicMock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from profiles import load_profile
+from profiles import find_profile_path, load_profile
 
 
 def _fake_response(json_data):
@@ -17,8 +17,7 @@ def _fake_response(json_data):
 def test_lever_end_to_end_with_mocked_response():
     from fetchers import api as api_mod
 
-    profile = load_profile(Path(__file__).resolve().parent.parent
-                           / "profiles" / "mobileye.json")
+    profile = load_profile(find_profile_path("mobileye"))
 
     fake_postings = [
         {"id": "abc123", "text": "Backend Engineer",
@@ -47,8 +46,7 @@ def test_lever_populates_description_from_the_structured_lists_field():
     from fetchers import api as api_mod
     from experience import read_experience
 
-    profile = load_profile(Path(__file__).resolve().parent.parent
-                           / "profiles" / "mobileye.json")
+    profile = load_profile(find_profile_path("mobileye"))
     assert profile.detail_fetch["inline_field"] == "lists"
 
     fake_postings = [{
@@ -80,8 +78,7 @@ def test_greenhouse_inline_content_is_unescaped_by_the_fetcher():
     from fetchers import api as api_mod
     from experience import read_experience
 
-    profile = load_profile(Path(__file__).resolve().parent.parent
-                           / "profiles" / "wiz.json")
+    profile = load_profile(find_profile_path("wiz"))
     assert profile.detail_fetch["inline_field"] == "content"
 
     fake_data = {"jobs": [{
@@ -226,8 +223,7 @@ def test_ashby_populates_description_from_description_html(tmp_path):
 def test_greenhouse_multiple_locations_resolved_via_offices():
     from fetchers import api as api_mod
 
-    profile = load_profile(Path(__file__).resolve().parent.parent
-                           / "profiles" / "wiz.json")
+    profile = load_profile(find_profile_path("wiz"))
 
     fake_data = {"jobs": [
         {"id": 1, "title": "Cloud Engineer",

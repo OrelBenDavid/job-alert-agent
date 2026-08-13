@@ -1,0 +1,57 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Lever customer. A company record under profiles/companies/ names \"platform\": \"lever\" and adds only what differs: slug, name, careers_url, api.endpoint and health. NOTE the endpoint carries the API HOST as well as the slug - see notes on the EU split.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "flat_multi_location",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "categories.location"
+    ],
+    "_note": "VERIFIED live 2026-08-13. method=post_fetch per SKILL Step 5: the API takes no location parameter, so the single call returns every posting worldwide and relevance is decided on categories.location. `structure: flat_multi_location` documents the shape of Lever's own hosted UI picker (single-select 'City, Country' entries, so a browser walk would need one pass per Israeli city) - it is recorded for documentation only and is never acted on, because fetch_type is api and the picker is therefore never opened. Note that _validate_israel_filter only enforces the extra flat_multi_location selectors when fetch_type is playwright, which is exactly why this is safe to record here."
+  },
+
+  "api": {
+    "platform": "lever",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "id",
+      "title": "text",
+      "location": "categories.location",
+      "url": "hostedUrl"
+    }
+  },
+
+  "detail_fetch": {
+    "method": "inline",
+    "inline_field": "lists",
+    "inline_section_heading": "text",
+    "inline_section_content": "content",
+    "url_source": null,
+    "url_template": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://jobs.eu.lever.co/mobileye/bb661a53-79b8-459d-a8df-5dd419d62596",
+    "_note": "VERIFIED live (2026-08-12 on the posting named above). inline_field is `lists` specifically, and that was measured rather than assumed: across 25 Israel-relevant postings, `description` and `descriptionBody` carry only the intro paragraph and yielded a years-of-experience number on 0 of 25, while `lists` yielded one on 18 of 25. `lists` is a structured array of {text: heading, content: '<li>..'} sections, not a string, which is what detail.render_sections and the inline_section_* fields above are for. Lever's posting PAGE does also serve the description in static HTML, so method=html would work - it is strictly more expensive for identical data, which the cheap-to-expensive rule rules out. Inherited from mobileye.json; this is platform behaviour, not company behaviour."
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Endpoint template: https://api.lever.co/v0/postings/{slug}?mode=json - EU-hosted accounts use https://api.eu.lever.co instead. THE HOST IS PART OF THE PER-COMPANY ENDPOINT because nothing in the slug reveals which one an account is on: of the 8 live Lever companies in the shortlist, 7 answer on api.lever.co and 1 (mobileye) only on api.eu.lever.co, where the non-EU host 404s. The importer resolves the host once by trying US and falling back to EU on a 404 ({\"ok\":false,\"error\":\"Document not found\"}), and writes the winner into api.endpoint. PAGINATION - read before changing: the default call returns the entire board and was verified against mobileye at 137 postings, the largest Lever board in this set. But unlike the other three platforms Lever DOES honour pagination parameters (&limit=10 returned 10; &skip=100 returned 37 of 137), so pagination exists and the default simply has no cap below 137. Above that number the behaviour is UNVERIFIED and is recorded here as unverified rather than assumed safe: a board bigger than Lever's default ceiling, if one exists, would truncate silently. The relative-collapse half of the health gate is what would catch that, since it needs no per-profile number. Full evidence: _onboarding/verify_report.md."
+}

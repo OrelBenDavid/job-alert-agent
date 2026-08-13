@@ -1,0 +1,57 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Greenhouse customer. A company record under profiles/companies/ names \"platform\": \"greenhouse\" and adds only what differs: slug, name, careers_url, api.endpoint and health.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "location.name",
+      "offices"
+    ],
+    "_note": "VERIFIED live 2026-08-13. post_fetch per SKILL Step 5 - the board API takes no location parameter, so the one call returns every posting worldwide and relevance is decided afterwards. BOTH fields are checked and that is not redundancy: Greenhouse routinely reports location.name as the literal string 'Multiple Locations', and offices[] is the only place the actual cities appear. Checking location.name alone silently drops Israeli roles at exactly the large multi-site companies most likely to have them. fetchers/api.py implements the OR across the two."
+  },
+
+  "api": {
+    "platform": "greenhouse",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "id",
+      "title": "title",
+      "location": "location.name",
+      "url": "absolute_url"
+    },
+    "_note": "?content=true on the endpoint is mandatory and is not only about descriptions: without it the response omits the data needed to resolve 'Multiple Locations'. It is also what makes detail_fetch below free."
+  },
+
+  "detail_fetch": {
+    "method": "inline",
+    "inline_field": "content",
+    "url_source": null,
+    "url_template": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://job-boards.greenhouse.io/wizprivate/jobs/4615184006",
+    "_note": "VERIFIED live (2026-08-12 on the posting named above, re-confirmed 2026-08-13 across other boards). inline is the ONLY viable method on Greenhouse: a posting PAGE serves the application form without the description, so method=html would silently read nothing. content_is_html=true is required and load-bearing - the field arrives both as HTML and HTML-escaped, so it must be unescaped before being parsed, or the text ends up full of literal '&lt;p&gt;'. This block is inherited from wiz.json, where it was verified against a real posting; it is platform behaviour, not company behaviour, which is why it belongs here."
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json. The defaults are the safe direction."
+  },
+
+  "verified_on": "2026-08-13",
+  "notes": "Endpoint template: https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs?content=true. One call, no pagination: verified against `datadog`, the largest board reachable in this set at 437 postings, where len(jobs) == meta.total == 437 and an added &page=2 returned the same 437 - the parameter is simply ignored. 437 is well past any plausible 50- or 100-per-page cap, so this is a real test rather than a small-board coincidence. No EU/regional API host split was found: all 28 live boards in the shortlist answer on boards-api.greenhouse.io, unlike Lever. A dead board token returns HTTP 404 {\"error\":\"Job not found\"}, which surfaces as an ordinary fetch failure. Full evidence: _onboarding/verify_report.md."
+}

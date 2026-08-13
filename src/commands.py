@@ -31,7 +31,8 @@ from pathlib import Path
 
 import requests
 
-from profiles import PROFILES_DIR, load_profile, ProfileError
+from profiles import (find_profile_path, load_profile, profile_paths,
+                      ProfileError)
 from fetchers import fetch_jobs
 from notifier import send_message, escape_mdv2, format_job_list_message
 from settings import load_settings, update_filter
@@ -85,7 +86,11 @@ def _fetch_updates() -> list[dict]:
 
 
 def _list_profile_paths() -> list[Path]:
-    return sorted(PROFILES_DIR.glob("*.json"))
+    """Delegates to profiles.profile_paths so /list covers both the
+    standalone profiles at the root AND the platform-backed records under
+    companies/. Globbing the root alone here meant /list quietly reported a
+    fraction of the monitored companies."""
+    return profile_paths()
 
 
 def _handle_list() -> str:
@@ -102,10 +107,12 @@ def _handle_list() -> str:
 def _handle_remove(slug: str) -> str:
     """Disables a company (enabled=false) - doesn't delete the file or its
     state, so it can be brought back without losing history."""
-    path = PROFILES_DIR / f"{slug}.json"
-    if not path.exists():
+    path = find_profile_path(slug)
+    if path is None:
         return f"❌ לא נמצא פרופיל בשם {escape_mdv2(slug)}"
     data = json.loads(path.read_text(encoding="utf-8"))
+    # Written to the company record, not to the platform profile - so
+    # pausing one company can never pause every company on its platform.
     data["enabled"] = False
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
     return f"⏸️ {escape_mdv2(data.get('name', slug))} הוסרה ממעקב \\(ניתן להחזיר\\)"
@@ -124,8 +131,8 @@ def _handle_jobs(slug: str) -> str:
     """On-demand snapshot of a company's currently open (Israel-relevant)
     jobs, straight from the source - unlike /list, which only shows
     tracked company names from local files."""
-    path = PROFILES_DIR / f"{slug}.json"
-    if not path.exists():
+    path = find_profile_path(slug)
+    if path is None:
         return f"❌ לא נמצא פרופיל בשם {escape_mdv2(slug)}"
 
     try:
