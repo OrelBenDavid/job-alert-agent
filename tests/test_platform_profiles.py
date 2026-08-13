@@ -11,6 +11,7 @@ So these tests pin the resolved values, not just the fact that resolution ran.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -225,6 +226,93 @@ def test_a_duplicate_slug_across_directories_is_reported_not_silently_merged(tmp
     profiles_, errors = load_all(tmp_path)
     assert len(profiles_) == 1                      # loaded once, not twice
     assert any("duplicate slug" in e for e in errors), errors
+
+
+# ---------------------------------------------------------------------------
+# The imported corpus
+#
+# 139 of these files are generated, so a defect in the generator is a defect in
+# all of them at once. These check properties of the whole set rather than of
+# any one company.
+# ---------------------------------------------------------------------------
+
+def test_the_whole_corpus_loads_with_no_errors():
+    """The single most valuable assertion here. A profile that fails
+    validation is skipped at load with a logged error - so a broken generator
+    would silently shrink the monitored set rather than fail anything."""
+    profiles_, errors = load_all()
+    assert errors == [], errors
+    assert len(profiles_) >= 140, len(profiles_)
+
+
+def test_every_imported_company_names_a_platform_that_exists():
+    for profile in load_all()[0]:
+        platform = profile.raw.get("platform")
+        if platform:
+            assert (PLATFORMS_DIR / f"{platform}.json").exists(), platform
+
+
+def test_no_comeet_endpoint_uses_the_uid_as_its_token():
+    """The exact defect the handed-over shortlist shipped with. It fails
+    CLOSED - HTTP 400, which reads as a dead company - so a regression here
+    would quietly drop 104 companies rather than break loudly."""
+    for profile in load_all()[0]:
+        if profile.raw.get("platform") != "comeet":
+            continue
+        endpoint = profile.raw["api"]["endpoint"]
+        uid = endpoint.split("/company/")[1].split("/")[0]
+        token = endpoint.split("token=")[1]
+        assert token != uid, f"{profile.slug}: token == uid"
+        assert len(token) >= 12, f"{profile.slug}: implausible token {token!r}"
+
+
+def test_every_company_with_a_zero_floor_explains_itself():
+    """zero_is_plausible=true switches OFF the total-zero health gate, which
+    is this project's main defence. It must never be set by default - only
+    where a live check found no Israeli postings."""
+    for profile in load_all()[0]:
+        if profile.zero_is_plausible:
+            assert profile.health.get("_note"), profile.slug
+
+
+def test_health_floors_stay_below_what_was_observed():
+    """A floor at or above the observed count fires a maintenance alert on the
+    very first run - the company looks broken from the moment it is added.
+
+    The zero case is the other half of the same rule and is why this isn't a
+    plain `<`: a company observed with no Israeli postings must carry floor 0
+    AND zero_is_plausible, or the total-zero gate trips on a board that is
+    working exactly as observed."""
+    for profile in load_all()[0]:
+        note = profile.health.get("_note", "")
+        match = re.search(r"(\d+) Israel-relevant postings", note)
+        if not match:
+            continue
+        observed = int(match.group(1))
+        if observed == 0:
+            assert profile.expected_min_jobs == 0, profile.slug
+            assert profile.zero_is_plausible is True, profile.slug
+        else:
+            assert profile.expected_min_jobs < observed, profile.slug
+
+
+def test_biocatch_is_the_comeet_board_not_the_abandoned_lever_one():
+    """BioCatch had two live boards. The Lever one had not seen a new posting
+    in nearly six months; importing it would have merged dead postings into
+    the company permanently."""
+    profile = load_profile(find_profile_path("biocatch"))
+    assert profile.raw["platform"] == "comeet"
+    assert "comeet.co" in profile.raw["api"]["endpoint"]
+
+
+def test_no_dead_row_from_phase_one_was_imported():
+    """The ten identifiers that 404'd. Importing one would mean a company that
+    fails every run forever and alerts about it every other run."""
+    slugs = {p.slug for p in load_all()[0]}
+    for dead in ("hibob", "viz_ai", "digital_turbine", "massivit_3d_printing_"
+                 "technologies", "cyberbit", "cyberproof", "deep_instinct",
+                 "insightec", "neogames", "ree_automotive"):
+        assert dead not in slugs, dead
 
 
 def test_find_profile_path_locates_a_company_in_either_directory():
