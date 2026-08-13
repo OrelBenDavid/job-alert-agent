@@ -194,7 +194,7 @@ def test_a_job_rejected_by_title_is_never_detail_fetched(monkeypatch):
     """The whole point of the pre-check: a senior title costs zero requests."""
     seen = []
 
-    def spy(jobs, profile):
+    def spy(jobs, profile, budget=None):
         seen.extend(job.id for job in jobs)
         return jobs
 

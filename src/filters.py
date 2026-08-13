@@ -222,7 +222,11 @@ def build_chain(settings: dict | None = None) -> list[Filter]:
 def _count(stats: RunStats, filter_name: str, verdict: Verdict,
            prescreened: bool) -> None:
     """Maps a verdict onto the counter that describes it."""
-    if prescreened:
+    if prescreened and not verdict.passed:
+        # Only a REJECTING prescreen is "rejected by title". No filter
+        # currently returns a passing prescreen verdict, but counting one as a
+        # rejection would quietly corrupt the only numbers that show whether
+        # the filter works at all.
         stats.record(filter_name, "rejected_by_title")
     elif verdict.confidence == "certain":
         stats.record(filter_name,
@@ -235,7 +239,9 @@ def _count(stats: RunStats, filter_name: str, verdict: Verdict,
 
 
 def run_chain(jobs: list[Job], profile, chain: list[Filter],
-              stats: RunStats | None = None) -> list[tuple[Job, str | None]]:
+              stats: RunStats | None = None,
+              budget: "detail.DetailBudget | None" = None
+              ) -> list[tuple[Job, str | None]]:
     """new jobs -> [(surviving job, display tag or None)].
 
     Three passes, in this order for cost reasons:
@@ -243,6 +249,9 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
       2. one detail fetch for whatever survived, and only if some enabled
          filter actually wants descriptions
       3. full evaluation
+
+    `budget` is the run-wide detail-fetch allowance, shared across every
+    company so the cap means what its name says.
 
     An empty chain returns every job untagged, which is exactly the
     pre-patch behaviour."""
@@ -268,7 +277,8 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
     # The detail fetch, gated twice: some filter must want descriptions AND
     # the profile must actually offer a way to reach them.
     if survivors_of_prescreen and any(f.wants_description() for f in chain):
-        survivors_of_prescreen = detail.enrich(survivors_of_prescreen, profile)
+        survivors_of_prescreen = detail.enrich(
+            survivors_of_prescreen, profile, budget)
 
     results: list[tuple[Job, str | None]] = []
     for job in survivors_of_prescreen:

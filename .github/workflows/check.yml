@@ -56,6 +56,13 @@ jobs:
           # fetches into failures. Raise it only together with a runner size.
           JOB_ALERT_NETWORK_WORKERS: "12"
           JOB_ALERT_BROWSER_WORKERS: "2"
+          # Time budgets, both sized against timeout-minutes above rather than
+          # against anything in the code. A run killed by that timeout never
+          # reaches the commit step below, so every state write it had already
+          # made is discarded and the next run walks into the same wall.
+          # Finishing early with some companies skipped is the better failure.
+          JOB_ALERT_FETCH_BUDGET_SECONDS: "780"    # stop starting new fetches
+          JOB_ALERT_COMPANY_BUDGET_SECONDS: "240"  # cap one company's page walk
         run: python run.py
 
       - name: Commit updated state
@@ -64,4 +71,9 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add state/ profiles/
           git diff --cached --quiet || git commit -m "state update [skip ci]"
+          # Rebase before pushing: the concurrency group above stops two runs
+          # overlapping, but nothing stops a human pushing during one. Losing
+          # the push means losing the whole run's state, and every job it saw
+          # is re-alerted next run.
+          git pull --rebase --autostash
           git push

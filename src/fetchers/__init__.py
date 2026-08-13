@@ -18,6 +18,7 @@ import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FutureTimeoutError
 from dataclasses import dataclass
 
 from models import Job
@@ -113,8 +114,21 @@ def _fetch_one(profile) -> FetchOutcome:
         return FetchOutcome(profile.slug, None, e, time.time() - started)
 
 
-def fetch_all(profiles) -> dict[str, FetchOutcome]:
+def fetch_all(profiles, deadline: float | None = None) -> dict[str, FetchOutcome]:
     """Fetches every company concurrently. Returns outcomes keyed by slug.
+
+    `deadline` is an absolute time.monotonic() value. Companies whose fetch
+    hasn't STARTED by then are cancelled and simply left out of the returned
+    dict - the caller reports them as skipped, not as failures. That
+    distinction matters: a skipped company must not bump its failure counter
+    or trigger a maintenance alert, because nothing about it went wrong.
+
+    Why a deadline exists at all: the workflow kills the job at 20 minutes,
+    and a killed job never reaches the "Commit updated state" step, so every
+    state write the run had already made is thrown away and the next run
+    repeats the same work into the same wall. Finishing early with most of
+    the companies done, and saying which ones were not, is strictly better
+    than finishing none of them.
 
     *** Why only this phase is concurrent ***
 
@@ -156,16 +170,32 @@ def fetch_all(profiles) -> dict[str, FetchOutcome]:
                             thread_name_prefix="fetch-browser") as browser_pool:
         futures = [net_pool.submit(_fetch_one, p) for p in network]
         futures += [browser_pool.submit(_fetch_one, p) for p in browser]
-        for future in futures:
-            outcome = future.result()   # _fetch_one never raises - it carries
-            outcomes[outcome.slug] = outcome
+
+        for index, future in enumerate(futures):
+            remaining = None if deadline is None else deadline - time.monotonic()
+            try:
+                outcome = future.result(timeout=remaining)  # _fetch_one never
+                outcomes[outcome.slug] = outcome            # raises - it carries
+            except FutureTimeoutError:
+                # Out of budget. Whatever is still queued is dropped; whatever
+                # is mid-flight cannot be interrupted (there is no safe way to
+                # kill a thread holding a Chromium), so the pool's own
+                # shutdown still waits for those - which is why the deadline
+                # has to sit well inside the workflow's timeout, not at it.
+                dropped = sum(1 for f in futures[index:] if f.cancel())
+                print(f"[fetch] deadline reached; {dropped} companies were "
+                      "not started and are skipped this run (not counted as "
+                      "failures)", file=sys.stderr)
+                break
 
     elapsed = time.time() - started
     failed = sum(1 for o in outcomes.values() if not o.ok)
-    slowest = max(outcomes.values(), key=lambda o: o.seconds)
-    print(f"[fetch] {len(profiles)} companies in {elapsed:.1f}s "
+    slowest = (max(outcomes.values(), key=lambda o: o.seconds)
+               if outcomes else None)   # everything cancelled - possible now
+    slowest_note = (f"slowest {slowest.slug} {slowest.seconds:.1f}s"
+                    if slowest else "nothing completed")
+    print(f"[fetch] {len(outcomes)}/{len(profiles)} companies in {elapsed:.1f}s "
           f"({len(network)} network x{n_workers}, {len(browser)} browser "
-          f"x{b_workers}); {failed} failed; slowest {slowest.slug} "
-          f"{slowest.seconds:.1f}s", file=sys.stderr)
+          f"x{b_workers}); {failed} failed; {slowest_note}", file=sys.stderr)
 
     return outcomes
