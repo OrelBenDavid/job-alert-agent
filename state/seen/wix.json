@@ -1,11 +1,11 @@
 {
-  "last_success": "2026-08-13T16:04:37.079621+00:00",
+  "last_success": "2026-08-13T19:13:21.975787+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
-    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000143345001": {
+    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000143360276": {
       "title": "System Administrator",
-      "first_seen": "2026-08-13T16:04:37.079621+00:00"
+      "first_seen": "2026-08-13T19:13:21.975787+00:00"
     },
     "https://careers.wix.com/position/oracle-e5751041-b0fc-563a-9195-ef0222209f1f-T1786624300-744000143316863": {
       "title": "AI Content writer",
