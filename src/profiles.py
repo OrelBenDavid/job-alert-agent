@@ -50,7 +50,7 @@ COMPANIES_DIR = PROFILES_DIR / "companies"
 
 # The four ways a description can be reached, cheapest first - the same
 # cheap-to-expensive rule the fetch_type dispatch follows.
-DETAIL_METHODS = ("inline", "html", "playwright", "none")
+DETAIL_METHODS = ("inline", "html", "embedded_json", "playwright", "none")
 
 # The ATS platforms that actually have a handler in fetchers/api.py. Kept here
 # as a literal rather than imported from there, because importing the fetchers
@@ -152,8 +152,17 @@ def _validate_detail_fetch(block: dict, where: str) -> None:
                 "the description.")
         return   # inline costs no requests, so the url_* fields don't apply
 
+    if method == "embedded_json":
+        # The JSON path is this method's equivalent of content_selector:
+        # without it the extractor walks to None on every posting and the
+        # company reads as undetermined while the profile claims otherwise.
+        if not block.get("embedded_json_path"):
+            raise ProfileError(
+                f"{where}detail_fetch.method='embedded_json' requires "
+                "embedded_json_path - the dotted path to the description "
+                "inside the embedded object.")
     # html / playwright - both issue one request per new posting
-    if not block.get("content_selector"):
+    elif not block.get("content_selector"):
         raise ProfileError(
             f"{where}detail_fetch.method={method!r} requires content_selector.")
 

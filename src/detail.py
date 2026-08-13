@@ -26,6 +26,8 @@ from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 
 import dataclasses
 import html as html_lib
+import json
+import re
 import sys
 
 import requests
@@ -157,7 +159,8 @@ def wants_detail_fetch(profile) -> bool:
     data, which the listing already carried, or nothing at all). Used to keep
     a disabled filter from triggering any work."""
     cfg = profile.detail_fetch
-    return bool(cfg) and cfg.get("method") in ("html", "playwright")
+    return bool(cfg) and cfg.get("method") in ("html", "playwright",
+                                               "embedded_json")
 
 
 def _detail_url(job: Job, cfg: dict) -> str:
@@ -171,6 +174,73 @@ def _detail_url(job: Job, cfg: dict) -> str:
         return job.url
     template = cfg.get("url_template") or ""
     return template.replace("{id}", job.id).replace("{url}", job.url)
+
+
+_EMBEDDED_JSON_VAR_DEFAULT = "POSITION_DATA"
+
+
+def _extract_from_embedded_json(markup: str, cfg: dict) -> str | None:
+    """Pulls the description out of a JSON blob embedded in a page's script.
+
+    *** Why this method exists at all ***
+
+    It was written for Comeet, which is 105 of this project's 145 companies -
+    so without it the experience filter is off for 72% of the corpus, which is
+    what it silently was until 2026-08-13.
+
+    Comeet cannot be reached any other way, and each cheaper rung was ruled out
+    against live responses rather than assumed:
+      - `inline` is impossible: NEITHER the positions listing NOR the
+        per-position API endpoint returns any description field. (The Comeet
+        platform profile previously claimed the listing carried a `details`
+        array. It does not - that claim was written without being verified.)
+      - `html` is impossible: the hosted posting page is an Angular app, so the
+        description is not in the server-rendered DOM and no content_selector
+        can reach it. The text exists only inside a `POSITION_DATA = {...}`
+        assignment in a <script>.
+
+    The blob is located by its ASSIGNMENT, not by the first mention of the
+    variable name - the name appears several times before it, and anchoring on
+    the name alone parses the wrong object. That failure was observed and is
+    the nasty kind: it silently yielded the COMPANY object, whose custom_fields
+    is empty, so every posting came back with zero sections and looked exactly
+    like a company that writes no requirements.
+
+    `json.JSONDecoder().raw_decode` is what makes this safe: it consumes
+    exactly one JSON value from the given offset and stops, so no brace
+    counting is needed to find where the object ends.
+
+    The extracted value is a list of {name, value} sections, fed straight into
+    render_sections - the same path Lever's `lists` takes. That reuse is the
+    point: the section NAME ("Requirements") becomes a real <h3>, and heading
+    promotion in experience.classify_block is what makes the unmarked bullets
+    underneath it count as mandatory.
+    """
+    variable = cfg.get("embedded_json_var", _EMBEDDED_JSON_VAR_DEFAULT)
+    match = re.search(re.escape(variable) + r"\s*=\s*\{", markup)
+    if not match:
+        return None
+
+    try:
+        # end() - 1 puts the offset on the opening brace itself.
+        obj, _ = json.JSONDecoder().raw_decode(markup, match.end() - 1)
+    except ValueError:
+        return None
+
+    current = obj
+    for part in (cfg.get("embedded_json_path") or "").split("."):
+        if not isinstance(current, dict):
+            return None
+        current = current.get(part)
+
+    if isinstance(current, list):
+        return render_sections(
+            current,
+            cfg.get("inline_section_heading", DEFAULT_SECTION_HEADING_FIELD),
+            cfg.get("inline_section_content", DEFAULT_SECTION_CONTENT_FIELD))
+    if isinstance(current, str):
+        return current
+    return None
 
 
 def _extract_from_html(markup: str, cfg: dict) -> str | None:
@@ -194,8 +264,15 @@ def _extract_from_html(markup: str, cfg: dict) -> str | None:
 
 
 def _fetch_html_descriptions(jobs: list[Job], cfg: dict, slug: str,
-                             budget: DetailBudget) -> list[Job]:
-    """One plain GET per posting. Each failure is isolated to its own job."""
+                             budget: DetailBudget, extract=None) -> list[Job]:
+    """One plain GET per posting. Each failure is isolated to its own job.
+
+    `extract` is the page-to-text step, defaulting to the CSS-selector one.
+    It is a parameter so the embedded-JSON method reuses this loop rather
+    than copying it - the budget accounting, the connection reuse and the
+    per-job fail-open handler are the parts that must not diverge between
+    two methods that differ only in how they read one fetched page."""
+    extract = extract or _extract_from_html
     enriched: list[Job] = []
     session = requests.Session()      # reuse the connection across postings
     session.headers.update(_HEADERS)
@@ -212,7 +289,7 @@ def _fetch_html_descriptions(jobs: list[Job], cfg: dict, slug: str,
         try:
             response = session.get(_detail_url(job, cfg), timeout=_TIMEOUT)
             response.raise_for_status()
-            raw = _extract_from_html(response.text, cfg)
+            raw = extract(response.text, cfg)
             enriched.append(dataclasses.replace(
                 job, description=normalize_description(raw, _content_is_html(cfg))))
         except Exception as e:
@@ -299,6 +376,11 @@ def enrich(jobs: list[Job], profile, budget: DetailBudget | None = None) -> list
         return jobs
     if method == "html":
         return _fetch_html_descriptions(jobs, cfg, profile.slug, budget)
+    if method == "embedded_json":
+        # Same one-GET-per-posting cost as html; only the extraction of
+        # text from the fetched page differs.
+        return _fetch_html_descriptions(jobs, cfg, profile.slug, budget,
+                                        _extract_from_embedded_json)
     if method == "playwright":
         return _fetch_playwright_descriptions(jobs, cfg, profile.slug, budget)
 

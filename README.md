@@ -443,6 +443,15 @@ nor the Wix page produces that shape of string.
 - Note: no Mobileye posting requires one year or less (the lowest found is
   two years, in 6 postings), which is why `passed_with_number` is 0.
   `/minexp 2` would open up those 6.
+- **Comeet (105 companies) uses `detail_fetch.method: embedded_json`** — added
+  2026-08-13. Its description is not in either API response and not in the
+  posting page's DOM (the page is an Angular app); it lives in a
+  `POSITION_DATA = {...}` script assignment, at `custom_fields.details`, as
+  named sections. Costs one plain GET per **new** posting, bounded by the
+  run-wide `MAX_DETAIL_FETCHES_PER_RUN`. Before this, Comeet was declared
+  `detail_fetch: none` on a claim that proved false, and the experience filter
+  was silently unable to evaluate **72% of the corpus** — see
+  `_onboarding/experience_filter_audit.md`.
 - **`wix` is still `schema_version: 2` with no `detail_fetch`**, so the
   filter only works at the title level there and everything else is sent with
   `⚠️`. That is correct fail-open behaviour, not a bug. Determining how to
