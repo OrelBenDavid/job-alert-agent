@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-13T12:34:58.617277+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-13T13:24:49.362800+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
+    "9D.F6D": {
+      "title": "AI Senior Product Manager",
+      "first_seen": "2026-08-13T13:24:49.362800+00:00"
+    },
     "AF.A61": {
       "title": "Backend Engineer - Data Pipeline",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
