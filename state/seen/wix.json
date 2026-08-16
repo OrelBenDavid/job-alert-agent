@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-16T09:35:32.096948+00:00",
-  "last_count": 21,
+  "last_success": "2026-08-16T12:53:49.753288+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-e185ca04-b927-59fa-8b38-7747c55cd41d-T1786870929-744000143689929": {
+      "title": "Product Manager - Premium Services",
+      "first_seen": "2026-08-16T12:53:49.753288+00:00"
+    },
     "https://careers.wix.com/position/oracle-e5751041-b0fc-563a-9195-ef0222209f1f-T1786624300-744000143687098": {
       "title": "AI Content writer- Base44",
       "first_seen": "2026-08-16T09:35:32.096948+00:00"

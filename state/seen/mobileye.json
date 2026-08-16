@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T09:35:32.128373+00:00",
-  "last_count": 116,
+  "last_success": "2026-08-16T12:53:50.849516+00:00",
+  "last_count": 119,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -25,10 +25,6 @@
     },
     "6e32e4d7-2df4-4ff2-b404-a6dba0444e84": {
       "title": "Algorithm Engineer Senior Technical Expert - Objects Perception",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "18c50dc3-2d92-43f2-9ad2-2fd58739aedb": {
-      "title": "Algorithm Execution Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "055a3a86-a6d4-42ae-a09c-8adb41c5b383": {
@@ -74,6 +70,10 @@
     "ed4a7f88-cb21-486a-9bf4-1c2ddf4ceb58": {
       "title": "Computer Vision & Deep Learning Algorithms Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "8e12e6c1-44a9-4eb7-b041-9f212505da00": {
+      "title": "Corporate Controller",
+      "first_seen": "2026-08-16T12:53:50.849516+00:00"
     },
     "de078a5a-f9b1-4f3f-8b02-b19241cbd1c6": {
       "title": "Corporate Controller",
@@ -157,6 +157,10 @@
     },
     "fdee723f-1dac-49df-a209-6765d40d3beb": {
       "title": "Embedded Team Leader -OS Integration & Automation",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "18c50dc3-2d92-43f2-9ad2-2fd58739aedb": {
+      "title": "Execution Project Manager - Algorithm Department",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "a71e09c2-0b0c-4519-9505-81dcb684fe27": {
@@ -335,6 +339,10 @@
       "title": "Senior Embedded Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "4d129447-0cad-4b11-9825-e86b8fe09e47": {
+      "title": "Senior Hardware Engineer",
+      "first_seen": "2026-08-16T12:53:50.849516+00:00"
+    },
     "3f7e3421-7963-4d3a-8573-2fb29f8dbade": {
       "title": "Senior Microsoft Sysadmin",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -410,6 +418,10 @@
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f55eea29-25bc-4c11-85e0-c3f21502097c": {
+      "title": "Software CI and Automation Student",
+      "first_seen": "2026-08-16T12:53:50.849516+00:00"
     },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
