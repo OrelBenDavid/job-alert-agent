@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T15:29:12.951324+00:00",
-  "last_count": 118,
+  "last_success": "2026-08-16T18:39:15.555736+00:00",
+  "last_count": 120,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -86,6 +86,14 @@
     "fd1f6cd4-ea24-4db6-b7ec-43912ece3b16": {
       "title": "Cyber Security Execution Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "89b5d584-1a18-4087-a8ca-46172fdf9c29": {
+      "title": "Cyber Security Solution Architect",
+      "first_seen": "2026-08-16T18:39:15.555736+00:00"
+    },
+    "da962759-96d7-4810-9927-351ecc4b6ceb": {
+      "title": "Cyber Security Solution Architect",
+      "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
     "56a4af6f-946b-4786-89b1-92110e53f6be": {
       "title": "Data Platform Engineer",
