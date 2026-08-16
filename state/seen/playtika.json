@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-16T06:53:10.504438+00:00",
+  "last_success": "2026-08-16T09:35:33.187011+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -68,7 +68,7 @@
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
     },
     "4654602101": {
-      "title": "User Acquisition - Israel",
+      "title": "User Acquisition",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
     },
     "4747021101": {

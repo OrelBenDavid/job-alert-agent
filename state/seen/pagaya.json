@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.501583+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-16T09:35:33.184710+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "7787982003": {
@@ -19,10 +19,6 @@
       "title": "Data Science Group Lead",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     },
-    "7770197003": {
-      "title": "Director of Procurement",
-      "first_seen": "2026-08-13T11:24:34.297495+00:00"
-    },
     "7720946003": {
       "title": "Lead Data Scientist",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
@@ -31,16 +27,8 @@
       "title": "Principal Data Scientist",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     },
-    "7809535003": {
-      "title": "Procurement Manager",
-      "first_seen": "2026-08-13T11:24:34.297495+00:00"
-    },
     "7720945003": {
       "title": "Senior Data Scientist",
-      "first_seen": "2026-08-13T11:24:34.297495+00:00"
-    },
-    "7501813003": {
-      "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     },
     "7763481003": {

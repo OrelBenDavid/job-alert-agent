@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.482024+00:00",
-  "last_count": 25,
+  "last_success": "2026-08-16T09:35:32.107354+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -37,10 +37,6 @@
     },
     "511dd4fe-d1f8-488e-945e-729b7cbbfc7f": {
       "title": "Order Management Specialist",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "adcc4e3b-5386-4411-a551-8d98f2701236": {
-      "title": "Professional Services Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
     "ad96d5f9-f12e-4b56-a3da-73f50e71a99c": {

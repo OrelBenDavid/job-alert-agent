@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.475937+00:00",
-  "last_count": 18,
+  "last_success": "2026-08-16T09:35:32.104192+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "DF.E64": {
@@ -53,10 +53,6 @@
     },
     "98.E66": {
       "title": "Material Planner",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
-    "9B.D69": {
-      "title": "Planning & Control, Manager",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
     "B7.369": {

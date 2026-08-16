@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.496433+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-16T09:35:32.127767+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "3B.D68": {
@@ -10,6 +10,10 @@
     "9E.86E": {
       "title": "Data Infra Tech Lead",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "85.07B": {
+      "title": "Growth Marketing Lead",
+      "first_seen": "2026-08-16T09:35:32.127767+00:00"
     },
     "81.D63": {
       "title": "GTM growth Account Executive",

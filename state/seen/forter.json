@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.487536+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-16T09:35:32.110011+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "6349983002": {
@@ -35,10 +35,6 @@
       "title": "Senior Manager, Business Applications",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "8547143002": {
-      "title": "Senior Software Engineer, Billing",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
     "8591137002": {
       "title": "Senior Software Engineer II, Payments",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
@@ -49,10 +45,6 @@
     },
     "8289641002": {
       "title": "Senior Software Engineer ll, Customer Experience",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8622108002": {
-      "title": "Staff Engineer, Billing",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "8670848002": {

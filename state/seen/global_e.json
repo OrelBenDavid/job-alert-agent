@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.489626+00:00",
-  "last_count": 18,
+  "last_success": "2026-08-16T09:35:32.117890+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "F8.E6E": {
@@ -33,10 +33,6 @@
     },
     "86.D6E": {
       "title": "FP&A Analyst - Student Position",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "6D.C6C": {
-      "title": "Fraud Analyst - Student position",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "C5.D6C": {

@@ -1,14 +1,14 @@
 {
-  "last_success": "2026-08-16T06:53:10.493377+00:00",
+  "last_success": "2026-08-16T09:35:32.123403+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
+    "8127498": {
+      "title": "Business Development Representative - French speaker",
+      "first_seen": "2026-08-16T09:35:32.123403+00:00"
+    },
     "7694707": {
       "title": "Business Development Representative - German Speaker",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "8095859": {
-      "title": "Collection Specialist - Maternity Leave Replacement (Temporary position)",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "7434101": {

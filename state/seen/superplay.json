@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T06:53:10.511138+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-16T09:35:33.190901+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "88.E47": {
@@ -50,6 +50,10 @@
     "15.A65": {
       "title": "UI UX Designer",
       "first_seen": "2026-08-13T11:24:41.061693+00:00"
+    },
+    "85.079": {
+      "title": "VIP Account Manager - (Temporary for 9 months)",
+      "first_seen": "2026-08-16T09:35:33.190901+00:00"
     }
   }
 }
