@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T03:54:28.127343+00:00",
-  "last_count": 28,
+  "last_success": "2026-08-16T06:53:11.713173+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -14,6 +14,10 @@
     "8081260": {
       "title": "Algorithm Engineer (RTB)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
+    },
+    "8131711": {
+      "title": "Algorithm Team Lead",
+      "first_seen": "2026-08-16T06:53:11.713173+00:00"
     },
     "7845371": {
       "title": "Assistant Corporate Controller",

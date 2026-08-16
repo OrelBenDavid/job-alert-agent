@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T03:54:28.108224+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-16T06:53:10.492525+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "63.D6F": {
@@ -9,10 +9,6 @@
     },
     "52.E65": {
       "title": "Data Science Student",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
-    "7D.C6C": {
-      "title": "EMEA Field Service specialist",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
     "1E.B68": {
