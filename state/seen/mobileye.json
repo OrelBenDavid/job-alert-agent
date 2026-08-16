@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T12:53:50.849516+00:00",
-  "last_count": 119,
+  "last_success": "2026-08-16T15:29:12.951324+00:00",
+  "last_count": 118,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -415,13 +415,13 @@
       "title": "Senior Technical Product Manager – AV Platform (HW/SW)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "72b82d00-3d08-499b-84ca-c90b12db479d": {
+      "title": "Senior Technical Project Manager (Autonomous Driving)",
+      "first_seen": "2026-08-16T15:29:12.951324+00:00"
+    },
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "f55eea29-25bc-4c11-85e0-c3f21502097c": {
-      "title": "Software CI and Automation Student",
-      "first_seen": "2026-08-16T12:53:50.849516+00:00"
     },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
@@ -437,10 +437,6 @@
     },
     "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "6a585853-ec67-49fb-af6d-68adc60b5977": {
-      "title": "Strategic Account Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "5215cdc7-1576-48da-8c92-ca128ddf2c6e": {

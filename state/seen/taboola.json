@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T12:53:50.873201+00:00",
-  "last_count": 29,
+  "last_success": "2026-08-16T15:29:12.967459+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -105,10 +105,6 @@
     },
     "7903594": {
       "title": "Software Development Team Leader – Production Engineering",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8103937": {
-      "title": "Strategy Manager",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8089642": {

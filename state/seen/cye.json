@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-16T12:53:49.767378+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-16T15:29:12.924294+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "d2b9d2ff-edb8-4fb4-80ca-9b5cdefa8a57": {
@@ -30,6 +30,10 @@
     "93eb9bab-30e3-4ff4-83e6-09f8f8727a81": {
       "title": "DFIR",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "3245ba1b-0412-404c-8b1e-538103bf99b6": {
+      "title": "Sales Operations Specialist",
+      "first_seen": "2026-08-16T15:29:12.924294+00:00"
     },
     "ba6f695a-5512-4fcb-bcb0-aa7d42c9c6c4": {
       "title": "Senior AI Engineer (AI & Innovation)",
