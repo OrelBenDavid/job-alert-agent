@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T12:58:53.706803+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-17T15:33:10.320760+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -21,10 +21,6 @@
     },
     "dc1b0f80-3ba6-4077-b815-41d3a2ccdeab": {
       "title": "Field System QA",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "51471a5f-c2cb-4902-b698-b9e11d342bfd": {
-      "title": "Hardware Systems Architect & Tech Lead",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
     "6a52d9de-ec0e-48f7-8c4f-ba409b0dd256": {

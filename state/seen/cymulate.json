@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T12:58:53.706109+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-17T15:33:10.320122+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "4919463101": {
@@ -15,15 +15,19 @@
       "title": "Marketing Operations Specialist",
       "first_seen": "2026-08-13T21:55:39.246453+00:00"
     },
-    "4900911101": {
-      "title": "VP Customer Success",
-      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    "4953985101": {
+      "title": "Technical Account Manager",
+      "first_seen": "2026-08-17T15:33:10.320122+00:00"
     },
     "4925575101": {
       "title": "VP Customer Success",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     },
     "4925576101": {
+      "title": "VP Customer Success",
+      "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "4900911101": {
       "title": "VP Customer Success",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }

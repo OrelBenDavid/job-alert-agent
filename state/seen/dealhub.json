@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T12:58:53.708042+00:00",
-  "last_count": 16,
+  "last_success": "2026-08-17T15:33:10.321829+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "B5.071": {
@@ -10,6 +10,10 @@
     "06.65B": {
       "title": "Business Development Representative",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "56.070": {
+      "title": "Customer Success Manager",
+      "first_seen": "2026-08-17T15:33:10.321829+00:00"
     },
     "C6.464": {
       "title": "Director of Customer Success Operations",

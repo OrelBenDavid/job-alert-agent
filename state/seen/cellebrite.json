@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T12:58:53.700823+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-17T15:33:09.049306+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "DF.E64": {
@@ -58,6 +58,10 @@
     "B7.369": {
       "title": "Python Linux Software Developer",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "95.077": {
+      "title": "Researcher",
+      "first_seen": "2026-08-17T15:33:09.049306+00:00"
     },
     "22.C60": {
       "title": "Security Researcher",
