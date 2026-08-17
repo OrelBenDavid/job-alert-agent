@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T15:33:12.378735+00:00",
-  "last_count": 19,
+  "last_success": "2026-08-17T18:51:19.883769+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "4943620101": {
@@ -33,10 +33,6 @@
     },
     "4871873101": {
       "title": "Director of Information Security",
-      "first_seen": "2026-08-13T11:24:34.316436+00:00"
-    },
-    "4664186101": {
-      "title": "Game Economy Manager",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
     },
     "4880526101": {

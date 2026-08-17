@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-17T15:33:10.315828+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-17T18:51:18.513942+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "B4.076": {
       "title": "AI Software Engineer Squad Lead",
       "first_seen": "2026-08-13T12:34:58.614858+00:00"
+    },
+    "27.E6D": {
+      "title": "Billing and Collection Specialist",
+      "first_seen": "2026-08-17T18:51:18.513942+00:00"
     },
     "84.F67": {
       "title": "Data Infrastructure Team Lead",

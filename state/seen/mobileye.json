@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T15:33:12.371260+00:00",
+  "last_success": "2026-08-17T18:51:19.834111+00:00",
   "last_count": 121,
   "consecutive_failures": 0,
   "jobs": {
@@ -347,6 +347,10 @@
       "title": "Senior Embedded Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "f79f2613-e1cb-49b1-802a-0f9fb7d997e0": {
+      "title": "Senior Full-Stack Developer",
+      "first_seen": "2026-08-17T18:51:19.834111+00:00"
+    },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior Hardware Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
@@ -430,10 +434,6 @@
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "9cf02da8-a121-45de-a971-ee9ad33007e5": {
-      "title": "Software QA Tester (Manual & Automation)",
-      "first_seen": "2026-08-17T07:09:59.073200+00:00"
     },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",

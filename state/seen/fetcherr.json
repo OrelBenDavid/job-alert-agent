@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T15:33:10.324749+00:00",
+  "last_success": "2026-08-17T18:51:19.828148+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -44,11 +44,11 @@
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     },
     "AA.D62": {
-      "title": "ML Engineer",
+      "title": "Machine Learning Engineer",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     },
     "AA.D62-9D.50A": {
-      "title": "ML Engineer",
+      "title": "Machine Learning Engineer",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     },
     "B6.D6A": {
