@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T07:09:57.457733+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-17T09:51:49.968032+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "9D.F6D": {
@@ -21,10 +21,6 @@
     },
     "85.D6F": {
       "title": "Program Manager",
-      "first_seen": "2026-08-13T11:24:19.148327+00:00"
-    },
-    "9D.C6D": {
-      "title": "Senior Product Designer",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
     },
     "85.F67": {

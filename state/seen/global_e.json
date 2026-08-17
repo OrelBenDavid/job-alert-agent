@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T07:09:59.068044+00:00",
+  "last_success": "2026-08-17T09:51:53.555441+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -30,6 +30,10 @@
     "26.861": {
       "title": "Delivery Solution Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C4.769": {
+      "title": "Finance Operations Analyst",
+      "first_seen": "2026-08-17T09:51:53.555441+00:00"
     },
     "86.D6E": {
       "title": "FP&A Analyst - Student Position",
@@ -65,10 +69,6 @@
     },
     "99.F69": {
       "title": "Senior Product Manager",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "40.F66": {
-      "title": "Tax Manager- U.S",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   }

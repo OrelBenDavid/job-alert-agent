@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T07:09:57.455471+00:00",
+  "last_success": "2026-08-17T09:51:49.964252+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -48,7 +48,7 @@
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
     "AB.D68": {
-      "title": "Logistic Team Member",
+      "title": "Logistics Team Member",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
     "98.E66": {

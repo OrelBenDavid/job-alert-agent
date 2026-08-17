@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T07:09:57.462329+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-17T09:51:51.522746+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "BA.96C": {
@@ -50,6 +50,14 @@
     "AA.D62-9D.50A": {
       "title": "ML Engineer",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "B6.D6A": {
+      "title": "MLOps Engineer",
+      "first_seen": "2026-08-17T09:51:51.522746+00:00"
+    },
+    "B6.D6A-9D.50A": {
+      "title": "MLOps Engineer",
+      "first_seen": "2026-08-17T09:51:51.522746+00:00"
     },
     "B8.E68": {
       "title": "MLOps Team Lead",

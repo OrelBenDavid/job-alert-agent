@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-17T07:09:59.081590+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-17T09:51:56.098845+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
+    "D5.F6D": {
+      "title": "Analyat Wallet Reconciliation - Maternity Leave Replacement",
+      "first_seen": "2026-08-17T09:51:56.098845+00:00"
+    },
     "4D.A49": {
       "title": "Controller",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
@@ -22,6 +26,10 @@
     "AC.D6A": {
       "title": "Financial Operations Analyst",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "AD.F69": {
+      "title": "Global HRIS and HR Ops",
+      "first_seen": "2026-08-17T09:51:56.098845+00:00"
     },
     "C2.C65": {
       "title": "NOC Team Leader",

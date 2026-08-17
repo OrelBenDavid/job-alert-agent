@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-17T07:09:57.460711+00:00",
+  "last_success": "2026-08-17T09:51:49.972862+00:00",
   "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
-    "B2.D68": {
-      "title": "AI Operations Assistant",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
     "6A.D68": {
       "title": "AI Workflow Engineer – System Architecture",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
@@ -30,6 +26,10 @@
     "66.D61": {
       "title": "Group Lead - Infrastructure Services",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
+    },
+    "86.161": {
+      "title": "IT Devops Engineer",
+      "first_seen": "2026-08-17T09:51:49.972862+00:00"
     },
     "0B.163": {
       "title": "Principal Software Engineer",

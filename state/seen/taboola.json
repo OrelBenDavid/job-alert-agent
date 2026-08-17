@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T07:09:59.085778+00:00",
-  "last_count": 29,
+  "last_success": "2026-08-17T09:51:57.963079+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -53,10 +53,6 @@
     },
     "7941892": {
       "title": "Marketing Communications Manager",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8035268": {
-      "title": "Product Analyst (Maternity-Leave Replacement)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8035266": {

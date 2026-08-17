@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-17T07:09:59.071148+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-17T09:51:56.086506+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "6E.E69": {
       "title": "DevOps Team Leader",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "02.F61": {
+      "title": "Director of Product & Design",
+      "first_seen": "2026-08-17T09:51:56.086506+00:00"
     },
     "95.F68": {
       "title": "R&D Director",

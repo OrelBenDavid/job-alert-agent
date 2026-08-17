@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T07:09:59.076975+00:00",
-  "last_count": 29,
+  "last_success": "2026-08-17T09:51:56.091946+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "74.C6D": {
@@ -17,18 +17,6 @@
     },
     "AE.B62": {
       "title": "Forklift Operator- Marlog",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
-    "B8.566": {
-      "title": "Global Customer Operations Representative",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
-    "B8.566-BF.202": {
-      "title": "Global Customer Operations Representative",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
-    "8F.A68": {
-      "title": "Global Demand & S&OP Planning Manager",
       "first_seen": "2026-08-13T13:24:49.429069+00:00"
     },
     "90.E2A": {
@@ -49,10 +37,6 @@
     },
     "B0.D6C": {
       "title": "Quality Assurance",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
-    "E2.E65": {
-      "title": "Quality Assurance Manager",
       "first_seen": "2026-08-13T13:24:49.429069+00:00"
     },
     "A8.E69": {
