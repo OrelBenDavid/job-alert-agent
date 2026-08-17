@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T03:57:07.905768+00:00",
-  "last_count": 8,
+  "last_success": "2026-08-17T07:09:57.456756+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "FA.E52": {
@@ -34,6 +34,10 @@
     "89.B65": {
       "title": "Software Engineering Team Lead",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "94.A63": {
+      "title": "Vulnerability Research Team Lead",
+      "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   }
 }

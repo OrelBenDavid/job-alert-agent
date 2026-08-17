@@ -1,20 +1,20 @@
 {
-  "last_run_at": "2026-08-16T18:39:15.568751+00:00",
+  "last_run_at": "2026-08-17T07:09:59.091654+00:00",
   "last_run": {
     "experience": {
-      "rejected_by_title": 3,
+      "rejected_by_title": 2,
       "passed_with_number": 0,
-      "rejected_with_number": 0,
-      "undetermined": 0,
-      "undetermined_signals": 1
+      "rejected_with_number": 2,
+      "undetermined": 1,
+      "undetermined_signals": 0
     }
   },
   "totals": {
     "experience": {
-      "rejected_by_title": 62,
+      "rejected_by_title": 64,
       "passed_with_number": 3,
-      "rejected_with_number": 27,
-      "undetermined": 51,
+      "rejected_with_number": 29,
+      "undetermined": 52,
       "undetermined_signals": 10
     }
   }

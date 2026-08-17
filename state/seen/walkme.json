@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T03:57:07.944271+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-17T07:09:59.089485+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "c8e67100-af5c-4e91-b147-952784abb8c3": {
@@ -13,14 +13,6 @@
     },
     "2698c9aa-1445-4407-9d58-66aa2d260dc2": {
       "title": "DevSecOps Engineer",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "3fa072d4-bcab-4165-b42f-a7c58a794c75": {
-      "title": "Full Stack Engineer - AI Applications",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "78942015-2ffc-4cba-aab4-cfb51f1970ad": {
-      "title": "Full Stack Engineer - Big Data Platform",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
     "8bd1a62a-2a4c-451b-8c1a-170c65c64050": {
@@ -43,28 +35,8 @@
       "title": "Senior C# Developer",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
-    "bdae7789-8774-4991-9ddb-708e2cb676f8": {
-      "title": "Senior Full Stack Engineer - AI Applications",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "8f9b6155-ce75-4756-b5b4-00cd75dbb943": {
-      "title": "Senior Full Stack Engineer - Big Data Platform",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "907d8992-e0c6-48a9-8ff8-ea7421ffe343": {
-      "title": "Senior Full Stack Engineer - Insights",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
     "5afc2845-be46-487a-9fd0-e72de5096660": {
       "title": "Senior Professional Services Consultant",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "9165e357-3a66-43eb-b968-f06907572c74": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "01195a47-88c5-4091-a1dd-193ada2c6592": {
-      "title": "Technical Product Manager",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
     "9923a954-7584-4b5d-947b-f175d6b06940": {

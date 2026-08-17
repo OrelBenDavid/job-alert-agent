@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T03:57:07.924455+00:00",
-  "last_count": 120,
+  "last_success": "2026-08-17T07:09:59.073200+00:00",
+  "last_count": 121,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -430,6 +430,10 @@
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9cf02da8-a121-45de-a971-ee9ad33007e5": {
+      "title": "Software QA Tester (Manual & Automation)",
+      "first_seen": "2026-08-17T07:09:59.073200+00:00"
     },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",

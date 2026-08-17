@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T03:57:07.923701+00:00",
+  "last_success": "2026-08-17T07:09:59.072605+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     },
     "B5.076": {
-      "title": "Lead PMM – Growth & Monetization",
+      "title": "Lead PMM - Growth & Monetization",
       "first_seen": "2026-08-16T15:29:12.950407+00:00"
     },
     "0C.561": {

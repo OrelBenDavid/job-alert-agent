@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-17T01:47:36.972589+00:00",
-  "last_count": 21,
-  "consecutive_failures": 1,
+  "last_success": "2026-08-17T07:09:57.447540+00:00",
+  "last_count": 22,
+  "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-a9ff52ee-1881-5764-b2c3-5970fbac721c-T1786948339-744000143753079": {
+      "title": "Payroll Accountant",
+      "first_seen": "2026-08-17T07:09:57.447540+00:00"
+    },
     "https://careers.wix.com/position/oracle-e185ca04-b927-59fa-8b38-7747c55cd41d-T1786870929-744000143689929": {
       "title": "Product Manager - Premium Services",
       "first_seen": "2026-08-16T12:53:49.753288+00:00"
