@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-17T09:51:56.089892+00:00",
+  "last_success": "2026-08-17T12:58:53.722628+00:00",
   "last_count": 121,
   "consecutive_failures": 0,
   "jobs": {
@@ -191,10 +191,6 @@
       "title": "Experienced Data Analyst",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "a0c1252a-0f26-47f6-a3f5-99a089c999b0": {
-      "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "de4739b8-eda9-4262-ae5b-c3ee15d86a3c": {
       "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -242,6 +238,10 @@
     "d41387e9-f9c3-4a72-8f4b-8ecfad129907": {
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "97753ee7-1701-4c30-9d5a-964fc310e371": {
+      "title": "Experienced Technical Project Manager",
+      "first_seen": "2026-08-17T12:58:53.722628+00:00"
     },
     "7418fbe2-8467-4389-b43b-2ae50ef57815": {
       "title": "Experienced Verification Engineer",

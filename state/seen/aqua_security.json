@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-17T09:51:49.959730+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-17T12:58:53.696796+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "9E.F63": {
@@ -10,6 +10,10 @@
     "98.E6E": {
       "title": "Senior IT Systems Engineer",
       "first_seen": "2026-08-13T11:24:10.785353+00:00"
+    },
+    "26.07D": {
+      "title": "Senior Linux Kernel Engineer – Runtime Security",
+      "first_seen": "2026-08-17T12:58:53.696796+00:00"
     },
     "75.C62": {
       "title": "Senior Product Manager",
