@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T13:00:34.251501+00:00",
-  "last_count": 34,
+  "last_success": "2026-08-18T15:40:36.082467+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -98,6 +98,10 @@
     "ED.761": {
       "title": "Sales Data Analyst",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "27.076": {
+      "title": "Sales Operations Account Manager",
+      "first_seen": "2026-08-18T15:40:36.082467+00:00"
     },
     "F3.C62": {
       "title": "Senior Analog Hardware Engineer",

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-18T13:00:34.209373+00:00",
+  "last_success": "2026-08-18T15:40:35.033251+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,16 +11,16 @@
       "title": "Senior AI Engineer - Agentic Systems",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
+    "13.F62": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
     "32.F66": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "B1.F66": {
       "title": "Senior Product Manager, Agentic Platform",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "13.F62": {
-      "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   }

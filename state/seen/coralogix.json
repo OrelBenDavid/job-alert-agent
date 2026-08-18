@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T13:00:34.198248+00:00",
-  "last_count": 14,
+  "last_success": "2026-08-18T15:40:34.639567+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "9D.F6D": {
@@ -22,6 +22,10 @@
     "85.D6F": {
       "title": "Program Manager",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
+    },
+    "07.079": {
+      "title": "Recruiter - US & EMEA Market",
+      "first_seen": "2026-08-18T15:40:34.639567+00:00"
     },
     "85.F67": {
       "title": "Senior Product Manager",

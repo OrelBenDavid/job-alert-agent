@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T13:00:34.191652+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-18T15:40:34.632778+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "F8.B6C": {
@@ -38,6 +38,10 @@
     "C3.963": {
       "title": "Outbound Account Executive",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "37.072": {
+      "title": "Pre-Sales Engineer",
+      "first_seen": "2026-08-18T15:40:34.632778+00:00"
     },
     "CF.E6D": {
       "title": "Sales Development Rep - TLV",

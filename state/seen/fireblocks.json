@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-08-18T09:42:01.813208+00:00",
-  "last_count": 11,
-  "consecutive_failures": 1,
+  "last_success": "2026-08-18T15:40:35.031253+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
   "jobs": {
     "4684983006": {
       "title": "Analytics AI Engineer",
@@ -29,10 +29,6 @@
     },
     "4655907006": {
       "title": "Security Operations Team Lead",
-      "first_seen": "2026-08-13T11:24:25.525766+00:00"
-    },
-    "4686947006": {
-      "title": "Senior Backend Engineer – Finapps/Access",
       "first_seen": "2026-08-13T11:24:25.525766+00:00"
     },
     "4674505006": {
