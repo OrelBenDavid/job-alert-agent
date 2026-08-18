@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T12:29:11.513696+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-18T21:32:00.373695+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "8127498": {
@@ -30,6 +30,10 @@
     "7996600": {
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8131976": {
+      "title": "Marketing Coordinator",
+      "first_seen": "2026-08-18T15:40:35.036808+00:00"
     },
     "8074288": {
       "title": "R&D Team Leader",

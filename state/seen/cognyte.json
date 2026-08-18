@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-18T12:29:11.499053+00:00",
+  "last_success": "2026-08-18T21:32:00.357534+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -25,7 +25,7 @@
     },
     "C6.07D": {
       "title": "Marketing Operations Manager",
-      "first_seen": "2026-08-18T12:29:11.499053+00:00"
+      "first_seen": "2026-08-18T13:00:34.197694+00:00"
     },
     "82.A61": {
       "title": "Pre-Sales Engineer",

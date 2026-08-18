@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T12:29:11.503359+00:00",
-  "last_count": 26,
+  "last_success": "2026-08-18T21:32:00.363460+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "6A.D68": {
@@ -30,6 +30,10 @@
     "86.161": {
       "title": "IT Devops Engineer",
       "first_seen": "2026-08-17T09:51:49.972862+00:00"
+    },
+    "07.077": {
+      "title": "NetSuite Logistics & Supply Chain Specialist",
+      "first_seen": "2026-08-18T15:40:35.028027+00:00"
     },
     "0B.163": {
       "title": "Principal Software Engineer",

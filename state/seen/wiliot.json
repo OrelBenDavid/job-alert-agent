@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-18T12:29:11.545196+00:00",
+  "last_success": "2026-08-18T21:32:00.768406+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -17,7 +17,7 @@
     },
     "E6.07B": {
       "title": "Junior Systems Engineer - Test & Tools",
-      "first_seen": "2026-08-18T12:29:11.545196+00:00"
+      "first_seen": "2026-08-18T13:00:34.260113+00:00"
     },
     "6B.D60": {
       "title": "Legal Counsel",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T12:29:11.540656+00:00",
-  "last_count": 27,
+  "last_success": "2026-08-18T21:32:00.762045+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -49,10 +49,6 @@
     },
     "8051106": {
       "title": "FP&A Analyst-(Maternity Leave Cover)",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "7941892": {
-      "title": "Marketing Communications Manager",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8131734": {

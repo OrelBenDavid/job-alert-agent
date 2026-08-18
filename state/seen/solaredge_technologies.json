@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T12:29:11.539579+00:00",
-  "last_count": 34,
+  "last_success": "2026-08-18T21:32:00.760487+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -95,13 +95,13 @@
       "title": "Power Engineering Tech Lead",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
-    "14.468": {
-      "title": "Quality Engineer",
-      "first_seen": "2026-08-13T11:24:41.058684+00:00"
-    },
     "ED.761": {
       "title": "Sales Data Analyst",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "27.076": {
+      "title": "Sales Operations Account Manager",
+      "first_seen": "2026-08-18T15:40:36.082467+00:00"
     },
     "F3.C62": {
       "title": "Senior Analog Hardware Engineer",
@@ -121,6 +121,10 @@
     },
     "3F.E69": {
       "title": "Senior Mechanical Engineer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "14.468": {
+      "title": "Senior NPI Engineer",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
     "55.766": {
