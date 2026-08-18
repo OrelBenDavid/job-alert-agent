@@ -37,6 +37,7 @@ from dataclasses import dataclass
 from typing import Literal
 
 import detail
+import roles
 from experience import read_experience
 from models import Job
 from settings import load_settings
@@ -80,6 +81,22 @@ class Filter:
     def evaluate(self, job: Job) -> tuple[Job, Verdict]:
         raise NotImplementedError
 
+    def counter_for(self, verdict: Verdict, prescreened: bool) -> str:
+        """Which stats bucket this verdict belongs in.
+
+        A hook rather than a fixed mapping in _count, because the bucket names
+        are the filter's own vocabulary: "passed_with_number" describes the
+        experience filter and means nothing for a role filter. The default is
+        the experience filter's original mapping, so a filter that doesn't
+        override this behaves exactly as before."""
+        if prescreened and not verdict.passed:
+            return "rejected_by_title"
+        if verdict.confidence == "certain":
+            return "passed_with_number" if verdict.passed else "rejected_with_number"
+        if verdict.confidence == "seniority_signals":
+            return "undetermined_signals"
+        return "undetermined"
+
     def tag_for(self, job: Job, verdict: Verdict) -> str | None:
         """Short user-facing label for an alert line, or None for no label.
         Built by the filter because only the filter knows what its own
@@ -92,10 +109,45 @@ class Filter:
 # ---------------------------------------------------------------------------
 
 # Seniority words that decide a rejection with zero requests.
+#
+# The second row was added 2026-08-18 after measuring the live corpus: each
+# entry is followed by how many postings it caught that the original list let
+# through. "leader" is the sharpest example and the reason to be careful with
+# whole-word matching - "lead" does NOT match inside "Leader", so 33 "Team
+# Leader" postings were arriving as junior-eligible.
+#
+# Words deliberately NOT here: "specialist" (30 postings, and it is a level,
+# not a seniority - "Technical Support Specialist - Student Position"),
+# "owner" ("Product Owner" is routinely a mid role), and "controller" /
+# "counsel", which are senior AND off-target and are owned by roles.py so each
+# list does one job.
 _SENIOR_TITLE_WORDS = [
     "senior", "sr", "lead", "staff", "principal", "architect",
     "manager", "director", "head of", "vp",
+    "leader",          # 33  "Back-End Team Leader", "NOC Team Leader"
+    "experienced",     # 20  "Experienced Algorithm Validation Engineer"
+    "expert",          # 15  "GenAI CBRNE Cyber Expert", "Tableau Expert"
+    "chief", "ciso", "cfo", "coo", "cio", "cmo", "cro",   # "CISO", "COO"
+    "svp", "evp", "distinguished", "fellow", "deputy", "veteran", "seasoned",
 ]
+
+# A junior signal OVERRIDES every word above.
+#
+# The one false negative in the bot's entire delivered history was mprest's
+# "Junior Project Manager", rejected for containing "manager". A posting that
+# says junior/intern/student/graduate outright is stating its own level, and
+# no seniority noun elsewhere in the title outranks that. This can only ever
+# ADD postings, which is the direction this project errs in.
+_JUNIOR_TITLE_WORDS = [
+    "junior", "jr", "intern", "internship", "student", "graduate",
+    "entry level", "trainee", "apprentice", "cadet",
+    "ג׳וניור", "סטודנט", "סטודנטית", "מתמחה", "מתמחה", "התמחות",
+]
+
+# Titles where a seniority word names an ORGANISATION, not the role's level.
+# Mobileye posts "Algorithm Researcher - Autonomous Driving (CTO Group)":
+# a research role in the CTO's group, not a C-level job.
+_ORG_NOT_LEVEL = ["cto group", "cto office", "ceo office", "cto s office"]
 
 
 def _normalize_title(title: str) -> str:
@@ -109,13 +161,21 @@ def _normalize_title(title: str) -> str:
 
 def title_looks_senior(title: str) -> bool:
     """Reject-only. A senior-sounding title is decisive; a junior-sounding
-    one proves NOTHING and must not short-circuit anything.
+    one proves NOTHING about the requirement and must not short-circuit the
+    experience check.
 
     ~35% of postings labelled "entry-level" still demand 3+ years (LinkedIn
-    analysis), so "Junior"/"Intern"/"Student"/"Graduate" go on to the detail
-    fetch like any other posting. That costs a few requests and buys
-    correctness."""
+    analysis), so "Junior"/"Intern"/"Student"/"Graduate" still go on to the
+    detail fetch and are still evaluated on their stated number like any other
+    posting. What a junior word does here is narrower and only ever additive:
+    it stops a seniority noun elsewhere in the same title from rejecting the
+    posting outright ("Junior Project Manager"). The experience filter then
+    has its usual say."""
     normalized = _normalize_title(title)
+    if any(f" {word} " in normalized for word in _JUNIOR_TITLE_WORDS):
+        return False
+    if any(phrase in normalized for phrase in _ORG_NOT_LEVEL):
+        return False
     return any(f" {word} " in normalized for word in _SENIOR_TITLE_WORDS)
 
 
@@ -196,9 +256,93 @@ class ExperienceFilter(Filter):
         return f"✅ ניסיון: עד {_hebrew_years(job.min_years_exp)}"
 
 
+# ---------------------------------------------------------------------------
+# The role filter
+# ---------------------------------------------------------------------------
+
+class RoleFilter(Filter):
+    """Suppresses postings outside the user's job families - see roles.py for
+    the families, the lists, and why it is a blocklist.
+
+    *** Why it is entirely a prescreen ***
+
+    It decides from the title alone, so it never wants a description and never
+    costs a request. Placed before ExperienceFilter in the registry, it also
+    removes its rejects from the detail fetch entirely: an off-target posting
+    costs nothing at all, rather than costing a page fetch to establish an
+    experience number nobody will read.
+
+    The three outcomes match roles.classify, plus one more:
+        non-job card  -> REJECT   (an evergreen "we're always hiring" tile)
+        blocked domain-> REJECT
+        target family -> PASS
+        unrecognised  -> PASS, flagged      <- fail-open, and the point
+
+    `send_unknown=False` inverts that last line. It exists as the escape hatch
+    strict mode is for the experience filter, and like strict it is OFF by
+    default, because turning it on trades a quieter inbox for silently losing
+    the roles whose titles name no technology - "DFIR", "CyOps Analyst",
+    "InfoSec & SecOps" are all real, on-target, and all land in that bucket.
+    """
+
+    name = "role"
+
+    def __init__(self, send_unknown: bool = True) -> None:
+        self.send_unknown = bool(send_unknown)
+
+    def prescreen(self, job: Job) -> Verdict | None:
+        if roles.is_non_job(job.title):
+            return Verdict(passed=False, reason="not a job posting",
+                           confidence="certain")
+        classification, term = roles.classify(job.title)
+        if classification == "blocked":
+            return Verdict(passed=False, reason=f"off-target role ({term})",
+                           confidence="certain")
+        if classification == "unknown":
+            return Verdict(passed=self.send_unknown,
+                           reason="role could not be classified",
+                           confidence="unknown")
+        return Verdict(passed=True, reason=f"target role ({term})",
+                       confidence="certain")
+
+    def evaluate(self, job: Job) -> tuple[Job, Verdict]:
+        """Nothing more to learn from a description - the prescreen is the
+        whole filter. Returning the same verdict keeps the chain's contract
+        without a second classification."""
+        return job, self.prescreen(job)
+
+    def counter_for(self, verdict: Verdict, prescreened: bool) -> str:
+        """Buckets named for what this filter actually decides. The
+        experience filter's names ("passed_with_number") would be nonsense
+        here, and the whole value of the counters is telling working from
+        broken at a glance."""
+        if verdict.confidence == "unknown":
+            return "unclassified_sent" if verdict.passed else "unclassified_dropped"
+        return "target_role" if verdict.passed else "off_target"
+
+    def tag_for(self, job: Job, verdict: Verdict) -> str | None:
+        """Two independent labels, either or both.
+
+        The temporary label lives here rather than in its own filter because
+        it is read off the title, like everything else this filter does, and a
+        filter that only ever tags would need a registry entry, a settings
+        block and a toggle to express "add three words to a line"."""
+        labels = []
+        if verdict.confidence == "unknown":
+            labels.append("❓ תפקיד לא מזוהה")
+        if roles.is_temporary(job.title):
+            labels.append("⏳ משרה זמנית/חלופת לידה")
+        return " · ".join(labels) if labels else None
+
+
 # The registry a filter must be listed in to exist. Adding a filter = adding
 # a builder here plus a default block in settings.DEFAULTS.
+#
+# ORDER MATTERS: dict order is the chain order, and the role filter runs first
+# on purpose. It is free (title only), so anything it rejects never reaches the
+# experience filter's detail fetch.
 _BUILDERS = {
+    "role": lambda cfg: RoleFilter(send_unknown=cfg.get("send_unknown", True)),
     "experience": lambda cfg: ExperienceFilter(
         max_years=cfg.get("max_years", 1.0), strict=cfg.get("strict", False)),
 }
@@ -219,23 +363,17 @@ def build_chain(settings: dict | None = None) -> list[Filter]:
     return chain
 
 
-def _count(stats: RunStats, filter_name: str, verdict: Verdict,
+def _count(stats: RunStats, job_filter: "Filter", verdict: Verdict,
            prescreened: bool) -> None:
-    """Maps a verdict onto the counter that describes it."""
-    if prescreened and not verdict.passed:
-        # Only a REJECTING prescreen is "rejected by title". No filter
-        # currently returns a passing prescreen verdict, but counting one as a
-        # rejection would quietly corrupt the only numbers that show whether
-        # the filter works at all.
-        stats.record(filter_name, "rejected_by_title")
-    elif verdict.confidence == "certain":
-        stats.record(filter_name,
-                     "passed_with_number" if verdict.passed
-                     else "rejected_with_number")
-    elif verdict.confidence == "seniority_signals":
-        stats.record(filter_name, "undetermined_signals")
-    else:
-        stats.record(filter_name, "undetermined")
+    """Records a verdict in whichever bucket its own filter names for it.
+
+    Only a REJECTING prescreen counts as "rejected_by_title" in the default
+    mapping: counting a PASSING prescreen as a rejection would quietly corrupt
+    the only numbers that show whether the filter works at all. The role filter
+    does return passing prescreen verdicts, which is exactly why the mapping
+    became the filter's own business."""
+    stats.record(job_filter.name,
+                 job_filter.counter_for(verdict, prescreened))
 
 
 def collapse_duplicate_titles(jobs: list[Job]) -> list[Job]:
@@ -300,16 +438,22 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
     jobs = collapse_duplicate_titles(jobs)
 
     survivors_of_prescreen: list[Job] = []
+    decided_in_prescreen: dict[str, set[str]] = {}
     for job in jobs:
         rejected = False
         for job_filter in chain:
             verdict = job_filter.prescreen(job)
             if verdict is None:
                 continue
-            _count(stats, job_filter.name, verdict, prescreened=True)
+            _count(stats, job_filter, verdict, prescreened=True)
             if not verdict.passed:
                 rejected = True
                 break        # first rejection wins; no point asking the rest
+            # A filter that decided the job HERE must not count it a second
+            # time in the evaluation pass below - the role filter's prescreen
+            # is its whole verdict, so without this every surviving job would
+            # be tallied twice and the counters would read double.
+            decided_in_prescreen.setdefault(job.id, set()).add(job_filter.name)
         if not rejected:
             survivors_of_prescreen.append(job)
 
@@ -321,18 +465,24 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
 
     results: list[tuple[Job, str | None]] = []
     for job in survivors_of_prescreen:
-        tag: str | None = None
+        labels: list[str] = []
+        already = decided_in_prescreen.get(job.id, set())
         passed = True
         for job_filter in chain:
             job, verdict = job_filter.evaluate(job)
-            _count(stats, job_filter.name, verdict, prescreened=False)
+            if job_filter.name not in already:
+                _count(stats, job_filter, verdict, prescreened=False)
             label = job_filter.tag_for(job, verdict)
             if label:
-                tag = label
+                labels.append(label)
             if not verdict.passed:
                 passed = False
                 break
         if passed:
-            results.append((job, tag))
+            # Every filter with something to say gets to say it. Joined rather
+            # than overwritten because the labels are independent facts about
+            # the job ("role unrecognised" AND "maternity cover"), and the old
+            # last-one-wins rule silently dropped whichever came first.
+            results.append((job, " · ".join(labels) if labels else None))
 
     return results

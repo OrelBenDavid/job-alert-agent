@@ -238,20 +238,70 @@ majority, and without a further split the flag would be meaningless.
 
 **The title pre-check** rejects `senior`/`lead`/`staff`/`principal`/`manager`
 and friends at zero request cost. A junior-sounding title does **not** earn
-an automatic pass: per LinkedIn analysis, ~35% of postings labelled
-"entry-level" still demand 3+ years.
+an automatic pass on the *experience* question: per LinkedIn analysis, ~35% of
+postings labelled "entry-level" still demand 3+ years, so they are still
+fetched and still evaluated on their stated number.
+
+What a junior word *does* do (added 2026-08-18) is stop a seniority noun
+elsewhere in the same title from rejecting the posting outright. The only
+false negative in the bot's entire delivered history was mprest's **`Junior
+Project Manager`**, rejected for containing "manager". Also added that day,
+with the count each caught on a live snapshot: `leader` (33 - `lead` is
+whole-word, so it never matched `Leader`), `experienced` (20), `expert` (15),
+and the C-level set. Deliberately *not* added: `specialist` (30 postings, and
+it is a level rather than a seniority - `Technical Support Specialist -
+Student Position`) and `owner` (`Product Owner` is routinely a mid role).
+`(CTO Group)` is exempted - at Mobileye that names an organisation, not a
+level.
+
+## Role filter
+
+Default: **ON**. Suppresses postings outside the user's job families, from the
+title alone - so it costs no request, and it runs **first** in the chain, which
+means an off-target posting never reaches the experience filter's detail fetch
+either.
+
+The four target families are software/data/ML engineering, hardware/VLSI/
+embedded, data analyst/BI/product, and IT/technical support. Everything else -
+finance/legal, sales/CS/marketing, HR/admin, manual and warehouse - is
+rejected. Measured before it existed: **~47% of delivered alerts were outside
+these families** (Bookkeeper, Payroll Accountant, General Counsel, Securities
+Sales Representative, Warehouse Clerk, Marketing Admin).
+
+**It is a blocklist, not an allowlist, and that is not an accident.** The
+corpus contains real on-target roles whose titles name no technology at all -
+`DFIR`, `CyOps Analyst`, `InfoSec & SecOps`, `Junior Intelligence Analyst`,
+`System Integrator`. An allowlist drops every one of them, and state is written
+before filtering, so a drop is permanent. So: blocked domain → reject, target
+family → pass, **neither → pass, flagged `❓ תפקיד לא מזוהה`** (~15% of
+postings). `/filter role off` disables it; `send_unknown: false` in
+`state/filters.json` inverts the fail-open, and is the role filter's equivalent
+of `strict` - off by default for the same reason.
+
+`roles.TECH_OVERRIDES` is what lets both of these be right at once: a bare
+`engineer` is deliberately **absent** from it, so `Sales Engineer` stays
+blocked while `Support Engineer` does not. Matching is whole-word throughout -
+`Salesforce Developer` must not read as sales.
+
+Temporary and maternity-cover roles are **tagged, never dropped**
+(`⏳ משרה זמנית/חלופת לידה`): Wix's `QA Engineer (Temp position)` and Playtika's
+`UI/UX Designer - maternity leave replacement` are real entry points.
 
 **Commands:**
 
 ```
 /filter                    state of every filter
+/filter role on|off        turn the role filter on or off
 /filter experience on|off  turn one on or off
 /minexp 2                  change the threshold (in years)
 /minexp strict on|off      in strict mode, "undetermined" is suppressed
                            instead of sent
-/stats                     counters: rejected by title / number found and
-                           passed / number found and rejected /
-                           undetermined / undetermined with seniority signals
+/stats                     per-filter counters, each in its own vocabulary:
+                           experience - rejected by title / number found and
+                           passed / number found and rejected / undetermined /
+                           undetermined with seniority signals
+                           role - in-scope / off-target / unclassified sent /
+                           unclassified dropped
 ```
 
 Settings are stored in `state/filters.json`, which the workflow already
