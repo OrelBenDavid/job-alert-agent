@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T15:40:34.629118+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-18T18:57:36.897539+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "DC.D67": {
@@ -14,6 +14,10 @@
     "17.E63": {
       "title": "Director of Services Operations",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "96.07C": {
+      "title": "Sales Development Representative - Tel Aviv",
+      "first_seen": "2026-08-18T18:57:36.897539+00:00"
     },
     "DC.C61": {
       "title": "Tax Manager",
