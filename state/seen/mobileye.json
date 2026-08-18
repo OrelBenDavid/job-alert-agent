@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T09:42:01.818123+00:00",
-  "last_count": 122,
+  "last_success": "2026-08-18T13:00:34.221999+00:00",
+  "last_count": 124,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -103,10 +103,6 @@
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-12T10:15:21.611278+00:00"
     },
-    "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
-      "title": "Deep Learning Developer - REM Modeling",
-      "first_seen": "2026-08-16T09:35:32.128373+00:00"
-    },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -171,20 +167,12 @@
       "title": "Execution Project Manager - Algorithm Department",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "a71e09c2-0b0c-4519-9505-81dcb684fe27": {
-      "title": "Execution Project Manager (Temporary Position - Maternity Leave)",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "f6dde9c3-a4e6-4dc8-befe-10c88ea90a73": {
       "title": "Experienced Algorithm Validation Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "63c9d68a-ff54-47c0-86b3-4014479ceabb": {
       "title": "Experienced C++ Developer - Farm Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "0029e8b1-bdf1-4d0a-9895-7b5ee22c4837": {
-      "title": "Experienced Control Algorithms Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "7fd694a5-5755-4405-9489-8de1a6eb8f57": {
@@ -267,6 +255,10 @@
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
+      "title": "Outstanding Graduate - Machine Learning Engineer",
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
+    },
     "ed5da113-bd7b-4654-b115-8c29723e0295": {
       "title": "Outstanding Graduate Algorithm Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -282,6 +274,10 @@
     "95a8d51f-c038-465e-baca-6e0cd1ffaa95": {
       "title": "Product Manager for AV Cloud services",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "fac143e4-0dba-4912-ae9e-d168249a95d8": {
+      "title": "Python Data Solutions Specialist-Temporary Position",
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",
@@ -431,6 +427,14 @@
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "1c3bb641-7d60-4cf6-b997-d6e5633f7c12": {
+      "title": "Software Execution Program Manager",
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
+    },
+    "f10044d7-c978-4fed-bb58-0bd0170ab8ec": {
+      "title": "Software Integration and Field Application Engineer",
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
+    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -458,6 +462,10 @@
     "5f17d79a-7430-48c6-97b0-f4432bac6b7c": {
       "title": "System Validation Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5a665ed5-09db-480d-90eb-044cdd24e0c3": {
+      "title": "System Validation Engineer",
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
     "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
       "title": "Technical Assistant for Executive VP",

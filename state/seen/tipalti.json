@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-18T09:42:04.774788+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-18T13:00:34.255422+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
-    "6020309004": {
-      "title": "Alliance Manager, Microsoft",
-      "first_seen": "2026-08-13T11:24:41.076387+00:00"
-    },
     "6011644004": {
       "title": "Applied AI Scientist",
       "first_seen": "2026-08-13T11:24:41.076387+00:00"

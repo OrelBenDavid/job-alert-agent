@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T09:42:04.773692+00:00",
-  "last_count": 28,
+  "last_success": "2026-08-18T13:00:34.253283+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -53,10 +53,6 @@
     },
     "7941892": {
       "title": "Marketing Communications Manager",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8035266": {
-      "title": "Product Analyst - Taboola News (Maternity Leave Cover)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8131734": {

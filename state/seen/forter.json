@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T09:42:01.813395+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-18T13:00:34.207519+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "6349983002": {
@@ -8,10 +8,6 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "8299310002": {
-      "title": "Senior AI Software Engineer",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8415897002": {
       "title": "Senior AI Software Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
