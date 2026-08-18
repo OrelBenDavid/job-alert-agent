@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T03:57:51.526641+00:00",
-  "last_count": 40,
+  "last_success": "2026-08-18T06:56:30.947131+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "12.E56": {
@@ -61,10 +61,6 @@
     },
     "5B.E57": {
       "title": "Panax- Full Stack Developer",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
-    "D5.C59": {
-      "title": "Reevol-Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "42.365": {

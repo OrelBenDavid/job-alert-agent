@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T03:57:51.504931+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-18T06:56:30.925199+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "4699925006": {
@@ -49,10 +49,6 @@
     },
     "4672099006": {
       "title": "Senior Director of Platform Security",
-      "first_seen": "2026-08-13T11:24:25.541413+00:00"
-    },
-    "4672117006": {
-      "title": "Senior Manager - Detection and Response Engineering",
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     },
     "4697159006": {

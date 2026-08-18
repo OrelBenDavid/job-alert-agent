@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T03:57:51.513312+00:00",
-  "last_count": 25,
+  "last_success": "2026-08-18T06:56:30.933738+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "74.C6D": {
@@ -25,10 +25,6 @@
     },
     "E5.436": {
       "title": "Operator",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
-    "18.E68": {
-      "title": "Operator- Water Plant",
       "first_seen": "2026-08-13T13:24:49.429069+00:00"
     },
     "17.73C": {

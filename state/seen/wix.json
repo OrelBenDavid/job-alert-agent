@@ -1,15 +1,19 @@
 {
-  "last_success": "2026-08-18T03:57:51.482038+00:00",
-  "last_count": 21,
+  "last_success": "2026-08-18T06:56:29.720093+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-a27065ec-be8a-5755-8ad8-166863560292-T1786984341-744000143986949": {
+      "title": "Payroll Student",
+      "first_seen": "2026-08-18T06:56:29.720093+00:00"
+    },
+    "https://careers.wix.com/position/oracle-a9ff52ee-1881-5764-b2c3-5970fbac721c-T1786948339-744000143985674": {
+      "title": "Payroll Accountant",
+      "first_seen": "2026-08-18T06:56:29.720093+00:00"
+    },
     "https://careers.wix.com/position/oracle-f6ec8449-48f1-59a6-a80d-de278e24b692-T1784615259-744000143818209": {
       "title": "QA Engineer (Temp position) - Domains",
       "first_seen": "2026-08-17T12:58:53.691594+00:00"
-    },
-    "https://careers.wix.com/position/oracle-a9ff52ee-1881-5764-b2c3-5970fbac721c-T1786948339-744000143753079": {
-      "title": "Payroll Accountant",
-      "first_seen": "2026-08-17T07:09:57.447540+00:00"
     },
     "https://careers.wix.com/position/oracle-e5751041-b0fc-563a-9195-ef0222209f1f-T1786624300-744000143687098": {
       "title": "AI Content writer- Base44",
