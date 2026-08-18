@@ -153,18 +153,33 @@ FOREIGN_REGION_MARKERS = [
 
 
 def _normalize(text: str) -> str:
-    """Normalizes a location string for comparison: lowercase, no
+    """Normalizes a location string for comparison: lowercase, no accents, no
     apostrophes/punctuation, single spaces.
 
     The apostrophe is DELETED, not turned into a space, on purpose:
     "Be'er Sheva" -> "beer sheva", "Ra'anana" -> "raanana". Replacing it
     with a space would split into "be er"/"ra anana" and miss the match -
     this was caught by a real test failure, not by inspection.
-    """
-    text = unicodedata.normalize("NFKC", text or "")
+
+    *** Two fixes made on 2026-08-18, both found in live data, not by review ***
+
+    NFKD + combining-mark stripping, rather than the NFKC this used to do.
+    NFKC leaves "\u00e3" as a single composed character, so "Remote, Sao Paulo"
+    matched the `sao paulo` marker and "Remote, Sao Paulo" spelled with the
+    tilde did not - Axonius published exactly that, and a Brazil-only backend
+    role was delivered as qualified remote.
+
+    `:` and `;` join the punctuation class for the same reason. Matching is
+    whole-word on a space-padded string, so "US: Remote" normalized to
+    " us: remote " and the `us` marker - which is what that string exists to
+    trigger - never matched. Three Fullpath roles leaked through it. `;` is
+    the separator Greenhouse uses between multiple locations, so without it
+    the last place in a list was welded to the next one."""
+    text = unicodedata.normalize("NFKD", text or "")
+    text = "".join(c for c in text if not unicodedata.combining(c))
     text = text.lower()
     text = re.sub(r"['\u2019\u05f3]", "", text)          # apostrophes - deleted
-    text = re.sub(r"[\-_/|,.()\[\]]", " ", text)          # rest of punctuation -> space
+    text = re.sub(r"[\-_/|,.()\[\]:;]", " ", text)        # rest of punctuation -> space
     text = re.sub(r"\s+", " ", text).strip()
     return f" {text} "                                    # padding for whole-word matching
 
@@ -175,16 +190,50 @@ def is_israel_location(location_text: str) -> bool:
     return any(f" {kw} " in norm for kw in ISRAEL_KEYWORDS)
 
 
-def is_qualified_remote(location_text: str) -> bool:
-    """Is this a remote job that can actually be staffed from Israel."""
+def names_foreign_region(text: str) -> bool:
+    """Whether any foreign country/city/region/timezone is named in `text`.
+
+    Split out of is_qualified_remote so the same list can be applied to a job
+    TITLE - see below - without either caller reimplementing the padding and
+    normalization rules."""
+    norm = _normalize(text)
+    return any(f" {m} " in norm for m in FOREIGN_REGION_MARKERS)
+
+
+def is_qualified_remote(location_text: str, title: str = "") -> bool:
+    """Is this a remote job that can actually be staffed from Israel.
+
+    *** Why the title is consulted, and only here ***
+
+    A bare "Remote" or "EMEA Remote" location passes this check by design -
+    EMEA includes Israel. But the region a role is actually anchored to is
+    routinely written in the TITLE instead, leaving a location string that
+    looks perfectly open: Island's "Technical Account Manager - UK" and
+    "- APAC", Zafran's "Regional Sales Manager (Nordics & Benelux)" and
+    "(United Kingdom)" are all posted at location "Remote" / "EMEA Remote".
+
+    The title is checked ONLY on this path, never for a job whose location is
+    a physical place. A posting located in Tel Aviv is relevant whatever its
+    title says, and running the marker list over every title would reject
+    Israeli roles for naming a foreign market they serve ("Sales Engineer,
+    DACH region - Tel Aviv"). Confined to the qualified-remote branch, the
+    only postings it can remove are ones with no Israeli location to begin
+    with, which is the direction this list is allowed to push."""
     norm = _normalize(location_text)
     if not any(f" {kw} " in norm for kw in REMOTE_KEYWORDS):
         return False
     if is_israel_location(location_text):
         return True
-    return not any(f" {m} " in norm for m in FOREIGN_REGION_MARKERS)
+    if names_foreign_region(location_text):
+        return False
+    return not names_foreign_region(title)
 
 
-def is_relevant_location(location_text: str) -> bool:
-    """The check every fetcher calls: Israel, or qualified remote."""
-    return is_israel_location(location_text) or is_qualified_remote(location_text)
+def is_relevant_location(location_text: str, title: str = "") -> bool:
+    """The check every fetcher calls: Israel, or qualified remote.
+
+    `title` is optional and defaults to the old behaviour, so a caller that
+    doesn't have one - or a platform where titles carry no region - is
+    unaffected."""
+    return (is_israel_location(location_text)
+            or is_qualified_remote(location_text, title))

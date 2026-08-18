@@ -27,6 +27,15 @@ SETTINGS_PATH = Path(__file__).resolve().parent.parent / "state" / "filters.json
 DEFAULT_MAX_YEARS = 1.0
 
 DEFAULTS = {
+    "role": {
+        "enabled": True,        # starts ON, per the design
+        # Whether a title that matches NO list at all is still sent, flagged.
+        # True by default and for the same reason `strict` below is False: the
+        # unclassifiable bucket contains genuinely on-target roles whose titles
+        # name no technology ("DFIR", "CyOps Analyst", "InfoSec & SecOps"), and
+        # state is written before filtering, so a drop is permanent.
+        "send_unknown": True,
+    },
     "experience": {
         "enabled": True,        # starts ON, per the design
         "max_years": DEFAULT_MAX_YEARS,

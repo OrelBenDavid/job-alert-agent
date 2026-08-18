@@ -32,9 +32,23 @@ STATS_PATH = Path(__file__).resolve().parent.parent / "state" / "filter_stats.js
 COUNTER_NAMES = ("rejected_by_title", "passed_with_number",
                  "rejected_with_number", "undetermined", "undetermined_signals")
 
+# The role filter answers a different question, so it needs its own vocabulary
+# rather than being forced through names about years-of-experience numbers.
+ROLE_COUNTER_NAMES = ("target_role", "off_target",
+                      "unclassified_sent", "unclassified_dropped")
 
-def _empty_counters() -> dict:
-    return {name: 0 for name in COUNTER_NAMES}
+# Which buckets each filter starts with. A filter that isn't listed starts
+# empty and grows whatever names it records - so adding a filter needs no
+# change here, and only a filter that wants its zeros pre-seeded (so a bucket
+# it never hit still reports 0 rather than vanishing) has to be added.
+COUNTERS_BY_FILTER = {
+    "experience": COUNTER_NAMES,
+    "role": ROLE_COUNTER_NAMES,
+}
+
+
+def _empty_counters(filter_name: str = "experience") -> dict:
+    return {name: 0 for name in COUNTERS_BY_FILTER.get(filter_name, ())}
 
 
 class RunStats:
@@ -47,7 +61,8 @@ class RunStats:
         self.by_filter: dict[str, dict] = {}
 
     def record(self, filter_name: str, counter: str) -> None:
-        counters = self.by_filter.setdefault(filter_name, _empty_counters())
+        counters = self.by_filter.setdefault(filter_name,
+                                             _empty_counters(filter_name))
         # setdefault on the counter too: an unknown bucket name should show up
         # in the output rather than raising in the middle of a live run.
         counters[counter] = counters.get(counter, 0) + 1
@@ -82,7 +97,8 @@ def save_stats(run: RunStats) -> None:
     totals = stored.get("totals") or {}
 
     for filter_name, counters in run.by_filter.items():
-        filter_totals = totals.setdefault(filter_name, _empty_counters())
+        filter_totals = totals.setdefault(filter_name,
+                                          _empty_counters(filter_name))
         for counter, value in counters.items():
             filter_totals[counter] = filter_totals.get(counter, 0) + value
 

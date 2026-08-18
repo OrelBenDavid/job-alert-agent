@@ -144,11 +144,18 @@ def test_three_distinct_tags(description, marker):
 def test_all_three_tag_levels_still_send():
     """Fail-open is unchanged by the tagging - the flag only sorts the
     undetermined pile, it never suppresses anything."""
-    jobs = [_job("1", description="<p>Nothing stated.</p>"),
-            _job("2", description="<h3>Requirements</h3><ul>"
-                                  "<li>Proven experience</li></ul>"),
-            _job("3", description="<h3>Requirements</h3><ul>"
-                                  "<li>1 year of experience</li></ul>")]
+    # Distinct titles on purpose: run_chain collapses same-company duplicate
+    # titles before anything else runs (see collapse_duplicate_titles), so a
+    # fixture that reuses the helper's default title would be testing that
+    # instead of the tagging.
+    jobs = [_job("1", title="Backend Developer",
+                 description="<p>Nothing stated.</p>"),
+            _job("2", title="Frontend Developer",
+                 description="<h3>Requirements</h3><ul>"
+                             "<li>Proven experience</li></ul>"),
+            _job("3", title="Data Engineer",
+                 description="<h3>Requirements</h3><ul>"
+                             "<li>1 year of experience</li></ul>")]
     survivors = run_chain(jobs, _PROFILE, [ExperienceFilter()])
     assert [job.id for job, _ in survivors] == ["1", "2", "3"]
     assert all(tag for _, tag in survivors)
@@ -209,15 +216,20 @@ def test_a_job_rejected_by_title_is_never_detail_fetched(monkeypatch):
 # ---------------------------------------------------------------------------
 
 def test_every_outcome_lands_in_its_own_counter():
+    # Distinct titles - see the note in test_all_three_tag_levels_still_send.
     jobs = [
         _job("1", title="Senior Engineer"),
-        _job("2", description="<h3>Requirements</h3><ul>"
-                              "<li>1 year of experience</li></ul>"),
-        _job("3", description="<h3>Requirements</h3><ul>"
-                              "<li>8+ years of experience</li></ul>"),
-        _job("4", description="<p>Nothing stated at all.</p>"),
-        _job("5", description="<h3>Requirements</h3><ul>"
-                              "<li>Proven experience at scale</li></ul>"),
+        _job("2", title="Backend Developer",
+             description="<h3>Requirements</h3><ul>"
+                         "<li>1 year of experience</li></ul>"),
+        _job("3", title="Frontend Developer",
+             description="<h3>Requirements</h3><ul>"
+                         "<li>8+ years of experience</li></ul>"),
+        _job("4", title="Data Engineer",
+             description="<p>Nothing stated at all.</p>"),
+        _job("5", title="QA Engineer",
+             description="<h3>Requirements</h3><ul>"
+                         "<li>Proven experience at scale</li></ul>"),
     ]
     stats = RunStats()
     run_chain(jobs, _PROFILE, [ExperienceFilter()], stats)

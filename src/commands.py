@@ -36,7 +36,7 @@ from profiles import (find_profile_path, load_profile, profile_paths,
 from fetchers import fetch_jobs
 from notifier import send_message, escape_mdv2, format_job_list_message
 from settings import load_settings, update_filter
-from stats import load_stats, COUNTER_NAMES
+from stats import load_stats
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/{method}"
 TELEGRAM_STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "telegram.json"
@@ -227,14 +227,24 @@ _STAT_LABELS = [
     ("passed_with_number", "עברו \\(מספר שנים\\)"),
     ("undetermined_signals", "לא צוין מספר, סימני ותק"),
     ("undetermined", "לא צוינה דרישה"),
+    # Role filter - see stats.ROLE_COUNTER_NAMES. Both filters' labels live in
+    # one list and _format_counters prints only the buckets a filter actually
+    # has, so neither shows the other's zeros.
+    ("target_role", "בתחום"),
+    ("off_target", "נחסמו \\(מחוץ לתחום\\)"),
+    ("unclassified_sent", "תפקיד לא מזוהה \\(נשלח\\)"),
+    ("unclassified_dropped", "תפקיד לא מזוהה \\(נחסם\\)"),
 ]
 
 
 def _format_counters(counters: dict) -> list[str]:
-    lines = []
-    for key, label in _STAT_LABELS:
-        lines.append(f"   {label}: {counters.get(key, 0)}")
-    return lines
+    """Only the buckets this filter actually keeps.
+
+    _STAT_LABELS holds every filter's vocabulary, so printing all of them
+    would show the experience filter four role counters at zero and the role
+    filter five experience ones."""
+    return [f"   {label}: {counters[key]}"
+            for key, label in _STAT_LABELS if key in counters]
 
 
 def _handle_stats() -> str:
@@ -249,7 +259,7 @@ def _handle_stats() -> str:
 
     lines = ["📊 *סטטיסטיקת סינון*", ""]
     for filter_name, counters in stored["last_run"].items():
-        total = sum(counters.get(k, 0) for k in COUNTER_NAMES)
+        total = sum(counters.values())
         lines.append(f"*{escape_mdv2(filter_name)}* — ריצה אחרונה \\({total} משרות\\):")
         lines.extend(_format_counters(counters))
 
@@ -257,7 +267,7 @@ def _handle_stats() -> str:
     if totals:
         lines.append("")
         for filter_name, counters in totals.items():
-            total = sum(counters.get(k, 0) for k in COUNTER_NAMES)
+            total = sum(counters.values())
             lines.append(f"*{escape_mdv2(filter_name)}* — מצטבר \\({total} משרות\\):")
             lines.extend(_format_counters(counters))
 

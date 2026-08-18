@@ -33,6 +33,17 @@ def _get_by_path(obj: dict, dotted_path: str):
     return cur
 
 
+# The strings a board uses to say "this posting's location field carries no
+# place". Only when one of these is the location does a secondary field
+# (Greenhouse offices[], Ashby secondaryLocations[]) get to decide relevance.
+_UNRESOLVED_LOCATIONS = {"", "multiple locations", "multiple location",
+                         "various", "various locations", "multiple"}
+
+
+def _is_unresolved_location(location: str) -> bool:
+    return (location or "").strip().lower() in _UNRESOLVED_LOCATIONS
+
+
 def _inline_description(profile, item: dict) -> str | None:
     """The cheapest rung of the cheap-to-expensive ladder for descriptions:
     if the listing response already contains the description text, take it
@@ -96,11 +107,12 @@ def fetch_lever(profile) -> list[Job]:
     jobs = []
     for p in postings:
         location = _get_by_path(p, fields["location"]) or ""
-        if not is_relevant_location(location):
+        title = (_get_by_path(p, fields["title"]) or "").strip()
+        if not is_relevant_location(location, title):
             continue   # post_fetch - the correct approach for an api profile (SKILL Step 5)
         jobs.append(Job(
             id=str(_get_by_path(p, fields["id"]) or p.get("hostedUrl", "")),
-            title=(_get_by_path(p, fields["title"]) or "").strip(),
+            title=title,
             location=location.strip(),
             url=_get_by_path(p, fields["url"]) or "",
             company=profile.slug,
@@ -122,9 +134,29 @@ def fetch_greenhouse(profile) -> list[Job]:
     jobs = []
     for j in data.get("jobs", []):
         location = _get_by_path(j, fields["location"]) or ""
+        title = (_get_by_path(j, fields["title"]) or "").strip()
         offices = [o.get("name", "") for o in (j.get("offices") or [])]
-        if not (is_relevant_location(location)
-                or any(is_relevant_location(o) for o in offices)):
+
+        # *** offices[] is a FALLBACK, not an OR - fixed 2026-08-18 ***
+        #
+        # This used to keep a posting when location.name OR any office was
+        # Israeli, which reads reasonably and is wrong. Greenhouse's offices[]
+        # is not "where this job is"; on large boards it is the hiring
+        # region's whole office list, attached to every posting in it.
+        # Datadog publishes ['Bordeaux', 'Lisbon', 'Lyon', 'Madrid',
+        # 'Montpellier', 'Nantes', 'Paris', 'Remote - France',
+        # 'Sophia Antipolis', 'Tel Aviv'] on roles whose location.name is
+        # plainly "Paris, France" - so the Tel Aviv entry kept 13 French and
+        # Spanish jobs, and 21 across the whole corpus.
+        #
+        # The platform profile always said what this field is for: resolving
+        # the literal "Multiple Locations" string, which is the one case where
+        # location.name carries no place at all. So it is consulted only then.
+        if _is_unresolved_location(location):
+            relevant = any(is_relevant_location(o, title) for o in offices)
+        else:
+            relevant = is_relevant_location(location, title)
+        if not relevant:
             continue
         display_location = location or ", ".join(offices)
         jobs.append(Job(
@@ -193,9 +225,15 @@ def fetch_ashby(profile) -> list[Job]:
     jobs = []
     for j in data.get("jobs", []):
         location = _get_by_path(j, fields["location"]) or ""
+        title = (_get_by_path(j, fields["title"]) or "").strip()
         secondary = _secondary_locations(j, fields.get("secondary_location"))
-        if not (is_relevant_location(location)
-                or any(is_relevant_location(s) for s in secondary)):
+        # Deliberately still an OR, unlike Greenhouse's offices[] above.
+        # secondaryLocations is documented as further locations the posting is
+        # genuinely open in, not a regional office list - so a posting whose
+        # only Israeli location is a secondary one must survive. See
+        # _secondary_locations for why this stays the fail-open direction.
+        if not (is_relevant_location(location, title)
+                or any(is_relevant_location(s, title) for s in secondary)):
             continue
         # Same rule as Greenhouse's offices fallback: show something real when
         # the primary field is empty but a secondary one carried the match.
@@ -254,12 +292,13 @@ def fetch_hibob(profile) -> list[Job]:
     jobs = []
     for j in data.get("jobAdDetails", []):
         location = _get_by_path(j, fields["location"]) or ""
-        if not is_relevant_location(location):
+        title = (_get_by_path(j, fields["title"]) or "").strip()
+        if not is_relevant_location(location, title):
             continue
         job_id = str(_get_by_path(j, fields["id"]) or "")
         jobs.append(Job(
             id=job_id,
-            title=(_get_by_path(j, fields["title"]) or "").strip(),
+            title=title,
             location=location.strip(),
             # The listing carries no per-posting link, only an id - so the URL
             # is built from the template in the profile. url is mandatory on
@@ -300,11 +339,12 @@ def fetch_comeet(profile) -> list[Job]:
     jobs = []
     for p in positions:
         location = _get_by_path(p, fields["location"]) or ""
-        if not is_relevant_location(location):
+        title = (_get_by_path(p, fields["title"]) or "").strip()
+        if not is_relevant_location(location, title):
             continue
         jobs.append(Job(
             id=str(_get_by_path(p, fields["id"]) or p.get("id", "")),
-            title=(_get_by_path(p, fields["title"]) or "").strip(),
+            title=title,
             location=location.strip(),
             url=_get_by_path(p, fields["url"]) or "",
             company=profile.slug,
@@ -330,7 +370,7 @@ def fetch_smartrecruiters(profile) -> list[Job]:
         for p in postings:
             loc = p.get("location") or {}
             location = ", ".join(x for x in [loc.get("city"), loc.get("country")] if x)
-            if not is_relevant_location(location):
+            if not is_relevant_location(location, p.get("name", "").strip()):
                 continue
             job_id = str(p.get("id") or p.get("ref", ""))
             jobs.append(Job(

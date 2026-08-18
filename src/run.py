@@ -37,7 +37,7 @@ from state import (process_company, seed_company, should_alert_failure,
 from notifier import notify_new_jobs, notify_maintenance
 from commands import process_commands
 from detail import DetailBudget
-from filters import build_chain, run_chain
+from filters import build_chain, run_chain, recently_seen_titles
 from stats import RunStats, save_stats
 
 # How long the fetch phase may run before it stops starting new companies.
@@ -476,8 +476,13 @@ def _run_normal() -> None:
             # rejected here is still permanently "seen", so it will never be
             # re-detected or re-fetched on a later run.
             try:
+                # The PRE-run snapshot, not the state on disk: process_company
+                # has already written this run's new ids, so reading it now
+                # would match every new job against its own title.
+                seen_titles = recently_seen_titles(
+                    previous_states.get(profile.slug) or {})
                 survivors = run_chain(result.new_jobs, profile, chain,
-                                      run_stats, detail_budget)
+                                      run_stats, detail_budget, seen_titles)
             except Exception as e:
                 # The filter layer must never cost an alert. If the chain
                 # itself breaks, fall back to sending everything untagged -

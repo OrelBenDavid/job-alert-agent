@@ -48,6 +48,12 @@ GitHub Actions - there is no server.
   `Hybrid - Boston`, `Remote - Zurich`. The city half of that list matters
   only at scale: with three companies those postings barely appear, with a
   hundred they are a steady trickle of jobs nobody here can take.
+  A **qualified-remote posting also has its title checked** against the same
+  marker list, because the region is routinely written there instead -
+  `Technical Account Manager - UK` at location `Remote`. The title is consulted
+  on that path only: a role with a physical Israeli location is relevant
+  whatever its title says, or `Sales Engineer, DACH - Tel Aviv` would be
+  dropped for naming the market it serves.
 - **The fetch phase - and only the fetch phase - runs concurrently**
   (`fetchers.fetch_all`). Everything after it stays sequential and in profile
   order. See below.
@@ -114,7 +120,12 @@ because the fetch budget can only stop companies that haven't *started*: a
 thread holding a Chromium can't be interrupted.
 
 The detail layer has a matching budget: `MAX_DETAIL_FETCHES_PER_RUN` (40) is
-a **run-wide** allowance shared by every company, not 40 per company.
+a **run-wide** allowance shared by every company, not 40 per company. As of
+2026-08-18 it is almost never reached: **98% of postings now carry their
+description inline** in the listing response, so they cost no request at all.
+Only `wix` (schema v2, no `detail_fetch`) and any future HTML-detail profile
+draw on it. That headroom is what makes a much larger company count viable -
+the cap, not the fetch time, was the binding constraint.
 
 **Telegram sends are paced** at ~1/second (`JOB_ALERT_SEND_INTERVAL`) and a
 429 is retried after the `retry_after` Telegram asks for. Every company sends
@@ -227,20 +238,90 @@ majority, and without a further split the flag would be meaningless.
 
 **The title pre-check** rejects `senior`/`lead`/`staff`/`principal`/`manager`
 and friends at zero request cost. A junior-sounding title does **not** earn
-an automatic pass: per LinkedIn analysis, ~35% of postings labelled
-"entry-level" still demand 3+ years.
+an automatic pass on the *experience* question: per LinkedIn analysis, ~35% of
+postings labelled "entry-level" still demand 3+ years, so they are still
+fetched and still evaluated on their stated number.
+
+What a junior word *does* do (added 2026-08-18) is stop a seniority noun
+elsewhere in the same title from rejecting the posting outright. The only
+false negative in the bot's entire delivered history was mprest's **`Junior
+Project Manager`**, rejected for containing "manager". Also added that day,
+with the count each caught on a live snapshot: `leader` (33 - `lead` is
+whole-word, so it never matched `Leader`), `experienced` (20), `expert` (15),
+and the C-level set. Deliberately *not* added: `specialist` (30 postings, and
+it is a level rather than a seniority - `Technical Support Specialist -
+Student Position`) and `owner` (`Product Owner` is routinely a mid role).
+`(CTO Group)` is exempted - at Mobileye that names an organisation, not a
+level.
+
+## Role filter
+
+Default: **ON**. Suppresses postings outside the user's job families, from the
+title alone - so it costs no request, and it runs **first** in the chain, which
+means an off-target posting never reaches the experience filter's detail fetch
+either.
+
+The four target families are software/data/ML engineering, hardware/VLSI/
+embedded, data analyst/BI/product, and IT/technical support. Everything else -
+finance/legal, sales/CS/marketing, HR/admin, manual and warehouse - is
+rejected. Measured before it existed: **~47% of delivered alerts were outside
+these families** (Bookkeeper, Payroll Accountant, General Counsel, Securities
+Sales Representative, Warehouse Clerk, Marketing Admin).
+
+**It is a blocklist, not an allowlist, and that is not an accident.** The
+corpus contains real on-target roles whose titles name no technology at all -
+`DFIR`, `CyOps Analyst`, `InfoSec & SecOps`, `Junior Intelligence Analyst`,
+`System Integrator`. An allowlist drops every one of them, and state is written
+before filtering, so a drop is permanent. So: blocked domain → reject, target
+family → pass, **neither → pass, flagged `❓ תפקיד לא מזוהה`** (~15% of
+postings). `/filter role off` disables it; `send_unknown: false` in
+`state/filters.json` inverts the fail-open, and is the role filter's equivalent
+of `strict` - off by default for the same reason.
+
+`roles.TECH_OVERRIDES` is what lets both of these be right at once: a bare
+`engineer` is deliberately **absent** from it, so `Sales Engineer` stays
+blocked while `Support Engineer` does not. Matching is whole-word throughout -
+`Salesforce Developer` must not read as sales.
+
+**Repeat titles are tagged, never dropped** (`🔁 כותרת שכבר הופיעה`). A posting
+that is closed and re-opened comes back with a NEW id - a new Comeet uid, or a
+new Wix URL slug, which is what Wix's id is derived from - so the diff
+correctly sees a brand-new job and alerts again. Two of the 24 alerts delivered
+between 13 and 18 Aug were this (Kaltura `Help Desk`, Wix `Payroll
+Accountant`); each company had exactly one live posting with that title, so it
+was **not** the per-city duplication `collapse_duplicate_titles` handles.
+
+`filters.recently_seen_titles` reads the company's **pre-run** state snapshot -
+`jobs` already records every posting's title and `first_seen`, so no new
+storage was needed - and marks any title seen in the last
+`REPEAT_TITLE_WINDOW_DAYS` (14). It must be the pre-run snapshot: the state
+write happens before filtering, so the live file already contains the new job
+and every title would match itself.
+
+Tagging rather than suppressing is a deliberate call. `Help Desk` and `QA
+Engineer` are exactly the titles a company reuses for a genuine second req, and
+a drop would be permanent - there is no replay. The tag costs one skimmable
+line; a wrong suppression costs a job.
+
+Temporary and maternity-cover roles are **tagged, never dropped**
+(`⏳ משרה זמנית/חלופת לידה`): Wix's `QA Engineer (Temp position)` and Playtika's
+`UI/UX Designer - maternity leave replacement` are real entry points.
 
 **Commands:**
 
 ```
 /filter                    state of every filter
+/filter role on|off        turn the role filter on or off
 /filter experience on|off  turn one on or off
 /minexp 2                  change the threshold (in years)
 /minexp strict on|off      in strict mode, "undetermined" is suppressed
                            instead of sent
-/stats                     counters: rejected by title / number found and
-                           passed / number found and rejected /
-                           undetermined / undetermined with seniority signals
+/stats                     per-filter counters, each in its own vocabulary:
+                           experience - rejected by title / number found and
+                           passed / number found and rejected / undetermined /
+                           undetermined with seniority signals
+                           role - in-scope / off-target / unclassified sent /
+                           unclassified dropped
 ```
 
 Settings are stored in `state/filters.json`, which the workflow already
@@ -371,7 +452,16 @@ excluded, but the stated evidence was stronger than it was.
 `check.yml` dates from the 3-company era and only fires from the default
 branch, so **merging this branch is what makes it live.**
 
-**A relevance-filter leak was found and fixed while verifying the seed.**
+**A second `offices[]` defect was fixed on 2026-08-18.** The fetcher treated
+`offices[]` as an OR against `location.name`, so any posting on a board whose
+regional office list happens to include Tel Aviv was kept regardless of where
+the role actually is. Datadog attaches
+`[Bordeaux, Lisbon, Lyon, Madrid, ..., Tel Aviv]` to roles located in Paris and
+Madrid: 13 of them leaked, 21 across the corpus. `offices[]` is now consulted
+**only when `location.name` carries no place** (empty, `Multiple Locations`),
+which is what the platform profile always said it was for.
+
+**An earlier relevance-filter leak was found and fixed while verifying the seed.**
 Greenhouse publishes a separate `offices[]` array whose entries the fetcher
 checks individually, and office names are bare sub-national remote regions with
 no country token — `Remote - Colorado`, `Remote - Texas`. Checked alone those
@@ -443,15 +533,18 @@ nor the Wix page produces that shape of string.
 - Note: no Mobileye posting requires one year or less (the lowest found is
   two years, in 6 postings), which is why `passed_with_number` is 0.
   `/minexp 2` would open up those 6.
-- **Comeet (105 companies) uses `detail_fetch.method: embedded_json`** — added
-  2026-08-13. Its description is not in either API response and not in the
-  posting page's DOM (the page is an Angular app); it lives in a
-  `POSITION_DATA = {...}` script assignment, at `custom_fields.details`, as
-  named sections. Costs one plain GET per **new** posting, bounded by the
-  run-wide `MAX_DETAIL_FETCHES_PER_RUN`. Before this, Comeet was declared
-  `detail_fetch: none` on a claim that proved false, and the experience filter
-  was silently unable to evaluate **72% of the corpus** — see
-  `_onboarding/experience_filter_audit.md`.
+- **Comeet (105 companies) uses `detail_fetch.method: inline`** — changed
+  2026-08-18, from the `embedded_json` page scrape added 2026-08-13. The
+  listing endpoint *does* serve every description; it just needs
+  `&details=true`, which `api.extra_params` now adds. Verified live against
+  all 105 boards: 105/105 returned a populated `details` array, the same
+  `{name, value}` section shape the page scrape was reaching.
+  The scrape worked but cost **one GET and ~1.06s per new posting** against the
+  run-wide cap of 40; this costs **zero extra requests** and is uncapped, for
+  57 KB → 244 KB on the one listing call. That is the change that unblocks
+  scaling the company count: a single company reworking its board used to spend
+  the entire run's detail allowance, leaving every later posting `undetermined`
+  and delivered untriaged.
 - **`wix` is still `schema_version: 2` with no `detail_fetch`**, so the
   filter only works at the title level there and everything else is sent with
   `⚠️`. That is correct fail-open behaviour, not a bug. Determining how to
