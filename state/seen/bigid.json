@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4037664002": {
+      "title": "Talent Network - Didn't See the Role You Were Looking for? Apply Here!",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "8687006002": {
+      "title": "Team Lead, Technical Writing",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

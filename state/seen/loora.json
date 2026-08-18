@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:26.407768+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "0363a322-2250-470f-8832-bf94c7268203": {
+      "title": "Backend Tech Lead",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "24d0f250-69be-4e60-93f9-5f681fb58c00": {
+      "title": "Founding Business Development Representative",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "1c7f38e2-79aa-474b-83cf-77cacf66ae33": {
+      "title": "Backend & Data Platform Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:38.367077+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "2082c495-b951-44e9-94ee-6120ddc7db68": {
+      "title": "Staff Software Engineer, AI (Org & Governance)",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "ed16328f-3a5c-4073-a957-8cd9ef6ca6c6": {
+      "title": "Regional VP Sales",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    }
+  }
+}

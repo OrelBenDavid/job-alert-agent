@@ -1,0 +1,11 @@
+{
+  "last_success": "2026-08-18T19:28:34.657398+00:00",
+  "last_count": 1,
+  "consecutive_failures": 0,
+  "jobs": {
+    "c4442730-2926-41ad-8c0e-5e5a6b4d14ae": {
+      "title": "Forward Deployed Software Engineer",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    }
+  }
+}

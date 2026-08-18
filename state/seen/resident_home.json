@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:34.673082+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "6112307004": {
+      "title": "Data Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6016190004": {
+      "title": "Fullstack Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6016203004": {
+      "title": "Fullstack Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6009719004": {
+      "title": "Marketing Analyst",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6018267004": {
+      "title": "Senior Frontend Infrastructure Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    }
+  }
+}

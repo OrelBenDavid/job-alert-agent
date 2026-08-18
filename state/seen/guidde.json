@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:26.391856+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4821256101": {
+      "title": "Builder Product Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4919409101": {
+      "title": "Customer Enablement Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4919389101": {
+      "title": "Customer Experience Specialist",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4952184101": {
+      "title": "Marketing AI Builder",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4752188101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    }
+  }
+}

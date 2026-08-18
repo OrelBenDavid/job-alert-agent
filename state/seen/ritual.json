@@ -1,0 +1,67 @@
+{
+  "last_success": "2026-08-18T19:28:34.673082+00:00",
+  "last_count": 15,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4981486007": {
+      "title": "Controller",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4614221007": {
+      "title": "Core Protocol Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4614247007": {
+      "title": "Developer Experience Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4609616007": {
+      "title": "Distributed Systems Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4135918007": {
+      "title": "Don't see a role that fits?",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4614234007": {
+      "title": "Ecosystem Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4083940007": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4324604007": {
+      "title": "Growth Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4635587007": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4029531007": {
+      "title": "Machine Learning Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4358496007": {
+      "title": "Research Intern",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4135728007": {
+      "title": "Smart Contract Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4068271007": {
+      "title": "Software Engineer Intern",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4614256007": {
+      "title": "TEE Specialist",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4815356007": {
+      "title": "Validator Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    }
+  }
+}

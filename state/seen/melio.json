@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:26.407768+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "7748138003": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "7820154003": {
+      "title": "Engineering Manager, AP",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "7806724003": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "7765818003": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "7572393003": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    }
+  }
+}

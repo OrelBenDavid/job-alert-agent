@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:26.423735+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8063905": {
+      "title": "B2C Sales",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8108487": {
+      "title": "B2C Sales",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "7026670": {
+      "title": "Director of Science",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8059147": {
+      "title": "Retention Representative",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "7882229": {
+      "title": "Senior Machine Learning Engineer",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    }
+  }
+}

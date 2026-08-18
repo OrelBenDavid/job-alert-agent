@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-18T19:28:38.383070+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8588688002": {
+      "title": "Director, FinOps",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8561611002": {
+      "title": "Principal Business Intelligence Analyst",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8574368002": {
+      "title": "Principal Software Engineer (GTMO/Mesh)",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8504483002": {
+      "title": "Senior Account Manager (Enterprise)",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8561605002": {
+      "title": "Senior Business Intelligence Analyst – Product Analytics",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8654287002": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8581886002": {
+      "title": "Senior Director, Software Engineering",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8643355002": {
+      "title": "Senior Forward Deployed Engineer",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8537816002": {
+      "title": "Senior Machine Learning Engineer",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8561599002": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8561603002": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8561607002": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8687939002": {
+      "title": "Senior Software Engineer, Data Infrastructure",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    }
+  }
+}

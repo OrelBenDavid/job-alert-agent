@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T19:28:26.391856+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "c7748207-bf90-4a4f-b8c2-f9e28b8f51e6": {
+      "title": "Fraud Ops Specialist",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "3277b37e-4972-4152-a379-9c58c000b08e": {
+      "title": "Data Scientist, Risk",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "428ac214-5b4a-4ac1-b6f5-ae7bc35dce7e": {
+      "title": "Email Automation & QA Specialist",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "8b9bee00-2a81-4872-93f9-e85b1f3cef07": {
+      "title": "Sr. Marketing Designer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "bee978d1-dbe9-44e8-a633-cd8d7c134ecd": {
+      "title": "Fraud Operations Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "dd1d2dbe-2435-47c4-bf72-eddef5b59818": {
+      "title": "Marketing Design Technologist",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "dda9d2ee-3047-4fb0-9fd9-9a75a6ef0c73": {
+      "title": "Director of Operational Readiness",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    }
+  }
+}

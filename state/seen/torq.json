@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-18T19:28:38.367077+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "6119299004": {
+      "title": "AI Solutions Engineer",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6119367004": {
+      "title": "Business Systems Engineer",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6119508004": {
+      "title": "Data Engineer (Product & Customer Insights)",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "5810373004": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6123211004": {
+      "title": "R&D Team Lead",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6119300004": {
+      "title": "R&D Team Lead (Runtime)",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6127348004": {
+      "title": "Senior HR Business Partner",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6123462004": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "5806980004": {
+      "title": "Technical Product Manager",
+      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    }
+  }
+}

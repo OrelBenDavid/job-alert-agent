@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:22.746067+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "7683988003": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "7809871003": {
+      "title": "AI Research Engineer, Security",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "6652315003": {
+      "title": "Director of Sales",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "7812494003": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "6670059003": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    }
+  }
+}

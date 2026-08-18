@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "1287724": {
+      "title": "Senior DevOps Engineer (browser CI/CD + AWS)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "7636723": {
+      "title": "Sr. C++ Web Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "8048968": {
+      "title": "Sr. Security Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "8075785": {
+      "title": "Sr. Solutions Engineer - API and Developer Platform",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

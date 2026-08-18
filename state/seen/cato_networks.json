@@ -1,0 +1,175 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 42,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4863034101": {
+      "title": "Agentic AI Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4874416101": {
+      "title": "AI Security - AI Platform Team Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4702426101": {
+      "title": "AI Security - Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4890572101": {
+      "title": "AI Security - Software Team Lead, Coding Agents",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4937879101": {
+      "title": "Automation Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4850425101": {
+      "title": "Automation Engineer – Browser Security",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4951235101": {
+      "title": "Bot Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4848229101": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4949427101": {
+      "title": "Facilities Operations Specialist",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4769033101": {
+      "title": "Field AI Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4853323101": {
+      "title": "Full Stack Developer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4905948101": {
+      "title": "Global HR Operations & HRIS Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4897189101": {
+      "title": "Lead Security Researcher - AI Threat Intelligence",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4352164101": {
+      "title": "macOS/iOS SW Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4879652101": {
+      "title": "Marketing Operations Manager- (Temporary position for Maternity Leave)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4784765101": {
+      "title": "Marketing Ops & Analytics Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4839355101": {
+      "title": "MDR Security Analyst (Threat Hunting)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4203250101": {
+      "title": "Paid Media Marketing Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4908469101": {
+      "title": "Payroll Admin",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4633928101": {
+      "title": "Product Manager - Access",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4882479101": {
+      "title": "Product Manager - AI Security",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4530664101": {
+      "title": "Product Manager - Network",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4860712101": {
+      "title": "QA Automation Engineer - Information Systems",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4780547101": {
+      "title": "Research Team Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4864022101": {
+      "title": "Security Researcher",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4939362101": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4888366101": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4939624101": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4889858101": {
+      "title": "Senior Software Engineer- Applicative Infra team",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4632362101": {
+      "title": "Software Architect",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4941299101": {
+      "title": "Software Developer, Infrastructure - Developer Experience",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4901284101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4153135101": {
+      "title": "Software Engineer, Data Solutions (Data Platform Group)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4860424101": {
+      "title": "Software Engineer (Endpoint DLP)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4855946101": {
+      "title": "Software Engineer, Lakehouse (Data Platform Group)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4895403101": {
+      "title": "Software Engineer – Networking Group",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4845229101": {
+      "title": "Software Engineer – RBI",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4708002101": {
+      "title": "Software Team Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4603397101": {
+      "title": "Software Team Leader (C)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4648864101": {
+      "title": "SW Engineer - Enterprise Browser team",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4650566101": {
+      "title": "Talent Acquisition Partner - Temporary",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4920920101": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

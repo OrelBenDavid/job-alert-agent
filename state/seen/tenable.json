@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-18T19:28:34.688782+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5171078008": {
+      "title": "Engineering – Cloud Security",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "4019356008": {
+      "title": "Product Engineering - Future Opportunities",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5274441008": {
+      "title": "Product Manager - Cloud Risk",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5364075008": {
+      "title": "Senior Security Researcher - Office of the CTO",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5152278008": {
+      "title": "Senior Software Engineer - Cloud Security",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5381930008": {
+      "title": "Senior Software Engineer - Data Pipelines",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5114162008": {
+      "title": "Senior Software Engineer - OT",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5377621008": {
+      "title": "Software Engineer - Resources and Policies",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5150588008": {
+      "title": "Staff Product Manager Cloud Threat Detection",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    }
+  }
+}

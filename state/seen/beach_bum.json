@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-18T19:28:22.746067+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "315233d5-21e3-4ab4-a76f-250a5fae21d5": {
+      "title": "LiveOps Manager - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "42c37cb2-7aba-4a49-99e6-295b08c313cd": {
+      "title": "Unity Developer - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "16239679-12fe-4b38-b2ba-80796db64b18": {
+      "title": "2D/Concept Artist - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "bca0891d-0e1a-4742-bed5-392fabb26bb1": {
+      "title": "Tech Artist - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "fcb5487e-7573-4ba1-a107-00f065153540": {
+      "title": "Senior Unity Developer - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "69b35ace-d590-46e1-b7d5-6401f4b21da9": {
+      "title": "CRM Designer - Beach Bum",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    }
+  }
+}

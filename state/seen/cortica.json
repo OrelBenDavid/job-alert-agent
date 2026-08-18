@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:22.774266+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8687616002": {
+      "title": "Counselor",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "8393419002": {
+      "title": "Counselor (LMHC, LICSW, LMFT)",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "8723399002": {
+      "title": "Payroll Specialist",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    }
+  }
+}

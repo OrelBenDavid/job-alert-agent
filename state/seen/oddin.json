@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:34.657398+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "f6683592-7ff8-4c0a-86dd-8b0d36d3207d": {
+      "title": "Applied Science Intern (Phd) - World Models",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "751f8395-fcd2-425a-98cd-114a8a0be3fb": {
+      "title": "Research Scientist, Real-Time DiT Video Models",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    }
+  }
+}

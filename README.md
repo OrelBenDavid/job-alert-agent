@@ -403,18 +403,62 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-**145 companies are registered** as of 2026-08-13, up from 3. All 145 load
-with no profile errors, and a full live fetch returns **1,336 Israel-relevant
-postings** (145/145 succeeded).
+**233 companies are registered** as of 2026-08-18, up from 145. All 233 load
+with no profile errors, and a full live fetch returns **1,919 Israel-relevant
+postings**, of which **1,246 are in a target job family** (233/233 fetched; one
+transient `ReadTimeout` on `media_force`, which returns 2 jobs on retry).
 
 | Platform | Companies | Shape |
 |---|---:|---|
-| Comeet | 105 | thin records over `_platforms/comeet.json` |
-| Greenhouse | 28 | thin records over `_platforms/greenhouse.json` |
-| Lever | 7 | thin records (1 EU-hosted) |
-| Ashby | 3 | thin records |
+| Comeet | 108 | thin records over `_platforms/comeet.json` |
+| Greenhouse | 83 | thin records over `_platforms/greenhouse.json` |
+| Ashby | 24 | thin records |
+| Lever | 16 | thin records (1 EU-hosted) |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+### The 2026-08-18 import: 88 companies from the discovery sweep
+
+`_onboarding/discover_ats.py discover` was run over **all 7,801 unprofiled rows**
+of `israeli_companies_seed.csv` — 5 hours, ~288,000 requests, one HTTP 429 in
+total. It found **342 reachable boards (4.4%)**, of which **117 have at least one
+Israel-relevant posting in a target job family**; the other 225 are structurally
+dead (175 have open postings but none in Israel, 39 have empty boards, 11 are
+Israeli but entirely off-family) and were not imported.
+
+Of the 117, **88 were imported** — those on a platform that already has both a
+`_platforms/` profile and a fetcher, so each is one JSON file and zero code. The
+remaining 29 are deferred and listed below.
+
+- **Yield is heavily size-dependent**, and size is not the proxy it looks like.
+  Per 100 companies probed, on-family postings found: `l` **86**, `xl` **54**,
+  `m` **15**, `s` **4**, `xs` **0.7**. The `xs` bucket cost 4,138 probes for 29
+  postings — worth running once to establish that, not worth running again.
+- **The seed CSV is now exhausted.** Growing past 233 is a sourcing problem, not
+  a scraping one: another pass over the same file cannot help.
+- The new companies are the same calibre as the existing ones — they add **391
+  on-family postings across 88 companies**, against 856 across the original 145.
+- **A caveat on the sweep's own numbers.** `discover` predicted +606 on-family
+  and the real figure after import is +391. The probe's Israel test is looser
+  than the fetcher's: `probe_greenhouse` joins `location.name` and `offices[]`
+  into one string, while the fetcher consults `offices[]` only when
+  `location.name` carries no place (the defect fixed on 2026-08-18, see below).
+  So sweep counts over-report Greenhouse boards and should be read as a ranking
+  signal, not as a forecast.
+
+**29 candidates were found but NOT imported**, all for stated reasons:
+
+| Reason | Count | Notes |
+|---|---:|---|
+| No fetcher for the platform | 11 | Workday — the biggest gap, 69 on-family postings incl. Palo Alto Networks, CrowdStrike Israel R&D, MKS Instruments |
+| Identity `unverifiable` | 14 | the platform publishes no company name, so nothing proved the board is theirs. **Lemonade** is the significant one (24 on-family, Ashby); the other 13 are small SmartRecruiters boards worth 1–5 each |
+| No fetcher for the platform | 3 | Recruitee ×2, Workable ×1 — 4 on-family postings between them, not worth an adapter |
+| No `_platforms/` profile | 1 | SmartRecruiters — `fetch_smartrecruiters` exists in `api.py` but no platform profile does |
+
+**All 88 are seeded**, in four batches of 25 via `--seed --limit 25`, recording
+600 postings as already-known. A follow-up `--seed` reports no gap, and the
+existing 145 companies' state was not touched — their `first_seen` history is
+intact.
 
 139 of these were bulk-imported by `_onboarding/import_companies.py` from a
 152-row shortlist that was **live-verified first** (see

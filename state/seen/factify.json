@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T19:28:22.774266+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "CE.E65": {
+      "title": "Creative & Brand Design Lead",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "CE.E60": {
+      "title": "Growth Marketing Leader",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "2F.F66": {
+      "title": "Senior Full-Stack Engineer",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4F.F62": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "E5.07A": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "3F.F6F": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "8D.F6B": {
+      "title": "VP R&D",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    }
+  }
+}
