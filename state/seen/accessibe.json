@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:22.740340+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4938507101": {
+      "title": "Full Stack Developer",
+      "first_seen": "2026-08-18T19:28:22.740340+00:00"
+    },
+    "4781244101": {
+      "title": "Full-Stack Team Leader",
+      "first_seen": "2026-08-18T19:28:22.740340+00:00"
+    },
+    "4951624101": {
+      "title": "Growth Marketing Manager (Maternity Leave Replacement)",
+      "first_seen": "2026-08-18T19:28:22.740340+00:00"
+    },
+    "4949582101": {
+      "title": "HR & Talent Partner (Replacement for Maternity Leave)",
+      "first_seen": "2026-08-18T19:28:22.740340+00:00"
+    },
+    "4921198101": {
+      "title": "Senior IT Administrator",
+      "first_seen": "2026-08-18T19:28:22.740340+00:00"
+    }
+  }
+}

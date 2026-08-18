@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:26.407768+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8a9fff99-5cf3-48ac-95d5-918edb608184": {
+      "title": "Account Executive – New Business",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "ce7b220a-b27a-4b75-94fd-263e7ea2b1ed": {
+      "title": "Account Manager – New & Existing Business",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "aea25dff-268c-4b84-9cfb-c9c871a28144": {
+      "title": "Tier 1 Support Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    }
+  }
+}

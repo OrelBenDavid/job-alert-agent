@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-18T19:28:22.746067+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8549883002": {
+      "title": "AI Applied Scientist  – Insights & Recommendations",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "8565892002": {
+      "title": "AI-Native Mobile Engineer - Deployment Platform",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "8563603002": {
+      "title": "Algorithm and Applied AI Scientist (DSP)",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "8542462002": {
+      "title": "Experienced AI Software Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    }
+  }
+}

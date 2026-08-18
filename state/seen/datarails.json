@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:22.774266+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4272331009": {
+      "title": "FP&A Implementation Manager",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4306119009": {
+      "title": "Outbound Marketing Operations Manager",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4321157009": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4282592009": {
+      "title": "Technical Project Manager (TPM)",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4298014009": {
+      "title": "UX UI Product Designer",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    }
+  }
+}

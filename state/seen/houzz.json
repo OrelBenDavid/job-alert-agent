@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:26.391856+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "c8071efd-109f-43f3-9632-e677e10c9cf2": {
+      "title": "Product Designer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "c9eaf854-dd7f-4b91-99b8-f7c936c0b03a": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "72da2409-ced3-4817-92b6-69255daa9cd3": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    }
+  }
+}

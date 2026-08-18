@@ -1,0 +1,87 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 20,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5811527004": {
+      "title": "Account Executive SMB- Israel",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5549978004": {
+      "title": "AI Developer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6142780004": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5774329004": {
+      "title": "Back End Tech Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6100430004": {
+      "title": "Brand & Marketing Design Team Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6144831004": {
+      "title": "Customer Support Specialist",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5395435004": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6123097004": {
+      "title": "Financial Controller",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5753228004": {
+      "title": "Full Stack Tech Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5997770004": {
+      "title": "Gen AI Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6121092004": {
+      "title": "HR Business Partner",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5970690004": {
+      "title": "Mobile Infrastructure Team Lead",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5840326004": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6008059004": {
+      "title": "Sales Development Representative",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6098439004": {
+      "title": "Senior Analytics Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5775112004": {
+      "title": "Senior Data Product Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5780978004": {
+      "title": "Senior Frontend Infrastructure Engineer (Core Team)",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6092468004": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6009720004": {
+      "title": "Senior Lifecycle & Automation Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "5970677004": {
+      "title": "Senior Mobile Developer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

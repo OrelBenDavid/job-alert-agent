@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-18T19:28:22.746067+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "204a0700-479c-4572-9fd8-b4b7c838aac4": {
+      "title": "Staff Full-Stack Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "7e3dd139-bc4e-46e9-8908-4cab426bdb14": {
+      "title": "Senior Full-Stack Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "7e48b8c3-1320-4f2c-9488-e12624614e7f": {
+      "title": "Senior Automation Engineer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "2ddd5e2a-1924-4def-b692-5965e5565f5c": {
+      "title": "SRE / DevOps Lead",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "774e05c1-9cdd-44a2-af7a-9fde2bbfd47c": {
+      "title": "Hands-on AI & Data Engineering Manager",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "ea01f36a-34e6-4af7-bf84-873a929ec979": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    }
+  }
+}

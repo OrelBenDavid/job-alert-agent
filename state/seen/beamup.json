@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4836478101": {
+      "title": "AI & IT Manager",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4888237101": {
+      "title": "Applied AI/ML Scientist",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4607565101": {
+      "title": "Applied Data Scientist",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4857516101": {
+      "title": "Senior Full-Stack Engineer",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

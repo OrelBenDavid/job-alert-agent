@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-18T19:28:34.673082+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "d421e4e5-85cd-4ebb-a480-442e83057c6f": {
+      "title": "Staff Backend Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "0b34497e-f119-4613-876f-681f6c744cad": {
+      "title": "IT Operations & Security Specialist",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6e35fffd-4a34-4608-9d73-c2cc4f0851c3": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "f3e101d7-7ce7-4280-8eb4-f6ccde097472": {
+      "title": "Backend Tech Lead",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    }
+  }
+}

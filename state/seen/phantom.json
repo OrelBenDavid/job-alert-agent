@@ -1,0 +1,39 @@
+{
+  "last_success": "2026-08-18T19:28:34.657398+00:00",
+  "last_count": 8,
+  "consecutive_failures": 0,
+  "jobs": {
+    "e7b83c02-55c2-4037-9209-93deb3b7492c": {
+      "title": "Senior Software Engineer, Frontend",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "560634d5-2234-4dbc-9143-d8416c4efbdc": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "1ddd1eb8-9b2d-4f2a-9e70-4f76bb764e7f": {
+      "title": "Staff DevOps Engineer (Platform)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "d480082b-a446-40fb-be24-f364c07ef8a9": {
+      "title": "Staff Software Engineer (SRE)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "be5a838e-a6f4-4d99-be08-e6419a857289": {
+      "title": "Software Engineer, Frontend / Full Stack (Identity Platform)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "d8ee7f59-0f80-437f-908e-bfe603cb078a": {
+      "title": "Software Engineer, Backend (Trading)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "e213be58-ba98-486d-93bc-a7716f33003e": {
+      "title": "Software Engineer, Frontend / Full Stack (Trading)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "1a7b0f14-556b-4bb0-b1c1-43702d6b56c3": {
+      "title": "Staff Software Engineer, Frontend (Trading)",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    }
+  }
+}

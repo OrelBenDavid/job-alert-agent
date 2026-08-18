@@ -1,0 +1,107 @@
+{
+  "last_success": "2026-08-18T19:28:34.673082+00:00",
+  "last_count": 25,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4919302101": {
+      "title": "Account Executive",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919307101": {
+      "title": "Account Manager",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4913574101": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4944210101": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4913587101": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4913604101": {
+      "title": "Devops Team Lead",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4941455101": {
+      "title": "Director of AI at CEO Office",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4913581101": {
+      "title": "Director of R&D",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919422101": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4941799101": {
+      "title": "Head of HR",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919425101": {
+      "title": "Head Of Research",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919428101": {
+      "title": "Infra Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4921303101": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4921333101": {
+      "title": "Product Designer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919672101": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4930924101": {
+      "title": "Product Marketing Manager",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919431101": {
+      "title": "Researcher",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4921341101": {
+      "title": "Sales Development Representative",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4921326101": {
+      "title": "Sales Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4921345101": {
+      "title": "Senior Marketing Operations",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919434101": {
+      "title": "Software Architect",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4930931101": {
+      "title": "Talent Acquisition Partner",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919437101": {
+      "title": "Tech Lead",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4919667101": {
+      "title": "Technical Account Management, Lead",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4930936101": {
+      "title": "Technical Account Manager",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    }
+  }
+}

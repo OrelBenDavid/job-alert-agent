@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T19:28:34.688782+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "89b94db2-bd95-470b-b5bf-b8c0481b133e": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "61048359-29be-42f8-93aa-67641341d79c": {
+      "title": "Senior Full-Stack Engineer",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "17387692-0255-428b-ac10-cfcc4e510a31": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "8418045d-9559-4766-a31b-852a477b98ca": {
+      "title": "Account Executive",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5833fa6a-5bb2-4c99-9122-a846dcdf73e9": {
+      "title": "Customer Success Manager (EMEA)",
+      "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    }
+  }
+}

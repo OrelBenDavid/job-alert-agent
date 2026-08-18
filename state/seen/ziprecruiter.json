@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-18T19:28:38.383070+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8129327": {
+      "title": "Engineering Manager, Big Data",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8128603": {
+      "title": "Engineering Manager, Machine Learning",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "7858982": {
+      "title": "Enterprise, Account Executive",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "7624253": {
+      "title": "Enterprise Account Manager, Staffing",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "7624939": {
+      "title": "Enterprise Customer Success Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "6557032": {
+      "title": "Senior Software Engineer, Big Data",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "6556954": {
+      "title": "Senior Software Engineer, Full Stack",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "5167472": {
+      "title": "Senior Software Engineer, Machine Learning",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "4932402": {
+      "title": "Software Engineering Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8072236": {
+      "title": "Sr. Manager, Revenue Operations",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "5167480": {
+      "title": "Staff Software Engineer, Machine Learning",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:22.756143+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4975fa35-93d7-48af-bafc-e0d0c877bc84": {
+      "title": "Internal Lead Mortgage Advisor",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "f2795e55-8e04-4c52-9f29-4eb59d2a9ad7": {
+      "title": "Mortgage Operations Academy Associate",
+      "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    }
+  }
+}

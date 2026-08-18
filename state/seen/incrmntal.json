@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T19:28:26.407768+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5516fcda-8084-45db-a4f4-902a502ab428": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "e5b77b7e-3032-453c-9f3d-6cb3252c94dc": {
+      "title": "Marketing Manager",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "90f59be3-150d-4d41-ad30-78f46a628cfd": {
+      "title": "Sales Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "5ad9c6e6-a89f-4d46-af8c-da2b6977c2bb": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "adade9a1-b495-4d85-a56c-e26dbc2a2135": {
+      "title": "Staff Data Scientist",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "e4869400-7e0d-4bbc-8bb9-8a5a0083b653": {
+      "title": "Customer Integration Engineer",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "c509cfa6-f83e-4653-9a0b-66240ba654a6": {
+      "title": "Senior Business Analyst",
+      "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T19:28:34.673082+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "C0.662": {
+      "title": "C++ Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "FB.D6C": {
+      "title": "Circuit Design Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "CE.E6F": {
+      "title": "Corporate Controller",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6C.C6E": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "05.F69": {
+      "title": "Logic Design Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "82.D6A": {
+      "title": "Senior ML Algorithm Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "12.D6E": {
+      "title": "Senior Product Engineer",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    }
+  }
+}

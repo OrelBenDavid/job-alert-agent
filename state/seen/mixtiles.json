@@ -1,0 +1,43 @@
+{
+  "last_success": "2026-08-18T19:28:26.423735+00:00",
+  "last_count": 9,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8413022002": {
+      "title": "Algorithms Engineer – Computer Vision & AI (Applied Research)",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8333912002": {
+      "title": "Data Engineering Lead",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8403536002": {
+      "title": "Engineering Lead, easyplant",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8542310002": {
+      "title": "Engineering Manager, Oasis",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "8595229002": {
+      "title": "General Counsel",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "7625858002": {
+      "title": "IT Manager",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "5315164002": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "6918572002": {
+      "title": "Senior iOS Software Engineer",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
+    "7706697002": {
+      "title": "VP Data",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    }
+  }
+}

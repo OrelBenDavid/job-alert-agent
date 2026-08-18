@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:38.359071+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5629660a-6c84-4b3f-b820-cc25a1516a39": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-18T19:28:38.359071+00:00"
+    },
+    "2fc80472-de52-49ff-8351-ee12979a1d51": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.359071+00:00"
+    }
+  }
+}

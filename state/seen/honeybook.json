@@ -1,0 +1,39 @@
+{
+  "last_success": "2026-08-18T19:28:26.391856+00:00",
+  "last_count": 8,
+  "consecutive_failures": 0,
+  "jobs": {
+    "9e144871-0ee4-4a6b-809c-3979090192f5": {
+      "title": "Marketing Analytics Lead",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "e2fdd8c6-eaa6-4537-98bb-f467256587f8": {
+      "title": "Sr. Staff Product Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "7c1b51ec-915b-4ea7-a1f8-767069d3144e": {
+      "title": "Senior Fraud Analyst",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "459d41f1-f70c-4baa-a3ac-ad444c057bd8": {
+      "title": "Engineering Director - Core Product",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "59509ad0-ac4d-449c-860a-df5a70340913": {
+      "title": "Senior Machine Learning Engineer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "9b5f33e2-71ad-4eb2-b02e-3bbf7172170a": {
+      "title": "Entrepreneur in Residence - AI Implementers",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "b8b8e816-102d-40fa-887c-cc230e0f9db9": {
+      "title": "Director of Product Management – Financial Products",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "5b41fb85-7d2a-4186-a26a-94f9afb66973": {
+      "title": "Senior Marketing Designer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    }
+  }
+}

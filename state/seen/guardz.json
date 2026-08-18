@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:26.391856+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4343001101": {
+      "title": "Office Operations Manager (Part Time)",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4790453101": {
+      "title": "Security Product Manager",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4637866101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    }
+  }
+}

@@ -39,8 +39,45 @@ jobs:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
 
+      # *** --with-deps was REMOVED on 2026-08-18. It is what killed a run. ***
+      #
+      # This step used to be `playwright install --with-deps chromium`, and
+      # --with-deps runs a full `apt-get update` against four repositories on
+      # EVERY run - the browser cache above does not cover apt packages, so a
+      # cache hit did not prevent it. Measured across 20 consecutive runs it
+      # cost 12-22s normally, 6m 46s once, and on 2026-08-18T01:41 it hung for
+      # the full 20 minutes and the job was killed. That run fetched nothing:
+      # "Run check" never started, and because a killed job never reaches the
+      # commit step below, the whole run was lost.
+      #
+      # What --with-deps actually installed, from a successful run's log:
+      # "0 upgraded, 9 newly installed" - and all 9 are FONTS (fonts-unifont,
+      # fonts-ipafont-gothic, fonts-wqy-zenhei, xfonts-cyrillic and friends).
+      # Every shared library Chromium needs - libnss3, libgbm1, libatk,
+      # libcups2, libdrm2 - is already "the newest version" on the
+      # ubuntu-latest image.
+      #
+      # Fonts do not affect this bot, because it never renders anything: the
+      # fetcher reads the DOM with inner_text() and takes no screenshots, so a
+      # missing glyph cannot change a job title, a location or a selector
+      # match. Dropping them removes the apt round-trip entirely.
+      #
+      # If a future runner image ever does drop a real library, the symptom is
+      # a Chromium launch failure on the one playwright company, which surfaces
+      # as an ordinary fetch failure and a maintenance alert after two runs -
+      # not a silent wrong answer. The fix would be to put --with-deps back.
       - name: Install Playwright browser (chromium only)
-        run: python -m playwright install --with-deps chromium
+        # Bounds the download on a cache MISS (~120 MB). On a hit this step is
+        # a couple of seconds, so this can only ever fire on a genuinely stuck
+        # download - which is exactly the case that used to eat the job.
+        timeout-minutes: 5
+        # A browser that fails to install must cost ONE company, not the run.
+        # Without this, the job stops here and the 144 API companies - which
+        # need no browser at all - are never fetched and never commit state.
+        # With it, wix raises inside the fetch, is recorded as that company's
+        # failure by the existing health gate, and everything else proceeds.
+        continue-on-error: true
+        run: python -m playwright install chromium
 
       - name: Run check
         working-directory: src

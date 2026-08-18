@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T19:28:26.386779+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "956668dd-19b4-49f9-ba62-d7b2fd791efe": {
+      "title": "Senior Fullstack Engineer",
+      "first_seen": "2026-08-18T19:28:26.386779+00:00"
+    },
+    "41048083-c28d-49d7-a0db-62f2cbd3a93b": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-18T19:28:26.386779+00:00"
+    },
+    "db404dfa-e28c-4f56-9afe-d2876ed5f03e": {
+      "title": "AI Design Lead - Creative & Marketing Design",
+      "first_seen": "2026-08-18T19:28:26.386779+00:00"
+    }
+  }
+}

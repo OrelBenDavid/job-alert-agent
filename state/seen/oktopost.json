@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T19:28:34.657398+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "25fc34d3-bb01-490b-91a7-1bee47c006dd": {
+      "title": "Full-Stack Team Lead",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "c43827f9-2453-4282-9d75-9322ce8507fd": {
+      "title": "Senior Full-Stack Developer",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    }
+  }
+}
