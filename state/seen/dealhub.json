@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T06:56:30.917819+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-18T09:42:01.811284+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "B5.071": {
@@ -25,10 +25,6 @@
     },
     "70.E6D": {
       "title": "Full Stack Web / WordPress Developer",
-      "first_seen": "2026-08-13T11:24:19.173800+00:00"
-    },
-    "0A.E61": {
-      "title": "GTM Business Analyst",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
     "82.E69": {
@@ -57,10 +53,6 @@
     },
     "99.067": {
       "title": "QA Engineer(Entry Level)",
-      "first_seen": "2026-08-13T11:24:19.173800+00:00"
-    },
-    "10.F60": {
-      "title": "Sales Operations - Student Position",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
     "9A.E5A": {

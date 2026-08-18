@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T06:56:30.925576+00:00",
-  "last_count": 25,
+  "last_success": "2026-08-18T09:42:01.814840+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
@@ -33,10 +33,6 @@
     },
     "C0.E6D": {
       "title": "Director of Data",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "AA.D67": {
-      "title": "Engineering Team Lead",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "B8.440": {

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T06:56:30.931744+00:00",
-  "last_count": 121,
+  "last_success": "2026-08-18T09:42:01.818123+00:00",
+  "last_count": 122,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -331,10 +331,6 @@
       "title": "Senior Computer Vision Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "d1b15808-b89c-4b61-b329-438963133015": {
-      "title": "Senior Data & ML Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "b5e33bc9-f6e1-4201-a42d-61cd409b60c5": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -451,6 +447,10 @@
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "6a585853-ec67-49fb-af6d-68adc60b5977": {
+      "title": "Strategic Account Manager",
+      "first_seen": "2026-08-18T09:42:01.818123+00:00"
+    },
     "5215cdc7-1576-48da-8c92-ca128ddf2c6e": {
       "title": "System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -478,6 +478,10 @@
     "c217d67e-d12c-4ee8-afd2-6489873e6776": {
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "594b53f5-56ac-44e8-9fcf-b501518315b6": {
+      "title": "Travel Coordinator",
+      "first_seen": "2026-08-18T09:42:01.818123+00:00"
     },
     "f4848e1c-2f81-46a1-b2ee-e73b0d30a3fb": {
       "title": "Validation & Analysis Project Manager - Temporary Position",

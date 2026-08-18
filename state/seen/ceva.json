@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T06:56:29.731208+00:00",
-  "last_count": 18,
+  "last_success": "2026-08-18T09:42:00.302819+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "F9.66B": {
@@ -21,10 +21,6 @@
     },
     "79.76A": {
       "title": "AI Software Architect",
-      "first_seen": "2026-08-13T11:24:10.823521+00:00"
-    },
-    "8D.B6A": {
-      "title": "AI Software SDK Senior Team Leader",
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     },
     "ED.F64": {

@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-08-18T06:56:29.725900+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-18T09:42:00.299379+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "D1.837": {
       "title": "Didn't find what you were looking for?",
-      "first_seen": "2026-08-13T11:24:10.781340+00:00"
-    },
-    "26.86B": {
-      "title": "Silicon RF Test Engineer",
       "first_seen": "2026-08-13T11:24:10.781340+00:00"
     },
     "D3.B6B": {
