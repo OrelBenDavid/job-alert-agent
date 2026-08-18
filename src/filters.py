@@ -34,6 +34,7 @@ from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 import dataclasses
 import re
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
 from typing import Literal
 
 import detail
@@ -376,6 +377,57 @@ def _count(stats: RunStats, job_filter: "Filter", verdict: Verdict,
                  job_filter.counter_for(verdict, prescreened))
 
 
+def title_key(title: str) -> str:
+    """The identity used for "is this the same role" comparisons - within a
+    batch (collapse_duplicate_titles) and across runs (the repeat tag).
+
+    Both callers must agree, or a title could be collapsed by one rule and
+    treated as new by the other. Deliberately gentler than _normalize_title:
+    this is about matching a title to itself, not about finding words in it,
+    so punctuation is kept and only case and whitespace are normalized."""
+    return re.sub(r"\s+", " ", (title or "").strip().lower())
+
+
+# How long a title stays "recently seen" for the repeat tag.
+#
+# Two weeks, because the thing being caught is a posting that was closed and
+# re-opened - Kaltura's "Help Desk" came back with a new Comeet uid, and Wix's
+# "Payroll Accountant" with a new URL slug, both within days. Longer than this
+# and a genuine second req starts getting marked; much shorter and a reposted
+# role slips through as new.
+REPEAT_TITLE_WINDOW_DAYS = 14
+
+
+def recently_seen_titles(state: dict, within_days: int = REPEAT_TITLE_WINDOW_DAYS,
+                         now: "datetime | None" = None) -> set[str]:
+    """Title keys this company has already shown us inside the window.
+
+    Read from the state file's existing `jobs` map - no new storage. Every
+    posting ever seen is already recorded there with its title and
+    first_seen, which is exactly the history needed.
+
+    Must be built from the PRE-run snapshot. The state write happens before
+    filtering (see the module docstring), so by the time the chain runs the
+    new job is itself in `jobs` and would match its own title."""
+    now = now or datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=within_days)
+    keys = set()
+    for entry in (state.get("jobs") or {}).values():
+        seen_at = entry.get("first_seen")
+        if not seen_at:
+            continue
+        try:
+            when = datetime.fromisoformat(seen_at)
+        except (TypeError, ValueError):
+            continue        # a malformed timestamp must not break the run
+        if when.tzinfo is None:
+            when = when.replace(tzinfo=timezone.utc)
+        if when >= cutoff:
+            keys.add(title_key(entry.get("title", "")))
+    keys.discard("")
+    return keys
+
+
 def collapse_duplicate_titles(jobs: list[Job]) -> list[Job]:
     """Keeps one job per (company, normalized title) within a single batch.
 
@@ -403,7 +455,7 @@ def collapse_duplicate_titles(jobs: list[Job]) -> list[Job]:
     seen: set[tuple[str, str]] = set()
     out: list[Job] = []
     for job in jobs:
-        key = (job.company, re.sub(r"\s+", " ", (job.title or "").strip().lower()))
+        key = (job.company, title_key(job.title))
         if key in seen:
             continue
         seen.add(key)
@@ -411,9 +463,17 @@ def collapse_duplicate_titles(jobs: list[Job]) -> list[Job]:
     return out
 
 
+# Marks a title this company already showed us inside the window. NOT a
+# rejection: the user chose to be told rather than to have it hidden, because
+# "Help Desk" and "QA Engineer" are exactly the titles a company reuses for a
+# real second opening, and dropping one would be permanent.
+REPEAT_TITLE_TAG = "🔁 כותרת שכבר הופיעה"
+
+
 def run_chain(jobs: list[Job], profile, chain: list[Filter],
               stats: RunStats | None = None,
-              budget: "detail.DetailBudget | None" = None
+              budget: "detail.DetailBudget | None" = None,
+              seen_titles: set[str] | None = None
               ) -> list[tuple[Job, str | None]]:
     """new jobs -> [(surviving job, display tag or None)].
 
@@ -426,6 +486,12 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
 
     `budget` is the run-wide detail-fetch allowance, shared across every
     company so the cap means what its name says.
+
+    `seen_titles` is this company's pre-run title history (see
+    recently_seen_titles). A survivor whose title is in it is TAGGED, never
+    dropped - the repeat is an annotation on the batch, not a filter verdict,
+    which is why it lives here rather than in a Filter: no filter has access
+    to state, and none should.
 
     An empty chain returns every job untagged, which is exactly the
     pre-patch behaviour."""
@@ -479,6 +545,10 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
                 passed = False
                 break
         if passed:
+            if seen_titles and title_key(job.title) in seen_titles:
+                # First, so it reads before the filter labels - it is a
+                # statement about the alert, not about the job.
+                labels.insert(0, REPEAT_TITLE_TAG)
             # Every filter with something to say gets to say it. Joined rather
             # than overwritten because the labels are independent facts about
             # the job ("role unrecognised" AND "maternity cover"), and the old

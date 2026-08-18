@@ -283,6 +283,26 @@ of `strict` - off by default for the same reason.
 blocked while `Support Engineer` does not. Matching is whole-word throughout -
 `Salesforce Developer` must not read as sales.
 
+**Repeat titles are tagged, never dropped** (`🔁 כותרת שכבר הופיעה`). A posting
+that is closed and re-opened comes back with a NEW id - a new Comeet uid, or a
+new Wix URL slug, which is what Wix's id is derived from - so the diff
+correctly sees a brand-new job and alerts again. Two of the 24 alerts delivered
+between 13 and 18 Aug were this (Kaltura `Help Desk`, Wix `Payroll
+Accountant`); each company had exactly one live posting with that title, so it
+was **not** the per-city duplication `collapse_duplicate_titles` handles.
+
+`filters.recently_seen_titles` reads the company's **pre-run** state snapshot -
+`jobs` already records every posting's title and `first_seen`, so no new
+storage was needed - and marks any title seen in the last
+`REPEAT_TITLE_WINDOW_DAYS` (14). It must be the pre-run snapshot: the state
+write happens before filtering, so the live file already contains the new job
+and every title would match itself.
+
+Tagging rather than suppressing is a deliberate call. `Help Desk` and `QA
+Engineer` are exactly the titles a company reuses for a genuine second req, and
+a drop would be permanent - there is no replay. The tag costs one skimmable
+line; a wrong suppression costs a job.
+
 Temporary and maternity-cover roles are **tagged, never dropped**
 (`⏳ משרה זמנית/חלופת לידה`): Wix's `QA Engineer (Temp position)` and Playtika's
 `UI/UX Designer - maternity leave replacement` are real entry points.
