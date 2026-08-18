@@ -50,7 +50,8 @@ COMPANIES_DIR = PROFILES_DIR / "companies"
 
 # The four ways a description can be reached, cheapest first - the same
 # cheap-to-expensive rule the fetch_type dispatch follows.
-DETAIL_METHODS = ("inline", "html", "embedded_json", "playwright", "none")
+DETAIL_METHODS = ("inline", "html", "embedded_json", "json", "playwright",
+                  "none")
 
 # The ATS platforms that actually have a handler in fetchers/api.py. Kept here
 # as a literal rather than imported from there, because importing the fetchers
@@ -63,7 +64,7 @@ DETAIL_METHODS = ("inline", "html", "embedded_json", "playwright", "none")
 # them used to validate cleanly and then fail once per run, per company, as a
 # fetch error - which needs two consecutive failures before it says anything.
 IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters",
-                             "ashby", "hibob")
+                             "ashby", "hibob", "workday")
 
 # The step verbs fetchers/browser.py's _apply_relevance_filter_actions can
 # replay. An unknown verb raises there, mid-fetch; catching it here means a
@@ -152,7 +153,19 @@ def _validate_detail_fetch(block: dict, where: str) -> None:
                 "the description.")
         return   # inline costs no requests, so the url_* fields don't apply
 
-    if method == "embedded_json":
+    if method == "json":
+        # json_path is this method's content_selector: without it the walk
+        # ends at the whole document, which is never a description. A JSON
+        # response has no markup, so content_selector must NOT be required
+        # here - which is why this is a branch of the same chain rather than a
+        # check before it.
+        if not block.get("json_path"):
+            raise ProfileError(
+                f"{where}detail_fetch.method='json' requires json_path - the "
+                "dotted path to the description inside the JSON response "
+                "(e.g. 'jobPostingInfo.jobDescription').")
+
+    elif method == "embedded_json":
         # The JSON path is this method's equivalent of content_selector:
         # without it the extractor walks to None on every posting and the
         # company reads as undetermined while the profile claims otherwise.

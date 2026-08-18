@@ -1,0 +1,56 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every SmartRecruiters customer. A company record under profiles/companies/ names \"platform\": \"smartrecruiters\" and adds only what differs: slug, name, careers_url, api.endpoint, detail_fetch.url_template and health.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "location.fullLocation"
+    ],
+    "_note": "VERIFIED live 2026-08-19 against `fairtility`. post_fetch per SKILL Step 5 - the postings endpoint takes offset/limit but no location parameter, so the whole board arrives and relevance is decided afterwards. `fullLocation` is read in preference to city+country and that choice matters: city+country renders as 'Tel Aviv-Yafo, il', and while every Israeli CITY in the corpus passes relevance, a posting carrying only the country would read as the bare token 'il', which is_relevant_location correctly declines to treat as Israel (it is also Illinois). fullLocation spells it out - 'Tel Aviv-Yafo, Tel Aviv District, Israel'. The fetcher falls back to city+country when fullLocation is absent."
+  },
+  "api": {
+    "platform": "smartrecruiters",
+    "paginated": true,
+    "location_query_param": null,
+    "fields": {
+      "id": "id",
+      "title": "name",
+      "location": "location.fullLocation",
+      "url": "ref"
+    },
+    "_note": "Endpoint: https://api.smartrecruiters.com/v1/companies/{slug}/postings, paginated with offset/limit against `totalFound`. *** A TRAP WORTH KNOWING: this endpoint answers HTTP 200 with {\"content\": []} for ANY slug, including pure nonsense - checked live against 'thiscompanydoesnotexistatall9x'. *** So a 200 is not evidence a company exists, and discovery must never treat an empty SmartRecruiters board as a hit; see discover_ats.probe_smartrecruiters. Identity IS available, just not where it was first looked for: every posting carries a `company` object with `name`, which is what verified all 12 of this platform's candidates. The posting id is a stable numeric string; the human-facing link is built by api._build_sr_url from the company slug in the endpoint."
+  },
+  "detail_fetch": {
+    "method": "json",
+    "json_path": "jobAd.sections",
+    "inline_section_heading": "title",
+    "inline_section_content": "text",
+    "url_source": "template",
+    "url_template": null,
+    "inline_field": null,
+    "embedded_json_var": null,
+    "embedded_json_path": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://api.smartrecruiters.com/v1/companies/fairtility/postings/743999913809995",
+    "_note": "VERIFIED live 2026-08-19 against the posting named above. The cheaper rung was checked and ruled out: `inline` is impossible because the LISTING carries only `jobAdId`/`defaultJobAd` identifiers, no description text. The per-posting endpoint returns jobAd.sections as a MAPPING - {companyDescription, jobDescription, qualifications, additionalInformation}, each {title, text} - not the list shape Lever and Comeet use, which is why detail._extract_from_json grew a dict branch. Rendering it through render_sections keeps 'Qualifications' as a real <h3>, and that heading is what promotes the bullets beneath it to mandatory in experience.classify_block - which is the whole point, since qualifications is where the years-of-experience number lives. Costs one GET per NEW posting against the run-wide cap of 40. url_template is per company because the slug is in the path."
+  },
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json."
+  },
+  "verified_on": "2026-08-19",
+  "notes": "fetch_smartrecruiters has existed in src/fetchers/api.py since before this file and had never been exercised against a live board by anything in this project - it predated the platform-profile mechanism and no company used it. It is now verified end to end against 12 companies found by the 2026-08-18 sweep, all small Israeli boards (1-6 Israel-relevant postings each). CAVEAT: pagination is therefore confirmed only on boards well under one page. The fetcher's offset/limit loop against `totalFound` is the documented contract and is capped at 50 pages, but 'it paginates correctly' is untested here beyond 100 postings - far weaker evidence than Greenhouse's 437. Re-test before trusting it if a large SmartRecruiters board is ever added."
+}

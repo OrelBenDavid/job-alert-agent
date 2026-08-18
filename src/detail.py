@@ -160,7 +160,7 @@ def wants_detail_fetch(profile) -> bool:
     a disabled filter from triggering any work."""
     cfg = profile.detail_fetch
     return bool(cfg) and cfg.get("method") in ("html", "playwright",
-                                               "embedded_json")
+                                               "embedded_json", "json")
 
 
 def _detail_url(job: Job, cfg: dict) -> str:
@@ -171,9 +171,76 @@ def _detail_url(job: Job, cfg: dict) -> str:
     payloads) that format() would raise KeyError on a perfectly good
     template."""
     if cfg.get("url_source", "job_url") == "job_url":
+        # url_rewrite is a [from, to] pair applied to the posting's own URL,
+        # for the case where the description lives at a URL that is a simple
+        # transform of the public one but is NOT expressible as a template -
+        # because the varying part is the path, which no placeholder carries.
+        #
+        # Added 2026-08-19 for Workday, where the public page
+        #   https://{host}/en-US/{site}/job/...
+        # and the JSON the description lives in
+        #   https://{host}/wday/cxs/{tenant}/{site}/job/...
+        # differ only in that one segment. Verified live against CrowdStrike.
+        rewrite = cfg.get("url_rewrite")
+        if rewrite and len(rewrite) == 2 and rewrite[0] in job.url:
+            return job.url.replace(rewrite[0], rewrite[1], 1)
         return job.url
     template = cfg.get("url_template") or ""
     return template.replace("{id}", job.id).replace("{url}", job.url)
+
+
+def _extract_from_json(markup: str, cfg: dict) -> str | None:
+    """Pulls the description out of a per-posting JSON API response.
+
+    *** Why this is separate from embedded_json (added 2026-08-18) ***
+
+    They sound like the same thing and are not. `embedded_json` digs a JSON
+    blob out of an HTML page by finding a `VAR = {...}` assignment inside a
+    <script>; this method is for an endpoint that returns JSON and nothing
+    else, where there is no assignment to anchor on and json.loads is the
+    whole parse.
+
+    Written for Workday, whose listing carries no description at all - the
+    posting fields are title/externalPath/locationsText/postedOn/bulletFields
+    and that is everything. The description lives at
+    `wday/cxs/{tenant}/{site}{externalPath}` under jobPostingInfo.jobDescription,
+    verified live 2026-08-18 against CrowdStrike (8,934 characters of HTML).
+
+    Costs one GET per posting, the same as html and embedded_json, and draws
+    on the same run-wide budget - which is why the cheaper rungs were checked
+    first and genuinely ruled out rather than skipped.
+    """
+    try:
+        obj = json.loads(markup)
+    except ValueError:
+        return None
+
+    current = obj
+    for part in (cfg.get("json_path") or "").split("."):
+        if not isinstance(current, dict):
+            return None
+        current = current.get(part)
+
+    heading = cfg.get("inline_section_heading", DEFAULT_SECTION_HEADING_FIELD)
+    content = cfg.get("inline_section_content", DEFAULT_SECTION_CONTENT_FIELD)
+
+    # A list of {name, value} sections takes the same path Lever's `lists` and
+    # Comeet's embedded blob take, so section headings still become real <h3>s
+    # and heading promotion in experience.classify_block keeps working.
+    if isinstance(current, list):
+        return render_sections(current, heading, content)
+
+    # A MAPPING of sections is the same data keyed instead of ordered -
+    # SmartRecruiters returns {"qualifications": {"title": ..., "text": ...},
+    # ...}. Verified live 2026-08-19 against fairtility. Its values are taken
+    # in insertion order, which is the order the sections were authored in, so
+    # "Qualifications" still lands under its own heading and the bullets
+    # beneath it are still promoted to mandatory.
+    if isinstance(current, dict) and all(
+            isinstance(v, dict) for v in current.values()):
+        return render_sections(list(current.values()), heading, content)
+
+    return current if isinstance(current, str) else None
 
 
 _EMBEDDED_JSON_VAR_DEFAULT = "POSITION_DATA"
@@ -381,6 +448,11 @@ def enrich(jobs: list[Job], profile, budget: DetailBudget | None = None) -> list
         # text from the fetched page differs.
         return _fetch_html_descriptions(jobs, cfg, profile.slug, budget,
                                         _extract_from_embedded_json)
+    if method == "json":
+        # Same one-GET-per-posting cost as html; the fetched body is JSON
+        # rather than markup, so only the extraction step differs.
+        return _fetch_html_descriptions(jobs, cfg, profile.slug, budget,
+                                        _extract_from_json)
     if method == "playwright":
         return _fetch_playwright_descriptions(jobs, cfg, profile.slug, budget)
 

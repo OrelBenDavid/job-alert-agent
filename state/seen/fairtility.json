@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-18T22:29:25.509361+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "743999913809995": {
+      "title": "Project Manager",
+      "first_seen": "2026-08-18T22:29:25.509361+00:00"
+    },
+    "743999913729733": {
+      "title": "Senior QA Automation",
+      "first_seen": "2026-08-18T22:29:25.509361+00:00"
+    },
+    "743999913257703": {
+      "title": "Data Engineering team leader",
+      "first_seen": "2026-08-18T22:29:25.509361+00:00"
+    },
+    "743999882230763": {
+      "title": "Data Engineering Team Leader",
+      "first_seen": "2026-08-18T22:29:25.509361+00:00"
+    },
+    "743999794762874": {
+      "title": "QA Team Leader",
+      "first_seen": "2026-08-18T22:29:25.509361+00:00"
+    }
+  }
+}

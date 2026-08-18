@@ -62,8 +62,12 @@ def test_a_platform_profile_supplies_the_field_map(name):
 
 
 def test_an_unknown_platform_name_names_the_real_ones():
+    """`workday` used to be the example here, and stopped being unknown on
+    2026-08-19 when it got a platform profile and a handler. Using a name that
+    could plausibly become real again would just re-break this test later, so
+    the example is now one that never will."""
     with pytest.raises(ProfileError, match="unknown platform"):
-        load_platform("workday")
+        load_platform("no_such_ats_anywhere")
 
 
 def test_a_platform_profile_defining_a_slug_is_rejected(tmp_path, monkeypatch):
@@ -316,14 +320,29 @@ def test_biocatch_is_the_comeet_board_not_the_abandoned_lever_one():
 def test_no_unresolved_dead_row_from_phase_one_was_imported():
     """Of the ten identifiers that 404'd in Phase 1, three were later
     re-resolved to a working board on a different platform and re-added
-    (hibob, viz_ai, insightec - see their `resolved_from`). The other seven
-    moved to platforms with no handler here, or self-host. Importing one of
-    those would mean a company that fails every run forever."""
+    (hibob, viz_ai, insightec - see their `resolved_from`). The rest moved to
+    platforms with no handler here, or self-host. Importing one of those would
+    mean a company that fails every run forever.
+
+    *** Two came back on 2026-08-19, and the reason is the point. ***
+
+    digital_turbine and neogames were excluded for exactly one reason: both had
+    moved to Workday, and Workday had no handler. That stopped being true when
+    the Workday adapter landed, so they are now imported like any other
+    company - digital_turbine on its own tenant, neogames on Aristocrat's after
+    the acquisition. The list below is 'still unreachable', not 'permanently
+    banned', and shrinking it is what implementing a platform is FOR."""
     slugs = {p.slug for p in load_all()[0]}
-    for dead in ("digital_turbine", "massivit_3d_printing_technologies",
-                 "cyberbit", "cyberproof", "deep_instinct", "neogames",
-                 "ree_automotive"):
+    for dead in ("massivit_3d_printing_technologies", "cyberbit", "cyberproof",
+                 "deep_instinct", "ree_automotive"):
         assert dead not in slugs, dead
+
+    # The two Workday recoveries, asserted positively so this records a gain
+    # rather than silently dropping two names from a list.
+    for recovered in ("digital_turbine", "neogames"):
+        assert recovered in slugs, recovered
+        profile = load_profile(find_profile_path(recovered))
+        assert profile.raw["platform"] == "workday"
 
 
 @pytest.mark.parametrize("slug,platform", [

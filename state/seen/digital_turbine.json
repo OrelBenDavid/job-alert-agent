@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T22:29:25.507356+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "JR101044": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR101046": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR101042": {
+      "title": "Senior Mobile Engineer (Android / iOS, On-Device & SDK)",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR101047": {
+      "title": "Senior Infrastructure Engineer",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR101049": {
+      "title": "Senior Talent Acquisition Partner",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR100618": {
+      "title": "Senior Data Scientist | Research, Code & Impact",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    },
+    "JR100908": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-18T22:29:25.507356+00:00"
+    }
+  }
+}
