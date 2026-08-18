@@ -224,7 +224,7 @@ def _fetch_single_page(page, profile, cfg: dict) -> list[Job]:
     jobs = []
     for card in page.query_selector_all(cfg["job_selector"]):
         job = _read_job_card(card, profile.slug, cfg.get("link_base", profile.careers_url), cfg)
-        if job and is_relevant_location(job.location):
+        if job and is_relevant_location(job.location, job.title):
             jobs.append(job)
     return jobs
 
@@ -298,7 +298,7 @@ def _fetch_url_pages(page, profile, cfg: dict) -> list[Job]:
         previous_fingerprint = fingerprint
 
         for job in page_jobs:
-            if job.id in seen_ids or not is_relevant_location(job.location):
+            if job.id in seen_ids or not is_relevant_location(job.location, job.title):
                 continue
             seen_ids.add(job.id)
             jobs.append(job)
@@ -331,7 +331,7 @@ def _fetch_click_next(page, profile, cfg: dict) -> list[Job]:
                 continue
             new_here += 1
             seen_ids.add(job.id)
-            if is_relevant_location(job.location):
+            if is_relevant_location(job.location, job.title):
                 jobs.append(job)
 
         next_btn = page.query_selector(pag["next_button_selector"])
@@ -386,7 +386,7 @@ def _fetch_scroll(page, profile, cfg: dict) -> list[Job]:
     for card in page.query_selector_all(cfg["job_selector"]):
         job = _read_job_card(card, profile.slug,
                              cfg.get("link_base", profile.careers_url), cfg)
-        if job and is_relevant_location(job.location):
+        if job and is_relevant_location(job.location, job.title):
             jobs_by_id[job.id] = job   # dedupe - scrolling sometimes duplicates cards
     return list(jobs_by_id.values())
 

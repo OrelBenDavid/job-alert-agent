@@ -25,23 +25,26 @@
       "location": "location.name",
       "url": "url_comeet_hosted_page"
     },
-    "_note": "The stable id is `uid` (e.g. '71.E67'), NOT `id` - Comeet has no top-level `id` field, and falling back to the link would produce a different key for the same posting the moment the slug in that URL changed. Verified 238 unique uids across the largest board in the set. `url_comeet_hosted_page` is an absolute www.comeet.com link; `url_active_page` also exists and points at the company's own branded careers page, but it is not always present and sometimes carries a tracking query - the hosted page is the one that is always there."
+    "_note": "The stable id is `uid` (e.g. '71.E67'), NOT `id` - Comeet has no top-level `id` field, and falling back to the link would produce a different key for the same posting the moment the slug in that URL changed. Verified 238 unique uids across the largest board in the set. `url_comeet_hosted_page` is an absolute www.comeet.com link; `url_active_page` also exists and points at the company's own branded careers page, but it is not always present and sometimes carries a tracking query - the hosted page is the one that is always there. `extra_params` adds &details=true to the one listing call. That single parameter is what carries every posting's description in the listing itself - see detail_fetch below for why it replaced a per-posting page fetch.",
+    "extra_params": {
+      "details": "true"
+    }
   },
   "detail_fetch": {
-    "method": "embedded_json",
-    "url_source": "job_url",
-    "url_template": null,
-    "embedded_json_var": "POSITION_DATA",
-    "embedded_json_path": "custom_fields.details",
+    "method": "inline",
+    "inline_field": "details",
     "inline_section_heading": "name",
     "inline_section_content": "value",
-    "inline_field": null,
+    "url_source": null,
+    "url_template": null,
+    "embedded_json_var": null,
+    "embedded_json_path": null,
     "content_selector": null,
     "content_is_html": true,
     "requirements_section_selector": null,
     "wait_for": null,
-    "verified_on_job_url": "https://www.comeet.com/jobs/alice/D5.005/account-manager/2D.A6D",
-    "_note": "VERIFIED live 2026-08-13 against the posting above, and measured across a random sample of Comeet companies. *** THIS REPLACES A BLOCK THAT WAS WRONG. *** It previously said method 'none' and justified that with 'the listing response carries `details` - an array of {name, value} sections holding the description'. That was written without being verified and is false: NEITHER the positions listing NOR the per-position API endpoint returns any description field. The consequence was not cosmetic - it left the experience filter unable to evaluate 105 of this project's 145 companies, so 72% of alerts arrived tagged 'undetermined' and untriaged. What is true: the hosted posting page carries the description inside a `POSITION_DATA = {...}` script assignment, at custom_fields.details, as a list of {name, value} sections whose names include 'Requirements'. method='html' cannot reach it - the page is an Angular app, so the text is not in the server-rendered DOM and no content_selector matches. Hence embedded_json. The section NAME becomes an <h3> via render_sections, and that heading promotion is what makes the unmarked bullets under 'Requirements' count as mandatory in experience.classify_block. COST: one plain GET per NEW posting, bounded by the run-wide MAX_DETAIL_FETCHES_PER_RUN of 40 - not per company. On a 3-hourly cron that is a handful of requests; a company reworking its whole board spends the cap and the overflow stays undetermined, which fails open like every other miss."
+    "verified_on_job_url": "https://www.comeet.co/careers-api/2.0/company/68.006/positions?details=true",
+    "_note": "VERIFIED live 2026-08-18 against all 105 Comeet boards in this project: 105/105 returned a populated `details` array. *** THIS REPLACES A BLOCK THAT WAS COSTLY, NOT WRONG. *** The previous block used method='embedded_json' to scrape POSITION_DATA out of each posting's hosted page, and it worked - but at one extra HTTP GET and ~1.06s per NEW posting, against the run-wide MAX_DETAIL_FETCHES_PER_RUN cap of 40. That cap is the single thing that stops this project scaling past a few hundred companies: one company reworking its board spends the whole run's allowance, and every posting past it stays 'undetermined', which fails open and is delivered untriaged. What was missed earlier is that the listing endpoint DOES serve the description - it just needs &details=true, which the previous note explicitly (and incorrectly) ruled out. Cost measured on fetcherr: the board response grows 57 KB -> 244 KB, once per company per run, and the per-posting requests drop to ZERO and become uncapped. Shape is the same {name, value} section array the embedded_json path was reaching, so inline_section_heading/content are unchanged and the 'Requirements' heading still becomes an <h3> via render_sections - which is what makes its bullets count as mandatory in experience.classify_block."
   },
   "health": {
     "expected_min_jobs": 0,

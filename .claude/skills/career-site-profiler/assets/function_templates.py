@@ -201,10 +201,14 @@ def _normalize(text: str) -> str:
     with a space would split into "be er"/"ra anana" and miss the match -
     this was caught by running the test cases, not by reading the code.
     """
-    text = unicodedata.normalize("NFKC", text or "")   # unify character variants
+    # NFKD + combining-mark stripping, NOT NFKC: NFKC leaves an accented
+    # character composed, so "Remote, Sao Paulo" spelled with a tilde never
+    # matched the "sao paulo" marker and a Brazil-only role was delivered.
+    text = unicodedata.normalize("NFKD", text or "")
+    text = "".join(c for c in text if not unicodedata.combining(c))
     text = text.lower()
     text = re.sub(r"['\\u2019\\u05f3]", "", text)         # apostrophes - deleted
-    text = re.sub(r"[\\-_/|,.()\\[\\]]", " ", text)       # rest of punctuation -> space
+    text = re.sub(r"[\\-_/|,.()\\[\\]:;]", " ", text)       # rest of punctuation -> space
     text = re.sub(r"\\s+", " ", text).strip()            # collapse repeated spaces
     return f" {text} "                                  # padding, for whole-word search
 
@@ -217,24 +221,40 @@ def is_israel_location(location_text: str) -> bool:
     return any(f" {kw} " in norm for kw in ISRAEL_KEYWORDS)
 
 
-def is_qualified_remote(location_text: str) -> bool:
+def names_foreign_region(text: str) -> bool:
+    """Whether any foreign country/city/region/timezone is named in `text`.
+    Split out so the same list can be applied to a job TITLE - see below."""
+    norm = _normalize(text)
+    return any(f" {m} " in norm for m in FOREIGN_REGION_MARKERS)
+
+
+def is_qualified_remote(location_text: str, title: str = "") -> bool:
     """Is this a remote job that can actually be staffed from Israel.
 
-    Two conditions: (a) there's a remote signal, (b) there is *no* mention
-    of an explicit foreign region. The second condition is the whole
-    point - without it "Remote - US" would be kept.
+    Three conditions: (a) there's a remote signal, (b) no explicit foreign
+    region in the LOCATION, and (c) none in the TITLE either. Without (b),
+    "Remote - US" would be kept. Without (c), so would "Technical Account
+    Manager - UK" posted at location "Remote" - which is how a foreign-anchored
+    role is routinely written.
+
+    The title is consulted ONLY here, never for a job with a physical
+    location: an Israeli role must not be dropped for naming a foreign market
+    it serves ("Sales Engineer, DACH region - Tel Aviv").
     """
     norm = _normalize(location_text)
     if not any(f" {kw} " in norm for kw in REMOTE_KEYWORDS):
         return False                                    # (a) not remote at all
     if is_israel_location(location_text):
         return True                                     # "Remote (Israel)" - clearly yes
-    return not any(f" {m} " in norm for m in FOREIGN_REGION_MARKERS)     # (b)
+    if names_foreign_region(location_text):
+        return False                                    # (b)
+    return not names_foreign_region(title)              # (c)
 
 
-def is_relevant_location(location_text: str) -> bool:
+def is_relevant_location(location_text: str, title: str = "") -> bool:
     """The check every template calls: Israel, or qualified remote."""
-    return is_israel_location(location_text) or is_qualified_remote(location_text)
+    return (is_israel_location(location_text)
+            or is_qualified_remote(location_text, title))
 '''
 
 

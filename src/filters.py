@@ -238,13 +238,49 @@ def _count(stats: RunStats, filter_name: str, verdict: Verdict,
         stats.record(filter_name, "undetermined")
 
 
+def collapse_duplicate_titles(jobs: list[Job]) -> list[Job]:
+    """Keeps one job per (company, normalized title) within a single batch.
+
+    *** Why this is display-only, and why that is enough ***
+
+    Several boards publish one posting PER CITY for a single opening. Comeet
+    even admits it in the id - "B6.D6A" and "B6.D6A-9D.50A" are the same
+    MLOps role in Netanya and Tel Aviv - and Greenhouse/Mobileye issue
+    genuinely distinct uuids per site, so the diff cannot tell them apart and
+    must not try: they ARE different ids, and treating them as one would mean
+    inventing an identity the ATS does not have.
+
+    Measured across the corpus: 52 redundant rows, 3.9% of postings, 23 of
+    them at one company. The user saw "MLOps Engineer" twice in one batch.
+
+    So the duplicates stay in state - every id is still recorded as seen,
+    exactly as before, and nothing is ever re-detected - and only the ALERT
+    collapses. The consequence is deliberate and small: if the same role's
+    second city appears in a LATER run than the first, it is a new id in a
+    new batch and gets its own line. Persisting a title across runs to stop
+    that would be a second identity key living alongside the id, which is the
+    thing this project's whole diff design refuses to have.
+
+    The kept row is the first in profile order, so the choice is stable."""
+    seen: set[tuple[str, str]] = set()
+    out: list[Job] = []
+    for job in jobs:
+        key = (job.company, re.sub(r"\s+", " ", (job.title or "").strip().lower()))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(job)
+    return out
+
+
 def run_chain(jobs: list[Job], profile, chain: list[Filter],
               stats: RunStats | None = None,
               budget: "detail.DetailBudget | None" = None
               ) -> list[tuple[Job, str | None]]:
     """new jobs -> [(surviving job, display tag or None)].
 
-    Three passes, in this order for cost reasons:
+    Four passes, in this order for cost reasons:
+      0. collapse per-city duplicates - free, and shrinks every pass below it
       1. prescreen every job   - free, no requests
       2. one detail fetch for whatever survived, and only if some enabled
          filter actually wants descriptions
@@ -259,6 +295,9 @@ def run_chain(jobs: list[Job], profile, chain: list[Filter],
 
     if not chain:
         return [(job, None) for job in jobs]
+
+    # Before the prescreen, so a duplicate never costs a detail fetch either.
+    jobs = collapse_duplicate_titles(jobs)
 
     survivors_of_prescreen: list[Job] = []
     for job in jobs:

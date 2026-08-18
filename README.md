@@ -48,6 +48,12 @@ GitHub Actions - there is no server.
   `Hybrid - Boston`, `Remote - Zurich`. The city half of that list matters
   only at scale: with three companies those postings barely appear, with a
   hundred they are a steady trickle of jobs nobody here can take.
+  A **qualified-remote posting also has its title checked** against the same
+  marker list, because the region is routinely written there instead -
+  `Technical Account Manager - UK` at location `Remote`. The title is consulted
+  on that path only: a role with a physical Israeli location is relevant
+  whatever its title says, or `Sales Engineer, DACH - Tel Aviv` would be
+  dropped for naming the market it serves.
 - **The fetch phase - and only the fetch phase - runs concurrently**
   (`fetchers.fetch_all`). Everything after it stays sequential and in profile
   order. See below.
@@ -114,7 +120,12 @@ because the fetch budget can only stop companies that haven't *started*: a
 thread holding a Chromium can't be interrupted.
 
 The detail layer has a matching budget: `MAX_DETAIL_FETCHES_PER_RUN` (40) is
-a **run-wide** allowance shared by every company, not 40 per company.
+a **run-wide** allowance shared by every company, not 40 per company. As of
+2026-08-18 it is almost never reached: **98% of postings now carry their
+description inline** in the listing response, so they cost no request at all.
+Only `wix` (schema v2, no `detail_fetch`) and any future HTML-detail profile
+draw on it. That headroom is what makes a much larger company count viable -
+the cap, not the fetch time, was the binding constraint.
 
 **Telegram sends are paced** at ~1/second (`JOB_ALERT_SEND_INTERVAL`) and a
 429 is retried after the `retry_after` Telegram asks for. Every company sends
@@ -371,7 +382,16 @@ excluded, but the stated evidence was stronger than it was.
 `check.yml` dates from the 3-company era and only fires from the default
 branch, so **merging this branch is what makes it live.**
 
-**A relevance-filter leak was found and fixed while verifying the seed.**
+**A second `offices[]` defect was fixed on 2026-08-18.** The fetcher treated
+`offices[]` as an OR against `location.name`, so any posting on a board whose
+regional office list happens to include Tel Aviv was kept regardless of where
+the role actually is. Datadog attaches
+`[Bordeaux, Lisbon, Lyon, Madrid, ..., Tel Aviv]` to roles located in Paris and
+Madrid: 13 of them leaked, 21 across the corpus. `offices[]` is now consulted
+**only when `location.name` carries no place** (empty, `Multiple Locations`),
+which is what the platform profile always said it was for.
+
+**An earlier relevance-filter leak was found and fixed while verifying the seed.**
 Greenhouse publishes a separate `offices[]` array whose entries the fetcher
 checks individually, and office names are bare sub-national remote regions with
 no country token — `Remote - Colorado`, `Remote - Texas`. Checked alone those
@@ -443,15 +463,18 @@ nor the Wix page produces that shape of string.
 - Note: no Mobileye posting requires one year or less (the lowest found is
   two years, in 6 postings), which is why `passed_with_number` is 0.
   `/minexp 2` would open up those 6.
-- **Comeet (105 companies) uses `detail_fetch.method: embedded_json`** — added
-  2026-08-13. Its description is not in either API response and not in the
-  posting page's DOM (the page is an Angular app); it lives in a
-  `POSITION_DATA = {...}` script assignment, at `custom_fields.details`, as
-  named sections. Costs one plain GET per **new** posting, bounded by the
-  run-wide `MAX_DETAIL_FETCHES_PER_RUN`. Before this, Comeet was declared
-  `detail_fetch: none` on a claim that proved false, and the experience filter
-  was silently unable to evaluate **72% of the corpus** — see
-  `_onboarding/experience_filter_audit.md`.
+- **Comeet (105 companies) uses `detail_fetch.method: inline`** — changed
+  2026-08-18, from the `embedded_json` page scrape added 2026-08-13. The
+  listing endpoint *does* serve every description; it just needs
+  `&details=true`, which `api.extra_params` now adds. Verified live against
+  all 105 boards: 105/105 returned a populated `details` array, the same
+  `{name, value}` section shape the page scrape was reaching.
+  The scrape worked but cost **one GET and ~1.06s per new posting** against the
+  run-wide cap of 40; this costs **zero extra requests** and is uncapped, for
+  57 KB → 244 KB on the one listing call. That is the change that unblocks
+  scaling the company count: a single company reworking its board used to spend
+  the entire run's detail allowance, leaving every later posting `undetermined`
+  and delivered untriaged.
 - **`wix` is still `schema_version: 2` with no `detail_fetch`**, so the
   filter only works at the title level there and everything else is sent with
   `⚠️`. That is correct fail-open behaviour, not a bug. Determining how to

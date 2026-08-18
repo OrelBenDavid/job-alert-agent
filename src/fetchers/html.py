@@ -31,7 +31,7 @@ def _fetch_css(profile) -> list[Job]:
         title = title_el.get_text(strip=True) if title_el else ""
         location = location_el.get_text(strip=True) if location_el else ""
         href = link_el.get("href", "") if link_el else ""
-        if not title or not is_relevant_location(location):
+        if not title or not is_relevant_location(location, title):
             continue
         canonical = canonicalize_url(href, cfg.get("link_base", profile.careers_url))
         jobs.append(Job(
@@ -60,7 +60,7 @@ def _fetch_jsonld(profile) -> list[Job]:
             addr = ((entry.get("jobLocation") or {}).get("address") or {})
             location = ", ".join(x for x in [addr.get("addressLocality"),
                                              addr.get("addressCountry")] if x)
-            if not is_relevant_location(location):
+            if not is_relevant_location(location, entry.get("title", "")):
                 continue
             canonical = canonicalize_url(entry.get("url", ""),
                                          cfg.get("link_base", profile.careers_url))
