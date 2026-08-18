@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-18T22:32:22.718039+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "R404697": {
+      "title": "Algorithm Engineer",
+      "first_seen": "2026-08-18T22:29:25.513373+00:00"
+    },
+    "R410635": {
+      "title": "Associate Director, Medical Affairs, Oncology",
+      "first_seen": "2026-08-18T22:29:25.513373+00:00"
+    },
+    "R389182": {
+      "title": "PCBA Technologist for Engineering Team",
+      "first_seen": "2026-08-18T22:29:25.513373+00:00"
+    },
+    "R405231": {
+      "title": "Financial Administrative Support Intern – Clinical Department",
+      "first_seen": "2026-08-18T22:29:25.513373+00:00"
+    }
+  }
+}

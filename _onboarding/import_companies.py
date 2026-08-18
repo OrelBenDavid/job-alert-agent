@@ -46,6 +46,7 @@ produces an alert. Measured 2026-08-18: that rule drops 225 of 342 found boards.
 
 import argparse
 import csv
+import glob
 import json
 import os
 import re
@@ -56,7 +57,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "..", "src"))
 
-from discover_ats import resolve_comeet_token   # noqa: E402
+from discover_ats import (resolve_comeet_token,            # noqa: E402
+                          resolve_workday_israel_facet)
 
 PROFILES_DIR = os.path.join(HERE, "..", "profiles")
 COMPANIES_DIR = os.path.join(PROFILES_DIR, "companies")
@@ -84,6 +86,43 @@ DELIBERATE_DROPS = {
         "long-dead postings into the company permanently - nothing ever "
         "retires them from state, so they would sit in /jobs forever. See "
         "verify_report.md."),
+
+    ("Paradox", "workday"): (
+        "The careers-page fingerprint resolved Paradox to Workday tenant "
+        "'workday/wd5/Workday' - which is WORKDAY INC'S OWN careers site, 341 "
+        "postings of Workday's own hiring, not Paradox's. Paradox's page links "
+        "to its ATS vendor rather than embedding its own board, and the "
+        "fingerprint route cannot tell the two apart: it trusts an id because "
+        "the company published it, and here the company published someone "
+        "else's. Checked live 2026-08-19 - the top postings are 'Regional Sales "
+        "Director, Large Enterprise' in USA/IL/Chicago, where IL is Illinois. "
+        "This is the fingerprint route's version of the slug-collision problem "
+        "and the reason a vendor-named tenant deserves a second look."),
+
+    ("Gong.io", "greenhouse"): (
+        "*** This one shipped as a live defect and is the reason the "
+        "endpoint-collision check below exists. *** The seed list carries the "
+        "same company under two names - 'Gong' in the original 2026-08-13 "
+        "shortlist and 'Gong.io' in israeli_companies_seed.csv - and both "
+        "resolve to Greenhouse board 'gongio'. The 2026-08-18 import had no "
+        "collision check, so it wrote gong_io.json alongside the existing "
+        "gong.json and both went live: one board, two profiles, two state "
+        "files, every Israeli Gong posting diffed and alerted TWICE. Nothing "
+        "caught it, because both companies look perfectly healthy - which is "
+        "exactly the silent-duplication failure the check now prevents. "
+        "gong.json is kept as the original; gong_io.json and its state file "
+        "were removed on 2026-08-19."),
+
+    ("Flow Security", "workday"): (
+        "Resolves to 'crowdstrike/wd5/crowdstrikecareers', the SAME board as "
+        "Crowdstrike Israel R D, because CrowdStrike acquired Flow Security and "
+        "its careers page now points at the acquirer's board. Importing both "
+        "would monitor one board under two names: every Israeli CrowdStrike "
+        "posting would be diffed, stored and alerted twice, and no health check "
+        "would notice because both companies look perfectly healthy. "
+        "Crowdstrike Israel R D is kept - it is the board's actual owner and "
+        "the two carry identical counts. Detected by the endpoint-collision "
+        "check below, not by hand."),
 }
 
 
@@ -227,6 +266,67 @@ def build_lever(row):
     }, None
 
 
+def build_smartrecruiters(row):
+    """The detail URL carries the company slug, so url_template is per company.
+
+    `{id}` is substituted by detail._detail_url with the posting id, which the
+    listing publishes directly.
+    """
+    slug = row["id"]
+    return {
+        "careers_url": "https://careers.smartrecruiters.com/%s" % slug,
+        "endpoint": ("https://api.smartrecruiters.com/v1/companies/%s/postings"
+                     % slug),
+        "url_template": ("https://api.smartrecruiters.com/v1/companies/%s"
+                         "/postings/{id}" % slug),
+        "resolved_from": (
+            "SmartRecruiters company slug '%s', confirmed live at import time. "
+            "Identity was proven from the board's own `company.name` field on "
+            "its postings - this endpoint answers 200 with an empty list for "
+            "any slug, so a reachable board is NOT on its own evidence that "
+            "the company exists." % slug),
+    }, None
+
+
+def build_workday(row):
+    """Resolve the tenant's Israel facet id and build the POST endpoint.
+
+    The id arrives as 'tenant/wdN/site' - all three are needed, and none of
+    them is derivable from a company name, which is why Workday is found only
+    by fingerprinting a careers page.
+
+    The facet is baked in HERE for the same reason the Comeet token is: it is a
+    Workday-internal GUID that never changes, and resolving it per run would
+    cost an extra request per company per run for a constant. Unlike the Comeet
+    token, a missing facet is not fatal - the fetcher falls back to reading the
+    board unfiltered and deciding relevance post-fetch - so a failure to
+    resolve is recorded in the note rather than dropping the company.
+    """
+    parts = row["id"].split("/")
+    if len(parts) != 3:
+        return None, "workday id must be 'tenant/wdN/site', got %r" % row["id"]
+    tenant, wd, site = parts
+    host = "https://%s.%s.myworkdayjobs.com" % (tenant, wd)
+    facet = resolve_workday_israel_facet(tenant, wd, site)
+    return {
+        "careers_url": "%s/en-US/%s" % (host, site),
+        "endpoint": "%s/wday/cxs/%s/%s/jobs" % (host, tenant, site),
+        "israel_facet": facet,
+        # The description lives at the CXS path, which differs from the public
+        # posting URL by exactly one segment - see detail._detail_url.
+        "url_rewrite": ["/en-US/", "/wday/cxs/%s/" % tenant],
+        "resolved_from": (
+            "Found by fingerprinting the company's own careers page during the "
+            "2026-08-18 sweep: '%s' (Workday tenant/host/site). The Israel "
+            "locationCountry facet %s at import time."
+            % (row["id"],
+               "resolved to %s and was confirmed by a live filtered call" % facet
+               if facet else
+               "could NOT be resolved - the board will be read unfiltered and "
+               "filtered post-fetch, which costs more requests but is correct")),
+    }, None
+
+
 def build_ashby(row):
     slug = row["id"]
     return {
@@ -244,6 +344,8 @@ BUILDERS = {
     "lever": build_lever,
     "lever_eu": build_lever,
     "ashby": build_ashby,
+    "workday": build_workday,
+    "smartrecruiters": build_smartrecruiters,
 }
 
 
@@ -325,6 +427,8 @@ def build_record(row):
         "resolved_from": built["resolved_from"],
         "api": {"endpoint": built["endpoint"]},
         "health": health_for(int(row["israel_jobs"] or 0)),
+        # Per-company overrides a builder may add on top of the platform file.
+        # Kept out of the literal above so the common shape stays readable.
         "verified_on": VERIFIED_ON,
         "notes": (
             provenance +
@@ -336,6 +440,14 @@ def build_record(row):
                ", %s of them in a target job family" % row["on_family"]
                if row.get("on_family") else "")),
     }
+
+    if built.get("israel_facet") is not None:
+        record["api"]["israel_facet"] = built["israel_facet"]
+    if built.get("url_rewrite"):
+        record["detail_fetch"] = {"url_rewrite": built["url_rewrite"]}
+    if built.get("url_template"):
+        record.setdefault("detail_fetch", {})["url_template"] = built["url_template"]
+
     return record, None
 
 
@@ -398,6 +510,39 @@ def main():
         by_slug.setdefault(record["slug"], []).append(record)
     collisions = {s: rs for s, rs in by_slug.items() if len(rs) > 1}
 
+    # *** Endpoint collisions - two companies, one board ***
+    #
+    # Different from a slug collision, and not caught by it: the names and slugs
+    # differ, so every file is written and every profile loads, but two records
+    # point at the SAME board. Both would then diff, store and alert the same
+    # postings, and both would look healthy while doing it.
+    #
+    # This is not hypothetical. The 2026-08-18 sweep produced exactly one:
+    # CrowdStrike acquired Flow Security, so Flow Security's careers page now
+    # fingerprints to CrowdStrike's Workday board. Acquisitions are the general
+    # case and there will be more of them, so this is a check rather than a
+    # one-off drop - the drop above records the decision, this catches the next.
+    #
+    # It also covers collisions against companies ALREADY imported, which a
+    # within-batch check alone would miss.
+    endpoints = {}
+    for path in (glob.glob(os.path.join(COMPANIES_DIR, "*.json"))
+                 if os.path.isdir(COMPANIES_DIR) else []):
+        try:
+            doc = json.load(open(path, encoding="utf-8"))
+        except (ValueError, OSError):
+            continue
+        endpoint = (doc.get("api") or {}).get("endpoint")
+        if endpoint:
+            endpoints.setdefault(endpoint, set()).add(doc.get("name", path))
+    for record in records:
+        endpoints.setdefault(record["api"]["endpoint"], set()).add(record["name"])
+    # Keyed by NAME, not by occurrence: re-running the import re-derives records
+    # for companies already on disk, and a company matching itself is not a
+    # collision. Only two DIFFERENT names on one board are.
+    endpoint_collisions = {e: sorted(n) for e, n in endpoints.items()
+                           if len(n) > 1}
+
     existing = set()
     if os.path.isdir(COMPANIES_DIR):
         existing = {f[:-5] for f in os.listdir(COMPANIES_DIR)
@@ -438,6 +583,14 @@ def main():
         print("SLUG COLLISIONS - nothing written:")
         for slug, rs in sorted(collisions.items()):
             print("  %s <- %s" % (slug, [r["name"] for r in rs]))
+        return 1
+
+    if endpoint_collisions:
+        print()
+        print("ENDPOINT COLLISIONS - two companies share one board, nothing "
+              "written. Resolve by adding the loser to DELIBERATE_DROPS:")
+        for endpoint, names in sorted(endpoint_collisions.items()):
+            print("  %s\n      <- %s" % (endpoint, names))
         return 1
 
     if args.dry_run:

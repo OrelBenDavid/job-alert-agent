@@ -1,0 +1,95 @@
+{
+  "last_success": "2026-08-18T22:32:22.718734+00:00",
+  "last_count": 22,
+  "consecutive_failures": 0,
+  "jobs": {
+    "R21779": {
+      "title": "הנדסאי/ת אלקטרוניקה לתפקיד בהנדסת ייצור",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R21699": {
+      "title": "Production Tech / טכנאי/ת בד\"ס",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20927": {
+      "title": "Temp Document Support for 2 months",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20830": {
+      "title": "Buyer",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R21379": {
+      "title": "Facilities Specialist / איש/ת אחזקה",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20140": {
+      "title": "מבקר/ת איכות /Quality inspector",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20033": {
+      "title": "מחסנאי/ת זמני/ת ל9 חודשים /  Temp. Distribution Coordinator",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20492": {
+      "title": "Optics Cleaner/עובד/ת להכנת עדשות אופטיות לציפוי",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R21122": {
+      "title": "Temp Calibration Technician/Assembler / מכייל/ת מרכיב/ה זמני/ת",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R21131": {
+      "title": "מבקר/ת איכות זמני/ת  / Temp Quality inspector",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R21009": {
+      "title": "Production Tech/ טכנאית בד\"ס",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R19676": {
+      "title": "טכנאי/ת ייצור רכיבים אופטיים מדויקים/ Optical Precision Manufacturing Technician",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R19658": {
+      "title": "Optics Assembler  מרכיב/ה אופטומכני/ת",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20869": {
+      "title": "Finishing Operator / מבקר/ת איכות במחלקת שירות",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20031": {
+      "title": "מנהל/ת קבלני משנה/Supervisory Logistics",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20498": {
+      "title": "Accounting Support/ מנהל.ת חשבונות",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R20281": {
+      "title": "Calibration Technician/מכייל/ת מכשירי מדידה",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R19801": {
+      "title": "Production Tech 2 טכנאי/ת בד\"ס",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R19825": {
+      "title": "Production Tech/ טכנאית בד\"ס",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R18799": {
+      "title": "Shipper/Receiver מחסנאי\\ת",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R17586": {
+      "title": "Finishing operator/מבקר/ת איכות",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R17584": {
+      "title": "Finishing operator/מבקר/ת איכות",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    }
+  }
+}

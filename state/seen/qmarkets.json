@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-18T22:32:23.127171+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "743999768643936": {
+      "title": "Product UX/UI Expert",
+      "first_seen": "2026-08-18T22:29:25.529183+00:00"
+    },
+    "743999768633807": {
+      "title": "Customer Success Manager",
+      "first_seen": "2026-08-18T22:29:25.529183+00:00"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-18T22:32:22.683596+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "74299085": {
+      "title": "System Integration Technician",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "74298813": {
+      "title": "Sales Manager",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "74298809": {
+      "title": "Systems Integration Expert",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    }
+  }
+}

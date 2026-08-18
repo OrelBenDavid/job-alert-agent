@@ -369,7 +369,14 @@ def fetch_smartrecruiters(profile) -> list[Job]:
             break
         for p in postings:
             loc = p.get("location") or {}
-            location = ", ".join(x for x in [loc.get("city"), loc.get("country")] if x)
+            # `fullLocation` spells the country out - "Tel Aviv-Yafo, Tel Aviv
+            # District, Israel" - while city+country gives "Tel Aviv-Yafo, il".
+            # Both pass relevance when a recognised Israeli city is present,
+            # but a posting with only a country would read as bare "il", which
+            # is_relevant_location correctly declines to treat as Israel.
+            # Verified live 2026-08-19 that fullLocation is populated.
+            location = loc.get("fullLocation") or ", ".join(
+                x for x in [loc.get("city"), loc.get("country")] if x)
             if not is_relevant_location(location, p.get("name", "").strip()):
                 continue
             job_id = str(p.get("id") or p.get("ref", ""))
@@ -383,6 +390,88 @@ def fetch_smartrecruiters(profile) -> list[Job]:
         if offset >= data.get("totalFound", 0):
             break
     return jobs
+
+
+def fetch_workday(profile) -> list[Job]:
+    """Workday. VERIFIED live 2026-08-18 against crowdstrike/wd5 (449 postings
+    company-wide, 13 in Israel) and verily/wd1 (71).
+
+    Two things make this different from every other handler here.
+
+    *** It is a POST, not a GET. *** The public job search is
+    `wday/cxs/{tenant}/{site}/jobs` with a JSON body carrying the page window
+    and the applied facets. Everything else in this module is a plain GET.
+
+    *** It filters SERVER-SIDE, and it has to. *** Workday pages at 20 per
+    request, so reading CrowdStrike's 449-posting board would cost 23 requests
+    per company per run. `israel_facet` in the profile is that tenant's
+    `locationCountry` facet id for Israel; applying it returns the 13 Israeli
+    postings in ONE request. That is the skill's filter-before-fetching rule
+    being worth ~22 requests a run, per company.
+
+    The facet id is a Workday-internal GUID and differs per customer, so it is
+    resolved once at import time and baked into the profile - the same
+    treatment, for the same reason, as the Comeet token.
+
+    If a profile carries no facet the fetch still works, unfiltered, and
+    relevance is decided post-fetch like every other platform. That path is
+    bounded by MAX_PAGES because an unfiltered board can be large.
+    """
+    api = profile.raw["api"]
+    fields = api["fields"]
+    facet = api.get("israel_facet")
+    applied = {"locationCountry": [facet]} if facet else {}
+
+    jobs: list[Job] = []
+    offset, limit = 0, 20
+    max_pages = 5 if facet else 25    # a filtered board is small by construction
+    for _ in range(max_pages):
+        r = requests.post(api["endpoint"], json={
+            "appliedFacets": applied, "limit": limit, "offset": offset,
+            "searchText": "",
+        }, timeout=20)
+        r.raise_for_status()
+        data = r.json()
+        postings = data.get("jobPostings", [])
+        if not postings:
+            break
+
+        for p in postings:
+            location = _get_by_path(p, fields["location"]) or ""
+            title = (_get_by_path(p, fields["title"]) or "").strip()
+            if not is_relevant_location(location, title):
+                continue
+            # bulletFields[0] is the requisition id (e.g. "R29093") - stable
+            # across edits, unlike externalPath, which is derived from the
+            # title and changes when the title is reworded.
+            bullets = p.get("bulletFields") or []
+            job_id = str(bullets[0]) if bullets else p.get("externalPath", "")
+            jobs.append(Job(
+                id=job_id, title=title, location=location.strip(),
+                url=_build_workday_url(api, p.get("externalPath", "")),
+                company=profile.slug,
+                description=_inline_description(profile, p),
+            ))
+
+        offset += limit
+        if offset >= int(data.get("total") or 0):
+            break
+    return jobs
+
+
+def _build_workday_url(api: dict, external_path: str) -> str:
+    """The human-facing posting URL, built from the CXS endpoint.
+
+    Verified live 2026-08-18: the CXS endpoint
+    `https://{host}/wday/cxs/{tenant}/{site}/jobs` maps to the public page
+    `https://{host}/en-US/{site}{externalPath}`, which returns HTTP 200.
+    Derived rather than stored so the two cannot drift apart.
+    """
+    if not external_path:
+        return ""
+    base = api["endpoint"].split("/wday/cxs/")[0]
+    site = api["endpoint"].rstrip("/").split("/")[-2]
+    return f"{base}/en-US/{site}{external_path}"
 
 
 def _build_sr_url(api: dict, job_id: str) -> str:
@@ -403,9 +492,13 @@ _PLATFORM_DISPATCH = {
                              # against both boards in the shortlist
     "hibob": fetch_hibob,   # added 2026-08-13; single-company, see the
                              # handler for why that was judged worth it
-    # workable/recruitee/workday: planned but not implemented - per
-    # api_platforms.md they're UNVERIFIED. Only added after a live
-    # verification, never before.
+    "workday": fetch_workday,   # added 2026-08-19, after a live verification
+                                 # against crowdstrike/wd5 and verily/wd1
+    # workable/recruitee: still not implemented. Both were confirmed reachable
+    # by the 2026-08-18 sweep, and both were then deliberately declined: they
+    # account for 3 companies and 4 Israel-relevant on-family postings between
+    # them, which does not pay for two more handlers to keep working. Recorded
+    # rather than forgotten - the candidates are in the README.
 }
 
 

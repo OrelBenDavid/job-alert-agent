@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-18T22:32:23.132457+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "R322419": {
+      "title": "Head of monetization and Economy",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R322383": {
+      "title": "Monetization Manager",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R322307": {
+      "title": "VP Product",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R322331": {
+      "title": "VP Monetization",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R322323": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R321811": {
+      "title": "Senior Platform Engineer",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    },
+    "R321769": {
+      "title": "VIP Monetization Manager",
+      "first_seen": "2026-08-18T22:29:25.533195+00:00"
+    }
+  }
+}

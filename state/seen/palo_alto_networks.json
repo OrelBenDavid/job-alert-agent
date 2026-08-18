@@ -1,0 +1,263 @@
+{
+  "last_success": "2026-08-18T22:32:22.728635+00:00",
+  "last_count": 64,
+  "consecutive_failures": 0,
+  "jobs": {
+    "JR-017959": {
+      "title": "Senior / Principal Security Research - Agent ML Team (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020565": {
+      "title": "Principal / Sr. Principal Security Research - Data Security Team (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-016670": {
+      "title": "Principal/Senior Security Researcher - Autonomous EDR- Windows (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-017432": {
+      "title": "Senior Product Manager - Agentic Endpoint Security (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-009239": {
+      "title": "AI Lead (Prisma Browser - Agents Fleets)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020552": {
+      "title": "Senior Technical Support Engineer (Cortex XSIAM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-016462": {
+      "title": "Principal/ Senior Principal Software Engineer | Cortex Detection team",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018806": {
+      "title": "Senior Frontend Engineer (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019115": {
+      "title": "Principal Frontend Engineer (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020949": {
+      "title": "Sr/Principal Engineer Software - AI Transformation (Cortex Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-016519": {
+      "title": "Senior/ Principal Software Engineer Access Team (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-014386": {
+      "title": "Senior/ Principal Backend Engineer (Prisma Browser)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020435": {
+      "title": "Senior Staff DevOps Engineer - Cloud Security",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020832": {
+      "title": "Staff InfoSec Engineer – Endpoint, Identity & AI Security",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-021134": {
+      "title": "IT Internal Audit Manager",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020727": {
+      "title": "Senior Linux Detection Researcher (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019054": {
+      "title": "Technical Enablement Engineer (AgentiX Support) Cortex",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018100": {
+      "title": "R&D Manager - C++ (EPM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020787": {
+      "title": "Senior Staff Fullstack Engineer p-Cloud (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018849": {
+      "title": "Sr. Product Manager, Technology Alliances",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018775": {
+      "title": "Principal/Senior Principal Software Engineer Data Platform ( Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-021052": {
+      "title": "Senior Staff C++ Win Engineer (EPM-Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019122": {
+      "title": "Sr Software Engineer -Email Security (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019895": {
+      "title": "Principal DevOps Engineer (Prisma Access Browser)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-016613": {
+      "title": "Senior AI Engineer (Cortex XSOAR/XSIAM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018041": {
+      "title": "Principal Engineer Software- Identity User Management (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020077": {
+      "title": "Principal Software Engineer (Directory Services)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019543": {
+      "title": "Principal/ Senior Backend Engineer - Data Classification",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020863": {
+      "title": "Principal/ Senior Software Engineer | Backend & Cloud (Cortex Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019918": {
+      "title": "Principal Product Analyst (Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020384": {
+      "title": "Senior Staff Software Engineer (Data & AI Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020507": {
+      "title": "Sr Staff Product Owner (Conjur Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018160": {
+      "title": "Principal Software Engineer (Secure Agentic AI) - Petach Tikva \\ Be'er Sheva",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020214": {
+      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020205": {
+      "title": "Manager, SW Engineering- Identity SSO- (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020210": {
+      "title": "Principal Software Engineer – Identity SSO (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020212": {
+      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020213": {
+      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020078": {
+      "title": "Principal Engineer Software- Authentication Team (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020087": {
+      "title": "Principal Engineer Software- Authentication Team (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019911": {
+      "title": "Sr Staff Engineer Software- Modern Auth (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019915": {
+      "title": "Principal Engineer Software- Modern Auth (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020037": {
+      "title": "Sr Staff Engineer Software- Authentication Team (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020211": {
+      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020036": {
+      "title": "Sr Staff Engineer Software- Authentication Team (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018540": {
+      "title": "Senior Staff Software Engineer (Secure Agentic AI)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-015044": {
+      "title": "Senior Backend Engineer - AppSec ShiftLeft (Cortex Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-014874": {
+      "title": "Principal UX designer (Cloud Application Security)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018842": {
+      "title": "Senior/Principal Backend Engineer - Collection Team (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018844": {
+      "title": "Senior/Principal Backend Engineer - Application (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-017263": {
+      "title": "Product Design Manager -UX/UI (Cortex XSIAM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018560": {
+      "title": "Staff Software Engineer (Credential Provider)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019735": {
+      "title": "Engineering Escalation Manager (Identity)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019542": {
+      "title": "Senior/Principal SRE Engineer",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020031": {
+      "title": "Manager SW Engineering (Directory Services)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020084": {
+      "title": "Sr Staff Engineer Software (Directory Services)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020035": {
+      "title": "Staff Software Engineer (Directory Services)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-017319": {
+      "title": "Sr Technical Program Manager",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018846": {
+      "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019438": {
+      "title": "Manager, SW Engineering (IGA) - Idira",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-018845": {
+      "title": "Sr Staff Engineer Software -Secure Web Sessions (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-020201": {
+      "title": "Senior DevOps Engineer (Cortex Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019131": {
+      "title": "Sr Principal/ Performance & Scalability Architect (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-019026": {
+      "title": "Technical Program Leader - Enterprise SaaS (Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    }
+  }
+}

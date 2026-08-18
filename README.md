@@ -403,19 +403,96 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-**233 companies are registered** as of 2026-08-18, up from 145. All 233 load
-with no profile errors, and a full live fetch returns **1,919 Israel-relevant
-postings**, of which **1,246 are in a target job family** (233/233 fetched; one
-transient `ReadTimeout` on `media_force`, which returns 2 jobs on retry).
+**256 companies are registered** as of 2026-08-19, up from 145. All 256 load
+with no profile errors, and a full live fetch returns **2,085 Israel-relevant
+postings**, of which **1,351 are in a target job family** (256/256 fetched, 0
+failures).
 
 | Platform | Companies | Shape |
 |---|---:|---|
 | Comeet | 108 | thin records over `_platforms/comeet.json` |
-| Greenhouse | 83 | thin records over `_platforms/greenhouse.json` |
-| Ashby | 24 | thin records |
+| Greenhouse | 82 | thin records over `_platforms/greenhouse.json` |
+| Ashby | 26 | thin records |
 | Lever | 16 | thin records (1 EU-hosted) |
+| SmartRecruiters | 13 | added 2026-08-19 — the fetcher existed but no platform profile did |
+| Workday | 9 | added 2026-08-19 — new fetcher, new platform profile |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+### The 2026-08-19 pass: Workday, SmartRecruiters, and a duplicate that had shipped
+
+24 more companies, closing every gap the 2026-08-18 import left open except
+the two that were deliberately declined.
+
+**A duplicate was found and removed.** `gong.json` (from the original 145) and
+`gong_io.json` (from the 2026-08-18 import) both pointed at Greenhouse board
+`gongio` — the seed list carries the same company under two names. Both were
+live on `main`, so Gong's board was being monitored twice: every Israeli posting
+diffed, stored and alerted **twice**, with both companies looking perfectly
+healthy the whole time. `gong_io` and its state file are gone, and
+`import_companies.py` now has an **endpoint-collision check** that refuses to
+write anything when two different names resolve to one board. It is checked
+against companies already on disk, not just within a batch, which is what would
+have caught this.
+
+**Workday** (9 companies) needed a fetcher, a platform profile, and a new
+`detail_fetch` method:
+
+- It is the only **POST** endpoint in the project, and the only one that filters
+  **server-side**. That is not an optimisation: Workday pages at 20 postings per
+  request, so CrowdStrike's 449-posting board would cost 23 requests per company
+  per run. Its `locationCountry` facet returns the 13 Israeli ones in **one**.
+  The facet id is a per-tenant GUID, resolved once at import and baked in — the
+  same treatment as the Comeet token, for the same reason.
+- Its listing carries **no description at all**, and its detail endpoint returns
+  JSON rather than markup, so neither `inline` nor `html` could reach it. Hence
+  **`detail_fetch.method: "json"`**, new in `detail.py` — distinct from
+  `embedded_json`, which anchors on a `VAR = {...}` assignment inside a page and
+  has nothing to anchor on here. Verified live: 8,890-character descriptions,
+  and `read_experience` parsing real numbers out of them.
+- **Two companies came back from the dead because of it.** `digital_turbine` and
+  `neogames` were written off in Phase 1 for exactly one reason — they had moved
+  to Workday and Workday had no handler. `tests/test_platform_profiles.py`
+  records the recovery.
+
+**SmartRecruiters** (13 companies) needed only a platform profile;
+`fetch_smartrecruiters` had existed since before the platform mechanism and had
+never been run against a live board by anything here. Two things were corrected
+while verifying it: it now reads `location.fullLocation` in preference to
+`city + country`, because the latter renders as `"Tel Aviv-Yafo, il"` and a
+posting carrying only the country would read as bare `il` (which is also
+Illinois, and correctly rejected); and its detail returns `jobAd.sections` as a
+**mapping** rather than a list, so `_extract_from_json` grew a dict branch that
+keeps `Qualifications` a real heading.
+
+**All 14 previously-`unverifiable` candidates were resolved, and none needed a
+human after all.** Two identity checks were missing rather than impossible:
+
+- SmartRecruiters publishes the company name on **every posting**
+  (`posting.company.name`) — it just has no company-name *endpoint*, which is
+  where `board_name()` had looked. That verified 12 of the 14 outright.
+- An un-branded Ashby board reports its title as the bare word `"Jobs"`, so
+  there was no name to compare. `company_named_in_postings()` asks the board's
+  own text instead: **Lemonade names itself in 34 of 34 postings**, Simply in 4
+  of 5. That is stronger evidence than a title, not weaker.
+
+**Two candidates were dropped, both recorded in `DELIBERATE_DROPS`:**
+
+| Dropped | Why |
+|---|---|
+| Paradox | Its careers page links to **Workday Inc's own careers site** (341 postings of Workday's hiring), not its own board. The fingerprint route trusts an id because the company published it — and here the company published its vendor's. |
+| Flow Security | Resolves to CrowdStrike's board; CrowdStrike acquired them. Caught by the new endpoint-collision check, not by eye. |
+
+**Still deliberately not implemented**: Workable (1 company) and Recruitee (2),
+worth **4 on-family postings between them** — not enough to justify two more
+handlers to keep working. The candidates are recorded so the decision is
+recoverable.
+
+**Datadog's health floor was lowered from 4 to 0.** It had been firing on
+consecutive scheduled runs. Datadog genuinely shrank — 16 Israel-relevant
+postings at import, 3 now and stable at 3 — so this was a stale floor, not a
+broken fetch. Per the importer's own `FLOOR_MIN_COUNT` rule a board under 12
+postings gets no absolute floor at all.
 
 ### The 2026-08-18 import: 88 companies from the discovery sweep
 

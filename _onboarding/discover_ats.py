@@ -596,9 +596,18 @@ def board_name(platform, slug):
                    `lemonade` returns a bare "Jobs" - so it still falls through
                    to None sometimes, which is honest rather than guessed.
 
-    Returns None for smartrecruiters: no company-name endpoint was found on
-    2026-08-18. A None here means "unverifiable", NOT "verified" - see
-    confidence_for.
+      smartrecruiters - CORRECTED 2026-08-19. This previously returned None,
+                   on the basis that no company-name ENDPOINT exists. That is
+                   true and it was the wrong place to look: every posting
+                   carries a `company` object, so the name is in the listing
+                   response that was already being fetched. Verified against all
+                   12 SmartRecruiters candidates from the sweep - `fairtility`
+                   -> "Fairtility", `nexarinc` -> "Nexar Inc", `slauthio` ->
+                   "Slauth.io", `ta9` -> "TA9". All 12 had been sitting in the
+                   `unverifiable` bucket for want of this one field.
+
+    A None here means "unverifiable", NOT "verified" - see confidence_for,
+    which then falls back to the board's own posting text.
 
     The two page fetches are only ever reached for a slug that already returned
     postings, so they cost one extra request per candidate hit, not per probe.
@@ -613,6 +622,11 @@ def board_name(platform, slug):
         d = get_json(f"https://{slug}.recruitee.com/api/offers/")
         offers = (d or {}).get("offers") or []
         return offers[0].get("company_name") if offers else None
+    if platform == "smartrecruiters":
+        d = get_json("https://api.smartrecruiters.com/v1/companies/"
+                     f"{slug}/postings?limit=1")
+        content = (d or {}).get("content") or []
+        return ((content[0].get("company") or {}).get("name") or "").strip() or None
     if platform in ("lever", "lever_eu"):
         return _page_title(f"https://jobs.lever.co/{slug}")
     if platform == "ashby":
@@ -658,6 +672,47 @@ def looks_like_demo(jobs):
     return all(_DEMO_TITLE_RE.search(title or "") for title, _ in jobs)
 
 
+def company_named_in_postings(seed_name, platform, slug, threshold=0.5):
+    """Do the board's own job descriptions name this company?
+
+    The fallback for a platform that publishes no company name anywhere. It is
+    evidence of the same kind - the company's own words on its own board - and
+    in practice it is stronger than a title, because a description that says
+    "every role at Lemonade" cannot plausibly belong to anyone else.
+
+    VERIFIED live 2026-08-19 on the two Ashby candidates the name check could
+    not resolve: `lemonade` names Lemonade in 34 of 34 postings, `simply` names
+    Simply in 4 of 5. An un-branded Ashby board reports its title as the bare
+    word "Jobs", which is why those two had no name to check against.
+
+    Deliberately limited to platforms whose LISTING already carries the
+    description, so this costs one request and never a per-posting walk.
+    Requires a majority of postings to mention the name: one mention could be a
+    passing reference to a partner or a customer, most of them cannot.
+    """
+    tokens = _norm_name(seed_name)
+    if not tokens:
+        return False
+    # The distinctive token is the longest one - "Play" is common, "Perfect"
+    # less so; matching on the whole normalised string would miss "Nexar Inc"
+    # written as plain "Nexar" in prose.
+    needle = max(tokens, key=len)
+    if len(needle) < 4:            # too short to be distinctive in prose
+        return False
+    pattern = re.compile(r"\b" + re.escape(needle) + r"\b", re.I)
+
+    if platform == "ashby":
+        d = get_json("https://api.ashbyhq.com/posting-api/job-board/" + slug)
+        texts = [(j.get("descriptionPlain") or "") for j in (d or {}).get("jobs", [])]
+    else:
+        return False               # only verified for Ashby; do not guess
+
+    if not texts:
+        return False
+    hits = sum(1 for t in texts if pattern.search(t))
+    return hits >= max(1, int(len(texts) * threshold))
+
+
 def confidence_for(seed_name, platform, slug, jobs):
     """One of 'verified' / 'unverifiable' / 'rejected'.
 
@@ -670,9 +725,14 @@ def confidence_for(seed_name, platform, slug, jobs):
     if looks_like_demo(jobs):
         return "rejected"
     name = board_name(platform, slug)
-    if name is None:
-        return "unverifiable"
-    return "verified" if names_match(seed_name, name) else "rejected"
+    if name is not None:
+        return "verified" if names_match(seed_name, name) else "rejected"
+    # No published name. Before giving up, ask the board's own text - see
+    # company_named_in_postings. This is what recovers an un-branded Ashby
+    # board, whose title is the bare word "Jobs".
+    if company_named_in_postings(seed_name, platform, slug):
+        return "verified"
+    return "unverifiable"
 
 
 # --------------------------------------------------------------- careers-page route

@@ -1,0 +1,51 @@
+{
+  "last_success": "2026-08-18T22:32:22.691568+00:00",
+  "last_count": 11,
+  "consecutive_failures": 0,
+  "jobs": {
+    "R29093": {
+      "title": "Sr. Engineer, Falcon Secure Access (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R28713": {
+      "title": "Sr. Software Engineer - Application Analysis (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R28887": {
+      "title": "Sr. MacOS Sensor Engineer, Data Security (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R29353": {
+      "title": "DevOps Engineer III",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R29391": {
+      "title": "Software Detection Engineer - Cloud, Identity Protection (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R27215": {
+      "title": "Sr. Data Engineer - Cloud Security (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R27457": {
+      "title": "Sr. Software Engineer - Browser Security",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R27843": {
+      "title": "Sr. Engineer - Sensor",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R29566": {
+      "title": "Sr. Software Engineer II - Browser Security",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R29485": {
+      "title": "Sr. Software Engineer - Cloud, Identity Protection (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    },
+    "R24822": {
+      "title": "Sr. Software Engineer - Browser Extension, Data Protection (Hybrid, ISR)",
+      "first_seen": "2026-08-18T22:29:25.505325+00:00"
+    }
+  }
+}

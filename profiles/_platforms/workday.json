@@ -1,0 +1,56 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Workday customer. A company record under profiles/companies/ names \"platform\": \"workday\" and adds only what differs: slug, name, careers_url, api.endpoint, api.israel_facet and health. Merged company-over-platform by profiles.resolve_profile, then validated as one document.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+  "israel_filter": {
+    "method": "url_param",
+    "structure": "none",
+    "param": "locationCountry",
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "locationsText"
+    ],
+    "_note": "VERIFIED live 2026-08-18. method is url_param in the schema's vocabulary, and the nuance is worth stating: the filter IS applied in the request, but as a facet in the POST BODY rather than a query string - Workday's search endpoint takes no query parameters at all. The schema has no separate name for that, and url_param is the honest one of the three, because the alternative (post_fetch) would claim the whole board is downloaded when it is not. This is the FIRST platform here that genuinely filters before fetching, and it is not an optimisation - it is what makes Workday affordable. The endpoint pages at 20 postings per request, so CrowdStrike's 449-posting board costs 23 requests per company per run unfiltered; the facet returns the 13 Israeli postings in ONE. `param` names the facet KEY and the per-tenant value lives in each company record as api.israel_facet. `locationsText` is still checked post-fetch by the fetcher: it costs nothing and it is the only defence if a facet id is ever rotated and silently stops matching. Without the facet, locationsText reads 'N Locations' on multi-site postings - the same unresolvable shape as Greenhouse's 'Multiple Locations'."
+  },
+  "api": {
+    "platform": "workday",
+    "paginated": true,
+    "location_query_param": null,
+    "israel_facet": null,
+    "fields": {
+      "id": "bulletFields.0",
+      "title": "title",
+      "location": "locationsText",
+      "url": "externalPath"
+    },
+    "_note": "The endpoint is a POST, not a GET - the only one in this project. Body: {appliedFacets, limit, offset, searchText}; response {total, jobPostings:[...]}. The stable id is bulletFields[0], the requisition id ('R29093'), NOT externalPath: the path is derived from the job title and changes when a title is reworded, which would produce a duplicate alert for an unchanged posting. `url` maps to externalPath and is turned into the public page by api._build_workday_url - verified live that https://{host}/en-US/{site}{externalPath} returns HTTP 200. `israel_facet` is null here and set per company: it is a Workday-internal GUID that differs per customer, resolved once at import time and baked in, exactly like the Comeet token and for the same reason - resolving it per run would cost an extra request per company for a value that never changes. If a facet is ever rotated the fetch degrades to unfiltered rather than failing, and the post-fetch locationsText check still keeps the results correct."
+  },
+  "detail_fetch": {
+    "method": "json",
+    "json_path": "jobPostingInfo.jobDescription",
+    "url_source": "job_url",
+    "url_template": null,
+    "url_rewrite": null,
+    "inline_field": null,
+    "embedded_json_var": null,
+    "embedded_json_path": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/job/Israel---Tel-Aviv/Sr-Engineer--Falcon-Secure-Access--Hybrid--ISR-_R29093",
+    "_note": "VERIFIED live 2026-08-18 against the posting named above: jobPostingInfo.jobDescription, 8,934 characters of real HTML. The cheaper rungs were checked and genuinely ruled out, per the project's cheap-to-expensive rule: `inline` is impossible because the LISTING carries no description at all - a jobPosting is exactly {title, externalPath, locationsText, postedOn, bulletFields} and nothing more. `html` is impossible because the detail endpoint returns JSON, not markup, so no content_selector can reach it. Hence method 'json', which was added to detail.py for this platform - it is NOT the same as embedded_json, which anchors on a `VAR = {...}` assignment inside a page and has nothing to anchor on here. Cost is one GET per NEW posting against the run-wide MAX_DETAIL_FETCHES_PER_RUN cap of 40, the same profile the old Comeet page scrape had. That is affordable at 11 Workday companies with ordinary churn; if Workday ever grows to a large share of the corpus, this is the thing that will need revisiting first. The detail URL cannot be a template: the varying part is the PATH, which no placeholder carries ({id} is the requisition id, {url} the public page). So url_source stays job_url and each company carries a url_rewrite pair - see detail._detail_url - which turns https://{host}/en-US/{site}/job/... into https://{host}/wday/cxs/{tenant}/{site}/job/... by replacing one segment."
+  },
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json."
+  },
+  "verified_on": "2026-08-18",
+  "notes": "Endpoint template: https://{tenant}.{wd}.myworkdayjobs.com/wday/cxs/{tenant}/{site}/jobs, POST. Verified live 2026-08-18 against crowdstrike/wd5/crowdstrikecareers (449 postings company-wide, 13 Israeli via the facet, 11 of them on-family) and verily/wd1/Verily_Careers (71 postings). Workday is the SECOND most common ATS among Israeli careers pages in the 600-page sweep of 2026-08-18 (14 of 68 fingerprints), behind Comeet and ahead of Greenhouse. It is reachable ONLY from a company's own careers page: the tenant/site pair cannot be derived from a company name, so discover_ats.py deliberately excludes it from slug guessing and finds it by fingerprinting instead. CAVEAT worth keeping: pagination is confirmed only up to the 5-page cap the fetcher applies to a facet-filtered board. The largest Israeli board observed is 13 postings, so 'a filtered board fits in a handful of pages' is well evidenced for these 11 companies and untested beyond ~100. If a Workday company with a large Israeli presence is ever added, re-test before trusting the cap. `postedOn` is a RELATIVE string ('Posted 12 Days Ago'), not a timestamp - deliberately not mapped, because a relative string cannot be compared across runs."
+}
