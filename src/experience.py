@@ -101,14 +101,43 @@ _HEADING_MAX_CHARS = 90
 _BULLET_GLYPHS = "•▪◦‣∙*"
 
 
+# Typographic quotes, folded to their ASCII equivalents. NFKC does NOT do
+# this - it leaves U+2019 alone - and every pattern in this module is written
+# with a straight apostrophe.
+#
+# *** Why this matters more than it looks ***
+#
+# Found 2026-08-18 on a posting the user actually received: Cognyte's "Support
+# Continuous Improvement Specialist" states "1-2 years' hands-on experience"
+# under the heading "For that mission you'll need:" - written with a curly
+# apostrophe, as anything typed in a rich-text editor is. The heading pattern
+# `you'?ll need` matched the straight-apostrophe spelling and missed the curly
+# one, so the heading never registered as a requirements heading, the bullet
+# under it stayed "unknown", and its stated number was never taken. The job was
+# delivered tagged "no experience requirement stated" when the requirement was
+# right there in the text.
+#
+# The failure is silent and always in the fail-OPEN direction, which is why it
+# survived: a posting demanding 5 years reads as "undetermined" and is sent.
+_SMART_QUOTES = {
+    "‘": "'", "’": "'", "‚": "'", "‛": "'",
+    "“": '"', "”": '"', "„": '"', "‟": '"',
+    "′": "'", "″": '"', "׳": "'", "״": '"',
+}
+_SMART_QUOTE_RE = re.compile("[" + "".join(_SMART_QUOTES) + "]")
+
+
 def _clean(text: str) -> str:
     """Normalizes one block of text for both matching and storage.
 
     NFKC folds the full-width/compatibility forms that HTML descriptions
     pick up; the bidi control characters (RLM/LRM/embedding marks) are
     invisible but land *between* a number and its unit in Hebrew text,
-    which would break every regex here if left in place."""
+    which would break every regex here if left in place; and the smart
+    quotes above are folded because NFKC leaves them and every pattern in
+    this module spells its apostrophe straight."""
     text = unicodedata.normalize("NFKC", text or "")
+    text = _SMART_QUOTE_RE.sub(lambda m: _SMART_QUOTES[m.group()], text)
     text = re.sub(r"[‎‏‪-‮⁦-⁩]", "", text)
     text = text.replace("\xa0", " ")            # &nbsp; is extremely common in ATS HTML
     return re.sub(r"[ \t]+", " ", text).strip()
