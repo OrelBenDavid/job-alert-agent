@@ -441,11 +441,30 @@ PROBES = {
     "workday": probe_workday,
 }
 
-# Platforms a slug can meaningfully be GUESSED for. Comeet and Workday are
-# excluded on purpose and for different reasons: a Comeet probe costs a ~750 KB
-# board page per candidate, and a Workday tenant/site pair is not derivable from
-# a company name at all. Both are reached through fingerprint_careers_page.
-GUESSABLE = ("greenhouse", "lever", "lever_eu", "ashby", "workable",
+# Platforms a slug can meaningfully be GUESSED for. Three are excluded on
+# purpose, for three different reasons - all of them measured:
+#
+#   comeet   - a probe costs a ~750 KB board page per candidate slug.
+#   workday  - a tenant/site pair is not derivable from a company name at all.
+#   workable - *** IT RATE-LIMITS, AND HARD. *** Measured 2026-08-18: a sweep of
+#              100 companies issued 3,281 requests and drew 425 HTTP 429s, and
+#              an isolated six-request probe immediately afterwards returned 429
+#              for every single one while greenhouse, lever, ashby, recruitee and
+#              smartrecruiters all answered a clean 404. apply.workable.com was
+#              the sole source. It recovers after a pause, so this is throttling
+#              rather than a ban, but brute-forcing ~7 slugs per company across
+#              7,800 companies is exactly the traffic shape that triggers it.
+#
+#              This also invalidates an earlier reading in this project: Workable
+#              appeared to have near-zero Israeli market share because it
+#              returned no hits across 451 probed companies. That measurement was
+#              taken WHILE the sweep was throttling it, and get_json turns a 429
+#              into None - which is indistinguishable from "no such board". Its
+#              real share is unmeasured, not zero.
+#
+# All three remain in PROBES and are reached through fingerprint_careers_page,
+# which asks the company for its own id and costs one request instead of dozens.
+GUESSABLE = ("greenhouse", "lever", "lever_eu", "ashby",
              "smartrecruiters", "recruitee")
 
 
