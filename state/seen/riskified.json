@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-18T09:42:04.770208+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-18T12:29:11.537081+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8686880002": {
@@ -17,10 +17,6 @@
     },
     "8591838002": {
       "title": "Payment Fraud Product Manager",
-      "first_seen": "2026-08-13T11:24:41.040134+00:00"
-    },
-    "8193312002": {
-      "title": "Senior Global Revenue Enablement Manager",
       "first_seen": "2026-08-13T11:24:41.040134+00:00"
     },
     "8623925002": {
