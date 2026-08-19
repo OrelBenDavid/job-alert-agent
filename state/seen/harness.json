@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T15:39:40.394829+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-19T18:45:53.902793+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "5198641007": {
@@ -21,10 +21,6 @@
     },
     "5174597007": {
       "title": "Professional Services Engagement Manager",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
-    "5063514007": {
-      "title": "Senior Customer Architect - AppSec (Enterprise and Federal)",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     },
     "5088261007": {

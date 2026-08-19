@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T15:39:40.384983+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-19T18:45:53.881000+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "DF.E64": {
@@ -50,6 +50,10 @@
     "98.E66": {
       "title": "Material Planner",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "2D.074": {
+      "title": "OD & Learning Manager",
+      "first_seen": "2026-08-19T18:45:53.881000+00:00"
     },
     "B7.369": {
       "title": "Python Linux Software Developer",

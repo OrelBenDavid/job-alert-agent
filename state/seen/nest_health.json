@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T15:39:40.402603+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-19T18:45:53.919813+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "5528b514-c9a0-4bf0-8e63-cadf5755928e": {
@@ -10,10 +10,6 @@
     "73723440-9f7c-4ca3-b526-d25a160e1349": {
       "title": "Join the Nest - Corporate & Operations",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "608749fd-d9e4-4c0d-9a05-4e1078c60ae7": {
-      "title": "Fractional Executive Assistant",
-      "first_seen": "2026-08-19T15:39:40.402603+00:00"
     }
   }
 }
