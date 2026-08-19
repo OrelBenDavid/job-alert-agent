@@ -140,3 +140,67 @@ def test_a_bad_worker_env_var_falls_back_instead_of_crashing():
          patch.object(fetchers, "fetch_jobs", side_effect=lambda p: []):
         outcomes = fetchers.fetch_all([_FakeProfile("c1")])
     assert outcomes["c1"].ok
+
+
+# ---------------------------------------------------------------------------
+# The deadline, and what happens to work that finished just after it
+# ---------------------------------------------------------------------------
+
+def test_a_company_not_started_before_the_deadline_is_simply_absent():
+    """Absent, not failed. run.py reports it as skipped and does NOT bump its
+    failure counter, because nothing about it went wrong."""
+    profiles = [_FakeProfile(f"c{i}") for i in range(6)]
+
+    def slow(profile):
+        time.sleep(0.4)
+        return [_job(profile.slug, 1)]
+
+    with patch.object(fetchers, "fetch_jobs", side_effect=slow):
+        with patch.dict("os.environ", {"JOB_ALERT_NETWORK_WORKERS": "1"}):
+            outcomes = fetchers.fetch_all(
+                profiles, deadline=time.monotonic() + 0.5)
+
+    assert len(outcomes) < len(profiles)
+    assert all(o.ok for o in outcomes.values())
+
+
+def test_fetches_that_completed_after_the_deadline_are_kept_not_discarded():
+    """Breaking out of the result loop stops CONSUMING results, not producing
+    them: the pools' shutdown still waits for everything already running, and
+    queued work behind a finished slot can complete too. That work is paid for
+    - the requests went out and the responses came back - and discarding it
+    meant those companies were reported as "not fetched" and re-fetched from
+    scratch next run.
+
+    Every worker here finishes at roughly the same moment, just past a
+    deliberately tiny deadline, so the loop times out on the first result and
+    the harvest is what supplies the rest."""
+    profiles = [_FakeProfile(f"c{i}") for i in range(4)]
+
+    started = threading.Barrier(len(profiles))
+
+    def synchronized(profile):
+        started.wait(timeout=5)      # all four run concurrently, none queued
+        time.sleep(0.3)
+        return [_job(profile.slug, 1)]
+
+    with patch.object(fetchers, "fetch_jobs", side_effect=synchronized):
+        with patch.dict("os.environ", {"JOB_ALERT_NETWORK_WORKERS": "4"}):
+            outcomes = fetchers.fetch_all(
+                profiles, deadline=time.monotonic() + 0.05)
+
+    # Without the harvest this would be 0 or 1: the deadline expires while all
+    # four are mid-flight, and only the one being waited on was ever recorded.
+    assert set(outcomes) == {p.slug for p in profiles}
+    assert all(o.ok and len(o.jobs) == 1 for o in outcomes.values())
+
+
+def test_the_harvest_never_double_counts_an_already_recorded_outcome():
+    profiles = [_FakeProfile(f"c{i}") for i in range(3)]
+
+    with patch.object(fetchers, "fetch_jobs",
+                      side_effect=lambda p: [_job(p.slug, 1)]):
+        outcomes = fetchers.fetch_all(profiles, deadline=time.monotonic() + 30)
+
+    assert len(outcomes) == 3
+    assert all(len(o.jobs) == 1 for o in outcomes.values())

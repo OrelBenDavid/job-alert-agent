@@ -8,6 +8,11 @@ This is where the project's most important principle is enforced: if a run
 returns 0 jobs after a previous run returned a healthy count, that's a
 failure, not "no jobs". State is not overwritten, and the alert that goes
 out is a maintenance alert, not "0 new jobs".
+
+That suspicion is held for a bounded number of runs, never indefinitely -
+see the two ACCEPT_AFTER constants. A gate with no exit is not a safer gate:
+it either blocks real postings (a partial collapse) or repeats one alert
+every cron interval until the user stops reading them (a total zero).
 """
 
 import json
@@ -117,23 +122,60 @@ _COLLAPSE_RATIO = 0.4
 # normal; the absolute floor and the zero check cover the small companies.
 _COLLAPSE_MIN_BASELINE = 10
 
-# How many consecutive PARTIAL collapses to hold out for before accepting the
-# lower count as the new normal.
+# How many consecutive gate hits to hold out for before accepting the new
+# count as normal. Every kind of hit has one - see below for why they differ.
 #
-# This escape hatch is not optional, and it is the difference between the two
-# kinds of gate hit. Freezing state on a total zero is free - there are no
-# jobs to miss. Freezing it on a partial collapse is NOT: process_company
-# returns no new jobs while frozen, so a false positive silently stops
-# detecting real postings at that company, which is precisely the "quiet while
-# looking healthy" failure the gate exists to prevent. Holding for three runs
-# (~9 hours) reports the drop twice - crossing the alert threshold - and then
-# resumes on its own rather than waiting for a human who may be asleep.
+# This escape hatch is not optional. Freezing state on a PARTIAL collapse
+# actively loses jobs: process_company returns no new jobs while frozen, so a
+# false positive silently stops detecting real postings at that company, which
+# is precisely the "quiet while looking healthy" failure the gate exists to
+# prevent. Holding for three runs (~9 hours) reports the drop twice - crossing
+# the alert threshold - and then resumes on its own rather than waiting for a
+# human who may be asleep.
 PARTIAL_COLLAPSE_ACCEPT_AFTER = 3
+
+# *** The total-zero case needs one too - added 2026-08-19 ***
+#
+# It used to have none, on the reasoning that freezing state on a zero is free
+# because there are no jobs to miss. That is true about JOBS and false about
+# the alert: should_alert_failure fires on every run once the counter is past
+# FAILURE_ALERT_THRESHOLD, so a company that has genuinely closed its last
+# Israeli role sends the identical maintenance alert every three hours,
+# forever, with no path back to healthy that does not involve a human editing
+# a JSON file.
+#
+# Observed: panaya's single Israel-relevant posting was filled, and the bot
+# sent the same "got 0 jobs after the previous run returned 1" alert on six
+# consecutive runs. Its endpoint was verified live and is perfectly healthy -
+# it returns four postings, in Brazil, the USA and Germany. There is no
+# breakage to fix, and no number a human could have set that would have made
+# the alert stop.
+#
+# That is worse than it sounds, because the cost is not noise, it is the
+# gate's credibility: a maintenance alert that cries wolf every three hours is
+# one the user stops reading, and the next one will be real.
+#
+# LONGER than the partial threshold, deliberately - the two costs are genuinely
+# different, and holding a zero really is the cheaper mistake. Six runs is
+# ~18 hours, so a transient outage at one company never reaches it, while a
+# real closure resolves itself inside a day.
+#
+# What accepting costs, stated plainly: `jobs` is emptied, so if this WAS a
+# breakage rather than a real zero, every posting it stopped returning is now
+# un-seen and re-alerts once the fetch is fixed. That is the same trade the
+# partial path already makes, and it errs toward re-sending rather than toward
+# silence.
+TOTAL_ZERO_ACCEPT_AFTER = 6
 
 
 def _collapse_suspicion(slug: str, count: int, state: dict,
-                        profile) -> tuple[str, bool]:
-    """The health gate's decision: (message, is_partial). "" means healthy.
+                        profile) -> tuple[str, int]:
+    """The health gate's decision: (message, accept_after). "" means healthy.
+
+    `accept_after` is how many consecutive runs this kind of hit is held for
+    before the new count is accepted as normal. Returned per branch rather than
+    read from one constant because the three hits do not cost the same thing to
+    hold - see the two ACCEPT_AFTER constants above.
 
     Three thresholds, because a listing can break in more than one shape and
     only the first used to be caught:
@@ -157,17 +199,18 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
     rewritten to the truncated set (dropping every id past page 1), and real
     new postings beyond page 1 were never detected.
 
-    `is_partial` marks the two that must eventually give up and accept the new
-    count - see PARTIAL_COLLAPSE_ACCEPT_AFTER.
+    All three eventually give up and accept the new count; none of them may
+    hold forever, because a gate with no exit is a gate that either loses jobs
+    (the partial cases) or repeats one alert until it is ignored (the zero).
     """
     if profile.zero_is_plausible:
-        return "", False
+        return "", 0
 
     previous = state.get("last_count", 0)
     if count == 0 and previous > 0:
         return (f"{slug}: got 0 jobs after the previous run returned "
                 f"{previous}. State was NOT updated - this is likely a broken "
-                "selector, not 'no open jobs'.", False)
+                "selector, not 'no open jobs'.", TOTAL_ZERO_ACCEPT_AFTER)
 
     floor = profile.expected_min_jobs
     if floor > 0 and count < floor <= previous:
@@ -175,16 +218,18 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
                 f"expected_min_jobs floor of {floor}, after the previous run "
                 f"returned {previous}. State was NOT updated - a partial drop "
                 "like this is what broken pagination looks like. If the "
-                "company genuinely shrank, lower expected_min_jobs.", True)
+                "company genuinely shrank, lower expected_min_jobs.",
+                PARTIAL_COLLAPSE_ACCEPT_AFTER)
 
     if previous >= _COLLAPSE_MIN_BASELINE and count < previous * _COLLAPSE_RATIO:
         return (f"{slug}: got {count} jobs after the previous run returned "
                 f"{previous} - a drop of more than "
                 f"{(1 - _COLLAPSE_RATIO) * 100:g}% in one cron interval. State "
                 "was NOT updated. This needs no number in the profile: it is "
-                "measured against the company's own last healthy run.", True)
+                "measured against the company's own last healthy run.",
+                PARTIAL_COLLAPSE_ACCEPT_AFTER)
 
-    return "", False
+    return "", 0
 
 
 def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
@@ -204,18 +249,24 @@ def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     # where that isn't plausible, is not a legitimate outcome - it's most
     # likely a broken selector. State is left untouched, no "new jobs" are
     # sent, but the failure is still reported.
-    suspicion, is_partial = _collapse_suspicion(slug, count, state, profile)
+    suspicion, accept_after = _collapse_suspicion(slug, count, state, profile)
     accepted = ""
     if suspicion:
         failures = state.get("consecutive_failures", 0) + 1
-        if is_partial and failures >= PARTIAL_COLLAPSE_ACCEPT_AFTER:
+        if failures >= accept_after:
             # Held out long enough. The drop has now been reported on every
             # one of those runs, so it is not going unnoticed; carrying on
-            # blocking is the more expensive mistake, because it also blocks
-            # every genuinely new posting at this company.
-            accepted = (f"{slug}: accepting {count} jobs as the new normal "
-                        f"after {failures} consecutive runs reporting a "
-                        "collapse. New-job detection resumes from this count. "
+            # blocking is the more expensive mistake. For a partial collapse
+            # it blocks every genuinely new posting at this company; for a
+            # total zero it repeats one alert every three hours until the user
+            # stops reading maintenance alerts entirely.
+            headline = ("accepting that this company currently has no "
+                        "Israel-relevant open roles"
+                        if count == 0 else
+                        f"accepting {count} jobs as the new normal")
+            accepted = (f"{slug}: {headline}, after {failures} consecutive "
+                        "runs reporting a collapse. This is the last alert "
+                        "about it - new-job detection resumes from this count. "
                         "If this was a real breakage rather than a real drop, "
                         "the jobs it stopped returning are now un-seen and "
                         "will re-alert once it is fixed.")

@@ -178,6 +178,7 @@ def fetch_all(profiles, deadline: float | None = None) -> dict[str, FetchOutcome
 
     started = time.time()
     outcomes: dict[str, FetchOutcome] = {}
+    timed_out = False
 
     # The two pools run AT THE SAME TIME, not one after the other: the
     # network pool is idle on a socket while the browser pool is busy on the
@@ -201,11 +202,37 @@ def fetch_all(profiles, deadline: float | None = None) -> dict[str, FetchOutcome
                 # kill a thread holding a Chromium), so the pool's own
                 # shutdown still waits for those - which is why the deadline
                 # has to sit well inside the workflow's timeout, not at it.
+                timed_out = True
                 dropped = sum(1 for f in futures[index:] if f.cancel())
                 print(f"[fetch] deadline reached; {dropped} companies were "
                       "not started and are skipped this run (not counted as "
                       "failures)", file=sys.stderr)
                 break
+
+    # *** Harvest what the deadline interrupted, rather than discarding it ***
+    #
+    # Breaking out of the loop above stops CONSUMING results, not producing
+    # them: the `with` block's shutdown still waits for every future that was
+    # already running, and any that were queued behind an already-finished one
+    # may have completed too. All of that work was paid for - the requests went
+    # out, the responses came back - and it used to be thrown away, so those
+    # companies were reported as "not fetched" and re-fetched from scratch on
+    # the next run.
+    #
+    # Reaching this point means the pools have shut down, so every future is
+    # now either done or cancelled and .result() cannot block.
+    if timed_out:
+        recovered = 0
+        for future in futures:
+            if future.cancelled() or not future.done():
+                continue
+            outcome = future.result()      # _fetch_one carries errors, never raises
+            if outcome.slug not in outcomes:
+                outcomes[outcome.slug] = outcome
+                recovered += 1
+        if recovered:
+            print(f"[fetch] {recovered} companies finished after the deadline "
+                  "and are kept rather than discarded", file=sys.stderr)
 
     elapsed = time.time() - started
     failed = sum(1 for o in outcomes.values() if not o.ok)

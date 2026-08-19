@@ -11,9 +11,11 @@
     "matching_locations": null,
     "ui_actions_structured": [],
     "checked_fields": [
-      "location.name"
+      "location.name",
+      "location.city",
+      "location.country"
     ],
-    "_note": "VERIFIED live 2026-08-13. post_fetch is the correct and only method here, per SKILL Step 5: the API has no location parameter at all - every query parameter tried (page, limit, offset, skip, and location-shaped ones) was ignored and returned the identical full board. So there is nothing to filter with before fetching; the single call returns every posting worldwide and relevance is decided on location.name. `structure: none` records that Comeet's API exposes no location filter, not that its hosted careers page lacks one."
+    "_note": "VERIFIED live 2026-08-13. post_fetch is the correct and only method here, per SKILL Step 5: the API has no location parameter at all - every query parameter tried (page, limit, offset, skip, and location-shaped ones) was ignored and returned the identical full board. So there is nothing to filter with before fetching; the single call returns every posting worldwide and relevance is decided after the fetch. `structure: none` records that Comeet's API exposes no location filter, not that its hosted careers page lacks one. checked_fields gained location.city and location.country on 2026-08-19: location.name alone is a company-authored label and was silently dropping 47 Israeli postings - see api._note."
   },
   "api": {
     "platform": "comeet",
@@ -23,9 +25,11 @@
       "id": "uid",
       "title": "name",
       "location": "location.name",
-      "url": "url_comeet_hosted_page"
+      "url": "url_comeet_hosted_page",
+      "location_city": "location.city",
+      "location_country": "location.country"
     },
-    "_note": "The stable id is `uid` (e.g. '71.E67'), NOT `id` - Comeet has no top-level `id` field, and falling back to the link would produce a different key for the same posting the moment the slug in that URL changed. Verified 238 unique uids across the largest board in the set. `url_comeet_hosted_page` is an absolute www.comeet.com link; `url_active_page` also exists and points at the company's own branded careers page, but it is not always present and sometimes carries a tracking query - the hosted page is the one that is always there. `extra_params` adds &details=true to the one listing call. That single parameter is what carries every posting's description in the listing itself - see detail_fetch below for why it replaced a per-posting page fetch.",
+    "_note": "The stable id is `uid` (e.g. '71.E67'), NOT `id` - Comeet has no top-level `id` field, and falling back to the link would produce a different key for the same posting the moment the slug in that URL changed. Verified 238 unique uids across the largest board in the set. `url_comeet_hosted_page` is an absolute www.comeet.com link; `url_active_page` also exists and points at the company's own branded careers page, but it is not always present and sometimes carries a tracking query - the hosted page is the one that is always there. `extra_params` adds &details=true to the one listing call. That single parameter is what carries every posting's description in the listing itself - see detail_fetch below for why it replaced a per-posting page fetch. *** location_city and location_country were added 2026-08-19 and are load-bearing. *** `location.name` is FREE TEXT the company types itself, and an audit of all 108 boards found it holding a website ('www.final.co.il'), a page name ('careers'), an office nickname ('GK8 by Galaxy'), a street address, a region ('EMEA') and a misspelt city ('Herzeliya') - on postings whose location.country was 'IL' every time. Reading it alone dropped 47 Israel-relevant postings at 9 companies, four of which had consequently never delivered a single alert. location.city and location.country are picker values, not free text, which is what makes them trustworthy; fetch_comeet reads all three. See api.fetch_comeet.",
     "extra_params": {
       "details": "true"
     }

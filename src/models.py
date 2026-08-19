@@ -3,6 +3,12 @@
 The core data model of the project. Every fetcher - of any kind - returns
 list[Job]. Diffing, deduplication, and "new job" detection always run on
 Job.id, never on display text.
+
+A Job.to_dict()/from_dict() pair used to live here, documented as "the
+serialization for state/seen/<slug>.json". Nothing ever called either one -
+state.py has always written its own two-field record directly - so both were
+removed on 2026-08-19. They were worse than merely unused: a future change to
+the state format would have been made there, correctly, and had no effect.
 """
 
 # Deferred annotation evaluation: lets the `X | None` spelling below work on
@@ -34,7 +40,8 @@ class Job:
     # enriched with a description, and any future equality-based comparison
     # would start reporting phantom "new" jobs. The diff itself runs on .id
     # (see state.process_company), and these fields are excluded from
-    # to_dict() as well - nothing about them ever reaches state/seen/*.json.
+    # state's own writer as well (state.process_company builds its `jobs` map
+    # from .id/.title only) - nothing about them ever reaches state/seen/*.json.
     description: str | None = field(default=None, compare=False, repr=False)
     # The minimum required years of experience parsed out of `description`.
     # None means "undetermined" - which is a PASS (fail-open), never a reject.
@@ -46,19 +53,3 @@ class Job:
         change on the company's side (a space becoming a hyphen, "(Hybrid)"
         appended to a title) would look like a brand-new job."""
         return f"{self.title} — {self.location}"
-
-    def to_dict(self) -> dict:
-        """Serialization for state/seen/<slug>.json. description and
-        min_years_exp are deliberately NOT serialized: state means "every id
-        ever seen", and a filter verdict is presentation, not identity -
-        persisting it would tempt a future replay mechanism that this design
-        explicitly rules out."""
-        return {
-            "id": self.id, "title": self.title, "location": self.location,
-            "url": self.url, "company": self.company,
-        }
-
-    @staticmethod
-    def from_dict(d: dict) -> "Job":
-        return Job(id=d["id"], title=d["title"], location=d["location"],
-                   url=d["url"], company=d["company"])

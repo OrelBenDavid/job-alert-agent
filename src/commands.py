@@ -31,10 +31,10 @@ from pathlib import Path
 
 import requests
 
-from profiles import (find_profile_path, load_profile, profile_paths,
-                      ProfileError)
+from profiles import find_profile_path, load_all, load_profile, ProfileError
 from fetchers import fetch_jobs
-from notifier import send_message, escape_mdv2, format_job_list_message
+from notifier import (send_message, escape_mdv2, format_job_list_message,
+                       TELEGRAM_MAX_CHARS)
 from settings import load_settings, update_filter
 from stats import load_stats
 
@@ -85,22 +85,63 @@ def _fetch_updates() -> list[dict]:
     return r.json().get("result", [])
 
 
-def _list_profile_paths() -> list[Path]:
-    """Delegates to profiles.profile_paths so /list covers both the
-    standalone profiles at the root AND the platform-backed records under
-    companies/. Globbing the root alone here meant /list quietly reported a
-    fraction of the monitored companies."""
-    return profile_paths()
-
-
 def _handle_list() -> str:
-    lines = ["📋 *חברות במעקב:*", ""]
-    for path in _list_profile_paths():
-        data = json.loads(path.read_text(encoding="utf-8"))
-        mark = "✅" if data.get("enabled") else "⏸️"
-        lines.append(f"{mark} {escape_mdv2(data.get('name', data['slug']))}")
-    if len(lines) == 2:
-        lines.append("_(אין חברות עדיין)_")
+    """Every monitored company and whether it is active.
+
+    *** Reads the RESOLVED profile, not the raw file - fixed 2026-08-19 ***
+
+    This used to json.loads() each profile path and read `enabled` straight off
+    it, which is correct only for a standalone profile. A platform-backed
+    company record carries just the handful of fields that differ per company;
+    `enabled` is one of the fields it INHERITS, and lives in
+    profiles/_platforms/<platform>.json. So `data.get("enabled")` was None for
+    every one of them, and /list reported 255 of 256 companies as paused while
+    all 256 were in fact being fetched on every run. A status command that
+    contradicts what the bot is doing is worse than no status command.
+
+    load_all() applies the same platform merge and the same validation the run
+    itself uses, so the two can no longer disagree. It also surfaces profiles
+    that failed to load: previously a single malformed file raised out of
+    json.loads here and the user got no reply at all.
+    """
+    profiles, errors = load_all()
+
+    lines = ["\U0001F4CB *\u05D7\u05D1\u05E8\u05D5\u05EA \u05D1\u05DE\u05E2\u05E7\u05D1:*", ""]
+    if not profiles:
+        lines.append("_(\u05D0\u05D9\u05DF \u05D7\u05D1\u05E8\u05D5\u05EA \u05E2\u05D3\u05D9\u05D9\u05DF)_")
+
+    # Telegram rejects anything over 4096 characters with a 400, which fails the
+    # whole reply. At 256 companies this renders ~3,200 characters, so the limit
+    # is close enough that the next batch of additions would have hit it and
+    # turned /list into silence. Truncating keeps the reply useful and the count
+    # honest - the same choice format_job_list_message makes, for the same
+    # reason: this is a snapshot the user can always re-request.
+    budget = TELEGRAM_MAX_CHARS - 200          # room for the footers below
+    used = sum(len(line) + 1 for line in lines)
+    shown = 0
+    for profile in profiles:
+        mark = "\u2705" if profile.enabled else "\u23F8\uFE0F"
+        line = f"{mark} {escape_mdv2(profile.name)}"
+        if used + len(line) + 1 > budget:
+            break
+        lines.append(line)
+        used += len(line) + 1
+        shown += 1
+
+    remaining = len(profiles) - shown
+    if remaining > 0:
+        lines.append("")
+        lines.append("_\+%d \u05E0\u05D5\u05E1\u05E4\u05D5\u05EA \(%d \u05D1\u05E1\u05D4\\\"\u05DB\)_"
+                     % (remaining, len(profiles)))
+
+    if errors:
+        # Reported, not swallowed: a profile that fails validation is invisible
+        # to every other command, and its company is silently unmonitored.
+        lines.append("")
+        lines.append("\u26A0\uFE0F %d \u05E4\u05E8\u05D5\u05E4\u05D9\u05DC\u05D9\u05DD "
+                     "\u05E0\u05DB\u05E9\u05DC\u05D5 \u05D1\u05D8\u05E2\u05D9\u05E0\u05D4 "
+                     "\(\u05E8\u05D0\u05D4 \u05DC\u05D5\u05D2\u05D9\u05DD\)" % len(errors))
+
     return "\n".join(lines)
 
 
