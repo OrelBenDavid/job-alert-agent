@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-19T03:52:49.561837+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-19T06:57:01.774933+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
-    "5811527004": {
-      "title": "Account Executive SMB- Israel",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "5549978004": {
       "title": "AI Developer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
