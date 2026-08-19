@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T09:41:24.991823+00:00",
-  "last_count": 18,
+  "last_success": "2026-08-19T10:21:23.616185+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "F8.E6E": {
@@ -70,6 +70,10 @@
     "99.F69": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "BC.077": {
+      "title": "Senior Product Manager- Duties & Tax",
+      "first_seen": "2026-08-19T10:21:23.616185+00:00"
     },
     "40.F66": {
       "title": "Tax Manager",

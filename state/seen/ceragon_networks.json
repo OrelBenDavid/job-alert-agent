@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T09:41:24.958045+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-19T10:21:23.599750+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "70.F65": {
@@ -26,6 +26,10 @@
     "59.668": {
       "title": "Mechanical Design Engineer (R&D)",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "E5.073": {
+      "title": "Product Engineering",
+      "first_seen": "2026-08-19T10:21:23.599750+00:00"
     },
     "7B.A62": {
       "title": "Radio Customer Support Expert",

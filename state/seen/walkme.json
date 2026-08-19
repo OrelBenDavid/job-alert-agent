@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T09:41:25.846036+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-19T10:21:23.652514+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "c8e67100-af5c-4e91-b147-952784abb8c3": {
@@ -21,10 +21,6 @@
     },
     "a6e57bde-d152-445b-aec9-8e356dacee8e": {
       "title": "Product Analyst (Temporary Position)",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "3f89ed0b-d3a8-49c1-9a2a-68662497f16e": {
-      "title": "Product Manager  - Product-Led Growth (PLG) | WalkMe Learning Arc",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
     "2594252b-3e93-4b2e-918a-8a00ae684fe1": {

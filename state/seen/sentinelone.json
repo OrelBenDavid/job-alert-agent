@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-19T09:41:25.819349+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-19T10:21:23.642510+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
-    "7818768003": {
-      "title": "Senior Backend Engineer- Prompt Security",
-      "first_seen": "2026-08-13T11:24:41.044983+00:00"
-    },
     "7726889003": {
       "title": "Senior Backend Engineer - Windows Endpoint",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
