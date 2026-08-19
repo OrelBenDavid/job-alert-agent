@@ -512,6 +512,16 @@ recovered** by the location fix below.
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
 
+**Growing past this set**: `_onboarding/EXPANSION_STRATEGY.md` (2026-08-19) is
+the plan for Israel-wide coverage. Its core finding is that discovery is
+running in the wrong direction — enumerating ATS *tenants* and then asking
+which are Israeli costs ~2 requests per candidate against the current sweep's
+~3,272, and carries no wrong-company risk because the tenant id is the
+identifier. Two verified candidate sets are already written out:
+`_onboarding/comeet_candidates.csv` (224 Comeet boards not yet profiled) and
+`_onboarding/workable_candidates.csv` (38 companies, 141 live Israeli
+postings, on a platform this project had measured as near-zero).
+
 ### The 2026-08-19 maintenance pass: a location field that was never a location
 
 Triggered by two repeating maintenance alerts. Both turned out to be the gate
