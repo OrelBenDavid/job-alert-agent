@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.604188+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-19T13:01:25.199304+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -13,10 +13,6 @@
     },
     "1811e978-fe35-490d-8d0b-6ff76b30a24d": {
       "title": "Head of DevOps",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "fb45ca2c-6270-4585-bc2c-7beff746842e": {
-      "title": "Marketing Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "c2174d81-e3bd-4ae5-8c49-2ea99f56045c": {

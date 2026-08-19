@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.611044+00:00",
-  "last_count": 30,
+  "last_success": "2026-08-19T13:01:25.209263+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -75,10 +75,6 @@
       "title": "Senior Hardware Project Manager",
       "first_seen": "2026-08-17T15:33:10.322530+00:00"
     },
-    "70.D6C": {
-      "title": "Senior Mechanical Engineer",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
     "F9.C6B": {
       "title": "Senior Network & Security Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
@@ -90,10 +86,6 @@
     "F4.07C": {
       "title": "Senior Product Manager - Switch Hardware AI Networking",
       "first_seen": "2026-08-18T03:57:51.498356+00:00"
-    },
-    "05.C6E": {
-      "title": "Senior Quality Engineer",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
     "F6.93A": {
       "title": "Software Engineer",

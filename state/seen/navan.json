@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.628761+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-19T13:01:25.250160+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "8063651": {
@@ -13,10 +13,6 @@
     },
     "8126660": {
       "title": "Senior Product Analyst",
-      "first_seen": "2026-08-16T09:35:32.131170+00:00"
-    },
-    "8126659": {
-      "title": "Senior Product Designer",
       "first_seen": "2026-08-16T09:35:32.131170+00:00"
     },
     "7522825": {

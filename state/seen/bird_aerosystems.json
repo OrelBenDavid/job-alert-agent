@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.597294+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-19T13:01:25.190295+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "51.05B": {
@@ -39,6 +39,10 @@
       "title": "Mechanical Quality Control (QC) Inspector",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     },
+    "1D.072": {
+      "title": "Practical Engineer / Technician",
+      "first_seen": "2026-08-19T13:01:25.190295+00:00"
+    },
     "7C.65E": {
       "title": "Procurement Manager",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
@@ -62,6 +66,10 @@
     "B1.667": {
       "title": "System Engineer",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "81.D6F": {
+      "title": "דרוש/ה מרכיב/ה אלקטרו-אופטי/ת",
+      "first_seen": "2026-08-19T13:01:25.190295+00:00"
     },
     "AE.665": {
       "title": "מבקר/ת איכות (QC)",

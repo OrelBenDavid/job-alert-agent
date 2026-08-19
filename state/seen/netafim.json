@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-19T10:21:23.630022+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-19T13:01:25.251924+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
-    "74.C6D": {
-      "title": "Customer Service Representative",
-      "first_seen": "2026-08-13T13:24:49.429069+00:00"
-    },
     "63.A66": {
       "title": "Electrician",
       "first_seen": "2026-08-13T13:24:49.429069+00:00"

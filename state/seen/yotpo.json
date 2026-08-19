@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.655004+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-19T13:01:25.301980+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "7691877": {
@@ -10,6 +10,10 @@
     "7633905": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "8141466": {
+      "title": "Senior Talent Acquisition Partner",
+      "first_seen": "2026-08-19T13:01:25.301980+00:00"
     },
     "6879751": {
       "title": "Software Engineer",

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-19T10:21:23.650407+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-19T13:01:25.295415+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
-    "4949176101": {
-      "title": "Applied AI Engineer",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
     "4953510101": {
       "title": "Forward Deployed Engineer",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
@@ -29,10 +25,6 @@
     },
     "4940537101": {
       "title": "Senior HR Manager",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "4949630101": {
-      "title": "Senior Product Designer",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
     "4951499101": {

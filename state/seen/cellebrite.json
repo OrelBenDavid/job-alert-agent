@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T10:21:23.599441+00:00",
-  "last_count": 18,
+  "last_success": "2026-08-19T13:01:25.198143+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "DF.E64": {
@@ -33,10 +33,6 @@
     },
     "0B.613": {
       "title": "iOS Vulnerability Researcher",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
-    "DF.C6E": {
-      "title": "IT AI Security Architect",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
     "D3.A6B": {

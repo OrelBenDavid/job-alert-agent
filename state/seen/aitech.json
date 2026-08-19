@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-19T10:21:23.591761+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-19T13:01:25.176435+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "0D.F55": {
       "title": "BSP Software Design Engineer",
       "first_seen": "2026-08-13T11:24:10.777326+00:00"
+    },
+    "0D.079": {
+      "title": "Configuration Control Engineer",
+      "first_seen": "2026-08-19T13:01:25.176435+00:00"
     },
     "44.E61": {
       "title": "Director of AI Enablement",
