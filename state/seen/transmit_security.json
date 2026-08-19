@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T13:01:25.293943+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-19T15:39:40.414709+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "8539030002": {
@@ -14,10 +14,6 @@
     "8524210002": {
       "title": "IT Security Engineer",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
-    },
-    "8542303002": {
-      "title": "QA Automation Engineer (Temporary Position)",
-      "first_seen": "2026-08-17T12:58:53.745772+00:00"
     },
     "8658335002": {
       "title": "Security Analyst",

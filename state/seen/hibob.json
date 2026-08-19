@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T13:01:25.219408+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-19T15:39:40.394991+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "96caecc5-aca2-4cb7-9799-e661e2c00b0b": {
@@ -30,6 +30,10 @@
     "15550225-d68a-436c-86a9-df9174c9c443": {
       "title": "Finops Lead",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    },
+    "3347caaf-0ae3-405f-a50e-3857b4461768": {
+      "title": "Senior Lifecycle Marketing Manager",
+      "first_seen": "2026-08-19T15:39:40.394991+00:00"
     },
     "895e792b-e683-4846-bb6f-5fa44b869b16": {
       "title": "Creative Director",

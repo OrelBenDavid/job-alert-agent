@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-19T13:01:25.257220+00:00",
-  "last_count": 67,
+  "last_success": "2026-08-19T15:39:40.404936+00:00",
+  "last_count": 64,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-019115": {
+      "title": "Principal Frontend Engineer (Cortex Platform)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
     "JR-021154": {
       "title": "Staff Data Engineer (Data & AI solutions)",
       "first_seen": "2026-08-19T06:57:01.815036+00:00"
@@ -27,10 +31,6 @@
       "title": "Principal/Senior Security Researcher - Autonomous EDR- Windows (Cortex)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-017432": {
-      "title": "Senior Product Manager - Agentic Endpoint Security (Cortex)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-009239": {
       "title": "AI Lead (Prisma Browser - Agents Fleets)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -45,10 +45,6 @@
     },
     "JR-018806": {
       "title": "Senior Frontend Engineer (Cortex Platform)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-019115": {
-      "title": "Principal Frontend Engineer (Cortex Platform)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020949": {
@@ -261,14 +257,6 @@
     },
     "JR-020201": {
       "title": "Senior DevOps Engineer (Cortex Cloud)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-019131": {
-      "title": "Sr Principal/ Performance & Scalability Architect (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-019026": {
-      "title": "Technical Program Leader - Enterprise SaaS (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     }
   }

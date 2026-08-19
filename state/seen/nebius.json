@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T13:01:25.250598+00:00",
-  "last_count": 72,
+  "last_success": "2026-08-19T15:39:40.401816+00:00",
+  "last_count": 73,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -19,11 +19,11 @@
       "title": "Business Intelligence Developer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784157101": {
+    "4784195101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784195101": {
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -110,6 +110,10 @@
     "4930998101": {
       "title": "Lead Detection Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4952091101": {
+      "title": "Manager, ML Solutions Architecture - Token Factory",
+      "first_seen": "2026-08-19T15:39:40.401816+00:00"
     },
     "4941823101": {
       "title": "Mechanical Engineer- Data Centers",
