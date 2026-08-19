@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T18:45:53.925267+00:00",
-  "last_count": 64,
+  "last_success": "2026-08-19T21:33:19.081233+00:00",
+  "last_count": 63,
   "consecutive_failures": 0,
   "jobs": {
     "JR-019115": {
@@ -253,10 +253,6 @@
     },
     "JR-018845": {
       "title": "Sr Staff Engineer Software -Secure Web Sessions (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-020201": {
-      "title": "Senior DevOps Engineer (Cortex Cloud)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     }
   }
