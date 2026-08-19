@@ -54,6 +54,11 @@ GitHub Actions - there is no server.
   on that path only: a role with a physical Israeli location is relevant
   whatever its title says, or `Sales Engineer, DACH - Tel Aviv` would be
   dropped for naming the market it serves.
+  Where a board publishes a **structured country code** next to the free text,
+  that field is read on its own (`is_israel_country_code`) and is **additive**:
+  `IL` means Israel outright, a foreign code means nothing and rejects nobody.
+  A code is only safe read from a field declared to hold one — `il` is far too
+  short to match inside prose, which is why it is not a keyword.
 - **The fetch phase - and only the fetch phase - runs concurrently**
   (`fetchers.fetch_all`). Everything after it stays sequential and in profile
   order. See below.
@@ -120,12 +125,15 @@ because the fetch budget can only stop companies that haven't *started*: a
 thread holding a Chromium can't be interrupted.
 
 The detail layer has a matching budget: `MAX_DETAIL_FETCHES_PER_RUN` (40) is
-a **run-wide** allowance shared by every company, not 40 per company. As of
-2026-08-18 it is almost never reached: **98% of postings now carry their
-description inline** in the listing response, so they cost no request at all.
-Only `wix` (schema v2, no `detail_fetch`) and any future HTML-detail profile
-draw on it. That headroom is what makes a much larger company count viable -
-the cap, not the fetch time, was the binding constraint.
+a **run-wide** allowance shared by every company, not 40 per company. It is
+almost never reached, because **93% of postings carry their description
+inline** in the listing response and so cost no request at all. Re-measured
+2026-08-19: 233 of 256 profiles are `detail_fetch.method: inline`, `wix` has
+no `detail_fetch` at all, and the remaining **22 use `json`** — one GET per
+*new* posting, drawing on the shared budget. Those 22 hold 146 of the 2,085
+postings, so a normal 3-hourly run's handful of new ones sits far under the
+cap. That headroom is what makes a much larger company count viable — the cap,
+not the fetch time, was the binding constraint.
 
 **Telegram sends are paced** at ~1/second (`JOB_ALERT_SEND_INTERVAL`) and a
 429 is retried after the `retry_after` Telegram asks for. Every company sends
@@ -158,14 +166,32 @@ companies those numbers go stale faster than anyone maintains them. Set it
 lazily - roughly half the observed count is fine. It only has to catch the
 decay the ratio can't see.
 
-**Partial collapses time out; a total zero doesn't.** While the gate holds,
-`process_company` returns no new jobs - so a *false* positive on a partial
-collapse silently stops detecting real postings at that company, which is the
-very failure the gate exists to prevent. After
-`PARTIAL_COLLAPSE_ACCEPT_AFTER` (3) consecutive runs it reports the drop one
-last time, accepts the lower count as the new normal, and resumes detecting.
-A total zero has no such cost - there are no jobs to miss - so it stays
-frozen until a human looks.
+**Every hit times out - but not on the same clock.** While the gate holds,
+`process_company` returns no new jobs, so the hold is never free.
+
+- A **partial collapse** costs *jobs*: a false positive silently stops
+  detecting real postings at that company, which is the very failure the gate
+  exists to prevent. After `PARTIAL_COLLAPSE_ACCEPT_AFTER` (**3** runs, ~9h)
+  it reports the drop one last time, accepts the lower count, and resumes.
+- A **total zero** costs *attention*. This used to hold forever, on the
+  reasoning that a frozen zero misses no jobs - true about jobs, false about
+  the alert. `should_alert_failure` fires on **every** run once the counter is
+  past its threshold, so a company that genuinely closed its last Israeli role
+  re-sent the identical maintenance alert every three hours, indefinitely, with
+  no path back to healthy that didn't involve a human editing JSON. Observed on
+  `panaya`: six identical alerts for a board that is perfectly healthy and
+  simply has no Israeli opening right now. So it accepts too, after
+  `TOTAL_ZERO_ACCEPT_AFTER` (**6** runs, ~18h) - longer than a partial,
+  because holding a zero really is the cheaper mistake.
+
+Accepting either one empties nothing it can't recover from: if the drop *was* a
+breakage, the postings that stopped coming back are now un-seen and re-alert the
+moment the fetch is fixed. That errs toward re-sending rather than toward
+silence, which is the direction every decision in this project takes.
+
+> A gate with no exit is not a safer gate. It either blocks real postings or
+> repeats one alert until the user stops reading them - and the next one will
+> be real.
 
 ## Experience filter
 
@@ -404,9 +430,9 @@ cd tests && python -m pytest -v
 ## Current status
 
 **256 companies are registered** as of 2026-08-19, up from 145. All 256 load
-with no profile errors, and a full live fetch returns **2,085 Israel-relevant
-postings**, of which **1,351 are in a target job family** (256/256 fetched, 0
-failures).
+with no profile errors, and a full live fetch returns **~2,100 Israel-relevant
+postings** (256/256 fetched, 0 failures) - including the **38 Comeet postings
+recovered** by the location fix below.
 
 | Platform | Companies | Shape |
 |---|---:|---|
@@ -418,6 +444,80 @@ failures).
 | Workday | 9 | added 2026-08-19 — new fetcher, new platform profile |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+### The 2026-08-19 maintenance pass: a location field that was never a location
+
+Triggered by two repeating maintenance alerts. Both turned out to be the gate
+working correctly on one company and reporting nothing useful; auditing *why*
+found a much larger silent loss underneath.
+
+**`location.name` is a label, not a place.** Comeet is 108 of the 256
+companies, and its platform profile mapped a posting's location to
+`location.name` alone. That field is free text the company types itself.
+Audited across all 108 live boards it held:
+
+| What was actually in `location.name` | Company |
+|---|---|
+| `www.final.co.il` — a website | Final |
+| `careers` — a page name | Imagen |
+| `GK8 by Galaxy` — an office nickname | GK8 |
+| `ActiveFence HQ` | ActiveFence |
+| `Tozeret Haaretz 3` — a street address | DriveNets |
+| `EMEA` — a region | Lumenis |
+| `Idan Hanegev` — an industrial estate | SodaStream |
+| `Herzeliya` — a **misspelt** city | BIRD Aerosystems |
+
+Every one of those postings carried `location.country == "IL"`. **47
+Israel-relevant postings at 9 companies were being dropped**, and four of them —
+`bird_aerosystems`, `final`, `imagen`, `gk8` — had therefore **never delivered a
+single alert** in the project's history. Nothing could have caught this: their
+count was a steady, plausible `0`, so the health gate had nothing to compare
+against, and `zero_is_plausible` was true because it was true on the day they
+were imported.
+
+The fix reads all three fields, each for what it is good for:
+
+- **`location.country`** is a picker value, so it decides Israel outright — and
+  is **additive only**. A non-Israeli code rejects nothing: some boards leave it
+  blank on genuinely Israeli roles, and a req can be attached to a foreign
+  office while the role is open here.
+- **`location.name` + `location.city`** are joined for the text check. That
+  direction matters too: the label alone read `Remote` as open-to-anywhere,
+  while `Remote` **+** `New York` lets the existing qualified-remote rule see
+  the foreign metro. **11 foreign remote roles are now correctly dropped**,
+  9 of them at one company.
+- The **displayed** location picks between them: the label wins when it carries
+  something the bare city cannot (`Ramat Gan, Israel (Hybrid)`), otherwise the
+  city does. 50 alert lines improve — `careers` → `Giv'atayim`.
+
+Net: **+38 Israel-relevant postings**, no health gate tripped anywhere.
+
+An ISO code cannot simply go in `ISRAEL_KEYWORDS`: matching there is whole-word
+on a padded string, and `il` is two letters that appear as standalone tokens in
+real location text. Reading it from a field *declared* to hold a country code is
+a different operation, and that is what makes it safe — see
+`relevance.is_israel_country_code`.
+
+**Two smaller bugs, found while verifying the above:**
+
+- **`/list` reported 255 of 256 companies as paused.** It read `enabled`
+  straight off each profile file, which is correct only for a standalone
+  profile — a platform-backed company record *inherits* that field from
+  `_platforms/<platform>.json`, so it read as `None` for every one of them.
+  All 256 were being fetched perfectly well the entire time. It now reads the
+  resolved profile, so the command cannot disagree with the run again. It also
+  now surfaces profiles that failed to load (previously one malformed file
+  raised out of `json.loads` and the user simply got no reply), and truncates
+  before the 4096-character limit rather than 400-ing once the board grows.
+- **The fetch deadline discarded work it had already paid for.** Breaking out
+  of the result loop stops *consuming* results, not producing them — the pools'
+  shutdown still waits for everything in flight. Those companies were reported
+  as "not fetched" and re-fetched from scratch next run. They are now harvested.
+
+Dead code removed: `Job.to_dict`/`from_dict` (never called, and their docstring
+claimed to be the state serializer — a future change to the state format would
+have been made there, correctly, and had no effect at all) and
+`RunStats.total`.
 
 ### The 2026-08-19 pass: Workday, SmartRecruiters, and a duplicate that had shipped
 

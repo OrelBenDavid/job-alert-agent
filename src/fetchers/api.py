@@ -16,7 +16,8 @@ from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 import requests
 
 from models import Job
-from relevance import is_relevant_location
+from relevance import (is_israel_country_code, is_israel_location,
+                       is_relevant_location, names_remote)
 from detail import (DEFAULT_SECTION_CONTENT_FIELD, DEFAULT_SECTION_HEADING_FIELD,
                     normalize_inline_value)
 
@@ -161,7 +162,7 @@ def fetch_greenhouse(profile) -> list[Job]:
         display_location = location or ", ".join(offices)
         jobs.append(Job(
             id=str(_get_by_path(j, fields["id"])),
-            title=(_get_by_path(j, fields["title"]) or "").strip(),
+            title=title,
             location=display_location.strip(),
             url=_get_by_path(j, fields["url"]) or "",
             company=profile.slug,
@@ -240,7 +241,7 @@ def fetch_ashby(profile) -> list[Job]:
         display_location = location or ", ".join(secondary)
         jobs.append(Job(
             id=str(_get_by_path(j, fields["id"]) or ""),
-            title=(_get_by_path(j, fields["title"]) or "").strip(),
+            title=title,
             location=display_location.strip(),
             url=_get_by_path(j, fields["url"]) or "",
             company=profile.slug,
@@ -310,6 +311,28 @@ def fetch_hibob(profile) -> list[Job]:
     return jobs
 
 
+def _comeet_display_location(label: str, city: str) -> str:
+    """Which of Comeet's two place fields to SHOW the user.
+
+    `label` (location.name) is preferred whenever it carries information the
+    structured `city` cannot: a recognisable Israeli place, or a remote/hybrid
+    marker. "Jerusalem Office / Hybrid (In Israel)" and "Ramat Gan Hybrid" are
+    real labels, and collapsing them to the bare city would drop the one thing
+    the user needs to know about the arrangement.
+
+    Otherwise the city wins, because the label is not a place at all. Measured
+    across the 108 Comeet boards, this rewrites 50 postings' displayed
+    location, every one of them an improvement: 'careers' -> "Giv'atayim",
+    'www.final.co.il' -> 'Ramat Hasharon', 'GK8 by Galaxy' -> 'Ramat Gan',
+    'ActiveFence HQ' -> "Binyamina-Giv'at Ada".
+
+    Display only. The relevance decision reads both fields plus the country
+    code and never depends on which one this picks."""
+    if label and (is_israel_location(label) or names_remote(label)):
+        return label
+    return city or label
+
+
 def fetch_comeet(profile) -> list[Job]:
     """Comeet: one call, a flat array of positions, no pagination.
 
@@ -327,8 +350,32 @@ def fetch_comeet(profile) -> list[Job]:
 
     The stable id is `uid` and the per-posting link is
     `url_comeet_hosted_page`; both come off the profile's field mapping.
-    location_query_param in the profile, if present, is passed as a param;
-    otherwise {}."""
+
+    *** location.name is a LABEL, not a place - fixed 2026-08-19 ***
+
+    This used to decide relevance from `location.name` alone, and that field is
+    free text the company types itself. Audited across all 108 Comeet boards,
+    it was a website ('www.final.co.il'), a page name ('careers'), an office
+    nickname ('GK8 by Galaxy', 'ActiveFence HQ'), a street address ('Tozeret
+    Haaretz 3'), a region ('EMEA'), an industrial park ('Idan Hanegev') and a
+    misspelt city ('Herzeliya') - on postings whose `location.country` was "IL"
+    every time. 47 Israel-relevant postings at 9 companies were being dropped,
+    and four of those companies (bird_aerosystems, final, imagen, gk8) had
+    therefore never delivered a single alert while looking perfectly healthy:
+    their count was a steady 0, which is exactly what the health gate cannot
+    see once `zero_is_plausible` is true.
+
+    So all three fields are read, each for what it is actually good for:
+      - `location.country` is a picker value, so it decides Israel outright
+        (additive only - see relevance.is_israel_country_code).
+      - `label` and `city` are joined for the text check, which is what lets
+        the existing qualified-remote rule see "Remote" AND "New York" on the
+        same posting. That direction matters too: it drops 11 foreign remote
+        roles that the label alone kept.
+      - the display string picks between them - see _comeet_display_location.
+
+    Net across the corpus: +38 Israel-relevant postings, no health gate tripped.
+    """
     api = profile.raw["api"]
     params = api.get("extra_params", {})
     r = requests.get(api["endpoint"], params=params, timeout=20)
@@ -336,16 +383,27 @@ def fetch_comeet(profile) -> list[Job]:
     positions = r.json()
 
     fields = api["fields"]
+    city_field = fields.get("location_city")
+    country_field = fields.get("location_country")
+
     jobs = []
     for p in positions:
-        location = _get_by_path(p, fields["location"]) or ""
+        label = (_get_by_path(p, fields["location"]) or "").strip()
+        # Both optional, so a profile that maps neither behaves exactly as it
+        # did before this fix - the platform profile supplies them for every
+        # Comeet company at once.
+        city = (_get_by_path(p, city_field) or "").strip() if city_field else ""
+        country = (_get_by_path(p, country_field) or "") if country_field else ""
         title = (_get_by_path(p, fields["title"]) or "").strip()
-        if not is_relevant_location(location, title):
+
+        combined = ", ".join(part for part in (label, city) if part)
+        if not (is_israel_country_code(country)
+                or is_relevant_location(combined, title)):
             continue
         jobs.append(Job(
             id=str(_get_by_path(p, fields["id"]) or p.get("id", "")),
             title=title,
-            location=location.strip(),
+            location=_comeet_display_location(label, city),
             url=_get_by_path(p, fields["url"]) or "",
             company=profile.slug,
             description=_inline_description(profile, p),

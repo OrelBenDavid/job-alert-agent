@@ -190,6 +190,18 @@ def is_israel_location(location_text: str) -> bool:
     return any(f" {kw} " in norm for kw in ISRAEL_KEYWORDS)
 
 
+def names_remote(text: str) -> bool:
+    """Whether the text carries a remote/hybrid marker.
+
+    Split out of is_qualified_remote for the same reason names_foreign_region
+    was: the fetchers need the same question answered about a location LABEL
+    that is not being used for the relevance decision itself (see
+    fetchers/api.py's Comeet display rule), and a second copy of the padding
+    and normalization rules is exactly how the two would drift apart."""
+    norm = _normalize(text)
+    return any(f" {kw} " in norm for kw in REMOTE_KEYWORDS)
+
+
 def names_foreign_region(text: str) -> bool:
     """Whether any foreign country/city/region/timezone is named in `text`.
 
@@ -219,14 +231,48 @@ def is_qualified_remote(location_text: str, title: str = "") -> bool:
     DACH region - Tel Aviv"). Confined to the qualified-remote branch, the
     only postings it can remove are ones with no Israeli location to begin
     with, which is the direction this list is allowed to push."""
-    norm = _normalize(location_text)
-    if not any(f" {kw} " in norm for kw in REMOTE_KEYWORDS):
+    if not names_remote(location_text):
         return False
     if is_israel_location(location_text):
         return True
     if names_foreign_region(location_text):
         return False
     return not names_foreign_region(title)
+
+
+# *** Structured country codes are not location text, and must not be ***
+#
+# Some boards publish a posting's country as an ISO code ALONGSIDE the free
+# text location. That code is worth reading separately, because it is the one
+# location field a company cannot get creative with: Comeet's `location.name`
+# is a label the company writes itself and is routinely a website
+# ("www.final.co.il"), a page name ("careers"), an office nickname ("GK8 by
+# Galaxy") or a misspelt city ("Herzeliya"), while `location.country` is a
+# picker value and was "IL" on every one of those.
+#
+# It CANNOT go in ISRAEL_KEYWORDS. Matching is whole-word on a space-padded
+# string, and "il" is two letters that appear as a standalone token in real
+# location text ("Nazareth Il", "Il-de-France" once punctuation is stripped) -
+# which is precisely why the keyword lists exclude short codes. A code is only
+# safe when it is read from the field that is DECLARED to hold a country code,
+# never scanned for inside prose, so this takes the value directly.
+ISRAEL_COUNTRY_CODES = {"il", "isr", "376"}   # ISO 3166-1 alpha-2/alpha-3/numeric
+
+
+def is_israel_country_code(code: str) -> bool:
+    """Whether a structured country-code field says Israel.
+
+    Additive only, by design: a match means Israel, but a NON-match means
+    nothing at all and must never reject a posting on its own. A board can
+    leave the field empty (11 Comeet postings do, on genuinely Israeli roles)
+    or attach a req to a foreign office while the role is open here, and
+    dropping those would be the silent loss this project exists to prevent.
+
+    str() rather than assuming a string: this reads whatever a profile's field
+    map points at, and the numeric ISO form is a plain integer in JSON. An
+    AttributeError here would raise out of the fetcher and cost the company its
+    whole run, which is exactly the wrong price for an unexpected field type."""
+    return str(code or "").strip().lower() in ISRAEL_COUNTRY_CODES
 
 
 def is_relevant_location(location_text: str, title: str = "") -> bool:

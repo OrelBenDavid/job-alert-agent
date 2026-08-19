@@ -67,9 +67,6 @@ class RunStats:
         # in the output rather than raising in the middle of a live run.
         counters[counter] = counters.get(counter, 0) + 1
 
-    def total(self, filter_name: str) -> int:
-        return sum(self.by_filter.get(filter_name, {}).values())
-
     def is_empty(self) -> bool:
         return not any(self.by_filter.values())
 
