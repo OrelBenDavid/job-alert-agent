@@ -309,6 +309,73 @@ of `strict` - off by default for the same reason.
 blocked while `Support Engineer` does not. Matching is whole-word throughout -
 `Salesforce Developer` must not read as sales.
 
+### Hebrew titles carry a gender infix
+
+Israeli boards write gender-inclusive forms — `מנהל.ת`, `מפעיל/ת`, `עובד.ת` —
+and `_normalize` turns that punctuation into a space. So the infix lands
+**between the words** of a multi-word term and the term silently stops
+matching: `מנהל.ת חשבונות` normalizes to `מנהל ת חשבונות`, which is why
+`הנהלת חשבונות` — on the blocklist since the beginning — never caught a single
+bookkeeper posting. Measured: the term `מנהל חשבונות` scores **0 hits** across
+2,101 live postings, while the single word `חשבונות` catches it.
+
+**Prefer single words when adding Hebrew terms.** `משאבי אנוש` and
+`סוכן מכירות` are fragile the same way today; both survive only because
+`מכירות` catches the sales case anyway.
+
+### Adding a term is a permanent drop, so it gets measured first
+
+14 Hebrew terms were added on 2026-08-19, after the Comeet location fix started
+surfacing SodaStream's and SolarEdge's factory-floor postings. Each was run
+against the whole live corpus and the **complete** list of postings it removes
+was read by hand before it went in. Together they move **21 of 2,101 postings**
+(1.0%) from `unknown` to `blocked`, and move **nothing** out of `target` — the
+target count is identical before and after, at 1,370. What goes: solderer,
+bookkeeper, production worker, payroll accountant, admin manager, plant
+operations coordinator, collections clerk, lathe/milling operator, machine
+operator, injection-moulding technician, customer service rep, building
+maintenance, SMT operator, Wolt Market pickers, and seven QC inspectors.
+
+Eight candidates were **rejected**, each by a specific posting it would have
+taken. They are listed in `roles.py` with the reason, because the reason is the
+useful part:
+
+| Rejected | The posting that killed it |
+|---|---|
+| `ייצור` (production, correct spelling) | `טכנאי/ת ייצור רכיבים אופטיים מדויקים` — a target role — and `הנדסאי/ת אלקטרוניקה בהנדסת ייצור`, which is electronics practical engineering |
+| `מרכיב` (assembler) | MKS's `Temp Calibration Technician/Assembler`, a target role on `technician` |
+| `משמרת` (shift) | an IT/NOC shift lead is written the same way; 2 factory postings is not worth that |
+| `לקוחות` (customers) | `תמיכה בלקוחות` is IT support |
+| `תפעולית` (operational) | broader than `מפעלית` for the same single hit |
+| `מחסן` (warehouse) | 0 hits today, and it is the second word of `מחסן נתונים` — data warehouse |
+| `שבבי` (machining) | shares its root with `שבב` — a **chip**, the hardware family this bot exists for |
+| `עיבוד` (processing) | `עיבוד תמונה` and `עיבוד נתונים` are image and data processing |
+
+`יצור` **is** on the list and `ייצור` is not, which looks like a typo and isn't:
+the defective spelling appears only in `עובד.ת יצור` (production worker), while
+the correct one appears in on-target hardware titles.
+
+**`מבקר` knowingly contradicts the English list**, by an explicit call. `quality
+control` and `quality assurance` are `TARGET_FAMILIES` terms, so an English QC
+title passes and the Hebrew one does not. All seven postings it catches are
+production-line inspection — `Finishing Operator / מבקר/ת איכות`, a metal
+plant, an aerospace QC bench — not the software QA those English terms are
+aimed at. `מבקר` (inspector/auditor) does **not** collide with `בקרה` (control),
+so `מהנדס/ת בקרה` stays on target. The residual risk is stated rather than
+hidden: a Hebrew software-QA role written `מבקר/ת איכות תוכנה` would now be
+dropped silently. Nothing in the corpus is written that way, and no override
+was invented for a posting that has never been observed — but that is the shape
+to watch.
+
+### A second Hebrew trap: prepositions glue on
+
+`ב/ל/כ/מ/ש/ה` attach directly to the following noun, so `מפעל` (factory) scores
+**0 hits** while the corpus plainly contains `למפעל מתכת` and `במפעל ההרכבות`.
+Stripping those prefixes generally is *not* safe — `בקרה` would become `קרה` —
+so the answer is to pick a term that appears unprefixed rather than chase the
+inflections. Two factory postings are deliberately left delivered-and-flagged
+for exactly this reason.
+
 **Repeat titles are tagged, never dropped** (`🔁 כותרת שכבר הופיעה`). A posting
 that is closed and re-opened comes back with a NEW id - a new Comeet uid, or a
 new Wix URL slug, which is what Wix's id is derived from - so the diff
