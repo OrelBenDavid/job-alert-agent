@@ -80,8 +80,100 @@ BLOCKED_DOMAINS = [
     "barista", "cashier", "taxi", "vendor scheduler", "order management",
     "supply chain", "inventory", "production employee",
     # --- Hebrew ---
+    #
+    # *** Prefer SINGLE words here. Hebrew job titles carry a gender infix. ***
+    #
+    # Israeli boards write gender-inclusive forms - "מנהל.ת", "מפעיל/ת",
+    # "עובד.ת" - and _normalize turns that punctuation into a space. So
+    # "מנהל.ת חשבונות" normalizes to " מנהל ת חשבונות ", and the two-word term
+    # `הנהלת חשבונות` right above never matched it: the infix lands BETWEEN the
+    # words. Measured 2026-08-19 against all 2,101 live postings - the term
+    # `מנהל חשבונות` scores exactly 0 hits, while the single word `חשבונות`
+    # catches the posting. `משאבי אנוש` and `סוכן מכירות` are fragile the same
+    # way (both survive only because `מכירות` catches the sales one anyway).
     "מכירות", "משאבי אנוש", "שיווק", "הנהלת חשבונות", "גיוס", "רכש",
     "מחסנאי", "נהג", "מלגזן", "אורז", "קופאי", "מוקדן", "סוכן מכירות",
+
+    # *** Added 2026-08-19, measured before adding, not guessed. ***
+    #
+    # A blocklist entry is a PERMANENT silent drop - state is written before
+    # filtering, and there is no replay by design - so each of these was first
+    # run against the whole live corpus and the complete list of postings it
+    # would remove was read by hand. Together they remove 13 of 2,101 postings
+    # (0.6%), and NONE of the 13 classifies as a target role today.
+    #
+    # The first group closes a translation gap rather than making new policy:
+    # every one of these domains was ALREADY blocked in English, and only the
+    # Hebrew spelling was missing.
+    "חשבונות",        # "מנהל.ת חשבונות" - bookkeeper (en: bookkeeper)
+    "שכר",            # "חשב/ת שכר" - payroll accountant (en: payroll)
+    "גבייה",          # "רפרנט.ית גבייה" - collections (en: collections)
+    "שירות לקוחות",   # "נציג/ת שירות לקוחות" (en: customer experience)
+    "אדמיניסטרציה",   # "מנהל.ת אדמיניסטרציה" (en: administrative assistant)
+    # ...and the second is production-floor and manual work, which the English
+    # list covers under "production employee" / "warehouse" / "facilities".
+    "מפעיל",          # 2: "מפעיל/ת מכונה עיבוד שבבי", "מפעיל SMT"
+    "כרסם", "חרט",    # "כרסם/ חרט" - milling and lathe operator
+    "הזרקה",          # "טכנאי/ת מכונות הזרקה" - injection moulding
+    # *** מבקר knowingly contradicts the English list, by the user's call. ***
+    #
+    # "quality control" and "quality assurance" are TARGET_FAMILIES terms, so
+    # an English QC title passes and this Hebrew one does not. That asymmetry
+    # is deliberate: all 7 postings the term catches are production-line
+    # inspection ("Finishing Operator / מבקר/ת איכות", a metal plant, an
+    # aerospace QC bench), not the software QA those English terms are aimed
+    # at. מבקר is inspector/auditor - both domains the English list already
+    # blocks - and does NOT collide with בקרה, so "מהנדס/ת בקרה" stays target.
+    #
+    # The residual risk, stated rather than hidden: a Hebrew SOFTWARE QA title
+    # written as "מבקר/ת איכות תוכנה" would now be dropped silently. Nothing
+    # in the corpus is written that way, and no override was invented for a
+    # posting that has never been observed - but that is the shape to watch.
+    "מבקר",           # 7: QC/quality inspector across mks, sodastream, bird
+    "מלחימ",          # "מלחימ.ה" - solderer. Truncated on purpose: the
+                       # gender-inclusive spelling ends the stem at מ, so the
+                       # dictionary word "מלחים" scores 0 hits.
+    "יצור",           # "עובד.ת יצור" - production worker. The DEFECTIVE
+                       # spelling only - see the note on ייצור below.
+    "מלקט", "מלקטים",  # "מלקטים - וולט מרקט" - order pickers. Both forms,
+                       # because whole-word matching makes a plural a
+                       # different term (the singular scores 0 today).
+    "אחזקת מבנה",     # building maintenance (en: facilities). Two words
+                       # deliberately - bare אחזקה would catch maintenance
+                       # ENGINEERING, which is not off-target.
+    "מפעלית",         # "מצוינות תפעולית מפעלית" - plant operations.
+                       # The narrower of the two words in that title.
+
+    # *** Deliberately NOT here, each for a measured reason ***
+    #
+    #   ייצור      the correct spelling of "production" - it catches
+    #              "טכנאי/ת ייצור רכיבים אופטיים מדויקים" (a target role
+    #              today) and "הנדסאי/ת אלקטרוניקה בהנדסת ייצור", which is
+    #              electronics practical engineering and squarely on-target.
+    #   מרכיב      "assembler" - also catches MKS's "Temp Calibration
+    #              Technician/Assembler", which classifies as a target role
+    #              on "technician". Instrumentation calibration is close
+    #              enough to the hardware family to be worth keeping.
+    #   משמרת      "shift" - would catch the two factory shift roles, but a
+    #              NOC/IT shift lead is a target role and is written the same
+    #              way. Two postings is not worth that.
+    #   לקוחות     "customers" on its own - "תמיכה בלקוחות" is IT support.
+    #   תפעולית    "operational" - broader than מפעלית for the same one hit.
+    #   מחסן       "warehouse" - 0 hits today, and it is the second word of
+    #              "מחסן נתונים" (data warehouse).
+    #   שבבי       looks like machining ("עיבוד שבבי") and shares its root
+    #              with שבב, a CHIP - the hardware family this bot exists for.
+    #   עיבוד      "processing" - "עיבוד תמונה" and "עיבוד נתונים" are image
+    #              and data processing, both squarely on-target.
+    #
+    # *** A second Hebrew matching trap: prepositions glue on. ***
+    #
+    # ב/ל/כ/מ/ש/ה attach directly to the following noun, so `מפעל` (factory)
+    # scores 0 hits while the corpus plainly contains "למפעל מתכת" and
+    # "במפעל ההרכבות". Stripping those prefixes generally is NOT safe - בקרה
+    # would become קרה - so the answer is to pick a term that appears
+    # unprefixed, not to chase the inflections. Two factory postings are left
+    # delivered-and-flagged for exactly this reason, which is the right price.
 ]
 
 # Wins a title BACK from the blocklist. Only unambiguous engineering nouns -
