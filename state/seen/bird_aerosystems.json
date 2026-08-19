@@ -1,6 +1,75 @@
 {
-  "last_success": "2026-08-19T06:57:01.767439+00:00",
-  "last_count": 0,
+  "last_success": "2026-08-19T09:41:24.926419+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
-  "jobs": {}
+  "jobs": {
+    "51.05B": {
+      "title": "Aircrafts electrical engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "83.E60": {
+      "title": "ASIO System Engineer Manager",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "0F.F66": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "FE.D4C": {
+      "title": "Electrical Practical Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "B6.861": {
+      "title": "EO System Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "85.86F": {
+      "title": "Hardware Design Engineer (Board Design)",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "52.E63": {
+      "title": "Import-Export Coordinator",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "85.D6A": {
+      "title": "Mechanical Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "A5.862": {
+      "title": "Mechanical Quality Control (QC) Inspector",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "7C.65E": {
+      "title": "Procurement Manager",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "C0.F51": {
+      "title": "Project Manager for Products",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "95.D65": {
+      "title": "Radar Algorithm Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "A5.863": {
+      "title": "Radar Systems Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "AD.76C": {
+      "title": "Sales, Marketing & BD Director",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "B1.667": {
+      "title": "System Engineer",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "AE.665": {
+      "title": "מבקר/ת איכות (QC)",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "AD.260": {
+      "title": "מחסנאי/ת ממוחשב/ת",
+      "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    }
+  }
 }

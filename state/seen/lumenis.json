@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-19T06:57:01.800835+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-19T09:41:25.011152+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "2E.C6E": {
       "title": "Assistant Controller- EMEA",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "C5.F67": {
+      "title": "Business Development Manager",
+      "first_seen": "2026-08-19T09:41:25.011152+00:00"
     },
     "D2.D6D": {
       "title": "Clinical Manager",
@@ -26,6 +30,10 @@
     "F1.D65": {
       "title": "Project Engineer",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
+    },
+    "73.E6E": {
+      "title": "Regional Sales Manager EU",
+      "first_seen": "2026-08-19T09:41:25.011152+00:00"
     },
     "85.D6E": {
       "title": "Technical Project Engineer",

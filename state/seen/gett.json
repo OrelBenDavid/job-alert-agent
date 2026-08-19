@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:01.787233+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-19T09:41:24.990031+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "46.A6A": {
@@ -21,10 +21,6 @@
     },
     "53.F67": {
       "title": "Experienced Product Analyst",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "ED.F6D": {
-      "title": "Gett Together Pre-Sale expert",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "5C.D69": {

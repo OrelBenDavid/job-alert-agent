@@ -1,15 +1,15 @@
 {
-  "last_success": "2026-08-19T06:57:01.801800+00:00",
+  "last_success": "2026-08-19T09:41:25.012406+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "4947834101": {
-      "title": "AI  Creative Specialist",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
     "4897255101": {
       "title": "Director of Demand Growth & Partnerships",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "4955708101": {
+      "title": "Junior Performance Growth Manager",
+      "first_seen": "2026-08-19T09:41:25.012406+00:00"
     }
   }
 }

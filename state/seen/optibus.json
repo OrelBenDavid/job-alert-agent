@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:01.813068+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-19T09:41:25.399144+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "52.A53": {
@@ -10,10 +10,6 @@
     "06.07C": {
       "title": "Senior Full Stack Engineer, Gen AI",
       "first_seen": "2026-08-17T12:58:53.726184+00:00"
-    },
-    "B4.861": {
-      "title": "Software Engineer, Gen AI",
-      "first_seen": "2026-08-13T11:24:34.285348+00:00"
     }
   }
 }

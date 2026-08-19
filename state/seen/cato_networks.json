@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:01.770042+00:00",
-  "last_count": 42,
+  "last_success": "2026-08-19T09:41:24.953512+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -50,6 +50,10 @@
     "4905948101": {
       "title": "Global HR Operations & HRIS Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4953528101": {
+      "title": "Junior Software Engineer – Cato Apps Team (AI)",
+      "first_seen": "2026-08-19T09:41:24.953512+00:00"
     },
     "4897189101": {
       "title": "Lead Security Researcher - AI Threat Intelligence",

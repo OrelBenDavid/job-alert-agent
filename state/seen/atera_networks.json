@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-19T06:57:01.763141+00:00",
+  "last_success": "2026-08-19T09:41:24.918338+00:00",
   "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
@@ -35,6 +35,10 @@
       "title": "Enterprise Account Executive",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     },
+    "EC.073": {
+      "title": "Enterprise Professional Services Engineer",
+      "first_seen": "2026-08-19T09:41:24.918338+00:00"
+    },
     "C3.963": {
       "title": "Outbound Account Executive",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
@@ -42,10 +46,6 @@
     "37.072": {
       "title": "Pre-Sales Engineer",
       "first_seen": "2026-08-18T15:40:34.632778+00:00"
-    },
-    "CF.E6D": {
-      "title": "Sales Development Rep - TLV",
-      "first_seen": "2026-08-13T11:24:10.791826+00:00"
     },
     "1C.F6A": {
       "title": "Senior Platform Engineer",

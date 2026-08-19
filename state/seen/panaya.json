@@ -1,11 +1,6 @@
 {
-  "last_success": "2026-08-18T09:42:01.829618+00:00",
-  "last_count": 1,
-  "consecutive_failures": 8,
-  "jobs": {
-    "41.E6F": {
-      "title": "Financial & Business Analyst",
-      "first_seen": "2026-08-13T11:24:34.304909+00:00"
-    }
-  }
+  "last_success": "2026-08-19T09:41:25.401601+00:00",
+  "last_count": 0,
+  "consecutive_failures": 0,
+  "jobs": {}
 }

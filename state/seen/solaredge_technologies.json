@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:02.141921+00:00",
-  "last_count": 35,
+  "last_success": "2026-08-19T09:41:25.825066+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -11,9 +11,17 @@
       "title": "Assembly Technician",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
+    "93.76F": {
+      "title": "ATE Testers Technician (Level 2)",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
+    },
     "A2.E67": {
       "title": "Components Reliability Engineer",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "1F.656": {
+      "title": "Debug Technician",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
     },
     "F2.B65": {
       "title": "Embedded Infrastructure Engineer",
@@ -95,6 +103,10 @@
       "title": "Power Engineering Tech Lead",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
+    "64.862": {
+      "title": "Programmer SMT & AOI",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
+    },
     "ED.761": {
       "title": "Sales Data Analyst",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
@@ -142,6 +154,18 @@
     "75.D60": {
       "title": "Test Technician",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "58.E64": {
+      "title": "אחזקת מבנה",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
+    },
+    "23.F63": {
+      "title": "אחראי משמרת למחסן",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
+    },
+    "22.F52": {
+      "title": "מפעיל SMT מנוסה",
+      "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   }
 }

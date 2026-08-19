@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-19T06:57:02.145176+00:00",
+  "last_success": "2026-08-19T09:41:25.838543+00:00",
   "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
@@ -144,7 +144,7 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "2C.F66": {
-      "title": "Team8- Bookkeeper (temporary, 6 months)",
+      "title": "Team8- Bookkeeper",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "3E.F6A": {

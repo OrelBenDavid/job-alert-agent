@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-19T06:57:01.786513+00:00",
+  "last_success": "2026-08-19T09:41:24.989172+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "Senior AI Software Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "8486825002": {
+    "8729463002": {
       "title": "Senior Applied AI Engineer",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
+      "first_seen": "2026-08-19T09:41:24.989172+00:00"
     },
     "8682352002": {
       "title": "Senior Engineer II, Data Products",

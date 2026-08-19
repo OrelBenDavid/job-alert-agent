@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:01.795071+00:00",
-  "last_count": 14,
+  "last_success": "2026-08-19T09:41:25.004836+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -27,13 +27,33 @@
       "title": "SecOps Lead",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "4E.E58": {
+      "title": "Senior Backend Engineer - Glilot",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
+    },
     "6E.D38": {
       "title": "Senior C++ Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "6E.D38-DF.50F": {
+      "title": "Senior C++ Engineer",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
+    },
+    "4E.E5A": {
+      "title": "Senior C++ Engineer - Glilot",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
+    },
     "EE.D33": {
       "title": "Senior Devops Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "4B.E5D": {
+      "title": "Senior Frontend Engineer - Glilot",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
+    },
+    "16.F5C": {
+      "title": "Senior Fullstack Engineer - AI group - Glilot",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
     },
     "EF.D3B": {
       "title": "Senior Platform Engineer (DevEx / DevOps)",
@@ -54,6 +74,10 @@
     "4E.D3D": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "4E.E5B": {
+      "title": "Senior Software Engineer - Glilot",
+      "first_seen": "2026-08-19T09:41:25.004836+00:00"
     },
     "71.343": {
       "title": "Technical Program Manager",

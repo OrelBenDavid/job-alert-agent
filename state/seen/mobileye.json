@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-19T06:57:01.805289+00:00",
-  "last_count": 124,
+  "last_success": "2026-08-19T09:41:25.390919+00:00",
+  "last_count": 125,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -418,6 +418,10 @@
     "89a185bd-9ce6-4a08-a0a7-c16eaac7c80f": {
       "title": "Senior Technical Product Manager – AV Platform (HW/SW)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "ec69a3de-fd8e-429c-a492-74c73940a032": {
+      "title": "Senior Technical Project Manager – Robotaxi",
+      "first_seen": "2026-08-19T09:41:25.390919+00:00"
     },
     "72b82d00-3d08-499b-84ca-c90b12db479d": {
       "title": "Senior Technical Project Manager (Autonomous Driving)",
