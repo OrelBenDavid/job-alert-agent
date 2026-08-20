@@ -128,12 +128,14 @@ The detail layer has a matching budget: `MAX_DETAIL_FETCHES_PER_RUN` (40) is
 a **run-wide** allowance shared by every company, not 40 per company. It is
 almost never reached, because **93% of postings carry their description
 inline** in the listing response and so cost no request at all. Re-measured
-2026-08-19: 233 of 256 profiles are `detail_fetch.method: inline`, `wix` has
-no `detail_fetch` at all, and the remaining **22 use `json`** — one GET per
-*new* posting, drawing on the shared budget. Those 22 hold 146 of the 2,085
-postings, so a normal 3-hourly run's handful of new ones sits far under the
-cap. That headroom is what makes a much larger company count viable — the cap,
-not the fetch time, was the binding constraint.
+2026-08-20 at 368 companies: **343 are `detail_fetch.method: inline`**, `wix`
+has no `detail_fetch` at all, and the remaining **24 use `json`** — one GET
+per *new* posting, drawing on the shared budget. The inline share went UP as
+the corpus grew, from 91% to 93%, because every platform added since is
+inline: Comeet via `&details=true`, Workable via `?details=true`. That was a
+deliberate selection criterion, not luck — see EXPANSION_STRATEGY.md.
+That headroom is what makes a much larger company count viable — the cap, not
+the fetch time, was the binding constraint.
 
 **Telegram sends are paced** at ~1/second (`JOB_ALERT_SEND_INTERVAL`) and a
 429 is retried after the `retry_after` Telegram asks for. Every company sends
@@ -496,11 +498,11 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-**366 companies are registered** as of 2026-08-19, up from 256 earlier the same
-day and from 145 before that. All 366 load with no profile errors, and a full
-live run fetched **366/366 with 0 failures in 75 seconds** — a wall clock still
-set entirely by `wix`, the single `playwright` company, with all 365 API
-companies finishing inside it.
+**368 companies are registered** as of 2026-08-20, up from 256 on 2026-08-19
+and from 145 before that. All 368 load with no profile errors. The last full
+live run, measured at 366 companies on 2026-08-19, fetched **366/366 with 0
+failures in 75 seconds** — a wall clock set entirely by `wix`, the single
+`playwright` company, with every API company finishing inside it.
 
 | Platform | Companies | Shape |
 |---|---:|---|
@@ -510,7 +512,7 @@ companies finishing inside it.
 | Workable | 16 | added 2026-08-19 — new fetcher, new platform profile |
 | Lever | 16 | thin records (1 EU-hosted) |
 | SmartRecruiters | 13 | added 2026-08-19 — the fetcher existed but no platform profile did |
-| Workday | 9 | added 2026-08-19 — new fetcher, new platform profile |
+| Workday | 11 | added 2026-08-19 — new fetcher, new platform profile; +2 on 2026-08-20 |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
 

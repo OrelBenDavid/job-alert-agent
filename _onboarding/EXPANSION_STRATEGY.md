@@ -627,9 +627,9 @@ draft's guess) to "do not run" (the measurement).
 | 2 | Make `JOB_ALERT_MAX_NEW_JOBS` proportional to corpus size | S | must land before the corpus grows | **done** 2026-08-19 |
 | 3 | Gate and import the **224 new Comeet uids** | S | ~+90 companies, zero new code | **done** — 94 imported, 536 on-family |
 | 4 | Build the **Workable adapter** | M | +38 companies | **done** — 16 passed the gates, 49 postings |
-| 5 | Add `_onboarding/probed.csv` - persist negative results | S | makes every later sweep incremental | partly — `*_rejected.csv` per sweep |
-| 6 | Build the **JSON-LD / `schema.org` JobPosting** generic fetcher | M | the only route to unbounded growth | next |
-| 7 | Re-source the company universe (Startup Nation Finder, ranked) | M | replaces the exhausted seed | |
+| 5 | Add `_onboarding/probed.csv` - persist negative results | S | makes every later sweep incremental | **done** |
+| 6 | Build the **JSON-LD / `schema.org` JobPosting** generic fetcher | M | the only route to unbounded growth | **deferred on measurement** - 3% of self-hosted pages carry it |
+| 7 | Re-source the company universe | M | replaces the exhausted seed | **now the only unblocker**; SNF returns 403 to scripted clients |
 | 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion | **now evidenced** - see below |
 | 9 | Tiered cadence (hot/warm/cold) + conditional requests | M | keeps run time flat as the corpus grows | not yet needed - 366 companies fetch in 75s |
 | 10 | Mine Israeli aggregators for non-tech employers; adapters for Niloosoft etc. | L | the true long tail | |
@@ -650,6 +650,68 @@ real, but 9 serve an empty account board, 8 have no on-family Israeli role, and
 gap is what the gates are for. The 141 postings the feed advertised became 49
 once the project's own relevance and role rules were applied instead of the
 vendor's location filter.
+
+### 2026-08-20: two routes measured and closed
+
+Both were run against the 1,127 unprofiled seed rows that carry a careers URL -
+the last input the existing seed had left.
+
+**The careers-page fingerprint route is exhausted, now with evidence.**
+`sweep_careers_fingerprint.py` asked all 1,127 companies where their board is,
+then scored every hit with the **real fetcher** (a temp profile, resolved
+against its platform file, validated and fetched exactly as a committed one
+would be - so these are the numbers the bot would see, not an estimate).
+
+| | |
+|---|---:|
+| Companies probed | 1,127 |
+| Fingerprinted to a known ATS | 54 (4.8%) |
+| ...with an Israel-relevant on-family posting | **3** |
+| Importable after `DELIBERATE_DROPS` | **2** — Johnson & Johnson, Red Hat |
+
+The hits are real; they are just multinationals. Abbott, Accenture, AT&T all
+fingerprint cleanly to Workday and return **zero** Israel-relevant target-family
+postings. 26 of the 54 hits were Workday.
+
+**A projection made from a sample was wrong, and it is worth saying why.** A
+200-company sample suggested 12 Workday hits and therefore ~68 importable
+companies. It was **size-weighted** toward `l`/`xl` - deliberately, per the yield
+curve - and that is exactly where the multinationals with empty Israeli Workday
+boards live. The fingerprint *rate* held (7.5% weighted vs 4.8% unweighted); what
+did not survive was the assumption that a fingerprint implies an Israeli board.
+**Weighting a sample toward yield also weights it toward a particular kind of
+company, and that changes what the hits mean, not just how many there are.**
+
+**JSON-LD is not the next fetcher to build.** `measure_jsonld.py` checked each
+company's careers page and up to three job detail pages linked from it (Google
+requires the markup on the detail page, so a listing-only check under-reports):
+
+| Of 200 sampled | |
+|---|---:|
+| Already on a known ATS | 15 |
+| Careers page unreachable | 52 |
+| **Self-hosted with `JobPosting` JSON-LD** | **6 (3%)** |
+| Self-hosted with no structured data at all | 127 |
+
+**3%**, and 5 of the 6 only on a detail page. Projected across the whole pool
+that is ~34 companies, each still needing its own listing-discovery and
+pagination work. Step 6 is therefore **deferred, not cancelled** - it becomes
+worthwhile when there is a larger pool of self-hosted Israeli companies to point
+it at, which is step 7.
+
+**Step 7 is now the only thing that unblocks growth, and its first source is
+closed.** `finder.startupnationcentral.org` returns **HTTP 403 to any scripted
+client** - search page, `_next` data routes and all. That is a deliberate access
+control, and working around it is out of scope on principle. Startup Nation
+Finder needs a legitimate access or partnership route, or the universe has to
+come from somewhere else (the Israeli aggregators in section 3, or a paid
+source-code index per A3).
+
+**What this leaves.** Both directions out of the current seed are now measured
+and closed: ATS fingerprinting yields 2, JSON-LD yields ~34 for a new fetcher.
+The corpus grows from **new company sources**, not from better extraction of the
+one we have. That was section 3's claim; it is now the measured conclusion
+rather than an assertion.
 
 ### Step 8 is no longer a hypothesis
 
