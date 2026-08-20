@@ -3,7 +3,11 @@
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "Regular": {
+    "R0021963": {
+      "title": "Games Product Manager",
+      "first_seen": "2026-08-18T22:29:25.519389+00:00"
+    },
+    "R0020424": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-18T22:29:25.519389+00:00"
     }

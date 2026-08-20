@@ -226,3 +226,173 @@ def test_url_rewrite_is_a_no_op_when_the_pattern_is_absent():
               url="https://example.com/jobs/1", company="x")
     assert detail._detail_url(
         job, {"url_rewrite": ["/en-US/", "/other/"]}) == "https://example.com/jobs/1"
+
+
+# ---------------------------------------------------------------------------
+# The per-tenant bulletFields layout - added 2026-08-20, after a silent
+# duplicate-id defect on neogames (the aristocrat tenant).
+#
+# Captured live 2026-08-20 from aristocrat/wd3/AristocratExternalCareersSite
+# with the profile's Israel facet applied, trimmed to the fields Workday
+# actually returns.
+
+
+_ARISTOCRAT = {
+    "total": 2,
+    "jobPostings": [
+        {"title": "Games Product Manager",
+         "externalPath": "/job/Israel---Tel-Aviv-Yafo/Games-Product-Manager_R0021963",
+         "locationsText": "Israel - Tel Aviv-Yafo",
+         "postedOn": "Posted 3 Days Ago",
+         "remoteType": "Hybrid",
+         "bulletFields": ["Regular", "Tel Aviv District", "Israel",
+                          "R0021963", "Aristocrat"]},
+        {"title": "Bookkeeper",
+         "externalPath": "/job/Israel---Tel-Aviv-Yafo/Bookkeeper_R0020424",
+         "locationsText": "Israel - Tel Aviv-Yafo",
+         "postedOn": "Posted 30+ Days Ago",
+         "remoteType": "Hybrid",
+         "bulletFields": ["Regular", "Tel Aviv District", "Israel",
+                          "R0020424", "Aristocrat"]},
+    ],
+}
+
+# The same board, unfiltered: a location with no state/district gets FOUR
+# bullets, not five. Also live 2026-08-20 - 6 of the 40 postings look like this.
+# locationsText is forced Israeli here so the posting survives the relevance
+# check and reaches the id assignment, which is what is under test.
+_ARISTOCRAT_NO_DISTRICT = {
+    "title": "Senior Database Administrator",
+    "externalPath": "/job/London-United-Kingdom/Senior-Database-Administrator_R0020949-1",
+    "locationsText": "Israel - Tel Aviv-Yafo",
+    "postedOn": "Posted Today",
+    "bulletFields": ["Regular", "United Kingdom", "R0020949", "Aristocrat"],
+}
+
+_ARISTOCRAT_ENDPOINT = ("https://aristocrat.wd3.myworkdayjobs.com/wday/cxs/"
+                        "aristocrat/AristocratExternalCareersSite/jobs")
+
+
+def _aristocrat_profile(id_path):
+    return _profile(endpoint=_ARISTOCRAT_ENDPOINT,
+                    fields={"id": id_path, "title": "title",
+                            "location": "locationsText", "url": "externalPath"})
+
+
+def test_the_platform_default_collides_every_posting_on_this_tenant(monkeypatch):
+    """*** The defect this whole block exists for. ***
+
+    bulletFields is a per-tenant configuration of what a search card shows, not
+    a fixed schema. On aristocrat it is
+    [employment type, district, country, requisition id, brand], so the
+    platform default of bulletFields.0 reads the literal string "Regular" on
+    every posting.
+
+    That is not a cosmetic wrong id. state.process_company diffs on Job.id, so a
+    whole board under one id is ONE entry in the state jobs map and no posting
+    on it can ever read as new again - while the count stays healthy, so the
+    collapse gate sees nothing wrong. neogames was silently un-alertable this
+    way from 2026-08-18 to 2026-08-20, with two on-family postings behind it.
+    """
+    monkeypatch.setattr(api.requests, "post",
+                        lambda *a, **k: _Response(_ARISTOCRAT))
+    jobs = api.fetch_workday(_aristocrat_profile("bulletFields.0"))
+    assert len(jobs) == 2
+    assert len({j.id for j in jobs}) == 2, (
+        "two postings collapsed onto one id - a board in this state is "
+        "permanently un-alertable and nothing upstream reports it")
+
+
+def test_the_id_path_comes_from_the_profile_so_one_tenant_can_be_overridden(monkeypatch):
+    """The fix is a per-company api.fields.id, NOT a change to the platform
+    profile: bulletFields.0 is right on the other 10 Workday tenants here,
+    verified live 2026-08-20 - all 11 return unique ids."""
+    monkeypatch.setattr(api.requests, "post",
+                        lambda *a, **k: _Response(_ARISTOCRAT))
+    ids = [j.id for j in api.fetch_workday(_aristocrat_profile("bulletFields.-2"))]
+    assert ids == ["R0021963", "R0020424"]
+
+
+def test_the_index_counts_from_the_END_because_the_district_can_be_absent(monkeypatch):
+    """Why -2 and not 3. A location with no state/district ships four bullets
+    instead of five, so a fixed index 3 reads the BRAND there - "Aristocrat" on
+    most postings, which is the identical silent collision in a new shape.
+    Counting back from the brand was correct on all 40 postings on this board.
+    """
+    payload = {"total": 1, "jobPostings": [_ARISTOCRAT_NO_DISTRICT]}
+    monkeypatch.setattr(api.requests, "post", lambda *a, **k: _Response(payload))
+
+    at_three = api.fetch_workday(_aristocrat_profile("bulletFields.3"))
+    assert at_three[0].id == "Aristocrat"        # the brand - a collision waiting
+
+    at_minus_two = api.fetch_workday(_aristocrat_profile("bulletFields.-2"))
+    assert at_minus_two[0].id == "R0020949"      # the requisition id
+
+
+def test_a_field_path_that_misses_the_array_falls_back_to_externalPath(monkeypatch):
+    """An out-of-range index must not raise mid-fetch, and must not yield an
+    empty id - an empty id would collide exactly the way "Regular" did."""
+    monkeypatch.setattr(api.requests, "post",
+                        lambda *a, **k: _Response(_ARISTOCRAT))
+    ids = [j.id for j in api.fetch_workday(_aristocrat_profile("bulletFields.99"))]
+    assert ids == ["/job/Israel---Tel-Aviv-Yafo/Games-Product-Manager_R0021963",
+                   "/job/Israel---Tel-Aviv-Yafo/Bookkeeper_R0020424"]
+
+
+def test_get_by_path_indexes_lists_including_negative():
+    """The field map can address arrays now. Before this, _get_by_path returned
+    None for any list, so bulletFields.0 in the platform profile was decorative:
+    the fetcher had index 0 hardcoded and no profile could override it."""
+    item = {"bulletFields": ["Regular", "Israel", "R1", "Aristocrat"],
+            "nested": {"a": [{"b": 7}]}}
+    assert api._get_by_path(item, "bulletFields.0") == "Regular"
+    assert api._get_by_path(item, "bulletFields.-2") == "R1"
+    assert api._get_by_path(item, "nested.a.0.b") == 7
+    assert api._get_by_path(item, "bulletFields.9") is None       # out of range
+    assert api._get_by_path(item, "bulletFields.title") is None   # not an index
+    assert api._get_by_path(item, "nested.0") is None             # index into a dict
+
+
+# ---------------------------------------------------------------------------
+# The collision guard - what keeps a repeat of this from being silent
+
+
+def test_colliding_ids_fall_back_to_externalPath(monkeypatch):
+    """A misconfigured field map must degrade to a DUPLICATE alert, never to
+    silence. Two real Workday postings never share a requisition id, so a
+    collision always means the map points at the wrong bullet. externalPath is
+    unique per posting (all 40 on this board); its known flaw is that a reworded
+    title re-alerts an unchanged posting, and re-sending is the mistake this
+    project chooses every time - see restore_state and the accept-after paths
+    in state.py."""
+    monkeypatch.setattr(api.requests, "post",
+                        lambda *a, **k: _Response(_ARISTOCRAT))
+    jobs = api.fetch_workday(_aristocrat_profile("bulletFields.0"))
+    assert [j.id for j in jobs] == [
+        "/job/Israel---Tel-Aviv-Yafo/Games-Product-Manager_R0021963",
+        "/job/Israel---Tel-Aviv-Yafo/Bookkeeper_R0020424"]
+    assert [j.title for j in jobs] == ["Games Product Manager", "Bookkeeper"]
+
+
+def test_a_unique_id_is_not_dragged_onto_externalPath_by_a_colliding_neighbour(monkeypatch):
+    """Only the colliding ids are rewritten. One broken bullet must not move a
+    whole board onto the fragile title-derived identifier."""
+    payload = {"total": 3, "jobPostings": [
+        dict(_ARISTOCRAT["jobPostings"][0], bulletFields=["X"]),
+        dict(_ARISTOCRAT["jobPostings"][1], bulletFields=["X"]),
+        {"title": "Data Engineer", "externalPath": "/job/Israel/Data-Engineer_R3",
+         "locationsText": "Israel - Tel Aviv-Yafo", "bulletFields": ["R0033333"]},
+    ]}
+    monkeypatch.setattr(api.requests, "post", lambda *a, **k: _Response(payload))
+    ids = [j.id for j in api.fetch_workday(_aristocrat_profile("bulletFields.0"))]
+    assert ids[2] == "R0033333"                       # untouched
+    assert ids[0] != ids[1]
+    assert all(i.startswith("/job/") for i in ids[:2])
+
+
+def test_the_other_workday_tenants_are_untouched(monkeypatch):
+    """The platform default still reads the requisition id everywhere it was
+    already right - this fix must not become a platform-wide change."""
+    monkeypatch.setattr(api.requests, "post",
+                        lambda *a, **k: _Response(_LISTING))
+    assert [j.id for j in api.fetch_workday(_profile())] == ["R29093", "R29094"]

@@ -13,6 +13,8 @@ when a new platform shows up.
 
 from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 
+import dataclasses
+
 import requests
 
 from models import Job
@@ -25,9 +27,27 @@ from detail import (DEFAULT_SECTION_CONTENT_FIELD, DEFAULT_SECTION_HEADING_FIELD
 def _get_by_path(obj: dict, dotted_path: str):
     """Reads a nested field by a dotted string like "categories.location"
     or "location.name". This is what lets a profile declare a field
-    mapping without writing platform-specific code."""
+    mapping without writing platform-specific code.
+
+    A path segment that is an integer indexes a LIST - "bulletFields.0" for
+    Workday's array of card bullets. Negative indexes count from the end, the
+    ordinary Python meaning, and that is not decoration: on the Aristocrat
+    tenant the bullet array is
+    [employment type, district?, country, requisition id, brand] and the
+    district element is simply ABSENT for a location that has none, so the
+    requisition id sits at 3 on some postings and at 2 on others. Counting
+    from the end is the only fixed index that addresses it. Out of range,
+    or an integer segment against a dict, reads as None - a field map that
+    misses must fail the same soft way it always has, never raise mid-fetch.
+    """
     cur = obj
     for part in dotted_path.split("."):
+        if isinstance(cur, list):
+            try:
+                cur = cur[int(part)]
+            except (ValueError, IndexError):
+                return None
+            continue
         if not isinstance(cur, dict):
             return None
         cur = cur.get(part)
@@ -616,6 +636,7 @@ def fetch_workday(profile) -> list[Job]:
     applied = {"locationCountry": [facet]} if facet else {}
 
     jobs: list[Job] = []
+    paths: list[str] = []             # each job's externalPath, for _dedupe_ids
     offset, limit = 0, 20
     max_pages = 5 if facet else 25    # a filtered board is small by construction
     for _ in range(max_pages):
@@ -634,22 +655,71 @@ def fetch_workday(profile) -> list[Job]:
             title = (_get_by_path(p, fields["title"]) or "").strip()
             if not is_relevant_location(location, title):
                 continue
-            # bulletFields[0] is the requisition id (e.g. "R29093") - stable
-            # across edits, unlike externalPath, which is derived from the
-            # title and changes when the title is reworded.
-            bullets = p.get("bulletFields") or []
-            job_id = str(bullets[0]) if bullets else p.get("externalPath", "")
+            # The id comes from the profile's field map, NOT a fixed index.
+            # The platform default is bulletFields.0, the requisition id
+            # ("R29093") on 10 of the 11 tenants here - stable across edits,
+            # unlike externalPath, which is derived from the title and changes
+            # when the title is reworded. bulletFields is a per-tenant
+            # CONFIGURATION of what a search card shows, though, so index 0 is
+            # a convention and not a guarantee: on aristocrat (neogames) it is
+            # the employment type, identical on every posting. Reading the
+            # path lets that one tenant override it without touching the other
+            # ten - see profiles/companies/neogames.json.
+            external_path = p.get("externalPath", "")
+            job_id = _get_by_path(p, fields["id"])
+            job_id = str(job_id) if job_id else external_path
             jobs.append(Job(
                 id=job_id, title=title, location=location.strip(),
-                url=_build_workday_url(api, p.get("externalPath", "")),
+                url=_build_workday_url(api, external_path),
                 company=profile.slug,
                 description=_inline_description(profile, p),
             ))
+            paths.append(external_path)
 
         offset += limit
         if offset >= int(data.get("total") or 0):
             break
-    return jobs
+    return _dedupe_ids(jobs, paths)
+
+
+def _dedupe_ids(jobs: list[Job], paths: list[str]) -> list[Job]:
+    """Last line of defence: any id shared by two postings falls back to that
+    posting's externalPath.
+
+    This exists because of what a colliding id COSTS. state.process_company
+    diffs on Job.id, so two postings under one id are one entry in `jobs` and
+    the board is permanently un-alertable - no posting on it can ever read as
+    new again. Nothing upstream notices: the count stays healthy, so the
+    collapse gate passes and the company looks fine forever. That is the exact
+    "quiet while looking healthy" shape the whole health gate exists to
+    prevent, and it went undetected on neogames from 2026-08-18 to 2026-08-20.
+
+    Two real Workday postings never share a requisition id, so a collision
+    always means the field map is pointing at the wrong bullet - a misconfigured
+    profile, not a real duplicate. Falling back is therefore the cheap
+    direction: externalPath is unique per posting (verified across all 40
+    postings on the aristocrat board), and its known flaw is that a reworded
+    title yields a new id and re-alerts an unchanged posting. Re-sending is the
+    mistake this project chooses every time - see restore_state and the
+    accept-after paths in state.py, which all err toward a duplicate rather
+    than toward silence.
+
+    Only the colliding ids are rewritten. A posting whose id is already unique
+    keeps it, so one broken bullet cannot drag a whole board onto the fragile
+    identifier.
+    """
+    seen: dict[str, int] = {}
+    for job in jobs:
+        seen[job.id] = seen.get(job.id, 0) + 1
+    colliding = {job_id for job_id, n in seen.items() if n > 1}
+    if not colliding:
+        return jobs
+
+    # Job is frozen, so this rebuilds rather than assigns - dataclasses.replace
+    # is the same idiom detail.py uses to enrich a job with its description.
+    return [dataclasses.replace(job, id=external_path)
+            if job.id in colliding and external_path else job
+            for job, external_path in zip(jobs, paths)]
 
 
 def _build_workday_url(api: dict, external_path: str) -> str:

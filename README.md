@@ -516,6 +516,78 @@ failures in 75 seconds** — a wall clock set entirely by `wix`, the single
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
 
+### The 2026-08-20 maintenance pass: an id that was never an id
+
+**`bulletFields` is a tenant setting, not a schema.** The Workday platform
+profile maps `api.fields.id` to `bulletFields.0` and documents it as the
+requisition id — `R29093` — which is what it is on 10 of the 11 Workday
+companies here. On the Aristocrat tenant (`neogames`) the same array is
+configured differently, and a live call on 2026-08-20 shows what it actually
+holds:
+
+```
+["Regular", "Tel Aviv District", "Israel", "R0021963", "Aristocrat"]
+  ^ employment type                          ^ the requisition id
+```
+
+So every posting on that board arrived with the id `"Regular"`.
+
+**What a colliding id costs is total, not cosmetic.** `state.process_company`
+diffs on `Job.id`, so an entire board under one id is a single entry in
+`jobs` — `state/seen/neogames.json` read `"last_count": 2` above a map holding
+one key. No posting on that board could ever read as new again. The two
+on-family Israeli postings the profile's own import note recorded were sitting
+behind it.
+
+**Nothing was going to report this.** The health gate only ever asks whether a
+count *collapsed*, and this count was healthy: the fetch returned its postings
+every run, the ratio check saw no drop, `expected_min_jobs` was satisfied. This
+is the same shape as the `location.name` finding above — quiet while looking
+perfectly well — and it is the second time a per-company field mapping has been
+wrong in a way no run-time signal could surface.
+
+**The fix is one field on one company, plus the machinery to allow it.**
+
+- `profiles/companies/neogames.json` overrides `api.fields.id` alone; the other
+  three mappings still come from the platform profile, which is correct for the
+  other 10 tenants and was not touched.
+- `_get_by_path` can index arrays now, negative indexes included. Before this it
+  returned `None` for any list, so `bulletFields.0` in the platform profile was
+  **decorative** — `fetch_workday` had index `0` hardcoded and no profile could
+  have overridden it. That is why the defect had no per-company escape hatch.
+
+**The override is `bulletFields.-2`, and the index is measured rather than
+chosen.** The district element is simply absent for a location that has none:
+6 of the 40 postings on this board carry four bullets
+(`["Regular", "United Kingdom", "R0020949", "Aristocrat"]`), where a fixed
+index `3` reads the *brand* — `"Aristocrat"` on most of them, i.e. the identical
+silent collision in a new shape. Counting back from the brand is correct on all
+40. Every Israeli posting seen so far carries a district and would have been
+fine at `3`; the point is that guessing wrong here fails as silence, so the
+index that survives the whole board is the one to use.
+
+**A collision now degrades to a duplicate instead of to silence.**
+`api._dedupe_ids` rewrites any id shared by two postings in one fetch to that
+posting's `externalPath`. Two real Workday postings never share a requisition
+id, so a collision always means the field map is pointing at the wrong bullet.
+`externalPath` is unique across all 40 postings on this board; its known flaw is
+the reason it is not the mapped id in the first place — it is derived from the
+title, so a reworded title re-alerts an unchanged posting. That is the mistake
+this project chooses every time, the same direction as `restore_state` and the
+accept-after paths in `state.py`. Only colliding ids are rewritten, so one
+broken bullet cannot drag a whole board onto the fragile identifier.
+
+**State was corrected, not re-seeded blind.** `state/seen/neogames.json` now
+tracks `R0021963` (Games Product Manager) and `R0020424` (Bookkeeper)
+separately, both carrying the original `first_seen` of the 2026-08-18 seed —
+both postings were on the board that day, per the import note, and the seed
+contract says what was open at seed time is known rather than new. Neither will
+alert. If they should be delivered instead, deleting the two entries releases
+them on the next run.
+
+Verified live 2026-08-20 across all 11 Workday companies: every one returns
+unique ids, and the other 10 still read `bulletFields.0`.
+
 ### The 2026-08-19 expansion: discovery, inverted
 
 `_onboarding/EXPANSION_STRATEGY.md` is the full plan. Its core finding is that
