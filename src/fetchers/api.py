@@ -26,12 +26,26 @@ from detail import (DEFAULT_SECTION_CONTENT_FIELD, DEFAULT_SECTION_HEADING_FIELD
 def _get_by_path(obj: dict, dotted_path: str):
     """Reads a nested field by a dotted string like "categories.location"
     or "location.name". This is what lets a profile declare a field
-    mapping without writing platform-specific code."""
+    mapping without writing platform-specific code.
+
+    A numeric segment indexes a LIST - "bulletFields.3". Added 2026-08-20 for
+    Workday, whose id lives in a positional array whose order differs per
+    tenant, so the index has to be something a company record can override.
+    An out-of-range index returns None rather than raising, the same as a
+    missing dict key: a mapping that does not resolve is the caller's decision
+    to handle, and every caller already treats None as "field absent".
+
+    A numeric segment against a dict still reads it as a KEY first, so a
+    platform whose JSON genuinely has "0" as a field name keeps working."""
     cur = obj
     for part in dotted_path.split("."):
-        if not isinstance(cur, dict):
+        if isinstance(cur, dict):
+            cur = cur.get(part)
+        elif isinstance(cur, list) and part.lstrip("-").isdigit():
+            index = int(part)
+            cur = cur[index] if -len(cur) <= index < len(cur) else None
+        else:
             return None
-        cur = cur.get(part)
     return cur
 
 
@@ -686,11 +700,41 @@ def fetch_workday(profile) -> list[Job]:
             title = (_get_by_path(p, fields["title"]) or "").strip()
             if not is_relevant_location(location, title):
                 continue
-            # bulletFields[0] is the requisition id (e.g. "R29093") - stable
-            # across edits, unlike externalPath, which is derived from the
-            # title and changes when the title is reworded.
-            bullets = p.get("bulletFields") or []
-            job_id = str(bullets[0]) if bullets else p.get("externalPath", "")
+            # *** The id comes from the PROFILE's mapping - fixed 2026-08-20 ***
+            #
+            # This used to be a hardcoded `bulletFields[0]`, which made
+            # api.fields.id decorative: the platform profile documented a
+            # mapping the code never read, so no company could override it and
+            # nothing said so. That is the shape of defect this project's
+            # validate-at-load discipline exists to prevent - a profile that
+            # loads, runs, raises nothing and describes something the fetcher
+            # is not doing.
+            #
+            # bulletFields is a POSITIONAL array with no schema, and the
+            # position is not the same on every tenant. Verified live across
+            # all 11 Workday companies: 10 carry the requisition id at index 0
+            # ('R29093', 'JR101044', 'JR-020552', '26WD97479'), and Aristocrat
+            # (neogames) orders it ['Regular', 'Tel Aviv District', 'Israel',
+            # 'R0021963', 'Aristocrat'] - index 0 is the EMPLOYMENT TYPE, and
+            # every posting on that board is 'Regular'.
+            #
+            # The consequence was not a cosmetic duplicate. The diff runs on
+            # Job.id, so both of that board's Israeli postings collapsed onto
+            # the key 'Regular'; the survivor was a Bookkeeper, which roles.py
+            # correctly blocks, and the on-family 'Games Product Manager' was
+            # permanently un-alertable - a posting whose id is already seen can
+            # never be new again. Nothing could see it either: last_count
+            # stayed at 2, stable and above zero, so the health gate never
+            # fired. It was found by health_report.py comparing last_count
+            # against len(jobs), an invariant nothing had ever checked.
+            job_id = _get_by_path(p, fields["id"])
+            if job_id in (None, ""):
+                # externalPath is the documented fallback and a poor id - it is
+                # derived from the title, so it changes when a title is
+                # reworded and produces a duplicate alert for an unchanged
+                # posting. It is still better than dropping the posting.
+                job_id = p.get("externalPath", "")
+            job_id = str(job_id)
             jobs.append(Job(
                 id=job_id, title=title, location=location.strip(),
                 url=_build_workday_url(api, p.get("externalPath", "")),
