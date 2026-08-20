@@ -1,0 +1,47 @@
+{
+  "last_success": "2026-08-20T06:56:59.905635+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
+  "jobs": {
+    "89.E6C": {
+      "title": "AI-native software Engineer",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "5B.F6E": {
+      "title": "BizOps Engineer (AI-native)",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "15.C61": {
+      "title": "Data Operations Student - Nights & Weekend shifts",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "5B.F6A": {
+      "title": "Devops Team Lead",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "89.E6D": {
+      "title": "Media Solutions Manager (1year mat leave replacement)",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "A5.F6E": {
+      "title": "Product Group Lead",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "6D.868": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "D8.76B": {
+      "title": "Senior Software Engineer - Data Platform",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "12.D63": {
+      "title": "Senior Software Engineer - Innovation Team",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    },
+    "23.C6B": {
+      "title": "Solutions Architect - Performance Marketing",
+      "first_seen": "2026-08-20T06:56:59.905635+00:00"
+    }
+  }
+}

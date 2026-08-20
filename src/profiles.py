@@ -59,12 +59,12 @@ DETAIL_METHODS = ("inline", "html", "embedded_json", "json", "playwright",
 # to require. tests/test_profiles_schema.py asserts the two stay in sync.
 #
 # Validating this at LOAD time rather than at fetch time is the point: the
-# skill's platform table lists four more platforms (ashby, workable,
-# recruitee, workday) than this project implements, so a profile naming one of
-# them used to validate cleanly and then fail once per run, per company, as a
-# fetch error - which needs two consecutive failures before it says anything.
+# skill's platform table lists more platforms (recruitee among them) than this
+# project implements, so a profile naming one of them used to validate cleanly
+# and then fail once per run, per company, as a fetch error - which needs two
+# consecutive failures before it says anything.
 IMPLEMENTED_API_PLATFORMS = ("lever", "greenhouse", "comeet", "smartrecruiters",
-                             "ashby", "hibob", "workday")
+                             "ashby", "hibob", "workday", "workable")
 
 # The step verbs fetchers/browser.py's _apply_relevance_filter_actions can
 # replay. An unknown verb raises there, mid-fetch; catching it here means a

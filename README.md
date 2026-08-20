@@ -496,31 +496,57 @@ cd tests && python -m pytest -v
 
 ## Current status
 
-**256 companies are registered** as of 2026-08-19, up from 145. All 256 load
-with no profile errors, and a full live fetch returns **~2,100 Israel-relevant
-postings** (256/256 fetched, 0 failures) - including the **38 Comeet postings
-recovered** by the location fix below.
+**366 companies are registered** as of 2026-08-19, up from 256 earlier the same
+day and from 145 before that. All 366 load with no profile errors, and a full
+live run fetched **366/366 with 0 failures in 75 seconds** — a wall clock still
+set entirely by `wix`, the single `playwright` company, with all 365 API
+companies finishing inside it.
 
 | Platform | Companies | Shape |
 |---|---:|---|
-| Comeet | 108 | thin records over `_platforms/comeet.json` |
+| Comeet | 202 | thin records over `_platforms/comeet.json` — **+94 on 2026-08-19** |
 | Greenhouse | 82 | thin records over `_platforms/greenhouse.json` |
 | Ashby | 26 | thin records |
+| Workable | 16 | added 2026-08-19 — new fetcher, new platform profile |
 | Lever | 16 | thin records (1 EU-hosted) |
 | SmartRecruiters | 13 | added 2026-08-19 — the fetcher existed but no platform profile did |
 | Workday | 9 | added 2026-08-19 — new fetcher, new platform profile |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
 
-**Growing past this set**: `_onboarding/EXPANSION_STRATEGY.md` (2026-08-19) is
-the plan for Israel-wide coverage. Its core finding is that discovery is
-running in the wrong direction — enumerating ATS *tenants* and then asking
-which are Israeli costs ~2 requests per candidate against the current sweep's
-~3,272, and carries no wrong-company risk because the tenant id is the
-identifier. Two verified candidate sets are already written out:
-`_onboarding/comeet_candidates.csv` (224 Comeet boards not yet profiled) and
-`_onboarding/workable_candidates.csv` (38 companies, 141 live Israeli
-postings, on a platform this project had measured as near-zero).
+### The 2026-08-19 expansion: discovery, inverted
+
+`_onboarding/EXPANSION_STRATEGY.md` is the full plan. Its core finding is that
+discovery was running in the wrong direction — `company name → guess a slug →
+probe 7 platforms → prove identity` cost 288,000 requests for 88 companies and
+put a third of its raw hits on the wrong company. **Enumerating ATS tenants
+first and asking which are Israeli** removes the wrong-company failure mode
+entirely, because the tenant id *is* the identifier the fetcher needs.
+
+Two sources, both free, both now imported:
+
+- **Common Crawl's URL index** → 270 `comeet.com/jobs/{slug}/{uid}` pairs across
+  four crawls, 224 unprofiled. `_onboarding/gate_comeet_candidates.py` probes
+  and gates them; **94 passed**, carrying 536 on-family postings of which 532
+  are physically in Israel.
+- **Workable's own Israel feed** → 38 companies in 8 requests, **16 passed**
+  the gates, carrying 49 Israel-relevant postings.
+
+**It only pays on an Israel-dense platform.** Sampled the same day: Comeet
+(an Israeli vendor) yields **40%** boards with a physical Israeli posting;
+Greenhouse (global) yields **1.0%** of 4,295 tenants, against 82 already
+profiled. A blanket sweep of a global ATS is recorded in the plan as *rejected
+on measurement*.
+
+**A company-level admission gate was added, and it is not a relevance change.**
+9 Comeet and several Workable candidates passed the on-family test with no role
+in Israel at all — US employers whose `location.country` is `US` and whose label
+or city happens to read `Remote`. `relevance.py` keeps a bare `Remote` on
+purpose and still does; what it cannot do is judge a *company*. A company with
+no physical Israeli role in a target family is not an Israeli employer, and
+importing it buys eight fetches a day forever to deliver roles nobody here can
+take. A company *with* an Israeli presence still gets the fail-open per-posting
+rule in full, qualified remote included.
 
 ### The 2026-08-19 maintenance pass: a location field that was never a location
 

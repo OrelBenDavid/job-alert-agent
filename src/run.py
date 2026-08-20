@@ -292,9 +292,14 @@ def _rewind_suppressed_flood(pending: list, previous_states: dict) -> int:
 
 
 def _deliver(pending: list, previous_states: dict,
-             send_failures: list) -> None:
+             send_failures: list, corpus_postings: int | None = None) -> None:
     """Sends every company's alert, unless the run's total volume is
     implausible - see state.flood_decision.
+
+    `corpus_postings` is how many postings this run saw in total, across every
+    company and not only the ones with something new. It is what scales the
+    flood threshold, so that adding companies cannot tighten the gate - see
+    state.IMPLAUSIBLE_NEW_JOBS_FRACTION.
 
     Sending happens here, after the whole loop, rather than per company inside
     it. That is the only way the volume gate can exist at all: it is a
@@ -305,7 +310,7 @@ def _deliver(pending: list, previous_states: dict,
         clear_flood_counter()
         return
 
-    suppress, message = flood_decision(total)
+    suppress, message = flood_decision(total, corpus_postings)
 
     if suppress:
         rewind_failures = _rewind_suppressed_flood(pending, previous_states)
@@ -508,7 +513,14 @@ def _run_normal() -> None:
     # Written after every company, so the counters cover the whole run.
     save_stats(run_stats)
 
-    _deliver(pending, previous_states, send_failures)
+    # The denominator for the flood gate: every posting this run actually saw,
+    # not just the new ones. Counted from the outcomes rather than from the
+    # profile list, so a run whose budget ran out judges itself against the
+    # corpus it really fetched instead of the one it hoped to.
+    corpus_postings = sum(len(o.jobs) for o in outcomes.values()
+                          if o is not None and o.ok and o.jobs)
+
+    _deliver(pending, previous_states, send_failures, corpus_postings)
 
     if had_seed_gap:
         names = ", ".join(had_seed_gap)

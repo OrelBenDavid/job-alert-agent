@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "2B.76D": {
+      "title": "Algorithm Engineer, Flight Control",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "9D.B63": {
+      "title": "Automation Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "DC.07F": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A1.D66": {
+      "title": "Computer Vision Engineer, Aerial Autonomy",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E0.D61": {
+      "title": "Controller",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "B8.E6B": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "86.076": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "13.661": {
+      "title": "IT & Corporate Infrastructure Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "44.F64": {
+      "title": "Senior Hardware Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "50.D64": {
+      "title": "Software Engineer, Robotics & Integration",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "99.E6D": {
+      "title": "Supply Chain & Manufacturing Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "07.D65": {
+      "title": "Systems Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "51.F6B": {
+      "title": "UI/UX Designer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

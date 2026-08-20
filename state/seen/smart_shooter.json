@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-20T06:56:59.888583+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "25.A6C": {
+      "title": "Come work with us!",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    },
+    "7D.B63": {
+      "title": "Computer Vision & Image Processing Engineer",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    },
+    "6B.D65": {
+      "title": "Control & Algorithm Engineer",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    },
+    "00.96B": {
+      "title": "Opto-Mechanical Design Engineer",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    },
+    "1B.B66": {
+      "title": "טכנאי/ת מעבדה",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    },
+    "D6.07B": {
+      "title": "מרכיב/ת מערכות אופטיות",
+      "first_seen": "2026-08-20T06:56:59.888583+00:00"
+    }
+  }
+}

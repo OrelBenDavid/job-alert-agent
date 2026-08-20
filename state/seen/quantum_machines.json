@@ -1,0 +1,87 @@
+{
+  "last_success": "2026-08-20T06:56:56.899705+00:00",
+  "last_count": 20,
+  "consecutive_failures": 0,
+  "jobs": {
+    "20.F63": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "13.05B": {
+      "title": "Backend Tech Lead",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "04.E6B": {
+      "title": "Buyer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "6F.26D": {
+      "title": "Cloud Security Engineer - Microsoft 365",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "CC.F46": {
+      "title": "Compiler Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "5E.E51": {
+      "title": "Customer Success Physicist- Tel Aviv",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "EB.F61": {
+      "title": "Director of Brand Strategy",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "CA.A67": {
+      "title": "FPGA Design Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "B7.164": {
+      "title": "Front-End Team Leader",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "02.F63": {
+      "title": "Hardware Product Engineering Team Leader",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "1A.C34": {
+      "title": "Logic Design Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "DF.857": {
+      "title": "Micro-Architect",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "7E.A62": {
+      "title": "Production Engineering Leader",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "93.E6E": {
+      "title": "Python Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "82.D69": {
+      "title": "QA & Automation Team Lead",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "92.966": {
+      "title": "Quantum Physics Solution Marketing & Science Communication",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "15.D59": {
+      "title": "R&D Software Engineer - Core Processor",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "83.E66": {
+      "title": "Sales & Business Development Manager - IQCC",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "13.264": {
+      "title": "Senior Verification Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "42.364": {
+      "title": "Verification Engineer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    }
+  }
+}

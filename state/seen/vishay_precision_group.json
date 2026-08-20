@@ -1,0 +1,67 @@
+{
+  "last_success": "2026-08-20T06:56:59.903629+00:00",
+  "last_count": 15,
+  "consecutive_failures": 0,
+  "jobs": {
+    "10.F64": {
+      "title": "Buyer",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "A0.F62": {
+      "title": "CRM Senior Manager",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "3F.C64": {
+      "title": "Director of Operations",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "6E.B68": {
+      "title": "Global Demand Generation Senior Manager",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "5A.963": {
+      "title": "Planning Manager",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "24.E66": {
+      "title": "Production Planning & Scheduling",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "FF.E62": {
+      "title": "Production Planning & Scheduling",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "32.D6C": {
+      "title": "Production Section Manager",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "8D.B66": {
+      "title": "R&D Mechanical Design Engineer",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "A6.D63": {
+      "title": "Senior Manager, Division Controller",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "DD.F65": {
+      "title": "Senior Quality Assurance Manager",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "9D.C69": {
+      "title": "טכנאי/הנדסאי אחזקה למערכות ייצור מתקדמות",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "F2.E63": {
+      "title": "מנהל/ת סדנת CNC",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "2F.754": {
+      "title": "עובד ייצור",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "9C.862": {
+      "title": "ראש צוות מטלורגיה",
+      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    }
+  }
+}

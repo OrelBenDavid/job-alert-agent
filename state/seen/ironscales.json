@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-20T06:56:54.012511+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "BC.D6D": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "35.C6F": {
+      "title": "Security Researcher",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "23.C62": {
+      "title": "Sr. Full Stack Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "99.668": {
+      "title": "SW Development Team Lead- Inspection & Detection",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    }
+  }
+}

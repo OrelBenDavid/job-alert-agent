@@ -1,0 +1,211 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 51,
+  "consecutive_failures": 0,
+  "jobs": {
+    "54.460": {
+      "title": "Account Executive- Defense Sector",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "CE.E62": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A6.079": {
+      "title": "AI IT Centre of Excellence Deploy Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "9C.D6C": {
+      "title": "AI Project Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "93.E65": {
+      "title": "AI R&D Transformation Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "BF.167": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "25.46E": {
+      "title": "ATE Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "50.F67": {
+      "title": "Automation Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "C8.F4F": {
+      "title": "Backend Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "96.D65": {
+      "title": "Board Design Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "6E.E66": {
+      "title": "Cloud Partner & Alliance Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "5F.F62": {
+      "title": "Cyber Security Analyst Lead (SOC/SecOps)",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "97.76F": {
+      "title": "Data Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "33.560": {
+      "title": "DBA",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "1B.061": {
+      "title": "DevOps Engineer (GCP Specialist)",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "5D.B68": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E4.566": {
+      "title": "Embedded Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "54.56D": {
+      "title": "FPGA Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "F5.D68": {
+      "title": "Hardware Development Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "89.D6A": {
+      "title": "Integration & DevOps Engineer (Kubernetes / OpenShift)",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E3.E6E": {
+      "title": "IT Help Desk",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "13.F49": {
+      "title": "IT Solutions Architect",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D6.D6C": {
+      "title": "Junior Electronics Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "8D.F19": {
+      "title": "Network Architect",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "2B.A53": {
+      "title": "Network Integration Specialist",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "45.D57": {
+      "title": "Network Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "74.D65": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "DC.A67": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E4.569": {
+      "title": "RT Embedded Software Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "73.D60": {
+      "title": "Senior Automation Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "63.D6E": {
+      "title": "Senior Full Stack Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D4.F6A": {
+      "title": "Senior Software Development Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "3E.E67": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "38.260": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "5E.E6E": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A5.D62": {
+      "title": "Software Project Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "12.F64": {
+      "title": "Software Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "DC.A66": {
+      "title": "Software Tech Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D9.D68": {
+      "title": "SQL Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "0F.C60": {
+      "title": "System Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "24.245": {
+      "title": "System Expert",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "C5.F62": {
+      "title": "Systems & Infrastructure Administrator",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "70.86A": {
+      "title": "אינטגרטור/ית RF",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E6.D66": {
+      "title": "אינטגרטור/ית מנוסה",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "86.D6A": {
+      "title": "אינטגרטור/ית סייבר ג'וניור/ית",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "EE.C69": {
+      "title": "מהנדס/ת מערכת",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D9.E51": {
+      "title": "מומחה/ית תשתיות תקשוב",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "98.96C": {
+      "title": "מנהל/ת פרויקטים",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "14.958": {
+      "title": "מנוסה DevOps מפתח/ת",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "C6.B69": {
+      "title": "מפתח/ת BI",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "14.95B": {
+      "title": "ראש.ת צוות DevOps",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

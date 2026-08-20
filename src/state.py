@@ -15,6 +15,8 @@ it either blocks real postings (a partial collapse) or repeats one alert
 every cron interval until the user stops reading them (a total zero).
 """
 
+from __future__ import annotations   # see models.py - `X | None` on 3.9 too
+
 import json
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -384,6 +386,38 @@ def should_alert_failure(slug: str) -> bool:
 # something any board in this project has been observed to do.
 DEFAULT_IMPLAUSIBLE_NEW_JOBS = 50
 
+# *** Why that number cannot stay absolute. ***
+#
+# 50 was never really "50". It was "~4% of the corpus", measured when the
+# corpus was 1,350 postings across 141 companies. The RATIO is the finding; the
+# integer is an artefact of the corpus size on the day it was taken.
+#
+# Left absolute, the gate tightens by itself every time a company is added,
+# because the corpus grows while the limit does not. At ~2,100 postings (256
+# companies) 50 is already ~2.4%; at the ~15,000 postings a 2,000-company
+# corpus would carry it is ~0.3%, and ordinary churn would trip the gate on
+# most runs - holding every alert and rewinding companies continuously, which
+# is precisely the "warns and never delivers" failure FLOOD_ACCEPT_AFTER exists
+# to prevent. The escape hatch would fire constantly and the gate would become
+# noise the user learns to ignore.
+#
+# So the threshold is expressed as the fraction it always was, against the
+# corpus actually seen this run:
+IMPLAUSIBLE_NEW_JOBS_FRACTION = 50 / 1350        # ~3.7%, the measured basis
+
+# ...with a floor, so the gate can only ever LOOSEN as the corpus grows, never
+# tighten below the one value that was measured against reality. A small corpus
+# keeps exactly today's behaviour; scaling down would be a change nothing
+# justifies.
+MIN_IMPLAUSIBLE_NEW_JOBS = DEFAULT_IMPLAUSIBLE_NEW_JOBS
+
+# Worth stating plainly, because it is the reason this is safe: loosening does
+# not blunt the failure the gate was built for. Losing state makes EVERY open
+# posting look new at once, so a full reset reports ~100% of the corpus against
+# a threshold of ~3.7% of it - caught by a factor of 27 whatever the size. The
+# gate still catches any reset touching more than about a twenty-fifth of the
+# corpus. What it stops doing is mistaking a bigger corpus for a bigger problem.
+
 # ...and the escape hatch, for exactly the same reason PARTIAL_COLLAPSE_ACCEPT_
 # AFTER exists. Suppressing is not free: while suppressed, nothing is
 # delivered. If the volume is real - a seed gap closing, a genuine hiring
@@ -396,15 +430,33 @@ FLOOD_ACCEPT_AFTER = 2
 RUN_STATE_PATH = STATE_DIR.parent / "run.json"
 
 
-def implausible_new_jobs_threshold() -> int:
-    """Env-overridable, and a bad value falls back rather than raising - the
-    same rule the worker counts and fetch budget follow."""
+def implausible_new_jobs_threshold(corpus_postings: int | None = None) -> int:
+    """The limit for this run, scaled to the corpus it is judging.
+
+    `corpus_postings` is how many postings the run actually saw across every
+    company - not how many are new. Passing None keeps the historical absolute
+    default, which is what makes this safe to call from anywhere: a caller that
+    has no corpus figure gets exactly the old behaviour rather than a wrong
+    proportional one.
+
+    JOB_ALERT_MAX_NEW_JOBS still wins outright when set. It is an absolute
+    override on purpose - it exists to pin the threshold during an
+    investigation, and a knob that silently rescaled itself would be useless
+    for that. A bad value falls back rather than raising, the same rule the
+    worker counts and the fetch budget follow."""
     import os
-    try:
-        return max(1, int(os.environ.get("JOB_ALERT_MAX_NEW_JOBS",
-                                         DEFAULT_IMPLAUSIBLE_NEW_JOBS)))
-    except (TypeError, ValueError):
+    raw = os.environ.get("JOB_ALERT_MAX_NEW_JOBS")
+    if raw is not None:
+        try:
+            return max(1, int(raw))
+        except (TypeError, ValueError):
+            return DEFAULT_IMPLAUSIBLE_NEW_JOBS
+
+    if not corpus_postings or corpus_postings < 0:
         return DEFAULT_IMPLAUSIBLE_NEW_JOBS
+
+    scaled = round(corpus_postings * IMPLAUSIBLE_NEW_JOBS_FRACTION)
+    return max(MIN_IMPLAUSIBLE_NEW_JOBS, scaled)
 
 
 def load_run_state() -> dict:
@@ -455,12 +507,16 @@ def clear_flood_counter() -> None:
     _write_run_state(state)
 
 
-def flood_decision(new_job_count: int) -> tuple[bool, str]:
+def flood_decision(new_job_count: int,
+                   corpus_postings: int | None = None) -> tuple[bool, str]:
     """(suppress, message) for a run about to send `new_job_count` jobs.
+
+    `corpus_postings` scales the threshold to the run's own corpus - see
+    implausible_new_jobs_threshold. Omitting it keeps the absolute default.
 
     Returns suppress=False and an empty message for any ordinary run, so the
     common path costs one comparison and no file read beyond the counter."""
-    threshold = implausible_new_jobs_threshold()
+    threshold = implausible_new_jobs_threshold(corpus_postings)
     if new_job_count <= threshold:
         return False, ""
 

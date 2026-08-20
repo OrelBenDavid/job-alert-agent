@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-20T06:56:44.577812+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "55.767": {
+      "title": "Algo/ AI Engineer",
+      "first_seen": "2026-08-20T06:56:44.577812+00:00"
+    },
+    "55.769": {
+      "title": "Software / Data Engineer",
+      "first_seen": "2026-08-20T06:56:44.577812+00:00"
+    }
+  }
+}

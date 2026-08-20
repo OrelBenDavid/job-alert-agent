@@ -1,0 +1,35 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
+  "jobs": {
+    "FE.360": {
+      "title": "Digital Marketing Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E5.560": {
+      "title": "Field Security Architect",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D9.956": {
+      "title": "Security Researcher",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "1D.B6D": {
+      "title": "Senior AI Analyst",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "09.95A": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "05.950": {
+      "title": "Senior Content Marketing Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "2D.A51": {
+      "title": "Senior Frontend Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

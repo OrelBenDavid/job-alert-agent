@@ -1,0 +1,47 @@
+{
+  "last_success": "2026-08-20T06:56:54.028386+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
+  "jobs": {
+    "92.D69": {
+      "title": "Experienced Project Manager",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "AD.A58": {
+      "title": "Field technician",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "0F.86F": {
+      "title": "Hardware Engineer",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "C5.D65": {
+      "title": "Mechanical Designer",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "34.C6B": {
+      "title": "Purchasing Buyer",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "D9.A6E": {
+      "title": "Regional Sales Director",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "19.76D": {
+      "title": "חווט/ת",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "E4.C67": {
+      "title": "מלחימ/ה",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "6E.F60": {
+      "title": "מרכיב מכאני",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    },
+    "E4.C65": {
+      "title": "רתך/מסגר",
+      "first_seen": "2026-08-20T06:56:54.028386+00:00"
+    }
+  }
+}

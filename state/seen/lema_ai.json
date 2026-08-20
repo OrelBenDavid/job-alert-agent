@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-20T06:56:54.012511+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4D.071": {
+      "title": "GTM Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "F2.46D": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "F2.463": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "5E.C64": {
+      "title": "Senior Product Marketing Manager",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    }
+  }
+}

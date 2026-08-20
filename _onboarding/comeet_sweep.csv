@@ -1,0 +1,95 @@
+company,size,route,ats,id,confidence,jobs,israel_jobs,on_family
+CommIT,?,common_crawl,comeet,comm-it/76.008,verified,132,51,48
+Cyera,?,common_crawl,comeet,cyera/17.008,verified,171,31,28
+INFINIDAT,?,common_crawl,comeet,infinidat/D6.003,verified,51,31,28
+Kela Technologies,?,common_crawl,comeet,kelasys/2A.007,verified,21,21,17
+Buildots,?,common_crawl,comeet,buildots/36.004,verified,43,17,16
+Orbit Communication Systems,?,common_crawl,comeet,orbit_communication_systems/2B.008,verified,18,18,16
+Quantum Machines,?,common_crawl,comeet,quantummachines/D6.000,verified,53,20,15
+Vishay Precision Group,?,common_crawl,comeet,vpgsensors/C8.009,verified,68,15,13
+Eyesatop,?,common_crawl,comeet,eyesatop/FA.006,verified,14,13,11
+Regulus,?,common_crawl,comeet,regulus/9A.00D,verified,14,13,11
+Upwind Security,?,common_crawl,comeet,upwind/49.004,verified,51,15,11
+AllCloud,?,common_crawl,comeet,allcloud/71.008,verified,24,13,10
+Bright Data,?,common_crawl,comeet,brightdata/88.007,verified,44,14,10
+Keshet media group,?,common_crawl,comeet,keshet/26.009,verified,18,13,10
+Hypernative,?,common_crawl,comeet,hypernative/8A.00E,verified,16,9,9
+Sunbit,?,common_crawl,comeet,sunbit/37.001,verified,40,9,9
+Voyantis,?,common_crawl,comeet,voyantis/86.00B,verified,11,10,9
+Faye,?,common_crawl,comeet,withfaye/87.00A,verified,16,11,9
+ZyG,?,common_crawl,comeet,zyg/DA.006,verified,11,11,9
+Immunai,?,common_crawl,comeet,immunai/37.009,verified,12,8,8
+Ivix,?,common_crawl,comeet,ivix/09.002,verified,12,8,8
+Mentee Robotics,?,common_crawl,comeet,mentee_robotics/6A.002,verified,8,8,8
+Passportcard,?,common_crawl,comeet,passportcard/92.00A,verified,17,17,8
+Autobrains Technologies,?,common_crawl,comeet,autobrains/57.004,verified,8,7,7
+Guideline,?,common_crawl,comeet,guideline/89.009,verified,14,14,7
+Linx Security,?,common_crawl,comeet,linxsecurity/99.00C,verified,13,10,7
+Magal Solutions,?,common_crawl,comeet,magalsolutions/7A.005,verified,10,10,7
+Sentra,?,common_crawl,comeet,sentra/87.00B,verified,11,9,7
+groundcover,?,common_crawl,comeet,groundcover/88.008,verified,19,6,6
+Rounds,?,common_crawl,comeet,rounds/59.005,verified,10,6,6
+Smart-shooter,?,common_crawl,comeet,smart-shooter/0B.00A,verified,6,6,6
+Akeyless,?,common_crawl,comeet,akeyless/27.006,verified,11,7,5
+Clover Security,?,common_crawl,comeet,clover_security/7A.00A,verified,8,7,5
+Flare,?,common_crawl,comeet,flare/36.00F,verified,14,7,5
+Overwolf,?,common_crawl,comeet,overwolf/B1.001,verified,9,5,5
+Artlist,?,common_crawl,comeet,artlist/85.003,verified,10,8,4
+Ask-AI,?,common_crawl,comeet,askai/1A.00C,verified,6,4,4
+Walmart IL,?,common_crawl,comeet,aspectiva/35.000,verified,4,4,4
+Blockaid,?,common_crawl,comeet,blockaid/69.00B,verified,8,5,4
+IRONSCALES,?,common_crawl,comeet,ironscales/1A.007,verified,11,4,4
+AT&T Israel,?,common_crawl,comeet,joinattil/38.00A,verified,4,4,4
+Mego Afek,?,common_crawl,comeet,megoafek/7A.003,verified,7,5,4
+Minute Media,?,common_crawl,comeet,minutemedia/45.00A,verified,15,5,4
+Native,?,common_crawl,comeet,native/5A.00A,verified,11,5,4
+Nayax,?,common_crawl,comeet,nayax/13.009,verified,20,5,4
+Razor Labs,?,common_crawl,comeet,razorlabs/A5.002,verified,8,5,4
+Reco,?,common_crawl,comeet,reco/3A.00D,verified,18,5,4
+Shva,?,common_crawl,comeet,shva/1B.007,verified,4,4,4
+TailorMed,?,common_crawl,comeet,tailormed/E5.009,verified,15,6,4
+Tufin,?,common_crawl,comeet,tufin/A1.00B,verified,11,4,4
+ZeroPort,?,common_crawl,comeet,zeroport/7A.00E,verified,5,5,4
+A Security,?,common_crawl,comeet,a_security/EA.007,verified,6,4,3
+BUYME,?,common_crawl,comeet,buyme/B2.008,verified,4,3,3
+Fluent Trade Technologies,?,common_crawl,comeet,fluenttech/E5.00E,verified,12,3,3
+Grain,?,common_crawl,comeet,grain/4A.000,verified,4,3,3
+Incredibuild,?,common_crawl,comeet,incredibuild/66.00F,verified,4,4,3
+Lema AI,?,common_crawl,comeet,lemalabs/EA.001,verified,8,4,3
+OX Security,?,common_crawl,comeet,ox_security/F8.006,verified,17,6,3
+Seeking Alpha,?,common_crawl,comeet,seekingalpha/46.006,verified,13,3,3
+Utila,?,common_crawl,comeet,utila/D9.00F,verified,14,5,3
+UVeye,?,common_crawl,comeet,uveye/92.00F,verified,19,3,3
+BlinkOps,?,common_crawl,comeet,blinkops/C7.004,verified,10,2,2
+Flexor Technology,?,common_crawl,comeet,flexor/F9.006,verified,2,2,2
+Frame Security,?,common_crawl,comeet,framesecurity/FA.002,verified,21,3,2
+G2 Risk Solutions,?,common_crawl,comeet,g2risksolutions/C9.003,verified,5,3,2
+Grip Security,?,common_crawl,comeet,grip/A8.001,verified,2,2,2
+MedOne,?,common_crawl,comeet,medone/58.006,verified,2,2,2
+Minimus,?,common_crawl,comeet,minimus/19.00B,verified,2,2,2
+Mitiga,?,common_crawl,comeet,mitiga/26.00B,verified,6,2,2
+Moonshot,?,common_crawl,comeet,moonshot/87.005,verified,3,3,2
+Orchid Security,?,common_crawl,comeet,orchid_security/4A.001,verified,5,2,2
+Pipl,?,common_crawl,comeet,pipl/22.008,verified,7,2,2
+Qedma,?,common_crawl,comeet,qedma/7A.006,verified,4,2,2
+Sedric.ai,?,common_crawl,comeet,sedric/0A.00F,verified,4,2,2
+Silk,?,common_crawl,comeet,silk/F6.00C,verified,3,2,2
+Stream Security,?,common_crawl,comeet,streamsecurity/39.008,verified,3,2,2
+BOA Ideas,?,common_crawl,comeet,boaideas/EA.009,verified,1,1,1
+Draftt,?,common_crawl,comeet,draftt/3A.00F,verified,1,1,1
+Droxi AI,?,common_crawl,comeet,droxiai/1A.001,verified,2,1,1
+Firefly,?,common_crawl,comeet,firefly/39.000,verified,2,1,1
+Flo-Optics,?,common_crawl,comeet,flo_optics/EA.00E,verified,1,1,1
+Freightos,?,common_crawl,comeet,freightos/F0.000,verified,22,3,1
+GeoEdge,?,common_crawl,comeet,geoedge.com/82.00A,verified,5,3,1
+GrowthSpace,?,common_crawl,comeet,growthspace/D7.00A,verified,1,1,1
+Jether Energy Research,?,common_crawl,comeet,jether-energy/87.001,verified,1,1,1
+Komodor,?,common_crawl,comeet,komodor/96.005,verified,1,1,1
+Ludeo,?,common_crawl,comeet,ludeo/D7.008,verified,2,2,1
+Moovit,?,common_crawl,comeet,moovit/63.007,verified,3,3,1
+Nexite,?,common_crawl,comeet,nexite/37.000,verified,1,1,1
+Nym Health,?,common_crawl,comeet,nymhealth/46.005,verified,1,1,1
+Mine,?,common_crawl,comeet,saymine/39.003,verified,5,4,1
+Seal Security,?,common_crawl,comeet,seasecuirty/C9.00A,verified,2,1,1
+Spines,?,common_crawl,comeet,spines/2B.001,verified,17,2,1
+Winn.AI,?,common_crawl,comeet,winn_ai/4A.00F,verified,2,2,1

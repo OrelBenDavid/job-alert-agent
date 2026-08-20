@@ -1,0 +1,75 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 17,
+  "consecutive_failures": 0,
+  "jobs": {
+    "E9.769": {
+      "title": "*Business Process Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "C9.B58": {
+      "title": "*Construction Solution Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "DA.964": {
+      "title": "*DevOps Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "09.A53": {
+      "title": "*Engineering Backend Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "26.557": {
+      "title": "*Full-Stack Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "21.641": {
+      "title": "*Senior Backend Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "82.C66": {
+      "title": "*Senior Deep Learning Researcher",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A0.E67": {
+      "title": "*Team Lead Deep Learning Researcher 3D",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "00.F6D": {
+      "title": "*Technical Product Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E8.E67": {
+      "title": "BIM Specialist - Major Projects",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "CD.F64": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "32.D65": {
+      "title": "Customer Enablement Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "13.E60": {
+      "title": "Field Operations Group Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "26.F66": {
+      "title": "IT Administrator",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "1D.F61": {
+      "title": "Process Operations Specialist",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "F8.26A": {
+      "title": "Project Configuration Specialist",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "63.079": {
+      "title": "Project Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

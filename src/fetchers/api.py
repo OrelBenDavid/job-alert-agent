@@ -450,6 +450,141 @@ def fetch_smartrecruiters(profile) -> list[Job]:
     return jobs
 
 
+def fetch_workable(profile) -> list[Job]:
+    """Workable: one call to the account's widget endpoint, a flat `jobs` array.
+
+    VERIFIED live 2026-08-19 against autofleet (9 postings) and jove (117).
+
+    *** Why this platform is here at all, after being declined twice ***
+
+    The 2026-08-18 sweep found Workable to be worth 1 company and concluded it
+    did not pay for a handler. That reading was an artefact: discover_ats.py
+    records that its Workable probes were being throttled at the time - 425
+    HTTP 429s in one sweep - and get_json turns a 429 into None, which is
+    indistinguishable from "no such board". Its share was unmeasured, not zero.
+
+    Measured properly through Workable's own public aggregator, filtered to
+    Israel: 38 companies and 141 live Israeli postings, in 8 requests. That is
+    what pays for this function.
+
+    *** The aggregator is NOT what this reads, and that distinction matters ***
+
+    jobs.workable.com/api/v1/jobs?location=Israel is how the companies were
+    FOUND. It is the wrong thing to fetch from, because it returns only
+    postings whose location.countryName is Israel - it would silently drop
+    exactly the qualified-remote roles ("Remote - EMEA") that relevance.py
+    deliberately keeps, and it would do so invisibly, since a filtered feed
+    looks identical to a small board. So each company is fetched from its own
+    account endpoint, which returns its whole board, and relevance is decided
+    here by the project's own rule.
+
+    *** Locations: a structured country code, and free text underneath ***
+
+    `locations[]` carries `countryCode`, a picker value - so it decides Israel
+    outright via is_israel_country_code, which is additive and rejects nobody.
+    This is the same lesson as Comeet's location.country: where a board
+    publishes a structured code, that is the trustworthy field.
+
+    ALL entries are checked, not just the first: a posting open in several
+    places must survive if any one of them is Israeli, the same fail-open
+    direction as Ashby's secondaryLocations.
+
+    Underneath it, `city`/`state`/`country` are joined for the text test, which
+    is what lets the qualified-remote rule see "Remote" and a foreign country
+    on one posting and reject it. `country` is a full name here ("Israel",
+    "United States"), not a code, which is what makes it safe to read as prose.
+
+    *** One posting arrives once PER LOCATION, and must not become N alerts ***
+
+    A multi-location opening is repeated in `jobs`, once for each place, every
+    copy carrying the SAME shortcode and differing only in city/state/country.
+    Measured 2026-08-19: Plateful returns 24 items for 6 real openings (one
+    posting repeated across Philippines, Argentina, Colombia, Costa Rica,
+    Nicaragua, Honduras); CXG 1,396 items for 539; Nuvei 73 for 64. 9 of the 16
+    importable companies do this, so it is the platform's normal behaviour and
+    not an edge case.
+
+    Left alone that is the "one opening published once per city arriving as
+    several alerts" defect already fixed for Comeet - and worse here, because
+    the duplicates share an id: state is written before notification, so the
+    same posting would be recorded and alerted several times over.
+
+    So the records are COLLAPSED by shortcode before anything else, and the
+    group is judged as one posting: relevant if ANY of its locations is
+    Israel-relevant, displayed at the Israeli one. That is what the data means
+    - one opening, several places - rather than a filter applied afterwards.
+
+    *** Pagination ***
+
+    There is none to drive. Verified on huzzle, which returns 2,360 items in a
+    single response, and on jove (117): `limit`, `offset` and `page` are all
+    ignored and return the identical payload. 2,360 in one call is far past any
+    plausible per-page cap and is stronger evidence than Greenhouse's 437.
+    """
+    api = profile.raw["api"]
+    params = api.get("extra_params", {})
+    r = requests.get(api["endpoint"], params=params, timeout=20)
+    r.raise_for_status()
+    data = r.json()
+
+    fields = api["fields"]
+    locations_field = fields.get("locations")
+    country_code_field = fields.get("location_country_code", "countryCode")
+
+    def codes_of(item):
+        if not locations_field:
+            return []
+        entries = _get_by_path(item, locations_field) or []
+        if not isinstance(entries, list):
+            return []
+        return [e.get(country_code_field) for e in entries
+                if isinstance(e, dict)]
+
+    # Group first, in first-seen order so the output stays deterministic.
+    groups: dict[str, list] = {}
+    for j in data.get("jobs", []):
+        key = str(_get_by_path(j, fields["id"]) or "")
+        groups.setdefault(key, []).append(j)
+
+    jobs = []
+    for job_id, items in groups.items():
+        first = items[0]
+        title = (_get_by_path(first, fields["title"]) or "").strip()
+
+        israeli_display, fallback_display, relevant = "", "", False
+        for item in items:
+            city = (_get_by_path(item, fields.get("location_city") or "")
+                    or "").strip()
+            state = (_get_by_path(item, fields.get("location_state") or "")
+                     or "").strip()
+            country = (_get_by_path(item, fields["location"]) or "").strip()
+            combined = ", ".join(p for p in (city, state, country) if p)
+
+            # Prefer the specific over the general, the way Comeet's display
+            # rule does: "Tel Aviv-Yafo" reads better than "Israel".
+            display = ", ".join(p for p in (city, state) if p) or country
+
+            by_code = any(is_israel_country_code(c) for c in codes_of(item))
+            if by_code or is_israel_location(combined):
+                relevant = True
+                israeli_display = israeli_display or display
+            elif is_relevant_location(combined, title):
+                relevant = True
+                fallback_display = fallback_display or display
+
+        if not relevant:
+            continue
+        jobs.append(Job(
+            id=job_id,
+            title=title,
+            location=israeli_display or fallback_display,
+            url=_get_by_path(first, fields["url"]) or "",
+            company=profile.slug,
+            description=_inline_description(profile, first),
+        ))
+    return jobs
+
+
 def fetch_workday(profile) -> list[Job]:
     """Workday. VERIFIED live 2026-08-18 against crowdstrike/wd5 (449 postings
     company-wide, 13 in Israel) and verily/wd1 (71).
@@ -552,11 +687,16 @@ _PLATFORM_DISPATCH = {
                              # handler for why that was judged worth it
     "workday": fetch_workday,   # added 2026-08-19, after a live verification
                                  # against crowdstrike/wd5 and verily/wd1
-    # workable/recruitee: still not implemented. Both were confirmed reachable
-    # by the 2026-08-18 sweep, and both were then deliberately declined: they
-    # account for 3 companies and 4 Israel-relevant on-family postings between
-    # them, which does not pay for two more handlers to keep working. Recorded
-    # rather than forgotten - the candidates are in the README.
+    "workable": fetch_workable,  # added 2026-08-19. Declined twice before, on
+                                  # a measurement that turned out to be an
+                                  # artefact of Workable throttling the sweep -
+                                  # see the handler. Its real Israeli share is
+                                  # 38 companies and 141 postings.
+    # recruitee: still not implemented. Confirmed reachable by the 2026-08-18
+    # sweep and then deliberately declined - 2 companies and a handful of
+    # on-family postings, which does not pay for a handler to keep working.
+    # Recorded rather than forgotten; EXPANSION_STRATEGY.md section 4 says to
+    # measure its tenant count through Common Crawl before reconsidering.
 }
 
 

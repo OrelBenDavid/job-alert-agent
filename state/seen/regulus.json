@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-20T06:56:56.915754+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "F6.075": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "02.C66": {
+      "title": "C++ Software Engineer",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "72.A6B": {
+      "title": "Computer Vision Engineer - Kinetic Drone Interception",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "0D.074": {
+      "title": "Control & Simulation Team Lead",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "FC.061": {
+      "title": "Customer Service Lead",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "64.F65": {
+      "title": "Drone Technology Research Lead",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "2E.06C": {
+      "title": "Field Testing Engineer",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "F8.E65": {
+      "title": "Mechanical Engineering Team Lead",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "8A.66A": {
+      "title": "Sales Manager-EU",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "D9.C66": {
+      "title": "System Engineer - Electronic Warfare Systems",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "03.665": {
+      "title": "System Engineer - Kinetic Drone Interception",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "D5.F54": {
+      "title": "System Test Automation Engineer",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "5B.D61": {
+      "title": "Talent Sourcing Specialist",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    }
+  }
+}

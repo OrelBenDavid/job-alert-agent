@@ -1,0 +1,131 @@
+{
+  "last_success": "2026-08-20T06:56:54.012511+00:00",
+  "last_count": 31,
+  "consecutive_failures": 0,
+  "jobs": {
+    "84.C68": {
+      "title": "Automation Infrastructure Tech Lead",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "17.D6A": {
+      "title": "Backend Expert - Big Data / AI Ops Group",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "C6.D60": {
+      "title": "C++ Backend Software Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4C.D6A": {
+      "title": "C++ Software Engineer - NAS Group",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "5C.D61": {
+      "title": "C++ Software Engineer for AI",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "32.D60": {
+      "title": "C/C++ Senior Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "EE.C60": {
+      "title": "Experienced Test Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "83.E63": {
+      "title": "FP&A Analyst",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "32.D63": {
+      "title": "Hardware Integration Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "BD.B6D": {
+      "title": "In-direct Procurement Specialist",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "AE.C62": {
+      "title": "Interoperability Test Team Leader",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "5C.D60": {
+      "title": "Java Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "22.D6F": {
+      "title": "Junior Software Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "FD.F6B": {
+      "title": "NPI Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "2D.A5D": {
+      "title": "Platform Engineering Team Lead",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4F.C6F": {
+      "title": "Procurement Specialist",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "B5.074": {
+      "title": "Product - Senior Product Manager - Storage Services",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "84.C62": {
+      "title": "Python Automation Tech Lead",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "32.D61": {
+      "title": "Python Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "17.D69": {
+      "title": "Python Infrastructure Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "17.D6B": {
+      "title": "Python Software Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4C.D6F": {
+      "title": "Scale Testing Team Leader",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "C6.D61": {
+      "title": "Senior C++ Software Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "5F.C60": {
+      "title": "Senior Devops Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "C0.E63": {
+      "title": "Senior DevSecOps Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4C.D6E": {
+      "title": "Senior Java Developer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "D5.07B": {
+      "title": "Senior Product Manager - Data AI Services",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "84.C66": {
+      "title": "Senior System Test Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4C.D6C": {
+      "title": "Software  Engineering Team Lead - NAS Group",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "84.C67": {
+      "title": "Software Developer Engineer in Test",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "84.C65": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    }
+  }
+}

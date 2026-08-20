@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-20T06:56:59.901622+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "D3.F60": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-20T06:56:59.901622+00:00"
+    },
+    "F8.E63": {
+      "title": "Senior Cybersecurity GRC",
+      "first_seen": "2026-08-20T06:56:59.901622+00:00"
+    },
+    "60.D60": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-20T06:56:59.901622+00:00"
+    },
+    "D8.B6A": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-20T06:56:59.901622+00:00"
+    },
+    "F3.E67": {
+      "title": "Strategic Customer Success Manager",
+      "first_seen": "2026-08-20T06:56:59.901622+00:00"
+    }
+  }
+}

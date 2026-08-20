@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-20T06:56:59.911657+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "64.F66": {
+      "title": "Delivery Manager",
+      "first_seen": "2026-08-20T06:56:59.911657+00:00"
+    },
+    "29.061": {
+      "title": "Devops Engineer",
+      "first_seen": "2026-08-20T06:56:59.911657+00:00"
+    },
+    "F4.565": {
+      "title": "Project Manager",
+      "first_seen": "2026-08-20T06:56:59.911657+00:00"
+    },
+    "D9.960": {
+      "title": "Senior AI Engineer",
+      "first_seen": "2026-08-20T06:56:59.911657+00:00"
+    },
+    "C5.079": {
+      "title": "Supply Chain & Procurement specialist",
+      "first_seen": "2026-08-20T06:56:59.911657+00:00"
+    }
+  }
+}

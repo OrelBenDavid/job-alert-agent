@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-20T06:56:53.996569+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "86.F6B": {
+      "title": "Engineering Team Lead- Data & AI Platform",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "E2.F6F": {
+      "title": "Financial Controller - ML Replacement",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "CF.C64": {
+      "title": "Software Engineer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    }
+  }
+}
