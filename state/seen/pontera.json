@@ -1,7 +1,7 @@
 {
   "last_success": "2026-08-19T15:39:40.407073+00:00",
   "last_count": 1,
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "jobs": {
     "6109244004": {
       "title": "Principal Security Architect - Enterprise & AI Security",
