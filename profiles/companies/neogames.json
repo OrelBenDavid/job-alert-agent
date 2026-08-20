@@ -6,7 +6,11 @@
   "resolved_from": "Found by fingerprinting the company's own careers page during the 2026-08-18 sweep: 'aristocrat/wd3/AristocratExternalCareersSite' (Workday tenant/host/site). The Israel locationCountry facet resolved to 084562884af243748dad7c84c304d89a and was confirmed by a live filtered call at import time.",
   "api": {
     "endpoint": "https://aristocrat.wd3.myworkdayjobs.com/wday/cxs/aristocrat/AristocratExternalCareersSite/jobs",
-    "israel_facet": "084562884af243748dad7c84c304d89a"
+    "israel_facet": "084562884af243748dad7c84c304d89a",
+    "fields": {
+      "id": "bulletFields.3"
+    },
+    "_note": "*** OVERRIDES THE PLATFORM'S id MAPPING, AND IT IS LOAD-BEARING. *** _platforms/workday.json maps id to bulletFields.0 because that is the requisition id on every other tenant - verified live 2026-08-20 across all 11 Workday companies: autodesk '26WD97479', crowdstrike 'R29093', digital_turbine 'JR101044', mks_instruments 'R21779', palo_alto_networks 'JR-020552'. bulletFields is a positional array with no schema, and on THIS tenant it is ordered differently: ['Regular', 'Tel Aviv District', 'Israel', 'R0021963', 'Aristocrat'] - index 0 is the EMPLOYMENT TYPE and the requisition id is at index 3. Every posting on the board is 'Regular', so every posting collapsed onto one key. Measured on 2026-08-20: the live fetch returned 2 Israel-relevant postings and 1 distinct id, and state held a single entry keyed 'Regular' whose title was 'Bookkeeper' - which roles.py correctly blocks. So the collision was hiding this board's on-family postings ('Games Product Manager') PERMANENTLY, not merely delaying them: the diff runs on Job.id, so a posting whose id is already seen can never be new again. Nothing else could see it - last_count stayed at 2, above zero and stable, so the health gate never fired and never would. It was found by src/health_report.py comparing last_count against len(jobs), an invariant that must hold on a healthy run and that nothing had ever checked. neogames is the ONLY one of the 11 with this ordering, which is why this is a per-company override and not a platform change."
   },
   "health": {
     "expected_min_jobs": 0,

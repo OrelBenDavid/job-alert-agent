@@ -226,3 +226,99 @@ def test_url_rewrite_is_a_no_op_when_the_pattern_is_absent():
               url="https://example.com/jobs/1", company="x")
     assert detail._detail_url(
         job, {"url_rewrite": ["/en-US/", "/other/"]}) == "https://example.com/jobs/1"
+
+
+# ---------------------------------------------------------------------------
+# The id mapping, and the collision it hid - found 2026-08-20
+#
+# fetch_workday used to hardcode bulletFields[0], which made api.fields.id
+# decorative: the platform profile documented a mapping the code never read.
+#
+# bulletFields is a POSITIONAL array with no schema. Verified live across all
+# 11 Workday companies: 10 carry the requisition id at index 0, and Aristocrat
+# (neogames) orders it ['Regular', 'Tel Aviv District', 'Israel', 'R0021963',
+# 'Aristocrat'] - index 0 is the EMPLOYMENT TYPE, and every posting on that
+# board is 'Regular'.
+#
+# The diff runs on Job.id, so both of that board's Israeli postings collapsed
+# onto one key. The survivor was a Bookkeeper, which roles.py blocks, and the
+# on-family posting was permanently un-alertable. last_count stayed at 2 -
+# stable and above zero - so the health gate never fired and never would.
+# ---------------------------------------------------------------------------
+
+def _stub_post(monkeypatch, payload):
+    """Serve one fixed listing page to fetch_workday's POST."""
+    monkeypatch.setattr(api.requests, "post",
+                        lambda url, json=None, timeout=None: _Response(payload))
+
+
+_ARISTOCRAT = {
+    "total": 2,
+    "jobPostings": [
+        {"title": "Games Product Manager",
+         "externalPath": "/job/Israel---Tel-Aviv-Yafo/Games-Product-Manager_R0021963",
+         "locationsText": "Israel - Tel Aviv-Yafo",
+         "bulletFields": ["Regular", "Tel Aviv District", "Israel",
+                          "R0021963", "Aristocrat"]},
+        {"title": "Bookkeeper",
+         "externalPath": "/job/Israel---Tel-Aviv-Yafo/Bookkeeper_R0020424",
+         "locationsText": "Israel - Tel Aviv-Yafo",
+         "bulletFields": ["Regular", "Tel Aviv District", "Israel",
+                          "R0020424", "Aristocrat"]},
+    ],
+}
+
+
+def test_index_0_collides_every_posting_on_the_aristocrat_ordering(monkeypatch):
+    """The defect itself, pinned. With the platform default, this real board
+    produces two postings that state cannot tell apart."""
+    _stub_post(monkeypatch, _ARISTOCRAT)
+    jobs = api.fetch_workday(_profile())
+    assert len(jobs) == 2
+    assert len({j.id for j in jobs}) == 1        # <-- the collision
+
+
+def test_a_company_can_override_the_index_and_separate_them(monkeypatch):
+    """The fix: api.fields.id is READ, so a per-company record can point at
+    the index where that tenant actually puts the requisition id."""
+    _stub_post(monkeypatch, _ARISTOCRAT)
+    profile = _profile(fields={"id": "bulletFields.3", "title": "title",
+                               "location": "locationsText",
+                               "url": "externalPath"})
+    jobs = api.fetch_workday(profile)
+    assert sorted(j.id for j in jobs) == ["R0020424", "R0021963"]
+
+
+def test_an_out_of_range_index_falls_back_rather_than_raising(monkeypatch):
+    """A mapping that does not resolve must not take the run down. externalPath
+    is a poor id - it is derived from the title - but it is better than
+    dropping the posting or raising mid-fetch."""
+    _stub_post(monkeypatch, _ARISTOCRAT)
+    profile = _profile(fields={"id": "bulletFields.99", "title": "title",
+                               "location": "locationsText",
+                               "url": "externalPath"})
+    jobs = api.fetch_workday(profile)
+    assert len(jobs) == 2
+    assert all(j.id.startswith("/job/") for j in jobs)
+
+
+# ---------------------------------------------------------------------------
+# _get_by_path list indexing, which is what makes the override expressible
+# ---------------------------------------------------------------------------
+
+def test_a_numeric_segment_indexes_a_list():
+    assert api._get_by_path({"a": ["x", "y", "z"]}, "a.1") == "y"
+
+
+def test_a_numeric_segment_reads_a_dict_KEY_first():
+    """A platform whose JSON genuinely has "0" as a field name must keep
+    working - dict lookup wins before the list branch is considered."""
+    assert api._get_by_path({"a": {"0": "by-key"}}, "a.0") == "by-key"
+
+
+def test_an_out_of_range_index_is_None_not_an_exception():
+    assert api._get_by_path({"a": ["x"]}, "a.5") is None
+
+
+def test_a_non_numeric_segment_against_a_list_is_None():
+    assert api._get_by_path({"a": ["x"]}, "a.name") is None
