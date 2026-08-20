@@ -765,3 +765,34 @@ presence still gets the fail-open per-posting rule in full. But the underlying
 asymmetry is still there - `is_israel_country_code` is additive by design, so a
 foreign country code identifies nobody and rejects nobody. That is load-bearing
 and was deliberately not touched. It is the thing to revisit before step 7.
+
+### The corpus-level check of section 7 is built (2026-08-20)
+
+`src/health_report.py`, plus `/health` in Telegram. Read-only, no requests -
+it reads `state/seen/`, `profiles/` and `state/filter_stats.json` only.
+
+The metric section 7 asked for is there, with one honest correction: **state
+records no sends**, so "companies that have never delivered a single alert" is
+not directly answerable. Two labelled proxies replace it - a company with no
+tracked posting whose title `roles.classify` puts where the role filter would
+pass it (strong: it *cannot* deliver), and a company that has detected no
+posting since its seed cohort (weak, ranked by board size).
+
+First run, all 368 companies: **18 structurally silent (4.9%)**, no platform
+above 2x the corpus silent rate - which is the measurement that says the Comeet
+location bug is gone rather than merely fixed.
+
+**It found a defect on that first run, and not one it was designed for.** A
+check that fell out of the data while building it - `last_count` and
+`len(jobs)` are written together on a healthy run, so a gap between them means
+two postings shared one `Job.id` - caught **`neogames`**: the Workday platform
+profile maps `api.fields.id` to `bulletFields.0` as the requisition id, and on
+the Aristocrat tenant that field holds the employment type, so the whole board
+arrives as `"Regular"`. Its two on-family postings collapsed into one stored
+`Bookkeeper`, permanently: the diff runs on that id, so no future posting there
+can ever read as new. 10 of 11 Workday companies are unaffected.
+
+That is gate 5 (stability) generalised: **an id that is unique on the tenant
+you verified against is not an id that is unique per tenant.** Any future
+platform whose id is a positional field rather than a named one needs this
+check, and now has it.

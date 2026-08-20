@@ -195,6 +195,73 @@ silence, which is the direction every decision in this project takes.
 > repeats one alert until the user stops reading them - and the next one will
 > be real.
 
+## Corpus health report
+
+`src/health_report.py` — the corpus-level twin of the health gate, and the
+standing report `_onboarding/EXPANSION_STRATEGY.md` section 7 asks for by name.
+Read-only, costs no requests, reads only `state/` and `profiles/`.
+
+```bash
+cd src
+python health_report.py            # the full report
+python health_report.py --telegram # the /health summary
+```
+
+**Why it has to be corpus-level.** Every check in the run compares a company
+against *itself*. That is structurally blind to a company that has never
+delivered anything: its fetch succeeds, its count is a steady and plausible
+`0`, so the gate has nothing to compare against and `zero_is_plausible` is
+true because it was true on the day it was imported. That is exactly how the
+Comeet location bug hid at `bird_aerosystems`, `final`, `imagen` and `gk8` —
+found only because someone noticed those four had never sent a single alert.
+At 145 companies it hid for months; at 368 it hides better.
+
+**State does not record whether an alert was sent**, and the report does not
+pretend otherwise. It uses two labelled proxies:
+
+| Proxy | What it reads | Strength |
+|---|---|---|
+| **deliverable** | the stored title, put back through `roles.classify`; `target` or `unknown` means the role filter would pass it | strong — zero of these means the company *cannot* deliver, whatever its fetch does |
+| **churn** | a posting whose `first_seen` is later than the company's earliest (seeding stamps one timestamp on the whole batch, so anything later was genuinely *detected*) | weak — a small board goes weeks without a req, so it is a watchlist ranked by board size |
+
+Six sections: structurally silent companies, **duplicate job ids**, health-gate
+state, staleness, distribution by platform, and the filter funnel.
+
+**The duplicate-id check is new and it found something on its first run.**
+`process_company` writes `last_count = len(fetched)` and the `jobs` map keyed
+by `Job.id` in the same breath, so on a healthy run the two must agree. A gap
+means two postings shared one id and the dict kept one — and because the diff
+runs on `Job.id`, the loser is not merely hidden, it is *permanently
+un-alertable*. Nothing else in the project compares those two numbers.
+
+Measured 2026-08-20 across all 368 companies, exactly one company disagrees:
+**`neogames` reports `last_count: 2` against one stored job whose id is the
+literal string `"Regular"`.** The Workday platform profile maps
+`api.fields.id` to `bulletFields.0` and documents it as the requisition id
+(`R29093`); on the Aristocrat tenant that field holds the *employment type*
+instead, so every posting on that board arrives as `"Regular"`. The other 10
+Workday companies are fine (`R29093`, `JR101044`, `R-093278`, …), which is why
+this looks healthy from every angle except this one. The company's health gate
+has never fired and never will.
+
+**The `expected_min_jobs` check catches what the gate cannot see.** The gate
+fires only on `count < floor <= previous` and accepts the new count after three
+runs, so a company that *settles* below its floor is invisible to it forever
+after — the stale-floor case that started the 2026-08-19 maintenance pass
+(Datadog, lowered from 4 to 0). The report lists them every time it runs.
+
+**Platform-level silence is called out explicitly**, because that is the shape
+a fetcher or platform-profile defect makes: not one failing company, but one
+platform's boards quietly wrong together while every other platform looks
+normal. A platform with at least 5 companies whose silent rate is 2× the
+corpus rate is flagged.
+
+**Per-company filter funnel, honestly scoped.** `state/filter_stats.json` is
+corpus-wide and carries no slug, so "which company produced the undetermined
+pile" is not answerable from it. What *is* answerable is which companies can
+never produce a number at all, because their profile has no way to reach a
+description — the report lists those instead (today: `wix` alone).
+
 ## Experience filter
 
 Default: **ON**, suppressing postings that require **more than one year** of
@@ -417,6 +484,11 @@ Temporary and maternity-cover roles are **tagged, never dropped**
                            undetermined with seniority signals
                            role - in-scope / off-target / unclassified sent /
                            unclassified dropped
+/health                    the corpus-health summary: how many companies can
+                           never deliver anything, duplicate job ids, failing
+                           companies, stale fetches, platform outliers. Reads
+                           state and profiles only - no fetch, unlike /jobs.
+                           The full listing is the CLI report.
 ```
 
 Settings are stored in `state/filters.json`, which the workflow already
@@ -488,6 +560,7 @@ cd src
 python run.py --seed           # seeds only companies with no state yet
 python run.py --seed --force   # re-seed everything (resets first_seen)
 python run.py                  # a normal run
+python health_report.py        # the corpus-health report - read-only, no fetch
 ```
 
 ## Tests
@@ -515,6 +588,67 @@ failures in 75 seconds** — a wall clock set entirely by `wix`, the single
 | Workday | 11 | added 2026-08-19 — new fetcher, new platform profile; +2 on 2026-08-20 |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+### 2026-08-20: the first corpus-health report
+
+`src/health_report.py`, run against all 368 companies. Headline: **2,821
+tracked postings, 2,278 of them deliverable (80.8%)**, 368/368 profiles load,
+0 seed gaps, 0 unreadable state files, 0 companies stale past 24h, 0 profiles
+unverified past 90 days, 0 companies parked below their `expected_min_jobs`.
+
+**18 companies (4.9%) are structurally silent** — they have no tracked posting
+whose title the role filter would pass, so they cannot deliver anything today:
+
+- **12 track no postings at all.** Nine carry `zero_is_plausible: true` and are
+  correct by construction (`wiz` is the worked example). **Three do not** —
+  `nielsen`, `panaya`, `slice` — and of those `panaya` is the already-recorded
+  case whose single Israeli role was filled. The other two are the ones worth a
+  live check.
+- **6 track postings, none deliverable**: `windward` (Controller, Sales
+  Director, Solution Engineer), `media_force`, `bookaway`, `scylladb`,
+  `verifone`, `neogames`. Every one is a correct rejection by `roles.py` — a
+  sourcing outcome (gate 4 in EXPANSION_STRATEGY.md 7), not a scraper defect.
+
+**No platform is an outlier.** Silent rates: Comeet 5.4% (202 companies),
+Greenhouse 6.1% (82), SmartRecruiters 7.7% (13), Workday 9.1% (11), and 0.0%
+for Ashby, Lever, Workable, HiBob and `wix`. Against a 4.9% corpus rate,
+nothing is near the 2× flag. **That is the measurement that says the Comeet
+location bug is genuinely gone** — before the 2026-08-19 fix, that column is
+what would have been several times the corpus rate.
+
+**One real defect, and the duplicate-id check is the only thing that sees
+it: `neogames`.** Its state holds `last_count: 2` against a single stored job
+keyed `"Regular"` — the Workday `bulletFields.0` mapping described above. The
+profile's own import note records **"3 postings on the board, 3
+Israel-relevant, 2 of them in a target job family"**; what survives in state is
+one `Bookkeeper`, which the role filter correctly blocks. So the collision is
+not hiding filler — it is hiding both of that board's on-family postings, and
+will keep hiding every future one, because the diff runs on `Job.id` and that
+id never changes. The fix needs a live read of the Aristocrat tenant to see
+which field actually holds its requisition id; it is a per-company
+`api.fields.id` override, not a platform change (the other 10 Workday companies
+return `R29093`, `JR101044`, `R-093278` and friends, all correct).
+
+**Three companies carry `consecutive_failures > 0`**, all consistent with
+ordinary churn rather than breakage: `pontera` at 5 (one posting, gate holding,
+one run short of `TOTAL_ZERO_ACCEPT_AFTER`), `wix` and `speak` at 1 each.
+
+**The churn proxy reports "not applicable yet", deliberately.** 356 of 368
+companies were seeded within the last 7 days. Of the 128 seeded on 2026-08-13,
+63 (49%) had detected a new posting 6.9 days later — so a 7-day window would
+put half the corpus on the watchlist and discriminate nothing. The window is
+14 days and the report says how many companies are too young rather than
+printing a reassuring `0`.
+
+**Filter funnel, lifetime:** 43.3% of the postings that reached the detail
+layer got an explicit number of years (5 passed, 66 rejected), and **93 were
+delivered fail-open with no number found** (77 plain, 16 with seniority
+signals). Only one company is *structurally* undeterminable — `wix`, 22
+postings, no `detail_fetch` — so that pile is boards that simply do not state
+a number, not a parser that cannot reach them.
+
+**Postings per company** are heavily skewed: max 131, median 5. 12 companies at
+0, 169 at 1–4, 162 at 5–19, 25 at 20+.
 
 ### The 2026-08-19 expansion: discovery, inverted
 
