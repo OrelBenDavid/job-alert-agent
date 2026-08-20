@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T13:03:13.939567+00:00",
-  "last_count": 19,
+  "last_success": "2026-08-20T15:40:50.849818+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "F8.E6E": {
@@ -21,10 +21,6 @@
     },
     "23.F62": {
       "title": "Customer Service Agent",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "23.F66": {
-      "title": "Data Analyst (Chargeback)",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "26.861": {

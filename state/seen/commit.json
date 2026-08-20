@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T13:03:13.920669+00:00",
-  "last_count": 52,
+  "last_success": "2026-08-20T15:40:50.829993+00:00",
+  "last_count": 55,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -107,6 +107,10 @@
       "title": "Network Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "DD.07A": {
+      "title": "Product Director",
+      "first_seen": "2026-08-20T15:40:50.829993+00:00"
+    },
     "74.D65": {
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -114,6 +118,10 @@
     "DC.A67": {
       "title": "QA Automation Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "CD.07F": {
+      "title": "R&D Director",
+      "first_seen": "2026-08-20T15:40:50.829993+00:00"
     },
     "E4.569": {
       "title": "RT Embedded Software Developer",
@@ -126,6 +134,10 @@
     "63.D6E": {
       "title": "Senior Full Stack Developer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "DD.07B": {
+      "title": "Senior Programme Manager",
+      "first_seen": "2026-08-20T15:40:50.829993+00:00"
     },
     "D4.F6A": {
       "title": "Senior Software Development Manager",

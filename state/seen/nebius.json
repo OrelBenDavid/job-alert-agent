@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T13:03:13.973560+00:00",
-  "last_count": 73,
+  "last_success": "2026-08-20T15:40:50.876680+00:00",
+  "last_count": 72,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -11,19 +11,19 @@
       "title": "AI Full-Stack Developer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4917971101": {
-      "title": "AI Solution Architect - Educational Content Author, Nebius Academy",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4947298101": {
       "title": "Business Intelligence Developer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784157101": {
-      "title": "Data Center IT Infrastructure Engineer",
+    "4917971101": {
+      "title": "Cloud Solution Architect - Educational Content Author, Nebius Academy",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4784195101": {
+      "title": "Data Center IT Infrastructure Engineer",
+      "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -205,10 +205,6 @@
     },
     "4907155101": {
       "title": "Senior Software Engineer, Agents (Agentic Search)",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4377797101": {
-      "title": "Senior Software Engineer (C++)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4529931101": {

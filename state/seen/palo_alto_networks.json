@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T13:03:13.982466+00:00",
-  "last_count": 64,
+  "last_success": "2026-08-20T15:40:50.884709+00:00",
+  "last_count": 63,
   "consecutive_failures": 0,
   "jobs": {
     "JR-018098": {
@@ -161,10 +161,6 @@
     },
     "JR-020214": {
       "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-020205": {
-      "title": "Manager, SW Engineering- Identity SSO- (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020210": {
