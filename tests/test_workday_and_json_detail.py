@@ -322,3 +322,65 @@ def test_an_out_of_range_index_is_None_not_an_exception():
 
 def test_a_non_numeric_segment_against_a_list_is_None():
     assert api._get_by_path({"a": ["x"]}, "a.name") is None
+
+
+# ---------------------------------------------------------------------------
+# ...and why the override counts from the END - measured 2026-08-20
+#
+# The index above was bulletFields.3 when the collision was first fixed, which
+# is correct for every Israeli posting on this board. It is not correct for the
+# board: the district element is ABSENT wherever Workday's location hierarchy
+# has no state/province level, so the array is 4 long there and index 3 lands
+# on the brand.
+#
+# Across the 168 distinct postings on this tenant, 27 are that shape, and index
+# 3 reads a brand on all 27 - 'Aristocrat', 'Aristocrat Gaming', 'Aristocrat
+# Interactive', 'Product Madness'. That leaves it requisition-shaped on 141 of
+# 168 and yielding 145 distinct ids: the same silent collision the override
+# exists to prevent, one posting shape away. Index -2 is requisition-shaped on
+# 168 of 168 and fully distinct, because the brand is always last.
+# ---------------------------------------------------------------------------
+
+# A real posting from the same board whose location carries no district.
+_ARISTOCRAT_NO_DISTRICT = {
+    "total": 1,
+    "jobPostings": [
+        {"title": "Senior Database Administrator",
+         "externalPath": "/job/London-United-Kingdom/Senior-DBA_R0020949-1",
+         # forced Israeli so the posting survives the relevance check and
+         # reaches the id mapping, which is what is under test here
+         "locationsText": "Israel - Tel Aviv-Yafo",
+         "bulletFields": ["Regular", "United Kingdom", "R0020949",
+                          "Aristocrat"]},
+    ],
+}
+
+
+def _id_at(monkeypatch, payload, index):
+    _stub_post(monkeypatch, payload)
+    return [j.id for j in api.fetch_workday(_profile(
+        fields={"id": "bulletFields.%s" % index, "title": "title",
+                "location": "locationsText", "url": "externalPath"}))]
+
+
+def test_a_fixed_index_reads_the_brand_when_the_district_is_absent(monkeypatch):
+    """Index 3 is one posting shape away from re-introducing the collision:
+    on a 4-bullet posting it returns the brand, which is shared by every
+    posting under that brand."""
+    assert _id_at(monkeypatch, _ARISTOCRAT_NO_DISTRICT, 3) == ["Aristocrat"]
+
+
+def test_counting_from_the_end_survives_both_shapes(monkeypatch):
+    """-2 is the requisition id whether or not the district element is there,
+    because the brand is always last. Both shapes, one index."""
+    assert _id_at(monkeypatch, _ARISTOCRAT_NO_DISTRICT, -2) == ["R0020949"]
+    assert _id_at(monkeypatch, _ARISTOCRAT, -2) == ["R0021963", "R0020424"]
+
+
+def test_a_negative_segment_indexes_from_the_end():
+    """The override depends on this, so it is pinned rather than assumed."""
+    assert api._get_by_path({"a": ["w", "x", "y", "z"]}, "a.-2") == "y"
+
+
+def test_an_out_of_range_negative_index_is_None_not_an_exception():
+    assert api._get_by_path({"a": ["x"]}, "a.-5") is None
