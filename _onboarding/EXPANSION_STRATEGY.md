@@ -294,7 +294,7 @@ The repo's own deferred list plus what A1/A2 can now measure:
 |---|---|---|---|
 | **Workable** | no adapter | **38 companies, 141 postings (verified)** | **1 - highest, and the feed doubles as the discovery source** |
 | **Recruitee** | no adapter | 2 in the sweep; probe-able, A1 can size it | 2 - cheap JSON API |
-| **Niloosoft / Hunter** | not investigated | Israeli vendor, heavy in non-tech and enterprise | 2 - the key to the non-startup tail |
+| **Niloosoft / Hunter** | **investigated 2026-08-20 - not viable** | 24 tenants found, several dead; jobs behind an auth-gated API and a JS-rendered page | **dropped** - see below |
 | **Teamtailor** | no adapter | unmeasured | 3 |
 | **BambooHR** | no adapter | Cyberbit; small boards | 3 |
 | **SAP SuccessFactors / Oracle / iCIMS** | no adapter | large enterprises, multinationals' Israeli sites | 3 - high effort, high value per hit |
@@ -632,7 +632,7 @@ draft's guess) to "do not run" (the measurement).
 | 7 | Re-source the company universe | M | replaces the exhausted seed | **now the only unblocker**; SNF returns 403 to scripted clients |
 | 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion | **now evidenced** - see below |
 | 9 | Tiered cadence (hot/warm/cold) + conditional requests | M | keeps run time flat as the corpus grows | not yet needed - 366 companies fetch in 75s |
-| 10 | Mine Israeli aggregators for non-tech employers; adapters for Niloosoft etc. | L | the true long tail | |
+| 10 | Mine Israeli aggregators for non-tech employers | L | the true long tail | Niloosoft investigated and dropped 2026-08-20 |
 | - | ~~Blanket A1 sweep across global ATS hosts~~ | - | **rejected on measurement** | 4,295 Greenhouse tenants yield ~43 Israeli boards, 82 already profiled |
 
 ### What steps 2-4 actually returned, against what was projected
@@ -699,6 +699,33 @@ pagination work. Step 6 is therefore **deferred, not cancelled** - it becomes
 worthwhile when there is a larger pool of self-hosted Israeli companies to point
 it at, which is step 7.
 
+**Niloosoft / Hunter was investigated and dropped, and it was ranked priority 2
+here.** It is the Israeli non-tech ATS, so by the density principle its tenant
+list should have been the Comeet win again. Common Crawl does enumerate it:
+`hunterhrms.com` yields **24 distinct tenant subdomains across 6 crawls**, and
+they are exactly the tail this document says is missing - `elbit`, `huji`
+(Hebrew University), `szmc` (Shaare Zedek), `castro`, `readymix`, `bdo-career`,
+`pwc-careersite`, `yes-fbf`, `ikea-fr`, `president`.
+
+It fails on how the boards are served, not on who is on them:
+
+- Several tenants are already dead - `elbit.hunterhrms.com` does not resolve.
+- Each board is a WordPress site running the Niloosoft plugin, and the jobs come
+  from `/wp-json/niloosoft/v1/search-results`, which returns **HTTP 401
+  `rest_forbidden`** to an unauthenticated client.
+- The public listing page contains **no job links at all** - it is a search form
+  rendered through WordPress's Interactivity API (`data-wp-*`), so the postings
+  only exist after JavaScript runs.
+- The tenants are not uniform: BDO's front page carries `nls-*` classes,
+  memad3's carries none, so one HTML profile would not cover them.
+
+That leaves browser automation, one Chromium per company, against a browser
+tier this document caps at ~40 companies **for the whole corpus** because it is
+the binding wall-clock constraint (section 9). Spending a quarter of that
+budget on ~12 boards of unknown size is the wrong trade by the project's own
+architecture rules. Revisit only if the plugin ever serves an unauthenticated
+listing.
+
 **Step 7 is now the only thing that unblocks growth, and its first source is
 closed.** `finder.startupnationcentral.org` returns **HTTP 403 to any scripted
 client** - search page, `_next` data routes and all. That is a deliberate access
@@ -707,11 +734,23 @@ Finder needs a legitimate access or partnership route, or the universe has to
 come from somewhere else (the Israeli aggregators in section 3, or a paid
 source-code index per A3).
 
-**What this leaves.** Both directions out of the current seed are now measured
-and closed: ATS fingerprinting yields 2, JSON-LD yields ~34 for a new fetcher.
+**What this leaves.** Every cheap direction is now measured and closed:
+
+| Route | Verdict |
+|---|---|
+| Common Crawl on an Israel-dense ATS (Comeet) | **worked** - 94 companies |
+| Workable's public Israel feed | **worked** - 16 companies |
+| Common Crawl on a global ATS (Greenhouse) | 1.0% Israeli - not worth the sweep |
+| Careers-page fingerprint over the whole seed | 2 companies from 1,127 |
+| `schema.org/JobPosting` JSON-LD | 3% of self-hosted pages |
+| Niloosoft / Hunter (Israeli, non-tech) | auth-gated API, JS-rendered, needs a browser per company |
+| Startup Nation Finder | HTTP 403 to scripted clients |
+
 The corpus grows from **new company sources**, not from better extraction of the
 one we have. That was section 3's claim; it is now the measured conclusion
-rather than an assertion.
+rather than an assertion - and what remains needs a decision that costs
+something: money (a source-code index), a relationship (Finder access), or
+architecture (a browser budget the 20-minute run does not have).
 
 ### Step 8 is no longer a hypothesis
 
