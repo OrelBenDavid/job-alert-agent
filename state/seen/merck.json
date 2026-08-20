@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-08-20T01:43:06.251769+00:00",
+  "last_success": "2026-08-20T06:58:29.980061+00:00",
   "last_count": 4,
-  "consecutive_failures": 1,
+  "consecutive_failures": 0,
   "jobs": {
     "R396006": {
       "title": "Clinical Trial Coordinator - Intern",

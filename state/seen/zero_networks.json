@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-20T03:52:54.269142+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-20T06:58:30.622557+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "91.D61": {
       "title": "AP Bookkeeper",
       "first_seen": "2026-08-19T13:01:25.303037+00:00"
+    },
+    "6D.074": {
+      "title": "Backend Engineer - OT Security Team",
+      "first_seen": "2026-08-20T06:58:30.622557+00:00"
     },
     "10.E4B": {
       "title": "Backend Engineer- Linux",

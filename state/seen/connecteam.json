@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T03:52:53.876779+00:00",
-  "last_count": 19,
+  "last_success": "2026-08-20T06:58:29.950226+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "5549978004": {
@@ -51,6 +51,10 @@
       "title": "Product Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "6114292004": {
+      "title": "Professional Service Manager",
+      "first_seen": "2026-08-20T06:58:29.950226+00:00"
+    },
     "6008059004": {
       "title": "Sales Development Representative",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -78,6 +82,10 @@
     "5970677004": {
       "title": "Senior Mobile Developer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6114294004": {
+      "title": "Technical Customer Success",
+      "first_seen": "2026-08-20T06:58:29.950226+00:00"
     }
   }
 }

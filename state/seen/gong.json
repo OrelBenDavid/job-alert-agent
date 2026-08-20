@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T03:52:53.891355+00:00",
-  "last_count": 16,
+  "last_success": "2026-08-20T06:58:29.965648+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "4699925006": {
@@ -46,6 +46,10 @@
     "4699279006": {
       "title": "Senior Data Scientist - AI Research & Reliability",
       "first_seen": "2026-08-13T19:13:23.038053+00:00"
+    },
+    "4704221006": {
+      "title": "Senior DevSecOps Manager",
+      "first_seen": "2026-08-20T06:58:29.965648+00:00"
     },
     "4672099006": {
       "title": "Senior Director of Platform Security",
