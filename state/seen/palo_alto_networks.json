@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-08-20T18:51:26.786247+00:00",
-  "last_count": 65,
+  "last_success": "2026-08-20T21:34:57.979231+00:00",
+  "last_count": 66,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021236": {
+      "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
+      "first_seen": "2026-08-20T21:34:57.979231+00:00"
+    },
+    "JR-021385": {
+      "title": "Senior Angular Frontend Engineer - Email Security (Cortex)",
+      "first_seen": "2026-08-20T21:34:57.979231+00:00"
+    },
+    "JR-016699": {
+      "title": "Staff Angular Frontend Engineer - Email Security (Cortex)",
+      "first_seen": "2026-08-20T21:34:57.979231+00:00"
+    },
     "JR-018098": {
       "title": "Senior Product Manager,  Identity Security Platform",
       "first_seen": "2026-08-20T13:03:13.982466+00:00"
@@ -254,14 +266,6 @@
     "JR-017319": {
       "title": "Sr Technical Program Manager",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-018846": {
-      "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
-      "first_seen": "2026-08-20T18:51:26.786247+00:00"
-    },
-    "JR-019438": {
-      "title": "Manager, SW Engineering (IGA) - Idira",
-      "first_seen": "2026-08-20T18:51:26.786247+00:00"
     }
   }
 }

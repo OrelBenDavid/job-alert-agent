@@ -1,7 +1,7 @@
 {
   "last_success": "2026-08-20T13:03:13.950566+00:00",
   "last_count": 1,
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "jobs": {
     "R-093278": {
       "title": "Quality Engineer",

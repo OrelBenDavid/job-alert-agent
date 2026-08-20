@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-20T18:51:26.351262+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-20T21:34:57.424421+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
-    "4919386101": {
-      "title": "Account Executive",
-      "first_seen": "2026-08-18T19:28:22.740340+00:00"
-    },
     "4923406101": {
       "title": "Go To Market Strategist (CSM) IL",
       "first_seen": "2026-08-18T19:28:22.740340+00:00"
