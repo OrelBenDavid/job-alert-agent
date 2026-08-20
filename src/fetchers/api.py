@@ -17,7 +17,8 @@ import requests
 
 from models import Job
 from relevance import (is_israel_country_code, is_israel_location,
-                       is_relevant_location, names_remote)
+                       is_relevant_location, is_relevant_with_country_codes,
+                       names_remote)
 from detail import (DEFAULT_SECTION_CONTENT_FIELD, DEFAULT_SECTION_HEADING_FIELD,
                     normalize_inline_value)
 
@@ -375,6 +376,38 @@ def fetch_comeet(profile) -> list[Job]:
       - the display string picks between them - see _comeet_display_location.
 
     Net across the corpus: +38 Israel-relevant postings, no health gate tripped.
+
+    *** location.country also REJECTS now - added 2026-08-20 ***
+
+    Being a picker value cuts both ways, and only the additive half was being
+    used. Audited across all 202 live Comeet boards on 2026-08-20:
+    location.country took 60 distinct values over ~3,200 postings and every
+    non-empty one was a bare two-letter code, which is what earns the
+    `country_code_is_authoritative` flag in comeet.json. 143 postings carry no
+    code at all, which is why an ABSENT code still means nothing.
+
+    What it removes is 10 postings at 4 companies, every one a US role the text
+    filter had no way to see:
+      - Faye 4 - "Remote - East Coast" / "West Coast - Remote". The marker list
+        has countries, cities and states, but no coasts.
+      - Linx Security 3 - "U.S. Remote". _normalize turns punctuation into
+        spaces, so that string becomes " u s remote " and the `us` marker
+        cannot match it. Adding "u s" to the marker list would be worse than
+        this fix, not better.
+      - Atera 2 and Sentra 1 - a bare "Remote" on a US req, sitting in a board
+        that still delivers 12 and 8 postings, every one of them a physical
+        Israeli place. Exactly the shape the company-level gate is blind to.
+
+    All four keep only physically-Israeli postings afterwards (12, 8, 7, 7) -
+    nothing that survives at these companies depends on the qualified-remote
+    path at all, which is the strongest available evidence that the ten were
+    the foreign remainder rather than a slice off the top.
+
+    Six more at-risk postings are deliberately KEPT, because their text names
+    an Israel-inclusive region that the single-country picker contradicts -
+    Chaos Labs' "Remote"/"Europe"/GB and three like it. See
+    relevance.ISRAEL_INCLUSIVE_REGIONS. No company loses an Israeli posting and
+    none drops to zero.
     """
     api = profile.raw["api"]
     params = api.get("extra_params", {})
@@ -385,6 +418,10 @@ def fetch_comeet(profile) -> list[Job]:
     fields = api["fields"]
     city_field = fields.get("location_city")
     country_field = fields.get("location_country")
+    # Opt-in, and absent everywhere it has not been verified live. Read as a
+    # plain bool so a profile that omits it - or any hand-written Comeet
+    # record - keeps the pre-2026-08-20 behaviour exactly.
+    authoritative = bool(api.get("country_code_is_authoritative"))
 
     jobs = []
     for p in positions:
@@ -397,8 +434,8 @@ def fetch_comeet(profile) -> list[Job]:
         title = (_get_by_path(p, fields["title"]) or "").strip()
 
         combined = ", ".join(part for part in (label, city) if part)
-        if not (is_israel_country_code(country)
-                or is_relevant_location(combined, title)):
+        if not is_relevant_with_country_codes(combined, title, [country],
+                                              authoritative):
             continue
         jobs.append(Job(
             id=str(_get_by_path(p, fields["id"]) or p.get("id", "")),
@@ -489,6 +526,15 @@ def fetch_workable(profile) -> list[Job]:
     places must survive if any one of them is Israeli, the same fail-open
     direction as Ashby's secondaryLocations.
 
+    It also REJECTS, from 2026-08-20 - see `country_code_is_authoritative` in
+    workable.json and relevance.is_relevant_with_country_codes. The field
+    earned the flag on an audit of all 16 live boards: locations[].countryCode
+    took 103 distinct values, every one a bare two-letter code, none empty, and
+    it disagreed with the free-text `country` name on 0 of them. The measured
+    effect on today's corpus is ZERO postings - the leak this closes is real
+    and is currently all on Comeet - so the flag is set on the field's quality,
+    not on a number, and is recorded that way rather than overstated.
+
     Underneath it, `city`/`state`/`country` are joined for the text test, which
     is what lets the qualified-remote rule see "Remote" and a foreign country
     on one posting and reject it. `country` is a full name here ("Israel",
@@ -530,6 +576,7 @@ def fetch_workable(profile) -> list[Job]:
     fields = api["fields"]
     locations_field = fields.get("locations")
     country_code_field = fields.get("location_country_code", "countryCode")
+    authoritative = bool(api.get("country_code_is_authoritative"))
 
     def codes_of(item):
         if not locations_field:
@@ -564,11 +611,16 @@ def fetch_workable(profile) -> list[Job]:
             # rule does: "Tel Aviv-Yafo" reads better than "Israel".
             display = ", ".join(p for p in (city, state) if p) or country
 
-            by_code = any(is_israel_country_code(c) for c in codes_of(item))
-            if by_code or is_israel_location(combined):
+            codes = codes_of(item)
+            # The positive branch stays first and stays unconditional, so no
+            # flag can ever reach a location that IS Israeli - it only decides
+            # what happens to the ones that are not.
+            if (any(is_israel_country_code(c) for c in codes)
+                    or is_israel_location(combined)):
                 relevant = True
                 israeli_display = israeli_display or display
-            elif is_relevant_location(combined, title):
+            elif is_relevant_with_country_codes(combined, title, codes,
+                                                authoritative):
                 relevant = True
                 fallback_display = fallback_display or display
 

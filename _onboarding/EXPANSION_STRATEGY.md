@@ -630,7 +630,7 @@ draft's guess) to "do not run" (the measurement).
 | 5 | Add `_onboarding/probed.csv` - persist negative results | S | makes every later sweep incremental | **done** |
 | 6 | Build the **JSON-LD / `schema.org` JobPosting** generic fetcher | M | the only route to unbounded growth | **deferred on measurement** - 3% of self-hosted pages carry it |
 | 7 | Re-source the company universe | M | replaces the exhausted seed | **now the only unblocker**; SNF returns 403 to scripted clients |
-| 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion | **now evidenced** - see below |
+| 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion | **done** 2026-08-20 - a foreign country code can now reject, opt-in per platform; see below |
 | 9 | Tiered cadence (hot/warm/cold) + conditional requests | M | keeps run time flat as the corpus grows | not yet needed - 366 companies fetch in 75s |
 | 10 | Mine Israeli aggregators for non-tech employers | L | the true long tail | Niloosoft investigated and dropped 2026-08-20 |
 | - | ~~Blanket A1 sweep across global ATS hosts~~ | - | **rejected on measurement** | 4,295 Greenhouse tenants yield ~43 Israeli boards, 82 already profiled |
@@ -765,6 +765,39 @@ presence still gets the fail-open per-posting rule in full. But the underlying
 asymmetry is still there - `is_israel_country_code` is additive by design, so a
 foreign country code identifies nobody and rejects nobody. That is load-bearing
 and was deliberately not touched. It is the thing to revisit before step 7.
+
+#### Revisited and closed, 2026-08-20
+
+The asymmetry above is now half-resolved, in the narrow direction the evidence
+supports. A foreign country code CAN reject - but only from a field the
+platform declares to be a picker, and only where that field has been audited
+live. `api.country_code_is_authoritative` is the opt-in; Comeet and Workable
+carry it, nothing else does, and with no flag `relevance.py` behaves exactly as
+it did before. The gates in `gate_comeet_candidates.py` and
+`resolve_workable_slugs.py` are UNCHANGED and stay as the first line of
+defence - this is the second one, aimed at the postings they structurally
+cannot see.
+
+Measured through the real fetcher over all 202 live Comeet and 16 live Workable
+boards: **1,606 -> 1,596 Israel-relevant postings**. The ten are all Comeet,
+all US roles, at four companies that each keep 7-12 Tel Aviv postings -
+`faye` 4 (`Remote - East Coast`; the marker list has no coasts),
+`linx_security` 3 (`U.S. Remote`, which normalizes to `u s remote` so the `us`
+marker cannot match), `atera_networks` 2 and `sentra` 1 (a bare `Remote` on a
+US req). No company dropped to zero and no health gate moved.
+
+Six further at-risk postings are deliberately kept, because their text names a
+region that contains Israel while the picker names one country - Chaos Labs'
+`{"name": "Remote", "city": "Europe", "country": "GB"}` and three like it. A
+disagreement about location fails open. Full write-up in README.md, "A country
+code that can say no".
+
+**What this unblocks.** The A1 caveat above - 15% of global-ATS boards having
+no Israeli posting but a bare `Remote` - is no longer unconditional. On a
+platform whose country field is a picker, those boards can now be admitted and
+filtered per posting rather than kept out wholesale. It changes nothing for
+Greenhouse, whose `location.name` is free text; the flag would have to be
+earned on each new platform the same way.
 
 ### The corpus-level check of section 7 is built (2026-08-20)
 

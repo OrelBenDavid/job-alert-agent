@@ -55,10 +55,15 @@ GitHub Actions - there is no server.
   whatever its title says, or `Sales Engineer, DACH - Tel Aviv` would be
   dropped for naming the market it serves.
   Where a board publishes a **structured country code** next to the free text,
-  that field is read on its own (`is_israel_country_code`) and is **additive**:
-  `IL` means Israel outright, a foreign code means nothing and rejects nobody.
-  A code is only safe read from a field declared to hold one — `il` is far too
-  short to match inside prose, which is why it is not a keyword.
+  that field is read on its own (`is_israel_country_code`): `IL` means Israel
+  outright. A code is only safe read from a field declared to hold one — `il`
+  is far too short to match inside prose, which is why it is not a keyword.
+  A **foreign** code rejects nobody **unless its platform profile sets
+  `api.country_code_is_authoritative`**, which only Comeet and Workable do and
+  only after their fields were audited live. Even then it never outranks a
+  positive signal: a physical Israeli location wins, an `IL` code wins, and so
+  does text naming a region that *contains* Israel (`EMEA`, `Europe`,
+  `Global`, `Worldwide`). See "A country code that can say no" below.
 - **The fetch phase - and only the fetch phase - runs concurrently**
   (`fetchers.fetch_all`). Everything after it stays sequential and in profile
   order. See below.
@@ -588,6 +593,68 @@ failures in 75 seconds** — a wall clock set entirely by `wix`, the single
 | Workday | 11 | added 2026-08-19 — new fetcher, new platform profile; +2 on 2026-08-20 |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+### The 2026-08-20 change: a country code that can say no
+
+`EXPANSION_STRATEGY.md` step 8 recorded the bare-`Remote` rule as the thing to
+revisit before any global-platform expansion, and named the asymmetry
+underneath it: `is_israel_country_code` was additive, so a foreign code
+identified nobody and **rejected** nobody.
+
+The company-level admission gates added a day earlier stop a whole US employer
+at import — CapsLock, MRIoA, BDR Solutions, OuterBox, ROI Agency, Medvidi, each
+one `location.country == "US"` with a label reading `Remote`. What they cannot
+do is judge a *posting* inside a company that genuinely hires here. Measured
+through the real fetcher against **all 202 live Comeet and 16 live Workable
+boards** on 2026-08-20, that is exactly where the remainder was.
+
+**The field earned the right to reject; the flag records that it did.**
+`api.country_code_is_authoritative` is opt-in per platform and absent
+everywhere it has not been verified:
+
+| Platform | Field | Distinct values | Shape | Empty |
+|---|---|---:|---|---:|
+| Comeet | `location.country` | 60 over ~3,200 postings | every non-empty one a bare 2-letter code | 143 |
+| Workable | `locations[].countryCode` | 103 | all 2-letter; 0 disagreements with the free-text country name | 0 |
+
+Greenhouse's `location.name` is free text a company types by hand and has no
+flag, so its behaviour is byte-identical to before —
+`tests/test_country_code_authority.py` pins the un-flagged path against the
+exact expression the fetchers used previously.
+
+**What it dropped: 1,606 → 1,596 postings. Ten, all Comeet, all US roles.**
+
+| Company | Postings | Location text | Why the text rule could not see it |
+|---|---:|---|---|
+| `faye` | 4 | `Remote - East Coast`, `West Coast - Remote` | the marker list has countries, cities and states — no coasts |
+| `linx_security` | 3 | `U.S. Remote` | `_normalize` turns punctuation into spaces, so this reads `u s remote` and the `us` marker cannot match |
+| `atera_networks` | 2 | `Remote` | bare, on a US req, in a board that still delivers 12 Israeli postings |
+| `sentra` | 1 | `Remote` | same, beside 8 |
+
+Zero Israeli postings lost, **no company dropped to zero**, no health floor or
+relative-collapse threshold crossed anywhere in the corpus (`14→12`, `11→7`,
+`10→7`, `9→8`, against a collapse ratio of 0.4). Afterwards all four companies
+deliver **only** postings whose location text names a physical Israeli place —
+nothing surviving there rests on the qualified-remote path at all, which is the
+strongest available evidence that the ten were the foreign remainder and not a
+slice off the top.
+
+**Six at-risk postings were deliberately kept.** When the free text names a
+region that *contains* Israel and the picker names one country, the two
+disagree — and this project fails open on a disagreement about location. Chaos
+Labs publishes `{"name": "Remote", "city": "Europe", "country": "GB"}` on three
+engineering roles and Prisma Photonics `{"name": "Europe (Remote)",
+"country": "GB"}` on a Director, Sales EMEA; a company that meant "United
+Kingdom" had no reason to type "Europe" beside it. The carve-out is not free:
+Quantum Machines' `EMEA Remote, Stugart` (a misspelt Stuttgart) and Upwind's
+`EMEA (Remote), Lecrín` (a village in Granada) are physically abroad and
+survive on their `EMEA` token. Both are delivered today, so that is not a
+regression — it is the price of not guessing about the other four. Without the
+carve-out Chaos Labs would have gone to **zero**, tripping its health gate.
+
+Workable's flag changes **nothing** on today's corpus and is set on the field's
+quality rather than on a number. That is recorded as such in
+`profiles/_platforms/workable.json` rather than dressed up.
 
 ### 2026-08-20: the first corpus-health report
 

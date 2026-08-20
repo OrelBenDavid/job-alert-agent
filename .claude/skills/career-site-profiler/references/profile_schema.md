@@ -140,6 +140,37 @@ duplicated per profile, so a fix reaches every company at once.
 
 `fields.id` and `fields.url` are **mandatory** — the whole diff mechanism runs on the id.
 
+### `country_code_is_authoritative` (optional, opt-in, added 2026-08-20)
+
+Some APIs publish a posting's country as an ISO code in its own field, next to
+the free-text location. Where that field is a **picker value** — chosen from a
+dropdown, not typed — it is trustworthy in **both** directions: `IL` means
+Israel outright, and a foreign code may **reject** the posting. Set this flag
+and `relevance.is_relevant_with_country_codes` reads it that way; omit it (the
+default, and the case for every free-text field) and a foreign code rejects
+nobody, exactly as before.
+
+**Earn it, don't assume it.** The flag says an audit happened, so the profile's
+`_note` must record what was audited and when. What was checked for Comeet's
+`location.country` and Workable's `locations[].countryCode` on 2026-08-20, over
+every live board on each platform:
+
+1. every non-empty value is a bare ISO code, never prose (Comeet: 60 distinct
+   values over ~3,200 postings; Workable: 103, all two-letter);
+2. how often it is **empty** — an absent code must still mean nothing (Comeet
+   143 postings, Workable 0);
+3. it does not contradict the free-text country name where one exists
+   (Workable: 0 disagreements).
+
+Greenhouse's `location.name` is free text a company types by hand — `Remote -
+Colorado` — and must never carry this flag.
+
+Even flagged, the code can only remove a posting that has no Israeli signal at
+all: a physical Israeli location wins, an `IL` code wins, and so does text
+naming a region that *contains* Israel (`EMEA`, `Europe`, `Global`,
+`Worldwide`), because a one-country picker and a multi-country region disagree
+and a disagreement about location fails open.
+
 **`platform` is restricted to the four platforms that have a handler in
 `fetchers/api.py`, and the profile loader rejects anything else.** Step 1a's table
 lists four more (Ashby, Workable, Recruitee, Workday) precisely because they are
