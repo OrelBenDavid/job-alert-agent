@@ -1,0 +1,59 @@
+{
+  "last_success": "2026-08-20T06:56:44.546300+00:00",
+  "last_count": 13,
+  "consecutive_failures": 0,
+  "jobs": {
+    "13.E69": {
+      "title": "AWS - Technical Project Manager",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "09.E62": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "18.E66": {
+      "title": "Enterprise  Account Executive",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "45.F6F": {
+      "title": "IT Specialist",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "2A.B63": {
+      "title": "Saleforce Sales Solution Architect",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "98.E6A": {
+      "title": "Salesforce Business Analyst",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "85.C6E": {
+      "title": "Salesforce Consultant",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "6A.C64": {
+      "title": "Salesforce Consulting Team Lead",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "79.E65": {
+      "title": "Salesforce Developer",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "3E.F63": {
+      "title": "Salesforce Project Manager",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "98.E68": {
+      "title": "Senior Salesforce Consultant",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "34.E6C": {
+      "title": "Senior Software Engineer GenAI",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "50.F6B": {
+      "title": "SF - Solutions Architect",
+      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    }
+  }
+}

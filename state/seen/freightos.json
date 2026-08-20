@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-20T06:56:53.980792+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "6B.F61": {
+      "title": "CISO",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    },
+    "8C.C60": {
+      "title": "Director of Global Accounting & Reporting",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    },
+    "DE.E6F": {
+      "title": "Global Content Marketing Manager",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    }
+  }
+}

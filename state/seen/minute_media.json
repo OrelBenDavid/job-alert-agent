@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-20T06:56:56.889318+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "2F.F63": {
+      "title": "Ad Ops Manager",
+      "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "79.E6F": {
+      "title": "Data Scientist",
+      "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "15.F60": {
+      "title": "Full Stack Developer",
+      "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "E4.C6C": {
+      "title": "Technical Account Manager",
+      "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "C3.F6D": {
+      "title": "Video Monetization Manager",
+      "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    }
+  }
+}

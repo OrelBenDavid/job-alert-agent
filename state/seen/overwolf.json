@@ -1,0 +1,27 @@
+{
+  "last_success": "2026-08-20T06:56:56.899705+00:00",
+  "last_count": 5,
+  "consecutive_failures": 0,
+  "jobs": {
+    "A1.D4D": {
+      "title": "Developer Relations Manager",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "8D.B6D": {
+      "title": "Head of Data Engineering & Infrastructure",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "6F.A6B": {
+      "title": "Motion Graphics Designer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "18.F50": {
+      "title": "Product Design Lead",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "CE.C68": {
+      "title": "Web Designer",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    }
+  }
+}

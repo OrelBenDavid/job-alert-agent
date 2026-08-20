@@ -1,0 +1,131 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 31,
+  "consecutive_failures": 0,
+  "jobs": {
+    "AF.66B": {
+      "title": "Automation Infrastructure Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "0B.B65": {
+      "title": "Automation Infrastructure Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "74.F63": {
+      "title": "Data Engineer- Activity Group",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "89.F69": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "58.54D": {
+      "title": "DevSecOps Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "74.D69": {
+      "title": "Full Stack Team Lead - AI team",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "9B.D68": {
+      "title": "IT Support- IL",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "B2.E6E": {
+      "title": "Learning and Development Manager, Technical Support",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "FB.56F": {
+      "title": "Manual & Automation QA Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "95.071": {
+      "title": "ML Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "81.E68": {
+      "title": "Presales Engineer - Tel Aviv",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "3D.B69": {
+      "title": "Product Designer (UI/UX)",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A4.562": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "FF.C63": {
+      "title": "Product Manager, AI Security",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "24.561": {
+      "title": "QA Architect",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "67.F50": {
+      "title": "QA Automation Engineer - Backend Team",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "45.F54": {
+      "title": "QA Automation Engineer – Agent DLP",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "99.553": {
+      "title": "Senior Backend Engineer – Core Engineering",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "40.767": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "D6.E64": {
+      "title": "Senior Data Engineer — Data Platform",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E2.565": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "C1.D4A": {
+      "title": "Senior Frontend Engineer - Cyera DLP",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "04.565": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "BB.A68": {
+      "title": "Senior Full Stack Engineer - AI Team",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A5.865": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "0C.56C": {
+      "title": "Senior QA Automation Engineer - Platform",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "05.56B": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "94.F68": {
+      "title": "Senior Technical Support Engineer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "08.964": {
+      "title": "Senior Technical Writer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "06.F5B": {
+      "title": "Solution Architect",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "80.E63": {
+      "title": "Solution Architect- Emerging Products",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 14,
+  "consecutive_failures": 0,
+  "jobs": {
+    "B1.D66": {
+      "title": "AI Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "42.A62": {
+      "title": "Controller",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "4F.73B": {
+      "title": "Deploy & NOC - Student Position",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "64.F6C": {
+      "title": "Experienced JS Back-End Developer - Visual Challenge Solving Platform",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "6C.C64": {
+      "title": "Financial Fraud Analyst",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A5.C6D": {
+      "title": "FP&A",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "AD.C63": {
+      "title": "Junior FP&A",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "44.F68": {
+      "title": "SDK Lab Technician",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "F9.C63": {
+      "title": "Security Researcher - Bot Detection Adversarial Research",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "3A.E5D": {
+      "title": "Senior Back-End JavaScript Developer - IL",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "64.F64": {
+      "title": "Senior Backend JavaScript Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "1C.F64": {
+      "title": "Senior Backend JavaScript Developer",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "3B.D62": {
+      "title": "Senior Full Stack Developer – Frontend Orientation",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A1.84B": {
+      "title": "Technical Customer Support Rep- Student",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-20T06:56:59.891597+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "A9.D6C": {
+      "title": "Software Engineer (Data & Applications)",
+      "first_seen": "2026-08-20T06:56:59.891597+00:00"
+    },
+    "54.E6A": {
+      "title": "Software Engineer (Modeling)",
+      "first_seen": "2026-08-20T06:56:59.891597+00:00"
+    }
+  }
+}

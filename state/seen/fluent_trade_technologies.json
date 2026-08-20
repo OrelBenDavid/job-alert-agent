@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-20T06:56:44.577812+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "6E.D52": {
+      "title": "DBA MySQL",
+      "first_seen": "2026-08-20T06:56:44.577812+00:00"
+    },
+    "66.152": {
+      "title": "Global IT Director",
+      "first_seen": "2026-08-20T06:56:44.577812+00:00"
+    },
+    "C9.55C": {
+      "title": "Head of DevOps",
+      "first_seen": "2026-08-20T06:56:44.577812+00:00"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-20T06:56:44.562111+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "95.07E": {
+      "title": "Help Desk",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "31.32B": {
+      "title": "Junior  B2B Back Office",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E4.96E": {
+      "title": "Junior Customer Support & Backoffice",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    }
+  }
+}

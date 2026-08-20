@@ -1,0 +1,63 @@
+{
+  "last_success": "2026-08-20T06:56:53.996569+00:00",
+  "last_count": 14,
+  "consecutive_failures": 0,
+  "jobs": {
+    "D0.360": {
+      "title": "CRM & AI Solutions Specialist",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "4D.866": {
+      "title": "Customer Success Manager",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "56.745": {
+      "title": "Customer Support Specialist",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "CE.743": {
+      "title": "Full stack Developer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "A7.E5E": {
+      "title": "Junior Product Support Specialist",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "80.F60": {
+      "title": "Marketing Manager - Maternity Leave Cover (9 -month contract)",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "41.E60": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "CC.C6B": {
+      "title": "QA & Automation Lead",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "A9.D63": {
+      "title": "QA Engineer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "22.754": {
+      "title": "איש/אשת מכירות",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "42.E63": {
+      "title": "איש/אשת מכירות",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "0D.071": {
+      "title": "איש/אשת מכירות למגזר הערבי",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "DE.B65": {
+      "title": "מנהל/ת חשבונות סוג 3",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "71.D6B": {
+      "title": "מנהלת חשבונות פרילאנס",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    }
+  }
+}

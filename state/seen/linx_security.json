@@ -1,0 +1,47 @@
+{
+  "last_success": "2026-08-20T06:56:54.012511+00:00",
+  "last_count": 10,
+  "consecutive_failures": 0,
+  "jobs": {
+    "5E.B67": {
+      "title": "AI Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "0C.643": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "64.E65": {
+      "title": "Customer Success Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "FF.757": {
+      "title": "Director Product Marketing",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "FB.643": {
+      "title": "Full Stack Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "60.F61": {
+      "title": "Office Operations & Employee Experience Manager",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "0C.644": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "DF.F5F": {
+      "title": "Sales Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "37.66D": {
+      "title": "Senior Platform Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "15.765": {
+      "title": "Senior Security Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    }
+  }
+}

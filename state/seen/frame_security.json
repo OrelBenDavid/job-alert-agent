@@ -1,0 +1,19 @@
+{
+  "last_success": "2026-08-20T06:56:53.980792+00:00",
+  "last_count": 3,
+  "consecutive_failures": 0,
+  "jobs": {
+    "1D.A65": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    },
+    "41.662": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    },
+    "41.663": {
+      "title": "Senior Frontend Engineer",
+      "first_seen": "2026-08-20T06:56:53.980792+00:00"
+    }
+  }
+}

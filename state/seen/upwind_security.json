@@ -1,0 +1,67 @@
+{
+  "last_success": "2026-08-20T06:56:59.899617+00:00",
+  "last_count": 15,
+  "consecutive_failures": 0,
+  "jobs": {
+    "4C.C69": {
+      "title": "AI Software Engineer",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "BA.04A": {
+      "title": "Backend Software Engineer",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "43.46E": {
+      "title": "Backend Team Lead",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "CA.042": {
+      "title": "Frontend Software Engineer",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "14.078": {
+      "title": "Platform Security Researcher",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "BA.04B": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "41.E6A": {
+      "title": "Sales Development Representative",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "7E.E68": {
+      "title": "Senior Technical Marketing Manager",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "26.D6E": {
+      "title": "Senior Vulnerability Researcher",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "7F.F61": {
+      "title": "Talent Network Builder",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "87.55F": {
+      "title": "Technical Account Manager",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "23.A51": {
+      "title": "Technical Account Manager  (EMEA)",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "78.E65": {
+      "title": "Technical Support Engineer – Student Position",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "04.F41": {
+      "title": "Technical Support Specialist",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "C6.E69": {
+      "title": "Threat Security Researcher",
+      "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    }
+  }
+}

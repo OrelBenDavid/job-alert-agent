@@ -1,0 +1,23 @@
+{
+  "last_success": "2026-08-20T06:56:59.897612+00:00",
+  "last_count": 4,
+  "consecutive_failures": 0,
+  "jobs": {
+    "76.B6A": {
+      "title": "AI System Architect",
+      "first_seen": "2026-08-20T06:56:59.897612+00:00"
+    },
+    "E5.079": {
+      "title": "Associate Product Manager",
+      "first_seen": "2026-08-20T06:56:59.897612+00:00"
+    },
+    "EB.D69": {
+      "title": "Network Security Consultant- Part Time",
+      "first_seen": "2026-08-20T06:56:59.897612+00:00"
+    },
+    "64.D68": {
+      "title": "Software Architect",
+      "first_seen": "2026-08-20T06:56:59.897612+00:00"
+    }
+  }
+}

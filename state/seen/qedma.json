@@ -1,0 +1,15 @@
+{
+  "last_success": "2026-08-20T06:56:56.899705+00:00",
+  "last_count": 2,
+  "consecutive_failures": 0,
+  "jobs": {
+    "EC.078": {
+      "title": "Senior Software Engineer - Algorithms",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "D8.C68": {
+      "title": "Sr. Quantum Researcher",
+      "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "last_success": "2026-08-20T06:56:53.996569+00:00",
+  "last_count": 6,
+  "consecutive_failures": 0,
+  "jobs": {
+    "8B.736": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "B7.635": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "AB.A47": {
+      "title": "Infra Engineer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "84.A64": {
+      "title": "Low Level Developer",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "FE.362": {
+      "title": "Senior Product Design",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "9A.95D": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    }
+  }
+}
