@@ -89,6 +89,77 @@ def test_a_bad_env_value_falls_back_instead_of_raising(isolated_state,
 
 
 # ---------------------------------------------------------------------------
+# Scaling with the corpus
+#
+# The threshold was only ever "~4% of the corpus"; 50 was what that came to at
+# 1,350 postings. Left absolute it tightens every time a company is added,
+# until ordinary churn trips it on most runs - the gate then warns forever and
+# delivers nothing, which is the failure FLOOD_ACCEPT_AFTER exists to prevent.
+# ---------------------------------------------------------------------------
+
+def test_no_corpus_figure_keeps_the_historical_absolute_default(isolated_state):
+    """A caller that has no corpus figure must get the OLD behaviour, not a
+    wrong proportional one - that is what makes the parameter safe to add."""
+    assert (state_mod.implausible_new_jobs_threshold()
+            == state_mod.DEFAULT_IMPLAUSIBLE_NEW_JOBS)
+    assert (state_mod.implausible_new_jobs_threshold(None)
+            == state_mod.DEFAULT_IMPLAUSIBLE_NEW_JOBS)
+    assert (state_mod.implausible_new_jobs_threshold(0)
+            == state_mod.DEFAULT_IMPLAUSIBLE_NEW_JOBS)
+
+
+def test_the_measured_basis_still_reproduces_the_measured_number(isolated_state):
+    """1,350 postings was the corpus the original 50 was derived from, so the
+    proportional form must return 50 there or the constant is not the same
+    finding restated."""
+    assert state_mod.implausible_new_jobs_threshold(1350) == 50
+
+
+def test_the_threshold_grows_with_the_corpus(isolated_state):
+    small = state_mod.implausible_new_jobs_threshold(2100)
+    large = state_mod.implausible_new_jobs_threshold(15000)
+    assert small > state_mod.DEFAULT_IMPLAUSIBLE_NEW_JOBS
+    assert large > small
+    # ~3.7% of the corpus, whatever the corpus is
+    assert round(large / 15000, 3) == round(
+        state_mod.IMPLAUSIBLE_NEW_JOBS_FRACTION, 3)
+
+
+def test_it_never_tightens_below_the_measured_floor(isolated_state):
+    """A small corpus keeps exactly today's behaviour. Scaling DOWN would be a
+    change to the one value that was measured against reality, and nothing
+    justifies it."""
+    for tiny in (1, 17, 200, 1000):
+        assert (state_mod.implausible_new_jobs_threshold(tiny)
+                == state_mod.MIN_IMPLAUSIBLE_NEW_JOBS)
+
+
+def test_a_full_state_reset_is_still_caught_at_any_corpus_size(isolated_state):
+    """The point of loosening: it does not blunt the failure the gate is for.
+    A reset makes every open posting look new, so the run reports ~100% of the
+    corpus against a threshold of ~3.7% of it."""
+    for corpus in (1350, 2100, 15000, 100000):
+        assert state_mod.flood_decision(corpus, corpus)[0] is True
+
+
+def test_ordinary_churn_at_scale_is_not_suppressed(isolated_state):
+    """The regression this whole change exists to prevent. 60 new jobs across
+    a 15,000-posting corpus is 0.4% turnover - unremarkable - and the old
+    absolute 50 would have held it, on most runs, forever."""
+    assert state_mod.flood_decision(60, 15000)[0] is False
+    assert state_mod.flood_decision(60)[0] is True      # the old behaviour
+
+
+def test_the_env_override_is_absolute_and_beats_the_corpus(isolated_state,
+                                                           monkeypatch):
+    """It exists to PIN the threshold during an investigation. A knob that
+    silently rescaled itself would be useless for that."""
+    monkeypatch.setenv("JOB_ALERT_MAX_NEW_JOBS", "5")
+    assert state_mod.implausible_new_jobs_threshold(15000) == 5
+    assert state_mod.flood_decision(6, 15000)[0] is True
+
+
+# ---------------------------------------------------------------------------
 # The escape hatch
 # ---------------------------------------------------------------------------
 
