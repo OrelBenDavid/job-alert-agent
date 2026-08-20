@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T06:56:59.884573+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-20T09:42:37.057177+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "4B.566": {
@@ -13,10 +13,6 @@
     },
     "A5.07C": {
       "title": "Backend Engineer (Data Team)",
-      "first_seen": "2026-08-20T06:56:59.884573+00:00"
-    },
-    "6E.C68": {
-      "title": "Business Development Representative",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     },
     "0C.B62": {

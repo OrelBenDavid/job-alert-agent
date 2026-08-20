@@ -1,26 +1,14 @@
 {
-  "last_success": "2026-08-20T06:56:44.577812+00:00",
-  "last_count": 11,
+  "last_success": "2026-08-20T09:42:36.469291+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
-    "FD.F6F": {
-      "title": "Account Development Manager - East Coast",
-      "first_seen": "2026-08-20T06:56:44.577812+00:00"
-    },
-    "5F.F6A": {
-      "title": "Account Development Manager - West Coast",
-      "first_seen": "2026-08-20T06:56:44.577812+00:00"
-    },
     "B6.B67": {
       "title": "Backend Architect",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     },
     "81.66F": {
       "title": "Backend Engineer",
-      "first_seen": "2026-08-20T06:56:44.577812+00:00"
-    },
-    "2E.B54": {
-      "title": "Business Development Manager - West Coast",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     },
     "42.E66": {
@@ -41,10 +29,6 @@
     },
     "91.661": {
       "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-20T06:56:44.577812+00:00"
-    },
-    "32.F68": {
-      "title": "Solutions Engineer - East Coast",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     }
   }

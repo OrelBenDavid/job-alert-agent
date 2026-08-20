@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T06:58:30.605224+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-20T09:42:37.059447+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -46,6 +46,10 @@
     "8124606": {
       "title": "ML & Big Data Analyst",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8143476": {
+      "title": "Ops Data Engineer",
+      "first_seen": "2026-08-20T09:42:37.059447+00:00"
     },
     "8041082": {
       "title": "Principal Tech Lead (Backend oriented)",
