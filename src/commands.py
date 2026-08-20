@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Telegram command processing: /add /remove /list /jobs /filter /minexp
-/stats. There's no separate
+/stats /health. There's no separate
 workflow for commands - this piggybacks on every run of check.yml, because
 a dedicated cron every few minutes would, on its own, burn through the
 entire Actions quota of a private repo (see the project discussion). The
@@ -37,6 +37,7 @@ from notifier import (send_message, escape_mdv2, format_job_list_message,
                        TELEGRAM_MAX_CHARS)
 from settings import load_settings, update_filter
 from stats import load_stats
+import health_report
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/{method}"
 TELEGRAM_STATE_PATH = Path(__file__).resolve().parent.parent / "state" / "telegram.json"
@@ -315,6 +316,21 @@ def _handle_stats() -> str:
     return "\n".join(lines)
 
 
+def _handle_health() -> str:
+    """The corpus-level check EXPANSION_STRATEGY.md 7 asks for, in one message.
+
+    It answers the question no per-company check can: how many of the boards we
+    watch could never send anything at all. The per-run health gate compares a
+    company against its own previous count, so a board that has always returned
+    nothing usable looks perfectly healthy to it forever - which is exactly how
+    the Comeet location bug survived at four companies.
+
+    Costs no requests: health_report reads state/ and profiles/ only, and
+    writes nothing. That is what makes it safe to run inside the command
+    piggyback, where /jobs by contrast pays for a live fetch."""
+    return health_report.format_telegram(health_report.collect())
+
+
 def _dispatch(update: dict) -> None:
     """Runs one update's command, if it has one."""
     text = ((update.get("message") or {}).get("text") or "").strip()
@@ -339,6 +355,8 @@ def _dispatch(update: dict) -> None:
         send_message(_handle_minexp(arg))
     elif cmd == "/stats":
         send_message(_handle_stats())
+    elif cmd == "/health":
+        send_message(_handle_health())
     # Unrecognized commands are ignored silently - no need to flood
     # error messages for every typo
 

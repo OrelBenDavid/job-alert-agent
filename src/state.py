@@ -57,8 +57,8 @@ class StateUnreadable(Exception):
     against."""
 
 
-def _state_path(slug: str) -> Path:
-    return STATE_DIR / f"{slug}.json"
+def _state_path(slug: str, state_dir: Path | None = None) -> Path:
+    return (state_dir or STATE_DIR) / f"{slug}.json"
 
 
 def _empty_state() -> dict:
@@ -66,7 +66,7 @@ def _empty_state() -> dict:
             "consecutive_failures": 0, "jobs": {}}
 
 
-def load_state(slug: str) -> dict:
+def load_state(slug: str, state_dir: Path | None = None) -> dict:
     """Loads a company's existing state. A brand-new company (never seeded)
     gets empty state back - that's expected, and run.py treats it as a case
     that needs a manual seed, not a normal run.
@@ -74,8 +74,15 @@ def load_state(slug: str) -> dict:
     Missing keys are filled from the empty state rather than read straight
     off disk: an older or hand-edited file lacking `last_count` used to raise
     KeyError from inside the health gate, mid-run, after the fetch was already
-    paid for."""
-    path = _state_path(slug)
+    paid for.
+
+    `state_dir` overrides where to read from, and exists for exactly one
+    caller: health_report.py, which is read-only and needs to be pointed at a
+    fixture directory by its tests. Giving the READER a parameter rather than
+    letting a test monkeypatch the module-level STATE_DIR keeps every WRITER
+    on the real directory, so no test can be one attribute away from writing
+    into state/seen/. There is deliberately no equivalent on _write_state."""
+    path = _state_path(slug, state_dir)
     if not path.exists():
         return _empty_state()
 
