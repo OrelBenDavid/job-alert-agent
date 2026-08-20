@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T09:42:36.524681+00:00",
-  "last_count": 133,
+  "last_success": "2026-08-20T13:03:13.963051+00:00",
+  "last_count": 134,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -271,13 +271,13 @@
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "12c753a2-6aea-4528-b700-5c96ec833c35": {
+      "title": "Operations Control Center Operator - Student Position",
+      "first_seen": "2026-08-20T13:03:13.963051+00:00"
+    },
     "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
       "title": "Operations Division Global Admin",
       "first_seen": "2026-08-20T09:42:36.524681+00:00"
-    },
-    "e58754ea-2525-4630-b7c3-ee76e043f6ed": {
-      "title": "Operations Systems & Budget Coordinator",
-      "first_seen": "2026-08-19T13:01:25.232459+00:00"
     },
     "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
       "title": "Outstanding Graduate - Machine Learning Engineer",
@@ -486,6 +486,10 @@
     "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f969242d-c63c-429d-86ba-0091cba13226": {
+      "title": "Space Planning & Projects Specialist",
+      "first_seen": "2026-08-20T13:03:13.963051+00:00"
     },
     "6a585853-ec67-49fb-af6d-68adc60b5977": {
       "title": "Strategic Account Manager",
