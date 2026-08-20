@@ -579,6 +579,11 @@ the state commit - real ongoing cost in attention. Do not pay it speculatively.
 Three constants will break before any network or cost limit does. All three are
 cheap to fix and should be fixed **before** the next import batch.
 
+**Status 2026-08-19: blocker 2 is fixed, 1 and 3 are still open.** Blocker 1 did
+not need to block the Comeet and Workable imports - all three platforms serve
+descriptions inline and cost that budget nothing - but it becomes urgent at
+step 6, where a self-hosted board means one request per posting.
+
 **1. `MAX_DETAIL_FETCHES_PER_RUN = 40`** - `src/detail.py:48`. The repo's own
 note calls this "the single thing that stops this project scaling past a few
 hundred companies": one company reworking its board spends the whole run's
@@ -587,12 +592,14 @@ untriaged. Comeet and Greenhouse now serve descriptions inline and are immune.
 *Fix:* make the budget per-platform (uncapped for inline platforms, capped for
 per-posting ones), or scale it with company count.
 
-**2. `JOB_ALERT_MAX_NEW_JOBS = 50`** - `check.yml`, read at `src/state.py:404`.
-Calibrated against "~1,350 Israel-relevant postings across 141 companies", where
-50 was ~4% of the corpus. At 2,000 companies the corpus is ~15,000 postings
-*(est.)* and 50 is ~0.3% - **normal churn would trip the flood gate on most
-runs**, holding alerts and rewinding companies continuously. *Fix:* express it as
-a fraction of the corpus with an absolute floor.
+**2. `JOB_ALERT_MAX_NEW_JOBS = 50`** — **FIXED 2026-08-19.** It was calibrated
+against "~1,350 Israel-relevant postings across 141 companies", where 50 was ~4%
+of the corpus; at 2,000 companies that becomes ~0.3% and normal churn would trip
+the gate on most runs. `state.py` now derives the threshold from the corpus each
+run actually fetched (`IMPLAUSIBLE_NEW_JOBS_FRACTION = 50/1350`, floored at 50 so
+it can only loosen), and `check.yml` no longer pins the variable. Loosening does
+not blunt the gate: a full state reset reports ~100% of the corpus against a
+threshold of ~3.7% of it, still caught by a factor of 27 at any size.
 
 **3. `JOB_ALERT_FETCH_BUDGET_SECONDS = 780`** against `timeout-minutes: 20`.
 Sound today. Re-derive both once the corpus and the tier split are settled - and
@@ -614,24 +621,46 @@ Ordering rule: **companies gained per unit of new code and new risk.** That is
 what demotes the blanket Greenhouse sweep from "largest single jump" (the first
 draft's guess) to "do not run" (the measurement).
 
-| # | Step | Effort | Expected gain |
-|---|---|---|---|
-| 1 | Make the repo public; re-measure `JOB_ALERT_BROWSER_WORKERS` on the 4-vCPU runner before raising it | S | unlimited minutes, browser headroom |
-| 2 | Make `JOB_ALERT_MAX_NEW_JOBS` proportional to corpus size | S | **must land before the corpus grows**, or the flood gate holds alerts every run |
-| 3 | Gate and import the **224 new Comeet uids** in `comeet_candidates.csv` | S | **~+90 companies, zero new code** |
-| 4 | Build the **Workable adapter**, import `workable_candidates.csv` | M | +38 companies, 141 postings, all verified |
-| 5 | Add `_onboarding/probed.csv` - persist negative results | S | makes every later sweep incremental |
-| 6 | Build the **JSON-LD / `schema.org` JobPosting** generic fetcher | M | the only route to unbounded growth |
-| 7 | Re-source the company universe (Startup Nation Finder, ranked) | M | replaces the exhausted seed; the correct route onto global platforms |
-| 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion |
-| 9 | Tiered cadence (hot/warm/cold) + conditional requests | M | keeps run time flat as the corpus grows |
-| 10 | Mine Israeli aggregators for non-tech employers; adapters for Niloosoft etc. | L | the true long tail |
-| - | ~~Blanket A1 sweep across global ATS hosts~~ | - | **rejected on measurement** - 4,295 Greenhouse tenants yield ~43 Israeli boards, 82 already profiled |
+| # | Step | Effort | Expected gain | Status |
+|---|---|---|---|---|
+| 1 | Make the repo public; re-measure `JOB_ALERT_BROWSER_WORKERS` on the 4-vCPU runner before raising it | S | unlimited minutes, browser headroom | repo public; workers **deliberately still 2** |
+| 2 | Make `JOB_ALERT_MAX_NEW_JOBS` proportional to corpus size | S | must land before the corpus grows | **done** 2026-08-19 |
+| 3 | Gate and import the **224 new Comeet uids** | S | ~+90 companies, zero new code | **done** — 94 imported, 536 on-family |
+| 4 | Build the **Workable adapter** | M | +38 companies | **done** — 16 passed the gates, 49 postings |
+| 5 | Add `_onboarding/probed.csv` - persist negative results | S | makes every later sweep incremental | partly — `*_rejected.csv` per sweep |
+| 6 | Build the **JSON-LD / `schema.org` JobPosting** generic fetcher | M | the only route to unbounded growth | next |
+| 7 | Re-source the company universe (Startup Nation Finder, ranked) | M | replaces the exhausted seed | |
+| 8 | Revisit the bare-`Remote` relevance rule | S | prerequisite for any global-platform expansion | **now evidenced** - see below |
+| 9 | Tiered cadence (hot/warm/cold) + conditional requests | M | keeps run time flat as the corpus grows | not yet needed - 366 companies fetch in 75s |
+| 10 | Mine Israeli aggregators for non-tech employers; adapters for Niloosoft etc. | L | the true long tail | |
+| - | ~~Blanket A1 sweep across global ATS hosts~~ | - | **rejected on measurement** | 4,295 Greenhouse tenants yield ~43 Israeli boards, 82 already profiled |
 
-**Steps 1-4 are the ones to do first**: every number in them is verified live
-rather than projected, and steps 3 and 4 together roughly halve the gap between
-256 companies and a corpus that covers the Israeli ATS market.
+### What steps 2-4 actually returned, against what was projected
 
-`MAX_DETAIL_FETCHES_PER_RUN` (blocker 1 in section 10) does **not** need to
-block steps 3-4: Comeet and Greenhouse both serve descriptions inline, and the
-Workable adapter should be built the same way. It becomes urgent at step 6.
+| | Projected | Actual |
+|---|---|---|
+| Comeet companies | ~90 | **94** |
+| Workable companies | 38 | **16** (22 rejected by the gates) |
+| Corpus | 256 | **366** |
+| Full-run wall clock | ~4 min *(est.)* | **75s**, 366/366, 0 failures |
+
+The Workable number is the instructive one: the aggregator's 38 companies were
+real, but 9 serve an empty account board, 8 have no on-family Israeli role, and
+5 do not answer at all. **A discovery count is not an import count**, and the
+gap is what the gates are for. The 141 postings the feed advertised became 49
+once the project's own relevance and role rules were applied instead of the
+vendor's location filter.
+
+### Step 8 is no longer a hypothesis
+
+The bare-`Remote` rule was flagged here as a policy question. Both imports then
+produced the evidence: whole *companies* qualify on it with no Israeli role at
+all - CapsLock, MRIoA, BDR Solutions, OuterBox, ROI Agency, Medvidi, every one
+a US employer with `location.country == "US"` and a label reading `Remote`.
+
+A **company-level** gate now rejects those at admission, and that was the right
+place for it: `relevance.py` is unchanged, so a company with a genuine Israeli
+presence still gets the fail-open per-posting rule in full. But the underlying
+asymmetry is still there - `is_israel_country_code` is additive by design, so a
+foreign country code identifies nobody and rejects nobody. That is load-bearing
+and was deliberately not touched. It is the thing to revisit before step 7.
