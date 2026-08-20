@@ -177,11 +177,12 @@ def test_a_platform_with_no_handler_is_rejected_at_load(tmp_path):
     cleanly and then fail once per run as an ordinary fetch error - which says
     nothing until it has failed twice.
 
-    The example was `ashby` until 2026-08-13, when Ashby was live-verified and
-    given a real handler. Only the example changed; what is being asserted did
-    not. Workable is the replacement for the same reason Ashby was the
-    original: it is in the skill's platform table and has no handler."""
-    api = dict(_BASE["api"], platform="workable")
+    The example was `ashby` until 2026-08-13 and `workable` until 2026-08-19,
+    each replaced when that platform was live-verified and given a real
+    handler. Only the example has ever changed; what is being asserted did not.
+    Recruitee is the current stand-in for the same reason the other two were:
+    it is in the skill's platform table and has no handler here."""
+    api = dict(_BASE["api"], platform="recruitee")
     with pytest.raises(ProfileError, match="no handler"):
         load_profile(_write(tmp_path, api=api))
 

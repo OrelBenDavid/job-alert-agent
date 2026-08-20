@@ -338,6 +338,37 @@ def build_ashby(row):
     }, None
 
 
+def build_workable(row):
+    """Workable's account widget endpoint.
+
+    `id` is the account slug, and it is READ rather than guessed - the company
+    publishes it in company.url as .../jobs-at-{slug}. See
+    resolve_workable_slugs.py, which also confirms it against the account's own
+    published `name` before writing the row.
+
+    *** details=true is deliberately NOT in this endpoint. ***
+
+    It is what carries every posting's description in the listing itself, which
+    keeps Workable clear of MAX_DETAIL_FETCHES_PER_RUN - but it is supplied by
+    api.extra_params in the PLATFORM profile, because it is platform behaviour
+    and identical for every customer. Putting it here too sends it twice, and
+    Workable answers ?details=true&details=true with HTTP 400 - caught by an
+    end-to-end fetch on 2026-08-19, when all 16 companies failed at once. This
+    matches Comeet, whose endpoint carries only the per-company token.
+    """
+    slug = row["id"]
+    return {
+        "careers_url": "https://apply.workable.com/%s/" % slug,
+        "endpoint": ("https://apply.workable.com/api/v1/widget/accounts/%s"
+                     % slug),
+        "resolved_from": (
+            "Workable account slug '%s', read from the company's own "
+            "company.url (.../jobs-at-%s) rather than guessed, and confirmed "
+            "against the account endpoint's published `name` at import time."
+            % (slug, slug)),
+    }, None
+
+
 BUILDERS = {
     "comeet": build_comeet,
     "greenhouse": build_greenhouse,
@@ -346,6 +377,7 @@ BUILDERS = {
     "ashby": build_ashby,
     "workday": build_workday,
     "smartrecruiters": build_smartrecruiters,
+    "workable": build_workable,
 }
 
 

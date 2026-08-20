@@ -1,0 +1,68 @@
+{
+  "_kind": "platform profile",
+  "_readme": "Everything identical for every Workable customer. A company record under profiles/companies/ names \"platform\": \"workable\" and adds only what differs: slug, name, careers_url, api.endpoint and health.",
+  "schema_version": 3,
+  "enabled": true,
+  "fetch_type": "api",
+
+  "israel_filter": {
+    "method": "post_fetch",
+    "structure": "none",
+    "param": null,
+    "matching_locations": null,
+    "ui_actions_structured": [],
+    "checked_fields": [
+      "locations",
+      "city",
+      "state",
+      "country"
+    ],
+    "_note": "VERIFIED live 2026-08-19. post_fetch per SKILL Step 5: the account endpoint takes no location parameter - every one tried was ignored - so the single call returns the whole board and relevance is decided afterwards. *** A location filter DOES exist on Workable, and deliberately is not used. *** jobs.workable.com/api/v1/jobs?location=Israel is a real cross-customer feed and it is how these companies were discovered, but it returns only postings whose location.countryName is Israel. Fetching through it would silently drop the qualified-remote roles relevance.py deliberately keeps ('Remote - EMEA'), and would do so invisibly, because a filtered feed is indistinguishable from a small board. Discovery and fetching are different jobs and this profile does the second one. All four fields are checked because they answer different questions - see api._note."
+  },
+
+  "api": {
+    "platform": "workable",
+    "paginated": false,
+    "location_query_param": null,
+    "fields": {
+      "id": "shortcode",
+      "title": "title",
+      "location": "country",
+      "url": "url",
+      "location_city": "city",
+      "location_state": "state",
+      "locations": "locations",
+      "location_country_code": "countryCode"
+    },
+    "_note": "`shortcode` is Workable's own stable per-posting id (e.g. '144092745E') and is what /j/{shortcode} resolves to, so it survives a title or slug change - the same reason Comeet keys on uid rather than the link. `url` is absolute. *** shortcode is NOT unique within a response, and that is load-bearing. *** A multi-location opening is repeated once per place, every copy carrying the same shortcode and differing only in city/state/country - measured 2026-08-19: Plateful 24 items for 6 real openings, CXG 1,396 for 539, Nuvei 73 for 64, and 9 of the 16 importable companies do it. fetch_workable therefore COLLAPSES by shortcode before judging anything, and treats the group as one posting: relevant if any of its locations is, displayed at the Israeli one. Without that, one opening would be recorded and alerted several times over - worse than the per-city duplicate defect fixed for Comeet, because state is written before notification and these copies share an id. *** The location fields are the load-bearing part. *** `locations[]` carries `countryCode`, a picker value, and fetch_workable reads it through is_israel_country_code, which is ADDITIVE - 'IL' means Israel outright, a foreign code rejects nobody. Every entry is checked, not just the first, so a posting open in several places survives if any one of them is Israeli: the same fail-open direction as Ashby's secondaryLocations. Underneath it `city`/`state`/`country` are JOINED for the text test, which is what lets the qualified-remote rule see 'Remote' and a foreign country on one posting and reject it. Note `country` here is a full name ('Israel', 'United States'), NOT a code - which is what makes it safe to read as prose, unlike the two-letter 'IL' that relevance.py explicitly refuses to keyword-match. `extra_params` adds ?details=true, which is what carries every posting's description in the listing itself; see detail_fetch.",
+    "extra_params": {
+      "details": "true"
+    }
+  },
+
+  "detail_fetch": {
+    "method": "inline",
+    "inline_field": "description",
+    "url_source": null,
+    "url_template": null,
+    "embedded_json_var": null,
+    "embedded_json_path": null,
+    "content_selector": null,
+    "content_is_html": true,
+    "requirements_section_selector": null,
+    "wait_for": null,
+    "verified_on_job_url": "https://apply.workable.com/api/v1/widget/accounts/autofleet?details=true",
+    "_note": "VERIFIED live 2026-08-19. ?details=true populates `description` with the full posting body as real HTML (not HTML-escaped, so unlike Greenhouse's `content` it needs no unescaping pass; content_is_html=true still applies because it is HTML that must be stripped to text). inline is both correct and important here: it is the cheapest rung of the cheap-to-expensive ladder, and it keeps every Workable company clear of MAX_DETAIL_FETCHES_PER_RUN - the run-wide cap of 40 per-posting requests that src/detail.py calls the single thing stopping this project scaling past a few hundred companies. A platform that serves descriptions inline costs that budget nothing, which is why the adapter was built on the account endpoint rather than on per-posting pages. Workable also exposes a separate `requirements` field, and it is deliberately NOT used as the inline field: experience.classify_block decides what a bullet means from the heading above it, and a bare requirements list has no heading - the same trap documented on HiBob, where the bare field yielded a years-of-experience number on 2 of 17 postings and the full description yielded one on all 17."
+  },
+
+  "health": {
+    "expected_min_jobs": 0,
+    "zero_is_plausible": false,
+    "sentinel": null,
+    "requires_browser": false,
+    "_note": "Overridden per company by the importer from that company's live verified count - see the same note in comeet.json. The defaults here are the SAFE direction."
+  },
+
+  "verified_on": "2026-08-19",
+  "notes": "Endpoint template: https://apply.workable.com/api/v1/widget/accounts/{slug}?details=true. One call, response {\"name\": ..., \"description\": ..., \"jobs\": [...]}. NO PAGINATION to drive: verified against huzzle, which returns 2,360 items in a SINGLE response, and against jove (117). limit, offset and page were all ignored and returned the identical payload. 2,360 in one call is far past any plausible per-page cap and is stronger evidence than Greenhouse's 437 or Comeet's 238, so unlike Ashby this is not a small-board coincidence.\n\n*** A known and deliberate exclusion. *** 9 of the 38 companies in Workable's Israel feed have postings there while their own account board returns zero - RISCO Group, Regatta, Side, Shifters, Libertex Group, Mindrift, Square One, Premium Merchant Funding, 'my team'. Verified 2026-08-19 three ways: the v1 widget endpoint returns {\"name\":\"RISCO Group\",\"jobs\":[]}, the v3 careers endpoint returns {\"total\":0,\"results\":[]}, and apply.workable.com/{slug}/ is a JS shell that loads from the same empty v3 call - while the aggregator lists a dozen live Rishon LeZion roles including Analog Board Design Engineer and Senior Mixed Signal Engineer. Their jobs reach jobs.workable.com without reaching their own careers account, and there is no per-company endpoint that serves them: the feed's company/companyId parameters are ignored and return the global 168,882. They are left OUT rather than fetched through the location-filtered aggregator, because a fetcher whose Israel filter belonged to the vendor rather than to relevance.py would drop qualified remote invisibly - a filtered feed is indistinguishable from a small board. Recorded here so the absence is a decision with evidence rather than an oversight. *** The response publishes `name` - the account's own company name - which is what makes identity free on this platform: a board does not have to be matched to a company, it says whose it is. *** THE SLUG IS NOT GUESSED. It is read from the redirect apply.workable.com/j/{shortcode} -> apply.workable.com/{slug}/j/{shortcode}, which costs one request and is exact; see _onboarding/resolve_workable_slugs.py. A dead slug returns HTTP 404, which surfaces as an ordinary fetch failure and reaches a maintenance alert after two consecutive runs. HISTORICAL NOTE: this platform was declined twice on the reading that it had near-zero Israeli share. That reading was taken while Workable was throttling the discovery sweep (425 HTTP 429s), and get_json turns a 429 into None - indistinguishable from 'no such board'. Measured properly through Workable's own aggregator it is 38 companies and 141 live Israeli postings."
+}
