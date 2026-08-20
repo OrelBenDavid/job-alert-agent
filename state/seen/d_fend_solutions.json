@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T15:40:50.835658+00:00",
-  "last_count": 23,
+  "last_success": "2026-08-20T18:51:26.374540+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -58,6 +58,10 @@
     "b100cfc4-7674-4420-8a36-4cf03dc93591": {
       "title": "RF/HW & System Validation Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
+    },
+    "98f7f648-e1ed-4eb0-9e3b-c25279afba21": {
+      "title": "Sales Operations Team Lead",
+      "first_seen": "2026-08-20T18:51:26.374540+00:00"
     },
     "ecb21abd-803d-4cb9-a6a9-9d5869343e2c": {
       "title": "Senior Communication PHY Algorithms Engineer",

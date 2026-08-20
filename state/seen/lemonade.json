@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T15:40:50.864706+00:00",
-  "last_count": 30,
+  "last_success": "2026-08-20T18:51:26.764503+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -57,10 +57,6 @@
     },
     "581af361-6d5e-4bda-a380-5fdaf49a6f31": {
       "title": "Senior Director of Brand Marketing",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "277fbb97-5755-4baa-9dd7-55877fcf94f3": {
-      "title": "CLX Squad Lead, Contractor Operations",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "b4d213ab-3ad2-45f6-abb6-466eeda6fdc5": {

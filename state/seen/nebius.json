@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-20T15:40:50.876680+00:00",
-  "last_count": 72,
+  "last_success": "2026-08-20T18:51:26.777788+00:00",
+  "last_count": 71,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -43,10 +43,6 @@
       "title": "Data Center IT Technician - Masmiya",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784091101": {
-      "title": "Data Center IT Technician - Modiin",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4784215101": {
       "title": "Data Center Regional Operations Manager",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -70,6 +66,10 @@
     "4902513101": {
       "title": "Director, Pricing",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4957281101": {
+      "title": "Educational Content Author - Cloud Solution Architect, Nebius Academy",
+      "first_seen": "2026-08-20T18:51:26.777788+00:00"
     },
     "4941795101": {
       "title": "Electrical Engineer- Data Centers",
@@ -205,10 +205,6 @@
     },
     "4907155101": {
       "title": "Senior Software Engineer, Agents (Agentic Search)",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4529931101": {
-      "title": "Senior Software Engineer (Data Platform, C++)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4754609101": {
