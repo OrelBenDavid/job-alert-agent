@@ -14,6 +14,24 @@ to read any past version in full. The working-tree copy (what's on disk right
 now) is always the current version; nothing below needs to be manually kept
 in sync with it.
 
+## 2026-08-20 — A structured country code may now reject, behind an opt-in
+
+`api.country_code_is_authoritative` is documented in
+`references/profile_schema.md` and referenced from Step 5. It lets a
+**non-Israeli** country code drop a posting, which the additive rule could
+never do — the case it closes is a US employer publishing
+`location.country == "US"` on a label that reads `Remote`, which the text rule
+keeps because nothing foreign is *named*.
+
+The flag is per-platform and has to be earned: the reference lists the three
+things audited on Comeet and Workable before it was set (every value is a bare
+ISO code, how often the field is empty, no disagreement with the free-text
+country name). Free-text location fields — Greenhouse's `location.name` — must
+never carry it, and with no flag the helper behaves exactly as it did before.
+
+`RELEVANCE_HELPER` in `assets/function_templates.py` is **unchanged**: it
+mirrors the text lists and the qualified-remote rule, and none of those moved.
+
 ## 2026-08-13 — Sync fixes, found by comparing the skill against the code it feeds
 
 Committed as `46a0be6`. All of the following were mismatches between what

@@ -283,3 +283,127 @@ def is_relevant_location(location_text: str, title: str = "") -> bool:
     unaffected."""
     return (is_israel_location(location_text)
             or is_qualified_remote(location_text, title))
+
+
+# *** The other half of a country code: when it is allowed to REJECT ***
+#
+# is_israel_country_code above is additive and stays that way. What it left
+# open is a posting-level leak the 2026-08-19/20 expansion measured: a US
+# employer publishes location.country == "US" with a label that reads "Remote",
+# nothing foreign is NAMED in the text, so the qualified-remote rule keeps it
+# and the posting is delivered as work Israel can take. It is the same
+# "Remote-US" case this module's docstring already excludes - the evidence for
+# it just sits in the structured field instead of in the prose.
+#
+# Company-level admission gates in _onboarding/ stop whole US-remote employers
+# at import (CapsLock, MRIoA, BDR Solutions, OuterBox, ROI Agency, Medvidi) and
+# stay as the second line of defence. What they cannot do is look inside an
+# otherwise-good company, and measured against all 202 live Comeet and 16 live
+# Workable boards on 2026-08-20, that is where the whole remainder sits: 16
+# postings at 8 companies, every one of which has a real Israeli presence.
+# Sentra's "Remote" / US Business Development Representative shares a board
+# with 8 physically Israeli roles; Atera's two share one with 12.
+#
+# Three guards make this safe to turn on.
+#
+# 1. *** It is OPT-IN PER PLATFORM *** - api.country_code_is_authoritative,
+#    set only where the field has been verified live to be a picker value.
+#    Greenhouse's location.name is free text and must keep behaving exactly as
+#    it does today; with no flag, none of this runs and behaviour is
+#    byte-identical. Verified 2026-08-20 for the two platforms that have it:
+#    Comeet's location.country took 60 distinct values across ~3,200 postings
+#    and every non-empty one was a bare two-letter code (143 were empty, which
+#    is why an absent code must still mean nothing); Workable's
+#    locations[].countryCode took 103 distinct values, all two-letter, none
+#    empty, and disagreed with the free-text country name on 0 of them.
+#
+# 2. *** A positive Israeli signal always wins. *** An IL code, or a physical
+#    Israeli place in the text, is decided before this is ever consulted.
+#
+# 3. *** An explicitly Israel-inclusive region also wins *** - see below.
+
+# The regions a company names when a role is open across a set of countries
+# that CONTAINS Israel. These are the four FOREIGN_REGION_MARKERS records as
+# deliberately absent from itself; they are restated here because they now have
+# a second job - overriding a foreign country code.
+#
+# A country code is a single point. "EMEA" is a claim about a set. When a board
+# publishes both and they disagree, this project's rule is to fail open, so the
+# region wins. Real postings that turn on this, both live on 2026-08-20:
+# Chaos Labs' {"name": "Remote", "city": "Europe", "country": "GB"} on three
+# engineering roles, and Prisma Photonics' {"name": "Europe (Remote)",
+# "country": "GB"} on a Director, Sales EMEA. A company that meant "United
+# Kingdom" had no reason to type "Europe" next to it, and Israel is routinely
+# inside a Europe/EMEA hiring region - the same reasoning that keeps these four
+# out of the foreign-marker list in the first place.
+#
+# Measured, the carve-out is what separates 12 unambiguously foreign postings
+# from 4 arguable ones, and it costs exactly 2 spare alerts: Quantum Machines'
+# "EMEA Remote, Stugart" (a misspelt Stuttgart) and Upwind's "EMEA (Remote),
+# Lecrin" (a village in Granada) are physically abroad and survive on their
+# EMEA token. Both are delivered today, so that is not a regression - it is the
+# price of not guessing about the other four. Losing a real job is
+# unrecoverable (state is written before filtering); showing a spare one is not.
+ISRAEL_INCLUSIVE_REGIONS = ["emea", "europe", "global", "worldwide"]
+
+# What an ISO 3166-1 country code looks like: alpha-2, alpha-3, or numeric.
+# Anything else in the field is treated as UNKNOWN rather than foreign, which
+# is the fail-open direction - a platform that starts writing prose into a
+# field it declared to be a picker must lose the veto, not gain a wildcard.
+_COUNTRY_CODE_SHAPE = re.compile(r"^(?:[a-z]{2,3}|[0-9]{1,3})$")
+
+
+def names_israel_inclusive_region(text: str) -> bool:
+    """Whether the location text names a region Israel sits inside."""
+    norm = _normalize(text)
+    return any(f" {region} " in norm for region in ISRAEL_INCLUSIVE_REGIONS)
+
+
+def is_foreign_country_code(code) -> bool:
+    """Whether a structured country-code field names a country that is NOT
+    Israel - and is recognisable as a country code at all.
+
+    The mirror image of is_israel_country_code, and deliberately NOT its
+    negation. Empty, missing and unparseable values answer False here as well
+    as there: "unknown" is not "elsewhere". 143 of ~3,200 live Comeet postings
+    carry no code, on genuinely Israeli roles, and a plain `not is_israel(...)`
+    would have dropped every one of them.
+
+    Same str() treatment as is_israel_country_code, for the same reason: this
+    reads whatever a profile's field map points at, and a raised
+    AttributeError would cost the company its whole run."""
+    value = str(code or "").strip().lower()
+    if not value or value in ISRAEL_COUNTRY_CODES:
+        return False
+    return bool(_COUNTRY_CODE_SHAPE.match(value))
+
+
+def is_relevant_with_country_codes(location_text: str, title: str = "",
+                                   country_codes=(),
+                                   codes_are_authoritative: bool = False) -> bool:
+    """is_relevant_location, plus whatever the structured country field knows.
+
+    Takes a LIST of codes because a posting can be published in several places
+    at once (Workable's locations[]); Comeet passes a list of one. Any Israeli
+    code in the list decides Israel outright, exactly as before.
+
+    With codes_are_authoritative False - the default, and every platform that
+    does not opt in - this is precisely the expression the fetchers already
+    used: `any(is_israel_country_code(c)) or is_relevant_location(text, title)`.
+    Nothing is subtracted on that path; tests/test_country_code_authority.py
+    pins it.
+
+    With the flag on, one branch is added: a foreign code rejects a posting
+    that has no Israeli location text and names no Israel-inclusive region.
+    That is the only thing the flag can do - it can never reject a posting the
+    old rule kept for a positive Israeli reason."""
+    codes = list(country_codes or ())
+    if any(is_israel_country_code(code) for code in codes):
+        return True
+    if is_israel_location(location_text):
+        return True
+    if (codes_are_authoritative
+            and not names_israel_inclusive_region(location_text)
+            and any(is_foreign_country_code(code) for code in codes)):
+        return False
+    return is_qualified_remote(location_text, title)

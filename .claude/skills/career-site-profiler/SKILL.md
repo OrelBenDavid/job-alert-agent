@@ -181,6 +181,8 @@ A posting is **kept** if either:
 
 That second clause is the "qualified remote" rule: `Remote`, `Remote - EMEA`, `Remote - Global`, `Remote (Israel)` are kept; `Remote - US`, `Remote - Americas`, `Remote, EST hours`, `Remote - UK` are dropped. The exclusion list lives in one place in the helper and is unit-tested.
 
+**If the API publishes a structured country code**, note it — a field that holds a picker value (Comeet's `location.country`, Workable's `locations[].countryCode`) is the one location field a company cannot get creative with, and it is read separately from the free text. It can also **reject**, but only behind the opt-in `api.country_code_is_authoritative` and only once the field has been audited live; see `references/profile_schema.md` for what earns the flag. Free text never qualifies: Greenhouse's `location.name` holds hand-typed strings like `Remote - Colorado`.
+
 Matching must be done on a **normalized** string: lowercase, strip punctuation and hyphens, collapse whitespace. This is not cosmetic — Lever returns `"Tel-Aviv, Israel"` with a hyphen, so a naive substring check for `"Tel Aviv"` fails on it. Hebrew place names (`תל אביב`, `ישראל`, `הרצליה`…) are included in the keyword list.
 
 **Where this filter runs depends on `israel_filter.method`:**

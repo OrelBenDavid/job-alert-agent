@@ -87,13 +87,66 @@ def test_a_blank_country_still_falls_back_to_the_text_check():
     assert len(jobs) == 1
 
 
-def test_a_foreign_country_code_never_rejects_on_its_own():
-    """is_israel_country_code is additive only. A req attached to a foreign
-    office whose location text still reads as Israel must survive - dropping
-    it would be exactly the silent loss the gate exists to prevent."""
+def test_a_foreign_country_code_never_outranks_an_israeli_location():
+    """A req attached to a foreign office whose location text still reads as
+    Israel must survive - dropping it would be exactly the silent loss the gate
+    exists to prevent.
+
+    This used to be the whole of the rule ("additive only"). Since 2026-08-20
+    Comeet's location.country CAN reject, because it was audited across all 202
+    live boards and found to be a picker - but only where there is no Israeli
+    signal to override. See test_country_code_authority.py."""
     jobs = _fetch([_position("41.DDD", "Platform Engineer",
                              "Tel Aviv", "Tel Aviv", "US")])
     assert len(jobs) == 1
+
+
+# --------------------------------------------------------------------------
+# The picker rejects too - added 2026-08-20
+#
+# Ten live postings at four companies were reaching alerts as "Remote" while
+# location.country said "US". Each of those companies has 7-12 Tel Aviv roles,
+# so the company-level admission gate in _onboarding/ could never have seen
+# them - it judges companies, not postings.
+# --------------------------------------------------------------------------
+
+@pytest.mark.parametrize("label,city,company", [
+    ("Remote", "Remote", "atera_networks"),
+    ("Remote", "", "sentra"),
+    ("U.S. Remote", "", "linx_security"),
+    ("Remote - East Coast", "Remote- East Coast", "faye"),
+    ("West Coast - Remote", "Remote", "faye"),
+])
+def test_a_us_picker_value_rejects_a_remote_label(label, city, company):
+    """Every one of these passes the TEXT rule - "U.S. Remote" normalizes to
+    "u s remote" so the `us` marker cannot match it, and the marker list has no
+    coasts. The picker is the only field that knows."""
+    assert _fetch([_position("41.KKK", "Sales Engineer", label, city, "US")]) \
+        == [], company
+
+
+def test_an_israel_inclusive_region_still_beats_the_picker():
+    """chaos_labs publishes {"name": "Remote", "city": "Europe",
+    "country": "GB"} on three engineering roles. A single-country picker and a
+    multi-country region disagree, and this project fails open on a
+    disagreement about location."""
+    jobs = _fetch([_position("41.LLL", "Senior AI Data Scientist",
+                             "Remote", "Europe", "GB")])
+    assert len(jobs) == 1
+
+
+def test_a_company_record_can_turn_the_picker_back_off():
+    """The flag is ordinary profile config, merged company-over-platform like
+    everything else - so a single Comeet company whose picker turned out to be
+    junk can opt out without a code change."""
+    from fetchers import api as api_mod
+
+    profile = load_profile(find_profile_path("panaya"))
+    profile.raw["api"]["country_code_is_authoritative"] = False
+    positions = [_position("41.MMM", "Sales Engineer", "Remote", "", "US")]
+    with patch.object(api_mod.requests, "get",
+                      return_value=_fake_response(positions)):
+        assert len(api_mod.fetch(profile)) == 1      # the pre-fix outcome
 
 
 # --------------------------------------------------------------------------
