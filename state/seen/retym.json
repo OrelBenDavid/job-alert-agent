@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-21T09:45:05.268236+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-21T13:02:44.366462+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
-    "96.B64": {
-      "title": "Administrative Assistant (50% Position)",
-      "first_seen": "2026-08-18T09:42:03.514596+00:00"
-    },
     "67.051": {
       "title": "Analog Design Engineer",
       "first_seen": "2026-08-13T11:24:41.034113+00:00"
