@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-21T06:59:26.996282+00:00",
-  "last_count": 14,
+  "last_success": "2026-08-21T09:45:05.231822+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -55,9 +55,17 @@
       "title": "R&D Team Lead - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "8118681": {
+      "title": "Sales Program Manager",
+      "first_seen": "2026-08-21T09:45:05.231822+00:00"
+    },
     "7657193": {
       "title": "Senior Product Manager - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8102637": {
+      "title": "SMB Account Manager",
+      "first_seen": "2026-08-21T09:45:05.231822+00:00"
     }
   }
 }

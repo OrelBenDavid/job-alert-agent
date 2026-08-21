@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-21T06:59:27.853590+00:00",
-  "last_count": 71,
+  "last_success": "2026-08-21T09:45:05.248666+00:00",
+  "last_count": 70,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -125,10 +125,6 @@
     },
     "4869782101": {
       "title": "Partner Solutions Architect",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4876442101": {
-      "title": "Personal Assistant",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4937238101": {
