@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-08-22T03:48:54.300916+00:00",
+  "last_success": "2026-08-22T09:34:29.188591+00:00",
   "last_count": 10,
-  "consecutive_failures": 1,
+  "consecutive_failures": 0,
   "jobs": {
     "R29093": {
       "title": "Sr. Engineer, Falcon Secure Access (Hybrid, ISR)",

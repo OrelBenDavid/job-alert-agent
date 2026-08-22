@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-08-22T03:48:54.359454+00:00",
+  "last_success": "2026-08-22T09:34:29.246531+00:00",
   "last_count": 65,
-  "consecutive_failures": 1,
+  "consecutive_failures": 0,
   "jobs": {
     "JR-021236": {
       "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
