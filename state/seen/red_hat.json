@@ -1,7 +1,7 @@
 {
   "last_success": "2026-08-22T03:48:54.370928+00:00",
   "last_count": 1,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "R-055739": {
       "title": "Principal Software Engineer - OpenShift Virtualization Windows Guests",
