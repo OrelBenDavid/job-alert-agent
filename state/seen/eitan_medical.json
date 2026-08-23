@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.495036+00:00",
+  "last_success": "2026-08-23T09:01:19.804145+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,5 +27,6 @@
       "title": "עובד.ת יצור",
       "first_seen": "2026-08-13T11:24:19.179824+00:00"
     }
-  }
+  },
+  "last_board_total": 8
 }

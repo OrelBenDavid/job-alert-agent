@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.591271+00:00",
+  "last_success": "2026-08-23T09:01:23.853581+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,5 +31,6 @@
       "title": "Staff Product Manager Cloud Threat Detection",
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
     }
-  }
+  },
+  "last_board_total": 41
 }

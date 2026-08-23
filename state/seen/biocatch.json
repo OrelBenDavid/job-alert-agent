@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.481729+00:00",
+  "last_success": "2026-08-23T09:01:19.784363+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,5 +31,6 @@
       "title": "Technical Support Specialist - Student Position",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
-  }
+  },
+  "last_board_total": 19
 }

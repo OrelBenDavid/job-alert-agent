@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.499158+00:00",
+  "last_success": "2026-08-23T09:01:19.815938+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -47,5 +47,6 @@
       "title": "Staff Engineer, Data Products",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
-  }
+  },
+  "last_board_total": 33
 }

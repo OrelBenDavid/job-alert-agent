@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.476879+00:00",
+  "last_success": "2026-08-23T09:01:19.776998+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -63,5 +63,6 @@
       "title": "Software Team Leader",
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
-  }
+  },
+  "last_board_total": 43
 }

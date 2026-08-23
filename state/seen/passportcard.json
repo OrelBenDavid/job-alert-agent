@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.572949+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-23T09:01:23.825516+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "2C.B62": {
@@ -14,6 +14,10 @@
     "14.C68": {
       "title": "Financial ERP Implementation Lead",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "69.A45": {
+      "title": "Internal Auditor",
+      "first_seen": "2026-08-23T09:01:23.825516+00:00"
     },
     "0F.E63": {
       "title": "Sales Representative",
@@ -71,5 +75,6 @@
       "title": "רפרנט/ית שירות לסוכנים",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
-  }
+  },
+  "last_board_total": 18
 }

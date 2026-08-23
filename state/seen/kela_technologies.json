@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.551240+00:00",
+  "last_success": "2026-08-23T09:01:21.817693+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -83,5 +83,6 @@
       "title": "Talent Acquisition Partner",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
-  }
+  },
+  "last_board_total": 20
 }

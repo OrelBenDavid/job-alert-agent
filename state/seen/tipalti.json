@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.591962+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-23T09:01:23.854626+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "6011644004": {
@@ -18,10 +18,7 @@
     "6121376004": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:41.076387+00:00"
-    },
-    "6098437004": {
-      "title": "Technical Enablement Specialist",
-      "first_seen": "2026-08-13T11:24:41.076387+00:00"
     }
-  }
+  },
+  "last_board_total": 29
 }

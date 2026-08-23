@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.602836+00:00",
+  "last_success": "2026-08-23T09:01:23.939131+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,5 +15,6 @@
       "title": "Office Manager (Temporary for 6 months)",
       "first_seen": "2026-08-19T09:41:25.849016+00:00"
     }
-  }
+  },
+  "last_board_total": 5
 }

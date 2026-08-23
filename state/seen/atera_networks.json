@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.479120+00:00",
+  "last_success": "2026-08-23T09:01:19.779871+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -51,5 +51,6 @@
       "title": "Web QA & Automation Engineer",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
-  }
+  },
+  "last_board_total": 22
 }

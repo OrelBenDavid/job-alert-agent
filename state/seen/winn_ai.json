@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.602024+00:00",
+  "last_success": "2026-08-23T09:01:23.865534+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,5 +11,6 @@
       "title": "Senior Product Manager",
       "first_seen": "2026-08-20T06:56:59.909653+00:00"
     }
-  }
+  },
+  "last_board_total": 2
 }

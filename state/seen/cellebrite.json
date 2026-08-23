@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.485542+00:00",
+  "last_success": "2026-08-23T09:01:19.789842+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -79,5 +79,6 @@
       "title": "Tier 3 Product Support Expert",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     }
-  }
+  },
+  "last_board_total": 58
 }

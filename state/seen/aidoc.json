@@ -1,6 +1,112 @@
 {
-  "last_success": "2026-08-23T06:53:45.474417+00:00",
-  "last_count": 0,
+  "last_success": "2026-08-23T09:01:19.731952+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
-  "jobs": {}
+  "jobs": {
+    "4876551101": {
+      "title": "AI Algorithm Tech Lead",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4871564101": {
+      "title": "AI Data Analyst",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4874306101": {
+      "title": "AI Senior Software Engineer, ML Platform",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4876590101": {
+      "title": "AI Software Team Lead, ML Platform",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4876600101": {
+      "title": "AI Software Tech Lead, ML Platform",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4876560101": {
+      "title": "AI Staff Software Engineer, ML Platform",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4897240101": {
+      "title": "Analytics Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4925761101": {
+      "title": "Backend Tech Lead",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4925753101": {
+      "title": "Core Backend Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4941568101": {
+      "title": "Director of GenAI Operations",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4951044101": {
+      "title": "Director of Product Design",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4932217101": {
+      "title": "Motion Designer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4937969101": {
+      "title": "Payroll Controller (Maternity Leave cover)",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4882428101": {
+      "title": "Principal Engineer - AI First Development Lead",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4871455101": {
+      "title": "Principal Software Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4923591101": {
+      "title": "Product manager - Neurology AI",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4920296101": {
+      "title": "SecOps Detection & Response",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4904239101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4902462101": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4889904101": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4868634101": {
+      "title": "Senior Product Analyst",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4906138101": {
+      "title": "Senior QA Automation Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4920094101": {
+      "title": "Senior Security Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4864308101": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4864312101": {
+      "title": "Staff Software Engineer",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4952195101": {
+      "title": "Strategic Product Analyst",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    }
+  },
+  "last_board_total": 34
 }

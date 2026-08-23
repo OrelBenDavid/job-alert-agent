@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-08-23T06:53:45.571807+00:00",
-  "last_count": 66,
+  "last_success": "2026-08-23T09:01:22.409577+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021155": {
+      "title": "Sr Manager, UX",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-021379": {
+      "title": "Junior Security Posture Researcher  (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
     "JR-017617": {
       "title": "Principal/Senior Engineer Software -  Agentic Endpoint Security(Cortex)",
       "first_seen": "2026-08-23T06:53:45.571807+00:00"
@@ -266,6 +274,335 @@
     "JR-020035": {
       "title": "Staff Software Engineer (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-017319": {
+      "title": "Sr Technical Program Manager",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018846": {
+      "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019438": {
+      "title": "Manager, SW Engineering (IGA) - Idira",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-020201": {
+      "title": "Senior DevOps Engineer (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019131": {
+      "title": "Sr Principal/ Performance & Scalability Architect (Idira)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019026": {
+      "title": "Technical Program Leader - Enterprise SaaS (Idira)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019743": {
+      "title": "Sr Principal / Architect Engineer Software (Identity Platform)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-020081": {
+      "title": "Group Manager – Directory Services (Identity)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018039": {
+      "title": "Senior Software Engineer (Secure Agentic AI - Be'er Sheva)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019687": {
+      "title": "Principal/Senior Engineer Software - Data Security (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019726": {
+      "title": "Senior Security Researcher Identity & SaaS (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019922": {
+      "title": "Senior Technical Program Manager – AI Transformation & Integrations (AgentiX) (Cortex",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019920": {
+      "title": "Sr. Technical Product Engineer (Cortex Agentic Endpoint Security)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015576": {
+      "title": "Sr. Product Manager-  Prisma Browser",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016610": {
+      "title": "Principal Data Engineer (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019065": {
+      "title": "Sr Director, Product Managemnt (Cortex XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-014486": {
+      "title": "Senior Product Manager-  Application Security (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019263": {
+      "title": "Senior Security Researcher - ITDR (Cortex XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019657": {
+      "title": "Email Security Research Manager (Cortex - XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017751": {
+      "title": "Security Researcher Manager - Cloud & Kubernetes (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019267": {
+      "title": "Sr. Product Manager (Cortex Platform)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018159": {
+      "title": "Product Manager - Agentic AI",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018093": {
+      "title": "Senior Product Manager (IGA - Platform & Connectors)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018090": {
+      "title": "Senior Principal Quality Lead (Idira)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018152": {
+      "title": "Senior Staff Software Engineer (EPM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018197": {
+      "title": "Senior Staff Cloud Engineer - ARS Team (Idira)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017964": {
+      "title": "Principal Technical Program Manager",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018237": {
+      "title": "Senior Staff AI Software Engineer (CORA AI)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018226": {
+      "title": "Manager, SW Engineering (CORA AI)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018172": {
+      "title": "Principal QA Architect (Secure Cloud Access)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018170": {
+      "title": "Senior Staff Product Owner (Secure Cloud Access)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018260": {
+      "title": "Data Science Manager (AI Solutions-Machines)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017437": {
+      "title": "Senior Principal Data Scientist - LLM Agents (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018537": {
+      "title": "Principal/Senior ML Platform Engineer (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019655": {
+      "title": "Senior Cloud Security Researcher - Security Automation (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-005017": {
+      "title": "Senior SRE (IT Infrastructure)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019813": {
+      "title": "Senior Angular Frontend Engineer (Cortex Platform - AgentiX)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019634": {
+      "title": "JR-018604 Principal/ Senior Backend Engineer (KSPM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-019631": {
+      "title": "Senior/Principal Security Researcher - Windows EDR (Cortex - XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016135": {
+      "title": "Principal/ Senior Data Scientist - LLM Agents",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016615": {
+      "title": "Senior Software Engineer -  Agentic AI(Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018958": {
+      "title": "Mgr, Domain Consulting",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018473": {
+      "title": "Senior Product Manager (Idira, TDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018899": {
+      "title": "Principal AI Software Engineer (CORA AI)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017433": {
+      "title": "Senior Automation Engineer - CAS (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018592": {
+      "title": "Senior \\ Principal Software Engineer (Secure Agentic AI)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-007061": {
+      "title": "Linux Internals Software Engineer (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018207": {
+      "title": "Senior Software Engineer (Conjur Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018854": {
+      "title": "Principal DevOps Engineer (DevOps Platform)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018778": {
+      "title": "Principal DevOps Engineer - AI Platforms (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017706": {
+      "title": "Senior AI Researcher - Agentic Endpoint Security(Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018658": {
+      "title": "Senior/Principal Linux Security Analytics Researcher (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-009669": {
+      "title": "Sr Product Manager- AI  (Cortex XSIAM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-012177": {
+      "title": "Backend Team Manager -AppSec (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018147": {
+      "title": "Engineering Software Manager (Secure Agentic AI)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018591": {
+      "title": "Principal Windows Low-Level Dev (Cortex XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018107": {
+      "title": "Senior DevOps Engineer (Secrets Manager)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017961": {
+      "title": "Senior Manager Security Research - Linux Low Level (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017960": {
+      "title": "Security Research Manager   - Linux Low Level (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017007": {
+      "title": "Senior Product Manager (XSIAM SIEM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018266": {
+      "title": "Sr Staff DevOps Platform Engineer",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016604": {
+      "title": "Principal/ Senior Software Engineer - Identity Security",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017593": {
+      "title": "Senior DevOps Engineer (Cortex Agentix Endpoint Security)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-018402": {
+      "title": "Senior/ Principal/ Sr Principal Engineer (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-011774": {
+      "title": "Principal/Senior Linux Security Researcher (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016263": {
+      "title": "Sr Principal/Principal Windows Malware Security Researcher (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-012185": {
+      "title": "Principal/Senior Windows Exploit Researcher (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017636": {
+      "title": "District Sales Manager Public Sector & Defense",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-017161": {
+      "title": "Principal Software Engineer,  Neo4j&Graph Databases(CIEM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016806": {
+      "title": "Principal Engineer Software  - LLM(Cortex Agentix)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-013102": {
+      "title": "Engineering Software Manager (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015434": {
+      "title": "Principal C++ Software Engineer (Prisma Browser)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-012548": {
+      "title": "Security Research Manager: Identity, SaaS, and Cloud (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-013064": {
+      "title": "Principal Product Manager -  Application Security (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-014484": {
+      "title": "Sr Product Manager - Cortex cloud ASPM",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015162": {
+      "title": "Senior/Principal Backend Engineer (Cortex XSIAM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016673": {
+      "title": "Senior/Principal Backend Engineer (CIEM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-016200": {
+      "title": "Senior Site Reliability Engineer (Cortex)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015557": {
+      "title": "Senior Product Manager - DSPM (Cortex Cloud )",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015114": {
+      "title": "Senior Product Manager (Cortex XDR)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-014644": {
+      "title": "Principal Engineer Software(Cortex XSOAR/XSIAM)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-010424": {
+      "title": "Dir / Sr Dir , SW Engineering ( Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
-  }
+  },
+  "last_board_total": 152
 }

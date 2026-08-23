@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.567196+00:00",
+  "last_success": "2026-08-23T09:01:22.402796+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -55,5 +55,6 @@
       "title": "Verification Engineer",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     }
-  }
+  },
+  "last_board_total": 34
 }

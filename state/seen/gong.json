@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.501808+00:00",
+  "last_success": "2026-08-23T09:01:19.820079+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -75,5 +75,6 @@
       "title": "Staff Cyber Defense  Engineer",
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     }
-  }
+  },
+  "last_board_total": 98
 }

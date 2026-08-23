@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.487811+00:00",
+  "last_success": "2026-08-23T09:01:19.793217+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -43,5 +43,6 @@
       "title": "VP, Global Support",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
-  }
+  },
+  "last_board_total": 29
 }

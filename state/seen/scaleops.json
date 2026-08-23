@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.582541+00:00",
+  "last_success": "2026-08-23T09:01:23.840229+00:00",
   "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
@@ -107,5 +107,6 @@
       "title": "Technical Account Manager",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     }
-  }
+  },
+  "last_board_total": 54
 }

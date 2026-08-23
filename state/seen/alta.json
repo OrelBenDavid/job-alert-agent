@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.475920+00:00",
+  "last_success": "2026-08-23T09:01:19.775529+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,5 +23,6 @@
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-18T19:28:22.740340+00:00"
     }
-  }
+  },
+  "last_board_total": 8
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.573420+00:00",
+  "last_success": "2026-08-23T09:01:23.826420+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,5 +27,6 @@
       "title": "VP Product",
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     }
-  }
+  },
+  "last_board_total": 12
 }

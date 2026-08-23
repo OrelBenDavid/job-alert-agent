@@ -1,15 +1,20 @@
 {
-  "last_success": "2026-08-23T06:53:45.588044+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-23T09:01:23.848825+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "E2.E67": {
       "title": "Head of Marketing",
       "first_seen": "2026-08-20T06:56:59.891597+00:00"
     },
+    "EC.075": {
+      "title": "Head Of Product",
+      "first_seen": "2026-08-23T09:01:23.848825+00:00"
+    },
     "BA.D62": {
       "title": "Tech Lead",
       "first_seen": "2026-08-20T06:56:59.891597+00:00"
     }
-  }
+  },
+  "last_board_total": 18
 }

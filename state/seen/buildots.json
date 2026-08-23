@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.484012+00:00",
+  "last_success": "2026-08-23T09:01:19.787728+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -71,5 +71,6 @@
       "title": "Project Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
-  }
+  },
+  "last_board_total": 43
 }

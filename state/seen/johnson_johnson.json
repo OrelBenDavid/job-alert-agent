@@ -1,6 +1,92 @@
 {
-  "last_success": "2026-08-23T06:53:45.550796+00:00",
-  "last_count": 0,
+  "last_success": "2026-08-23T09:01:19.830908+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
-  "jobs": {}
+  "jobs": {
+    "R-089751": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-088467": {
+      "title": "Regulatory Affairs Leader",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-095015": {
+      "title": "Configuration Management Expert",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-087332": {
+      "title": "Customer Service Representative",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-093278": {
+      "title": "Quality Engineer",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-087063": {
+      "title": "Medical device Sales Representative",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-087909": {
+      "title": "Hardware Analog Engineer",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-092628": {
+      "title": "Field Insights Specialist",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-085826": {
+      "title": "Product specialist",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-091480": {
+      "title": "Logic Designer and FPGA Tech Lead",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-083657": {
+      "title": "Logic Designer and FPGA Team Leader",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-086404": {
+      "title": "QC Team Leader",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-074535": {
+      "title": "Israel CommEx Specialist",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-075061": {
+      "title": "Marketing and Digital Specialist",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-082002": {
+      "title": "Sales Representative - Surgery",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-086359": {
+      "title": "Medical Science Liaison",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-076856": {
+      "title": "Sales Representative - Joints",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-084117": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-080936": {
+      "title": "Systems Engineer",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-075832": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-069067": {
+      "title": "Medical Device Sales Representative",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    }
+  },
+  "last_board_total": 21
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.492090+00:00",
+  "last_success": "2026-08-23T09:01:19.799584+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -95,5 +95,6 @@
       "title": "System QA Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
-  }
+  },
+  "last_board_total": 30
 }

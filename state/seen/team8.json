@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.590721+00:00",
+  "last_success": "2026-08-23T09:01:23.853117+00:00",
   "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
@@ -163,5 +163,6 @@
       "title": "US CPA – Financial Intelligence Architect (Service SMB Focus)",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
-  }
+  },
+  "last_board_total": 54
 }

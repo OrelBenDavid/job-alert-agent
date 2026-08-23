@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.571102+00:00",
+  "last_success": "2026-08-23T09:01:22.408553+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,5 +15,6 @@
       "title": "VP Finance",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
-  }
+  },
+  "last_board_total": 14
 }

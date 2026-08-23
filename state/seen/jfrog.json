@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.550338+00:00",
+  "last_success": "2026-08-23T09:01:19.830118+00:00",
   "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
@@ -67,5 +67,6 @@
       "title": "SMB Account Manager",
       "first_seen": "2026-08-21T09:45:05.231822+00:00"
     }
-  }
+  },
+  "last_board_total": 40
 }

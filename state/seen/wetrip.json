@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-23T06:53:45.601341+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-23T09:01:23.864357+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "BD.079": {
       "title": "Controller",
       "first_seen": "2026-08-20T13:03:14.372516+00:00"
+    },
+    "EB.F6D": {
+      "title": "Customer Experience Representative",
+      "first_seen": "2026-08-23T09:01:23.864357+00:00"
     },
     "C8.B69": {
       "title": "Head of Brand & Creative",
@@ -27,5 +31,6 @@
       "title": "User Acquisition Manager",
       "first_seen": "2026-08-13T11:24:49.432846+00:00"
     }
-  }
+  },
+  "last_board_total": 7
 }

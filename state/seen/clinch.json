@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.487601+00:00",
+  "last_success": "2026-08-23T09:01:19.792910+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,5 +15,6 @@
       "title": "Team Lead",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
-  }
+  },
+  "last_board_total": 5
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.578405+00:00",
+  "last_success": "2026-08-23T09:01:23.834116+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,5 +15,6 @@
       "title": "Backend Developer",
       "first_seen": "2026-08-18T22:29:25.531189+00:00"
     }
-  }
+  },
+  "last_board_total": 3
 }

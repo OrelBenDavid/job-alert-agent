@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.485167+00:00",
-  "last_count": 41,
+  "last_success": "2026-08-23T09:01:19.789361+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -65,10 +65,6 @@
     },
     "4839355101": {
       "title": "MDR Security Analyst (Threat Hunting)",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4203250101": {
-      "title": "Paid Media Marketing Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4908469101": {
@@ -167,5 +163,6 @@
       "title": "Technical Program Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
-  }
+  },
+  "last_board_total": 114
 }

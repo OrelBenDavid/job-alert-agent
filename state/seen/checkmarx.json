@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.486925+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-23T09:01:19.791996+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "52.E6E": {
@@ -11,13 +11,10 @@
       "title": "DevOps Manager",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
-    "53.B65": {
-      "title": "SecOps Engineer",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
     "B9.E69": {
       "title": "Senior Software Architect",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
-  }
+  },
+  "last_board_total": 36
 }

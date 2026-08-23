@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.582303+00:00",
+  "last_success": "2026-08-23T09:01:23.839894+00:00",
   "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,5 +7,6 @@
       "title": "Head of Go-To-Market Engineering",
       "first_seen": "2026-08-13T11:24:41.043989+00:00"
     }
-  }
+  },
+  "last_board_total": 12
 }

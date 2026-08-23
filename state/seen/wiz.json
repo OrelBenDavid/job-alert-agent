@@ -1,6 +1,96 @@
 {
-  "last_success": "2026-08-23T06:53:45.602208+00:00",
-  "last_count": 0,
+  "last_success": "2026-08-23T09:01:23.865955+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
-  "jobs": {}
+  "jobs": {
+    "4681239006": {
+      "title": "AI Security Researcher",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4692874006": {
+      "title": "Applied Security Researcher",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4615162006": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4621708006": {
+      "title": "Brand & Data Visualization Designer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4621534006": {
+      "title": "Data Scientist Expert",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4650548006": {
+      "title": "Detection Software Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4615172006": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4615211006": {
+      "title": "Expert Backend Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4615218006": {
+      "title": "Expert Frontend Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4690860006": {
+      "title": "Incident Responder",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4698920006": {
+      "title": "Instructional Designer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4686011006": {
+      "title": "Partner Solutions Engineer, Israel",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4645081006": {
+      "title": "Pentest Product Associate",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4691241006": {
+      "title": "Principal Solutions Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4599708006": {
+      "title": "Product Designer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4422889006": {
+      "title": "Security Engineer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4622103006": {
+      "title": "Talent Acquisition Partner",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4615170006": {
+      "title": "Technical Product Associate",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4650468006": {
+      "title": "Technical Project Manager",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4701311006": {
+      "title": "Technical Writer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4566780006": {
+      "title": "Threat Detection Researcher (Cloud)",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4670481006": {
+      "title": "Threat Detection Researcher (Windows/Linux/MacOS)",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    }
+  },
+  "last_board_total": 124
 }

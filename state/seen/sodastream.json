@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.587248+00:00",
+  "last_success": "2026-08-23T09:01:23.847529+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,5 +31,6 @@
       "title": "נציג/ת שירות לקוחות",
       "first_seen": "2026-08-13T11:24:41.055720+00:00"
     }
-  }
+  },
+  "last_board_total": 9
 }

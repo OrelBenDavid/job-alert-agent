@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.585611+00:00",
-  "last_count": 25,
+  "last_success": "2026-08-23T09:01:23.845057+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -98,10 +98,7 @@
     "8093782": {
       "title": "Senior Software Engineer - B2C",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
-    },
-    "7528931": {
-      "title": "Social Growth & Community Builder (B2C)",
-      "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
-  }
+  },
+  "last_board_total": 64
 }

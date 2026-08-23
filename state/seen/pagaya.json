@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.571310+00:00",
+  "last_success": "2026-08-23T09:01:22.408876+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -43,5 +43,6 @@
       "title": "Systems Administrator",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     }
-  }
+  },
+  "last_board_total": 10
 }

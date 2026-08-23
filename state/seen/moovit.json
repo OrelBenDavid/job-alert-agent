@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T06:53:45.563853+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-23T09:01:22.397978+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "B3.C6A": {
@@ -10,10 +10,7 @@
     "F2.F67": {
       "title": "IT Specialist",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
-    },
-    "82.E68": {
-      "title": "Media Account Manager",
-      "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
-  }
+  },
+  "last_board_total": 2
 }

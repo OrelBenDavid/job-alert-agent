@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T06:53:45.496032+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-23T09:01:19.805677+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
+    "9E.074": {
+      "title": "AI Engineer - Algorithm Team",
+      "first_seen": "2026-08-23T09:01:19.805677+00:00"
+    },
     "22.F6B": {
       "title": "BIM Modeler",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
@@ -51,5 +55,6 @@
       "title": "System Engineer",
       "first_seen": "2026-08-13T12:34:58.624563+00:00"
     }
-  }
+  },
+  "last_board_total": 51
 }

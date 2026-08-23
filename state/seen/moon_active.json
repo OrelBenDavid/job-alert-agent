@@ -1,6 +1,104 @@
 {
-  "last_success": "2026-08-23T06:53:45.563398+00:00",
-  "last_count": 0,
+  "last_success": "2026-08-23T09:01:22.335333+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
-  "jobs": {}
+  "jobs": {
+    "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "fd2cd6bb-1e02-4270-95cb-e40f7f3d5ccc": {
+      "title": "Unity Developer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "782e0dd3-34c2-4d36-b1c7-eb59340858eb": {
+      "title": "Marketing Data Analyst",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "0275cb08-9fcf-4251-a2d1-a69835ecb0fa": {
+      "title": "Talent Acquisition Associate",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "de86cb90-ce2f-4224-8cef-f722387b4a16": {
+      "title": "Business Data Analyst",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "d0d25d4b-9493-41a3-9eb1-7d0ac54ac89e": {
+      "title": "Product Economy Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "97952ab6-4175-4727-8c16-914895df3726": {
+      "title": "Mobile User Acquisition Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "1bf17c68-9808-4e48-943b-7c76d75a3803": {
+      "title": "Product Monetization Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "b9ef962f-9edd-49f3-bb44-e288bb7885d4": {
+      "title": "IT Infrastructure & Cloud Engineer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "e08085a5-f3cf-4c0b-820a-053186774857": {
+      "title": "Technical Artist (Playable Ads)",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "baf1a42a-8fe0-40ed-a706-fae3da7e9c52": {
+      "title": "CRM Lead",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "7d9ea95d-4eda-405f-a525-229092a6b989": {
+      "title": "Junior User Acquisition Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "5bac5848-00ce-446c-a17f-3effaf80f4cd": {
+      "title": "FP&A Analyst",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "ad3f690a-ac95-4a7e-af5e-3b373775cc69": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "d6b8e001-c645-4463-9707-09552fab60fd": {
+      "title": "Backend Developer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "f3202f01-d2fb-4f29-876b-345e0c905be3": {
+      "title": "Application Security Researcher",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "6da1d55a-8681-439b-baba-ed823acac61b": {
+      "title": "Level Designer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "eada340a-f672-43cb-ab8c-1fca2c761d59": {
+      "title": "Game Designer - Playable Ads",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "6140b3a4-417d-4aa4-a19e-808b8faf17f0": {
+      "title": "Product UX Designer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "bb0cb6e0-0560-42d7-bff4-e7883141cd63": {
+      "title": "CX Solutions Specialist",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "59750dbd-b3da-444c-8dbd-a755015d5181": {
+      "title": "CX Automations Engineer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "918611b6-1ab5-400e-abe2-970470ea0f5d": {
+      "title": "Product UX Team Lead",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "c1b1b08c-eb05-46d1-bc85-a1d6098e8599": {
+      "title": "Technical Operations Manager",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "d9438ecd-3caf-4705-b308-fc2f55c646de": {
+      "title": "Game Engineer",
+      "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    }
+  },
+  "last_board_total": 33
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T06:53:45.486296+00:00",
+  "last_success": "2026-08-23T09:01:19.791048+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,5 +27,6 @@
       "title": "Founding GTM Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
-  }
+  },
+  "last_board_total": 8
 }

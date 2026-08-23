@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T06:53:45.470968+00:00",
-  "last_count": 23,
+  "last_success": "2026-08-23T09:01:19.726866+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-29b87552-50da-5cdd-a4eb-8150e5de769c-T1787469672-744000145029619": {
+      "title": "DevSecOps Tech Lead",
+      "first_seen": "2026-08-23T09:01:19.726866+00:00"
+    },
     "https://careers.wix.com/position/oracle-f93791c7-04f3-5bb4-8aca-d40ee1372217-T1787216569-744000144548220": {
       "title": "SOC Analyst",
       "first_seen": "2026-08-20T15:40:50.802240+00:00"
