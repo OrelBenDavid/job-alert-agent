@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T15:30:12.102180+00:00",
-  "last_count": 148,
+  "last_success": "2026-08-23T18:39:51.195091+00:00",
+  "last_count": 149,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021155": {
+      "title": "Sr Manager, UX",
+      "first_seen": "2026-08-23T18:39:51.195091+00:00"
+    },
     "JR-020030": {
       "title": "Manager, SW Engineering- Authentication Team (Idira)",
       "first_seen": "2026-08-23T12:54:49.993458+00:00"
@@ -596,5 +600,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 150
+  "last_board_total": 151
 }

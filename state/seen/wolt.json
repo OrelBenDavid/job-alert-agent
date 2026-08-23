@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T15:30:12.142088+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-23T18:39:51.236643+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "8088630": {
@@ -22,7 +22,11 @@
     "7218515": {
       "title": "Store Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "6739407": {
+      "title": "מלקטים - וולט מרקט - כפר סבא",
+      "first_seen": "2026-08-23T18:39:51.236643+00:00"
     }
   },
-  "last_board_total": 238
+  "last_board_total": 241
 }

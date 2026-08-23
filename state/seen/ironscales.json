@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-23T15:30:12.073375+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-23T18:39:51.165619+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "CE.076": {
-      "title": "AI Platform Engineering Manager",
-      "first_seen": "2026-08-23T15:30:12.073375+00:00"
-    },
     "BC.D6D": {
       "title": "Data Scientist",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }
