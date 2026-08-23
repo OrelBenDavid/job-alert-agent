@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-08-23T03:56:23.556552+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-23T06:53:45.470968+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-f93791c7-04f3-5bb4-8aca-d40ee1372217-T1787216569-744000144548220": {
       "title": "SOC Analyst",
       "first_seen": "2026-08-20T15:40:50.802240+00:00"
-    },
-    "https://careers.wix.com/position/oracle-bac1aea2-a597-55ad-aef0-abd4f1ecc9c6-T1787214765-744000144516905": {
-      "title": "Operation Manager (Temp) - Channels",
-      "first_seen": "2026-08-20T13:03:13.892882+00:00"
     },
     "https://careers.wix.com/position/oracle-a0b3ca2d-025f-5974-a49c-fd8991fb0f06-T1787212968-744000144513379": {
       "title": "Dynamics 365 CRM Developer",

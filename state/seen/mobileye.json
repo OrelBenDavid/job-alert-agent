@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T03:56:23.626503+00:00",
-  "last_count": 134,
+  "last_success": "2026-08-23T06:53:45.560073+00:00",
+  "last_count": 135,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -302,6 +302,10 @@
     "fac143e4-0dba-4912-ae9e-d168249a95d8": {
       "title": "Python Data Solutions Specialist-Temporary Position",
       "first_seen": "2026-08-18T13:00:34.221999+00:00"
+    },
+    "76bd5cf5-a8cb-4541-a736-c44ede8ed205": {
+      "title": "QMS Quality Engineer",
+      "first_seen": "2026-08-23T06:53:45.560073+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",

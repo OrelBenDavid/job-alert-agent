@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-23T03:56:23.658523+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-23T06:53:45.584945+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "F5.862": {
-      "title": "Network Engineer",
-      "first_seen": "2026-08-20T06:56:59.886578+00:00"
-    },
     "14.074": {
       "title": "חשב.ת חברה",
       "first_seen": "2026-08-20T06:56:59.886578+00:00"

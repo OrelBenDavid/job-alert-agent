@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T03:56:23.667246+00:00",
-  "last_count": 39,
+  "last_success": "2026-08-23T06:53:45.590721+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "12.E56": {
@@ -90,6 +90,10 @@
     "BE.959": {
       "title": "Sawmills.ai- Full Stack Engineer, Fully Remote Position",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "8E.074": {
+      "title": "Solid- Senior Product Manager",
+      "first_seen": "2026-08-23T06:53:45.590721+00:00"
     },
     "9F.95F": {
       "title": "Team8 - Cybersecurity Business Development Manager",
