@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T18:39:51.178622+00:00",
-  "last_count": 11,
+  "last_success": "2026-08-23T21:28:46.573994+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "R405910": {
@@ -10,10 +10,6 @@
     "R396006": {
       "title": "Clinical Trial Coordinator - Intern",
       "first_seen": "2026-08-19T09:41:25.013469+00:00"
-    },
-    "R404697": {
-      "title": "Algorithm Engineer",
-      "first_seen": "2026-08-18T22:29:25.513373+00:00"
     },
     "R410635": {
       "title": "Associate Director, Medical Affairs, Oncology",
@@ -48,5 +44,5 @@
       "first_seen": "2026-08-23T09:01:21.827833+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 12
 }

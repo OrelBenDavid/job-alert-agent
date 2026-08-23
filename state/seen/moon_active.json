@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T18:39:51.182528+00:00",
+  "last_success": "2026-08-23T21:28:46.577462+00:00",
   "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,6 +10,10 @@
     "9f1eb9b4-17d3-43e3-8d96-ef168ff07c6f": {
       "title": "Full Stack Developer",
       "first_seen": "2026-08-23T12:54:49.975867+00:00"
+    },
+    "20e2b32e-24ff-4c45-b442-f60de4574926": {
+      "title": "Product Manager",
+      "first_seen": "2026-08-23T21:28:46.577462+00:00"
     },
     "fd2cd6bb-1e02-4270-95cb-e40f7f3d5ccc": {
       "title": "Unity Developer",
@@ -57,10 +61,6 @@
     },
     "5bac5848-00ce-446c-a17f-3effaf80f4cd": {
       "title": "FP&A Analyst",
-      "first_seen": "2026-08-23T09:01:22.335333+00:00"
-    },
-    "ad3f690a-ac95-4a7e-af5e-3b373775cc69": {
-      "title": "Product Manager",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
     },
     "d6b8e001-c645-4463-9707-09552fab60fd": {
