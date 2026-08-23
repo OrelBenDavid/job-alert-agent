@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:01:19.789361+00:00",
-  "last_count": 40,
+  "last_success": "2026-08-23T09:35:14.542463+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -99,11 +99,11 @@
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4939624101": {
+    "4888366101": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4888366101": {
+    "4939624101": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
@@ -121,10 +121,6 @@
     },
     "4901284101": {
       "title": "Software Engineer",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4153135101": {
-      "title": "Software Engineer, Data Solutions (Data Platform Group)",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4860424101": {
@@ -164,5 +160,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 114
+  "last_board_total": 113
 }

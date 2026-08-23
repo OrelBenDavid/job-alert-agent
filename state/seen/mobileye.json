@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:01:22.333835+00:00",
-  "last_count": 135,
+  "last_success": "2026-08-23T09:35:14.590635+00:00",
+  "last_count": 136,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -126,6 +126,10 @@
     "ded3b18f-e023-491a-b1d2-b029961ea7eb": {
       "title": "DevOps & Infrastructure Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "d3b29abd-e0db-41e7-b476-048404776e3d": {
+      "title": "Director of Procurement & Operations – MENTEE",
+      "first_seen": "2026-08-23T09:35:14.590635+00:00"
     },
     "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
       "title": "Embedded C++ Software Developer",
@@ -544,5 +548,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 154
 }

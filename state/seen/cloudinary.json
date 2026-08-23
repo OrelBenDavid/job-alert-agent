@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:01:19.793217+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-23T09:35:14.546442+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "57bafe1d-6591-4d0a-b865-7c588ffd808d": {
@@ -13,10 +13,6 @@
     },
     "4c8bc538-8447-4946-b795-542577702bbb": {
       "title": "Senior Collections & AR Specialist",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
-    "ba5ac00c-c76b-4897-812d-1685807a22db": {
-      "title": "Staff Backend Engineer -  Media Management",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "c33b8f99-0f33-4855-9018-8633ffaff056": {
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 25
 }
