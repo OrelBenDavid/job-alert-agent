@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T12:54:50.013232+00:00",
+  "last_success": "2026-08-23T15:30:12.127671+00:00",
   "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
@@ -36,7 +36,7 @@
       "first_seen": "2026-08-13T11:24:41.061693+00:00"
     },
     "9E.667": {
-      "title": "Operations and QA Manager",
+      "title": "Operations Manager",
       "first_seen": "2026-08-18T06:56:30.945220+00:00"
     },
     "D1.C67": {

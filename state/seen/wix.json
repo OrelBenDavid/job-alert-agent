@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T12:54:49.915129+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-23T15:30:12.004735+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/REF3106P-744000145034373": {
+      "title": "Creative Product Marketing Manager - Base44",
+      "first_seen": "2026-08-23T15:30:12.004735+00:00"
+    },
     "https://careers.wix.com/position/oracle-29b87552-50da-5cdd-a4eb-8150e5de769c-T1787469672-744000145029619": {
       "title": "DevSecOps Tech Lead",
       "first_seen": "2026-08-23T09:01:19.726866+00:00"

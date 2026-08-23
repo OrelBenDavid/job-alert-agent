@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T12:54:50.017972+00:00",
+  "last_success": "2026-08-23T15:30:12.134579+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,9 +23,9 @@
       "title": "Product Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
-    "4951499101": {
+    "4958607101": {
       "title": "Senior Product Marketing Manager",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
+      "first_seen": "2026-08-23T15:30:12.134579+00:00"
     },
     "4954616101": {
       "title": "Senior Software Engineer",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T12:54:49.993458+00:00",
-  "last_count": 150,
+  "last_success": "2026-08-23T15:30:12.102180+00:00",
+  "last_count": 148,
   "consecutive_failures": 0,
   "jobs": {
     "JR-020030": {
@@ -399,10 +399,6 @@
       "title": "Senior Staff Product Owner (Secure Cloud Access)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018260": {
-      "title": "Data Science Manager (AI Solutions-Machines)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-017437": {
       "title": "Senior Principal Data Scientist - LLM Agents (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -421,10 +417,6 @@
     },
     "JR-019813": {
       "title": "Senior Angular Frontend Engineer (Cortex Platform - AgentiX)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-019634": {
-      "title": "JR-018604 Principal/ Senior Backend Engineer (KSPM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-019631": {
@@ -604,5 +596,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 152
+  "last_board_total": 150
 }

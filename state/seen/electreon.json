@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T12:54:49.947420+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-23T15:30:12.051245+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
+    "4795469101": {
+      "title": "Control Room Operator",
+      "first_seen": "2026-08-23T15:30:12.051245+00:00"
+    },
     "4741941101": {
       "title": "Mechanical Design Engineer Leader",
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
@@ -16,5 +20,5 @@
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 6
 }

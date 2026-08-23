@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T12:54:50.020023+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-23T15:30:12.137718+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "10.F64": {
@@ -39,10 +39,6 @@
       "title": "R&D Mechanical Design Engineer",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
-    "A6.D63": {
-      "title": "Senior Manager, Division Controller",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
-    },
     "DD.F65": {
       "title": "Senior Quality Assurance Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 70
+  "last_board_total": 69
 }

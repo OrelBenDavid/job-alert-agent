@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T12:54:49.921811+00:00",
-  "last_count": 26,
+  "last_success": "2026-08-23T15:30:12.010654+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -63,10 +63,6 @@
       "title": "Principal Software Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
-    "4923591101": {
-      "title": "Product manager - Neurology AI",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
     "4920296101": {
       "title": "SecOps Detection & Response",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -108,5 +104,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }
