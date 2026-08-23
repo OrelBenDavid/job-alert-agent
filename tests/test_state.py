@@ -63,7 +63,10 @@ def test_zero_is_plausible_allows_real_zero():
 
 
 def test_consecutive_failures_trigger_alert_threshold():
-    state_mod.seed_company("acme", [_job(1)])
+    # Seeded above ZERO_COLLAPSE_MIN_BASELINE, because a board of one or two
+    # postings emptying out is no longer treated as a failure at all - see
+    # test_zero_accept.py for that rule and why it exists.
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     profile = _profile()
     assert state_mod.should_alert_failure("acme") is False
     state_mod.process_company("acme", [], profile)   # failure 1

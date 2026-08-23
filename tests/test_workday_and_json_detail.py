@@ -384,3 +384,154 @@ def test_a_negative_segment_indexes_from_the_end():
 
 def test_an_out_of_range_negative_index_is_None_not_an_exception():
     assert api._get_by_path({"a": ["x"]}, "a.-5") is None
+
+
+# ---------------------------------------------------------------------------
+# israel_facet_auto - the tenants with no country facet, added 2026-08-23
+# ---------------------------------------------------------------------------
+#
+# Three of the eleven Workday boards (palo_alto_networks 1435 postings,
+# johnson_johnson 1731, merck 888) expose no `locationCountry` facet at all,
+# so they ran unfiltered and the 25-page walk saw their first 500 postings and
+# stopped. Palo Alto Networks has 151 Israel-relevant postings; the bot could
+# see about 25 of them, on every run, from the day it was imported. Nothing
+# could notice: a truncation that is there from the first run never collapses
+# anything for the health gate to compare against.
+#
+# What those tenants DO expose is `locations`, nested one level under
+# `locationMainGroup`, whose values are individual offices. Resolved live
+# rather than baked in - see fetchers.api._workday_israel_facets for why the
+# two facet mechanisms differ on purpose.
+
+_FACETS = {
+    "total": 1731,
+    "jobPostings": [],
+    "facets": [
+        {"facetParameter": "timeType",
+         "values": [{"descriptor": "Full time", "id": "ft", "count": 900}]},
+        {"facetParameter": "locationMainGroup",
+         "values": [{"facetParameter": "locations",
+                     "descriptor": "Locations",
+                     "values": [
+                         {"descriptor": "Aachen, North Rhine-Westphalia, "
+                                        "Germany", "id": "de1", "count": 10},
+                         {"descriptor": "Yokneam, Haifa District, Israel",
+                          "id": "il1", "count": 7},
+                         {"descriptor": "Office - Israel - Tel Aviv",
+                          "id": "il2", "count": 93},
+                         {"descriptor": "Alajuela, Costa Rica",
+                          "id": "cr1", "count": 4},
+                     ]}]},
+    ],
+}
+
+
+def _auto_profile():
+    return _profile(israel_facet=None, israel_facet_auto=True)
+
+
+def _record_posts(monkeypatch, responses):
+    """Serves `responses` in order and records every request body."""
+    bodies = []
+
+    def fake_post(url, json=None, timeout=None):
+        bodies.append(json)
+        return _Response(responses[min(len(bodies) - 1, len(responses) - 1)])
+
+    monkeypatch.setattr(api.requests, "post", fake_post)
+    return bodies
+
+
+def test_the_israel_facet_is_resolved_from_the_live_facet_list(monkeypatch):
+    bodies = _record_posts(monkeypatch, [_FACETS, _LISTING])
+    api.fetch_workday(_auto_profile())
+
+    # First request is the facet probe: no filter, one posting.
+    assert bodies[0]["appliedFacets"] == {} and bodies[0]["limit"] == 1
+    # Every subsequent one carries the resolved offices, keyed by the facet
+    # parameter they were found under - which is `locations`, not
+    # `locationCountry`, on these tenants.
+    assert bodies[1]["appliedFacets"] == {"locations": ["il1", "il2"]}
+
+
+def test_a_nested_facet_value_that_is_not_israel_is_not_applied(monkeypatch):
+    """The filter is is_israel_location, not a substring test, so Germany and
+    Costa Rica have to stay out of it however the descriptor is formatted."""
+    bodies = _record_posts(monkeypatch, [_FACETS, _LISTING])
+    api.fetch_workday(_auto_profile())
+
+    applied = bodies[1]["appliedFacets"]["locations"]
+    assert "de1" not in applied and "cr1" not in applied
+
+
+def test_unreadable_facets_fall_back_to_the_unfiltered_walk(monkeypatch):
+    """The safety property. A tenant that changes its facet shape must degrade
+    to the old behaviour - never to an empty result, which would read as a
+    company with no open jobs and would be believed."""
+    calls = []
+
+    def fake_post(url, json=None, timeout=None):
+        calls.append(json)
+        if len(calls) == 1:
+            raise RuntimeError("502 from Workday")
+        return _Response(_LISTING)
+
+    monkeypatch.setattr(api.requests, "post", fake_post)
+    jobs = api.fetch_workday(_auto_profile())
+
+    assert calls[1]["appliedFacets"] == {}          # unfiltered, as before
+    assert [j.title for j in jobs] == ["DevOps Engineer III",
+                                       "Sr. Software Engineer - Browser Security"]
+
+
+def test_a_board_with_no_israeli_office_falls_back_rather_than_returning_none(
+        monkeypatch):
+    facets = {"total": 40, "jobPostings": [], "facets": [
+        {"facetParameter": "locations",
+         "values": [{"descriptor": "Alajuela, Costa Rica", "id": "cr1"}]}]}
+    bodies = _record_posts(monkeypatch, [facets, _LISTING])
+
+    jobs = api.fetch_workday(_auto_profile())
+
+    assert bodies[1]["appliedFacets"] == {}
+    assert len(jobs) == 2
+
+
+def test_a_baked_country_facet_still_wins_and_costs_no_probe(monkeypatch):
+    """israel_facet_auto is for the tenants that have no country facet. A
+    company that carries one must not pay an extra request for it."""
+    bodies = _record_posts(monkeypatch, [_LISTING])
+    api.fetch_workday(_profile(israel_facet_auto=True))
+
+    assert bodies[0]["appliedFacets"] == {
+        "locationCountry": ["084562884af243748dad7c84c304d89a"]}
+    assert bodies[0]["limit"] == 20          # no limit=1 probe happened
+
+
+def test_a_filtered_board_is_no_longer_capped_at_five_pages(monkeypatch):
+    """Palo Alto Networks has 151 Israel-relevant postings. At the old
+    facet-path cap of 5 pages of 20, auto-resolving the filter would have
+    swapped one silent truncation for a tighter one."""
+    page = {"total": 151,
+            "jobPostings": [{"title": f"Engineer {i}",
+                             "externalPath": f"/job/tlv/e{i}",
+                             "locationsText": "Israel - Tel Aviv",
+                             "bulletFields": [f"R{i}"]} for i in range(20)]}
+    calls = []
+
+    def fake_post(url, json=None, timeout=None):
+        calls.append(json)
+        if len(calls) == 1:
+            return _Response(_FACETS)
+        start = (len(calls) - 2) * 20
+        if start >= 151:
+            return _Response({"total": 151, "jobPostings": []})
+        return _Response({"total": 151,
+                          "jobPostings": [dict(p, bulletFields=[f"R{start + i}"])
+                                          for i, p in enumerate(page["jobPostings"])
+                                          if start + i < 151]})
+
+    monkeypatch.setattr(api.requests, "post", fake_post)
+    jobs = api.fetch_workday(_auto_profile())
+
+    assert len(jobs) == 151

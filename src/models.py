@@ -53,3 +53,47 @@ class Job:
         change on the company's side (a space becoming a hyphen, "(Hybrid)"
         appended to a title) would look like a brand-new job."""
         return f"{self.title} — {self.location}"
+
+
+class JobList(list):
+    """A fetcher's result, carrying how big the WHOLE board was.
+
+    *** The denominator, and why the project needed one - added 2026-08-23 ***
+
+    Every count in this project has been post-filter: `last_count` is the
+    number of ISRAEL-RELEVANT postings, and nothing has ever recorded how many
+    postings the board held before relevance was decided. Without that number,
+    two completely different situations are the same observation:
+
+        a real zero          the board returns 41 postings, none in Israel
+        the wrong board      the board returns 2 postings, because the
+                             endpoint points somewhere that isn't the
+                             company's careers board at all
+
+    Both read as `last_count: 0`, both are stable, and both look healthy. The
+    corpus audit on 2026-08-23 found the second case four times, one of them
+    (`wiz`, board_token 'wizprivate' with two postings on it, against
+    'wizinc' with 124) sitting in the repo verified and green for eleven days,
+    with a test asserting the mis-resolution was a fact about the company.
+    Nothing in the system could have caught it, because nothing counted the
+    board.
+
+    A list subclass rather than a new return type, deliberately: every caller
+    of every fetcher treats the result as a list and keeps doing so, `==`
+    against a plain list still holds, and a fetcher that does not report the
+    number returns an ordinary list whose board_total reads as None. "Not
+    reported" and "reported as zero" therefore stay distinguishable, which
+    matters because the whole value here is in telling zeros apart.
+    """
+
+    def __init__(self, jobs=(), board_total: "int | None" = None) -> None:
+        super().__init__(jobs)
+        self.board_total = board_total
+
+
+def board_total_of(jobs) -> "int | None":
+    """How many postings the board held, or None if the fetcher didn't say.
+
+    A function rather than `getattr` at each call site so that "a plain list
+    means unknown" is stated once."""
+    return getattr(jobs, "board_total", None)

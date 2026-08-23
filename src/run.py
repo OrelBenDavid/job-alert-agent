@@ -34,7 +34,8 @@ from state import (process_company, seed_company, should_alert_failure,
                    load_state, record_failure, restore_state, StateUnreadable,
                    flood_decision, record_flood_suppressed,
                    clear_flood_counter, FLOOD_ACCEPT_AFTER)
-from notifier import notify_new_jobs, notify_maintenance
+from notifier import (notify_new_jobs, notify_maintenance,
+                      notify_maintenance_digest)
 from commands import process_commands
 from detail import DetailBudget
 from filters import build_chain, run_chain, recently_seen_titles
@@ -214,7 +215,8 @@ def _count_failure(slug: str) -> bool:
 
 
 def _rewind_after_failed_send(profile, previous_states: dict, job_count: int,
-                              send_failures: list) -> None:
+                              send_failures: list,
+                              maintenance: list | None = None) -> None:
     """Undoes one company's state write after its alert could not be sent.
 
     *** Why this replaced "make the whole run fatal" ***
@@ -250,19 +252,26 @@ def _rewind_after_failed_send(profile, previous_states: dict, job_count: int,
         send_failures.append(profile.slug)
         rewound = False
 
-    try:
-        # Best effort, and a much simpler message than the one that just
-        # failed - so the user hears "something broke" instead of just going
-        # quiet.
-        notify_maintenance(
-            profile.slug,
-            f"Failed to send the new-jobs alert ({job_count} jobs). They were "
+    # A much simpler message than the one that just failed - so the user hears
+    # "something broke" instead of just going quiet. Queued into the run's
+    # digest when there is one (the caller passes it), because a Telegram
+    # problem tends to hit every company at once and forty separate "send
+    # failed" messages are the last thing a struggling send path should
+    # attempt. `maintenance=None` keeps the immediate send for any caller that
+    # has no digest to queue into.
+    note = (f"Failed to send the new-jobs alert ({job_count} jobs). They were "
             "NOT lost - this company's state was rewound, so they will be "
             "re-detected and re-sent next run."
             if rewound else
             f"Failed to send the new-jobs alert ({job_count} jobs). They were "
             "NOT lost - state is not committed on a failed run, so they will "
             "be re-detected and re-sent next run.")
+    if maintenance is not None:
+        maintenance.append((profile.slug, note))
+        return
+
+    try:
+        notify_maintenance(profile.slug, note)
     except Exception as inner:
         print(f"[send error] {profile.slug}: maintenance alert also failed: "
               f"{inner}", file=sys.stderr)
@@ -292,9 +301,17 @@ def _rewind_suppressed_flood(pending: list, previous_states: dict) -> int:
 
 
 def _deliver(pending: list, previous_states: dict,
-             send_failures: list, corpus_postings: int | None = None) -> None:
+             send_failures: list, corpus_postings: int | None = None,
+             maintenance: list | None = None) -> None:
     """Sends every company's alert, unless the run's total volume is
     implausible - see state.flood_decision.
+
+    `maintenance` is the run's digest list. A per-company note raised while
+    delivering (a failed send) is queued into it rather than sent on its own;
+    the run-level flood messages below are NOT, because there is at most one
+    of them per run and it is the explanation for a batch that did not
+    arrive - it has to be sent at the moment the batch is withheld, not
+    afterwards among the company notes.
 
     `corpus_postings` is how many postings this run saw in total, across every
     company and not only the ones with something new. It is what scales the
@@ -348,7 +365,7 @@ def _deliver(pending: list, previous_states: dict,
         except Exception as e:
             print(f"[send error] {profile.slug}: {e}", file=sys.stderr)
             _rewind_after_failed_send(profile, previous_states, len(jobs),
-                                      send_failures)
+                                      send_failures, maintenance)
 
     clear_flood_counter()
 
@@ -384,6 +401,10 @@ def _run_normal() -> None:
     # (profile, jobs, tags) per company with something to send. Held until
     # every company is processed - see _deliver.
     pending = []
+    # (slug, message) per company-level maintenance event, held for the same
+    # reason `pending` is: they are sent as ONE digest after the loop rather
+    # than one message per company. See notifier.format_maintenance_digest.
+    maintenance = []
 
     # The seed-gap check is done BEFORE fetching, not inside the loop below,
     # so an unseeded company costs no request at all. It is a local file read,
@@ -438,7 +459,8 @@ def _run_normal() -> None:
             # that raises is the same operational event as a suspicious zero,
             # and has to reach the same threshold.
             if _count_failure(profile.slug):
-                notify_maintenance(profile.slug, f"Fetch error: {outcome.error}")
+                maintenance.append((profile.slug,
+                                    f"Fetch error: {outcome.error}"))
             continue
 
         # One company must never be able to end the run. Everything below has
@@ -458,22 +480,18 @@ def _run_normal() -> None:
             # process_company already bumped the counter on its way out, so
             # this only reads it.
             if _crossed_threshold(profile.slug):
-                notify_maintenance(profile.slug, result.message)
+                maintenance.append((profile.slug, result.message))
             continue
 
         if result.message:
             # A healthy run that still has something to say - today only an
-            # accepted collapse. Sent unconditionally rather than behind the
-            # repeated-failure threshold: it is a one-off statement of fact,
-            # not a symptom that might clear on its own, and it is the last
-            # thing the user hears about a drop before the bot resumes
+            # accepted collapse. Recorded unconditionally rather than behind
+            # the repeated-failure threshold: it is a one-off statement of
+            # fact, not a symptom that might clear on its own, and it is the
+            # last thing the user hears about a drop before the bot resumes
             # treating the lower count as normal.
             print(f"[health gate] {result.message}", file=sys.stderr)
-            try:
-                notify_maintenance(profile.slug, result.message)
-            except Exception as e:
-                print(f"[send error] {profile.slug}: collapse note failed: "
-                      f"{e}", file=sys.stderr)
+            maintenance.append((profile.slug, result.message))
 
         if result.new_jobs:
             # process_company has ALREADY written every new id to state by
@@ -520,7 +538,24 @@ def _run_normal() -> None:
     corpus_postings = sum(len(o.jobs) for o in outcomes.values()
                           if o is not None and o.ok and o.jobs)
 
-    _deliver(pending, previous_states, send_failures, corpus_postings)
+    _deliver(pending, previous_states, send_failures, corpus_postings,
+             maintenance)
+
+    # AFTER the jobs, deliberately. The job alerts are what the user is here
+    # for; the maintenance digest is a footnote about the machinery, and a
+    # footnote that arrives first pushes the alerts down the screen.
+    #
+    # Wrapped, because by construction this is the message that reports other
+    # things having gone wrong - it must not be able to end the run and take
+    # the state commit with it.
+    if maintenance:
+        try:
+            notify_maintenance_digest(maintenance)
+        except Exception as e:
+            print(f"[send error] maintenance digest failed: {e} "
+                  f"({len(maintenance)} events: "
+                  f"{', '.join(slug for slug, _ in maintenance)})",
+                  file=sys.stderr)
 
     if had_seed_gap:
         names = ", ".join(had_seed_gap)

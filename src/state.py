@@ -22,11 +22,14 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
 
-from models import Job
+from models import Job, board_total_of
 
 STATE_DIR = Path(__file__).resolve().parent.parent / "state" / "seen"
 FAILURE_ALERT_THRESHOLD = 2   # only alert after 2 consecutive failures, not
-                               # 1 - so a one-off network hiccup doesn't flood
+                               # 1 - so a one-off network hiccup doesn't flood.
+                               # What happens on the runs AFTER the second is
+                               # failure_alert_due's business, not this
+                               # number's.
 
 @dataclass
 class RunResult:
@@ -62,6 +65,10 @@ def _state_path(slug: str, state_dir: Path | None = None) -> Path:
 
 
 def _empty_state() -> dict:
+    # last_board_total is deliberately absent rather than 0: "never reported"
+    # and "reported as zero" are the two things it exists to tell apart, and a
+    # default of 0 would make every pre-2026-08-23 state file claim an empty
+    # board. Readers use state.get("last_board_total").
     return {"last_success": None, "last_count": 0,
             "consecutive_failures": 0, "jobs": {}}
 
@@ -147,11 +154,13 @@ PARTIAL_COLLAPSE_ACCEPT_AFTER = 3
 #
 # It used to have none, on the reasoning that freezing state on a zero is free
 # because there are no jobs to miss. That is true about JOBS and false about
-# the alert: should_alert_failure fires on every run once the counter is past
-# FAILURE_ALERT_THRESHOLD, so a company that has genuinely closed its last
-# Israeli role sends the identical maintenance alert every three hours,
-# forever, with no path back to healthy that does not involve a human editing
-# a JSON file.
+# the alert: should_alert_failure fired on every run once the counter was past
+# FAILURE_ALERT_THRESHOLD, so a company that had genuinely closed its last
+# Israeli role sent the identical maintenance alert every three hours,
+# forever, with no path back to healthy that did not involve a human editing
+# a JSON file. (The repeat itself is now bounded too - see failure_alert_due -
+# but this hatch is what lets the company go back to healthy, which a quieter
+# repeat would not.)
 #
 # Observed: panaya's single Israel-relevant posting was filled, and the bot
 # sent the same "got 0 jobs after the previous run returned 1" alert on six
@@ -176,6 +185,38 @@ PARTIAL_COLLAPSE_ACCEPT_AFTER = 3
 # silence.
 TOTAL_ZERO_ACCEPT_AFTER = 6
 
+# *** ...and the zero branch needs a BASELINE, for the same reason the ratio
+# branch has one - measured 2026-08-23 ***
+#
+# The ratio check refuses to judge a board below _COLLAPSE_MIN_BASELINE,
+# because on a board with 4 open roles one closing is 25% and means nothing.
+# The zero check had no equivalent, so it fired on `1 -> 0`: the smallest,
+# most ordinary event a job board can produce, one role being filled.
+#
+# What that cost, measured over the five days to 2026-08-23: every single
+# maintenance alert the bot sent - roughly 26 of them, against 5-10 job alerts
+# a working day - came from four companies going 1 -> 0. panaya, pontera,
+# speak and johnson_johnson. Not one was broken. Each had exactly one
+# Israel-relevant posting, it was filled, and the gate read the arithmetic as
+# a dead selector.
+#
+# 3 rather than the ratio branch's 10, because the two questions are not the
+# same size. "Did this board lose 60% of its roles" needs a real denominator;
+# "did this board empty out completely" is already a strong signal on its own,
+# and it stays one from three postings up. The corpus this was measured on has
+# a median of 5 Israel-relevant postings per company and 166 of 368 companies
+# sitting at 1-4, so a threshold of 3 exempts precisely the boards where the
+# event is meaningless and keeps the check everywhere it is not.
+#
+# What this gives up, stated plainly: a fetch that genuinely breaks at a
+# company holding 1 or 2 postings now updates state quietly instead of
+# alerting. That failure is not invisible - it is exactly what
+# health_report.py's structurally-silent list is for, and unlike the alert
+# that list is read on purpose rather than while the user is trying to read
+# job alerts. Trading a per-run alert nobody can act on for a weekly line in a
+# report is the right direction at 368 companies.
+ZERO_COLLAPSE_MIN_BASELINE = 3
+
 
 def _collapse_suspicion(slug: str, count: int, state: dict,
                         profile) -> tuple[str, int]:
@@ -189,8 +230,10 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
     Three thresholds, because a listing can break in more than one shape and
     only the first used to be caught:
 
-    1. A TOTAL zero after any healthy count. The original gate, and what a
-       dead job_selector looks like.
+    1. A TOTAL zero after a healthy count of at least
+       ZERO_COLLAPSE_MIN_BASELINE. The original gate, and what a dead
+       job_selector looks like. The baseline is what stops it also firing on
+       one role being filled at a one-role company - see the constant.
 
     2. A PARTIAL collapse below `health.expected_min_jobs`, from a run that
        was itself above that floor. Good at SLOW decay - a company drifting
@@ -216,13 +259,22 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
         return "", 0
 
     previous = state.get("last_count", 0)
-    if count == 0 and previous > 0:
+    if count == 0 and previous >= ZERO_COLLAPSE_MIN_BASELINE:
         return (f"{slug}: got 0 jobs after the previous run returned "
                 f"{previous}. State was NOT updated - this is likely a broken "
                 "selector, not 'no open jobs'.", TOTAL_ZERO_ACCEPT_AFTER)
 
+    # *** Both partial branches below are for a partial drop only - hence
+    # `count`. ***
+    #
+    # This guard was a no-op until the zero branch above grew a baseline: every
+    # count of 0 was caught up there first, so nothing else could ever see one.
+    # Now that a small board's 1 -> 0 falls through, it must not be picked up
+    # here instead. A company with expected_min_jobs=1 dropping to 0 satisfies
+    # `0 < 1 <= 1` exactly, so without this the fix would re-route the same
+    # alert through a different branch rather than stopping it.
     floor = profile.expected_min_jobs
-    if floor > 0 and count < floor <= previous:
+    if count and floor > 0 and count < floor <= previous:
         return (f"{slug}: got {count} jobs, below the profile's "
                 f"expected_min_jobs floor of {floor}, after the previous run "
                 f"returned {previous}. State was NOT updated - a partial drop "
@@ -230,7 +282,8 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
                 "company genuinely shrank, lower expected_min_jobs.",
                 PARTIAL_COLLAPSE_ACCEPT_AFTER)
 
-    if previous >= _COLLAPSE_MIN_BASELINE and count < previous * _COLLAPSE_RATIO:
+    if (count and previous >= _COLLAPSE_MIN_BASELINE
+            and count < previous * _COLLAPSE_RATIO):
         return (f"{slug}: got {count} jobs after the previous run returned "
                 f"{previous} - a drop of more than "
                 f"{(1 - _COLLAPSE_RATIO) * 100:g}% in one cron interval. State "
@@ -239,6 +292,33 @@ def _collapse_suspicion(slug: str, count: int, state: dict,
                 PARTIAL_COLLAPSE_ACCEPT_AFTER)
 
     return "", 0
+
+
+def _board_context(fetched) -> str:
+    """The one sentence that turns a collapse alert into something actionable.
+
+    Every count in a maintenance message is post-filter, so "got 0 jobs" is
+    the same words whether the board emptied out or the fetch broke. The raw
+    board size separates them at a glance:
+
+        "the board itself still returns 41 postings"   -> the fetch works,
+                                                          the Israeli roles
+                                                          are gone
+        "the board itself returned 0 postings"        -> the endpoint is the
+                                                          suspect
+
+    Empty when the fetcher did not report a board size (html and playwright
+    profiles), because a message that says nothing is better than one that
+    implies zero. See models.JobList."""
+    total = board_total_of(fetched)
+    if total is None:
+        return ""
+    if total == 0:
+        return (" The board itself returned 0 postings of any kind, so the "
+                "endpoint is the thing to check, not the company's hiring.")
+    return (f" The board itself still returns {total} postings, none of them "
+            "Israel-relevant - so the fetch is reaching the right place and "
+            "this is about which roles are open, not about a broken selector.")
 
 
 def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
@@ -259,6 +339,8 @@ def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     # likely a broken selector. State is left untouched, no "new jobs" are
     # sent, but the failure is still reported.
     suspicion, accept_after = _collapse_suspicion(slug, count, state, profile)
+    if suspicion and count == 0:
+        suspicion += _board_context(fetched)
     accepted = ""
     if suspicion:
         failures = state.get("consecutive_failures", 0) + 1
@@ -299,6 +381,16 @@ def process_company(slug: str, fetched: list[Job], profile) -> RunResult:
     state["last_success"] = now
     state["last_count"] = count
     state["consecutive_failures"] = 0
+
+    # The denominator `last_count` never had - see models.JobList. Written only
+    # on the healthy path, so it always describes the same run as the count
+    # beside it, and only when the fetcher actually reported one: a profile
+    # whose fetcher does not (html, playwright) leaves whatever was there
+    # rather than gaining a misleading 0.
+    board_total = board_total_of(fetched)
+    if board_total is not None:
+        state["last_board_total"] = board_total
+
     _write_state(slug, state)
 
     # `message` on an "ok" result means "this run was healthy, but something
@@ -358,11 +450,49 @@ def record_failure(slug: str) -> int:
     return state["consecutive_failures"]
 
 
+def failure_alert_due(failures: int) -> bool:
+    """Whether THIS run's failure count is one worth a message.
+
+    *** Why "crossed the threshold" was not enough - measured 2026-08-23 ***
+
+    This used to be a plain `>=`, which meant that once a company was two runs
+    into trouble it sent the identical alert on every run after that: every
+    three hours, indefinitely, until something changed. The health gate's two
+    ACCEPT_AFTER hatches bound that for a collapse (the company eventually
+    accepts the new count and goes quiet), but nothing bounds it for a fetch
+    error - a dead endpoint alerts eight times a day forever.
+
+    Measured against the live corpus, the repeat was the multiplier on all of
+    it: four companies going 1 -> 0 produced roughly 26 maintenance messages in
+    five days, where the events themselves were four. The baseline in
+    ZERO_COLLAPSE_MIN_BASELINE removes the events; this removes the repeats,
+    and the two are independent - a real breakage still repeats, just not eight
+    times a day.
+
+    The rule: alert when it breaks, then only when the failure count DOUBLES.
+    So at a three-hour cron a company that stays broken is reported at 6h, 12h,
+    24h, 2d and 4d - five messages in the first week, then 8d, 16d, and a
+    couple a month after that, instead of 55 in the first week. Each silence is twice as long as
+    the last, which is the property worth having: the alert stays alive for a
+    breakage nobody has fixed, without ever being the reason the user stops
+    reading the channel.
+
+    A power of two is the whole test, because FAILURE_ALERT_THRESHOLD is
+    itself 2 - the crossing IS the first doubling. If the threshold is ever
+    changed to a non-power-of-two, the first clause keeps the crossing itself
+    loud."""
+    if failures < FAILURE_ALERT_THRESHOLD:
+        return False
+    if failures == FAILURE_ALERT_THRESHOLD:
+        return True                      # it just broke - always say so
+    return failures & (failures - 1) == 0
+
+
 def should_alert_failure(slug: str) -> bool:
-    """Whether consecutive failures have crossed the threshold for a
-    maintenance alert on Telegram."""
+    """Whether this company's current failure count is due a maintenance
+    alert on Telegram. Reads the counter; failure_alert_due decides."""
     state = load_state(slug)
-    return state.get("consecutive_failures", 0) >= FAILURE_ALERT_THRESHOLD
+    return failure_alert_due(state.get("consecutive_failures", 0))
 
 
 # ---------------------------------------------------------------------------

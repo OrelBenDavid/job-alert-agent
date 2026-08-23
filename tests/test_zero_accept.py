@@ -52,17 +52,17 @@ def _run_zero(times, profile):
 def test_a_zero_is_still_held_at_first():
     """Nothing about the escape hatch weakens the gate itself - the whole
     point of holding is that a dead selector looks exactly like this."""
-    state_mod.seed_company("acme", [_job(1), _job(2)])
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     results = _run_zero(state_mod.TOTAL_ZERO_ACCEPT_AFTER - 1, _profile())
 
     assert all(r.status == "empty_suspicious" for r in results)
     saved = state_mod.load_state("acme")
-    assert len(saved["jobs"]) == 2          # state untouched throughout
-    assert saved["last_count"] == 2
+    assert len(saved["jobs"]) == 3          # state untouched throughout
+    assert saved["last_count"] == 3
 
 
 def test_a_zero_is_accepted_once_it_has_been_reported_enough_times():
-    state_mod.seed_company("acme", [_job(1), _job(2)])
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     results = _run_zero(state_mod.TOTAL_ZERO_ACCEPT_AFTER, _profile())
 
     final = results[-1]
@@ -80,7 +80,7 @@ def test_a_zero_is_accepted_once_it_has_been_reported_enough_times():
 def test_after_accepting_a_zero_the_company_goes_quiet():
     """The point of the whole change: no further maintenance alerts, and no
     stuck failure counter, once the zero is the new normal."""
-    state_mod.seed_company("acme", [_job(1)])
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     _run_zero(state_mod.TOTAL_ZERO_ACCEPT_AFTER, _profile())
 
     later = state_mod.process_company("acme", [], _profile())
@@ -92,7 +92,7 @@ def test_after_accepting_a_zero_the_company_goes_quiet():
 def test_a_reopened_role_is_detected_as_new_after_the_zero_was_accepted():
     """Accepting must not blind the company. Its `jobs` map is emptied, so the
     next posting it publishes is genuinely new and alerts normally."""
-    state_mod.seed_company("acme", [_job(1)])
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     _run_zero(state_mod.TOTAL_ZERO_ACCEPT_AFTER, _profile())
 
     result = state_mod.process_company("acme", [_job(7)], _profile())
@@ -105,7 +105,7 @@ def test_the_old_jobs_re_alert_if_the_zero_was_really_a_breakage():
     broken has its postings un-seen, so they come back as new once it is
     fixed. That errs toward re-sending rather than toward silence, which is
     the same trade the partial-collapse path already makes."""
-    state_mod.seed_company("acme", [_job(1), _job(2)])
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     _run_zero(state_mod.TOTAL_ZERO_ACCEPT_AFTER, _profile())
 
     recovered = state_mod.process_company("acme", [_job(1), _job(2)], _profile())
@@ -132,7 +132,9 @@ def test_a_partial_collapse_still_accepts_on_its_own_shorter_threshold():
 
 
 def test_zero_is_plausible_still_short_circuits_the_whole_gate():
-    state_mod.seed_company("acme", [_job(1)])
+    # Above the zero baseline, so the flag is genuinely what decides this and
+    # not the board being too small to judge.
+    state_mod.seed_company("acme", [_job(1), _job(2), _job(3)])
     result = state_mod.process_company("acme", [], _profile(zero_is_plausible=True))
     assert result.status == "ok"
     assert result.message == ""

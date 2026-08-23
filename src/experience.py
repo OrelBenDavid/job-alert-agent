@@ -254,25 +254,66 @@ _MANDATORY_PATTERNS = [
     r"\brequired\b", r"\brequirements?\b", r"\bmust have\b", r"\bmust\b",
 ]
 
+# An OPTIONAL-looking heading, checked before the requirement headings below.
+#
+# Added 2026-08-23. `_OPTIONAL_PATTERNS` reads the bullet's own text, so a
+# section headed "Preferred Experience" or "Nice to have" whose bullets do not
+# each repeat the word was being promoted to mandatory - by
+# `_REQUIREMENTS_HEADING_PATTERNS`, which matches "experience" - and its years
+# counted as a hard requirement. Measured on the live corpus, that is how a
+# "3+ years in RevOps" line sitting under "Preferred Experience" came to
+# disqualify a posting.
+#
+# This can only ever ADD postings, which is why it goes in first and why it is
+# safe to be generous with it.
+_OPTIONAL_HEADING_PATTERNS = [
+    r"preferred", r"nice[ -]to[ -]have", r"bonus", r"advantage", r"a plus",
+    r"desired", r"יתרון", r"אופציונלי",
+]
+
 # Weak, best-effort heading heuristic - deliberately last in the chain and
 # never the primary mechanism (finding 1). "All you need is:" is matched by
 # the "you need" alternative; a header the recruiter invented from scratch
 # will simply leave the block "unknown", which fails open.
+#
+# The second group was added 2026-08-23 from a measurement rather than from
+# imagination: every heading in it was taken from the live corpus, off a block
+# that stated a years-of-experience number and was left `unknown` because the
+# heading was not recognised. The counts are how many such blocks each one
+# accounted for.
 _REQUIREMENTS_HEADING_PATTERNS = [
     r"requirements?", r"qualifications?", r"you need", r"you'?ll need",
     r"what you bring", r"you bring", r"who you are", r"must have",
     r"skills", r"experience",
     r"דרישות", r"מה נדרש", r"דרישות התפקיד", r"הדרישות",
+
+    r"what you'?ll bring",        # 10  "What You'll Bring", "…Bring:"
+    r"what we'?re looking for",   #  8  and the lowercase spelling
+    r"we expect you to have",     #  6
+    r"what you have",             #  3  "What you have:"
+    r"what you'?re about",        #  3  "What You're About"
+    r"about you\b",               #  5  NOT "About Zafran:" - the \b is why
+    r"your profile",              #  2
+    r"\bmust\b",                  #  2  a bare "Must:" heading
+    r"looking for someone who",   #  1
 ]
 
 _OPTIONAL_RE = re.compile("|".join(_OPTIONAL_PATTERNS), re.IGNORECASE)
 _MANDATORY_RE = re.compile("|".join(_MANDATORY_PATTERNS), re.IGNORECASE)
 _REQ_HEADING_RE = re.compile("|".join(_REQUIREMENTS_HEADING_PATTERNS), re.IGNORECASE)
+_OPTIONAL_HEADING_RE = re.compile("|".join(_OPTIONAL_HEADING_PATTERNS),
+                                  re.IGNORECASE)
 
 
 def classify_block(block: Block) -> BlockKind:
-    """mandatory / optional / unknown for a single block."""
+    """mandatory / optional / unknown for a single block.
+
+    Order is the whole design. The two optional checks come first because a
+    wrong "optional" costs a posting the user scrolls past, and a wrong
+    "mandatory" costs a posting they never see."""
     if _OPTIONAL_RE.search(block.text):
+        return "optional"
+    if block.heading and _OPTIONAL_HEADING_RE.search(block.heading):
         return "optional"
     if _MANDATORY_RE.search(block.text):
         return "mandatory"
@@ -388,6 +429,35 @@ _SENIORITY_SIGNAL_RE = re.compile("|".join(_SENIORITY_SIGNAL_PATTERNS),
                                   re.IGNORECASE)
 
 
+# *** A bullet that OPENS with a duration is its own anchor - added 2026-08-23 ***
+#
+# Every number normally has to sit near the word "experience" (or ניסיון), and
+# that anchor is load-bearing: without it "founded 15 years ago" and "15+ years
+# since starting the company" read as requirements. But a great many postings
+# state the requirement without ever using the word:
+#
+#     "5+ years in ML roles with demonstrated production impact"
+#     "3+ years building server-side applications"
+#     "4+ years in C++ and Python - Must."
+#     "4+ years as a Full stack Web Developer"
+#
+# Measured on the live corpus: 46 postings whose requirements block was
+# correctly identified as mandatory, plainly stated a number, and were still
+# reported as "no stated experience requirement" - passed to the user with a
+# ⚠️ tag - purely because the sentence did not contain the word "experience".
+#
+# What makes this safe is the POSITION, not the wording. A requirement bullet
+# opens with its duration; prose about the company buries the number mid-
+# sentence ("…we have grown, 15+ years since starting the company"). So this
+# anchors only at the start of the block, after at most one qualifier, and only
+# in a block already classified mandatory - three conditions the marketing case
+# fails on the first one.
+_OPENS_WITH_DURATION_RE = re.compile(
+    r"^\W*(?:over|at\s+least|minimum\s+(?:of\s+)?|more\s+than|min\.?)?\s*"
+    r"\d+(?:\.\d+)?\s*(?:\+|-|–|—|to)?\s*\d*\s*\+?\s*" + _YEAR_UNIT,
+    re.IGNORECASE)
+
+
 def _keyword_spans(text: str) -> list[tuple[int, int]]:
     """Every position an experience keyword occupies in the block."""
     return [(m.start(), m.end()) for m in _EXPERIENCE_KEYWORD_RE.finditer(text)]
@@ -465,7 +535,16 @@ def extract_years(text: str) -> float | None:
         # Self-anchoring, and 0.0 will win any min() anyway.
         values.append(0.0)
 
+    # The opening duration anchors itself - see _OPENS_WITH_DURATION_RE. Its
+    # span is added to the keyword list rather than short-circuiting the
+    # proximity test, so everything downstream (the plausibility ceiling, the
+    # min() across candidates, the range-to-lower-endpoint rule) still applies
+    # to it exactly as it does to an anchored one.
     keywords = _keyword_spans(text)
+    opening = _OPENS_WITH_DURATION_RE.match(text)
+    if opening:
+        keywords = keywords + [(opening.start(), opening.end())]
+
     if keywords:
         for span, value, budget in _candidates(text):
             if value > _MAX_PLAUSIBLE_YEARS:
