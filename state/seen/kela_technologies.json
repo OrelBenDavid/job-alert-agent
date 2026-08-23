@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:35:14.578206+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-23T12:54:49.962793+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -22,6 +22,10 @@
     "4E.F6E": {
       "title": "Internal Operations Lead",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "CF.E6B": {
+      "title": "IT Administrator",
+      "first_seen": "2026-08-23T12:54:49.962793+00:00"
     },
     "2D.F66": {
       "title": "Junior Bookkeeper",
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }

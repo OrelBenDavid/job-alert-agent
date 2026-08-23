@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T09:35:14.542463+00:00",
+  "last_success": "2026-08-23T12:54:49.933003+00:00",
   "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
@@ -87,6 +87,10 @@
       "title": "QA Automation Engineer - Information Systems",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "4850403101": {
+      "title": "Research Engineer (Network)",
+      "first_seen": "2026-08-23T12:54:49.933003+00:00"
+    },
     "4780547101": {
       "title": "Research Team Lead",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -113,10 +117,6 @@
     },
     "4632362101": {
       "title": "Software Architect",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4941299101": {
-      "title": "Software Developer, Infrastructure - Developer Experience",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4901284101": {

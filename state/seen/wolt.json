@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:35:14.645011+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-23T12:54:50.023007+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8088630": {
@@ -22,11 +22,7 @@
     "7218515": {
       "title": "Store Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "8111554": {
-      "title": "Supply Chain Manager (WM)",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 241
+  "last_board_total": 238
 }

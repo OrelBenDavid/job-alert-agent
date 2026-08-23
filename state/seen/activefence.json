@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:35:14.526130+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-23T12:54:49.917391+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "99.B62": {
@@ -14,6 +14,10 @@
     "04.B64": {
       "title": "Application Security Researcher",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "BE.070": {
+      "title": "Child Safety Researcher",
+      "first_seen": "2026-08-23T12:54:49.917391+00:00"
     },
     "B4.075": {
       "title": "Cyber GRC Lead",
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 42
+  "last_board_total": 43
 }

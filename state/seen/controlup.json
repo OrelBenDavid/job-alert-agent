@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-08-23T09:35:14.548491+00:00",
-  "last_count": 1,
+  "last_success": "2026-08-23T12:54:49.940421+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "a1075daa-fd72-46b4-974d-8c4139e20bdf": {
       "title": "HR Business Partner",
       "first_seen": "2026-08-18T19:28:22.772257+00:00"
+    },
+    "fd2d44ab-7fa3-42bd-9b4d-9925baa56621": {
+      "title": "Technical Product Manager",
+      "first_seen": "2026-08-23T12:54:49.940421+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

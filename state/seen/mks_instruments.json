@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T09:35:14.589846+00:00",
-  "last_count": 21,
+  "last_success": "2026-08-23T12:54:49.974439+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
+    "R21895": {
+      "title": "FP&A Analyst",
+      "first_seen": "2026-08-23T12:54:49.974439+00:00"
+    },
     "R20498": {
       "title": "Accounting Support/ מנהל.ת חשבונות",
       "first_seen": "2026-08-23T06:53:45.559353+00:00"
@@ -88,5 +92,5 @@
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

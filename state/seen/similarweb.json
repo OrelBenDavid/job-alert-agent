@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:35:14.625617+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-23T12:54:50.009410+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -63,6 +63,10 @@
       "title": "Product Data Scientist (Customer-facing)",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     },
+    "8152015": {
+      "title": "Product Designer, Growth-Maternity Leave Replacement",
+      "first_seen": "2026-08-23T12:54:50.009410+00:00"
+    },
     "8101800": {
       "title": "Product Marketing Manager- Retail & CPG Industry",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
@@ -78,6 +82,10 @@
     "7962665": {
       "title": "Senior Backend Engineer, Platform Foundations",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8152011": {
+      "title": "Senior Brand Designer",
+      "first_seen": "2026-08-23T12:54:50.009410+00:00"
     },
     "7911963": {
       "title": "Senior Data Engineer ( Data Collection)",
@@ -100,5 +108,5 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 66
 }

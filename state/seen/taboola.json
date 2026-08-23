@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-08-23T09:35:14.631406+00:00",
-  "last_count": 23,
+  "last_success": "2026-08-23T12:54:50.014032+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
       "title": "Ad Operation Specialist",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8030531": {
-      "title": "Advertiser Account Manager (Domestic Market)- Maternity leave replacement",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8081260": {

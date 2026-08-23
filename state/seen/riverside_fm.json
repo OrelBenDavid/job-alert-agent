@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-23T09:35:14.619300+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-23T12:54:50.004342+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "99.E6A": {
       "title": "Account Executive - EMEA",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
+    },
+    "AE.078": {
+      "title": "Controller",
+      "first_seen": "2026-08-23T12:54:50.004342+00:00"
     },
     "9D.C5F": {
       "title": "DevOps Engineer",
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }

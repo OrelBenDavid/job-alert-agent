@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-23T09:35:14.567194+00:00",
+  "last_success": "2026-08-23T12:54:49.954861+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -68,7 +68,7 @@
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     },
     "4673075006": {
-      "title": "Senior SRE Engineer",
+      "title": "Senior SRE Engineer /Senior DevOps",
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     },
     "4672097006": {

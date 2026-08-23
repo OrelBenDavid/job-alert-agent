@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-23T09:35:14.547496+00:00",
-  "last_count": 55,
+  "last_success": "2026-08-23T12:54:49.939726+00:00",
+  "last_count": 54,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -33,10 +33,6 @@
     },
     "50.F67": {
       "title": "Automation Team Lead",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "C8.F4F": {
-      "title": "Backend Developer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "96.D65": {
@@ -224,5 +220,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 142
+  "last_board_total": 141
 }

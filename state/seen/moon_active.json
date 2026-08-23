@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-23T09:35:14.592679+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-23T12:54:49.975867+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
       "title": "DevOps Engineer",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "9f1eb9b4-17d3-43e3-8d96-ef168ff07c6f": {
+      "title": "Full Stack Developer",
+      "first_seen": "2026-08-23T12:54:49.975867+00:00"
     },
     "fd2cd6bb-1e02-4270-95cb-e40f7f3d5ccc": {
       "title": "Unity Developer",
@@ -100,5 +104,5 @@
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

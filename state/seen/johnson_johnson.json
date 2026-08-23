@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-23T09:35:14.577480+00:00",
+  "last_success": "2026-08-23T12:54:49.962283+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "R-092628": {
+      "title": "Field Insights Specialist",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
     "R-089751": {
       "title": "Assistant Controller",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -29,10 +33,6 @@
     },
     "R-087909": {
       "title": "Hardware Analog Engineer",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
-    "R-092628": {
-      "title": "Field Insights Specialist",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     },
     "R-085826": {
