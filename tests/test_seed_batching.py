@@ -65,6 +65,7 @@ def seeding(isolated_state, monkeypatch):
 
     monkeypatch.setattr(run_mod, "notify_new_jobs", explode)
     monkeypatch.setattr(run_mod, "notify_maintenance", explode)
+    monkeypatch.setattr(run_mod, "notify_maintenance_digest", explode)
     return profiles
 
 

@@ -267,6 +267,61 @@ def format_maintenance_alert(slug: str, message: str) -> str:
            f"{escape_mdv2(message)}")
 
 
+def format_maintenance_digest(events: list[tuple[str, str]]) -> list[str]:
+    """Every company-level maintenance event of one run, as one message.
+
+    *** Why this replaced one message per company ***
+
+    A maintenance event is per-company but the user's attention is not: the
+    same run that has something to say about one company usually has it about
+    several, and they arrive as a burst of near-identical ⚠️ messages between
+    the job alerts. Measured on the live corpus, a single run has produced
+    ten - one per company - for one transient network problem that had already
+    resolved itself by the next run.
+
+    Batching also puts the count in the header, which is the one thing a per-
+    company message cannot say: "3 companies" reads as ordinary churn, "40
+    companies" reads as the bot itself being broken, and until now those two
+    looked identical arriving one at a time.
+
+    Returns a list for the same reason format_new_jobs_messages does - a run
+    that really does have forty events must not lose thirty of them to
+    Telegram's 4096-character limit. A single event still renders through
+    format_maintenance_alert, unchanged, so the common case looks exactly as
+    it always has."""
+    if not events:
+        return []
+    if len(events) == 1:
+        slug, message = events[0]
+        return [format_maintenance_alert(slug, message)]
+
+    header = f"⚠️ *Maintenance — {len(events)} companies*"
+    budget = TELEGRAM_MAX_CHARS - len(header) - _PART_COUNTER_RESERVE - 2
+
+    blocks = [f"*{escape_mdv2(slug)}*\n{escape_mdv2(message)}"
+              for slug, message in events]
+
+    chunks: list[list[str]] = [[]]
+    used = 0
+    for block in blocks:
+        if len(block) > budget:
+            # Same rule as a pathological job line: a trimmed message costs
+            # some text, a rejected send costs every event in the batch.
+            block = block[:budget - 1] + "…"
+        if chunks[-1] and used + 2 + len(block) > budget:
+            chunks.append([])
+            used = 0
+        used += (2 if chunks[-1] else 0) + len(block)
+        chunks[-1].append(block)
+
+    total = len(chunks)
+    messages = []
+    for index, packed in enumerate(chunks, start=1):
+        counter = f" \\({index}/{total}\\)" if total > 1 else ""
+        messages.append(f"{header}{counter}\n\n" + "\n\n".join(packed))
+    return messages
+
+
 def notify_new_jobs(company_name: str, jobs: list[Job], tags: dict = None) -> None:
     """Sends one company's alert, across several messages if the batch is
     large. Deliberately NOT wrapped in a try/except here or in the caller -
@@ -279,3 +334,12 @@ def notify_new_jobs(company_name: str, jobs: list[Job], tags: dict = None) -> No
 
 def notify_maintenance(slug: str, message: str) -> None:
     send_message(format_maintenance_alert(slug, message))
+
+
+def notify_maintenance_digest(events: list[tuple[str, str]]) -> None:
+    """Sends a whole run's company-level maintenance events as one message.
+
+    Not wrapped in a try/except here: the caller decides what a failed
+    maintenance send costs, exactly as it does for notify_maintenance."""
+    for message in format_maintenance_digest(events):
+        send_message(message)

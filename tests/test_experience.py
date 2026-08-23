@@ -94,8 +94,42 @@ def test_absurd_values_are_dropped_rather_than_trusted():
 
 
 def test_number_far_from_any_keyword_is_ignored():
-    far = ("5 years " + "x" * 80 + " experience")
+    """The proximity rule, which is what stops prose about the company from
+    reading as a requirement.
+
+    The number sits mid-sentence deliberately. This fixture used to open with
+    "5 years", and since 2026-08-23 a block that OPENS with a duration anchors
+    itself - see test_a_bullet_that_opens_with_a_duration_needs_no_keyword. So
+    the old fixture was testing two rules at once and would now assert the
+    wrong one."""
+    far = ("we have grown 5 years " + "x" * 80 + " experience")
     assert extract_years(far) is None
+
+
+def test_a_bullet_that_opens_with_a_duration_needs_no_keyword():
+    """Measured, not invented: 46 postings on the live corpus stated their
+    requirement in a correctly-identified mandatory bullet and were still
+    reported as "no stated experience requirement", purely because the
+    sentence never used the word "experience"."""
+    assert extract_years("5+ years in ML roles with production impact") == 5
+    assert extract_years("4+ years as a Full stack Web Developer") == 4
+    assert extract_years("3+ years building server-side applications") == 3
+    assert extract_years("Minimum 5 years in system engineering") == 5
+
+
+def test_a_duration_buried_in_company_prose_still_needs_a_keyword():
+    """The other half of the same rule, and the reason it anchors on POSITION.
+    A requirement bullet opens with its duration; marketing copy buries it.
+    Taken from a live posting - four companies publish this sentence."""
+    assert extract_years(
+        "you'll find more than 1000 global organizations. 15+ years since "
+        "starting the company") is None
+
+
+def test_an_opening_duration_is_still_held_to_the_plausibility_ceiling():
+    """Self-anchoring changes where a number may sit, not whether it has to
+    be a believable duration."""
+    assert extract_years("2015 years of building great products") is None
 
 
 def test_a_long_qualifier_between_the_number_and_the_keyword_still_counts():
@@ -358,3 +392,58 @@ def test_a_number_and_a_signal_together_still_report_the_number():
     reading = read_experience(html)
     assert reading.min_years == 3.0
     assert reading.has_seniority_signals is True
+
+
+# ---------------------------------------------------------------------------
+# Heading-level classification, 2026-08-23
+# ---------------------------------------------------------------------------
+#
+# Both directions of the same measurement. The requirement headings below were
+# taken off live blocks that stated a number and were left `unknown`; the
+# optional heading fixes the opposite error, where "Preferred Experience" was
+# promoted to mandatory by the word "experience" in it.
+
+def _block(text, heading=None):
+    from experience import Block
+    return Block(text=text, heading=heading)
+
+
+@pytest.mark.parametrize("heading", [
+    "What You'll Bring", "What we're looking for", "We expect you to have:",
+    "What you have:", "What You're About", "About You:", "Your Profile",
+    "Must:",
+])
+def test_a_requirement_heading_promotes_an_unmarked_bullet(heading):
+    from experience import classify_block
+    assert classify_block(_block("5 years of experience", heading)) == "mandatory"
+
+
+def test_about_the_company_is_not_about_you():
+    """The `\b` in the `about you` pattern, and why it is load-bearing: every
+    posting has an "About <company>" section and promoting it would make the
+    company's own history a hiring requirement."""
+    from experience import classify_block
+    assert classify_block(
+        _block("Zafran was founded 8 years ago", "About Zafran:")) == "unknown"
+
+
+@pytest.mark.parametrize("heading", [
+    "Preferred Experience", "Nice to have", "Bonus points",
+    "Strong Advantage:", "Desired Skills & Experience",
+])
+def test_an_optional_heading_beats_a_requirement_word_in_it(heading):
+    """"Preferred Experience" contains "experience", which the requirement
+    headings match - so without this check the whole nice-to-have section was
+    read as hard requirements and its years disqualified the posting."""
+    from experience import classify_block
+    assert classify_block(_block("3+ years in RevOps", heading)) == "optional"
+
+
+def test_an_optional_heading_only_ever_adds_postings():
+    """End to end: the bullets under a preferred heading are discarded, so a
+    posting whose only number lives there reads as undetermined - which
+    passes, flagged - rather than as a rejection."""
+    description = (
+        "<h3>Requirements</h3><ul><li>BSc in Computer Science</li></ul>"
+        "<h3>Preferred Experience</h3><ul><li>5+ years in RevOps</li></ul>")
+    assert read_experience(description).min_years is None

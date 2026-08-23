@@ -1,0 +1,68 @@
+name: Corpus health report
+
+# *** Why this is scheduled rather than left to /health ***
+#
+# health_report.py has existed since 2026-08-19 and could be asked for over
+# Telegram at any time. Nothing asked for it. On 2026-08-23 an audit found
+# `wiz` pointed at a Greenhouse board with two postings on it - eleven days
+# after it was imported, verified and green - along with four companies whose
+# ATS had moved out from under a still-valid endpoint, and three Workday
+# boards silently truncated at 500 postings.
+#
+# Every one of those is visible in this report. The report was simply never
+# run, which is the difference between a detector and a standing check, and it
+# is the whole reason this file exists.
+#
+# It is READ-ONLY. It fetches nothing, writes nothing, and commits nothing -
+# so it can never be the reason a state file changed, and running it can never
+# cost an alert. That is a property worth keeping: a tool that reports on state
+# must not be able to change the thing it reports on.
+
+on:
+  schedule:
+    # Sunday 06:00 UTC - 09:00 Israel time, the start of the working week, so
+    # a finding lands when there is a week ahead to act on it rather than on a
+    # Friday afternoon.
+    - cron: "0 6 * * 0"
+  workflow_dispatch: {}   # ...and on demand, which is how it gets used after
+                          # a batch of companies is added.
+
+permissions:
+  contents: read   # Deliberately narrower than check.yml's `write`. This
+                   # workflow has nothing to commit and should not be able to.
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5   # It reads local JSON. If this is ever close, the
+                          # report has started doing something it should not.
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # The full report goes to the run log, where there is room for it: the
+      # per-company listings are what an investigation actually needs, and they
+      # do not fit in a Telegram message.
+      - name: Full report (log)
+        working-directory: src
+        run: python health_report.py --limit 40
+
+      # ...and the summary goes to Telegram, because a report nobody is told
+      # about is the situation this workflow was written to end.
+      - name: Summary (Telegram)
+        working-directory: src
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python -c "
+          import health_report, notifier
+          notifier.send_message(health_report.format_telegram(health_report.collect()))
+          "

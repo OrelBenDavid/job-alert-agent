@@ -2,19 +2,19 @@
   "slug": "wiz",
   "name": "Wiz",
   "platform": "greenhouse",
-  "careers_url": "https://job-boards.greenhouse.io/wizprivate",
-  "resolved_from": "company name 'Wiz' - resolved to Greenhouse board_token 'wizprivate' per the project instructions, confirmed live on 2026-08-12 and again on 2026-08-13. Carried over unchanged from the standalone profile this record replaced.",
+  "careers_url": "https://job-boards.greenhouse.io/wizinc",
+  "resolved_from": "Re-resolved live on 2026-08-23. The board_token was 'wizprivate', resolved from the company name on 2026-08-12 and confirmed 'live' then and on 2026-08-13 - but confirming a token only proves it answers, and this one answers with a two-posting board. The company's real board is 'wizinc': 124 postings live on 2026-08-23, 22 of them Israel-relevant.",
 
   "api": {
-    "endpoint": "https://boards-api.greenhouse.io/v1/boards/wizprivate/jobs?content=true"
+    "endpoint": "https://boards-api.greenhouse.io/v1/boards/wizinc/jobs?content=true"
   },
 
   "health": {
-    "expected_min_jobs": 0,
-    "zero_is_plausible": true,
-    "_note": "KEEP BOTH VALUES AS THEY ARE. Verified live 2026-08-12 and again 2026-08-13: this board has a handful of open jobs company-wide and none of them are in Israel, so it genuinely returns 0 Israel-relevant postings. expected_min_jobs=0 with zero_is_plausible=true is therefore correct, and tightening either one would turn a true zero into a recurring false maintenance alert. Revisit only if the board grows an Israeli presence. Carried over unchanged from the standalone profile."
+    "expected_min_jobs": 5,
+    "zero_is_plausible": false,
+    "_note": "Live-verified on 2026-08-23: 124 postings on the board, 22 Israel-relevant. expected_min_jobs=5 is a deliberately conservative floor (about 25% of what was observed). The previous values (0 / true) were correct about 'wizprivate' and were the reason nothing ever questioned it: a board with no Israeli roles legitimately returns zero, so the profile documented the symptom of the wrong token as a property of the company."
   },
 
-  "verified_on": "2026-08-13",
-  "notes": "Migrated from a full standalone profiles/wiz.json to a thin record on 2026-08-13. The resolved document is byte-identical in every field the fetchers read - asserted by tests/test_platform_profiles.py. detail_fetch now comes from the greenhouse platform profile, where it was moved because it is platform behaviour; the posting URL it was verified against is this company's, and is still the one recorded there."
+  "verified_on": "2026-08-23",
+  "notes": "board_token CHANGED from wizprivate to wizinc on 2026-08-23. This is the sharpest case the corpus audit turned up and the argument for recording the raw board size next to the Israel-relevant one: the old token was reachable, returned HTTP 200, parsed cleanly and produced a plausible zero on every run for eleven days. The only signal that anything was wrong was that the whole board held two postings, which nothing in the project looked at. Everything not stated here - fetch_type, the field map, pagination, the Israel filter and detail_fetch - is inherited from profiles/_platforms/greenhouse.json, where the detail_fetch block was originally verified against a wizprivate posting URL; that verification is about Greenhouse's response shape, not about this company, and is unaffected."
 }

@@ -155,9 +155,13 @@ def test_a_failed_send_rewinds_that_company_so_the_jobs_come_back(monkeypatch,
         raise RuntimeError("Telegram 400: message is too long")
 
     monkeypatch.setattr(run_mod, "notify_new_jobs", refuse)
+    # The notice goes into the run's maintenance digest, not out as its own
+    # message - a Telegram problem tends to hit every company at once, and
+    # forty separate "send failed" messages are the last thing a struggling
+    # send path should attempt.
     maintenance = []
-    monkeypatch.setattr(run_mod, "notify_maintenance",
-                        lambda slug, msg: maintenance.append((slug, msg)))
+    monkeypatch.setattr(run_mod, "notify_maintenance_digest",
+                        lambda events: maintenance.extend(events))
 
     run_mod._run_normal()       # exits normally - the rewind made it safe
 
@@ -189,6 +193,7 @@ def test_one_failed_send_does_not_rewind_the_other_companies(monkeypatch,
 
     monkeypatch.setattr(run_mod, "notify_new_jobs", send)
     monkeypatch.setattr(run_mod, "notify_maintenance", lambda slug, msg: None)
+    monkeypatch.setattr(run_mod, "notify_maintenance_digest", lambda events: None)
 
     run_mod._run_normal()
 
@@ -216,6 +221,7 @@ def test_a_rewind_that_itself_fails_falls_back_to_failing_the_run(monkeypatch,
     monkeypatch.setattr(run_mod, "notify_new_jobs", refuse)
     monkeypatch.setattr(run_mod, "restore_state", broken_restore)
     monkeypatch.setattr(run_mod, "notify_maintenance", lambda slug, msg: None)
+    monkeypatch.setattr(run_mod, "notify_maintenance_digest", lambda events: None)
 
     with pytest.raises(SystemExit) as exit_info:
         run_mod._run_normal()

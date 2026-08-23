@@ -163,12 +163,34 @@ def test_mobileye_keeps_its_own_health_numbers():
     assert profile.zero_is_plausible is False
 
 
-def test_wiz_keeps_zero_is_plausible_true():
-    """wiz genuinely has no Israeli openings. If the platform default (False)
-    ever won this merge, wiz would fire a false maintenance alert every run."""
-    profile = load_profile(find_profile_path("wiz"))
+def test_a_company_can_still_override_the_platform_health_default():
+    """A company record's health block must beat the platform profile's, or a
+    company that legitimately returns zero fires a false maintenance alert
+    every run. novidea_software is that case: the ashby platform profile says
+    zero_is_plausible=false, and this board really does carry no Israeli role.
+
+    *** This test used to be about wiz, and what happened to it is the point ***
+
+    It read "wiz genuinely has no Israeli openings" and asserted
+    zero_is_plausible is True. That was never true. The board_token was
+    'wizprivate', a real Greenhouse board with two postings on it; the company
+    hires on 'wizinc', which had 124 postings and 22 Israel-relevant ones when
+    this was corrected on 2026-08-23.
+
+    So the test passed for eleven days while asserting a mis-resolution, and it
+    would have kept passing forever - which is worth remembering next time a
+    profile's health numbers look like a fact about a company. They are a fact
+    about an endpoint, and only a live check of the RAW board tells the two
+    apart."""
+    profile = load_profile(find_profile_path("novidea_software"))
     assert profile.zero_is_plausible is True
     assert profile.expected_min_jobs == 0
+
+
+def test_wiz_points_at_the_board_the_company_actually_hires_on():
+    profile = load_profile(find_profile_path("wiz"))
+    assert "wizinc" in profile.raw["api"]["endpoint"]
+    assert profile.zero_is_plausible is False
 
 
 def test_wiz_inherits_greenhouse_content_true_endpoint_and_offices_check():

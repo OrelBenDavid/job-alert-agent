@@ -13,9 +13,11 @@ when a new platform shows up.
 
 from __future__ import annotations   # see models.py - `X | None` on 3.9 too
 
+import sys
+
 import requests
 
-from models import Job
+from models import Job, JobList
 from relevance import (is_israel_country_code, is_israel_location,
                        is_relevant_location, is_relevant_with_country_codes,
                        names_remote)
@@ -120,7 +122,7 @@ def fetch_lever(profile) -> list[Job]:
     postings = r.json()
 
     fields = api["fields"]
-    jobs = []
+    jobs = JobList(board_total=len(postings))
     for p in postings:
         location = _get_by_path(p, fields["location"]) or ""
         title = (_get_by_path(p, fields["title"]) or "").strip()
@@ -147,8 +149,9 @@ def fetch_greenhouse(profile) -> list[Job]:
     data = r.json()
 
     fields = api["fields"]
-    jobs = []
-    for j in data.get("jobs", []):
+    postings = data.get("jobs", [])
+    jobs = JobList(board_total=len(postings))
+    for j in postings:
         location = _get_by_path(j, fields["location"]) or ""
         title = (_get_by_path(j, fields["title"]) or "").strip()
         offices = [o.get("name", "") for o in (j.get("offices") or [])]
@@ -238,8 +241,9 @@ def fetch_ashby(profile) -> list[Job]:
     data = r.json()
 
     fields = api["fields"]
-    jobs = []
-    for j in data.get("jobs", []):
+    postings = data.get("jobs", [])
+    jobs = JobList(board_total=len(postings))
+    for j in postings:
         location = _get_by_path(j, fields["location"]) or ""
         title = (_get_by_path(j, fields["title"]) or "").strip()
         secondary = _secondary_locations(j, fields.get("secondary_location"))
@@ -305,8 +309,9 @@ def fetch_hibob(profile) -> list[Job]:
     data = r.json()
 
     fields = api["fields"]
-    jobs = []
-    for j in data.get("jobAdDetails", []):
+    postings = data.get("jobAdDetails", [])
+    jobs = JobList(board_total=len(postings))
+    for j in postings:
         location = _get_by_path(j, fields["location"]) or ""
         title = (_get_by_path(j, fields["title"]) or "").strip()
         if not is_relevant_location(location, title):
@@ -437,7 +442,7 @@ def fetch_comeet(profile) -> list[Job]:
     # record - keeps the pre-2026-08-20 behaviour exactly.
     authoritative = bool(api.get("country_code_is_authoritative"))
 
-    jobs = []
+    jobs = JobList(board_total=len(positions))
     for p in positions:
         label = (_get_by_path(p, fields["location"]) or "").strip()
         # Both optional, so a profile that maps neither behaves exactly as it
@@ -466,7 +471,7 @@ def fetch_smartrecruiters(profile) -> list[Job]:
     """SmartRecruiters: the only one of the four that requires pagination
     (offset/limit)."""
     api = profile.raw["api"]
-    jobs, offset, limit = [], 0, 100
+    jobs, offset, limit = JobList(board_total=0), 0, 100
     max_pages = 50   # hard cap - protects against an inconsistent totalFound
     for _ in range(max_pages):
         r = requests.get(api["endpoint"], params={"offset": offset, "limit": limit},
@@ -476,6 +481,7 @@ def fetch_smartrecruiters(profile) -> list[Job]:
         postings = data.get("content", [])
         if not postings:
             break
+        jobs.board_total += len(postings)
         for p in postings:
             loc = p.get("location") or {}
             # `fullLocation` spells the country out - "Tel Aviv-Yafo, Tel Aviv
@@ -607,7 +613,10 @@ def fetch_workable(profile) -> list[Job]:
         key = str(_get_by_path(j, fields["id"]) or "")
         groups.setdefault(key, []).append(j)
 
-    jobs = []
+    # The board size is the number of POSTINGS, not of rows: this platform
+    # publishes one row per city for a single opening and the fetcher groups
+    # them, so counting rows would report a board half again as large as it is.
+    jobs = JobList(board_total=len(groups))
     for job_id, items in groups.items():
         first = items[0]
         title = (_get_by_path(first, fields["title"]) or "").strip()
@@ -651,6 +660,59 @@ def fetch_workable(profile) -> list[Job]:
     return jobs
 
 
+def _workday_israel_facets(api: dict, slug: str) -> dict:
+    """Israel's facet values on this tenant, read live. `{}` means "could not
+    resolve" and the caller falls back to the unfiltered walk.
+
+    Workday nests facets one level (`locationMainGroup` -> `locations`), so
+    this walks the tree rather than assuming a depth, and it groups the values
+    it keeps by the `facetParameter` they were found under - that name is what
+    `appliedFacets` has to be keyed by, and it differs per tenant.
+
+    Which values count as Israel is decided by relevance.is_israel_location,
+    not by a substring test here. Two reasons: the descriptors do not agree on
+    a format ("Yokneam, Haifa District, Israel" vs "Office - Israel - Tel
+    Aviv" vs a bare city), and a second, private definition of "is this
+    Israel" is exactly the kind of drift that puts a company's postings on the
+    wrong side of a rule nobody remembers writing.
+
+    Every exception is swallowed into `{}` on purpose. This runs before the
+    real fetch, and a tenant that changes its facet shape must degrade to the
+    old unfiltered behaviour - never to an empty result, which would read as a
+    company with no open jobs."""
+    try:
+        response = requests.post(api["endpoint"],
+                                 json={"appliedFacets": {}, "limit": 1,
+                                       "offset": 0, "searchText": ""},
+                                 timeout=20)
+        response.raise_for_status()
+        facets = response.json().get("facets") or []
+    except Exception as e:          # noqa: BLE001 - see the docstring
+        print(f"[workday facets] {slug}: could not read facets ({e}); "
+              "falling back to the unfiltered walk", file=sys.stderr)
+        return {}
+
+    found: dict[str, list[str]] = {}
+
+    def walk(node: dict) -> None:
+        parameter = node.get("facetParameter")
+        for value in node.get("values") or []:
+            if value.get("values"):
+                walk(value)
+                continue
+            descriptor = value.get("descriptor") or ""
+            if parameter and value.get("id") and is_israel_location(descriptor):
+                found.setdefault(parameter, []).append(value["id"])
+
+    for facet in facets:
+        walk(facet)
+
+    if not found:
+        print(f"[workday facets] {slug}: no Israeli facet value found; "
+              "falling back to the unfiltered walk", file=sys.stderr)
+    return found
+
+
 def fetch_workday(profile) -> list[Job]:
     """Workday. VERIFIED live 2026-08-18 against crowdstrike/wd5 (449 postings
     company-wide, 13 in Israel) and verily/wd1 (71).
@@ -675,15 +737,78 @@ def fetch_workday(profile) -> list[Job]:
     If a profile carries no facet the fetch still works, unfiltered, and
     relevance is decided post-fetch like every other platform. That path is
     bounded by MAX_PAGES because an unfiltered board can be large.
+
+    *** ...and "can be large" turned out to mean "is silently truncated" -
+    fixed 2026-08-23 ***
+
+    The unfiltered path walked 25 pages of 20 and stopped, so it saw the first
+    500 postings of any board and no more. Measured across all 11 Workday
+    companies on 2026-08-23, three were past that line and had been since the
+    day they were imported:
+
+        palo_alto_networks   1435 postings on the board, cap saw 500
+        johnson_johnson      1731                            500
+        merck                 888                            500
+
+    Nothing could see it. The count was stable, well above zero and above
+    every floor, so the health gate had nothing to compare against - this is
+    exactly the "broken pagination" shape state.py's collapse checks describe
+    and cannot detect when the truncation is there from the first run rather
+    than appearing later. What it cost, verified live: Palo Alto Networks has
+    151 Israel-relevant postings and the bot could see about 25 of them.
+
+    The fix is not a bigger cap - 1731 postings is 87 requests for one company
+    on every run. It is to make these three filter server-side like the other
+    eight, and the reason they could not before is that their tenants expose no
+    `locationCountry` facet at all. They expose `locations`, whose values are
+    individual offices: "Yokneam, Haifa District, Israel", "Office - Israel -
+    Tel Aviv", "ISR - Central District of Israel - Hod Hasharon".
+
+    So `israel_facet_auto` resolves them AT FETCH TIME instead of baking them
+    in, which is a deliberate difference from `israel_facet` above and not an
+    inconsistency. A country facet is ONE id and a country does not appear
+    twice; an office list is a set that grows whenever the company opens a
+    site, and a baked set would silently stop returning the postings at any
+    office added after the profile was written - the precise class of failure
+    this whole change exists to remove. One extra request per run per company
+    buys a filter that cannot go stale.
+
+    Falling back is what keeps it safe: if the facets cannot be read, or name
+    no Israeli value, the fetch drops through to the unfiltered walk rather
+    than returning an empty list. A resolution failure must look like the old
+    behaviour, never like a company with no jobs.
     """
     api = profile.raw["api"]
     fields = api["fields"]
     facet = api.get("israel_facet")
-    applied = {"locationCountry": [facet]} if facet else {}
+    if facet:
+        applied = {"locationCountry": [facet]}
+    elif api.get("israel_facet_auto"):
+        applied = _workday_israel_facets(api, profile.slug)
+    else:
+        applied = {}
 
-    jobs: list[Job] = []
+    # Counted across pages. On the faceted paths this is the size of the
+    # FILTERED board, not of the whole tenant - which is the honest number
+    # here: the whole board was never fetched, so claiming to know it would be
+    # worse than reporting what was actually seen.
+    jobs = JobList(board_total=0)
     offset, limit = 0, 20
-    max_pages = 5 if facet else 25    # a filtered board is small by construction
+    # *** A runaway guard, not the pagination rule. ***
+    #
+    # The loop's real exit is `offset >= total` below; this only bounds a
+    # response that keeps claiming there is more. It used to be 5 pages when a
+    # facet was applied, on the reasoning that "a filtered board is small by
+    # construction" - which is true of a country facet and false of an office
+    # list: Palo Alto Networks has 151 Israel-relevant postings, and at 5 pages
+    # the auto-resolved filter would have replaced one silent truncation
+    # (at 500) with a tighter one (at 100).
+    #
+    # One number for both paths, sized so a filtered board is never the thing
+    # it stops. An UNfiltered board still truncates at 500 - that is what
+    # israel_facet_auto exists to take those boards off, and any company left
+    # on the unfiltered path is one whose whole board was verified to fit.
+    max_pages = 25
     for _ in range(max_pages):
         r = requests.post(api["endpoint"], json={
             "appliedFacets": applied, "limit": limit, "offset": offset,
@@ -694,6 +819,7 @@ def fetch_workday(profile) -> list[Job]:
         postings = data.get("jobPostings", [])
         if not postings:
             break
+        jobs.board_total += len(postings)
 
         for p in postings:
             location = _get_by_path(p, fields["location"]) or ""

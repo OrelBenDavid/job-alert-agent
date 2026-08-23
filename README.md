@@ -162,9 +162,21 @@ that (all skipped when `zero_is_plausible`):
 
 | Check | Catches | Needs |
 |---|---|---|
-| count is **0** after a healthy run | a dead `job_selector` | nothing |
+| count is **0** after a healthy run of **≥ 3** | a dead `job_selector` | nothing |
 | count below **`health.expected_min_jobs`**, from a run above it | **slow decay** - a drift downwards over weeks never trips a run-to-run comparison | a number in the profile |
 | count below **40% of the last healthy run** (baseline ≥ 10) | **sudden breakage** - broken pagination, page 1 parses and pages 2..N stop coming | nothing |
+
+**The zero check has a baseline too, and it is the newest of the three.** It
+did not, and fired on `1 -> 0` — the smallest and most ordinary event a job
+board can produce, one role being filled. Measured over the five days to
+2026-08-23: **every** maintenance message the bot sent, roughly 26 of them
+against 5-10 job alerts on a working day, came from four companies going
+`1 -> 0`. Not one was broken. The ratio check had always refused to judge a
+board below 10 for exactly this reason; the zero check now refuses below
+`ZERO_COLLAPSE_MIN_BASELINE` (**3**). What that gives up is a per-run alert for
+a fetch breaking at a one-posting company — which the corpus health report
+catches instead, and which is read on purpose rather than while the user is
+trying to read job alerts.
 
 The last two overlap on a good day and cover opposite failure shapes on a bad
 one, which is why both are there. **The ratio is the one that scales**:
@@ -182,7 +194,7 @@ decay the ratio can't see.
   it reports the drop one last time, accepts the lower count, and resumes.
 - A **total zero** costs *attention*. This used to hold forever, on the
   reasoning that a frozen zero misses no jobs - true about jobs, false about
-  the alert. `should_alert_failure` fires on **every** run once the counter is
+  the alert. `should_alert_failure` fired on **every** run once the counter was
   past its threshold, so a company that genuinely closed its last Israeli role
   re-sent the identical maintenance alert every three hours, indefinitely, with
   no path back to healthy that didn't involve a human editing JSON. Observed on
@@ -190,6 +202,29 @@ decay the ratio can't see.
   simply has no Israeli opening right now. So it accepts too, after
   `TOTAL_ZERO_ACCEPT_AFTER` (**6** runs, ~18h) - longer than a partial,
   because holding a zero really is the cheaper mistake.
+
+### How often a failure is allowed to say so
+
+Independent of the gate, and the other half of the 2026-08-23 noise fix.
+`failure_alert_due` replaces the old `failures >= threshold`, which re-sent the
+identical message on every run once a company was two runs into trouble. The
+rule now: **alert when it breaks, then only when the failure count doubles.**
+
+At a three-hour cron a company that stays broken is reported at 6h, 12h, 24h,
+2d and 4d — five messages in the first week instead of 55 — then 8d, 16d, and
+a couple a month after that. Each silence is twice as long as the last, which
+is the property worth having: the alert stays alive for a breakage nobody has
+fixed without ever being the reason the channel stops being read. A healthy run
+zeroes the counter, so a company that recovers and breaks again is loud again
+immediately.
+
+And whatever survives both rules is **batched**: every company-level
+maintenance event in a run goes out as one digest message
+(`notifier.format_maintenance_digest`), after the job alerts rather than
+before. A single event still renders exactly as it always did. The count in the
+header is the thing a per-company message could never say — three companies
+reads as churn, forty reads as the bot itself, and arriving one at a time those
+two looked identical.
 
 Accepting either one empties nothing it can't recover from: if the drop *was* a
 breakage, the postings that stopped coming back are now un-seen and re-alert the
@@ -229,8 +264,51 @@ pretend otherwise. It uses two labelled proxies:
 | **deliverable** | the stored title, put back through `roles.classify`; `target` or `unknown` means the role filter would pass it | strong — zero of these means the company *cannot* deliver, whatever its fetch does |
 | **churn** | a posting whose `first_seen` is later than the company's earliest (seeding stamps one timestamp on the whole batch, so anything later was genuinely *detected*) | weak — a small board goes weeks without a req, so it is a watchlist ranked by board size |
 
-Six sections: structurally silent companies, **duplicate job ids**, health-gate
-state, staleness, distribution by platform, and the filter funnel.
+Seven sections: structurally silent companies, **implausibly small boards**,
+duplicate job ids, health-gate state, staleness, distribution by platform, and
+the filter funnel.
+
+**It runs on a schedule now** (`.github/workflows/health.yml`, Sunday 06:00
+UTC), and that is not a small change. This report could always be asked for
+over Telegram and nothing asked for it — so on 2026-08-23 an audit found four
+companies whose ATS had moved out from under a still-valid endpoint, `wiz`
+pointed at a board with two postings on it for eleven days, and three Workday
+boards silently truncated at 500 postings. Every one of those is visible in
+this report. The report was simply never run, which is the whole difference
+between a detector and a standing check.
+
+### The board is the denominator
+
+**Every number this project stores is post-filter**, and that is why the wrong
+endpoint was invisible. `last_count` is the *Israel-relevant* count, so these
+two are the same observation:
+
+| | board returns | Israel-relevant | `last_count` |
+|---|---:|---:|---:|
+| a real zero | 41 postings | 0 | `0` |
+| the wrong board | 2 postings | 0 | `0` |
+
+Both stable, both healthy, both satisfying every check in the project — because
+every check compares a company against *itself*, and a company pointed at the
+wrong board is perfectly consistent with itself forever. `wiz` had
+`board_token: wizprivate`, a real Greenhouse board with two postings on it,
+against `wizinc` with 124 postings and 22 Israel-relevant. It was verified,
+green, and had a test asserting the mis-resolution was a fact about the
+company.
+
+So fetchers now return `models.JobList` — a `list` subclass carrying
+`board_total`, the size of the whole board before relevance — `state` records
+it as `last_board_total`, and the report flags any board of **≤ 3** postings.
+A `list` subclass rather than a new return type so that no caller had to
+change, and so a fetcher that does not report the number (`html`,
+`playwright`) returns a plain list whose `board_total` reads as `None`:
+"not reported" and "reported as zero" have to stay distinguishable, since
+telling zeros apart is the entire point.
+
+It pays for itself in the alert text too. "Got 0 jobs" now continues with
+either *"the board itself still returns 41 postings"* (the fetch works; the
+Israeli roles are gone) or *"the board itself returned 0 postings of any kind"*
+(check the endpoint).
 
 **The duplicate-id check is new and it found something on its first run.**
 `process_company` writes `last_count = len(fetched)` and the `jobs` map keyed
@@ -578,21 +656,72 @@ cd tests && python -m pytest -v
 
 **368 companies are registered** as of 2026-08-20, up from 256 on 2026-08-19
 and from 145 before that. All 368 load with no profile errors. The last full
-live run, measured at 366 companies on 2026-08-19, fetched **366/366 with 0
-failures in 75 seconds** — a wall clock set entirely by `wix`, the single
-`playwright` company, with every API company finishing inside it.
+live run fetched **368/368 with 0 failures in 24 seconds**, a wall clock set
+entirely by `wix`, the single `playwright` company, with every API company
+finishing inside it.
 
 | Platform | Companies | Shape |
 |---|---:|---|
-| Comeet | 202 | thin records over `_platforms/comeet.json` — **+94 on 2026-08-19** |
-| Greenhouse | 82 | thin records over `_platforms/greenhouse.json` |
-| Ashby | 26 | thin records |
+| Comeet | 199 | thin records over `_platforms/comeet.json` — **−3 on 2026-08-23**, migrated away |
+| Greenhouse | 83 | thin records over `_platforms/greenhouse.json` |
+| Ashby | 28 | thin records — **+2 on 2026-08-23** |
 | Workable | 16 | added 2026-08-19 — new fetcher, new platform profile |
 | Lever | 16 | thin records (1 EU-hosted) |
 | SmartRecruiters | 13 | added 2026-08-19 — the fetcher existed but no platform profile did |
 | Workday | 11 | added 2026-08-19 — new fetcher, new platform profile; +2 on 2026-08-20 |
 | HiBob | 1 | its own careers product — see below |
 | *(standalone)* | 1 | `wix` — the only `playwright` company |
+
+**The corpus holds ~3,000 Israel-relevant postings and turns over ~55 a working
+day** (measured from `first_seen` across every state file: 59 Wed, 56 Thu, 5
+Fri, 0 Sat). Of the whole corpus, 19% is off-family, 58% of what remains is
+rejected on a senior title, and ~17% survives to be delivered — of which **94%
+passes because nothing could disqualify it**, not because it was verified
+junior. Only 29 postings in the entire live corpus state a requirement of one
+year or less. That last number is the honest answer to "why so few jobs": the
+filters are working, and the market is the constraint.
+
+### The 2026-08-23 pass: the maintenance channel, and what a post-filter count cannot see
+
+Two problems that turned out to share a cause — every number the project keeps
+is measured *after* the Israel filter, and every check compares a company only
+against *itself*.
+
+**The noise.** Roughly 26 maintenance messages in five days, against 5-10 job
+alerts on a working day. All of them from four companies going `1 -> 0`, none
+of them broken. Two independent multipliers, both fixed above: the zero check
+had no minimum baseline, and a company two runs into trouble re-alerted on
+every run forever. Events that were never real are gone; the repeats of real
+ones are on a doubling schedule; whatever survives is one digest message per
+run.
+
+**The silence.** A raw-board audit — every board fetched twice, once with
+relevance forced true — turned up 225 Israel-relevant postings the bot could
+not see:
+
+| Company | Was | Cause | Now |
+|---|---:|---|---:|
+| `palo_alto_networks` | ~25 | Workday walked 25 pages of 20 and stopped; the board holds 1,435 | **149** |
+| `aidoc` | 0 | moved Comeet → Greenhouse `aidocmedical` | **27** |
+| `moon_active` | 0 | moved Comeet → Ashby `moonactive` | **24** |
+| `wiz` | 0 | `board_token: wizprivate` (2 postings) → `wizinc` (124) | **22** |
+| `johnson_johnson` | 1 | 1,731-posting board, truncated at 500 | **21** |
+| `merck` | 3 | 888-posting board, truncated at 500 | **11** |
+| `novidea_software` | 0 | moved Comeet → Ashby `novidea` | 0 (a real zero) |
+
+None of it raised anything. The migrated Comeet endpoints still *authenticate* —
+a wrong token answers HTTP 400, these answer HTTP 200 with `[]` — and the
+Workday truncation was there from the first run, so it collapsed nothing for
+the gate to compare against. Three further companies (`ai21_labs`, `fabric`,
+`playstudios`) were checked the same way and are genuinely empty; their
+profiles now record that, so the next audit doesn't repeat the search.
+
+Both fixes are structural rather than one-off: `board_total` makes the wrong
+endpoint visible, `israel_facet_auto` resolves Workday's location facet live
+instead of baking a list that goes stale, and the health report now runs
+weekly. **The relevance filter was cleared in the same audit** — of 8,363
+postings dropped as not-Israel-relevant, zero carried an Israeli city in their
+location.
 
 ### The 2026-08-20 change: a country code that can say no
 
@@ -1039,6 +1168,39 @@ nor the Wix page produces that shape of string.
     browsers the old code returned 0 jobs *every* time.
 
 ### Experience filter status
+
+**Determination rate across the whole live corpus, measured 2026-08-23: 63%,
+up from 54%.** That number is the one that matters for noise: an undetermined
+reading is a PASS, so every point of it is a posting delivered with a ⚠️ tag
+that nobody can act on. Measured over the 943 postings that reach the parser
+with a description, the two fixes below turned 86 of them from "no stated
+requirement" into a number, with **zero** postings moving the other way — and
+the delivered pile fell from 464 to 382.
+
+Both were measured, not guessed, and both were failures of *classification*
+rather than of the number regexes:
+
+- **A bullet that opens with its duration is now its own anchor.** Every
+  number normally has to sit near the word "experience", which is what stops
+  "15+ years since starting the company" reading as a requirement. But 46
+  postings said `5+ years in ML roles`, `4+ years as a Full stack Web
+  Developer`, `3+ years building server-side applications` — a correctly
+  identified mandatory bullet, a plainly stated number, and no keyword
+  anywhere in the sentence. What separates those from the marketing case is
+  **position**: a requirement bullet opens with its duration, prose buries it.
+  So the anchor is granted only at the start of a block, after at most one
+  qualifier, and only in a block already classified mandatory.
+- **A heading can now say "optional" as well as "required".** The heading
+  heuristic promoted anything under a header matching `experience` — which
+  includes **"Preferred Experience"**, so a whole nice-to-have section was
+  read as hard requirements and its years disqualified postings. Optional
+  headings are checked first now, and that change can only ever *add*
+  postings. The requirement-heading list also grew by nine entries, each one
+  taken off a live block that stated a number and was left `unknown`
+  ("What You'll Bring", "We expect you to have", "Must:", …). `about you`
+  is spelled with the word boundary on purpose: every posting has an
+  "About <company>" section, and promoting that would make the company's own
+  history a hiring requirement.
 
 - **`mobileye` and `wiz` are on `schema_version: 3`** with `detail_fetch`
   **live-verified on 2026-08-12**, both `method: inline` (zero extra

@@ -106,6 +106,19 @@ PLATFORM_SILENCE_MULTIPLE = 2.0
 # legitimately empty board is 33%.
 PLATFORM_MIN_COMPANIES = 5
 
+# A board holding this many postings or fewer is treated as suspicious - not
+# as small. See CompanyHealth.implausible_board for the case it was sized
+# against ('wizprivate', 2 postings, standing in for a company with 124).
+#
+# 3 rather than something larger because the two error rates are not
+# symmetrical. A false positive costs one look at a careers page; a false
+# negative is a company delivering nothing for months while every number about
+# it reads as healthy. The corpus this was set on has 166 of 368 companies at
+# 1-4 Israel-relevant postings, but those are POST-filter counts - a raw board
+# of 3 or fewer is a different and much rarer thing, and on 2026-08-23 it
+# picked out 7 companies of 367, six of which were real findings.
+BOARD_TOO_SMALL = 3
+
 
 def _parse_dt(raw) -> datetime | None:
     """An ISO timestamp from state, or None. Never raises: a hand-edited or
@@ -161,6 +174,10 @@ class CompanyHealth:
 
     last_success: datetime | None = None
     last_count: int = 0
+    # How many postings the whole board held, before the Israel filter. None
+    # for a company whose fetcher does not report it (html, playwright) and for
+    # every state file written before 2026-08-23. See models.JobList.
+    last_board_total: int | None = None
     consecutive_failures: int = 0
     expected_min_jobs: int = 0
     zero_is_plausible: bool = False
@@ -207,6 +224,41 @@ class CompanyHealth:
         if self.consecutive_failures or not self.seeded:
             return 0
         return max(0, self.last_count - self.tracked)
+
+    @property
+    def implausible_board(self) -> bool:
+        """The board is too small to be this company's real careers board.
+
+        *** The detector the corpus audit of 2026-08-23 was built out of ***
+
+        Every other check here reads a post-filter number, and post-filter
+        numbers cannot tell a real zero from a wrong endpoint - both are 0,
+        both are stable, both look healthy. `wiz` sat in the repo for eleven
+        days pointed at Greenhouse board_token 'wizprivate', which answers HTTP
+        200 with two postings on it; the company hires on 'wizinc', which had
+        124 postings and 22 Israel-relevant. A test asserted the mistake was a
+        fact about the company.
+
+        The raw board size is what separates them, and the threshold is
+        deliberately crude. This is not "is this board small" - plenty of real
+        Israeli boards carry three postings. It is "is this board so small that
+        it cannot be a company's whole careers page", which at BOARD_TOO_SMALL
+        is a claim about the endpoint rather than about hiring. It is a
+        watchlist, not a verdict: a genuinely tiny startup will appear here and
+        the answer is to look once and move on."""
+        return (self.seeded and self.last_board_total is not None
+                and self.last_board_total <= BOARD_TOO_SMALL)
+
+    @property
+    def board_yield(self) -> float | None:
+        """Israel-relevant postings as a fraction of the whole board.
+
+        None when the board size is unknown or empty. Low is not wrong - a
+        global ATS with one Israeli office legitimately sits near zero - which
+        is why this is reported as a distribution and never alerted on."""
+        if not self.last_board_total:
+            return None
+        return self.last_count / self.last_board_total
 
     @property
     def below_floor(self) -> bool:
@@ -437,6 +489,8 @@ def collect(profiles_dir: Path | None = None,
 
         health.last_success = _parse_dt(stored.get("last_success"))
         health.last_count = int(stored.get("last_count") or 0)
+        raw_board = stored.get("last_board_total")
+        health.last_board_total = None if raw_board is None else int(raw_board)
         health.consecutive_failures = int(stored.get("consecutive_failures") or 0)
         jobs = stored.get("jobs") or {}
         _classify_titles(jobs, health)
@@ -515,12 +569,19 @@ def format_text(report: CorpusReport, limit: int = 25) -> str:
     lines.append("")
 
     if empty:
-        lines.append("  Zero tracked postings:")
+        lines.append("  Zero tracked postings (board = the whole board, "
+                     "before the Israel filter):")
         lines += _listing(sorted(empty, key=lambda c: c.slug), limit,
-                          lambda c: "    %-28s %-16s last_count=%d%s"
-                          % (c.slug, c.platform, c.last_count,
+                          lambda c: "    %-28s %-16s board=%-6s%s"
+                          % (c.slug, c.platform,
+                             "?" if c.last_board_total is None
+                             else c.last_board_total,
                              "" if c.zero_is_plausible
                              else "  [zero_is_plausible=false]"))
+        lines.append("      board=0 means the endpoint returns nothing at "
+                     "all - suspect the profile, not the hiring.")
+        lines.append("      board=? means this fetcher does not report a "
+                     "board size, or the company has not run since it began to.")
         lines.append("")
     if off_family:
         lines.append("  Tracking postings, none deliverable:")
@@ -535,6 +596,41 @@ def format_text(report: CorpusReport, limit: int = 25) -> str:
     if unseeded:
         lines.append("  Never seeded: %s"
                      % ", ".join(c.slug for c in unseeded[:limit]))
+    lines.append("")
+
+    # --- 1b. the board itself ---------------------------------------------
+    suspicious_boards = sorted(
+        (c for c in watched if c.implausible_board),
+        key=lambda c: (c.last_board_total, c.slug))
+    lines += ["-" * 74,
+              "1b. IMPLAUSIBLY SMALL BOARDS - is this the right endpoint?",
+              "-" * 74,
+              "The only check here that reads a PRE-filter number. Every other",
+              "one compares a company against itself, and a company pointed at",
+              "the wrong board is perfectly consistent with itself forever.",
+              ""]
+    if suspicious_boards:
+        lines.append("%d enabled companies fetch a board of %d postings or "
+                     "fewer:" % (len(suspicious_boards), BOARD_TOO_SMALL))
+        lines += _listing(suspicious_boards, limit,
+                          lambda c: "    %-28s %-16s board=%-4d israel=%d"
+                          % (c.slug, c.platform, c.last_board_total,
+                             c.last_count))
+        lines.append("")
+        lines.append("    A real answer for a small startup and a wrong")
+        lines.append("    endpoint for anyone else. Check the careers page.")
+    else:
+        lines.append("  None. Every company's board is large enough to be a")
+        lines.append("  real careers board.")
+    unmeasured = [c for c in watched
+                  if c.seeded and c.last_board_total is None]
+    if unmeasured:
+        lines.append("")
+        lines.append("  %d companies report no board size and cannot be "
+                     "checked this way: %s"
+                     % (len(unmeasured),
+                        ", ".join(c.slug for c in unmeasured[:8])
+                        + (" …" if len(unmeasured) > 8 else "")))
     lines.append("")
 
     # --- 2. duplicate ids --------------------------------------------------
@@ -759,6 +855,11 @@ def format_telegram(report: CorpusReport) -> str:
         "",
         "🔀 מזהים כפולים \\(משרות שנעלמות\\): %d"
         % sum(c.id_collisions for c in watched),
+        # The only pre-filter number in the summary, and the one that answers
+        # "are we even looking at the right page" - see
+        # CompanyHealth.implausible_board.
+        "\U0001F50E לוחות קטנים מדי \\(אולי כתובת שגויה\\): %d"
+        % len([c for c in watched if c.implausible_board]),
         "⚠️ כשלים רצופים: %d" % len(failing),
         "\U0001F4C9 מתחת לרצפת המשרות: %d" % len(below),
         "\U0001F553 ללא שליפה מוצלחת מעל %dh: %d"
