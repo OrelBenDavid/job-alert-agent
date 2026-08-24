@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T15:47:25.902035+00:00",
-  "last_count": 134,
+  "last_success": "2026-08-24T18:51:26.023884+00:00",
+  "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -359,10 +359,6 @@
       "title": "Senior Hardware Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
     },
-    "3f7e3421-7963-4d3a-8573-2fb29f8dbade": {
-      "title": "Senior Microsoft Sysadmin",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "6f95360f-6d69-4c40-a0fe-3e8f3a1d6f5c": {
       "title": "Senior Microsoft Sysadmin",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -540,5 +536,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 152
 }
