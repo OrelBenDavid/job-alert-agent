@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T09:56:22.861920+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-24T13:05:04.470996+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "25.F62": {
@@ -42,6 +42,10 @@
     "63.D6B": {
       "title": "Product Manager, Product-Led Growth",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "1F.078": {
+      "title": "Senior Enterprise Account Executive - EMEA Tech",
+      "first_seen": "2026-08-24T13:05:04.470996+00:00"
     },
     "90.F6A": {
       "title": "Senior Performance Marketing Manager",

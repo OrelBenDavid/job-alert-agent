@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T09:56:22.921042+00:00",
-  "last_count": 40,
+  "last_success": "2026-08-24T13:05:04.511358+00:00",
+  "last_count": 42,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -27,9 +27,17 @@
       "title": "Embedded Software Engineer",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
+    "7C.C62": {
+      "title": "Embedded Software Engineer",
+      "first_seen": "2026-08-24T13:05:04.511358+00:00"
+    },
     "41.F6E": {
       "title": "Executive Assistant",
       "first_seen": "2026-08-23T12:54:50.011630+00:00"
+    },
+    "0E.860": {
+      "title": "Experienced ATE HW Engineer",
+      "first_seen": "2026-08-24T13:05:04.511358+00:00"
     },
     "32.E6F": {
       "title": "Failure Analysis HW Engineer​",
@@ -164,5 +172,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 113
+  "last_board_total": 116
 }

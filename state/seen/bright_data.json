@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-24T09:56:22.822827+00:00",
+  "last_success": "2026-08-24T13:05:04.434709+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,16 +19,16 @@
       "title": "Experienced JS Back-End Developer - Visual Challenge Solving Platform",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "6C.C64": {
-      "title": "Financial Fraud Analyst",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "A5.C6D": {
       "title": "FP&A",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "AD.C63": {
       "title": "Junior FP&A",
+      "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "6C.C64": {
+      "title": "Payment Risk Analyst",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "8E.07C": {

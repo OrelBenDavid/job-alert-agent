@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T09:56:22.874385+00:00",
-  "last_count": 133,
+  "last_success": "2026-08-24T13:05:04.480071+00:00",
+  "last_count": 134,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -114,10 +114,6 @@
     "ded3b18f-e023-491a-b1d2-b029961ea7eb": {
       "title": "DevOps & Infrastructure Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "d3b29abd-e0db-41e7-b476-048404776e3d": {
-      "title": "Director of Procurement & Operations – MENTEE",
-      "first_seen": "2026-08-23T09:35:14.590635+00:00"
     },
     "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
       "title": "Embedded C++ Software Developer",
@@ -447,6 +443,14 @@
       "title": "Senior Thermal Engineer",
       "first_seen": "2026-08-24T07:12:36.749462+00:00"
     },
+    "818b9690-8c09-4be1-b680-43084a1324a0": {
+      "title": "Senior Thermal Engineer",
+      "first_seen": "2026-08-24T13:05:04.480071+00:00"
+    },
+    "da38c082-c92f-4287-8d87-ffdb1ad6696f": {
+      "title": "Senior Thermal Engineer",
+      "first_seen": "2026-08-24T13:05:04.480071+00:00"
+    },
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -536,5 +540,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 152
+  "last_board_total": 153
 }

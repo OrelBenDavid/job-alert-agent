@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-24T09:56:22.900250+00:00",
-  "last_count": 8,
+  "last_success": "2026-08-24T13:05:04.491623+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
+    "aae3fb69-b696-4925-a7fe-5ca6b3aee726": {
+      "title": "Automation Tech Lead",
+      "first_seen": "2026-08-24T13:05:04.491623+00:00"
+    },
     "e615e732-e7ea-406c-938a-4632b189b7ba": {
       "title": "Platform Director",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
@@ -36,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 37
 }

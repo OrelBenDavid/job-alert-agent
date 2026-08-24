@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T09:56:22.830797+00:00",
-  "last_count": 55,
+  "last_success": "2026-08-24T13:05:04.440109+00:00",
+  "last_count": 56,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -70,6 +70,10 @@
     "E4.566": {
       "title": "Embedded Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "2F.07E": {
+      "title": "Forward Deployed Engineer",
+      "first_seen": "2026-08-24T13:05:04.440109+00:00"
     },
     "54.56D": {
       "title": "FPGA Engineer",
@@ -224,5 +228,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 144
+  "last_board_total": 145
 }
