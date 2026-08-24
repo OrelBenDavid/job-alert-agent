@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-24T04:00:23.155687+00:00",
+  "last_success": "2026-08-24T07:12:36.721025+00:00",
   "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
+    "A5.D67": {
+      "title": "Data Analyst- Tableau",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
     "1F.A5E": {
       "title": "Data Science Team Lead",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
@@ -61,10 +65,6 @@
     },
     "40.F62": {
       "title": "Support Engineer",
-      "first_seen": "2026-08-13T11:24:25.510473+00:00"
-    },
-    "A5.D67": {
-      "title": "Tableau Expert",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     }
   },

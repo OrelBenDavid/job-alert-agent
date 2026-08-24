@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T04:00:23.140989+00:00",
-  "last_count": 54,
+  "last_success": "2026-08-24T07:12:36.708156+00:00",
+  "last_count": 55,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -46,6 +46,10 @@
     "5F.F62": {
       "title": "Cyber Security Analyst Lead (SOC/SecOps)",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "BE.076": {
+      "title": "Data Architect Lead",
+      "first_seen": "2026-08-24T07:12:36.708156+00:00"
     },
     "97.76F": {
       "title": "Data Engineer",
@@ -220,5 +224,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 141
+  "last_board_total": 142
 }
