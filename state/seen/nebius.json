@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.483495+00:00",
-  "last_count": 72,
+  "last_success": "2026-08-24T15:47:25.906003+00:00",
+  "last_count": 73,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -174,6 +174,10 @@
     "4797092101": {
       "title": "Senior ML Solutions Architect - Token Factory",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4955928101": {
+      "title": "Senior Product Designer - Compute, Nebius Console",
+      "first_seen": "2026-08-24T15:47:25.906003+00:00"
     },
     "4766823101": {
       "title": "Senior Product Designer - Observability & Data Visualization",

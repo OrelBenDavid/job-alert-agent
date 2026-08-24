@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.456600+00:00",
-  "last_count": 14,
+  "last_success": "2026-08-24T15:47:25.864916+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -39,10 +39,6 @@
       "title": "Hardware Team Lead",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
-    "6D.54E": {
-      "title": "Production Employee",
-      "first_seen": "2026-08-13T11:24:19.185292+00:00"
-    },
     "4E.F66": {
       "title": "Senior Product Manager - Field Operations",
       "first_seen": "2026-08-15T18:40:29.022214+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T12:34:58.624563+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 51
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.489234+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-24T15:47:25.915372+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "7787982003": {
@@ -38,11 +38,7 @@
     "7712850003": {
       "title": "Software Engineer- Data Platform",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
-    },
-    "7812750003": {
-      "title": "Systems Administrator",
-      "first_seen": "2026-08-13T11:24:34.297495+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 9
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.440109+00:00",
-  "last_count": 56,
+  "last_success": "2026-08-24T15:47:25.849026+00:00",
+  "last_count": 57,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -94,6 +94,10 @@
     "13.F49": {
       "title": "IT Solutions Architect",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "5F.074": {
+      "title": "IT Systems Engineer",
+      "first_seen": "2026-08-24T15:47:25.849026+00:00"
     },
     "D6.D6C": {
       "title": "Junior Electronics Engineer",
@@ -228,5 +232,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 145
+  "last_board_total": 146
 }

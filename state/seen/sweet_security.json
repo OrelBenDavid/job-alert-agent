@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-24T13:05:04.516429+00:00",
+  "last_success": "2026-08-24T15:47:25.941329+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,9 +15,9 @@
       "title": "Product Manager",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
-    "4944262101": {
+    "4953896101": {
       "title": "Security Analyst",
-      "first_seen": "2026-08-17T12:58:53.737875+00:00"
+      "first_seen": "2026-08-24T15:47:25.941329+00:00"
     },
     "4934378101": {
       "title": "Security Researcher",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.489771+00:00",
-  "last_count": 154,
+  "last_success": "2026-08-24T15:47:25.916126+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021408": {
@@ -403,10 +403,6 @@
       "title": "Senior Staff Software Engineer (EPM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018197": {
-      "title": "Senior Staff Cloud Engineer - ARS Team (Idira)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-017964": {
       "title": "Principal Technical Program Manager",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -620,5 +616,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 156
+  "last_board_total": 155
 }

@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-24T13:05:04.526562+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-24T15:47:25.960155+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "8088630": {
       "title": "Head of Support Israel, CXI International Operations",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "8152804": {
+      "title": "Restaurant Development Specialist - North Area - Maternity Leave Replacement",
+      "first_seen": "2026-08-24T15:47:25.960155+00:00"
     },
     "8119266": {
       "title": "Retail Enterprise Development Specialist - ML Replacement",
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-23T18:39:51.236643+00:00"
     }
   },
-  "last_board_total": 236
+  "last_board_total": 237
 }

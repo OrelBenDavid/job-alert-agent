@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T13:05:04.488161+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-24T15:47:25.913791+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "69.E61": {
@@ -25,14 +25,6 @@
     },
     "F3.C6F": {
       "title": "Future Opportunities",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "C1.D63": {
-      "title": "Global Production Manager",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "C1.D63-69.607": {
-      "title": "Global Production Manager",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "19.B6E": {
@@ -84,5 +76,5 @@
       "first_seen": "2026-08-23T15:30:12.098094+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 18
 }
