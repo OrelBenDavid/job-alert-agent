@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T07:12:36.753683+00:00",
-  "last_count": 72,
+  "last_success": "2026-08-24T09:56:22.883207+00:00",
+  "last_count": 73,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -138,6 +138,10 @@
     "4784080101": {
       "title": "Regional Asset Manager",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4590161101": {
+      "title": "Security Analyst- Tier 2",
+      "first_seen": "2026-08-24T09:56:22.883207+00:00"
     },
     "4942986101": {
       "title": "Security Analyst - Tier 3",
@@ -292,5 +296,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 358
+  "last_board_total": 359
 }

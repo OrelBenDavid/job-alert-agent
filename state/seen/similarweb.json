@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T07:12:36.788658+00:00",
-  "last_count": 26,
+  "last_success": "2026-08-24T09:56:22.918238+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -38,6 +38,10 @@
     "8084086": {
       "title": "Director - Corporate Development & M&A",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8152675": {
+      "title": "Director of Revenue Analytics",
+      "first_seen": "2026-08-24T09:56:22.918238+00:00"
     },
     "7785555": {
       "title": "Market Intelligence Representative (MIR) | French Speaker",
@@ -99,6 +103,10 @@
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     },
+    "8152630": {
+      "title": "Senior Full Stack Developer",
+      "first_seen": "2026-08-24T09:56:22.918238+00:00"
+    },
     "7854902": {
       "title": "Senior Marketing Operations Manager",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
@@ -108,5 +116,5 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
   },
-  "last_board_total": 66
+  "last_board_total": 68
 }

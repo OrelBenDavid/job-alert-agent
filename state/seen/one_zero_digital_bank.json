@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T07:12:36.758895+00:00",
-  "last_count": 11,
+  "last_success": "2026-08-24T09:56:22.894907+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "CE.B6B": {
@@ -9,10 +9,6 @@
     },
     "B3.968": {
       "title": "AI Transformation Lead",
-      "first_seen": "2026-08-13T11:30:57.418112+00:00"
-    },
-    "63.E6F": {
-      "title": "Assistant Controller",
       "first_seen": "2026-08-13T11:30:57.418112+00:00"
     },
     "64.F68": {
@@ -48,5 +44,5 @@
       "first_seen": "2026-08-13T11:30:57.418112+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

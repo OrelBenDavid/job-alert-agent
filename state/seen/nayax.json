@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-24T07:12:36.753206+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-24T09:56:22.878489+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "8D.F65": {
       "title": "Development Team Lead - Nayax Capital",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "BE.A62": {
+      "title": "Global Risk Officer",
+      "first_seen": "2026-08-24T09:56:22.878489+00:00"
     },
     "7A.C60": {
       "title": "Inside Sales Representative- Polish Speaker",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

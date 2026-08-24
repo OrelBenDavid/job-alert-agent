@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T07:12:36.749462+00:00",
-  "last_count": 135,
+  "last_success": "2026-08-24T09:56:22.874385+00:00",
+  "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -13,10 +13,6 @@
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "331ce77a-8179-444a-924c-189f131afd50": {
-      "title": "Algorithm Developer for Radar/Lidar Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "c14fbc4f-8047-421b-968f-a3b5bd2c5146": {
@@ -44,7 +40,7 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "566a70d5-72c1-46fb-8bce-3795ecb8162a": {
-      "title": "Assistant Controller - Temporary",
+      "title": "Assistant Controller - Temporary Position",
       "first_seen": "2026-08-20T06:58:29.981874+00:00"
     },
     "9e98aa76-c451-4caa-91e6-b47755bb4921": {
@@ -75,10 +71,6 @@
       "title": "C++ Software Engineer - Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "ed4a7f88-cb21-486a-9bf4-1c2ddf4ceb58": {
-      "title": "Computer Vision & Deep Learning Algorithms Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "8e12e6c1-44a9-4eb7-b041-9f212505da00": {
       "title": "Corporate Controller",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
@@ -106,10 +98,6 @@
     "56a4af6f-946b-4786-89b1-92110e53f6be": {
       "title": "Data Platform Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
-      "title": "Deep Learning Algorithm Engineer - REM Semantics",
-      "first_seen": "2026-08-12T10:15:21.611278+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -182,6 +170,10 @@
     "7fd694a5-5755-4405-9489-8de1a6eb8f57": {
       "title": "Experienced Data Analyst",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "48df21e2-84dd-42e7-9d55-f4121d444df8": {
+      "title": "Experienced Deep Learning Algorithm Developer - Road Team",
+      "first_seen": "2026-08-24T09:56:22.874385+00:00"
     },
     "de4739b8-eda9-4262-ae5b-c3ee15d86a3c": {
       "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
@@ -544,5 +536,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 154
+  "last_board_total": 152
 }

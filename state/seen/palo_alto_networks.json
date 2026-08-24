@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-08-24T07:12:36.762427+00:00",
-  "last_count": 149,
+  "last_success": "2026-08-24T09:56:22.898233+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-016270": {
+      "title": "Engineering Manager - SaaS Identity Security",
+      "first_seen": "2026-08-24T09:56:22.898233+00:00"
+    },
+    "JR-019008": {
+      "title": "Major Account Manager - Private Majors Enterprise",
+      "first_seen": "2026-08-24T09:56:22.898233+00:00"
+    },
+    "JR-021300": {
+      "title": "Director, Product Management (IDIRA, Discovery, Risk & Threat Platform)",
+      "first_seen": "2026-08-24T09:56:22.898233+00:00"
+    },
+    "JR-021161": {
+      "title": "Director Product Operations (Cortex)",
+      "first_seen": "2026-08-24T09:56:22.898233+00:00"
+    },
     "JR-018854": {
       "title": "Principal DevOps Engineer (DevOps Platform)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -600,5 +616,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 151
+  "last_board_total": 155
 }

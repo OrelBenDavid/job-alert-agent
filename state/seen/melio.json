@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T07:12:36.745732+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-24T09:56:22.870425+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "7748138003": {
@@ -15,14 +15,6 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
-    "7820287003": {
-      "title": "Senior Data Analyst",
-      "first_seen": "2026-08-23T12:54:49.971999+00:00"
-    },
-    "7792385003": {
-      "title": "Senior Data Analyst",
-      "first_seen": "2026-08-23T12:54:49.971999+00:00"
-    },
     "7765818003": {
       "title": "Senior Data Scientist",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
@@ -32,5 +24,5 @@
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }
