@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T03:54:26.674910+00:00",
-  "last_count": 40,
+  "last_success": "2026-08-25T06:59:42.894122+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -22,6 +22,10 @@
     "4890572101": {
       "title": "AI Security - Software Team Lead, Coding Agents",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4784152101": {
+      "title": "Applied AI Researcher",
+      "first_seen": "2026-08-25T06:59:42.894122+00:00"
     },
     "4937879101": {
       "title": "Automation Engineer",
@@ -164,5 +168,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 113
+  "last_board_total": 114
 }

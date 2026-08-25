@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T03:54:26.797034+00:00",
-  "last_count": 152,
+  "last_success": "2026-08-25T06:59:42.964415+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021408": {
@@ -57,14 +57,6 @@
     },
     "JR-021236": {
       "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
-      "first_seen": "2026-08-20T21:34:57.979231+00:00"
-    },
-    "JR-021385": {
-      "title": "Senior Angular Frontend Engineer - Email Security (Cortex)",
-      "first_seen": "2026-08-20T21:34:57.979231+00:00"
-    },
-    "JR-016699": {
-      "title": "Staff Angular Frontend Engineer - Email Security (Cortex)",
       "first_seen": "2026-08-20T21:34:57.979231+00:00"
     },
     "JR-018098": {
@@ -612,5 +604,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 154
+  "last_board_total": 152
 }

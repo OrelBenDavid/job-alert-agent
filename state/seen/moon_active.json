@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T03:54:26.792324+00:00",
-  "last_count": 25,
+  "last_success": "2026-08-25T06:59:42.951970+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
@@ -98,11 +98,7 @@
     "c1b1b08c-eb05-46d1-bc85-a1d6098e8599": {
       "title": "Technical Operations Manager",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
-    },
-    "d9438ecd-3caf-4705-b308-fc2f55c646de": {
-      "title": "Game Engineer",
-      "first_seen": "2026-08-23T09:01:22.335333+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }
