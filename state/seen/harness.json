@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-24T21:36:58.247492+00:00",
-  "last_count": 10,
+  "last_success": "2026-08-25T01:43:33.913522+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "5198641007": {
@@ -9,10 +9,6 @@
     },
     "5187599007": {
       "title": "Customer Architect (Forward Deployed Engineer)",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
-    "5156206007": {
-      "title": "Customer Engineer I",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     },
     "5075790007": {
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     }
   },
-  "last_board_total": 84
+  "last_board_total": 83
 }
