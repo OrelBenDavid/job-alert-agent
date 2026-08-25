@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-25T15:52:15.718106+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-25T18:50:07.781532+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
+    "00.17C": {
+      "title": "Automation Engineer",
+      "first_seen": "2026-08-25T18:50:07.781532+00:00"
+    },
     "FA.E52": {
       "title": "Backend Software Engineer",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 27
 }

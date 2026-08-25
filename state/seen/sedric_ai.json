@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-08-25T15:52:15.763547+00:00",
-  "last_count": 1,
+  "last_success": "2026-08-25T18:50:07.844799+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
+    "6D.F63": {
+      "title": "AI Architect (hands on)",
+      "first_seen": "2026-08-25T18:50:07.844799+00:00"
+    },
     "F4.F65": {
       "title": "Software Engineering Team Lead",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 4
 }
