@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.882944+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-25T09:43:09.021043+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
@@ -55,6 +55,10 @@
       "title": "Senior Finance Business Partner",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
     },
+    "8458281002": {
+      "title": "Senior Product Manager - Analytics",
+      "first_seen": "2026-08-25T09:43:09.021043+00:00"
+    },
     "8535473002": {
       "title": "Senior Support Engineer",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 47
 }

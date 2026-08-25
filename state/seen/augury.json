@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.886264+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-25T09:43:09.022754+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8549883002": {
@@ -18,7 +18,11 @@
     "8542462002": {
       "title": "Experienced AI Software Engineer",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "8745214002": {
+      "title": "R&D Mechanical Engineer",
+      "first_seen": "2026-08-25T09:43:09.022754+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }

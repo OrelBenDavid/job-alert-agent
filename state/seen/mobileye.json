@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.951042+00:00",
-  "last_count": 131,
+  "last_success": "2026-08-25T09:43:09.056470+00:00",
+  "last_count": 132,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -42,6 +42,10 @@
     "566a70d5-72c1-46fb-8bce-3795ecb8162a": {
       "title": "Assistant Controller - Temporary Position",
       "first_seen": "2026-08-20T06:58:29.981874+00:00"
+    },
+    "d10617da-c4fb-4470-9347-07ae6981cf0c": {
+      "title": "AV Perception Product Manager",
+      "first_seen": "2026-08-25T09:43:09.056470+00:00"
     },
     "9e98aa76-c451-4caa-91e6-b47755bb4921": {
       "title": "AV Perception Product Manager - Temporary Position (7 Months replacement)",
@@ -528,5 +532,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 150
+  "last_board_total": 151
 }

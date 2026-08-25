@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.880761+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-25T09:43:09.019087+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "AA.264": {
@@ -22,6 +22,10 @@
     "19.866": {
       "title": "Escalation Engineer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "5F.07D": {
+      "title": "International Inside Sales Representative",
+      "first_seen": "2026-08-25T09:43:09.019087+00:00"
     },
     "E0.65E": {
       "title": "Software Engineering Team Lead",

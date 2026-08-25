@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.999948+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-25T09:43:10.860069+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "c8e67100-af5c-4e91-b147-952784abb8c3": {
@@ -35,10 +35,14 @@
       "title": "Senior Professional Services Consultant",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
+    "523740d8-98cd-43a2-8c2a-a94fa1c24705": {
+      "title": "Senior Software Engineer - Big Data Platform",
+      "first_seen": "2026-08-25T09:43:10.860069+00:00"
+    },
     "9923a954-7584-4b5d-947b-f175d6b06940": {
       "title": "Technical Support Engineer",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     }
   },
-  "last_board_total": 39
+  "last_board_total": 40
 }

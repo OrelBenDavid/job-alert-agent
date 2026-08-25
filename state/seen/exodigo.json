@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T06:59:42.918847+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-25T09:43:09.039476+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -19,20 +19,12 @@
       "title": "Engineering Map Lead",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
-    "FC.070": {
-      "title": "Executive Assistant to the CEO",
-      "first_seen": "2026-08-23T12:54:49.948405+00:00"
-    },
     "8B.567": {
       "title": "Experiment Field Operator",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
     "DF.E68": {
       "title": "Field Operations - Global Team",
-      "first_seen": "2026-08-13T11:24:19.185292+00:00"
-    },
-    "85.549": {
-      "title": "Field Operations Employee",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
     "D0.E6E": {
@@ -56,5 +48,5 @@
       "first_seen": "2026-08-13T12:34:58.624563+00:00"
     }
   },
-  "last_board_total": 51
+  "last_board_total": 49
 }
