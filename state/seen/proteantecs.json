@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T09:43:09.244905+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-25T13:01:52.108028+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "C0.662": {
@@ -19,6 +19,10 @@
       "title": "DevOps Team Lead",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
+    "DF.074": {
+      "title": "Junior VLSI Verification Engineer",
+      "first_seen": "2026-08-25T13:01:52.108028+00:00"
+    },
     "05.F69": {
       "title": "Logic Design Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
@@ -30,7 +34,11 @@
     "12.D6E": {
       "title": "Senior Product Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "DF.073": {
+      "title": "Senior VLSI Verification Engineer",
+      "first_seen": "2026-08-25T13:01:52.108028+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 16
 }

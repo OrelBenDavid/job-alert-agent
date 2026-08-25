@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-25T09:43:09.056470+00:00",
+  "last_success": "2026-08-25T13:01:52.093241+00:00",
   "last_count": 132,
   "consecutive_failures": 0,
   "jobs": {
@@ -226,10 +226,6 @@
     "15ecbd22-fd82-431c-93ff-2ece2caf808e": {
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
-    },
-    "5b14b84b-0fe5-4628-a107-7c77a82d5c4f": {
-      "title": "Field Engineer in Braunschweig (Germany) - Relocation",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "113794c0-7400-406a-9675-ec7f2f8c3881": {
       "title": "Field Engineer in India (Chennai) - Relocation",
@@ -510,6 +506,10 @@
     "3d955240-fd2d-419d-8035-bf647c3da076": {
       "title": "Technical Product Strategy Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-08-25T13:01:52.093241+00:00"
     },
     "7b663512-d190-4177-a5cc-a9020960a1b7": {
       "title": "Technical Project Manager",

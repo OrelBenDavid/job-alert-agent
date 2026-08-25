@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-25T09:43:09.244679+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-25T13:01:52.107832+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
-    "CB.D60": {
-      "title": "Data Operations Team Leader",
-      "first_seen": "2026-08-13T11:24:34.318859+00:00"
-    },
     "81.D60": {
       "title": "Director, Sales EMEA",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

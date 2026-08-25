@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T09:43:09.342700+00:00",
-  "last_count": 19,
+  "last_success": "2026-08-25T13:01:52.113713+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -26,6 +26,10 @@
     "EB.F61": {
       "title": "Director of Brand Strategy",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "23.E6B": {
+      "title": "Failure Analysis and Quality Control Team Leader",
+      "first_seen": "2026-08-25T13:01:52.113713+00:00"
     },
     "CA.A67": {
       "title": "FPGA Design Engineer",
@@ -80,5 +84,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 51
 }

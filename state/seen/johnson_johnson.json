@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-25T09:43:09.049647+00:00",
-  "last_count": 21,
+  "last_success": "2026-08-25T13:01:51.700645+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
+    "R-095061": {
+      "title": "Pharmacovigilance",
+      "first_seen": "2026-08-25T13:01:51.700645+00:00"
+    },
     "R-091373": {
       "title": "Digital NPD Quality Manager",
       "first_seen": "2026-08-25T09:43:09.049647+00:00"
@@ -88,5 +92,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

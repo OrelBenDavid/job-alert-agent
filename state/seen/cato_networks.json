@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-08-25T06:59:42.894122+00:00",
-  "last_count": 41,
-  "consecutive_failures": 1,
+  "last_success": "2026-08-25T13:01:51.656907+00:00",
+  "last_count": 40,
+  "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
       "title": "Agentic AI Engineer",
@@ -55,16 +55,16 @@
       "title": "Global HR Operations & HRIS Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "4953528101": {
+      "title": "Junior Software Engineer – Cato Apps Team (AI)",
+      "first_seen": "2026-08-25T13:01:51.656907+00:00"
+    },
     "4897189101": {
       "title": "Lead Security Researcher - AI Threat Intelligence",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4352164101": {
       "title": "macOS/iOS SW Engineer",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4879652101": {
-      "title": "Marketing Operations Manager- (Temporary position for Maternity Leave)",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4784765101": {
@@ -91,10 +91,6 @@
       "title": "Product Manager - Network",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4860712101": {
-      "title": "QA Automation Engineer - Information Systems",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "4850403101": {
       "title": "Research Engineer (Network)",
       "first_seen": "2026-08-23T12:54:49.933003+00:00"
@@ -111,11 +107,11 @@
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4939624101": {
+    "4888366101": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4888366101": {
+    "4939624101": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
@@ -168,5 +164,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 114
+  "last_board_total": 115
 }

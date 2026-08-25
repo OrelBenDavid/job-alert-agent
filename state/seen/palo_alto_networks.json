@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-25T09:43:09.199879+00:00",
+  "last_success": "2026-08-25T13:01:52.102414+00:00",
   "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-019634": {
+      "title": "Principal/ Senior Backend Engineer (KSPM)",
+      "first_seen": "2026-08-25T13:01:52.102414+00:00"
+    },
     "JR-018721": {
       "title": "Senior Product Manager - Agentic Endpoint Security (Cortex)",
       "first_seen": "2026-08-25T09:43:09.199879+00:00"
@@ -577,10 +581,6 @@
     },
     "JR-014484": {
       "title": "Sr Product Manager - Cortex cloud ASPM",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-015162": {
-      "title": "Senior/Principal Backend Engineer (Cortex XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-016673": {

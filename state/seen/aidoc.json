@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-25T09:43:09.018587+00:00",
+  "last_success": "2026-08-25T13:01:51.645856+00:00",
   "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
+    "4876551101": {
+      "title": "AI Algorithm Tech Lead",
+      "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
     "4871564101": {
       "title": "AI Data Analyst",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -61,10 +65,6 @@
     },
     "4920296101": {
       "title": "SecOps Detection & Response",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
-    "4876551101": {
-      "title": "Senior AI Algorithm Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4904239101": {
