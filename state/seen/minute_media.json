@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-25T01:43:33.926555+00:00",
+  "last_success": "2026-08-25T03:54:26.791032+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     },
     "C3.F6D": {
-      "title": "Video Monetization Manager",
+      "title": "Video Demand & Monetization Manager",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
