@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T13:01:51.653388+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-25T15:52:15.713726+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "F9.06C": {
@@ -10,6 +10,10 @@
     "DE.C6E": {
       "title": "Incident Response Engineer",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "EF.07B": {
+      "title": "Senior Backend Develoiper",
+      "first_seen": "2026-08-25T15:52:15.713726+00:00"
     },
     "1A.C6C": {
       "title": "Senior DevOps Infra Engineer",
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 19
 }

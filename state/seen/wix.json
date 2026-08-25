@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-25T09:43:09.016184+00:00",
-  "last_count": 25,
-  "consecutive_failures": 1,
+  "last_success": "2026-08-25T15:52:15.705941+00:00",
+  "last_count": 26,
+  "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-16e1040e-1808-502e-abad-9bec03811182-T1787651314-744000145514507": {
+      "title": "Product Designer (UX/UI) - Base44",
+      "first_seen": "2026-08-25T15:52:15.705941+00:00"
+    },
     "https://careers.wix.com/position/REF3106P-744000145034373": {
       "title": "Creative Product Marketing Manager - Base44",
       "first_seen": "2026-08-23T15:30:12.004735+00:00"

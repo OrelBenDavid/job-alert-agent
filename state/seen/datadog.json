@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-25T13:01:51.672606+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-25T15:52:15.722230+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "8025860": {
@@ -11,10 +11,14 @@
       "title": "Commercial Sales Engineer (Tel Aviv)",
       "first_seen": "2026-08-13T11:30:57.414099+00:00"
     },
+    "8146994": {
+      "title": "Customer Success Associate - Tel Aviv",
+      "first_seen": "2026-08-25T15:52:15.722230+00:00"
+    },
     "8038652": {
       "title": "Senior Software Engineer - Linux",
       "first_seen": "2026-08-13T11:30:57.414099+00:00"
     }
   },
-  "last_board_total": 455
+  "last_board_total": 453
 }
