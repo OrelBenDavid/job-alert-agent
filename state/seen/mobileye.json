@@ -1,7 +1,7 @@
 {
   "last_success": "2026-08-26T16:24:36.099225+00:00",
   "last_count": 135,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
       "title": "3D Algorithm Developer",

@@ -1,16 +1,20 @@
 {
-  "last_success": "2026-08-26T16:24:36.115668+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-26T19:56:53.556362+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
       "title": "AI Architect (hands on)",
       "first_seen": "2026-08-25T18:50:07.844799+00:00"
     },
+    "EC.077": {
+      "title": "Senior Backend Software Engineer",
+      "first_seen": "2026-08-26T19:56:53.556362+00:00"
+    },
     "F4.F65": {
       "title": "Software Engineering Team Lead",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 5
 }
