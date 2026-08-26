@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-26T03:58:24.320833+00:00",
+  "last_success": "2026-08-26T07:01:03.633292+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,15 +19,15 @@
       "title": "Global Demand Generation Senior Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
+    "01.172": {
+      "title": "Global Sales Operations Senior Manager",
+      "first_seen": "2026-08-26T07:01:03.633292+00:00"
+    },
     "5A.963": {
       "title": "Planning Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
     "24.E66": {
-      "title": "Production Planning & Scheduling",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
-    },
-    "FF.E62": {
       "title": "Production Planning & Scheduling",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T03:58:24.322993+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-26T07:01:03.635784+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "2082c495-b951-44e9-94ee-6120ddc7db68": {
@@ -10,7 +10,11 @@
     "ed16328f-3a5c-4073-a957-8cd9ef6ca6c6": {
       "title": "Regional VP Sales",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "9da2cf5f-38e6-4aa7-942e-6bd0e15cdbe8": {
+      "title": "Forward Deployed Engineer",
+      "first_seen": "2026-08-26T07:01:03.635784+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

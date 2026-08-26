@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T03:58:24.291496+00:00",
-  "last_count": 16,
+  "last_success": "2026-08-26T07:01:03.601442+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "4943620101": {
@@ -66,7 +66,11 @@
     "4654602101": {
       "title": "User Acquisition",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
+    },
+    "4747021101": {
+      "title": "VIP Account Manager",
+      "first_seen": "2026-08-26T07:01:03.601442+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }
