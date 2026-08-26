@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-26T13:07:18.661844+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-26T16:24:36.091917+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "80ed45ab-d8b3-4eb1-bb15-c01e36a2ac2d": {
-      "title": "Content and Communications Manager, Aerospace and Defense",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
     "706cd16e-0181-415e-9f27-37e2fd19f385": {
       "title": "Account Executive Defense - Israel",
       "first_seen": "2026-08-25T18:50:07.809548+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-25T18:50:07.809548+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 12
 }

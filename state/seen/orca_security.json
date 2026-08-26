@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T13:07:18.676767+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-26T16:24:36.105361+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "6111515004": {
@@ -10,7 +10,11 @@
     "5263129004": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:34.285348+00:00"
+    },
+    "6161068004": {
+      "title": "Software Engineering Team Manager",
+      "first_seen": "2026-08-26T16:24:36.105361+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

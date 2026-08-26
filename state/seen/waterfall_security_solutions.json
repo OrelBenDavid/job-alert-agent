@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T13:07:18.693598+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-26T16:24:36.127234+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8B.D68": {
@@ -11,6 +11,10 @@
       "title": "Legal Counsel",
       "first_seen": "2026-08-13T11:24:49.430840+00:00"
     },
+    "96.179": {
+      "title": "Sales Account Manager – Europe",
+      "first_seen": "2026-08-26T16:24:36.127234+00:00"
+    },
     "6E.55D": {
       "title": "Sales Associate",
       "first_seen": "2026-08-13T11:24:49.430840+00:00"
@@ -20,5 +24,5 @@
       "first_seen": "2026-08-13T11:24:49.430840+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

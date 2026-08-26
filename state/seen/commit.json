@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T13:07:18.518545+00:00",
-  "last_count": 58,
+  "last_success": "2026-08-26T16:24:36.066073+00:00",
+  "last_count": 59,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -34,6 +34,10 @@
     "50.F67": {
       "title": "Automation Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "96.173": {
+      "title": "Backend Engineer (Go / Java)",
+      "first_seen": "2026-08-26T16:24:36.066073+00:00"
     },
     "96.D65": {
       "title": "Board Design Engineer",
@@ -236,5 +240,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 154
 }

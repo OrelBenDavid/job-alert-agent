@@ -1,11 +1,23 @@
 {
-  "last_success": "2026-08-26T13:07:18.693991+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-26T16:24:36.127788+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "CF.078": {
+      "title": "Applied AI Engineer",
+      "first_seen": "2026-08-26T16:24:36.127788+00:00"
+    },
     "B9.F66": {
       "title": "Controller",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "BF.078": {
+      "title": "Product Manager - Core Application",
+      "first_seen": "2026-08-26T16:24:36.127788+00:00"
+    },
+    "CF.071": {
+      "title": "Product Operations Manager",
+      "first_seen": "2026-08-26T16:24:36.127788+00:00"
     },
     "AE.F6B": {
       "title": "Sales Director",
@@ -16,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 18
 }
