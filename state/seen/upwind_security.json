@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.630252+00:00",
-  "last_count": 16,
+  "last_success": "2026-08-26T09:51:33.874132+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "4C.C69": {
@@ -43,6 +43,10 @@
       "title": "Senior Vulnerability Researcher",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     },
+    "16.86B": {
+      "title": "Software Engineer, Platforms",
+      "first_seen": "2026-08-26T09:51:33.874132+00:00"
+    },
     "7F.F61": {
       "title": "Talent Network Builder",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 51
 }

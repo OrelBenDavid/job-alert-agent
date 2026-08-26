@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.621750+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-26T09:51:33.870218+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "B2.36C": {
@@ -14,6 +14,10 @@
     "C6.D6F": {
       "title": "Machine Learning Engineer",
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
+    },
+    "F2.17E": {
+      "title": "Program Manager",
+      "first_seen": "2026-08-26T09:51:33.870218+00:00"
     },
     "32.A60": {
       "title": "Security Engineer",
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 38
 }

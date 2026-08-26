@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.649384+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-26T09:51:33.881219+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "DF.665": {
@@ -39,10 +39,6 @@
       "title": "Senior Guidance Engineer",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     },
-    "B6.D67": {
-      "title": "Senior Program Manager",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
     "42.F6D": {
       "title": "SOX Manager",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

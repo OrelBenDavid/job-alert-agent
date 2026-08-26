@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.614647+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-26T09:51:33.866893+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "7726889003": {
@@ -43,6 +43,10 @@
       "title": "Staff Endpoint Software Engineer, Prompt (Python & OS Internals)",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
     },
+    "7809111003": {
+      "title": "Staff Product Manager - Asset Inventory",
+      "first_seen": "2026-08-26T09:51:33.866893+00:00"
+    },
     "7843276003": {
       "title": "Staff Product Manager -  Prompt Security",
       "first_seen": "2026-08-25T06:59:42.981381+00:00"
@@ -56,5 +60,5 @@
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
     }
   },
-  "last_board_total": 216
+  "last_board_total": 217
 }

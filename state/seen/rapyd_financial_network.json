@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.605548+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-26T09:51:33.862998+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "D5.F6D": {
@@ -22,10 +22,6 @@
     "AC.D6A": {
       "title": "Financial Operations Analyst",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
-    },
-    "AD.F69": {
-      "title": "Global HRIS and HR Ops",
-      "first_seen": "2026-08-17T09:51:56.098845+00:00"
     },
     "C2.C65": {
       "title": "NOC Team Leader",
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 28
 }

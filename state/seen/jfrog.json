@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.563679+00:00",
-  "last_count": 16,
+  "last_success": "2026-08-26T09:51:33.831212+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -35,6 +35,14 @@
       "title": "GenAI & Competitive Intelligence Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "8156179": {
+      "title": "GRC Specialist",
+      "first_seen": "2026-08-26T09:51:33.831212+00:00"
+    },
+    "8156071": {
+      "title": "IS Integration Engineer",
+      "first_seen": "2026-08-26T09:51:33.831212+00:00"
+    },
     "8104833": {
       "title": "IS Product Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -66,7 +74,11 @@
     "8102637": {
       "title": "SMB Account Manager",
       "first_seen": "2026-08-21T09:45:05.231822+00:00"
+    },
+    "8152802": {
+      "title": "Software Engineer - Business Applications",
+      "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 44
 }

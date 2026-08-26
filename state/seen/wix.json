@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-08-26T07:01:03.506056+00:00",
-  "last_count": 26,
+  "last_success": "2026-08-26T09:51:33.796649+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
-    "https://careers.wix.com/position/oracle-98184094-baea-5754-8f4b-7c9df928de2c-T1787676518-744000145569919": {
-      "title": "Video Content Creator - Base44",
-      "first_seen": "2026-08-25T18:50:07.763387+00:00"
+    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000145687321": {
+      "title": "Account Executive, SMB - Base44",
+      "first_seen": "2026-08-26T09:51:33.796649+00:00"
+    },
+    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000145686325": {
+      "title": "Account Executive, Enterprise - Base44",
+      "first_seen": "2026-08-26T09:51:33.796649+00:00"
+    },
+    "https://careers.wix.com/position/oracle-98184094-baea-5754-8f4b-7c9df928de2c-T1787676518-744000145682188": {
+      "title": "Social Content Creator - Base44",
+      "first_seen": "2026-08-26T09:51:33.796649+00:00"
     },
     "https://careers.wix.com/position/oracle-16e1040e-1808-502e-abad-9bec03811182-T1787651314-744000145514507": {
       "title": "Product Designer (UX/UI) - Base44",

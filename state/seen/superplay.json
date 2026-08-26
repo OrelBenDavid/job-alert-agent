@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T07:01:03.622132+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-26T09:51:33.870482+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "88.E47": {
@@ -26,10 +26,6 @@
     "D9.967": {
       "title": "Customer Support Manager",
       "first_seen": "2026-08-16T15:29:12.966264+00:00"
-    },
-    "22.347": {
-      "title": "Game Economist",
-      "first_seen": "2026-08-25T13:01:52.125239+00:00"
     },
     "FB.F66": {
       "title": "Head of BI",
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-16T09:35:33.190901+00:00"
     }
   },
-  "last_board_total": 17
+  "last_board_total": 16
 }
