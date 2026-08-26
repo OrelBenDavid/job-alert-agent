@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T09:51:33.819641+00:00",
-  "last_count": 24,
+  "last_success": "2026-08-26T13:07:18.627051+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -67,10 +67,6 @@
       "title": "Senior Communication PHY Algorithms Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
-    "d778f56f-4093-45a0-80c8-7477d49ecff8": {
-      "title": "Senior Digital Hardware Design Engineer",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
     "e34308fd-301e-4c57-bb61-739689005e8a": {
       "title": "Senior Embedded Vulnerability Researcher",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
@@ -100,5 +96,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 30
 }

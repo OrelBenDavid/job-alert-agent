@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T09:51:33.812934+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-26T13:07:18.409757+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "F9.66B": {
@@ -47,6 +47,10 @@
       "title": "DSP and AI libraries Software Team Leader",
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     },
+    "23.17C": {
+      "title": "Embedded Software Team Leader",
+      "first_seen": "2026-08-26T13:07:18.409757+00:00"
+    },
     "4A.767": {
       "title": "R&D Technical Project Manager, AI Division",
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

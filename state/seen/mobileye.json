@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T09:51:33.846604+00:00",
-  "last_count": 134,
+  "last_success": "2026-08-26T13:07:18.667706+00:00",
+  "last_count": 135,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -519,6 +519,10 @@
       "title": "Technical Project Manager",
       "first_seen": "2026-08-20T06:58:29.981874+00:00"
     },
+    "d8277a1c-bb21-4473-85c6-e9ae35c0f9d3": {
+      "title": "Technical Project Manager- AV",
+      "first_seen": "2026-08-26T13:07:18.667706+00:00"
+    },
     "c217d67e-d12c-4ee8-afd2-6489873e6776": {
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -540,5 +544,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 156
 }

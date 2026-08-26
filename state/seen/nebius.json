@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-26T09:51:33.853611+00:00",
+  "last_success": "2026-08-26T13:07:18.669709+00:00",
   "last_count": 76,
   "consecutive_failures": 0,
   "jobs": {
@@ -25,10 +25,6 @@
     },
     "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4902258101": {
-      "title": "Data Center IT Infrastructure Engineer (Modiin)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4752307101": {
@@ -91,10 +87,6 @@
       "title": "Field Technical Lead – Data Center Deployments (Israel)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4942452101": {
-      "title": "Forward Deployment Engineer — Azure AI",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4945631101": {
       "title": "Group Product Manager - Platform Experience",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -143,6 +135,10 @@
       "title": "Regional Asset Manager",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "4590161101": {
+      "title": "Security Analyst- Tier 2",
+      "first_seen": "2026-08-26T13:07:18.669709+00:00"
+    },
     "4942986101": {
       "title": "Security Analyst - Tier 3",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -166,6 +162,10 @@
     "4930028101": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4921167101": {
+      "title": "Senior Corporate Operational Project Manager",
+      "first_seen": "2026-08-26T13:07:18.669709+00:00"
     },
     "4704805101": {
       "title": "Senior ML Engineer (AI Research)",
@@ -308,5 +308,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 366
+  "last_board_total": 365
 }

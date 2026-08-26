@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-26T09:51:33.855329+00:00",
-  "last_count": 34,
+  "last_success": "2026-08-26T13:07:18.675095+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "4894768101": {
@@ -27,11 +27,11 @@
       "title": "Devops Student",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4933792101": {
+    "4867642101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4867642101": {
+    "4933792101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
@@ -91,28 +91,12 @@
       "title": "FP&A Analyst",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4938329101": {
-      "title": "Group Program Manager",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4888512101": {
       "title": "Head of Technology and Architecture",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4928098101": {
-      "title": "Internal Communications Manager",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4881356101": {
       "title": "IT FP&A Analyst",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4931628101": {
-      "title": "Manager, Program Management",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4935646101": {
-      "title": "Program Management Manager",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "4904281101": {
@@ -140,5 +124,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 222
+  "last_board_total": 216
 }
