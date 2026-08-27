@@ -1,22 +1,14 @@
 {
-  "last_success": "2026-08-27T00:38:26.100624+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-27T14:03:31.386130+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "2A.B5C": {
       "title": "Backend Infrastructure & Data Engineer",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
-    "61.D62": {
-      "title": "Fraud Analyst",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
     "00.463": {
       "title": "Full-Stack R&D Team Lead",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
-    "2A.B59": {
-      "title": "R&D Team Lead",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
     "81.262": {
@@ -40,5 +32,5 @@
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 13
 }

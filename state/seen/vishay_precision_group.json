@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T00:38:26.147809+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-27T14:03:31.488500+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "10.F64": {
@@ -13,10 +13,6 @@
     },
     "3F.C64": {
       "title": "Director of Operations",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
-    },
-    "6E.B68": {
-      "title": "Global Demand Generation Senior Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
     "01.172": {

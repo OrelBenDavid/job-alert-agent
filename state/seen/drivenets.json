@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T00:38:26.089039+00:00",
-  "last_count": 23,
+  "last_success": "2026-08-27T14:03:31.352375+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -14,6 +14,10 @@
     "40.F61": {
       "title": "Data Center Manager",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
+    },
+    "2C.170": {
+      "title": "Global Demand Supply (S&OP) Manager",
+      "first_seen": "2026-08-27T14:03:31.352375+00:00"
     },
     "8C.F65": {
       "title": "Global Planning Manager",
@@ -30,6 +34,10 @@
     "86.161": {
       "title": "IT Devops Engineer",
       "first_seen": "2026-08-17T09:51:49.972862+00:00"
+    },
+    "2C.171": {
+      "title": "Material Planner",
+      "first_seen": "2026-08-27T14:03:31.352375+00:00"
     },
     "07.077": {
       "title": "NetSuite Logistics & Supply Chain Specialist",
@@ -96,5 +104,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 28
 }

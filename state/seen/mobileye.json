@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T00:38:26.113944+00:00",
-  "last_count": 135,
+  "last_success": "2026-08-27T14:03:31.417061+00:00",
+  "last_count": 140,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -10,6 +10,14 @@
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2ffd562c-40cb-42e3-b74d-e6a079ebdf22": {
+      "title": "Algorithm Developer - Object Modeling Group",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
+    "e312d527-7133-420c-8a00-561a38797718": {
+      "title": "Algorithm Developer - Object Modeling Group",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -38,6 +46,10 @@
     "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
       "title": "Applied AI Engineer - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "92113388-2b09-41dd-95d9-9291d4bb8648": {
+      "title": "ASIC Design Engineer",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "566a70d5-72c1-46fb-8bce-3795ecb8162a": {
       "title": "Assistant Controller - Temporary Position",
@@ -79,6 +91,10 @@
       "title": "C++ Software Engineer - Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
+      "title": "Camera System Engineer",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
     "8e12e6c1-44a9-4eb7-b041-9f212505da00": {
       "title": "Corporate Controller",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
@@ -103,9 +119,9 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
-    "56a4af6f-946b-4786-89b1-92110e53f6be": {
-      "title": "Data Platform Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
+      "title": "Deep Learning Algorithm Engineer - REM Semantics",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -163,16 +179,8 @@
       "title": "Execution Project Manager - Algorithm Department",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "f6dde9c3-a4e6-4dc8-befe-10c88ea90a73": {
-      "title": "Experienced Algorithm Validation Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "63c9d68a-ff54-47c0-86b3-4014479ceabb": {
       "title": "Experienced C++ Developer - Farm Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "7fd694a5-5755-4405-9489-8de1a6eb8f57": {
-      "title": "Experienced Data Analyst",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "48df21e2-84dd-42e7-9d55-f4121d444df8": {
@@ -242,6 +250,10 @@
     "2d52fda0-4fc1-45e2-bb52-9e0abdb65837": {
       "title": "Forecast Team Lead",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
+    },
+    "10c70ff9-9def-46ce-9d7e-389c818fd92a": {
+      "title": "M.Sc Student Deep Learning Algorithm Developer",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "ML Software Engineer",
@@ -326,6 +338,10 @@
     "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
       "title": "Senior C++ Software Engineer – Sensor Platform",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b8c0334c-51c5-420f-8fb1-3f8bf641c9cb": {
+      "title": "Senior C++ Software Engineer – Sensor Platform",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "ade97368-7948-4dbb-a574-1268ad41cbf0": {
       "title": "Senior Computer Vision Data Engineer",
@@ -443,6 +459,14 @@
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "b03336b8-82cc-4bf6-94f3-de291cee51bd": {
+      "title": "Senior Thermal-Mechanical Engineer",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
+    "fb4ade19-941d-4b5d-b3c6-a6faa2f61426": {
+      "title": "Senior Thermal-Mechanical Engineer",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
     "7418fbe2-8467-4389-b43b-2ae50ef57815": {
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -452,12 +476,8 @@
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
     "1c3bb641-7d60-4cf6-b997-d6e5633f7c12": {
-      "title": "Software Execution Program Manager",
-      "first_seen": "2026-08-18T13:00:34.221999+00:00"
-    },
-    "281442b8-66ef-4287-ab1f-fc96c0fedc5b": {
       "title": "Software Execution Project Manager",
-      "first_seen": "2026-08-20T06:58:29.981874+00:00"
+      "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
     "f10044d7-c978-4fed-bb58-0bd0170ab8ec": {
       "title": "Software Integration and Field Application Engineer",
@@ -511,21 +531,21 @@
       "title": "Technical Product Strategy Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "24b128d9-342e-4127-9dac-cde79f0a8652": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
     "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
       "title": "Technical Program Manager",
       "first_seen": "2026-08-25T13:01:52.093241+00:00"
     },
-    "7b663512-d190-4177-a5cc-a9020960a1b7": {
+    "a5e1a798-a47e-4cc7-960a-3a61859b2ec4": {
       "title": "Technical Project Manager",
-      "first_seen": "2026-08-20T06:58:29.981874+00:00"
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "d8277a1c-bb21-4473-85c6-e9ae35c0f9d3": {
       "title": "Technical Project Manager- AV",
       "first_seen": "2026-08-26T13:07:18.667706+00:00"
-    },
-    "c217d67e-d12c-4ee8-afd2-6489873e6776": {
-      "title": "Test Driver for Autonomous Vehicles",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "594b53f5-56ac-44e8-9fcf-b501518315b6": {
       "title": "Travel Coordinator",
@@ -544,5 +564,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 156
+  "last_board_total": 160
 }

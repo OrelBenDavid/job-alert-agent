@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-27T00:38:26.075705+00:00",
+  "last_success": "2026-08-27T14:03:31.326826+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -12,7 +12,7 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     },
     "EF.07B": {
-      "title": "Senior Backend Develoiper",
+      "title": "Senior Backend Developer",
       "first_seen": "2026-08-25T15:52:15.713726+00:00"
     },
     "1A.C6C": {

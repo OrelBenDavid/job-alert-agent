@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T00:38:26.126996+00:00",
-  "last_count": 15,
+  "last_success": "2026-08-27T14:03:31.453840+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "F2.B62": {
@@ -18,6 +18,10 @@
     "1A.856": {
       "title": "Business Development Analyst",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
+    },
+    "2C.179": {
+      "title": "Customer Onboarding Operator",
+      "first_seen": "2026-08-27T14:03:31.453840+00:00"
     },
     "E7.847": {
       "title": "Experienced Backend Software Engineer (TLV)",
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 16
 }

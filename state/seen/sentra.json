@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T00:38:26.135719+00:00",
-  "last_count": 8,
+  "last_success": "2026-08-27T14:03:31.468821+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "4B.566": {
@@ -14,6 +14,10 @@
     "A5.07C": {
       "title": "Backend Engineer (Data Team)",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
+    },
+    "F6.078": {
+      "title": "Data Science Team Lead",
+      "first_seen": "2026-08-27T14:03:31.468821+00:00"
     },
     "0C.B62": {
       "title": "Senior Backend Engineer (Data Team)",
@@ -36,5 +40,5 @@
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }
