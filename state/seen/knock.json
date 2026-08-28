@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-08-28T00:21:17.702865+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-28T15:14:37.394813+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "5766134004": {
-      "title": "Mortgage Account Executive - Remote",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
     "6020054004": {
       "title": "Mortgage Processor/Underwriter - Remote",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }

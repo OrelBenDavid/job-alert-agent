@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-28T00:21:17.654374+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-28T15:14:37.354192+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "F9.06C": {
@@ -25,10 +25,6 @@
     },
     "71.E69": {
       "title": "Technical Product Manager",
-      "first_seen": "2026-08-13T11:24:10.791826+00:00"
-    },
-    "68.E64": {
-      "title": "Technical Support Specialist - Student Position",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },

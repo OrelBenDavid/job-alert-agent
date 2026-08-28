@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-28T00:21:17.756126+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-28T15:14:37.440310+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "8081260": {
@@ -29,10 +29,6 @@
     },
     "7941894": {
       "title": "Field Marketing Manager, Growth",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8051106": {
-      "title": "FP&A Analyst-(Maternity Leave Cover)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8131734": {
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 84
 }

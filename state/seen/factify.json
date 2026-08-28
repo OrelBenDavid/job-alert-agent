@@ -1,10 +1,14 @@
 {
-  "last_success": "2026-08-28T00:21:17.677803+00:00",
+  "last_success": "2026-08-28T15:14:37.376641+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "CE.E65": {
       "title": "Creative & Brand Design Lead",
+      "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "8D.F6B": {
+      "title": "CTO",
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     },
     "2F.F66": {
@@ -21,10 +25,6 @@
     },
     "3F.F6F": {
       "title": "Senior Software Engineer",
-      "first_seen": "2026-08-18T19:28:22.774266+00:00"
-    },
-    "8D.F6B": {
-      "title": "VP R&D",
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     }
   },

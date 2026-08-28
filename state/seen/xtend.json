@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-28T00:21:17.771837+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-28T15:14:37.453642+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "DF.665": {
@@ -43,14 +43,10 @@
       "title": "Senior Guidance Engineer",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     },
-    "42.F6D": {
-      "title": "SOX Manager",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
     "BE.A67": {
       "title": "UAS Operator and Instructor",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }
