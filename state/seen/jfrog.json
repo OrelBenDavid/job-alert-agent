@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-27T14:03:31.392889+00:00",
+  "last_success": "2026-08-28T00:21:17.700111+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -76,7 +76,7 @@
       "first_seen": "2026-08-21T09:45:05.231822+00:00"
     },
     "8152802": {
-      "title": "Software Engineer - Business Applications",
+      "title": "Software Engineer",
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },

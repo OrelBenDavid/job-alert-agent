@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-27T14:03:31.401411+00:00",
-  "last_count": 29,
+  "last_success": "2026-08-28T00:21:17.704817+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -111,14 +111,10 @@
       "title": "Compliance Manager",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
-    "4ef679c3-0952-4c86-b080-75f2b015e755": {
-      "title": "CLX Car Advocate, Bodily Injury",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
     "e65d37ac-b4be-4709-b631-d6be8516984d": {
       "title": "IT Manager, AI Ops",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }
