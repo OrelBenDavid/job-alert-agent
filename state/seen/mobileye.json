@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-29T09:56:49.113177+00:00",
-  "last_count": 140,
+  "last_success": "2026-08-29T16:38:18.947826+00:00",
+  "last_count": 139,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -54,10 +54,6 @@
     "566a70d5-72c1-46fb-8bce-3795ecb8162a": {
       "title": "Assistant Controller - Temporary Position",
       "first_seen": "2026-08-20T06:58:29.981874+00:00"
-    },
-    "3b76c8cf-ee90-46c6-a54a-e61fa7d53fc7": {
-      "title": "Autonomous Vehicles Data Analyst Driver",
-      "first_seen": "2026-08-26T09:51:33.846604+00:00"
     },
     "d10617da-c4fb-4470-9347-07ae6981cf0c": {
       "title": "AV Perception Product Manager",
@@ -564,5 +560,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 160
+  "last_board_total": 159
 }
