@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-29T16:38:18.962663+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-29T20:50:34.870416+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8686880002": {
@@ -10,10 +10,6 @@
     "8487227002": {
       "title": "Data Science Team Lead",
       "first_seen": "2026-08-13T11:24:41.040134+00:00"
-    },
-    "8653104002": {
-      "title": "Junior Data Scientist",
-      "first_seen": "2026-08-19T13:01:25.266283+00:00"
     },
     "8658885002": {
       "title": "Learning & OD Partner",
@@ -28,5 +24,5 @@
       "first_seen": "2026-08-13T11:24:41.040134+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 27
 }
