@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-08-28T15:14:37.445029+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-29T01:42:24.334374+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "c3f15f73-5725-4032-9e0b-bf8bf845f991": {
       "title": "Create your own role",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "6c685d70-e482-439f-b38c-2ee386245064": {
-      "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
     "2e30c68a-0207-49e6-beb0-07a02bc7bba5": {
@@ -16,5 +12,5 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 2
 }
