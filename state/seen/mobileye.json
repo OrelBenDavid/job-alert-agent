@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T05:06:20.051828+00:00",
-  "last_count": 139,
+  "last_success": "2026-08-30T11:45:37.302750+00:00",
+  "last_count": 135,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -10,14 +10,6 @@
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "2ffd562c-40cb-42e3-b74d-e6a079ebdf22": {
-      "title": "Algorithm Developer - Object Modeling Group",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
-    "e312d527-7133-420c-8a00-561a38797718": {
-      "title": "Algorithm Developer - Object Modeling Group",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -247,10 +239,6 @@
       "title": "Forecast Team Lead",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
     },
-    "10c70ff9-9def-46ce-9d7e-389c818fd92a": {
-      "title": "M.Sc Student Deep Learning Algorithm Developer",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -303,13 +291,13 @@
       "title": "Real-Time Embedded DSP Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
+      "title": "Senior Algorithm Engineer - Model Training & Optimization",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
     "14e467d6-6412-479d-a827-fb9184522869": {
       "title": "Senior Algorithm Engineer - Objects Perception",
       "first_seen": "2026-08-13T09:40:45.264644+00:00"
-    },
-    "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
-      "title": "Senior Algorithm Engineer-ML Inference and Data Systems",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "402007d2-e42d-4006-9319-8ea87599ba2e": {
       "title": "Senior AV Product Manager - Temporary Position (One year replacement)",
@@ -358,10 +346,6 @@
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
-    },
-    "050c9118-b8bd-42c7-9a5d-bf0ef7e6a196": {
-      "title": "Senior Full Stack Developer",
-      "first_seen": "2026-08-20T09:42:36.524681+00:00"
     },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior Hardware Engineer",
@@ -560,5 +544,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 159
+  "last_board_total": 155
 }

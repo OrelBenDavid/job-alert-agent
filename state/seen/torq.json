@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T05:06:20.072312+00:00",
-  "last_count": 7,
+  "last_success": "2026-08-30T11:45:37.360169+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "6119508004": {
@@ -13,10 +13,6 @@
     },
     "6123211004": {
       "title": "R&D Team Lead",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "6119300004": {
-      "title": "R&D Team Lead (Runtime)",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
     "6127348004": {
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 28
 }

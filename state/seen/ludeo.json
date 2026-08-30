@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-08-30T05:06:20.048519+00:00",
-  "last_count": 1,
+  "last_success": "2026-08-30T11:45:37.290516+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "95.F6F": {
-      "title": "Senior Backend Developer",
-      "first_seen": "2026-08-20T06:56:54.028386+00:00"
-    }
-  },
-  "last_board_total": 1
+  "jobs": {},
+  "last_board_total": 0
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T05:06:20.068888+00:00",
-  "last_count": 37,
+  "last_success": "2026-08-30T11:45:37.349266+00:00",
+  "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -70,6 +70,10 @@
     "18.E61": {
       "title": "Integration Team Leader",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "74.965": {
+      "title": "Integration Technician",
+      "first_seen": "2026-08-30T11:45:37.349266+00:00"
     },
     "6B.D64": {
       "title": "Junior Power Control System Engineer",
@@ -152,5 +156,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 110
+  "last_board_total": 111
 }

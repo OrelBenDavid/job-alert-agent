@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T05:06:20.076609+00:00",
-  "last_count": 22,
+  "last_success": "2026-08-30T11:45:37.373994+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "4681239006": {
@@ -90,7 +90,11 @@
     "4670481006": {
       "title": "Threat Detection Researcher (Windows/Linux/MacOS)",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4707600006": {
+      "title": "Threat Researcher",
+      "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 125
+  "last_board_total": 126
 }

@@ -1,18 +1,10 @@
 {
-  "last_success": "2026-08-30T05:06:20.004078+00:00",
-  "last_count": 12,
+  "last_success": "2026-08-30T11:45:36.922860+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
-    "95.D6C": {
-      "title": "AI Transformation Senior Manager",
-      "first_seen": "2026-08-13T11:24:10.757126+00:00"
-    },
     "86.D6C": {
       "title": "Control Engineer",
-      "first_seen": "2026-08-13T11:24:10.757126+00:00"
-    },
-    "D1.B36": {
-      "title": "Electronics Technician in Production",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
     "68.964": {
@@ -35,10 +27,6 @@
       "title": "Senior IT Infrastructure & Systems Administrator",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
-    "95.D61": {
-      "title": "Senior Manager, Software Architecture & AI Enablement",
-      "first_seen": "2026-08-13T11:24:10.757126+00:00"
-    },
     "6B.A6E": {
       "title": "אורז/ת במחלקת משלוחים",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
@@ -52,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 13
 }

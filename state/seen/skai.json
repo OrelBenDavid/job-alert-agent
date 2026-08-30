@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-30T05:06:20.068189+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-30T11:45:37.347625+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "BD.C68": {
-      "title": "Director of AI Enablement",
-      "first_seen": "2026-08-13T11:24:41.055720+00:00"
-    },
     "BD.07B": {
       "title": "Director of Finance",
       "first_seen": "2026-08-20T13:03:14.002726+00:00"
@@ -16,5 +12,5 @@
       "first_seen": "2026-08-13T11:24:41.055720+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 24
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-30T05:06:20.005387+00:00",
+  "last_success": "2026-08-30T11:45:36.926117+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -17,10 +17,6 @@
     },
     "45.F6F": {
       "title": "IT Specialist",
-      "first_seen": "2026-08-20T06:56:44.546300+00:00"
-    },
-    "2A.B63": {
-      "title": "Saleforce Sales Solution Architect",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
     "98.E6A": {
@@ -46,6 +42,10 @@
     "34.E6C": {
       "title": "Senior Software Engineer GenAI",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "6C.17C": {
+      "title": "SF - Salesfoce Consultant Team Lead",
+      "first_seen": "2026-08-30T11:45:36.926117+00:00"
     },
     "50.F6B": {
       "title": "SF - Solutions Architect",

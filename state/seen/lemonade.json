@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T05:06:20.046959+00:00",
-  "last_count": 28,
+  "last_success": "2026-08-30T11:45:37.287470+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -45,10 +45,6 @@
     },
     "c8b2110c-b0be-426f-9a8b-49d8caa6568b": {
       "title": "Pet Actuarial Lead",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "fcd117f2-55d7-459a-a441-0cc6e8ec114e": {
-      "title": "Staff Platform Product Manager",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "581af361-6d5e-4bda-a380-5fdaf49a6f31": {
@@ -116,5 +112,5 @@
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 32
 }
