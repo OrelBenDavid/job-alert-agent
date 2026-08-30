@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-08-30T16:33:21.477309+00:00",
-  "last_count": 3,
+  "last_success": "2026-08-30T20:55:44.327680+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "95.07E": {
       "title": "Help Desk",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "31.32B": {
-      "title": "Junior  B2B Back Office",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "E4.96E": {
@@ -16,5 +12,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }
