@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T11:45:37.287155+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-30T16:33:21.499515+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "4D.071": {
@@ -15,14 +15,10 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "F2.463": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
     "5E.C64": {
       "title": "Senior Product Marketing Manager",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

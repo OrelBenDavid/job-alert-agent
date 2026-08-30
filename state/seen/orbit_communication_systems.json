@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-30T11:45:37.317075+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-30T16:33:21.511571+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "CE.073": {
@@ -55,10 +55,6 @@
       "title": "Strategic Purchasing Buyer",
       "first_seen": "2026-08-23T15:30:12.098094+00:00"
     },
-    "68.E66": {
-      "title": "Student Mechanical Engineering",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
     "68.E68": {
       "title": "System Engineer Airborne",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-23T15:30:12.098094+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

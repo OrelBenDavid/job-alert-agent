@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-30T11:45:37.319686+00:00",
-  "last_count": 155,
+  "last_success": "2026-08-30T16:33:21.512951+00:00",
+  "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-019642": {
+      "title": "Technical Release Manager (Cortex Content)",
+      "first_seen": "2026-08-30T16:33:21.512951+00:00"
+    },
     "JR-021198": {
       "title": "Principal Software Engineer (Secrets Manager)",
       "first_seen": "2026-08-30T11:45:37.319686+00:00"
@@ -624,5 +628,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 157
+  "last_board_total": 158
 }
