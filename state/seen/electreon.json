@@ -1,18 +1,10 @@
 {
-  "last_success": "2026-08-31T05:14:00.459731+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-31T13:26:59.931439+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "4795469101": {
-      "title": "Control Room Operator",
-      "first_seen": "2026-08-23T15:30:12.051245+00:00"
-    },
     "4741941101": {
       "title": "Mechanical Design Engineer Leader",
-      "first_seen": "2026-08-18T19:28:22.774266+00:00"
-    },
-    "4648955101": {
-      "title": "Program Manager",
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     },
     "4767269101": {
@@ -20,5 +12,5 @@
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 4
 }

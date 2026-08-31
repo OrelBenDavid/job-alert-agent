@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.499715+00:00",
-  "last_count": 4,
+  "last_success": "2026-08-31T13:27:00.421238+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "76.B6A": {
@@ -14,11 +14,7 @@
     "EB.D69": {
       "title": "Network Security Consultant- Part Time",
       "first_seen": "2026-08-20T06:56:59.897612+00:00"
-    },
-    "64.D68": {
-      "title": "Software Architect",
-      "first_seen": "2026-08-20T06:56:59.897612+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

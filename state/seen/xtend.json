@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.504963+00:00",
-  "last_count": 11,
+  "last_success": "2026-08-31T13:27:00.433817+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "DF.665": {
@@ -19,10 +19,6 @@
       "title": "Drone Lab Technician",
       "first_seen": "2026-08-16T09:35:34.222291+00:00"
     },
-    "96.178": {
-      "title": "Employee Experience & Office Manager",
-      "first_seen": "2026-08-26T16:24:36.132964+00:00"
-    },
     "BE.07C": {
       "title": "Facilities Manager",
       "first_seen": "2026-08-23T15:30:12.142951+00:00"
@@ -36,7 +32,7 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     },
     "3F.07A": {
-      "title": "Legal Counsel",
+      "title": "Legal Counsel - Capital Market",
       "first_seen": "2026-08-24T18:51:26.078775+00:00"
     },
     "2C.F6B": {
@@ -48,5 +44,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }

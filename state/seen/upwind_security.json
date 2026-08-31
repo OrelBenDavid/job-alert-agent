@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-31T05:14:00.500487+00:00",
+  "last_success": "2026-08-31T13:27:00.422658+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,6 +15,10 @@
       "title": "Backend Team Lead",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     },
+    "4F.071": {
+      "title": "Backend Team Lead, Infrastructure",
+      "first_seen": "2026-08-24T15:47:25.952512+00:00"
+    },
     "CA.042": {
       "title": "Frontend Software Engineer",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
@@ -22,10 +26,6 @@
     "EF.071": {
       "title": "Head Of Data",
       "first_seen": "2026-08-25T15:52:15.771965+00:00"
-    },
-    "4F.071": {
-      "title": "Infrastructure Team Lead",
-      "first_seen": "2026-08-24T15:47:25.952512+00:00"
     },
     "14.078": {
       "title": "Platform Security Researcher",
@@ -38,6 +38,10 @@
     "6D.176": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-08-30T11:45:37.362583+00:00"
+    },
+    "AD.17E": {
+      "title": "Senior Software Engineer - Go",
+      "first_seen": "2026-08-31T13:27:00.422658+00:00"
     },
     "7E.E68": {
       "title": "Senior Technical Marketing Manager",
@@ -53,10 +57,6 @@
     },
     "7F.F61": {
       "title": "Talent Network Builder",
-      "first_seen": "2026-08-20T06:56:59.899617+00:00"
-    },
-    "87.55F": {
-      "title": "Technical Account Manager",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     },
     "23.A51": {
@@ -76,5 +76,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 55
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.454579+00:00",
-  "last_count": 58,
+  "last_success": "2026-08-31T13:26:59.921219+00:00",
+  "last_count": 59,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -9,10 +9,6 @@
     },
     "CE.E62": {
       "title": "AI Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "A6.079": {
-      "title": "AI IT Centre of Excellence Deploy Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "9C.D6C": {
@@ -171,9 +167,17 @@
       "title": "Software Project Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "BD.172": {
+      "title": "Software Project Manager",
+      "first_seen": "2026-08-31T13:26:59.921219+00:00"
+    },
     "12.F64": {
       "title": "Software Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "AD.176": {
+      "title": "Software Team Leader",
+      "first_seen": "2026-08-31T13:26:59.921219+00:00"
     },
     "DC.A66": {
       "title": "Software Tech Lead",
@@ -236,5 +240,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 155
+  "last_board_total": 147
 }

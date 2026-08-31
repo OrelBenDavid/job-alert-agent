@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-31T05:14:00.491584+00:00",
+  "last_success": "2026-08-31T13:27:00.402350+00:00",
   "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,20 +31,12 @@
       "title": "Devops Team Lead",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
-    "4941455101": {
-      "title": "Director of AI at CEO Office",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
     "4913581101": {
       "title": "Director of R&D",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "4919422101": {
       "title": "Frontend Engineer",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
-    "4941799101": {
-      "title": "Head of HR",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "4919425101": {
@@ -110,6 +102,14 @@
     "4930936101": {
       "title": "Technical Account Manager",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4941455101": {
+      "title": "VP AI",
+      "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4963916101": {
+      "title": "VP HR",
+      "first_seen": "2026-08-31T13:27:00.402350+00:00"
     }
   },
   "last_board_total": 55

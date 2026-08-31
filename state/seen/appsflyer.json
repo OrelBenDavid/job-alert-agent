@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.446448+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-31T13:26:59.898826+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
@@ -46,6 +46,10 @@
     "8509670002": {
       "title": "Product Partnerships Manager",
       "first_seen": "2026-08-30T11:45:36.928224+00:00"
+    },
+    "8763495002": {
+      "title": "Salary Controller",
+      "first_seen": "2026-08-31T13:26:59.898826+00:00"
     },
     "8622261002": {
       "title": "Security Architect",

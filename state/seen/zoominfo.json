@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-31T05:14:00.506044+00:00",
-  "last_count": 14,
+  "last_success": "2026-08-31T13:27:00.435927+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
+    "8738006002": {
+      "title": "Head of Data Partnership",
+      "first_seen": "2026-08-31T13:27:00.435927+00:00"
+    },
     "8730205002": {
       "title": "Manager, Data Platform",
       "first_seen": "2026-08-21T18:48:02.946492+00:00"
@@ -43,15 +47,15 @@
       "title": "Senior Machine Learning Engineer",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     },
+    "8561599002": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
     "8561607002": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     },
     "8561603002": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-18T19:28:38.383070+00:00"
-    },
-    "8561599002": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     },

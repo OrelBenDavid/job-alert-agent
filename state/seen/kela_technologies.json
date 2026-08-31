@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.470454+00:00",
-  "last_count": 22,
+  "last_success": "2026-08-31T13:27:00.346481+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -51,6 +51,10 @@
       "title": "Product Design",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "10.176": {
+      "title": "Product-Program-Lead",
+      "first_seen": "2026-08-31T13:27:00.346481+00:00"
+    },
     "D1.A69": {
       "title": "Professional Services Engineer (Technical Operations)",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -58,6 +62,10 @@
     "8D.967": {
       "title": "SCM Project Lead",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "F2.17C": {
+      "title": "Senior Legal Counsel",
+      "first_seen": "2026-08-31T13:27:00.346481+00:00"
     },
     "34.F64": {
       "title": "Senior Legal Counsel – Compliance and Regulation",
@@ -87,10 +95,14 @@
       "title": "Supply Chain Manager - Advanced Munitions Group",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "81.A6C": {
+      "title": "Support Engineer (NOC / Tier 1)",
+      "first_seen": "2026-08-31T13:27:00.346481+00:00"
+    },
     "62.253": {
       "title": "Talent Acquisition Partner",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 25
 }

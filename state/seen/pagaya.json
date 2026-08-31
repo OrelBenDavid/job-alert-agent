@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-31T05:14:00.482945+00:00",
+  "last_success": "2026-08-31T13:27:00.381002+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,9 +19,9 @@
       "title": "Data Science Group Lead",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     },
-    "7733045003": {
-      "title": "Principal Data Scientist",
-      "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    "7720946003": {
+      "title": "Lead Data Scientist",
+      "first_seen": "2026-08-31T13:27:00.381002+00:00"
     },
     "7720945003": {
       "title": "Senior Data Scientist",

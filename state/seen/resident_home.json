@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.489667+00:00",
-  "last_count": 5,
+  "last_success": "2026-08-31T13:27:00.398367+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "6112307004": {
@@ -22,7 +22,11 @@
     "6018267004": {
       "title": "Senior Frontend Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "6144832004": {
+      "title": "Senior Product Manager, E-commerce",
+      "first_seen": "2026-08-31T13:27:00.398367+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 16
 }

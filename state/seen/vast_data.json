@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.501001+00:00",
-  "last_count": 37,
+  "last_success": "2026-08-31T13:27:00.423791+00:00",
+  "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
     "5A.66C": {
@@ -37,10 +37,6 @@
     },
     "74.12D": {
       "title": "Hardware System Engineer",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
-    },
-    "25.F64": {
-      "title": "HR Administrator - Student Position",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
     "A3.B25": {
@@ -152,5 +148,5 @@
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     }
   },
-  "last_board_total": 239
+  "last_board_total": 238
 }

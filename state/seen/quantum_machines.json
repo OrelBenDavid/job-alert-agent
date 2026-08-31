@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.488230+00:00",
-  "last_count": 20,
+  "last_success": "2026-08-31T13:27:00.391895+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -23,10 +23,6 @@
       "title": "Customer Success Physicist- Tel Aviv",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
-    "EB.F61": {
-      "title": "Director of Brand Strategy",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
     "23.E6B": {
       "title": "Failure Analysis and Quality Control Team Leader",
       "first_seen": "2026-08-25T13:01:52.113713+00:00"
@@ -40,7 +36,7 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "02.F63": {
-      "title": "Hardware Product Engineering Team Leader",
+      "title": "Hardware Team Lead for Product Engineering",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "1A.C34": {
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 53
+  "last_board_total": 52
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.452931+00:00",
-  "last_count": 6,
+  "last_success": "2026-08-31T13:26:59.917998+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -15,10 +15,6 @@
       "title": "Head of DevOps",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "c2174d81-e3bd-4ae5-8c49-2ea99f56045c": {
-      "title": "Director of Finance",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "7865e989-e63d-4ba1-8c31-eedee1c34590": {
       "title": "Head of Security",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -28,5 +24,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

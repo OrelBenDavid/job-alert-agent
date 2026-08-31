@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.452133+00:00",
-  "last_count": 36,
+  "last_success": "2026-08-31T13:26:59.910189+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -134,6 +134,10 @@
     "4603397101": {
       "title": "Software Team Leader (C)",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4961284101": {
+      "title": "Support Enablement Engineer",
+      "first_seen": "2026-08-31T13:26:59.910189+00:00"
     },
     "4648864101": {
       "title": "SW Engineer - Enterprise Browser team",

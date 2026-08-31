@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-08-31T05:14:00.466630+00:00",
-  "last_count": 17,
+  "last_success": "2026-08-31T13:26:59.960740+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "96caecc5-aca2-4cb7-9799-e661e2c00b0b": {
       "title": "Integration Engineer",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
-    "b6c16cdc-cead-470f-9e2d-4c182f268e78": {
-      "title": "NetSuite Developer",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
     "6582d671-7ad3-4d15-86b6-34ee30fe0c00": {
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 62
+  "last_board_total": 61
 }

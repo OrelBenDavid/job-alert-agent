@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T05:14:00.476554+00:00",
-  "last_count": 136,
+  "last_success": "2026-08-31T13:27:00.364188+00:00",
+  "last_count": 135,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -31,10 +31,6 @@
       "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "20474839-6cb6-4073-a1ee-ee5cf2dd2612": {
-      "title": "Algorithm Team Lead",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
       "title": "Applied AI Engineer - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -58,10 +54,6 @@
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "8896470f-665d-4888-84a1-2a8a7211597b": {
-      "title": "Business Analyst",
-      "first_seen": "2026-08-19T13:01:25.232459+00:00"
     },
     "9121911b-de12-40a3-86a6-1c586c192658": {
       "title": "C++ Developer for Radar Engine Group",
@@ -106,6 +98,10 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
+    },
+    "568f4a72-8cd2-4c33-9d09-1a62e21dacc7": {
+      "title": "Data Analysis Engineer - Student Position",
+      "first_seen": "2026-08-31T13:27:00.364188+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -231,10 +227,6 @@
       "title": "Field Engineer in India (Chennai) - Relocation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "e0906011-cc0a-4bda-83cf-4f9a22e3a6f4": {
-      "title": "Forecast Analyst",
-      "first_seen": "2026-08-19T13:01:25.232459+00:00"
-    },
     "2d52fda0-4fc1-45e2-bb52-9e0abdb65837": {
       "title": "Forecast Team Lead",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
@@ -274,6 +266,10 @@
     "fac143e4-0dba-4912-ae9e-d168249a95d8": {
       "title": "Python Data Solutions Specialist-Temporary Position",
       "first_seen": "2026-08-18T13:00:34.221999+00:00"
+    },
+    "76bd5cf5-a8cb-4541-a736-c44ede8ed205": {
+      "title": "QMS Quality Engineer",
+      "first_seen": "2026-08-31T13:27:00.364188+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",
@@ -318,14 +314,6 @@
     "f04fed6a-f0f4-4455-900a-be4ccdddc8ee": {
       "title": "Senior C++ Software Engineer - Integration & Delivery (CTO Team)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
-      "title": "Senior C++ Software Engineer – Sensor Platform",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "b8c0334c-51c5-420f-8fb1-3f8bf641c9cb": {
-      "title": "Senior C++ Software Engineer – Sensor Platform",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "ade97368-7948-4dbb-a574-1268ad41cbf0": {
       "title": "Senior Computer Vision Data Engineer",
@@ -386,6 +374,14 @@
     "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
       "title": "Senior Signal Integrity Engineer-AV Hardware",
       "first_seen": "2026-08-12T10:15:21.611278+00:00"
+    },
+    "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
+      "title": "Senior Software Engineer - Active Sensing Group",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b8c0334c-51c5-420f-8fb1-3f8bf641c9cb": {
+      "title": "Senior Software Engineer - Active Sensing Group",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "b02e3f9e-e4a3-4c0f-8214-77606f75b9da": {
       "title": "Senior Software Engineer - AI Platform (Python & React)",
