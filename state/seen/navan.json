@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-08-31T13:27:00.371605+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-31T20:45:43.760541+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
+    "8160539": {
+      "title": "Product Manager - Book with AI",
+      "first_seen": "2026-08-31T20:45:43.760541+00:00"
+    },
     "8063651": {
       "title": "Senior iOS Developer",
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
     }
   },
-  "last_board_total": 195
+  "last_board_total": 197
 }

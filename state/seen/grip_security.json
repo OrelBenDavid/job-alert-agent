@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-08-31T13:26:59.957636+00:00",
-  "last_count": 2,
+  "last_success": "2026-08-31T20:45:43.733247+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "2B.E5C": {
       "title": "R&D Team Lead",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
-    "73.A6E": {
-      "title": "Sr. Full Stack Engineer",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }

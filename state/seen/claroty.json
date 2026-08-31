@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-08-31T13:26:59.919574+00:00",
+  "last_success": "2026-08-31T20:45:43.712074+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,6 +14,10 @@
     "1C.B6C": {
       "title": "Backend Software Engineer - Platform",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "DD.17E": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-08-31T20:45:43.712074+00:00"
     },
     "D5.076": {
       "title": "DevOps Engineer",
@@ -30,10 +34,6 @@
     "B6.078": {
       "title": "Office & Facilities Specialist",
       "first_seen": "2026-08-19T15:39:40.386183+00:00"
-    },
-    "C4.F61": {
-      "title": "Payroll Specialist",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "D4.F64": {
       "title": "Senior Product Manager",
@@ -56,5 +56,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 27
 }

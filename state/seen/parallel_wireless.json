@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-08-31T13:27:00.384058+00:00",
-  "last_count": 9,
+  "last_success": "2026-08-31T20:45:43.782399+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "aae3fb69-b696-4925-a7fe-5ca6b3aee726": {
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
+    },
+    "90b01374-3d2c-4bd0-a6d2-a3344bcb2b81": {
+      "title": "Data Scientist / AI Engineer",
+      "first_seen": "2026-08-31T20:45:43.782399+00:00"
     },
     "e615e732-e7ea-406c-938a-4632b189b7ba": {
       "title": "Platform Director",
@@ -19,9 +23,17 @@
       "title": "Senior Applied AI Evaluation Engineer - RAN Ticket Intelligence",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
+    "a0e565bb-b621-4389-ab0e-111357b081e0": {
+      "title": "Senior Data Scientist — Network Intelligence",
+      "first_seen": "2026-08-31T20:45:43.782399+00:00"
+    },
     "bf96d78d-400a-4b68-914c-bbf93e578d8a": {
       "title": "Senior RAN Systems Engineer- POC & Technical Evaluation",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
+    },
+    "660174e6-d315-4eaf-9b3e-d400a177d8e2": {
+      "title": "Senior Technical Lead —Platform (End-to-End)",
+      "first_seen": "2026-08-31T20:45:43.782399+00:00"
     },
     "233858ab-104d-42fe-8b5b-f9d86aa8f5a4": {
       "title": "Senior/Principal Local LLM & Generative AI Platform Engineer",
@@ -35,10 +47,14 @@
       "title": "Sr. Principal, DevOps",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
+    "632ab8ce-087a-44e0-8865-2d7e815e3c69": {
+      "title": "Sr. System Engineer",
+      "first_seen": "2026-08-31T20:45:43.782399+00:00"
+    },
     "eaf8378b-46aa-4d6e-a73f-124f43cf2ece": {
       "title": "System Architecture Team Lead (Platform, Cloud)",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 39
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-08-31T13:27:00.404641+00:00",
-  "last_count": 13,
+  "last_success": "2026-08-31T20:45:43.804776+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
-    "7726889003": {
-      "title": "Senior Backend Engineer - Windows Endpoint",
-      "first_seen": "2026-08-13T11:24:41.044983+00:00"
-    },
     "7731702003": {
       "title": "Senior Software Engineer - C++ Linux & Cloud Workload",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"

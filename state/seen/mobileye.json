@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-08-31T13:27:00.364188+00:00",
-  "last_count": 135,
+  "last_success": "2026-08-31T20:45:43.754663+00:00",
+  "last_count": 136,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -250,6 +250,10 @@
     "83eaec09-649e-4ea6-b6c8-ace482eb2f59": {
       "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
       "first_seen": "2026-08-26T07:01:03.578507+00:00"
+    },
+    "ba1193d8-8c0f-4103-a04c-be61e67c6b5e": {
+      "title": "Physical Design  Backend Engineer",
+      "first_seen": "2026-08-31T20:45:43.754663+00:00"
     },
     "570619b3-b8ec-478c-916a-04c588feb434": {
       "title": "Physical Design Expert",
@@ -544,5 +548,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 156
+  "last_board_total": 157
 }

@@ -1,15 +1,19 @@
 {
-  "last_success": "2026-08-31T13:27:00.392292+00:00",
-  "last_count": 11,
+  "last_success": "2026-08-31T20:45:43.797015+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "D5.F6D": {
-      "title": "Analyat Wallet Reconciliation - Maternity Leave Replacement",
+      "title": "Analyst Wallet Reconciliation - Maternity Leave Replacement",
       "first_seen": "2026-08-17T09:51:56.098845+00:00"
     },
     "4D.A49": {
       "title": "Controller",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
+    },
+    "9D.178": {
+      "title": "Customer Delivery Manager",
+      "first_seen": "2026-08-31T20:45:43.797015+00:00"
     },
     "10.76C": {
       "title": "Escalation Engineer",
@@ -48,5 +52,5 @@
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }
