@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-01T00:31:35.841641+00:00",
+  "last_success": "2026-09-01T08:32:41.880566+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-08-25T18:50:07.844799+00:00"
     },
     "F4.F65": {
-      "title": "Software Engineering Team Lead",
+      "title": "Software Engineer Team Leader",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },

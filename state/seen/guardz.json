@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.819443+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-01T08:32:41.359436+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "4343001101": {
@@ -14,7 +14,11 @@
     "4637866101": {
       "title": "Software Engineer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "4517973101": {
+      "title": "Technical Support Engineer",
+      "first_seen": "2026-09-01T08:32:41.359436+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

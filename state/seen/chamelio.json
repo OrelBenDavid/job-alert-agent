@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.808912+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-01T08:32:41.318947+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -22,7 +22,11 @@
     "7ef5d820-7312-4f4d-ae09-46d92fdb721e": {
       "title": "Founding GTM Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "3f9db6ac-7e75-456d-b724-e5a318717db3": {
+      "title": "Lead Customer Success Manager",
+      "first_seen": "2026-09-01T08:32:41.318947+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 9
 }

@@ -1,19 +1,11 @@
 {
-  "last_success": "2026-09-01T00:31:35.817070+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-01T08:32:41.353542+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "6349983002": {
       "title": "General Application (Israel)",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8759593002": {
-      "title": "ML-Ops Analyst - (Student Position)",
-      "first_seen": "2026-08-31T13:26:59.937403+00:00"
-    },
-    "8759588002": {
-      "title": "Operations Analyst Student",
-      "first_seen": "2026-08-31T13:26:59.937403+00:00"
     },
     "8299310002": {
       "title": "Senior AI Software Engineer",
@@ -56,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 40
+  "last_board_total": 38
 }

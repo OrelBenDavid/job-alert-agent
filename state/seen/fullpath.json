@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.817438+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-01T08:32:41.354448+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "E8.663": {
@@ -9,10 +9,6 @@
     },
     "E8.663-41.10D": {
       "title": "Head of Product - CRM",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "C2.E61": {
-      "title": "Junior Backend Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "4C.173": {
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

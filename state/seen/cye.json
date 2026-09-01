@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.811998+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-01T08:32:41.325782+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "d2b9d2ff-edb8-4fb4-80ca-9b5cdefa8a57": {
@@ -23,10 +23,6 @@
       "title": "Cybersecurity Architect (GRC & Risk)",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     },
-    "f2b31c9a-ea8b-4e83-a9d3-1f87ed740cc7": {
-      "title": "Cybersecurity Professional",
-      "first_seen": "2026-08-13T11:24:19.151984+00:00"
-    },
     "93eb9bab-30e3-4ff4-83e6-09f8f8727a81": {
       "title": "DFIR",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }

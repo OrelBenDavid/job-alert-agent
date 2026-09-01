@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-09-01T00:31:35.815110+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-01T08:32:41.333227+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
+    "9E.074": {
+      "title": "AI Algorithms Engineer",
+      "first_seen": "2026-09-01T08:32:41.333227+00:00"
+    },
     "22.F6B": {
       "title": "BIM Modeler",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "2E.171": {
+      "title": "Computer Vision Engineer",
+      "first_seen": "2026-09-01T08:32:41.333227+00:00"
     },
     "EF.E68": {
       "title": "Customer Success Operations Specialist",
@@ -35,10 +43,6 @@
       "title": "Senior Controller",
       "first_seen": "2026-08-27T14:03:31.361982+00:00"
     },
-    "4E.F66": {
-      "title": "Senior Product Manager - Field Operations",
-      "first_seen": "2026-08-15T18:40:29.022214+00:00"
-    },
     "13.260": {
       "title": "Senior Software Engineer - Data Acquistion (Field Team)",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 53
 }

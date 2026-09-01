@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.809530+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-01T08:32:41.320562+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "00.17C": {
@@ -18,10 +18,6 @@
     "DD.17E": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-31T20:45:43.712074+00:00"
-    },
-    "D5.076": {
-      "title": "DevOps Engineer",
-      "first_seen": "2026-08-18T06:56:29.732203+00:00"
     },
     "9F.E6E": {
       "title": "EMEA & APAC Controller",
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 26
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.846049+00:00",
-  "last_count": 43,
+  "last_success": "2026-09-01T08:32:41.891356+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "12.E56": {
@@ -57,10 +57,6 @@
     },
     "F0.157": {
       "title": "Lumia- Senior Software Engineer",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
-    "2E.055": {
-      "title": "Monogoto- Junior CSM",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "63.73F": {
@@ -155,10 +151,6 @@
       "title": "Team8- Bookkeeper",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
-    "3E.F6A": {
-      "title": "Team8- Business Development Operations Lead: Maternity Leave Cover",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
     "8C.175": {
       "title": "Team8- Executive Assistant & Team Administrator -Part Time job (50%)",
       "first_seen": "2026-08-28T00:21:17.757413+00:00"
@@ -176,5 +168,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 56
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-01T00:31:35.824611+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-01T08:32:41.827965+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "4D.071": {
-      "title": "GTM Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
     "0F.079": {
       "title": "Product Manager",
       "first_seen": "2026-08-25T13:01:52.086167+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

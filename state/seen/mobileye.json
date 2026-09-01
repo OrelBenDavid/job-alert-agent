@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.828818+00:00",
-  "last_count": 136,
+  "last_success": "2026-09-01T08:32:41.837992+00:00",
+  "last_count": 138,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -179,10 +179,6 @@
       "title": "Experienced Deep Learning Optimization Engineer- Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "9df72c7f-8ae9-420c-a024-c9a3f1cf2998": {
-      "title": "Experienced Deep Learning Software Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "31956c05-66e8-41a4-bed7-08e3e07425a4": {
       "title": "Experienced DFT Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -231,6 +227,10 @@
       "title": "Forecast Team Lead",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
     },
+    "fb3e3992-2521-445d-8b69-a98aa1a2595e": {
+      "title": "IT Specialist – MENTEE",
+      "first_seen": "2026-09-01T08:32:41.837992+00:00"
+    },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -238,6 +238,10 @@
     "e58368d8-ec21-4e5e-871d-40707762b959": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e58754ea-2525-4630-b7c3-ee76e043f6ed": {
+      "title": "Operations Systems & Budget Coordinator",
+      "first_seen": "2026-09-01T08:32:41.837992+00:00"
     },
     "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
       "title": "Outstanding Graduate - Machine Learning Engineer",
@@ -451,6 +455,10 @@
       "title": "Senior Thermal-Mechanical Engineer",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
+    "813744d9-4a1c-4f6a-9980-8658b0f842b2": {
+      "title": "Senior Validation Project Manager- Reliability Lab",
+      "first_seen": "2026-09-01T08:32:41.837992+00:00"
+    },
     "7418fbe2-8467-4389-b43b-2ae50ef57815": {
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -548,5 +556,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 157
+  "last_board_total": 159
 }

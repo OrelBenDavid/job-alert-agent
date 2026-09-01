@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T00:31:35.801874+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-01T08:32:41.295844+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "0D.F55": {
@@ -31,10 +31,6 @@
       "title": "Testing Technician",
       "first_seen": "2026-08-13T11:24:10.777326+00:00"
     },
-    "3D.A6B": {
-      "title": "Testing Technician Student",
-      "first_seen": "2026-08-13T11:24:10.777326+00:00"
-    },
     "2D.F62": {
       "title": "Vendor Scheduler",
       "first_seen": "2026-08-13T11:24:10.777326+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:10.777326+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }
