@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.884200+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-01T14:06:11.150373+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "075a9ace-83ec-4e6b-9c82-090fcbccf0a6": {
@@ -18,7 +18,11 @@
     "3711a6a2-ee15-4fc5-af62-a222fa36b1fb": {
       "title": "Marketing Operations & Influencer Lead",
       "first_seen": "2026-08-23T09:01:23.845449+00:00"
+    },
+    "a2c73c67-2c62-4346-b3ee-8145dde12d98": {
+      "title": "Marketing Video Creator",
+      "first_seen": "2026-09-01T14:06:11.150373+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

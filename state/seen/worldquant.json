@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-01T08:32:41.904304+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-01T14:06:11.162571+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "4443948006": {
+      "title": "AI Software Engineer",
+      "first_seen": "2026-09-01T14:06:11.162571+00:00"
+    },
     "4657786006": {
       "title": "Lead Python Engineer - AI Technology",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 103
+  "last_board_total": 104
 }

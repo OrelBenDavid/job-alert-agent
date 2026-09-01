@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.855850+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-01T14:06:11.132498+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "4868664101": {
@@ -67,6 +67,10 @@
       "title": "IT FP&A Analyst",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
+    "4965103101": {
+      "title": "QA Director",
+      "first_seen": "2026-09-01T14:06:11.132498+00:00"
+    },
     "4904281101": {
       "title": "QA Lead",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 193
+  "last_board_total": 185
 }

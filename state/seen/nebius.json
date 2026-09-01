@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.853116+00:00",
-  "last_count": 77,
+  "last_success": "2026-09-01T14:06:11.130764+00:00",
+  "last_count": 78,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -267,6 +267,10 @@
       "title": "Senior Technical Project Manager (External Solutions)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "4965339101": {
+      "title": "Senior U.S Securities and Transactional Counsel",
+      "first_seen": "2026-09-01T14:06:11.130764+00:00"
+    },
     "4947283101": {
       "title": "Solutions & Integrations Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -312,5 +316,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 369
+  "last_board_total": 371
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-01T08:32:41.827371+00:00",
+  "last_success": "2026-09-01T14:06:11.116119+00:00",
   "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,9 +15,9 @@
       "title": "Marketing Student",
       "first_seen": "2026-08-25T13:01:52.085580+00:00"
     },
-    "20.F67": {
+    "4E.17E": {
       "title": "Materials Researcher",
-      "first_seen": "2026-08-13T11:24:25.559146+00:00"
+      "first_seen": "2026-09-01T14:06:11.116119+00:00"
     }
   },
   "last_board_total": 13

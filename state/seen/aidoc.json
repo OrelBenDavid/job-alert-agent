@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.295413+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-01T14:06:10.552096+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -15,12 +15,12 @@
       "title": "AI Senior Software Engineer, ML Platform",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
+    "4965141101": {
+      "title": "AI Software Engineer",
+      "first_seen": "2026-09-01T14:06:10.552096+00:00"
+    },
     "4876590101": {
       "title": "AI Software Team Lead, ML Platform",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
-    "4876600101": {
-      "title": "AI Software Tech Lead, ML Platform",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4876560101": {
@@ -42,6 +42,10 @@
     "4941568101": {
       "title": "Director of GenAI Operations",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "4965332101": {
+      "title": "Director of IT Security",
+      "first_seen": "2026-09-01T14:06:10.552096+00:00"
     },
     "4951044101": {
       "title": "Director of Product Design",
@@ -104,5 +108,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 31
 }

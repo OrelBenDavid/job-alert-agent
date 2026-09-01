@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.315223+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-01T14:06:10.567325+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "FE.D18": {
@@ -43,6 +43,10 @@
       "title": "Material Planner",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
+    "6E.172": {
+      "title": "Procurement Coordinator – Student",
+      "first_seen": "2026-09-01T14:06:10.567325+00:00"
+    },
     "B7.369": {
       "title": "Python Linux Software Developer",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
@@ -59,6 +63,10 @@
       "title": "Senior Technical Product Manager",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
+    "6E.179": {
+      "title": "Supply Planner – Student",
+      "first_seen": "2026-09-01T14:06:10.567325+00:00"
+    },
     "2D.074": {
       "title": "Talent & Organizational Enablement Lead",
       "first_seen": "2026-08-19T18:45:53.881000+00:00"
@@ -68,5 +76,5 @@
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 56
 }

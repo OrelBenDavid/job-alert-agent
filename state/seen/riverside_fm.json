@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.877210+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-01T14:06:11.146597+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "99.E6A": {
@@ -39,10 +39,6 @@
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
     },
-    "C2.E6C": {
-      "title": "Senior Influencer Marketing Manager",
-      "first_seen": "2026-08-13T11:24:41.041975+00:00"
-    },
     "0A.568": {
       "title": "Senior Product Designer",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-31T13:27:00.400133+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 22
 }

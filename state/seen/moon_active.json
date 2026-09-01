@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.846843+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-01T14:06:11.128641+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
@@ -34,6 +34,10 @@
     "de86cb90-ce2f-4224-8cef-f722387b4a16": {
       "title": "Business Data Analyst",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "cc3c474c-6755-4fa2-9b3a-38328c03eeaf": {
+      "title": "Business Strategy Manager",
+      "first_seen": "2026-09-01T14:06:11.128641+00:00"
     },
     "d0d25d4b-9493-41a3-9eb1-7d0ac54ac89e": {
       "title": "Product Economy Manager",
@@ -104,5 +108,5 @@
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 35
 }

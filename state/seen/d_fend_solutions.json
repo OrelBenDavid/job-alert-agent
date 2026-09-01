@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.327256+00:00",
-  "last_count": 23,
+  "last_success": "2026-09-01T14:06:10.576842+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -37,10 +37,6 @@
     },
     "ad96d5f9-f12e-4b56-a3da-73f50e71a99c": {
       "title": "Professional Services Engineer – Integrated Solutions",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "4d69329f-8dcf-4bb0-a93b-54cb0593803b": {
-      "title": "QA Tester",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
     "0d303979-2039-4391-adb8-080ba4f1c97e": {
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 29
 }

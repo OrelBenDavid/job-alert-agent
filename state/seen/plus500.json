@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.869251+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-01T14:06:11.139671+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "F2.B62": {
@@ -9,10 +9,6 @@
     },
     "88.E65": {
       "title": "Associate legal counsel (Litigation)",
-      "first_seen": "2026-08-13T11:24:34.318859+00:00"
-    },
-    "84.86B": {
-      "title": "Backend Software Engineer",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     },
     "1A.856": {
@@ -68,5 +64,5 @@
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 15
 }

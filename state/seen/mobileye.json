@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.837992+00:00",
-  "last_count": 138,
+  "last_success": "2026-09-01T14:06:11.124056+00:00",
+  "last_count": 140,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -219,13 +219,13 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "113794c0-7400-406a-9675-ec7f2f8c3881": {
-      "title": "Field Engineer in India (Chennai) - Relocation",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "2d52fda0-4fc1-45e2-bb52-9e0abdb65837": {
       "title": "Forecast Team Lead",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
+    },
+    "58a5fc1c-dc5c-4ac3-958e-f814eb8a5271": {
+      "title": "Hardware Lab Technician",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
     },
     "fb3e3992-2521-445d-8b69-a98aa1a2595e": {
       "title": "IT Specialist – MENTEE",
@@ -475,6 +475,18 @@
       "title": "Software Integration and Field Application Engineer",
       "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
+    "45b127ea-6069-420f-81fd-adf236d08de4": {
+      "title": "Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
+    },
+    "86638ec0-b5f8-4cd5-b3f9-19b1b8932368": {
+      "title": "Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
+    },
+    "90d6a522-a4a1-42ba-a89b-55609a4f8c12": {
+      "title": "Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
+    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -539,10 +551,6 @@
       "title": "Technical Project Manager- AV",
       "first_seen": "2026-08-26T13:07:18.667706+00:00"
     },
-    "594b53f5-56ac-44e8-9fcf-b501518315b6": {
-      "title": "Travel Coordinator",
-      "first_seen": "2026-08-18T09:42:01.818123+00:00"
-    },
     "f4848e1c-2f81-46a1-b2ee-e73b0d30a3fb": {
       "title": "Validation & Analysis Project Manager - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -556,5 +564,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 159
+  "last_board_total": 161
 }

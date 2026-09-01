@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.365631+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-01T14:06:10.589679+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "9e144871-0ee4-4a6b-809c-3979090192f5": {
@@ -38,7 +38,15 @@
     "9d5a89da-0e05-4e47-8ddb-57a186895cc1": {
       "title": "Senior Product Analyst",
       "first_seen": "2026-08-25T13:01:51.689325+00:00"
+    },
+    "ffc27aeb-cbc9-4810-8d15-7880722c3833": {
+      "title": "SMB Account Executive",
+      "first_seen": "2026-09-01T14:06:10.589679+00:00"
+    },
+    "52b3afd4-ca18-47ed-b19a-640038c6a024": {
+      "title": "Director of SMB Sales",
+      "first_seen": "2026-09-01T14:06:10.589679+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 13
 }

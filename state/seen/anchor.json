@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.297990+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-01T14:06:10.558592+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "B0.24B": {
@@ -14,6 +14,10 @@
     "ED.760": {
       "title": "Director Of Finance and Compliance",
       "first_seen": "2026-08-13T11:24:10.783347+00:00"
+    },
+    "4E.178": {
+      "title": "QA & Automation Engineer",
+      "first_seen": "2026-09-01T14:06:10.558592+00:00"
     },
     "B9.D41": {
       "title": "Senior Backend Developer",
@@ -32,5 +36,5 @@
       "first_seen": "2026-08-13T11:24:10.783347+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

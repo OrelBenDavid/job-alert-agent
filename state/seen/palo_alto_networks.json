@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-01T08:32:41.862802+00:00",
-  "last_count": 158,
+  "last_success": "2026-09-01T14:06:11.135965+00:00",
+  "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021161": {
+      "title": "Director Product Operations (Cortex)",
+      "first_seen": "2026-09-01T14:06:11.135965+00:00"
+    },
     "JR-021791": {
       "title": "Principal/Senior Security Researcher - Autonomous EDR- Windows (Cortex)",
       "first_seen": "2026-09-01T08:32:41.862802+00:00"
@@ -53,10 +57,6 @@
     },
     "JR-020210": {
       "title": "Principal Software Engineer – Identity SSO (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-014386": {
-      "title": "Senior/ Principal Backend Engineer (Prisma Browser)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-021134": {
@@ -183,10 +183,6 @@
       "title": "Senior Staff DevOps Engineer - Cloud Security",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-020832": {
-      "title": "Staff InfoSec Engineer – Endpoint, Identity & AI Security",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-020727": {
       "title": "Senior Linux Detection Researcher (Cortex)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -213,10 +209,6 @@
     },
     "JR-021052": {
       "title": "Senior Staff C++ Win Engineer (EPM-Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-019122": {
-      "title": "Sr Software Engineer -Email Security (Cortex)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-019895": {
@@ -636,5 +628,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 160
+  "last_board_total": 158
 }

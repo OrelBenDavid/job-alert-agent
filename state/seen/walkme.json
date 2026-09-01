@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T08:32:41.900879+00:00",
-  "last_count": 11,
+  "last_success": "2026-09-01T14:06:11.160916+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "c8e67100-af5c-4e91-b147-952784abb8c3": {
@@ -15,14 +15,6 @@
       "title": "DevSecOps Engineer",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
-    "8bd1a62a-2a4c-451b-8c1a-170c65c64050": {
-      "title": "Pre-Sales AI Consultant",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "a6e57bde-d152-445b-aec9-8e356dacee8e": {
-      "title": "Product Analyst (Temporary Position)",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
       "title": "Product Designer",
       "first_seen": "2026-08-25T13:01:52.139714+00:00"
@@ -35,18 +27,10 @@
       "title": "Senior C# Developer",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
-    "5afc2845-be46-487a-9fd0-e72de5096660": {
-      "title": "Senior Professional Services Consultant",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
     "523740d8-98cd-43a2-8c2a-a94fa1c24705": {
       "title": "Senior Software Engineer - Big Data Platform",
       "first_seen": "2026-08-25T09:43:10.860069+00:00"
-    },
-    "9923a954-7584-4b5d-947b-f175d6b06940": {
-      "title": "Technical Support Engineer",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 31
 }
