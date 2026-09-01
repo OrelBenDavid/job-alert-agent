@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-09-01T14:06:11.157817+00:00",
-  "last_count": 1,
+  "last_success": "2026-09-01T18:20:52.239643+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "5973935004": {
-      "title": "Bioinformatics Researcher II",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    }
-  },
-  "last_board_total": 16
+  "jobs": {},
+  "last_board_total": 15
 }

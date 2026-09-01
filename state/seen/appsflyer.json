@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-01T14:06:10.561671+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-01T18:20:52.128188+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
       "title": "Application Security Engineer",
-      "first_seen": "2026-08-18T19:28:22.746067+00:00"
-    },
-    "8620283002": {
-      "title": "Data Engineer - Billing Platform",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
     },
     "8695882002": {
@@ -76,5 +72,5 @@
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
   },
-  "last_board_total": 47
+  "last_board_total": 46
 }

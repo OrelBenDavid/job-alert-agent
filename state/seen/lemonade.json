@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T14:06:11.118399+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-01T18:20:52.179118+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -75,10 +75,6 @@
       "title": "Senior Security Engineer",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
-    "2099ca5c-d033-4b20-ada9-706d9a760bc8": {
-      "title": "Agency Partner Manager",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
     "497b9f9b-3ff9-46e9-92f0-413f7f3a0b35": {
       "title": "Senior Backend Engineer - Python",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
@@ -112,5 +108,5 @@
       "first_seen": "2026-08-31T20:45:43.745608+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 32
 }

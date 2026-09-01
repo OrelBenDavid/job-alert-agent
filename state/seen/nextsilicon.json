@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T14:06:11.132289+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-01T18:20:52.195011+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "97.F5B": {
@@ -17,10 +17,6 @@
     },
     "6C.766": {
       "title": "Hardware Technical Program Manager",
-      "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
-    "D3.C61": {
-      "title": "Logic Design Team Lead",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     },
     "B9.F2E": {
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }

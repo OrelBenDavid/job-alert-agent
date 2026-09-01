@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T14:06:10.586145+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-01T18:20:52.161733+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "E8.663": {
@@ -26,7 +26,11 @@
     "97.069-D7.209": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "BD.17B": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-09-01T18:20:52.161733+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

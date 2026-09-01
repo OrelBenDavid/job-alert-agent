@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-01T14:06:10.572432+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-01T18:20:52.141436+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -26,7 +26,11 @@
     "3f9db6ac-7e75-456d-b724-e5a318717db3": {
       "title": "Lead Customer Success Manager",
       "first_seen": "2026-09-01T08:32:41.318947+00:00"
+    },
+    "227aa7b8-8fed-4ff5-83e8-c099a57d7591": {
+      "title": "VP HR",
+      "first_seen": "2026-09-01T18:20:52.141436+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }
