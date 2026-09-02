@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-02T11:06:52.071078+00:00",
+  "last_success": "2026-09-02T16:27:20.483885+00:00",
   "last_count": 157,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021719": {
+      "title": "Principal Platform Engineer - Devops (Cortex)",
+      "first_seen": "2026-09-02T16:27:20.483885+00:00"
+    },
     "JR-019115": {
       "title": "Principal Frontend Engineer (Cortex Platform)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -130,10 +134,6 @@
     "JR-020030": {
       "title": "Manager, SW Engineering- Authentication Team (Idira)",
       "first_seen": "2026-08-23T12:54:49.993458+00:00"
-    },
-    "JR-021379": {
-      "title": "Junior Security Posture Researcher  (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-017617": {
       "title": "Principal/Senior Engineer Software -  Agentic Endpoint Security(Cortex)",

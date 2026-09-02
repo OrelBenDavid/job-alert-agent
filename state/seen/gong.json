@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T11:06:52.016946+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-02T16:27:20.440910+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "4693375006": {
@@ -29,10 +29,6 @@
     },
     "4668007006": {
       "title": "Senior Backend Engineer - AI Framework (Python)",
-      "first_seen": "2026-08-13T11:24:25.541413+00:00"
-    },
-    "4676482006": {
-      "title": "Senior Backend Engineer (Python)",
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     },
     "4699925006": {
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     }
   },
-  "last_board_total": 98
+  "last_board_total": 97
 }

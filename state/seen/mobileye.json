@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T11:06:52.049186+00:00",
-  "last_count": 141,
+  "last_success": "2026-09-02T16:27:20.471052+00:00",
+  "last_count": 143,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -523,6 +523,14 @@
       "title": "System Validation Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "35d41f76-5f20-4fc8-b108-f761582083f2": {
+      "title": "Talent Acquisition Partner - Temporary (9 Months)",
+      "first_seen": "2026-09-02T16:27:20.471052+00:00"
+    },
+    "79932ba7-840a-4c1b-8dca-80722712d51b": {
+      "title": "Talent Acquisition Partner - Temporary (9 Months)",
+      "first_seen": "2026-09-02T16:27:20.471052+00:00"
+    },
     "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
       "title": "Technical Assistant for Executive VP",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -568,5 +576,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 162
+  "last_board_total": 164
 }

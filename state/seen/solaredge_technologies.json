@@ -1,10 +1,14 @@
 {
-  "last_success": "2026-09-02T11:06:52.099936+00:00",
+  "last_success": "2026-09-02T16:27:20.510482+00:00",
   "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
       "title": "Analog Chip Designer",
+      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "F3.C62": {
+      "title": "Analog Hardware Team Leader",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
     "93.76F": {
@@ -71,10 +75,6 @@
       "title": "Hardware Team Leader – Mixed-Signal Design",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
-    "18.E61": {
-      "title": "Integration Team Leader",
-      "first_seen": "2026-08-13T11:24:41.058684+00:00"
-    },
     "74.965": {
       "title": "Integration Technician",
       "first_seen": "2026-08-30T11:45:37.349266+00:00"
@@ -115,9 +115,9 @@
       "title": "Sales Operations Account Manager",
       "first_seen": "2026-08-18T15:40:36.082467+00:00"
     },
-    "F3.C62": {
-      "title": "Senior Analog Hardware Engineer",
-      "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    "D2.274": {
+      "title": "Senior Electrical Engineer (Licensed Engineer Electrician)",
+      "first_seen": "2026-09-02T16:27:20.510482+00:00"
     },
     "15.16F": {
       "title": "Senior Frontend Engineer",
@@ -164,5 +164,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 110
+  "last_board_total": 102
 }

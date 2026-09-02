@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-02T11:06:52.018920+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-02T16:27:20.442382+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "4F.E56": {
+      "title": "Brand Marketing Manager",
+      "first_seen": "2026-09-02T16:27:20.442382+00:00"
     },
     "B9.264": {
       "title": "CISO",
@@ -83,6 +87,10 @@
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "D2.270": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-09-02T16:27:20.442382+00:00"
+    },
     "A8.96A": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -104,5 +112,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 27
 }

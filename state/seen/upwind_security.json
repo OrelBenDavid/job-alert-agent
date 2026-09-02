@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T11:06:52.115116+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-02T16:27:20.533168+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "4C.C69": {
@@ -39,17 +39,9 @@
       "title": "Product Marketing Manager",
       "first_seen": "2026-08-30T11:45:37.362583+00:00"
     },
-    "AD.17E": {
-      "title": "Senior Software Engineer - Go",
-      "first_seen": "2026-08-31T13:27:00.422658+00:00"
-    },
     "26.D6E": {
       "title": "Senior Vulnerability Researcher",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
-    },
-    "16.86B": {
-      "title": "Software Engineer, Platforms",
-      "first_seen": "2026-08-26T09:51:33.874132+00:00"
     },
     "7F.F61": {
       "title": "Talent Network Builder",
@@ -72,5 +64,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 57
 }

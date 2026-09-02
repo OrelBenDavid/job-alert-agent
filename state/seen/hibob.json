@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-02T11:06:52.026032+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-02T16:27:20.447236+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
-    "96caecc5-aca2-4cb7-9799-e661e2c00b0b": {
-      "title": "Integration Engineer",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
     "6582d671-7ad3-4d15-86b6-34ee30fe0c00": {
       "title": "Customer Experience Engineer",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
@@ -68,5 +64,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 61
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T11:06:51.973107+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-02T16:27:20.395178+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "51.05B": {
@@ -38,10 +38,6 @@
     "A5.862": {
       "title": "Mechanical Quality Control (QC) Inspector",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
-    },
-    "1D.072": {
-      "title": "Practical Engineer / Technician",
-      "first_seen": "2026-08-19T13:01:25.190295+00:00"
     },
     "7C.65E": {
       "title": "Procurement Manager",
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }
