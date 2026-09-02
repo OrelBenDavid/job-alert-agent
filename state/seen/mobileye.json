@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.457854+00:00",
-  "last_count": 140,
+  "last_success": "2026-09-02T11:06:52.049186+00:00",
+  "last_count": 141,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -98,10 +98,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "568f4a72-8cd2-4c33-9d09-1a62e21dacc7": {
-      "title": "Data Analysis Engineer - Student Position",
-      "first_seen": "2026-08-31T13:27:00.364188+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -307,6 +303,10 @@
       "title": "Senior AV Product Manager - Temporary Position (One year replacement)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "fcb6a990-573b-49d1-bfb0-ecb6abc003b7": {
+      "title": "Senior AV Project Manager Team Lead",
+      "first_seen": "2026-09-02T11:06:52.049186+00:00"
+    },
     "1b03acdd-1eb9-4aa7-9f5b-53fdc890d2b7": {
       "title": "Senior C++ Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -343,13 +343,17 @@
       "title": "Senior Financial Analyst",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "f79f2613-e1cb-49b1-802a-0f9fb7d997e0": {
-      "title": "Senior Full-Stack Developer",
-      "first_seen": "2026-08-30T16:33:21.504115+00:00"
-    },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior Hardware Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
+    },
+    "3f7e3421-7963-4d3a-8573-2fb29f8dbade": {
+      "title": "Senior Microsoft Sysadmin",
+      "first_seen": "2026-09-02T11:06:52.049186+00:00"
+    },
+    "6f95360f-6d69-4c40-a0fe-3e8f3a1d6f5c": {
+      "title": "Senior Microsoft Sysadmin",
+      "first_seen": "2026-09-02T11:06:52.049186+00:00"
     },
     "25f2cd2f-fbac-4101-b913-045cdc4458a3": {
       "title": "Senior ML Data Engineer",
@@ -564,5 +568,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 161
+  "last_board_total": 162
 }

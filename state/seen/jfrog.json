@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.430162+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-02T11:06:52.032292+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -51,6 +51,10 @@
       "title": "Marketing Coordinator",
       "first_seen": "2026-08-18T15:40:35.036808+00:00"
     },
+    "8165995": {
+      "title": "Operation Coordinator - Temporary role - Tel Aviv site",
+      "first_seen": "2026-09-02T11:06:52.032292+00:00"
+    },
     "8074288": {
       "title": "R&D Team Leader",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }

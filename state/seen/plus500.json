@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.477638+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-02T11:06:52.083244+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "F2.B62": {
@@ -59,10 +59,14 @@
       "title": "Subsidiaries Controller (TLV)",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     },
+    "13.17F": {
+      "title": "UX & Marketing Content Writer",
+      "first_seen": "2026-09-02T11:06:52.083244+00:00"
+    },
     "C8.753": {
       "title": "Web Software Engineer (TLV)",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 16
 }

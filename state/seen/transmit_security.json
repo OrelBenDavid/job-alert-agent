@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.503943+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-02T11:06:52.113155+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "8539030002": {
@@ -9,10 +9,6 @@
     },
     "7974762002": {
       "title": "Engineering Team Lead",
-      "first_seen": "2026-08-13T11:24:41.078385+00:00"
-    },
-    "8524210002": {
-      "title": "IT Security Engineer",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
     },
     "8658335002": {
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-02T04:10:24.465100+00:00",
+  "last_success": "2026-09-02T11:06:52.064936+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "4868664101": {
       "title": "Chief Architect",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4855504101": {
-      "title": "Cloud Architect",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "4938801101": {
@@ -19,11 +15,11 @@
       "title": "Devops Student",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4867642101": {
+    "4933792101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4933792101": {
+    "4867642101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
@@ -78,6 +74,10 @@
     "4904281101": {
       "title": "QA Lead",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "4966216101": {
+      "title": "Quality Director",
+      "first_seen": "2026-09-02T11:06:52.064936+00:00"
     },
     "4923953101": {
       "title": "Senior Agentic Systems Engineer",

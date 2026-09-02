@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.422258+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-02T11:06:52.024963+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "4821256101": {
@@ -19,14 +19,10 @@
       "title": "Marketing AI Builder",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     },
-    "4752188101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "4964089101": {
       "title": "User Acquisition Manager",
       "first_seen": "2026-08-31T13:26:59.959562+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 9
 }

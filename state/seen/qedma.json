@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-02T04:10:24.480078+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-02T11:06:52.085475+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
+    "9B.F60": {
+      "title": "Office Manager - Maternity Leave Cover",
+      "first_seen": "2026-09-02T11:06:52.085475+00:00"
+    },
     "EC.078": {
       "title": "Senior Software Engineer - Algorithms",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -12,5 +16,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 5
 }

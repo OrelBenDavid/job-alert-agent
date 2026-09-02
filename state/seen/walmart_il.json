@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.510948+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-02T11:06:52.120321+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "7D.F64": {
@@ -11,14 +11,10 @@
       "title": "Associate AI Product Manager",
       "first_seen": "2026-08-20T06:56:59.907640+00:00"
     },
-    "60.D61": {
-      "title": "French Business Operations Specialist",
-      "first_seen": "2026-08-20T06:56:59.907640+00:00"
-    },
     "FD.463": {
       "title": "Senior UX Designer",
       "first_seen": "2026-08-20T06:56:59.907640+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }

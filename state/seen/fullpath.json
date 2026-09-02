@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-02T04:10:24.416134+00:00",
+  "last_success": "2026-09-02T11:06:52.008914+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -28,7 +28,7 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "BD.17B": {
-      "title": "Senior Product Manager",
+      "title": "Senior Product Manager - CDP",
       "first_seen": "2026-09-01T18:20:52.161733+00:00"
     }
   },

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.499477+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-02T11:06:52.103436+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -30,6 +30,10 @@
     "7903597": {
       "title": "Data Platform Engineering Team Leader",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
+    },
+    "8073783": {
+      "title": "Experienced Full Stack Engineer",
+      "first_seen": "2026-09-02T11:06:52.103436+00:00"
     },
     "7941894": {
       "title": "Field Marketing Manager, Growth",
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 84
 }

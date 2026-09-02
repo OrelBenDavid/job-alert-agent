@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.382040+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-02T11:06:51.967702+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "5994462004": {
@@ -9,10 +9,6 @@
     },
     "6105747004": {
       "title": "AI Expert",
-      "first_seen": "2026-08-13T11:24:10.787360+00:00"
-    },
-    "5661391004": {
-      "title": "Senior Data Platform Engineer",
       "first_seen": "2026-08-13T11:24:10.787360+00:00"
     },
     "6105740004": {
@@ -28,5 +24,5 @@
       "first_seen": "2026-08-13T11:24:10.787360+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

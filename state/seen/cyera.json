@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.402155+00:00",
-  "last_count": 30,
+  "last_success": "2026-09-02T11:06:51.991792+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
     "AF.66B": {
@@ -42,6 +42,10 @@
     "95.071": {
       "title": "ML Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "66.177": {
+      "title": "Payroll Accountant",
+      "first_seen": "2026-09-02T11:06:51.991792+00:00"
     },
     "81.E68": {
       "title": "Presales Engineer - Tel Aviv",
@@ -124,5 +128,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 188
+  "last_board_total": 189
 }

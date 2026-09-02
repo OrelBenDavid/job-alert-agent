@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.430865+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-02T11:06:52.036012+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "R-096609": {
@@ -14,10 +14,6 @@
     "R-075062": {
       "title": "DPS Business Administration",
       "first_seen": "2026-08-31T13:26:59.967472+00:00"
-    },
-    "R-096150": {
-      "title": "SW Quality Engineer",
-      "first_seen": "2026-08-30T11:45:36.997689+00:00"
     },
     "R-091373": {
       "title": "Digital NPD Quality Manager",
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-02T04:10:24.479389+00:00",
+  "last_success": "2026-09-02T11:06:52.084881+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "05.F69": {
-      "title": "Logic Design Engineer",
+      "title": "Senior Logic Design Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "82.D6A": {

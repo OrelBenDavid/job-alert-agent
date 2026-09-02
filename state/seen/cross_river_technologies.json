@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.400163+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-02T11:06:51.989821+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "53.E6A": {
@@ -55,10 +55,14 @@
       "title": "Senior Software Engineer - IAM",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     },
+    "4E.17F": {
+      "title": "Staff Software Engineer",
+      "first_seen": "2026-09-02T11:06:51.989821+00:00"
+    },
     "92.F23": {
       "title": "Would LOVE to join Cross River!!",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.407177+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-02T11:06:51.996489+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -98,11 +98,7 @@
     "F1.C65": {
       "title": "Vendor Managment",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
-    "2A.967": {
-      "title": "VP of Program & Release Management",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 26
 }

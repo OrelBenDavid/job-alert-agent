@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T04:10:24.398416+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-02T11:06:51.987977+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "5549978004": {
@@ -47,6 +47,10 @@
       "title": "Mobile Infrastructure Team Lead",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "6177515004": {
+      "title": "Onboarding Manager SMB",
+      "first_seen": "2026-09-02T11:06:51.987977+00:00"
+    },
     "5840326004": {
       "title": "Product Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-20T06:58:29.950226+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }
