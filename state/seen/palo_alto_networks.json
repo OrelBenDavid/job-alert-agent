@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T16:27:20.483885+00:00",
-  "last_count": 157,
+  "last_success": "2026-09-02T20:55:41.993862+00:00",
+  "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021719": {
@@ -375,10 +375,6 @@
       "title": "Principal/Senior Engineer Software - Data Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-019726": {
-      "title": "Senior Security Researcher Identity & SaaS (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-019922": {
       "title": "Senior Technical Program Manager – AI Transformation & Integrations (AgentiX) (Cortex",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -632,5 +628,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 159
+  "last_board_total": 158
 }

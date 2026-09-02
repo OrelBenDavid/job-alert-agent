@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T16:27:20.414610+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-02T20:55:41.912196+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "FA.E52": {
@@ -35,10 +35,6 @@
       "title": "Senior Security Operations Engineer",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
-    "C2.27A": {
-      "title": "Software Engineer - Student Position",
-      "first_seen": "2026-09-02T16:27:20.414610+00:00"
-    },
     "CE.079": {
       "title": "Software Engineer Team Leader, AI Platform",
       "first_seen": "2026-08-23T15:30:12.038716+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 25
 }

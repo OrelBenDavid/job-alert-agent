@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-02T16:27:20.447970+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-02T20:55:41.940997+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "2d6f4777-b6b4-4624-bc38-e51e7f00e736": {
@@ -14,7 +14,11 @@
     "5dca2dd2-7e72-4fcf-82fa-12f58ee40d08": {
       "title": "Medical Director",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "ecda17d2-f5f1-4502-ba50-13f780eb0dd4": {
+      "title": "Membership Specialist",
+      "first_seen": "2026-09-02T20:55:41.940997+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

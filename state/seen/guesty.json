@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-02T16:27:20.443227+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-02T20:55:41.935570+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
+    "13.275": {
+      "title": "Director of CX Operations",
+      "first_seen": "2026-09-02T20:55:41.935570+00:00"
+    },
     "0D.F6D": {
       "title": "Head of Finance Applications",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -12,5 +16,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

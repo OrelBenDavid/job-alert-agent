@@ -1,19 +1,31 @@
 {
-  "last_success": "2026-09-02T16:27:20.454831+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-02T20:55:41.955748+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
       "title": "3D Algorithm Developer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "F2.178": {
+      "title": "Associate, Corporate Development",
+      "first_seen": "2026-09-02T20:55:41.955748+00:00"
+    },
     "8D.968": {
       "title": "Buyer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "13.274": {
+      "title": "Controller",
+      "first_seen": "2026-09-02T20:55:41.955748+00:00"
+    },
     "74.C60": {
       "title": "Forward Deployed Engineer (FDE)",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "9F.966": {
+      "title": "FP&A Manager",
+      "first_seen": "2026-09-02T20:55:41.955748+00:00"
     },
     "33.A6F": {
       "title": "Head of Commercial & Contracts",
@@ -112,5 +124,5 @@
       "first_seen": "2026-09-02T16:27:20.454831+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 30
 }
