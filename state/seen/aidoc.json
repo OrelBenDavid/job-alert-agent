@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.776913+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-03T11:04:07.998541+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -71,6 +71,10 @@
       "title": "Principal Software Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
+    "4908238101": {
+      "title": "Product Enablement Manager",
+      "first_seen": "2026-09-03T11:04:07.998541+00:00"
+    },
     "4920296101": {
       "title": "SecOps Detection & Response",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -112,5 +116,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

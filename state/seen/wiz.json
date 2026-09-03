@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.894645+00:00",
-  "last_count": 23,
+  "last_success": "2026-09-03T11:04:08.154378+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "4681239006": {
@@ -41,10 +41,6 @@
     },
     "4690860006": {
       "title": "Incident Responder",
-      "first_seen": "2026-08-23T09:01:23.865955+00:00"
-    },
-    "4698920006": {
-      "title": "Instructional Designer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
     "4686011006": {
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 125
+  "last_board_total": 124
 }

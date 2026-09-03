@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-09-03T04:07:01.772806+00:00",
-  "last_count": 31,
+  "last_success": "2026-09-03T11:04:07.992252+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000147210509": {
+      "title": "Account Executive, Enterprise - Base44",
+      "first_seen": "2026-09-03T11:04:07.992252+00:00"
+    },
+    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000147210399": {
+      "title": "Account Executive, Mid-Market - Base44",
+      "first_seen": "2026-09-03T11:04:07.992252+00:00"
+    },
+    "https://careers.wix.com/position/oracle-4d1bcd92-a7c2-5230-9085-2078e713210c-T1782119350-744000147173260": {
+      "title": "Inbound Product Marketing Manager",
+      "first_seen": "2026-09-03T11:04:07.992252+00:00"
+    },
+    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000147160953": {
+      "title": "Experienced AI Product Marketing Manager - Base44",
+      "first_seen": "2026-09-03T11:04:07.992252+00:00"
+    },
     "https://careers.wix.com/position/oracle-678456a6-55ae-5f85-bf4f-e183f702df1f-T1788360224-744000147018397": {
       "title": "Wellbeing Manager (Parental leave)",
       "first_seen": "2026-09-02T16:27:20.380080+00:00"
@@ -18,14 +34,6 @@
     "https://careers.wix.com/position/oracle-8c1ca06c-e6a2-5523-9f29-f1005f654d21-T1787731425-744000145723641": {
       "title": "Student Internship – SOX Accounting",
       "first_seen": "2026-08-26T13:07:17.537125+00:00"
-    },
-    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000145687321": {
-      "title": "Account Executive, SMB - Base44",
-      "first_seen": "2026-08-26T09:51:33.796649+00:00"
-    },
-    "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000145686325": {
-      "title": "Account Executive, Enterprise - Base44",
-      "first_seen": "2026-08-26T09:51:33.796649+00:00"
     },
     "https://careers.wix.com/position/oracle-98184094-baea-5754-8f4b-7c9df928de2c-T1787676518-744000145682188": {
       "title": "Social Content Creator - Base44",
@@ -89,10 +97,6 @@
     },
     "https://careers.wix.com/position/oracle-2656ac50-2531-58c6-9fff-6c628afff2d7-T1785661175-744000141691009": {
       "title": "Head Of Security - Base44",
-      "first_seen": "2026-08-12T11:43:17.595643+00:00"
-    },
-    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000141454128": {
-      "title": "Senior AI Product Marketing Manager - Base44",
       "first_seen": "2026-08-12T11:43:17.595643+00:00"
     },
     "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000141453928": {

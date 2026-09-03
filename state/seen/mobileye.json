@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.841998+00:00",
-  "last_count": 143,
+  "last_success": "2026-09-03T11:04:08.063162+00:00",
+  "last_count": 148,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -63,10 +63,6 @@
       "title": "C++ Software developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "b284661b-707c-4883-b0bd-30b6c762f1f8": {
-      "title": "C++ Software Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "a0280601-36db-40d7-a52d-996b772d4e84": {
       "title": "C++ Software Engineer - Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -119,6 +115,10 @@
       "title": "DevOps & Infrastructure Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "a6711d79-22df-4e2f-a21a-3b31b9337175": {
+      "title": "Electrical Practical Engineer",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
     "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
       "title": "Embedded C++ Software Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -166,6 +166,10 @@
     "48df21e2-84dd-42e7-9d55-f4121d444df8": {
       "title": "Experienced Deep Learning Algorithm Developer - Road Team",
       "first_seen": "2026-08-24T09:56:22.874385+00:00"
+    },
+    "878a21c9-1159-4c3d-957d-d278de51b202": {
+      "title": "Experienced Deep Learning Algorithm Developer - Road Team",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
     "de4739b8-eda9-4262-ae5b-c3ee15d86a3c": {
       "title": "Experienced Deep Learning Algorithm Developer – Object Perception Group",
@@ -227,6 +231,10 @@
       "title": "IT Specialist – MENTEE",
       "first_seen": "2026-09-01T08:32:41.837992+00:00"
     },
+    "7a258e61-6cdc-431c-adf2-36b67ef05353": {
+      "title": "Mechanical Engineer - Automotive ECU",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -234,6 +242,10 @@
     "e58368d8-ec21-4e5e-871d-40707762b959": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
+      "title": "Operations Division Global Admin",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
     "e58754ea-2525-4630-b7c3-ee76e043f6ed": {
       "title": "Operations Systems & Budget Coordinator",
@@ -259,6 +271,10 @@
       "title": "Physical Design Expert",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "820209f4-b8a0-4b3b-b2de-46d62cad0aac": {
+      "title": "Product Environmental Compliance Specialist",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -266,10 +282,6 @@
     "95a8d51f-c038-465e-baca-6e0cd1ffaa95": {
       "title": "Product Manager for AV Cloud services",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "fac143e4-0dba-4912-ae9e-d168249a95d8": {
-      "title": "Python Data Solutions Specialist-Temporary Position",
-      "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
     "76bd5cf5-a8cb-4541-a736-c44ede8ed205": {
       "title": "QMS Quality Engineer",
@@ -342,6 +354,10 @@
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
+    },
+    "050c9118-b8bd-42c7-9a5d-bf0ef7e6a196": {
+      "title": "Senior Full Stack Developer",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior Hardware Engineer",
@@ -571,10 +587,14 @@
       "title": "Validation & Integration Engineer",
       "first_seen": "2026-08-26T09:51:33.846604+00:00"
     },
+    "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
+      "title": "Validation Analytics Tools Developer",
+      "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
       "title": "Validation Engineer & Embedded System Integration",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 164
+  "last_board_total": 170
 }

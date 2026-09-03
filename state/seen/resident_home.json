@@ -1,17 +1,17 @@
 {
-  "last_success": "2026-09-03T04:07:01.866981+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-03T11:04:08.094099+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "6112307004": {
       "title": "Data Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
-    "6016203004": {
+    "6016190004": {
       "title": "Fullstack Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
-    "6016190004": {
+    "6016203004": {
       "title": "Fullstack Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
@@ -19,14 +19,10 @@
       "title": "Marketing Analyst",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
-    "6018267004": {
-      "title": "Senior Frontend Infrastructure Engineer",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
     "6144832004": {
       "title": "Senior Product Manager, E-commerce",
       "first_seen": "2026-08-31T13:27:00.398367+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 14
 }

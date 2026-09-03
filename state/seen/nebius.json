@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.846049+00:00",
-  "last_count": 78,
+  "last_success": "2026-09-03T11:04:08.078836+00:00",
+  "last_count": 80,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -63,6 +63,10 @@
       "title": "DevOps Engineer (Agentic Search)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "4930968101": {
+      "title": "DFIR Manager",
+      "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
     "4902513101": {
       "title": "Director, Pricing",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -106,10 +110,6 @@
     "4959895101": {
       "title": "Head of Security Reliability",
       "first_seen": "2026-08-25T15:52:15.742830+00:00"
-    },
-    "4930968101": {
-      "title": "Incident Response Lead",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4919123101": {
       "title": "Instructional Designer, Nebius Academy",
@@ -170,6 +170,10 @@
     "4958485101": {
       "title": "Security Engineering Lead",
       "first_seen": "2026-08-27T14:03:31.438634+00:00"
+    },
+    "4942985101": {
+      "title": "Security Operations & Coordination Manager",
+      "first_seen": "2026-09-03T11:04:08.078836+00:00"
     },
     "4945568101": {
       "title": "Security Solutions Engineer",
@@ -242,6 +246,10 @@
     "4906640101": {
       "title": "Senior Software Engineer, Vertical Search (Agentic Search)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4781977101": {
+      "title": "Senior Software Engineer (YDB Team)",
+      "first_seen": "2026-09-03T11:04:08.078836+00:00"
     },
     "4537282101": {
       "title": "Senior/Staff Application Security Engineer",
@@ -316,5 +324,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 370
+  "last_board_total": 373
 }

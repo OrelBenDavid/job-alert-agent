@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-03T04:07:01.774535+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-03T11:04:07.994125+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "E5.07C": {
       "title": "Office Manager",
       "first_seen": "2026-09-02T16:27:20.382630+00:00"
+    },
+    "E8.868": {
+      "title": "Research Data Analyst",
+      "first_seen": "2026-09-03T11:04:07.994125+00:00"
     },
     "65.56A": {
       "title": "Security Researcher",
@@ -20,5 +24,5 @@
       "first_seen": "2026-08-20T06:56:44.530449+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.776246+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-03T11:04:07.998062+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "96.07C": {
@@ -10,7 +10,11 @@
     "DC.C61": {
       "title": "Tax Manager",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
+    },
+    "DC.C60": {
+      "title": "Tax Preparer",
+      "first_seen": "2026-09-03T11:04:07.998062+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 4
 }

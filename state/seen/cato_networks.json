@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-03T04:07:01.791938+00:00",
+  "last_success": "2026-09-03T11:04:08.012363+00:00",
   "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,10 +31,6 @@
       "title": "Automation Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4850425101": {
-      "title": "Automation Engineer – Browser Security",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "4848229101": {
       "title": "Data Scientist",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -54,6 +50,10 @@
     "4905948101": {
       "title": "Global HR Operations & HRIS Manager",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4953528101": {
+      "title": "Junior Software Engineer – Cato Apps Team (AI)",
+      "first_seen": "2026-09-03T11:04:08.012363+00:00"
     },
     "4897189101": {
       "title": "Lead Security Researcher - AI Threat Intelligence",
@@ -152,5 +152,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 104
+  "last_board_total": 105
 }

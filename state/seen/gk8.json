@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-09-03T04:07:01.816080+00:00",
-  "last_count": 1,
+  "last_success": "2026-09-03T11:04:08.045326+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "17.764": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-19T09:41:24.990712+00:00"
-    }
-  },
-  "last_board_total": 1
+  "jobs": {},
+  "last_board_total": 0
 }

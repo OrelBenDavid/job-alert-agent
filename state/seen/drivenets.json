@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.805993+00:00",
-  "last_count": 24,
+  "last_success": "2026-09-03T11:04:08.030836+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -79,6 +79,10 @@
       "title": "Senior Product Manager - Switch Hardware AI Networking",
       "first_seen": "2026-08-18T03:57:51.498356+00:00"
     },
+    "C8.45B": {
+      "title": "Senior Signal Integrity Engineer",
+      "first_seen": "2026-09-03T11:04:08.030836+00:00"
+    },
     "F6.93A": {
       "title": "Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
@@ -100,5 +104,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 27
 }

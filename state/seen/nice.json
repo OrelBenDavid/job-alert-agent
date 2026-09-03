@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T04:07:01.848765+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-03T11:04:08.080968+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "4868664101": {
@@ -83,6 +83,10 @@
       "title": "Senior Agentic Systems Engineer",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
+    "4967467101": {
+      "title": "Senior HR Operations Specialist",
+      "first_seen": "2026-09-03T11:04:08.080968+00:00"
+    },
     "4911286101": {
       "title": "Senior Product Manager, AI",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 183
+  "last_board_total": 180
 }
