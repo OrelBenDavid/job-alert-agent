@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-09-03T16:17:32.023416+00:00",
-  "last_count": 153,
+  "last_success": "2026-09-03T20:54:14.339810+00:00",
+  "last_count": 157,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022004": {
+      "title": "Software Engineer (Credential Provider)",
+      "first_seen": "2026-09-03T20:54:14.339810+00:00"
+    },
+    "JR-022003": {
+      "title": "Sr Staff Engineer Software (Credential Provider)",
+      "first_seen": "2026-09-03T20:54:14.339810+00:00"
+    },
+    "JR-022002": {
+      "title": "Staff Software Engineer (Credential Provider)",
+      "first_seen": "2026-09-03T20:54:14.339810+00:00"
+    },
+    "JR-021366": {
+      "title": "Commercial Account Manager",
+      "first_seen": "2026-09-03T20:54:14.339810+00:00"
+    },
     "JR-014386": {
       "title": "Senior/ Principal Backend Engineer (Prisma Browser)",
       "first_seen": "2026-09-03T11:04:08.085596+00:00"
@@ -616,5 +632,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 155
+  "last_board_total": 159
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T16:17:32.046842+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-03T20:54:14.844821+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "8161442": {
@@ -31,6 +31,10 @@
       "title": "Store Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
+    "8173457": {
+      "title": "Trust and Safety Associate",
+      "first_seen": "2026-09-03T20:54:14.844821+00:00"
+    },
     "6739485": {
       "title": "מלקטים-וולט מרקט- באר שבע",
       "first_seen": "2026-08-31T13:27:00.432754+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-23T18:39:51.236643+00:00"
     }
   },
-  "last_board_total": 244
+  "last_board_total": 245
 }
