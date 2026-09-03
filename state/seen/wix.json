@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-03T11:04:07.992252+00:00",
-  "last_count": 32,
+  "last_success": "2026-09-03T16:17:31.963624+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-aadb352b-218d-5bc2-abf2-2c2234062e81-T1788436737-744000147233909": {
+      "title": "Animator - Base44",
+      "first_seen": "2026-09-03T16:17:31.963624+00:00"
+    },
     "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000147210509": {
       "title": "Account Executive, Enterprise - Base44",
       "first_seen": "2026-09-03T11:04:07.992252+00:00"
@@ -51,10 +55,6 @@
       "title": "DevSecOps Tech Lead",
       "first_seen": "2026-08-23T09:01:19.726866+00:00"
     },
-    "https://careers.wix.com/position/oracle-f93791c7-04f3-5bb4-8aca-d40ee1372217-T1787216569-744000144548220": {
-      "title": "SOC Analyst",
-      "first_seen": "2026-08-20T15:40:50.802240+00:00"
-    },
     "https://careers.wix.com/position/oracle-a0b3ca2d-025f-5974-a49c-fd8991fb0f06-T1787212968-744000144513379": {
       "title": "Dynamics 365 CRM Developer",
       "first_seen": "2026-08-20T13:03:13.892882+00:00"
@@ -101,10 +101,6 @@
     },
     "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000141453928": {
       "title": "AI Growth Marketer - Base44",
-      "first_seen": "2026-08-12T11:43:17.595643+00:00"
-    },
-    "https://careers.wix.com/position/oracle-b627985c-bed6-5ff7-a2e4-90ef99fb9397-T1785824988-744000141416948": {
-      "title": "Animator - Base44 (Temp position)",
       "first_seen": "2026-08-12T11:43:17.595643+00:00"
     },
     "https://careers.wix.com/position/oracle-0e12307b-4f71-5674-b656-d4dc6e345856-T1785146313-744000140238949": {

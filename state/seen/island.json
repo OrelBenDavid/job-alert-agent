@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T11:04:08.052481+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-03T16:17:31.997067+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -74,11 +74,7 @@
     "4E.E5B": {
       "title": "Senior Software Engineer - Glilot",
       "first_seen": "2026-08-19T09:41:25.004836+00:00"
-    },
-    "71.343": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 47
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-03T11:04:08.148253+00:00",
+  "last_success": "2026-09-03T16:17:32.042784+00:00",
   "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
@@ -107,13 +107,13 @@
       "title": "Senior Infrastructure Developer",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
+    "43.274": {
+      "title": "Senior Security Engineer",
+      "first_seen": "2026-09-03T16:17:32.042784+00:00"
+    },
     "43.276": {
       "title": "Senior Security Engineer",
       "first_seen": "2026-09-03T11:04:08.148253+00:00"
-    },
-    "CD.B6D": {
-      "title": "Senior Software Engineer - Geektime",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
     "BF.546": {
       "title": "Senior Solutions Engineer – Big Data & Data Infrastructure",

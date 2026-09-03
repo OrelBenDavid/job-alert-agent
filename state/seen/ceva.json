@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-03T11:04:08.016063+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-03T16:17:31.980694+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
-    "F9.66B": {
-      "title": "AI Embedded Engineer",
-      "first_seen": "2026-08-13T11:24:10.823521+00:00"
-    },
     "C3.D6F": {
       "title": "AI NPU Simulator - Senior Team Lead",
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 34
 }

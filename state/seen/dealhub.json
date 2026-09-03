@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T11:04:08.029775+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-03T16:17:31.985903+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "B5.071": {
@@ -54,7 +54,11 @@
     "B4.550": {
       "title": "Solution Expert",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "A3.27E": {
+      "title": "VP Sales",
+      "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }

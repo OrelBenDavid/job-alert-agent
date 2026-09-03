@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T11:04:08.085596+00:00",
-  "last_count": 156,
+  "last_success": "2026-09-03T16:17:32.023416+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
     "JR-014386": {
@@ -339,10 +339,6 @@
       "title": "Sr Staff Engineer Software (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-020035": {
-      "title": "Staff Software Engineer (Directory Services)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-017319": {
       "title": "Sr Technical Program Manager",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -503,10 +499,6 @@
       "title": "Linux Internals Software Engineer (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018207": {
-      "title": "Senior Software Engineer (Conjur Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018778": {
       "title": "Principal DevOps Engineer - AI Platforms (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -615,10 +607,6 @@
       "title": "Senior Product Manager - DSPM (Cortex Cloud )",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-015114": {
-      "title": "Senior Product Manager (Cortex XDR)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-014644": {
       "title": "Principal Engineer Software(Cortex XSOAR/XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -628,5 +616,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 158
+  "last_board_total": 155
 }

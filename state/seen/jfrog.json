@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-03T11:04:08.053173+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-03T16:17:31.997522+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
       "title": "AI Solutions Specialist",
       "first_seen": "2026-08-20T09:42:36.491460+00:00"
+    },
+    "8167054": {
+      "title": "Application Security Engineer",
+      "first_seen": "2026-09-03T16:17:31.997522+00:00"
     },
     "8127498": {
       "title": "Business Development Representative - French speaker",
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 53
+  "last_board_total": 54
 }

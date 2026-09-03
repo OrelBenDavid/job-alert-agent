@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T11:04:08.016338+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-03T16:17:31.980875+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -9,10 +9,6 @@
     },
     "9a4eec37-952c-4a79-8991-9fe5d1fcd5d4": {
       "title": "Applied AI Attorney",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "1811e978-fe35-490d-8d0b-6ff76b30a24d": {
-      "title": "Head of DevOps",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "7865e989-e63d-4ba1-8c31-eedee1c34590": {
@@ -28,5 +24,5 @@
       "first_seen": "2026-09-01T08:32:41.318947+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

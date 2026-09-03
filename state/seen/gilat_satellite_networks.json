@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-03T11:04:08.045127+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-03T16:17:31.991371+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "80.E69": {
-      "title": "Department Administrative Assistant",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
     "CF.074": {
       "title": "Sales Manager",
       "first_seen": "2026-08-25T13:01:51.685297+00:00"

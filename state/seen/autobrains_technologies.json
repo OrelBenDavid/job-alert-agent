@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-03T11:04:08.007152+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-03T16:17:31.974034+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
+    "48.E6E": {
+      "title": "Data Tagging Operator (Full-Time|On Site|Hourly Rate)",
+      "first_seen": "2026-09-03T16:17:31.974034+00:00"
+    },
     "0C.F6C": {
       "title": "Embedded Software - Team Leader",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"

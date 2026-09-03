@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-03T11:04:08.009705+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-03T16:17:31.978231+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "F2.C56": {
       "title": "Backend Engineer",
       "first_seen": "2026-08-26T13:07:18.186817+00:00"
+    },
+    "33.D69-79.407": {
+      "title": "Director, Product Marketing",
+      "first_seen": "2026-09-03T16:17:31.978231+00:00"
     },
     "B4.652": {
       "title": "Future Opportunities",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

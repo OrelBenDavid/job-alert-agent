@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-03T11:04:08.023579+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-03T16:17:31.981862+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
-    "57bafe1d-6591-4d0a-b865-7c588ffd808d": {
-      "title": "IT Manager",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
     "eeb8770a-82a9-494b-a486-2c6e37226551": {
       "title": "Senior AI Solutions Builder",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }

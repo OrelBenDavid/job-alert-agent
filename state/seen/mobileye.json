@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-03T11:04:08.063162+00:00",
-  "last_count": 148,
+  "last_success": "2026-09-03T16:17:32.007271+00:00",
+  "last_count": 157,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -53,10 +53,6 @@
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "9121911b-de12-40a3-86a6-1c586c192658": {
-      "title": "C++ Developer for Radar Engine Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "c3bb544b-d499-4844-afdc-5abf54fd2073": {
@@ -155,6 +151,14 @@
       "title": "Embedded Team Leader -OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "8d09a950-7497-409c-a7d2-4a72458435de": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "b6db859a-bb49-4e66-ac3d-d111eeb03bd1": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
     "18c50dc3-2d92-43f2-9ad2-2fd58739aedb": {
       "title": "Execution Project Manager - Algorithm Department",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -231,6 +235,22 @@
       "title": "IT Specialist – MENTEE",
       "first_seen": "2026-09-01T08:32:41.837992+00:00"
     },
+    "618a3df6-c072-4688-b518-bd9bef588a88": {
+      "title": "Junior DFT Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "9ed322e5-1d03-43bc-8e05-12ee1593657c": {
+      "title": "Junior Formal Verification Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
+      "title": "Junior Physical Design Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "d792d8e6-688c-45ff-9908-31d43d84b2f0": {
+      "title": "Junior Verification Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
     "7a258e61-6cdc-431c-adf2-36b67ef05353": {
       "title": "Mechanical Engineer - Automotive ECU",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
@@ -242,6 +262,10 @@
     "e58368d8-ec21-4e5e-871d-40707762b959": {
       "title": "ML Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "12c753a2-6aea-4528-b700-5c96ec833c35": {
+      "title": "Operations Control Center Operator - Student Position",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
     },
     "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
       "title": "Operations Division Global Admin",
@@ -283,9 +307,21 @@
       "title": "Product Manager for AV Cloud services",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "1f5b91c7-b459-4a3a-8d28-f8a8e3e79d26": {
+      "title": "QMS Quality Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
     "76bd5cf5-a8cb-4541-a736-c44ede8ed205": {
       "title": "QMS Quality Engineer",
       "first_seen": "2026-08-31T13:27:00.364188+00:00"
+    },
+    "a27fcf94-4475-42bf-84c2-11724aa8e517": {
+      "title": "QMS Quality Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "e541d405-625b-46b9-902e-e94a09ce042d": {
+      "title": "QMS Quality Engineer",
+      "first_seen": "2026-09-03T16:17:32.007271+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",
@@ -596,5 +632,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 170
+  "last_board_total": 179
 }
