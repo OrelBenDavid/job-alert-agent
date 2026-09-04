@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-04T16:13:10.757680+00:00",
-  "last_count": 8,
+  "last_success": "2026-09-04T20:40:57.070037+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "e7b83c02-55c2-4037-9209-93deb3b7492c": {
@@ -26,6 +26,10 @@
     "d8ee7f59-0f80-437f-908e-bfe603cb078a": {
       "title": "Software Engineer, Backend (Trading)",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "01acfd54-49c2-4913-a968-fc70fcf61e12": {
+      "title": "Senior Software Engineer, Backend (Money Movement)",
+      "first_seen": "2026-09-04T20:40:57.070037+00:00"
     },
     "e213be58-ba98-486d-93bc-a7716f33003e": {
       "title": "Software Engineer, Frontend / Full Stack (Trading)",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-04T16:13:10.719149+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-04T20:40:57.045610+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "0363a322-2250-470f-8832-bf94c7268203": {
@@ -26,7 +26,11 @@
     "2b361f36-4c4d-4bc6-807a-313dd51f9c60": {
       "title": "Senior Product Marketing Manager- B2B",
       "first_seen": "2026-08-31T13:27:00.356750+00:00"
+    },
+    "bf50dead-8367-4db2-ae9f-73f9486ef4b2": {
+      "title": "Founding Business Development Representative",
+      "first_seen": "2026-09-04T20:40:57.045610+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }
