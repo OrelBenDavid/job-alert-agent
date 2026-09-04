@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-04T04:13:04.826364+00:00",
-  "last_count": 62,
+  "last_success": "2026-09-04T11:05:18.580634+00:00",
+  "last_count": 63,
   "consecutive_failures": 0,
   "jobs": {
     "54.460": {
@@ -139,6 +139,10 @@
       "title": "QA Automation Engineer",
       "first_seen": "2026-08-26T09:51:33.814639+00:00"
     },
+    "14.271": {
+      "title": "QA Automation Tech Lead",
+      "first_seen": "2026-09-04T11:05:18.580634+00:00"
+    },
     "CD.07F": {
       "title": "R&D Director",
       "first_seen": "2026-08-20T15:40:50.829993+00:00"
@@ -252,5 +256,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 146
+  "last_board_total": 153
 }
