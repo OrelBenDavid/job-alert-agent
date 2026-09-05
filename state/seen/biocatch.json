@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-05T04:09:25.525911+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-05T10:26:46.515603+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "F9.06C": {
       "title": "Data Scientist",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
+    },
+    "F6.B6E": {
+      "title": "IT Team Lead",
+      "first_seen": "2026-09-05T10:26:46.515603+00:00"
     },
     "EF.07B": {
       "title": "Senior Backend Developer",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }
