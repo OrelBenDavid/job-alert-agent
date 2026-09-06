@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T10:45:34.629821+00:00",
-  "last_count": 154,
+  "last_success": "2026-09-06T15:21:45.298206+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021307": {
@@ -22,10 +22,6 @@
     "JR-021903": {
       "title": "Presales Manager, Domain Consulting - Prisma Browser",
       "first_seen": "2026-09-04T11:05:18.637236+00:00"
-    },
-    "JR-022004": {
-      "title": "Software Engineer (Credential Provider)",
-      "first_seen": "2026-09-03T20:54:14.339810+00:00"
     },
     "JR-022003": {
       "title": "Sr Staff Engineer Software (Credential Provider)",
@@ -343,10 +339,6 @@
       "title": "Product Design Manager -UX/UI (Cortex XSIAM)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-018560": {
-      "title": "Staff Software Engineer (Credential Provider)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-019735": {
       "title": "Engineering Escalation Manager (Identity)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -559,10 +551,6 @@
       "title": "Senior DevOps Engineer (Cortex Agentix Endpoint Security)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018402": {
-      "title": "Senior/ Principal/ Sr Principal Engineer (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-011774": {
       "title": "Principal/Senior Linux Security Researcher (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -620,5 +608,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 157
+  "last_board_total": 153
 }

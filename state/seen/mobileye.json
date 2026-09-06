@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-06T10:45:34.607349+00:00",
+  "last_success": "2026-09-06T15:21:45.281358+00:00",
   "last_count": 159,
   "consecutive_failures": 0,
   "jobs": {
@@ -114,6 +114,10 @@
     "ded3b18f-e023-491a-b1d2-b029961ea7eb": {
       "title": "DevOps & Infrastructure Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9863bd24-bd51-48c5-9e81-9676db076919": {
+      "title": "Director of Technical Program Management",
+      "first_seen": "2026-09-06T15:21:45.281358+00:00"
     },
     "a6711d79-22df-4e2f-a21a-3b31b9337175": {
       "title": "Electrical Practical Engineer",
@@ -584,11 +588,11 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "35d41f76-5f20-4fc8-b108-f761582083f2": {
-      "title": "Talent Acquisition Partner - Temporary (9 Months)",
+      "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
     },
     "79932ba7-840a-4c1b-8dca-80722712d51b": {
-      "title": "Talent Acquisition Partner - Temporary (9 Months)",
+      "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
     },
     "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
@@ -601,10 +605,6 @@
     },
     "303d899e-2b03-41f7-97d2-824da4e51190": {
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "3d955240-fd2d-419d-8035-bf647c3da076": {
-      "title": "Technical Product Strategy Manager",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "24b128d9-342e-4127-9dac-cde79f0a8652": {

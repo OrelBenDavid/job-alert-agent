@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T10:45:34.614520+00:00",
-  "last_count": 82,
+  "last_success": "2026-09-06T15:21:45.288591+00:00",
+  "last_count": 81,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -23,11 +23,11 @@
       "title": "Cyber Threat Intelligence Analyst",
       "first_seen": "2026-09-02T11:06:52.053506+00:00"
     },
-    "4784157101": {
+    "4784195101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784195101": {
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -53,10 +53,6 @@
     },
     "4815935101": {
       "title": "Data Security Engineering Lead",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4752243101": {
-      "title": "DC IT Support Manager",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4918986101": {
@@ -332,5 +328,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 375
+  "last_board_total": 374
 }

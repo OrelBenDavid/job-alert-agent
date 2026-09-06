@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T10:45:34.983987+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-06T15:21:45.299231+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "eea71a03-fc42-4a29-a9a7-7cf6f3fb1afd": {
@@ -35,6 +35,10 @@
       "title": "Senior Data Scientist — Network Intelligence",
       "first_seen": "2026-08-31T20:45:43.782399+00:00"
     },
+    "4823d299-5a1e-48fd-aad9-148c46a0983a": {
+      "title": "Senior Radio Validation Engineer",
+      "first_seen": "2026-09-06T15:21:45.299231+00:00"
+    },
     "bf96d78d-400a-4b68-914c-bbf93e578d8a": {
       "title": "Senior RAN Systems Engineer- POC & Technical Evaluation",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 47
 }

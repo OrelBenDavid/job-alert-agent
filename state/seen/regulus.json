@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-06T10:45:34.996741+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-06T15:21:45.309949+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
+    "B4.279": {
+      "title": "Bid Manager & Pre-Sales Support",
+      "first_seen": "2026-09-06T15:21:45.309949+00:00"
+    },
     "F6.075": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
@@ -23,6 +27,10 @@
       "title": "Customer Service Lead",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     },
+    "73.964": {
+      "title": "Drone Operator",
+      "first_seen": "2026-09-06T15:21:45.309949+00:00"
+    },
     "64.F65": {
       "title": "Drone Technology Research Lead",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
@@ -34,10 +42,6 @@
     "63.276": {
       "title": "Mechanical Design Engineer",
       "first_seen": "2026-09-06T10:45:34.996741+00:00"
-    },
-    "F8.E65": {
-      "title": "Mechanical Engineering Team Lead",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
     },
     "8A.66A": {
       "title": "Sales Manager-EU",
@@ -56,5 +60,5 @@
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

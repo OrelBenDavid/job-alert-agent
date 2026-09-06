@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-06T10:45:33.737793+00:00",
+  "last_success": "2026-09-06T15:21:44.950471+00:00",
   "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
@@ -30,6 +30,10 @@
     "4937879101": {
       "title": "Automation Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4967775101": {
+      "title": "Biz Ops Coordinator (Temporary position for Maternity Leave)",
+      "first_seen": "2026-09-06T15:21:44.950471+00:00"
     },
     "4848229101": {
       "title": "Data Scientist",
@@ -121,10 +125,6 @@
     },
     "4845229101": {
       "title": "Software Engineer – RBI",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4708002101": {
-      "title": "Software Team Lead",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4603397101": {
