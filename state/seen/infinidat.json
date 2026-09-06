@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-06T15:21:44.979631+00:00",
+  "last_success": "2026-09-06T20:18:45.185884+00:00",
   "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,9 +19,9 @@
       "title": "C++ Backend Software Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "4C.D6A": {
+    "4C.D6B": {
       "title": "C++ Software Engineer - NAS Group",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+      "first_seen": "2026-09-06T20:18:45.185884+00:00"
     },
     "5C.D61": {
       "title": "C++ Software Engineer for AI",

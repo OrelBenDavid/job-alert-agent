@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T15:21:45.333270+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-06T20:18:45.257867+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -39,10 +39,6 @@
       "title": "Quality Assurance Engineer (Manufacturing)",
       "first_seen": "2026-08-25T09:43:10.857326+00:00"
     },
-    "8D.B66": {
-      "title": "R&D Mechanical Design Engineer",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
-    },
     "DD.F65": {
       "title": "Senior Quality Assurance Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 63
 }

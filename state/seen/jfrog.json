@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T15:21:44.981526+00:00",
-  "last_count": 21,
+  "last_success": "2026-09-06T20:18:45.193143+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -75,10 +75,6 @@
       "title": "Senior Product Manager - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "8161565": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-08-30T11:45:36.996865+00:00"
-    },
     "8102637": {
       "title": "SMB Account Manager",
       "first_seen": "2026-08-21T09:45:05.231822+00:00"
@@ -88,5 +84,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 53
 }

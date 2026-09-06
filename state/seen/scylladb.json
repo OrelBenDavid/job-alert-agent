@@ -1,16 +1,20 @@
 {
-  "last_success": "2026-09-06T15:21:45.315985+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-06T20:18:45.235003+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "FC.078-75.10C": {
       "title": "Cloud Software Engineer (AI-Powered / End-to-End)",
       "first_seen": "2026-09-02T16:27:20.500195+00:00"
     },
+    "B4.274": {
+      "title": "GTM Engineer (AI & Automation)",
+      "first_seen": "2026-09-06T20:18:45.235003+00:00"
+    },
     "1E.C62": {
       "title": "Solution Architect (Israel)",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }
