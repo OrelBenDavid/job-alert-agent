@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-09-06T04:17:21.068104+00:00",
-  "last_count": 31,
+  "last_success": "2026-09-06T10:45:33.711256+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-359ab7a7-df53-5e08-9896-5040d09bc776-T1788425931-744000147684569": {
+      "title": "Product Designer",
+      "first_seen": "2026-09-06T10:45:33.711256+00:00"
+    },
+    "https://careers.wix.com/position/oracle-c3ca7595-b6a9-5113-aad1-32db6250eb8b-T1787130157-744000147683319": {
+      "title": "Product Manager - Premium Growth",
+      "first_seen": "2026-09-06T10:45:33.711256+00:00"
+    },
     "https://careers.wix.com/position/oracle-aadb352b-218d-5bc2-abf2-2c2234062e81-T1788436737-744000147233909": {
       "title": "Animator - Base44",
       "first_seen": "2026-09-03T16:17:31.963624+00:00"
@@ -22,10 +30,6 @@
     "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000147160953": {
       "title": "Experienced AI Product Marketing Manager - Base44",
       "first_seen": "2026-09-03T11:04:07.992252+00:00"
-    },
-    "https://careers.wix.com/position/oracle-678456a6-55ae-5f85-bf4f-e183f702df1f-T1788360224-744000147018397": {
-      "title": "Wellbeing Manager (Parental leave)",
-      "first_seen": "2026-09-02T16:27:20.380080+00:00"
     },
     "https://careers.wix.com/position/REF12W-744000146957552": {
       "title": "xEngineer Team Lead for Document Management",

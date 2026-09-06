@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.094693+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-06T10:45:33.744398+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "AE.079": {
@@ -23,10 +23,6 @@
       "title": "Director of Engineering Security",
       "first_seen": "2026-08-24T09:56:22.831995+00:00"
     },
-    "07.079": {
-      "title": "Recruiter - US & EMEA Market",
-      "first_seen": "2026-08-18T15:40:34.639567+00:00"
-    },
     "85.F67": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
@@ -46,11 +42,7 @@
     "4B.75E": {
       "title": "Team Lead, Technical Account Manager -IL",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
-    },
-    "B5.F66": {
-      "title": "VP Operations",
-      "first_seen": "2026-08-13T11:24:19.148327+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 50
 }

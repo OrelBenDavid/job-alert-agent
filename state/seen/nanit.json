@@ -1,18 +1,18 @@
 {
-  "last_success": "2026-09-06T04:17:21.140640+00:00",
+  "last_success": "2026-09-06T10:45:34.613163+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
+    "6127429004": {
+      "title": "AI Backend Engineer",
+      "first_seen": "2026-08-18T19:28:26.423735+00:00"
+    },
     "6127442004": {
       "title": "Backend Engineer",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     },
     "6136010004": {
       "title": "Backend Team Lead",
-      "first_seen": "2026-08-18T19:28:26.423735+00:00"
-    },
-    "6127429004": {
-      "title": "MLOps Engineer",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     },
     "5977521004": {

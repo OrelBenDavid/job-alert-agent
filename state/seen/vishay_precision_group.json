@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.185668+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-06T10:45:35.031260+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -22,6 +22,10 @@
     "5A.963": {
       "title": "Planning Manager",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "32.D6E": {
+      "title": "Pricing Specialist - Maternity leave cover",
+      "first_seen": "2026-09-06T10:45:35.031260+00:00"
     },
     "24.E66": {
       "title": "Production Planning & Scheduling",
@@ -60,5 +64,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 64
 }

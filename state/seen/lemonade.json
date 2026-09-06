@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.128524+00:00",
-  "last_count": 26,
+  "last_success": "2026-09-06T10:45:34.100069+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -106,7 +106,11 @@
     "436a57de-015f-4386-9cc8-b5cf7d87d0ab": {
       "title": "Sr. Compliance Analyst",
       "first_seen": "2026-09-02T20:55:41.971813+00:00"
+    },
+    "0d702fd8-32aa-4d9a-ba84-bfafdc71c339": {
+      "title": "User Acquisition Manager",
+      "first_seen": "2026-09-06T10:45:34.100069+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

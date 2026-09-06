@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.137899+00:00",
-  "last_count": 157,
+  "last_success": "2026-09-06T10:45:34.607349+00:00",
+  "last_count": 159,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -10,6 +10,10 @@
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "e312d527-7133-420c-8a00-561a38797718": {
+      "title": "Algorithm Developer - Object Modeling Group",
+      "first_seen": "2026-09-06T10:45:34.607349+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -34,10 +38,6 @@
     "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
       "title": "Applied AI Engineer - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "92113388-2b09-41dd-95d9-9291d4bb8648": {
-      "title": "ASIC Design Engineer",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "566a70d5-72c1-46fb-8bce-3795ecb8162a": {
       "title": "Assistant Controller - Temporary Position",
@@ -94,6 +94,10 @@
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
+    "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
+      "title": "Deep Learning Developer - REM Modeling",
+      "first_seen": "2026-09-06T10:45:34.607349+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -166,6 +170,14 @@
     "63c9d68a-ff54-47c0-86b3-4014479ceabb": {
       "title": "Experienced C++ Developer - Farm Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0029e8b1-bdf1-4d0a-9895-7b5ee22c4837": {
+      "title": "Experienced Control Algorithms Engineer",
+      "first_seen": "2026-09-06T10:45:34.607349+00:00"
+    },
+    "20a11252-02b4-43c0-9449-6247fb6617fe": {
+      "title": "Experienced Control Algorithms Engineer",
+      "first_seen": "2026-09-06T10:45:34.607349+00:00"
     },
     "48df21e2-84dd-42e7-9d55-f4121d444df8": {
       "title": "Experienced Deep Learning Algorithm Developer - Road Team",
@@ -270,10 +282,6 @@
     "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
       "title": "Operations Division Global Admin",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
-    },
-    "e58754ea-2525-4630-b7c3-ee76e043f6ed": {
-      "title": "Operations Systems & Budget Coordinator",
-      "first_seen": "2026-09-01T08:32:41.837992+00:00"
     },
     "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
       "title": "Outstanding Graduate - Machine Learning Engineer",

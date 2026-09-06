@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-09-06T04:17:21.150894+00:00",
-  "last_count": 158,
+  "last_success": "2026-09-06T10:45:34.629821+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021307": {
+      "title": "Principal Security Researcher (Cortex - AgentiX)",
+      "first_seen": "2026-09-06T10:45:34.629821+00:00"
+    },
+    "JR-022009": {
+      "title": "Software Backend Engineering Manager - AI (Cortex XSIAM)",
+      "first_seen": "2026-09-06T10:45:34.629821+00:00"
+    },
+    "JR-022157": {
+      "title": "Principal C++ Software Engineer (Prisma Browser)",
+      "first_seen": "2026-09-06T10:45:34.629821+00:00"
+    },
+    "JR-022156": {
+      "title": "Linux Internals Software Engineer (Cortex)",
+      "first_seen": "2026-09-06T10:45:34.629821+00:00"
+    },
     "JR-021903": {
       "title": "Presales Manager, Domain Consulting - Prisma Browser",
       "first_seen": "2026-09-04T11:05:18.637236+00:00"
@@ -58,10 +74,6 @@
     "JR-016200": {
       "title": "Senior Site Reliability Engineer (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-009239": {
-      "title": "Principal AI Engineer (Prisma Browser - Agents Fleets)",
-      "first_seen": "2026-08-31T13:27:00.382058+00:00"
     },
     "JR-021154": {
       "title": "Staff Data Engineer (Data & AI solutions)",
@@ -159,10 +171,6 @@
       "title": "Manager, SW Engineering- Authentication Team (Idira)",
       "first_seen": "2026-08-23T12:54:49.993458+00:00"
     },
-    "JR-017617": {
-      "title": "Principal/Senior Engineer Software -  Agentic Endpoint Security(Cortex)",
-      "first_seen": "2026-08-23T06:53:45.571807+00:00"
-    },
     "JR-021236": {
       "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
       "first_seen": "2026-08-20T21:34:57.979231+00:00"
@@ -174,10 +182,6 @@
     "JR-020552": {
       "title": "Senior Technical Support Engineer (Cortex XSIAM)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-021414": {
-      "title": "Principal Security Researcher - Agentic Endpoint Security(Cortex)",
-      "first_seen": "2026-08-20T09:42:36.542974+00:00"
     },
     "JR-020455": {
       "title": "Senior/ Principal Security Researcher - Cloud & Kubernetes (Cortex)",
@@ -463,10 +467,6 @@
       "title": "Principal QA Architect (Secure Cloud Access)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018170": {
-      "title": "Senior Staff Product Owner (Secure Cloud Access)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-017437": {
       "title": "Senior Principal Data Scientist - LLM Agents (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -477,10 +477,6 @@
     },
     "JR-019655": {
       "title": "Senior Cloud Security Researcher - Security Automation (Cortex)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-005017": {
-      "title": "Senior SRE (IT Infrastructure)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-019631": {
@@ -515,16 +511,8 @@
       "title": "Senior \\ Principal Software Engineer (Secure Agentic AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-007061": {
-      "title": "Linux Internals Software Engineer (Cortex)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018778": {
       "title": "Principal DevOps Engineer - AI Platforms (Cortex)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-017706": {
-      "title": "Senior AI Researcher - Agentic Endpoint Security(Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-018658": {
@@ -603,10 +591,6 @@
       "title": "Engineering Software Manager (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-015434": {
-      "title": "Principal C++ Software Engineer (Prisma Browser)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-012548": {
       "title": "Security Research Manager: Identity, SaaS, and Cloud (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -636,5 +620,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 160
+  "last_board_total": 157
 }

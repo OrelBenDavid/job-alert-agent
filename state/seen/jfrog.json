@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.124030+00:00",
-  "last_count": 21,
+  "last_success": "2026-09-06T10:45:33.780104+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -25,10 +25,6 @@
     },
     "7434101": {
       "title": "Developer Advocate",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "6861996": {
-      "title": "Director of Product Management - Artifactory",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "7939091": {
@@ -88,5 +84,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 53
 }

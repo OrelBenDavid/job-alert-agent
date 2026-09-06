@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T04:17:21.089241+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-06T10:45:33.738275+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "FE.D18": {
@@ -55,6 +55,10 @@
       "title": "Researcher",
       "first_seen": "2026-08-17T15:33:09.049306+00:00"
     },
+    "5D.171": {
+      "title": "Sales Operations Manager",
+      "first_seen": "2026-09-06T10:45:33.738275+00:00"
+    },
     "22.C60": {
       "title": "Security Researcher",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
@@ -76,5 +80,5 @@
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     }
   },
-  "last_board_total": 53
+  "last_board_total": 55
 }
