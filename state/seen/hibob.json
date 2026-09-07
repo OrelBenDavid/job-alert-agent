@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T19:05:45.432295+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-07T23:25:18.849113+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "3a70c667-91c5-4dbd-bf1c-93b4ff931c55": {
@@ -35,6 +35,10 @@
       "title": "Senior Paid Acquisition Manager - AI Infrastructure & Growth",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
+    "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
+      "title": "Senior AI Ops Engineer",
+      "first_seen": "2026-09-07T23:25:18.849113+00:00"
+    },
     "29b0458c-9ba1-4d9a-b14c-c96b39f79634": {
       "title": "AI Product Data Analyst",
       "first_seen": "2026-08-30T16:33:21.491901+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 64
 }

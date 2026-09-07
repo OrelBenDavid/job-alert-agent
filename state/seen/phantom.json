@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T19:05:45.478683+00:00",
-  "last_count": 8,
+  "last_success": "2026-09-07T23:25:18.868781+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "e7b83c02-55c2-4037-9209-93deb3b7492c": {
@@ -34,7 +34,11 @@
     "1a7b0f14-556b-4bb0-b1c1-43702d6b56c3": {
       "title": "Staff Software Engineer, Frontend (Trading)",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "84bfcb1e-74a6-4cd7-b1d4-01b7b5d59d2e": {
+      "title": "VIP Account Manager",
+      "first_seen": "2026-09-07T23:25:18.868781+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 14
 }
