@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T04:16:33.469521+00:00",
-  "last_count": 81,
+  "last_success": "2026-09-07T12:15:49.295011+00:00",
+  "last_count": 83,
   "consecutive_failures": 0,
   "jobs": {
     "4941447101": {
@@ -64,7 +64,7 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4930968101": {
-      "title": "DFIR Manager",
+      "title": "DFIR Lead",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4902513101": {
@@ -94,6 +94,10 @@
     "4953850101": {
       "title": "Global Vendor Security & Standards Manager",
       "first_seen": "2026-08-23T21:28:46.581039+00:00"
+    },
+    "4967578101": {
+      "title": "GRC Program Coordinator",
+      "first_seen": "2026-09-07T12:15:49.295011+00:00"
     },
     "4945631101": {
       "title": "Group Product Manager - Platform Experience",
@@ -178,6 +182,10 @@
     "4942985101": {
       "title": "Security Operations & Coordination Manager",
       "first_seen": "2026-09-03T11:04:08.078836+00:00"
+    },
+    "4967584101": {
+      "title": "Security Risk Lead",
+      "first_seen": "2026-09-07T12:15:49.295011+00:00"
     },
     "4945568101": {
       "title": "Security Solutions Engineer",
@@ -328,5 +336,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 374
+  "last_board_total": 377
 }

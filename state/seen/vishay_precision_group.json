@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T04:16:33.516270+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-07T12:15:49.361666+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -18,6 +18,10 @@
     "3F.C64": {
       "title": "Director of Operations",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    },
+    "01.172": {
+      "title": "Global Sales Operations Senior Manager",
+      "first_seen": "2026-09-07T12:15:49.361666+00:00"
     },
     "5A.963": {
       "title": "Planning Manager",
@@ -60,5 +64,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 64
 }

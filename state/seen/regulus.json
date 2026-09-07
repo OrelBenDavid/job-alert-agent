@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-09-07T04:16:33.490745+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-07T12:15:49.330020+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "B4.279": {
-      "title": "Bid Manager & Pre-Sales Support",
+      "title": "Bid Manager & Pre-Sales Operations Coordinator",
       "first_seen": "2026-09-06T15:21:45.309949+00:00"
     },
     "F6.075": {
@@ -54,11 +54,7 @@
     "D9.C66": {
       "title": "System Engineer - Electronic Warfare Systems",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
-    },
-    "03.665": {
-      "title": "System Engineer - Kinetic Drone Interception",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 14
 }

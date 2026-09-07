@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T04:16:33.415445+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-07T12:15:48.909617+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "52.E6E": {
@@ -11,10 +11,14 @@
       "title": "DevOps Manager",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
+    "C4.272": {
+      "title": "Director of Product Management",
+      "first_seen": "2026-09-07T12:15:48.909617+00:00"
+    },
     "B9.E69": {
       "title": "Senior Software Architect",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 37
 }

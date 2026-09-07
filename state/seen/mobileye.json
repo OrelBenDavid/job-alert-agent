@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-07T04:16:33.465280+00:00",
+  "last_success": "2026-09-07T12:15:49.288407+00:00",
   "last_count": 159,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "e312d527-7133-420c-8a00-561a38797718": {
-      "title": "Algorithm Developer - Object Modeling Group",
-      "first_seen": "2026-09-06T10:45:34.607349+00:00"
+    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
+      "title": "Algo Team Lead – Geometric Data Infrastructure",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -46,10 +46,6 @@
     "d10617da-c4fb-4470-9347-07ae6981cf0c": {
       "title": "AV Perception Product Manager",
       "first_seen": "2026-08-25T09:43:09.056470+00:00"
-    },
-    "9e98aa76-c451-4caa-91e6-b47755bb4921": {
-      "title": "AV Perception Product Manager - Temporary Position (7 Months replacement)",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -94,10 +90,6 @@
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
-    "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
-      "title": "Deep Learning Developer - REM Modeling",
-      "first_seen": "2026-09-06T10:45:34.607349+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -199,6 +191,10 @@
       "title": "Experienced Deep Learning Optimization Engineer- Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "25b51d8d-b2aa-49b9-9864-3b78e8a2a591": {
+      "title": "Experienced DFT Engineer",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    },
     "31956c05-66e8-41a4-bed7-08e3e07425a4": {
       "title": "Experienced DFT Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -223,6 +219,10 @@
       "title": "Experienced Physical Design Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "4a616b20-38f2-4344-9270-d37f75d49773": {
+      "title": "Experienced Python Developer for Algorithmic Group - Semantics",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    },
     "791a4827-bd3e-4942-9e72-b00176e0334c": {
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -239,10 +239,6 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "2d52fda0-4fc1-45e2-bb52-9e0abdb65837": {
-      "title": "Forecast Team Lead",
-      "first_seen": "2026-08-19T13:01:25.232459+00:00"
-    },
     "58a5fc1c-dc5c-4ac3-958e-f814eb8a5271": {
       "title": "Hardware Lab Technician",
       "first_seen": "2026-09-01T14:06:11.124056+00:00"
@@ -251,12 +247,12 @@
       "title": "IT Specialist – MENTEE",
       "first_seen": "2026-09-01T08:32:41.837992+00:00"
     },
+    "19f2bd7b-2a34-416f-8e04-cdee78e84d55": {
+      "title": "Junior DFT Engineer",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    },
     "618a3df6-c072-4688-b518-bd9bef588a88": {
       "title": "Junior DFT Engineer",
-      "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
-    "9ed322e5-1d03-43bc-8e05-12ee1593657c": {
-      "title": "Junior Formal Verification Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
     },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
@@ -467,6 +463,10 @@
       "title": "Senior Software Engineer - C++ Embedded Systems (Autonomous Driving)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "8ad31b79-8816-4142-a677-4bea7a452328": {
+      "title": "Senior Software Engineer - Data Infrastructure",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    },
     "2cd38b8c-4d52-4d86-ae5a-6344b7ca24d9": {
       "title": "Senior SRE & Linux Infrastructure Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -587,6 +587,10 @@
       "title": "System Validation Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "3e0a8ffc-d04f-41ba-9119-b9b1662063f1": {
+      "title": "System Validation Team Lead",
+      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    },
     "35d41f76-5f20-4fc8-b108-f761582083f2": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
@@ -627,10 +631,6 @@
       "title": "Validation & Analysis Project Manager - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "a6cf562b-dca7-4708-9772-7539a13b9a37": {
-      "title": "Validation & Integration Engineer",
-      "first_seen": "2026-08-26T09:51:33.846604+00:00"
-    },
     "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
       "title": "Validation Analytics Tools Developer",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
@@ -640,5 +640,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 179
+  "last_board_total": 181
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-07T04:16:33.403160+00:00",
+  "last_success": "2026-09-07T12:15:48.892348+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
     "A6.B64": {
-      "title": "Director of Sales Operation",
+      "title": "Director of Sales Operations",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
     "9D.177": {

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-07T04:16:33.450267+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-07T12:15:49.274185+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -67,6 +67,10 @@
       "title": "R&D Team Lead - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "8175114": {
+      "title": "Revenue Enablement Manager",
+      "first_seen": "2026-09-07T12:15:49.274185+00:00"
+    },
     "8118681": {
       "title": "Sales Program Manager",
       "first_seen": "2026-08-21T09:45:05.231822+00:00"
@@ -74,6 +78,10 @@
     "7657193": {
       "title": "Senior Product Manager - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8161565": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-09-07T12:15:49.274185+00:00"
     },
     "8102637": {
       "title": "SMB Account Manager",
@@ -84,5 +92,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 53
+  "last_board_total": 57
 }
