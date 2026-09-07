@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-07T12:15:48.884528+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-07T19:05:45.370761+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
+    "F4.27D": {
+      "title": "Account Executive",
+      "first_seen": "2026-09-07T19:05:45.370761+00:00"
+    },
     "5E.176": {
       "title": "AWS Data Architect",
       "first_seen": "2026-09-03T16:17:31.967356+00:00"
@@ -27,9 +31,9 @@
       "title": "Enterprise Account Executive",
       "first_seen": "2026-09-07T12:15:48.884528+00:00"
     },
-    "45.F6F": {
-      "title": "IT Specialist",
-      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    "45.273": {
+      "title": "Machine Learning Engineer",
+      "first_seen": "2026-09-07T19:05:45.370761+00:00"
     },
     "85.C6E": {
       "title": "Salesforce Consultant",
@@ -38,6 +42,14 @@
     "3E.F63": {
       "title": "Salesforce Project Manager",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "45.275": {
+      "title": "Senior AI Engineer",
+      "first_seen": "2026-09-07T19:05:45.370761+00:00"
+    },
+    "3F.F68": {
+      "title": "Senior DevOps Engineer",
+      "first_seen": "2026-09-07T19:05:45.370761+00:00"
     },
     "98.E68": {
       "title": "Senior Salesforce Consultant",
@@ -52,5 +64,5 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 26
 }
