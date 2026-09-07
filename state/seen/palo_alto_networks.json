@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-06T22:51:07.916865+00:00",
-  "last_count": 151,
+  "last_success": "2026-09-07T04:16:33.478688+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021307": {
@@ -523,10 +523,6 @@
       "title": "Engineering Software Manager (Secure Agentic AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018591": {
-      "title": "Principal Windows Low-Level Dev (Cortex XDR)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018107": {
       "title": "Senior DevOps Engineer (Secrets Manager)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -608,5 +604,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 152
 }
