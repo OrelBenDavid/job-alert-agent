@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-08T16:30:33.546701+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-08T21:02:17.560637+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
+    "E2.076": {
+      "title": "AI Engineer",
+      "first_seen": "2026-09-08T21:02:17.560637+00:00"
+    },
     "25.F62": {
       "title": "AI Tech Lead",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -39,6 +43,10 @@
       "title": "Office Manager and Welfare Specialist",
       "first_seen": "2026-08-17T12:58:53.718906+00:00"
     },
+    "DD.075": {
+      "title": "Principal Architect",
+      "first_seen": "2026-09-08T21:02:17.560637+00:00"
+    },
     "0D.F62": {
       "title": "Product Designer - Temporary position",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -56,5 +64,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 24
 }

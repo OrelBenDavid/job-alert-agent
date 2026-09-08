@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T16:30:33.481639+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-08T21:02:17.509460+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "4975fa35-93d7-48af-bafc-e0d0c877bc84": {
@@ -10,7 +10,11 @@
     "f2795e55-8e04-4c52-9f29-4eb59d2a9ad7": {
       "title": "Mortgage Operations Academy Associate",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "67036220-7dd1-40bc-9892-7e7211c1fde6": {
+      "title": "Founding National Wholesale Account Executive -- HELOC",
+      "first_seen": "2026-09-08T21:02:17.509460+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 14
 }

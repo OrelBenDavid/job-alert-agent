@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T16:30:33.465674+00:00",
-  "last_count": 33,
+  "last_success": "2026-09-08T21:02:17.503472+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-fca7edd1-4104-582b-86e7-511a52eeca32-T1788784171-744000148221489": {
@@ -94,10 +94,6 @@
     "https://careers.wix.com/position/oracle-e5751041-b0fc-563a-9195-ef0222209f1f-T1786624300-744000143687098": {
       "title": "AI Content writer- Base44",
       "first_seen": "2026-08-16T09:35:32.096948+00:00"
-    },
-    "https://careers.wix.com/position/oracle-590f9dcc-c15c-57d3-9680-9114a9291310-T1785921299-744000143165910": {
-      "title": "Business Analyst - Channels",
-      "first_seen": "2026-08-12T21:55:27.256797+00:00"
     },
     "https://careers.wix.com/position/oracle-56d742ca-136e-55ce-bcb6-30c6a0f0d617-T1786374970-744000143036214": {
       "title": "FP&A Analyst",
