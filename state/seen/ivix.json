@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T04:17:33.535300+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-08T11:05:09.153774+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "5B.C5C": {
@@ -11,22 +11,10 @@
       "title": "AI,ML Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "98.868": {
-      "title": "FullStack Software Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "D5.C31": {
-      "title": "Senior Backend Developer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "83.654": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "76.256": {
+    "95.27B": {
       "title": "Senior DevOps Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+      "first_seen": "2026-09-08T11:05:09.153774+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 6
 }

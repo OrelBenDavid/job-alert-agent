@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-09-08T04:17:33.592183+00:00",
+  "last_success": "2026-09-08T11:05:09.332221+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "54.B36": {
-      "title": "Fullstack Teach Lead",
+      "title": "Fullstack Tech Lead",
       "first_seen": "2026-08-13T11:24:41.074279+00:00"
     },
     "0A.E62": {

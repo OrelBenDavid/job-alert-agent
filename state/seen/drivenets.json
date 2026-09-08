@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-09-08T04:17:33.512591+00:00",
-  "last_count": 26,
+  "last_success": "2026-09-08T11:05:09.116025+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
       "title": "AI Platform Software Engineer",
       "first_seen": "2026-08-19T09:41:24.968640+00:00"
+    },
+    "95.271": {
+      "title": "ATE Software Engineer",
+      "first_seen": "2026-09-08T11:05:09.116025+00:00"
+    },
+    "95.276": {
+      "title": "Configuration Control & PDM Specialist",
+      "first_seen": "2026-09-08T11:05:09.116025+00:00"
     },
     "89.E64": {
       "title": "Controller",
@@ -34,6 +42,10 @@
     "2C.171": {
       "title": "Material Planner",
       "first_seen": "2026-08-27T14:03:31.352375+00:00"
+    },
+    "95.277": {
+      "title": "Mechanical NPI & Manufacturing Engineer",
+      "first_seen": "2026-09-08T11:05:09.116025+00:00"
     },
     "07.077": {
       "title": "NetSuite Logistics & Supply Chain Specialist",
@@ -108,5 +120,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 33
 }

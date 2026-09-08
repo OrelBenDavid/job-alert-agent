@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T04:17:33.510366+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-08T11:05:09.114578+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "4388385009": {
@@ -10,6 +10,10 @@
     "4272331009": {
       "title": "FP&A Implementation Manager",
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
+    },
+    "4397520009": {
+      "title": "Office Manager & HR Generalist",
+      "first_seen": "2026-09-08T11:05:09.114578+00:00"
     },
     "4321157009": {
       "title": "Senior Product Manager",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-18T19:28:22.774266+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

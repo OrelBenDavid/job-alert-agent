@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T04:17:33.589630+00:00",
-  "last_count": 24,
+  "last_success": "2026-09-08T11:05:09.327696+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -55,14 +55,6 @@
       "title": "Programmatic Account Manager",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
-    "7955535": {
-      "title": "Programmatic Account Manager- Temporary position",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8081120": {
-      "title": "Programmatic Operations Manager- Temp",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
     "8080933": {
       "title": "SalesForce Team Lead",
       "first_seen": "2026-09-07T12:15:49.351874+00:00"
@@ -94,11 +86,7 @@
     "8089642": {
       "title": "Talent Acquisition Business Partner (Maternity Leave Cover)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8059153": {
-      "title": "Technical Account Manager- Temp",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 83
 }

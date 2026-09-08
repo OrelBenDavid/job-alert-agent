@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-08T04:17:33.550105+00:00",
-  "last_count": 159,
+  "last_success": "2026-09-08T11:05:09.168651+00:00",
+  "last_count": 163,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
       "title": "3D Algorithm Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "430c370d-0757-45a2-b457-ad3d31ab5249": {
+      "title": "AEB Algorithm Test & Analysis Tool Developer - Temporary Position 12 month",
+      "first_seen": "2026-09-08T11:05:09.168651+00:00"
     },
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
@@ -151,6 +155,10 @@
       "title": "Embedded Team Leader -OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-09-08T11:05:09.168651+00:00"
+    },
     "8d09a950-7497-409c-a7d2-4a72458435de": {
       "title": "Execution Program Manager",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
@@ -238,10 +246,6 @@
     "15ecbd22-fd82-431c-93ff-2ece2caf808e": {
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
-    },
-    "58a5fc1c-dc5c-4ac3-958e-f814eb8a5271": {
-      "title": "Hardware Lab Technician",
-      "first_seen": "2026-09-01T14:06:11.124056+00:00"
     },
     "fb3e3992-2521-445d-8b69-a98aa1a2595e": {
       "title": "IT Specialist – MENTEE",
@@ -403,6 +407,10 @@
       "title": "Senior Full Stack Developer",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
+    "169eb36e-82dd-4bcb-bdf0-06d7be6d94c4": {
+      "title": "Senior Full-Stack Platform Engineer – Agentic AI",
+      "first_seen": "2026-09-08T11:05:09.168651+00:00"
+    },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior Hardware Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
@@ -422,6 +430,10 @@
     "5d044c94-826e-4685-853f-b70069e3f0a9": {
       "title": "Senior ML Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f15e7124-1aab-4301-9fec-547c7c24c6b1": {
+      "title": "Senior Platform Software Project Manager",
+      "first_seen": "2026-09-08T11:05:09.168651+00:00"
     },
     "1d83cd20-6e61-44b8-aa23-895c67e9d010": {
       "title": "Senior Product Manager",
@@ -603,6 +615,10 @@
       "title": "Technical Assistant for Executive VP",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "13e50e1d-c7d7-4204-bac6-40152a229a39": {
+      "title": "Technical Business Project Manager for REM",
+      "first_seen": "2026-09-08T11:05:09.168651+00:00"
+    },
     "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
       "title": "Technical PM",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -640,5 +656,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 187
 }

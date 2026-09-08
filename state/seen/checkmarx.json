@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T04:17:33.500283+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-08T11:05:09.101306+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "52.E6E": {
@@ -15,10 +15,14 @@
       "title": "Director of Product Management",
       "first_seen": "2026-09-07T12:15:48.909617+00:00"
     },
+    "25.27F": {
+      "title": "Office Admin (4 days in a week)",
+      "first_seen": "2026-09-08T11:05:09.101306+00:00"
+    },
     "B9.E69": {
       "title": "Senior Software Architect",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 38
 }

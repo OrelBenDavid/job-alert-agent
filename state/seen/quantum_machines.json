@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T04:17:33.572231+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-08T11:05:09.192226+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -57,10 +57,6 @@
     },
     "92.966": {
       "title": "Quantum Physics Solution Marketing & Science Communication",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "15.D59": {
-      "title": "R&D Software Engineer - Core Processor",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "83.E66": {
