@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-08T11:05:09.176075+00:00",
-  "last_count": 77,
+  "last_success": "2026-09-08T16:30:33.579254+00:00",
+  "last_count": 75,
   "consecutive_failures": 0,
   "jobs": {
-    "4941447101": {
-      "title": "Account Executive, Token Factory",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4863862101": {
       "title": "AI Full-Stack Developer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -38,10 +34,6 @@
     "4784151101": {
       "title": "Data Center IT Technician - Masmiya",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4724503101": {
-      "title": "Data Engineer",
-      "first_seen": "2026-09-04T16:13:10.730647+00:00"
     },
     "4958594101": {
       "title": "Data Engineer (Agentic Search)",
@@ -94,10 +86,6 @@
     "4967578101": {
       "title": "GRC Program Coordinator",
       "first_seen": "2026-09-07T12:15:49.295011+00:00"
-    },
-    "4945631101": {
-      "title": "Group Product Manager - Platform Experience",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4942511101": {
       "title": "Head of Analytics",
@@ -207,6 +195,10 @@
       "title": "Senior Product Manager, Agentic Search",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "4970604101": {
+      "title": "Senior Product Manager, Vertical Search",
+      "first_seen": "2026-09-08T16:30:33.579254+00:00"
+    },
     "4795940101": {
       "title": "Senior Sales Engineer - Token Factory",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -312,5 +304,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 371
+  "last_board_total": 373
 }

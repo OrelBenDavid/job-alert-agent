@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.153483+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-08T16:30:33.544106+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -9,10 +9,6 @@
     },
     "54.F67": {
       "title": "Network QA Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "13.E48": {
-      "title": "Product Support Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "40.460": {
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-19T09:41:25.004836+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 45
 }

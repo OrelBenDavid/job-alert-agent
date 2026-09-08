@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.168651+00:00",
-  "last_count": 163,
+  "last_success": "2026-09-08T16:30:33.563948+00:00",
+  "last_count": 166,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -15,9 +15,9 @@
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
-      "title": "Algo Team Lead – Geometric Data Infrastructure",
-      "first_seen": "2026-09-07T12:15:49.288407+00:00"
+    "510d7b7d-4d58-4411-99c0-02a91022a7c6": {
+      "title": "Algorithm Data Analyst",
+      "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -91,6 +91,10 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-09-08T16:30:33.563948+00:00"
+    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -107,13 +111,17 @@
       "title": "Deep Learning Tech Lead",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "ded3b18f-e023-491a-b1d2-b029961ea7eb": {
-      "title": "DevOps & Infrastructure Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    "0d871a7b-0d5e-4e38-b896-d3f82ea5eaab": {
+      "title": "Director of Technical Program Management",
+      "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
     "9863bd24-bd51-48c5-9e81-9676db076919": {
       "title": "Director of Technical Program Management",
       "first_seen": "2026-09-06T15:21:45.281358+00:00"
+    },
+    "cc867509-5068-4ce0-b4e7-63ce3ee02bee": {
+      "title": "Director of Technical Program Management",
+      "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
     "a6711d79-22df-4e2f-a21a-3b31b9337175": {
       "title": "Electrical Practical Engineer",
@@ -412,7 +420,7 @@
       "first_seen": "2026-09-08T11:05:09.168651+00:00"
     },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
-      "title": "Senior Hardware Engineer",
+      "title": "Senior HW Board Design Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
     },
     "3f7e3421-7963-4d3a-8573-2fb29f8dbade": {
@@ -643,6 +651,10 @@
       "title": "Technical Project Manager- AV",
       "first_seen": "2026-08-26T13:07:18.667706+00:00"
     },
+    "746ceb7e-3448-4abb-bf89-b0f0cc952406": {
+      "title": "Technical Support Engineer",
+      "first_seen": "2026-09-08T16:30:33.563948+00:00"
+    },
     "f4848e1c-2f81-46a1-b2ee-e73b0d30a3fb": {
       "title": "Validation & Analysis Project Manager - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -656,5 +668,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 187
+  "last_board_total": 191
 }

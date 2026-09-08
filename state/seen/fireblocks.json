@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-08T11:05:09.140216+00:00",
+  "last_success": "2026-09-08T16:30:33.523576+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -12,7 +12,7 @@
       "first_seen": "2026-08-13T11:24:25.525766+00:00"
     },
     "4709587006": {
-      "title": "GRC Expert",
+      "title": "GRC Operations Specialist",
       "first_seen": "2026-09-01T14:06:10.584825+00:00"
     },
     "4701826006": {
@@ -52,5 +52,5 @@
       "first_seen": "2026-09-03T20:54:14.295329+00:00"
     }
   },
-  "last_board_total": 73
+  "last_board_total": 76
 }

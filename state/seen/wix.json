@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-08T11:05:09.085092+00:00",
-  "last_count": 32,
+  "last_success": "2026-09-08T16:30:33.465674+00:00",
+  "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-fca7edd1-4104-582b-86e7-511a52eeca32-T1788784171-744000148221489": {
+      "title": "Equity Compensation Administration Student",
+      "first_seen": "2026-09-08T16:30:33.465674+00:00"
+    },
     "https://careers.wix.com/position/oracle-29b87552-50da-5cdd-a4eb-8150e5de769c-T1787469672-744000148195727": {
       "title": "DevOps Tech Lead",
       "first_seen": "2026-09-08T11:05:09.085092+00:00"

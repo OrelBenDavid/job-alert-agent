@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-08T11:05:09.106236+00:00",
-  "last_count": 54,
+  "last_success": "2026-09-08T16:30:33.494914+00:00",
+  "last_count": 53,
   "consecutive_failures": 0,
   "jobs": {
-    "54.460": {
-      "title": "Account Executive- Defense Sector",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "CE.E62": {
       "title": "AI Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -220,5 +216,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 145
+  "last_board_total": 143
 }

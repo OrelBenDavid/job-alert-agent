@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.155500+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-08T16:30:33.547116+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -110,7 +110,11 @@
     "B2.272": {
       "title": "Technical Deployment Engineer",
       "first_seen": "2026-09-02T16:27:20.454831+00:00"
+    },
+    "E5.27F": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 28
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.096309+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-08T16:30:33.482649+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "51.05B": {
@@ -59,6 +59,10 @@
       "title": "Radar Systems Engineer",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     },
+    "4D.549": {
+      "title": "RT SW Developer",
+      "first_seen": "2026-09-08T16:30:33.482649+00:00"
+    },
     "AD.76C": {
       "title": "Sales, Marketing & BD Director",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }

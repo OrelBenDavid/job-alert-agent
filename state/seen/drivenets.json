@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.116025+00:00",
-  "last_count": 29,
+  "last_success": "2026-09-08T16:30:33.513102+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -38,6 +38,10 @@
     "86.161": {
       "title": "IT Devops Engineer",
       "first_seen": "2026-08-17T09:51:49.972862+00:00"
+    },
+    "8C.067": {
+      "title": "Junior Hardware Engineer",
+      "first_seen": "2026-09-08T16:30:33.513102+00:00"
     },
     "2C.171": {
       "title": "Material Planner",
@@ -120,5 +124,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

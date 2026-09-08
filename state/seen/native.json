@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-08T11:05:09.175233+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-08T16:30:33.578006+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "86.468": {
@@ -10,6 +10,10 @@
     "F3.E68": {
       "title": "Enterprise Account Executive | Israel",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
+    },
+    "9F.077-9A.50D": {
+      "title": "Growth Marketing Lead",
+      "first_seen": "2026-09-08T16:30:33.578006+00:00"
     },
     "DF.E65": {
       "title": "Make Your Own Opportunity",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }
