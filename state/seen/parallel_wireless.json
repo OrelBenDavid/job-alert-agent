@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.577064+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-09T11:10:07.756716+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "eea71a03-fc42-4a29-a9a7-7cf6f3fb1afd": {
@@ -39,10 +39,6 @@
       "title": "Senior Radio Validation Engineer",
       "first_seen": "2026-09-06T15:21:45.299231+00:00"
     },
-    "bf96d78d-400a-4b68-914c-bbf93e578d8a": {
-      "title": "Senior RAN Systems Engineer- POC & Technical Evaluation",
-      "first_seen": "2026-08-13T11:24:34.304909+00:00"
-    },
     "660174e6-d315-4eaf-9b3e-d400a177d8e2": {
       "title": "Senior Technical Lead —Platform (End-to-End)",
       "first_seen": "2026-08-31T20:45:43.782399+00:00"
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 45
 }

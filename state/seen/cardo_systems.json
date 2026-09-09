@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.088357+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-09T11:10:07.679559+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "4A.C68": {
@@ -14,7 +14,11 @@
     "F8.F4B": {
       "title": "Senior System Priority Engineer",
       "first_seen": "2026-08-19T13:01:25.197133+00:00"
+    },
+    "05.27E": {
+      "title": "טכנאי/ת הרכבות אלקטרו-מכאניות – משרה זמנית",
+      "first_seen": "2026-09-09T11:10:07.679559+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

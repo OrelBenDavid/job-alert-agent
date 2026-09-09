@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.099259+00:00",
-  "last_count": 23,
+  "last_success": "2026-09-09T11:10:07.697737+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -35,10 +35,6 @@
       "title": "Operations Finance Controller",
       "first_seen": "2026-09-06T10:45:33.752118+00:00"
     },
-    "511dd4fe-d1f8-488e-945e-729b7cbbfc7f": {
-      "title": "Order Management Specialist",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
     "ad96d5f9-f12e-4b56-a3da-73f50e71a99c": {
       "title": "Professional Services Engineer – Integrated Solutions",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
@@ -71,6 +67,10 @@
       "title": "Senior Embedded Vulnerability Researcher",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
+    "b3830cf8-8f19-4ae7-888e-54b15fc00848": {
+      "title": "Senior Hardware Product Manager -Deployment Kits & Configurations",
+      "first_seen": "2026-09-09T11:10:07.697737+00:00"
+    },
     "12e2ff81-95ed-4a85-90c9-89603768bc27": {
       "title": "Senior Mechanical Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
@@ -83,10 +83,6 @@
       "title": "Senior RF System & Design Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
-    "180d5569-e174-4fab-8798-a1e2b4532916": {
-      "title": "Senior Software Engineer (Cloud/Backend)",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
     "53dc8287-8969-472d-8b48-6c9b8901035a": {
       "title": "System Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 29
 }

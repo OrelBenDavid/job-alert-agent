@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.093748+00:00",
-  "last_count": 53,
+  "last_success": "2026-09-09T11:10:07.687360+00:00",
+  "last_count": 52,
   "consecutive_failures": 0,
   "jobs": {
     "CE.E62": {
@@ -66,10 +66,6 @@
     "2F.07E": {
       "title": "Forward Deployed Engineer",
       "first_seen": "2026-08-24T13:05:04.440109+00:00"
-    },
-    "54.56D": {
-      "title": "FPGA Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "F5.D68": {
       "title": "Hardware Development Team Lead",
@@ -216,5 +212,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 143
+  "last_board_total": 142
 }

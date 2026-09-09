@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.092679+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-09T11:10:07.686331+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "eeb8770a-82a9-494b-a486-2c6e37226551": {
@@ -9,10 +9,6 @@
     },
     "4c8bc538-8447-4946-b795-542577702bbb": {
       "title": "Senior Collections & AR Specialist",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
-    "c33b8f99-0f33-4855-9018-8633ffaff056": {
-      "title": "Staff Backend Engineer - Accounts",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "7d5a3660-5cba-4b63-876a-77096b072e8c": {
@@ -28,5 +24,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 10
 }

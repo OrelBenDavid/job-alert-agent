@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.065519+00:00",
-  "last_count": 32,
+  "last_success": "2026-09-09T11:10:07.660752+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-fca7edd1-4104-582b-86e7-511a52eeca32-T1788784171-744000148221489": {
@@ -9,10 +9,6 @@
     },
     "https://careers.wix.com/position/oracle-29b87552-50da-5cdd-a4eb-8150e5de769c-T1787469672-744000148195727": {
       "title": "DevOps Tech Lead",
-      "first_seen": "2026-09-08T11:05:09.085092+00:00"
-    },
-    "https://careers.wix.com/position/oracle-b47fb3e1-f81e-5c8a-85af-6c81cd34c50c-T1786523487-744000148194669": {
-      "title": "DevOps Engineer - KubeOps Team",
       "first_seen": "2026-09-08T11:05:09.085092+00:00"
     },
     "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000148194619": {

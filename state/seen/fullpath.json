@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-09-09T04:22:53.111877+00:00",
-  "last_count": 8,
+  "last_success": "2026-09-09T11:10:07.709550+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "25.27B": {
       "title": "AI AppSec Engineer",
       "first_seen": "2026-09-07T12:15:49.251102+00:00"
+    },
+    "D4.277": {
+      "title": "Hands-On Backend Team Lead",
+      "first_seen": "2026-09-09T11:10:07.709550+00:00"
+    },
+    "D4.277-41.10D": {
+      "title": "Hands-On Backend Team Lead",
+      "first_seen": "2026-09-09T11:10:07.709550+00:00"
     },
     "E8.663": {
       "title": "Head of Product - CRM",
@@ -36,5 +44,5 @@
       "first_seen": "2026-09-01T18:20:52.161733+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 14
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-09T04:22:53.140536+00:00",
+  "last_success": "2026-09-09T11:10:07.736530+00:00",
   "last_count": 166,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,6 +14,10 @@
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
+      "title": "Algo Team Lead – Geometric Data Infrastructure",
+      "first_seen": "2026-09-09T11:10:07.736530+00:00"
     },
     "510d7b7d-4d58-4411-99c0-02a91022a7c6": {
       "title": "Algorithm Data Analyst",
@@ -90,10 +94,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
-      "title": "Data Analytics Project Manager",
-      "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -235,10 +235,6 @@
       "title": "Experienced Physical Design Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "4a616b20-38f2-4344-9270-d37f75d49773": {
-      "title": "Experienced Python Developer for Algorithmic Group - Semantics",
-      "first_seen": "2026-09-07T12:15:49.288407+00:00"
-    },
     "791a4827-bd3e-4942-9e72-b00176e0334c": {
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -246,6 +242,10 @@
     "d41387e9-f9c3-4a72-8f4b-8ecfad129907": {
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "78d2b642-98cd-4eeb-893f-3662c46ae13c": {
+      "title": "Experienced Software Engineer - Data Systems & Tools",
+      "first_seen": "2026-09-09T11:10:07.736530+00:00"
     },
     "97753ee7-1701-4c30-9d5a-964fc310e371": {
       "title": "Experienced Technical Project Manager",

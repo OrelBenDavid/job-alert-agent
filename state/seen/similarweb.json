@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.597128+00:00",
-  "last_count": 28,
+  "last_success": "2026-09-09T11:10:07.785720+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -107,6 +107,10 @@
       "title": "Senior Full Stack Developer",
       "first_seen": "2026-08-24T09:56:22.918238+00:00"
     },
+    "8187911": {
+      "title": "Senior Full Stack Developer (Backend Oriented)",
+      "first_seen": "2026-09-09T11:10:07.785720+00:00"
+    },
     "7854902": {
       "title": "Senior Marketing Operations Manager",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
@@ -116,5 +120,5 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 64
 }

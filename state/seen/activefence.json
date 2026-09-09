@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.069025+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-09T11:10:07.663778+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "99.B62": {
@@ -27,13 +27,9 @@
       "title": "Fraud Threat Analyst",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
-    "DD.E69": {
-      "title": "Global Talent Acquisition Team Lead",
-      "first_seen": "2026-08-13T11:24:10.757126+00:00"
-    },
-    "B4.077": {
-      "title": "InfoSec & SecOps",
-      "first_seen": "2026-08-13T12:34:58.606258+00:00"
+    "66.27B": {
+      "title": "Global Recruiter - Talent Acquisition Team",
+      "first_seen": "2026-09-09T11:10:07.663778+00:00"
     },
     "E0.E61": {
       "title": "Malware Research (Mid-Level)",
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 34
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.611095+00:00",
-  "last_count": 36,
+  "last_success": "2026-09-09T11:10:07.798954+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "5A.66C": {
@@ -25,10 +25,6 @@
     },
     "89.D04": {
       "title": "Frontend Developer",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
-    },
-    "E0.C4F": {
-      "title": "Gen-AI Engineer",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
     "8F.946": {
@@ -77,10 +73,6 @@
     },
     "96.619": {
       "title": "QA Automation Engineer",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
-    },
-    "DB.A2F": {
-      "title": "Quality CI Engineer",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
     "E3.27A": {
@@ -148,5 +140,5 @@
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     }
   },
-  "last_board_total": 251
+  "last_board_total": 249
 }

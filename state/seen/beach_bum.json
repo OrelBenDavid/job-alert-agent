@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-09T04:22:53.082194+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-09T11:10:07.673902+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "315233d5-21e3-4ab4-a76f-250a5fae21d5": {
-      "title": "LiveOps Manager - Beach Bum",
-      "first_seen": "2026-08-18T19:28:22.746067+00:00"
-    },
     "16239679-12fe-4b38-b2ba-80796db64b18": {
       "title": "2D/Concept Artist - Beach Bum",
       "first_seen": "2026-08-26T16:24:36.052712+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-09-04T16:13:10.667705+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }

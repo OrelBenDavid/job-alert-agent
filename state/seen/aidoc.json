@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T04:22:53.070075+00:00",
-  "last_count": 26,
+  "last_success": "2026-09-09T11:10:07.665381+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -75,10 +75,6 @@
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
-    "4902462101": {
-      "title": "Senior DevOps Engineer",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
     "4889904101": {
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -108,5 +104,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 30
 }
