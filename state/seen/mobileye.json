@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T16:27:11.343251+00:00",
-  "last_count": 164,
+  "last_success": "2026-09-09T20:50:52.951668+00:00",
+  "last_count": 163,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -367,10 +367,6 @@
       "title": "Senior AV Project Manager Team Lead",
       "first_seen": "2026-09-02T11:06:52.049186+00:00"
     },
-    "1b03acdd-1eb9-4aa7-9f5b-53fdc890d2b7": {
-      "title": "Senior C++ Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "3ee12b13-6cdd-482f-a25a-26bcbacbdde6": {
       "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -660,5 +656,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 189
+  "last_board_total": 188
 }
