@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T20:50:52.948889+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-09T23:08:33.717694+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "R404697": {
@@ -15,14 +15,10 @@
       "title": "EHS Lead",
       "first_seen": "2026-09-03T11:04:08.061124+00:00"
     },
-    "R395666": {
-      "title": "Senior / Data & AI Solutions Engineer – Automation, Analytics & AI",
-      "first_seen": "2026-08-31T20:45:43.752061+00:00"
-    },
     "R389182": {
       "title": "PCBA Technologist for Engineering Team",
       "first_seen": "2026-08-23T09:01:21.827833+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }
