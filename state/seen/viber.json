@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-09T11:10:07.800348+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-09T16:27:11.400595+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "CC.C69": {
       "title": "Art Director",
-      "first_seen": "2026-08-13T11:24:49.426826+00:00"
-    },
-    "FE.466-AE.009": {
-      "title": "Backend Team Lead",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     },
     "B0.F66": {
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-31T13:27:00.425216+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 30
 }

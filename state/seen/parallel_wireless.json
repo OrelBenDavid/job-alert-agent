@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.756716+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-09T16:27:11.366944+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "eea71a03-fc42-4a29-a9a7-7cf6f3fb1afd": {
@@ -14,6 +14,10 @@
     "aae3fb69-b696-4925-a7fe-5ca6b3aee726": {
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
+    },
+    "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
+      "title": "PHY Algorithms Senior Engineer - AI/ML",
+      "first_seen": "2026-09-09T16:27:11.366944+00:00"
     },
     "b4b602b6-c32d-4868-af7e-2bfa41623d74": {
       "title": "PHY/RF Algorithms Engineer",
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 47
 }

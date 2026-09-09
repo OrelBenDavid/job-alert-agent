@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.732906+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-09T16:27:11.339775+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "e0b68d46-6caf-4427-a7bd-43828427856d": {
@@ -18,7 +18,11 @@
     "1c3ad954-fc56-40d6-9ca1-e06388f2368a": {
       "title": "Financial Planning & Analysis Manager",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "f9eef01d-77c6-4749-8edb-320e3cce8cc5": {
+      "title": "Office Manager & Employee Experience Partner",
+      "first_seen": "2026-09-09T16:27:11.339775+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

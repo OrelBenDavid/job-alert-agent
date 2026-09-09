@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.762888+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-09T16:27:11.370961+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "4943620101": {
@@ -35,10 +35,6 @@
       "title": "Monetization Manager",
       "first_seen": "2026-09-06T15:21:45.302209+00:00"
     },
-    "4944157101": {
-      "title": "QA Engineer",
-      "first_seen": "2026-09-08T16:30:33.594807+00:00"
-    },
     "4869431101": {
       "title": "Senior Corporate Counsel",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-26T07:01:03.601442+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 23
 }

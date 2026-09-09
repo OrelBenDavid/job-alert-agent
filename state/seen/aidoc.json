@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.665381+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-09T16:27:11.267438+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -42,10 +42,6 @@
     "4965332101": {
       "title": "Director of IT Security",
       "first_seen": "2026-09-01T14:06:10.552096+00:00"
-    },
-    "4932217101": {
-      "title": "Motion Designer",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4904523101": {
       "title": "Operations Manager - Radiology and Clinical Operations",
@@ -104,5 +100,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 29
 }

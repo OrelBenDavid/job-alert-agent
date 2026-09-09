@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.684571+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-09T16:27:11.283848+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "B4.076": {
@@ -11,6 +11,10 @@
       "title": "Data Platform Team Lead",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
+    "A6.274": {
+      "title": "Head of Billing & Collections",
+      "first_seen": "2026-09-09T16:27:11.283848+00:00"
+    },
     "AF.C6E": {
       "title": "Onboarding & Implementation Lead",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
@@ -20,5 +24,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 13
 }

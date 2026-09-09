@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-09T11:10:07.796646+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-09T16:27:11.396844+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "76.B6A": {
       "title": "AI System Architect",
-      "first_seen": "2026-08-20T06:56:59.897612+00:00"
-    },
-    "E5.079": {
-      "title": "Associate Product Manager",
       "first_seen": "2026-08-20T06:56:59.897612+00:00"
     },
     "B4.27A": {
@@ -16,5 +12,5 @@
       "first_seen": "2026-09-06T15:21:45.330076+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

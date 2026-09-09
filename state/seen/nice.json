@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-09T11:10:07.743334+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-09T16:27:11.359070+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
-    "4868664101": {
-      "title": "Chief Architect",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4938801101": {
       "title": "Cloud FinOps Business Partner",
       "first_seen": "2026-09-01T18:20:52.195346+00:00"
@@ -16,10 +12,6 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "4867642101": {
-      "title": "Director of Engineering",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4933792101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
@@ -33,10 +25,6 @@
     },
     "4867639101": {
       "title": "Director of Quality Engineering",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4925516101": {
-      "title": "Director of Technology and Architecture",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "4880347101": {
@@ -63,13 +51,13 @@
       "title": "FP&A Analyst",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4888512101": {
-      "title": "Head of Technology and Architecture",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4881356101": {
       "title": "IT FP&A Analyst",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "4972168101": {
+      "title": "Operations Program Manager",
+      "first_seen": "2026-09-09T16:27:11.359070+00:00"
     },
     "4965103101": {
       "title": "QA Director",
@@ -104,5 +92,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 185
+  "last_board_total": 180
 }

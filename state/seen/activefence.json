@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-09T11:10:07.663778+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-09T16:27:11.262685+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "99.B62": {
@@ -39,9 +39,17 @@
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
+    "96.279": {
+      "title": "Member of the Technical Staff - CTO Office",
+      "first_seen": "2026-09-09T16:27:11.262685+00:00"
+    },
     "36.07C": {
       "title": "Principal AI Security Researcher",
       "first_seen": "2026-08-17T15:33:09.042219+00:00"
+    },
+    "96.270": {
+      "title": "Senior AI Researcher",
+      "first_seen": "2026-09-09T16:27:11.262685+00:00"
     },
     "A5.C6E": {
       "title": "Senior Software Developer — Malware Research Platform",
@@ -56,5 +64,5 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 37
 }
