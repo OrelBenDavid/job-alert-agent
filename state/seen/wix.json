@@ -1,7 +1,7 @@
 {
   "last_success": "2026-09-10T11:06:08.945725+00:00",
   "last_count": 30,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "https://careers.wix.com/position/oracle-6a4d579d-355f-586f-8463-ea71807b8605-T1789025394-744000148696919": {
       "title": "Partnership Manager - Base44",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T11:06:09.006657+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-10T16:17:00.403004+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "E2.076": {
@@ -55,6 +55,10 @@
       "title": "Product Manager, Product-Led Growth",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
+    "2A.274": {
+      "title": "Senior AI Engineer — Exploration & Prototyping",
+      "first_seen": "2026-09-10T16:17:00.403004+00:00"
+    },
     "1F.078": {
       "title": "Senior Enterprise Account Executive - EMEA Tech",
       "first_seen": "2026-08-24T13:05:04.470996+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }

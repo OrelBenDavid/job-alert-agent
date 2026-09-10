@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T11:06:09.015921+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-10T16:17:00.415046+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "7E.956": {
@@ -15,6 +15,14 @@
       "title": "IT Specialist",
       "first_seen": "2026-08-20T06:56:56.879850+00:00"
     },
+    "74.D51": {
+      "title": "Mechanical Technician / Service Engineer",
+      "first_seen": "2026-09-10T16:17:00.415046+00:00"
+    },
+    "99.F59": {
+      "title": "Robot Teleoperator",
+      "first_seen": "2026-09-10T16:17:00.415046+00:00"
+    },
     "53.36C": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-20T06:56:56.879850+00:00"
@@ -24,5 +32,5 @@
       "first_seen": "2026-08-20T06:56:56.879850+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 7
 }

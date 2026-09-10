@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T11:06:09.997146+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-10T16:17:01.420791+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "8770556002": {
@@ -10,10 +10,6 @@
     "8738006002": {
       "title": "Head of Data Partnership",
       "first_seen": "2026-08-31T13:27:00.435927+00:00"
-    },
-    "8730205002": {
-      "title": "Manager, Data Platform",
-      "first_seen": "2026-08-21T18:48:02.946492+00:00"
     },
     "8561611002": {
       "title": "Principal Business Intelligence Analyst",
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     }
   },
-  "last_board_total": 112
+  "last_board_total": 111
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T11:06:09.000948+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-10T16:17:00.394279+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "D0.360": {
@@ -31,6 +31,10 @@
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
+    "1A.27F": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-09-10T16:17:00.394279+00:00"
+    },
     "22.754": {
       "title": "איש/אשת מכירות",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

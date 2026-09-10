@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-10T11:06:09.965321+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-10T16:17:01.388136+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
+    "8768908002": {
+      "title": "Account Executive",
+      "first_seen": "2026-09-10T16:17:01.388136+00:00"
+    },
     "8487227002": {
       "title": "Data Science Team Lead",
       "first_seen": "2026-08-13T11:24:41.040134+00:00"

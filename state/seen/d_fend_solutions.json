@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T11:06:08.981334+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-10T16:17:00.370959+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -51,10 +51,6 @@
       "title": "RF Automation Developer Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
-    "b100cfc4-7674-4420-8a36-4cf03dc93591": {
-      "title": "RF/HW & System Validation Engineer",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
     "98f7f648-e1ed-4eb0-9e3b-c25279afba21": {
       "title": "Sales Operations Team Lead",
       "first_seen": "2026-08-20T18:51:26.374540+00:00"
@@ -82,15 +78,7 @@
     "edfc36d0-0bbf-4bdc-bcae-03256b3ba138": {
       "title": "Senior RF System & Design Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "53dc8287-8969-472d-8b48-6c9b8901035a": {
-      "title": "System Engineer",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "53dee7a1-7f63-4699-a2a8-7eb0a8bbdccf": {
-      "title": "System QA Engineer",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 26
 }

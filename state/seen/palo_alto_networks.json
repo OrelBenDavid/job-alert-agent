@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-09-10T11:06:09.955579+00:00",
-  "last_count": 151,
+  "last_success": "2026-09-10T16:17:00.444309+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-018209": {
+      "title": "Principal Software Engineer (ITDR)",
+      "first_seen": "2026-09-10T16:17:00.444309+00:00"
+    },
+    "JR-019054": {
+      "title": "Technical Support Engineer (AgentiX Support - Cortex)",
+      "first_seen": "2026-09-10T16:17:00.444309+00:00"
+    },
+    "JR-020552": {
+      "title": "Staff Technical Support Engineer (Cortex XSIAM)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
     "JR-021287": {
       "title": "Director Software Engineering- CWP (Cortex Cloud)",
       "first_seen": "2026-09-10T11:06:09.955579+00:00"
@@ -210,10 +222,6 @@
     "JR-018098": {
       "title": "Senior Product Manager,  Identity Security Platform",
       "first_seen": "2026-08-20T13:03:13.982466+00:00"
-    },
-    "JR-020552": {
-      "title": "Senior Technical Support Engineer (Cortex XSIAM)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020455": {
       "title": "Senior/ Principal Security Researcher - Cloud & Kubernetes (Cortex)",
@@ -608,5 +616,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 155
 }

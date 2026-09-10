@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-09-10T11:06:09.014713+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-10T16:17:00.413388+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "D5.27B": {
       "title": "ממונ/ה בטיחות ו EHS",
       "first_seen": "2026-09-08T16:30:33.556699+00:00"
-    },
-    "CD.86B": {
-      "title": "מנהל מתקן דאטה סנטר פ\"ת",
-      "first_seen": "2026-08-20T06:56:54.028386+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }
