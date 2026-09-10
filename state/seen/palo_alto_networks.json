@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-10T16:17:00.444309+00:00",
-  "last_count": 153,
+  "last_success": "2026-09-10T20:45:40.129679+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-020948": {
+      "title": "Sr/Principal Engineer Software - AI Transformation (Cortex Cloud)",
+      "first_seen": "2026-09-10T20:45:40.129679+00:00"
+    },
     "JR-018209": {
       "title": "Principal Software Engineer (ITDR)",
       "first_seen": "2026-09-10T16:17:00.444309+00:00"

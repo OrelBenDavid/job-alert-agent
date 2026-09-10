@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T16:17:00.414705+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-10T20:45:40.120987+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "e0b68d46-6caf-4427-a7bd-43828427856d": {
@@ -22,7 +22,11 @@
     "f9eef01d-77c6-4749-8edb-320e3cce8cc5": {
       "title": "Office Manager & Employee Experience Partner",
       "first_seen": "2026-09-09T16:27:11.339775+00:00"
+    },
+    "eb0ec836-8862-459e-b518-d737a4bda052": {
+      "title": "Channel Manager, EMEA & APAC",
+      "first_seen": "2026-09-10T20:45:40.120987+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

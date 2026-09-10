@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-10T16:17:00.433404+00:00",
+  "last_success": "2026-09-10T20:45:40.124506+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,13 +7,13 @@
       "title": "AI Expert",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     },
+    "9F.077-9A.50D": {
+      "title": "Demand Gen Lead",
+      "first_seen": "2026-09-08T16:30:33.578006+00:00"
+    },
     "F3.E68": {
       "title": "Enterprise Account Executive | Israel",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
-    },
-    "9F.077-9A.50D": {
-      "title": "Growth Marketing Lead",
-      "first_seen": "2026-09-08T16:30:33.578006+00:00"
     },
     "DF.E65": {
       "title": "Make Your Own Opportunity",

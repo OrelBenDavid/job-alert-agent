@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T16:17:01.404276+00:00",
-  "last_count": 43,
+  "last_success": "2026-09-10T20:45:40.149108+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
@@ -45,10 +45,6 @@
     },
     "D0.36A": {
       "title": "Charm Security-Senior Full Stack Software Engineer",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
-    "28.E63": {
-      "title": "Fijoya- Director of Engineering",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "7D.17A": {
@@ -131,10 +127,6 @@
       "title": "Team8 Cyber Stealth Startup-Product Manager, AI Security",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
-    "00.F6E": {
-      "title": "Team8 Health Stealth Startup- Software Development Team Lead",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
     "15.27A": {
       "title": "Team8 Stealth Cyber Startup – Director of Marketing",
       "first_seen": "2026-09-07T12:15:49.353478+00:00"
@@ -176,5 +168,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 57
 }

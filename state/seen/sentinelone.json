@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-10T16:17:01.393547+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-10T20:45:40.138254+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
+    "7990052003": {
+      "title": "DFIR Analyst",
+      "first_seen": "2026-09-10T20:45:40.138254+00:00"
+    },
     "7722830003": {
       "title": "Senior Security Researcher- Detection AI Research",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
     }
   },
-  "last_board_total": 194
+  "last_board_total": 198
 }
