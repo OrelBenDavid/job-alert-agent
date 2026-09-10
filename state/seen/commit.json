@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T04:20:21.400541+00:00",
-  "last_count": 53,
+  "last_success": "2026-09-10T11:06:08.975073+00:00",
+  "last_count": 52,
   "consecutive_failures": 0,
   "jobs": {
     "CE.E62": {
@@ -10,10 +10,6 @@
     "A6.079": {
       "title": "AI IT Centre of Excellence Deploy Lead",
       "first_seen": "2026-09-02T11:06:51.982418+00:00"
-    },
-    "9C.D6C": {
-      "title": "AI Project Manager",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "93.E65": {
       "title": "AI R&D Transformation Lead",
@@ -216,5 +212,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 143
+  "last_board_total": 147
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T04:20:21.412289+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-10T11:06:08.986331+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "2B.76D": {
@@ -47,14 +47,10 @@
       "title": "Software Engineer, Robotics & Integration",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "99.E6D": {
-      "title": "Supply Chain & Manufacturing Manager",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "07.D65": {
       "title": "Systems Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 18
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-10T04:20:21.399415+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-10T11:06:08.974151+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "7f3812ca-d4c6-4d7f-acb0-9206c2984a64": {
+      "title": "Product Operations Lead",
+      "first_seen": "2026-09-10T11:06:08.974151+00:00"
+    },
     "eeb8770a-82a9-494b-a486-2c6e37226551": {
       "title": "Senior AI Solutions Builder",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

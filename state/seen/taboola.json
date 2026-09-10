@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T04:20:21.482908+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-10T11:06:09.981765+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -47,6 +47,10 @@
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
       "first_seen": "2026-09-03T16:17:32.035800+00:00"
     },
+    "8176690": {
+      "title": "Product Design Lead",
+      "first_seen": "2026-09-10T11:06:09.981765+00:00"
+    },
     "8131734": {
       "title": "Programatic account Manager- Maternity Leave Cover)",
       "first_seen": "2026-08-16T18:39:15.563827+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 81
+  "last_board_total": 83
 }

@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-09-10T04:20:21.443863+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-10T11:06:09.017368+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
+    "R19825": {
+      "title": "Production Tech/ טכנאית בד\"ס",
+      "first_seen": "2026-08-18T22:29:25.515378+00:00"
+    },
+    "R22230": {
+      "title": "Production Tech/ טכנאית בד\"ס",
+      "first_seen": "2026-09-10T11:06:09.017368+00:00"
+    },
     "R22220": {
       "title": "Accounting Support/ מנהל.ת חשבונות ספקים זמנית ל10 חודשים",
       "first_seen": "2026-09-06T10:45:34.606378+00:00"
@@ -55,10 +63,6 @@
       "title": "Production Tech 2 טכנאי/ת בד\"ס",
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     },
-    "R19825": {
-      "title": "Production Tech/ טכנאית בד\"ס",
-      "first_seen": "2026-08-18T22:29:25.515378+00:00"
-    },
     "R17586": {
       "title": "Finishing operator/מבקר/ת איכות",
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

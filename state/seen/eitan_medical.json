@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-10T04:20:21.410348+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-10T11:06:08.984868+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "29.B6B": {
@@ -10,6 +10,10 @@
     "85.275": {
       "title": "Process Engineer",
       "first_seen": "2026-09-08T11:05:09.132919+00:00"
+    },
+    "F9.27F": {
+      "title": "Production Manager",
+      "first_seen": "2026-09-10T11:06:08.984868+00:00"
     },
     "FC.C66": {
       "title": "QA Specialist",
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-13T11:24:19.179824+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }
