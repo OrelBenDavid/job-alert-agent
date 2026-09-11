@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-11T11:05:02.142483+00:00",
-  "last_count": 29,
+  "last_success": "2026-09-11T16:20:32.305394+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-0e4e1398-eae0-5402-8ce8-24b3324ccae5-T1780850209-744000148758440": {
@@ -42,10 +42,6 @@
     "https://careers.wix.com/position/oracle-aadb352b-218d-5bc2-abf2-2c2234062e81-T1788436737-744000147233909": {
       "title": "Animator - Base44",
       "first_seen": "2026-09-03T16:17:31.963624+00:00"
-    },
-    "https://careers.wix.com/position/oracle-4d1bcd92-a7c2-5230-9085-2078e713210c-T1782119350-744000147173260": {
-      "title": "Inbound Product Marketing Manager",
-      "first_seen": "2026-09-03T11:04:07.992252+00:00"
     },
     "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000147160953": {
       "title": "Experienced AI Product Marketing Manager - Base44",

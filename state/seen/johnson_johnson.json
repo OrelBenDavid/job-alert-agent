@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-11T11:05:02.183530+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-11T16:20:32.365000+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "R-074410": {
+      "title": "Manager, QARA Israel",
+      "first_seen": "2026-09-11T16:20:32.365000+00:00"
+    },
     "R-071966": {
       "title": "Finance Lead",
       "first_seen": "2026-09-09T11:10:07.723258+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }
