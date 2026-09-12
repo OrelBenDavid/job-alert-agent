@@ -1,7 +1,7 @@
 {
   "last_success": "2026-09-12T04:18:16.156187+00:00",
   "last_count": 3,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "B1.D61": {
       "title": "Business Development Associate",

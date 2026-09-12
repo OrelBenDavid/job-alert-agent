@@ -1,7 +1,7 @@
 {
   "last_success": "2026-09-12T04:18:16.234903+00:00",
   "last_count": 7,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
       "title": "Backend Developer",
