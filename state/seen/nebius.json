@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:43.001893+00:00",
-  "last_count": 78,
+  "last_success": "2026-09-14T12:31:04.090357+00:00",
+  "last_count": 79,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -19,11 +19,11 @@
       "title": "Cloud Solution Architect - Educational Content Author, Nebius Academy",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784195101": {
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784157101": {
+    "4784195101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -34,6 +34,10 @@
     "4784151101": {
       "title": "Data Center IT Technician - Masmiya",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4953622101": {
+      "title": "Data Center - Supply Chain Manager (EMEA)",
+      "first_seen": "2026-09-14T12:31:04.090357+00:00"
     },
     "4958594101": {
       "title": "Data Engineer (Agentic Search)",
@@ -316,5 +320,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 378
+  "last_board_total": 377
 }

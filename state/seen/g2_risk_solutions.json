@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.979671+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-14T12:31:04.054413+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "52.27F": {
@@ -11,14 +11,10 @@
       "title": "Engineering Team Lead- Data & AI Platform",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
-    "E2.F6F": {
-      "title": "Financial Controller - ML Replacement",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
     "CF.C64": {
       "title": "Software Engineer",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

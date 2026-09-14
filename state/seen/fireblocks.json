@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-14T04:37:42.977432+00:00",
+  "last_success": "2026-09-14T12:31:04.049068+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,12 +19,12 @@
       "title": "Information Security Engineer",
       "first_seen": "2026-09-03T11:04:08.034799+00:00"
     },
+    "4701824006": {
+      "title": "Information Security Engineer",
+      "first_seen": "2026-09-14T12:31:04.049068+00:00"
+    },
     "4683003006": {
       "title": "Product Manager, Mobile",
-      "first_seen": "2026-08-13T11:24:25.525766+00:00"
-    },
-    "4694977006": {
-      "title": "SecOps Expert",
       "first_seen": "2026-08-13T11:24:25.525766+00:00"
     },
     "4655907006": {
@@ -52,5 +52,5 @@
       "first_seen": "2026-09-03T20:54:14.295329+00:00"
     }
   },
-  "last_board_total": 75
+  "last_board_total": 74
 }

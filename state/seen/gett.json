@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.980116+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-14T12:31:04.054731+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "46.A6A": {
@@ -43,14 +43,10 @@
       "title": "Senior Product Manager - Billing",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "C8.E6A": {
-      "title": "Senior R&D Program Manager",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
     "4B.D69": {
       "title": "Senior Salesforce and Business Applications Analyst",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }

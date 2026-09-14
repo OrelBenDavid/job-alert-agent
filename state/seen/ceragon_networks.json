@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.965640+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-14T12:31:04.031819+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "70.F65": {
@@ -47,6 +47,10 @@
       "title": "RF System Architect",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
+    "FA.272": {
+      "title": "Senior RF & PHY Systems Engineer",
+      "first_seen": "2026-09-14T12:31:04.031819+00:00"
+    },
     "27.E62": {
       "title": "System Linux Administrator",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 47
 }

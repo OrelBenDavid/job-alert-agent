@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-14T04:37:43.036521+00:00",
+  "last_success": "2026-09-14T12:31:04.140132+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -17,6 +17,10 @@
     },
     "4621708006": {
       "title": "Brand & Data Visualization Designer",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4650468006": {
+      "title": "CTO Operations Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
     "4621534006": {
@@ -63,10 +67,6 @@
       "title": "Security Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
-    "4650468006": {
-      "title": "Technical Project Manager",
-      "first_seen": "2026-08-23T09:01:23.865955+00:00"
-    },
     "4701311006": {
       "title": "Technical Writer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
@@ -84,5 +84,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 127
+  "last_board_total": 128
 }

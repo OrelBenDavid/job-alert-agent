@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.958810+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-14T12:31:04.013857+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "9B.F6B": {
@@ -39,10 +39,6 @@
       "title": "Senior AI Growth Builder",
       "first_seen": "2026-09-01T18:20:52.129738+00:00"
     },
-    "42.75D": {
-      "title": "Senior Backend Developer (Core Systems)",
-      "first_seen": "2026-08-13T11:24:10.788867+00:00"
-    },
     "F3.B65": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-13T11:24:10.788867+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:10.788867+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

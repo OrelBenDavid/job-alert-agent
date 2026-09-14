@@ -1,8 +1,28 @@
 {
-  "last_success": "2026-09-14T04:37:42.952804+00:00",
-  "last_count": 28,
+  "last_success": "2026-09-14T12:31:04.004346+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/REF3097W-744000149304000": {
+      "title": "xEngineer for Wix Headless",
+      "first_seen": "2026-09-14T12:31:04.004346+00:00"
+    },
+    "https://careers.wix.com/position/oracle-207489a0-5182-56c1-9a68-0c7c4458687f-T1789378244-744000149303599": {
+      "title": "IT Support Engineer (Student)",
+      "first_seen": "2026-09-14T12:31:04.004346+00:00"
+    },
+    "https://careers.wix.com/position/oracle-36bbe828-e19c-5197-bae9-0334b0b79da7-T1789378426-744000149296389": {
+      "title": "IT Support Engineer",
+      "first_seen": "2026-09-14T12:31:04.004346+00:00"
+    },
+    "https://careers.wix.com/position/oracle-e48944f2-3022-50c5-8311-05a86d269936-T1789367439-744000149261589": {
+      "title": "Internal App Builder - Base44",
+      "first_seen": "2026-09-14T12:31:04.004346+00:00"
+    },
+    "https://careers.wix.com/position/REF3097W-744000149251909": {
+      "title": "Infrastructure Fullstack Developer - Fed Core",
+      "first_seen": "2026-09-14T12:31:04.004346+00:00"
+    },
     "https://careers.wix.com/position/oracle-0e4e1398-eae0-5402-8ce8-24b3324ccae5-T1780850209-744000148758440": {
       "title": "Brand Designer",
       "first_seen": "2026-09-10T20:45:40.087291+00:00"
@@ -30,10 +50,6 @@
     "https://careers.wix.com/position/oracle-1cde0a80-e2b2-587b-95d6-dd600388f932-T1788788675-744000148163629": {
       "title": "Product Manager - WOW",
       "first_seen": "2026-09-08T11:05:09.085092+00:00"
-    },
-    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000147691199": {
-      "title": "IT Support Engineer",
-      "first_seen": "2026-09-06T15:21:44.936284+00:00"
     },
     "https://careers.wix.com/position/oracle-359ab7a7-df53-5e08-9896-5040d09bc776-T1788425931-744000147684569": {
       "title": "Product Designer",

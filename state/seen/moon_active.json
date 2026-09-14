@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.999707+00:00",
-  "last_count": 28,
+  "last_success": "2026-09-14T12:31:04.088313+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
@@ -22,10 +22,6 @@
     "33a48de5-40cd-4a03-beac-5c2833401a2e": {
       "title": "Technical Artist",
       "first_seen": "2026-09-01T08:32:41.846843+00:00"
-    },
-    "782e0dd3-34c2-4d36-b1c7-eb59340858eb": {
-      "title": "Marketing Data Analyst",
-      "first_seen": "2026-08-23T09:01:22.335333+00:00"
     },
     "0275cb08-9fcf-4251-a2d1-a69835ecb0fa": {
       "title": "Talent Acquisition Associate",
@@ -116,5 +112,5 @@
       "first_seen": "2026-09-08T16:30:33.570437+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 37
 }

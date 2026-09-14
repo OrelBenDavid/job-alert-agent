@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-14T04:37:42.984786+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-14T12:31:04.057929+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
-    "9e144871-0ee4-4a6b-809c-3979090192f5": {
-      "title": "Marketing Analytics Lead",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "e2fdd8c6-eaa6-4537-98bb-f467256587f8": {
       "title": "Sr. Staff Product Manager",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-09-01T14:06:10.589679+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

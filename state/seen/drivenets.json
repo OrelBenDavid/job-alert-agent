@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-14T04:37:42.973892+00:00",
-  "last_count": 31,
+  "last_success": "2026-09-14T12:31:04.038394+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
       "title": "AI Platform Software Engineer",
       "first_seen": "2026-08-19T09:41:24.968640+00:00"
+    },
+    "9D.660": {
+      "title": "AI Specialist Engineer",
+      "first_seen": "2026-09-14T12:31:04.038394+00:00"
     },
     "6A.D68": {
       "title": "AI Workflow Engineer – System Architecture",
@@ -43,9 +47,9 @@
       "title": "IT Devops Engineer",
       "first_seen": "2026-08-17T09:51:49.972862+00:00"
     },
-    "8C.067": {
-      "title": "Junior Hardware Engineer",
-      "first_seen": "2026-09-08T16:30:33.513102+00:00"
+    "2B.271": {
+      "title": "IT DevOps Engineer",
+      "first_seen": "2026-09-14T12:31:04.038394+00:00"
     },
     "2C.171": {
       "title": "Material Planner",
@@ -95,6 +99,10 @@
       "title": "Senior Network & Security Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
+    "2B.273": {
+      "title": "Senior Network & Security Engineer",
+      "first_seen": "2026-09-14T12:31:04.038394+00:00"
+    },
     "F1.C6D": {
       "title": "Senior Power Integrity Engineer",
       "first_seen": "2026-09-03T16:17:31.986696+00:00"
@@ -123,10 +131,14 @@
       "title": "System Architect – Routing and Data Path",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
+    "8C.067": {
+      "title": "System Validation Engineer",
+      "first_seen": "2026-09-08T16:30:33.513102+00:00"
+    },
     "F1.C65": {
       "title": "Vendor Managment",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 38
 }

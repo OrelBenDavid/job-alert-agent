@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:43.009485+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-14T12:31:04.096013+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "eea71a03-fc42-4a29-a9a7-7cf6f3fb1afd": {
@@ -27,6 +27,10 @@
       "title": "Platform Director",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
+    "69161322-74af-4dbb-8060-ca7d8bf7cedd": {
+      "title": "RAN Digital Twin Engineer",
+      "first_seen": "2026-09-14T12:31:04.096013+00:00"
+    },
     "3c13944f-a46c-4bee-a972-0a52e71d3431": {
       "title": "Senior AI-Driven Integration & Validation Engineer",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
@@ -44,7 +48,7 @@
       "first_seen": "2026-09-06T15:21:45.299231+00:00"
     },
     "660174e6-d315-4eaf-9b3e-d400a177d8e2": {
-      "title": "Senior Technical Lead —Platform (End-to-End)",
+      "title": "Senior Technical Lead - Radio Intelligent Controller Systems",
       "first_seen": "2026-08-31T20:45:43.782399+00:00"
     },
     "233858ab-104d-42fe-8b5b-f9d86aa8f5a4": {
@@ -72,5 +76,5 @@
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }

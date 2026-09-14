@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:43.024440+00:00",
-  "last_count": 46,
+  "last_success": "2026-09-14T12:31:04.123072+00:00",
+  "last_count": 48,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -15,9 +15,17 @@
       "title": "ATE Testers Technician (Level 2)",
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     },
+    "25.272": {
+      "title": "C# Software Developer",
+      "first_seen": "2026-09-14T12:31:04.123072+00:00"
+    },
     "CF.C62": {
       "title": "Customer Experience & Operation Team Leader",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "8C.867": {
+      "title": "Debug Engineer",
+      "first_seen": "2026-09-14T12:31:04.123072+00:00"
     },
     "9D.862": {
       "title": "Debug Practical Engineer",
@@ -188,5 +196,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 104
+  "last_board_total": 106
 }

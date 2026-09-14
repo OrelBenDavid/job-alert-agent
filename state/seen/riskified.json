@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:43.017510+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-14T12:31:04.112704+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "8768908002": {
@@ -14,7 +14,11 @@
     "8591838002": {
       "title": "Payment Fraud Product Manager",
       "first_seen": "2026-08-13T11:24:41.040134+00:00"
+    },
+    "8785421002": {
+      "title": "Product Lead",
+      "first_seen": "2026-09-14T12:31:04.112704+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

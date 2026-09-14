@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-14T04:37:42.973040+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-14T12:31:04.037767+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "JR100908": {
+      "title": "Lead Backend Engineer",
+      "first_seen": "2026-09-14T12:31:04.037767+00:00"
+    },
     "JR101052": {
       "title": "Senior Machine Learning Engineer",
       "first_seen": "2026-09-07T12:15:49.240881+00:00"
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-18T22:29:25.507356+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 39
 }

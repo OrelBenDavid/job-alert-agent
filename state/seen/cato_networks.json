@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.964972+00:00",
-  "last_count": 37,
+  "last_success": "2026-09-14T12:31:04.028546+00:00",
+  "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -111,6 +111,10 @@
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "4970648101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-09-14T12:31:04.028546+00:00"
+    },
     "4901284101": {
       "title": "Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -152,5 +156,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 104
+  "last_board_total": 107
 }

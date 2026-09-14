@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T04:37:42.958614+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-14T12:31:04.013686+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "5994462004": {
@@ -11,14 +11,10 @@
       "title": "AI Expert",
       "first_seen": "2026-08-13T11:24:10.787360+00:00"
     },
-    "6105740004": {
-      "title": "Sr Staff Inbound Product Manager",
-      "first_seen": "2026-08-13T11:24:10.787360+00:00"
-    },
     "6105741004": {
       "title": "Sr Staff Inbound Product Manager",
       "first_seen": "2026-08-13T11:24:10.787360+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

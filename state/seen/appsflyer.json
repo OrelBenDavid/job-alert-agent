@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-14T04:37:42.957764+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-14T12:31:04.009698+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
       "title": "Application Security Engineer",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
+    },
+    "8805502002": {
+      "title": "Commission Analyst",
+      "first_seen": "2026-09-14T12:31:04.009698+00:00"
     },
     "8725456002": {
       "title": "Data Analyst",
@@ -60,5 +64,5 @@
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 49
 }
