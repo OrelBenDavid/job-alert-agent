@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.134986+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-14T19:48:42.963063+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "4972669101": {
@@ -11,14 +11,10 @@
       "title": "Senior Product Manager",
       "first_seen": "2026-09-03T20:54:14.833605+00:00"
     },
-    "4920111101": {
-      "title": "Senior Security Analyst",
-      "first_seen": "2026-08-18T19:28:34.688782+00:00"
-    },
     "4704284101": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

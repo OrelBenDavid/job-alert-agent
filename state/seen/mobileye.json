@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.081629+00:00",
-  "last_count": 159,
+  "last_success": "2026-09-14T19:48:42.903141+00:00",
+  "last_count": 162,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -134,6 +134,18 @@
     "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
       "title": "Embedded C++ Software Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "04853139-2a12-4d1e-8ce3-6d315ec31081": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-09-14T19:48:42.903141+00:00"
+    },
+    "0fa71098-1f99-4528-8f23-5369eec1b7d5": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-09-14T19:48:42.903141+00:00"
+    },
+    "f197016b-7b7a-46a2-991d-c48852099048": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-09-14T19:48:42.903141+00:00"
     },
     "62f6ee02-6f82-4044-819e-c7207995cd24": {
       "title": "Embedded Linux OS Architect",
@@ -640,5 +652,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 184
+  "last_board_total": 187
 }

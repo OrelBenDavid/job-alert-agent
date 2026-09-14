@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.140132+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-14T19:48:42.976294+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "4681239006": {
@@ -67,6 +67,10 @@
       "title": "Security Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
+    "4615170006": {
+      "title": "Technical Product Associate",
+      "first_seen": "2026-09-14T19:48:42.976294+00:00"
+    },
     "4701311006": {
       "title": "Technical Writer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 128
+  "last_board_total": 132
 }

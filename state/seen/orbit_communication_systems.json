@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-14T12:31:04.093554+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-14T19:48:42.921801+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "CE.073": {
       "title": "Cables & Wiring Engineer",
       "first_seen": "2026-08-25T09:43:09.068700+00:00"
+    },
+    "69.E61": {
+      "title": "DFT Engineer",
+      "first_seen": "2026-09-14T19:48:42.921801+00:00"
     },
     "3D.B6C": {
       "title": "Director Of Sales And Business Development - Europe",
@@ -67,6 +71,10 @@
       "title": "System Engineer Maritime",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
+    "3B.279": {
+      "title": "Talent Acquisition Specialist",
+      "first_seen": "2026-09-14T19:48:42.921801+00:00"
+    },
     "3D.B60": {
       "title": "איש/אשת אחזקה",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -84,5 +92,5 @@
       "first_seen": "2026-08-23T15:30:12.098094+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 22
 }

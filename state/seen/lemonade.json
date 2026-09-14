@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.072825+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-14T19:48:42.893891+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -79,21 +79,17 @@
       "title": "Senior Backend Engineer, GenAI",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
-    "d2b11401-d851-4b60-a9f8-907145c32902": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
     "52253821-0da3-4eab-9df2-a31060170219": {
       "title": "Actuarial Associate, Car",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "cc509599-0fe9-4407-8b4f-79433bc1f6e6": {
-      "title": "Compliance Manager",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "e65d37ac-b4be-4709-b631-d6be8516984d": {
       "title": "IT Manager, AI Ops",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
+    },
+    "663819c6-426c-49d6-8c0c-1fe938ffb440": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-09-14T19:48:42.893891+00:00"
     },
     "eb855637-aa5f-44b5-8b37-69ab045c3300": {
       "title": "Senior People Ops Specialist",
@@ -112,5 +108,5 @@
       "first_seen": "2026-09-07T12:15:49.278666+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }

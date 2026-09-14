@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.036746+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-14T19:48:42.857893+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -22,6 +22,10 @@
     "dc1b0f80-3ba6-4077-b815-41d3a2ccdeab": {
       "title": "Field System QA",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
+    },
+    "892fac78-c936-44a4-bc31-15b965c1634d": {
+      "title": "IT Helpdesk Technician",
+      "first_seen": "2026-09-14T19:48:42.857893+00:00"
     },
     "6a52d9de-ec0e-48f7-8c4f-ba409b0dd256": {
       "title": "Market Intelligence Analyst (Drone & Counter-Drone Systems)",
@@ -76,5 +80,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }

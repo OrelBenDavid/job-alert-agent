@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-14T12:31:04.121574+00:00",
+  "last_success": "2026-09-14T19:48:42.946472+00:00",
   "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
@@ -32,7 +32,7 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     },
     "8152675": {
-      "title": "Director of Revenue Analytics",
+      "title": "Director of Business Analytics",
       "first_seen": "2026-08-24T09:56:22.918238+00:00"
     },
     "7785555": {

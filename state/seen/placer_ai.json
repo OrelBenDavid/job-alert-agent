@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-14T12:31:04.108226+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-14T19:48:42.931079+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "7853136003": {
@@ -14,7 +14,11 @@
     "7893702003": {
       "title": "Senior Backend Engineer- Data Platform",
       "first_seen": "2026-08-20T13:03:13.986186+00:00"
+    },
+    "7993942003": {
+      "title": "Senior Data Analyst",
+      "first_seen": "2026-09-14T19:48:42.931079+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

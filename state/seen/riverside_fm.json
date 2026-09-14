@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-14T12:31:04.113137+00:00",
+  "last_success": "2026-09-14T19:48:42.940193+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,16 +27,16 @@
       "title": "Senior Affiliate Manager",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
     },
+    "48.358": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-08-13T11:24:41.041975+00:00"
+    },
     "32.36E": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
     },
     "EE.E69": {
       "title": "Senior Frontend Infra Developer",
-      "first_seen": "2026-08-13T11:24:41.041975+00:00"
-    },
-    "48.358": {
-      "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-13T11:24:41.041975+00:00"
     },
     "0A.568": {
