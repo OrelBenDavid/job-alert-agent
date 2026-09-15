@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T11:34:08.133462+00:00",
-  "last_count": 34,
+  "last_success": "2026-09-15T16:48:16.917260+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "5A.66C": {
@@ -106,6 +106,10 @@
     "43.276": {
       "title": "Senior Security Engineer",
       "first_seen": "2026-09-03T11:04:08.148253+00:00"
+    },
+    "7A.D6D": {
+      "title": "Senior Software Engineer -Kafka / Event Streaming",
+      "first_seen": "2026-09-15T16:48:16.917260+00:00"
     },
     "BF.546": {
       "title": "Senior Solutions Engineer – Big Data & Data Infrastructure",

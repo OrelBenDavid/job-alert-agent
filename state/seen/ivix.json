@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-15T11:34:07.642797+00:00",
+  "last_success": "2026-09-15T16:48:16.839422+00:00",
   "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,13 +11,13 @@
       "title": "AI,ML Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "4B.275": {
+      "title": "FullStack Software Engineer",
+      "first_seen": "2026-09-14T19:48:42.885137+00:00"
+    },
     "95.27B": {
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-09-08T11:05:09.153774+00:00"
-    },
-    "4B.275": {
-      "title": "Software Engineer",
-      "first_seen": "2026-09-14T19:48:42.885137+00:00"
     }
   },
   "last_board_total": 7

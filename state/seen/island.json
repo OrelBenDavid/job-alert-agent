@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T11:34:07.642439+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-15T16:48:16.839248+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -14,14 +14,6 @@
     "40.460": {
       "title": "QA Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "A9.86B": {
-      "title": "SecOps IR Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "4E.E58": {
-      "title": "Senior Backend Engineer - Glilot",
-      "first_seen": "2026-08-19T09:41:25.004836+00:00"
     },
     "6E.D38": {
       "title": "Senior C++ Engineer",
@@ -38,10 +30,6 @@
     "EE.D33": {
       "title": "Senior Devops Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "16.F5C": {
-      "title": "Senior Fullstack Engineer - AI group - Glilot",
-      "first_seen": "2026-08-19T09:41:25.004836+00:00"
     },
     "EF.D3B": {
       "title": "Senior Platform Engineer (DevEx / DevOps)",
@@ -68,5 +56,5 @@
       "first_seen": "2026-08-19T09:41:25.004836+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 42
 }

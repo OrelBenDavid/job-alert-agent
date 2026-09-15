@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T11:34:07.670310+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-15T16:48:16.865299+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "B4.277": {
@@ -10,6 +10,10 @@
     "63.E6F": {
       "title": "Assistant Controller",
       "first_seen": "2026-08-25T06:59:42.960861+00:00"
+    },
+    "FB.278": {
+      "title": "Compliance Officer",
+      "first_seen": "2026-09-15T16:48:16.865299+00:00"
     },
     "50.762": {
       "title": "Controller",
@@ -44,5 +48,5 @@
       "first_seen": "2026-08-13T11:30:57.418112+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

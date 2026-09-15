@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T11:34:08.116388+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-15T16:48:16.907529+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "88.E47": {
@@ -35,10 +35,6 @@
       "title": "Game Economist",
       "first_seen": "2026-08-27T14:03:31.475374+00:00"
     },
-    "FB.F66": {
-      "title": "Head of Data",
-      "first_seen": "2026-08-13T11:24:41.061693+00:00"
-    },
     "45.06B": {
       "title": "Monetization Manager",
       "first_seen": "2026-08-13T11:24:41.061693+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-16T09:35:33.190901+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 15
 }
