@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-15T16:48:16.908435+00:00",
+  "last_success": "2026-09-15T21:10:51.285694+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -48,7 +48,7 @@
       "first_seen": "2026-09-03T16:17:32.035800+00:00"
     },
     "8176690": {
-      "title": "Product Design Lead",
+      "title": "Product Design Team Lead",
       "first_seen": "2026-09-10T11:06:09.981765+00:00"
     },
     "8131734": {
@@ -96,5 +96,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 89
+  "last_board_total": 90
 }
