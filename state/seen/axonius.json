@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-15T04:38:18.966845+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-15T11:34:07.566965+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
+    "7995556003": {
+      "title": "Director, Product Design",
+      "first_seen": "2026-09-15T11:34:07.566965+00:00"
+    },
     "7832402003": {
       "title": "Manager, Cyber Research",
       "first_seen": "2026-08-13T21:55:39.236100+00:00"
@@ -23,6 +27,10 @@
       "title": "Senior DevEx/DevOps Engineer",
       "first_seen": "2026-08-13T21:55:39.236100+00:00"
     },
+    "7987636003": {
+      "title": "Senior Full-Stack Engineer (Internal Apps)",
+      "first_seen": "2026-09-15T11:34:07.566965+00:00"
+    },
     "7748661003": {
       "title": "Senior Product Security Architect",
       "first_seen": "2026-08-13T11:30:57.411396+00:00"
@@ -32,5 +40,5 @@
       "first_seen": "2026-08-13T11:30:57.411396+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 20
 }

@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-09-15T04:38:19.004113+00:00",
-  "last_count": 0,
+  "last_success": "2026-09-15T11:34:07.684840+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
+  "jobs": {
+    "JR112600": {
+      "title": "R&D Intern",
+      "first_seen": "2026-09-15T11:34:07.684840+00:00"
+    }
+  },
   "last_board_total": 40
 }

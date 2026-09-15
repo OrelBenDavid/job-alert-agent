@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-15T04:38:18.960765+00:00",
-  "last_count": 32,
+  "last_success": "2026-09-15T11:34:07.553727+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/REF12W-744000149516299": {
+      "title": "xEngineer Team Lead (Backend Oriented) for Viewer",
+      "first_seen": "2026-09-15T11:34:07.553727+00:00"
+    },
     "https://careers.wix.com/position/REF3097W-744000149304000": {
       "title": "xEngineer for Wix Headless",
       "first_seen": "2026-09-14T12:31:04.004346+00:00"
@@ -15,17 +19,9 @@
       "title": "IT Support Engineer",
       "first_seen": "2026-09-14T12:31:04.004346+00:00"
     },
-    "https://careers.wix.com/position/oracle-e48944f2-3022-50c5-8311-05a86d269936-T1789367439-744000149261589": {
-      "title": "Internal App Builder - Base44",
-      "first_seen": "2026-09-14T12:31:04.004346+00:00"
-    },
     "https://careers.wix.com/position/REF3097W-744000149251909": {
       "title": "Infrastructure Fullstack Developer - Fed Core",
       "first_seen": "2026-09-14T12:31:04.004346+00:00"
-    },
-    "https://careers.wix.com/position/oracle-0e4e1398-eae0-5402-8ce8-24b3324ccae5-T1780850209-744000148758440": {
-      "title": "Brand Designer",
-      "first_seen": "2026-09-10T20:45:40.087291+00:00"
     },
     "https://careers.wix.com/position/oracle-6a4d579d-355f-586f-8463-ea71807b8605-T1789025394-744000148696919": {
       "title": "Partnership Manager - Base44",
@@ -117,10 +113,6 @@
     },
     "https://careers.wix.com/position/REF3088Y-744000140209529": {
       "title": "AI Creative Gen - Base44",
-      "first_seen": "2026-08-12T11:43:17.595643+00:00"
-    },
-    "https://careers.wix.com/position/oracle-ead6eec9-9975-57ae-b516-723b92f32721-T1784615399-744000139247849": {
-      "title": "Head of Customer experience - Base44",
       "first_seen": "2026-08-12T11:43:17.595643+00:00"
     },
     "https://careers.wix.com/position/oracle-31ef6155-f134-54a5-89fa-ccad0a958a39-T1774782714-744000132934508": {

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T04:38:19.014605+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-15T11:34:08.129477+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "5629660a-6c84-4b3f-b820-cc25a1516a39": {
@@ -10,7 +10,11 @@
     "2fc80472-de52-49ff-8351-ee12979a1d51": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.359071+00:00"
+    },
+    "750876a2-dc08-4737-b3ef-f26f79452d69": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-09-15T11:34:08.129477+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 3
 }

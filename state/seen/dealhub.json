@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-15T04:38:18.975920+00:00",
+  "last_success": "2026-09-15T11:34:07.595708+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -39,9 +39,9 @@
       "title": "QA Engineer(Entry Level)",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
-    "9A.E5A": {
+    "DB.279": {
       "title": "Senior Customer Support Specialist",
-      "first_seen": "2026-08-13T11:24:19.173800+00:00"
+      "first_seen": "2026-09-15T11:34:07.595708+00:00"
     },
     "B4.550": {
       "title": "Solution Expert",

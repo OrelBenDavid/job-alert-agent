@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-15T04:38:19.012827+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-15T11:34:08.117669+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -79,6 +79,10 @@
       "title": "Site Reliability Engineer, Traffic Infrastructure",
       "first_seen": "2026-09-14T12:31:04.128440+00:00"
     },
+    "8176684": {
+      "title": "Software Developer – Production Engineering",
+      "first_seen": "2026-09-15T11:34:08.117669+00:00"
+    },
     "7903594": {
       "title": "Software Development Team Leader – Production Engineering",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 87
 }

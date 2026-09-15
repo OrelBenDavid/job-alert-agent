@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-15T04:38:18.971682+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-15T11:34:07.580426+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
       "title": "AI Platform- Software Engineer Team Leader",
       "first_seen": "2026-08-23T15:30:12.038716+00:00"
+    },
+    "55.278": {
+      "title": "Backend Software Engineer",
+      "first_seen": "2026-09-15T11:34:07.580426+00:00"
     },
     "DD.17E": {
       "title": "Bookkeeper",
@@ -14,6 +18,10 @@
     "D5.076": {
       "title": "DevOps Engineer",
       "first_seen": "2026-09-07T12:15:48.910348+00:00"
+    },
+    "77.C60": {
+      "title": "Director of Data & AI",
+      "first_seen": "2026-09-15T11:34:07.580426+00:00"
     },
     "9F.E6E": {
       "title": "EMEA & APAC Controller",
@@ -40,5 +48,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 27
 }
