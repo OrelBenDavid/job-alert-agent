@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-16T04:33:39.763507+00:00",
-  "last_count": 28,
+  "last_success": "2026-09-16T11:21:30.326496+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -49,10 +49,6 @@
     },
     "7548388": {
       "title": "Product Analyst",
-      "first_seen": "2026-08-13T13:25:04.791162+00:00"
-    },
-    "7971236": {
-      "title": "Product Data Scientist (Customer-facing)",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     },
     "8152015": {
@@ -116,5 +112,5 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
   },
-  "last_board_total": 66
+  "last_board_total": 65
 }

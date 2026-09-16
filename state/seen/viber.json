@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-16T04:33:39.774237+00:00",
+  "last_success": "2026-09-16T11:21:30.336826+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     },
     "23.D65": {
-      "title": "Product Designer",
+      "title": "Product Designer (Mobile Native oriented)",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     },
     "6C.179": {

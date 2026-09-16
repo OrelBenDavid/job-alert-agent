@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-16T04:33:39.767827+00:00",
-  "last_count": 23,
+  "last_success": "2026-09-16T11:21:30.330724+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -51,10 +51,6 @@
       "title": "Product Design Team Lead",
       "first_seen": "2026-09-10T11:06:09.981765+00:00"
     },
-    "8131734": {
-      "title": "Programatic account Manager- Maternity Leave Cover)",
-      "first_seen": "2026-08-16T18:39:15.563827+00:00"
-    },
     "8080933": {
       "title": "SalesForce Team Lead",
       "first_seen": "2026-09-07T12:15:49.351874+00:00"
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 90
+  "last_board_total": 89
 }

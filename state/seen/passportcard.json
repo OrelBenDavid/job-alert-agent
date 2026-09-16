@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-16T04:33:39.750677+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-16T11:21:30.013764+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "CF.666": {
@@ -10,10 +10,6 @@
     "69.A45": {
       "title": "Internal Auditor",
       "first_seen": "2026-08-23T09:01:23.825516+00:00"
-    },
-    "A2.A27": {
-      "title": "NOC Engineer",
-      "first_seen": "2026-08-23T15:30:12.103743+00:00"
     },
     "0F.E63": {
       "title": "Sales Representative",
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 17
+  "last_board_total": 16
 }

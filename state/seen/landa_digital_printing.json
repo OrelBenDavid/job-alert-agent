@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-16T04:33:39.731509+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-16T11:21:29.983445+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "DF.862": {
       "title": "Backend .Net Software Engineer",
       "first_seen": "2026-08-13T11:24:25.559146+00:00"
+    },
+    "9C.277": {
+      "title": "Controller",
+      "first_seen": "2026-09-16T11:21:29.983445+00:00"
     },
     "CF.077": {
       "title": "Marketing Student",
@@ -14,7 +18,11 @@
     "4E.17E": {
       "title": "Materials Researcher",
       "first_seen": "2026-09-01T14:06:11.116119+00:00"
+    },
+    "8C.273": {
+      "title": "System Administrator",
+      "first_seen": "2026-09-16T11:21:29.983445+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 10
 }

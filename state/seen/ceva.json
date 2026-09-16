@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-16T04:33:39.703941+00:00",
+  "last_success": "2026-09-16T11:21:29.933255+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -32,7 +32,7 @@
       "first_seen": "2026-08-25T13:01:51.662131+00:00"
     },
     "F4.179": {
-      "title": "Communication System Engineer",
+      "title": "Communication Software Engineer",
       "first_seen": "2026-08-26T16:24:36.061543+00:00"
     },
     "0A.E66": {
@@ -72,5 +72,5 @@
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 29
 }
