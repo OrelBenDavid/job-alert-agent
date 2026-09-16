@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-16T16:40:48.733790+00:00",
-  "last_count": 152,
+  "last_success": "2026-09-16T21:12:04.458608+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-020085": {
+      "title": "Sr Staff Engineer Software (Directory Services)",
+      "first_seen": "2026-09-16T21:12:04.458608+00:00"
+    },
     "JR-021261": {
       "title": "Sr. Principal AI Researcher, AI Transformation",
       "first_seen": "2026-09-16T16:40:48.733790+00:00"
@@ -101,10 +105,6 @@
     },
     "JR-022003": {
       "title": "Sr Staff Engineer Software (Credential Provider)",
-      "first_seen": "2026-09-03T20:54:14.339810+00:00"
-    },
-    "JR-022002": {
-      "title": "Staff Software Engineer (Credential Provider)",
       "first_seen": "2026-09-03T20:54:14.339810+00:00"
     },
     "JR-021366": {
@@ -379,10 +379,6 @@
       "title": "Manager SW Engineering (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-020084": {
-      "title": "Sr Staff Engineer Software (Directory Services)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-018846": {
       "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -612,5 +608,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 152
 }

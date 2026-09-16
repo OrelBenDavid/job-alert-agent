@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-16T16:40:48.727999+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-16T21:12:04.451956+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "4904281101": {
@@ -51,14 +51,6 @@
       "title": "Employer Branding Student (Temporary )",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4888619101": {
-      "title": "FP&A Analyst",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4881356101": {
-      "title": "IT FP&A Analyst",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4972168101": {
       "title": "Operations Program Manager",
       "first_seen": "2026-09-09T16:27:11.359070+00:00"
@@ -92,5 +84,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 166
+  "last_board_total": 165
 }
