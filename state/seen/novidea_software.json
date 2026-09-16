@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-09-16T11:21:30.008736+00:00",
-  "last_count": 1,
+  "last_success": "2026-09-16T16:40:48.728645+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "a3bd297a-416a-443d-b255-6e8da6b3d36c": {
-      "title": "Salesforce Implementer",
-      "first_seen": "2026-09-08T11:05:09.178389+00:00"
-    }
-  },
-  "last_board_total": 3
+  "jobs": {},
+  "last_board_total": 2
 }

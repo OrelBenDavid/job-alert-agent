@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-16T11:21:30.332759+00:00",
+  "last_success": "2026-09-16T16:40:48.764582+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,9 +15,9 @@
       "title": "IT Engineer",
       "first_seen": "2026-09-13T20:39:33.262473+00:00"
     },
-    "6105003004": {
-      "title": "Manager, Software Engineering",
-      "first_seen": "2026-08-13T11:24:41.076387+00:00"
+    "6192878004": {
+      "title": "Product Security Engineer",
+      "first_seen": "2026-09-16T16:40:48.764582+00:00"
     },
     "6177389004": {
       "title": "Senior Cyber Security Engineer",

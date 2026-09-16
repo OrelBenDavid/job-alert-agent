@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-16T11:21:29.981034+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-16T16:40:48.346525+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -10,10 +10,6 @@
     "8167054": {
       "title": "Application Security Engineer",
       "first_seen": "2026-09-03T16:17:31.997522+00:00"
-    },
-    "8127498": {
-      "title": "Business Development Representative - French speaker",
-      "first_seen": "2026-08-16T09:35:32.123403+00:00"
     },
     "7694707": {
       "title": "Business Development Representative - German Speaker",
@@ -79,12 +75,8 @@
       "title": "Senior Product Manager - JFrog Security",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "8184083": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-09-16T11:21:29.981034+00:00"
-    },
     "7510102": {
-      "title": "Senior Software Engineer - Developer Experience",
+      "title": "Senior Software Engineer",
       "first_seen": "2026-09-09T16:27:11.329124+00:00"
     },
     "8152802": {
@@ -92,5 +84,5 @@
       "first_seen": "2026-08-26T09:51:33.831212+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 57
 }

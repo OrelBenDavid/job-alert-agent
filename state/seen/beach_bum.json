@@ -1,20 +1,16 @@
 {
-  "last_success": "2026-09-16T11:21:29.928018+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-16T16:40:48.298922+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "16239679-12fe-4b38-b2ba-80796db64b18": {
       "title": "2D/Concept Artist - Beach Bum",
       "first_seen": "2026-08-26T16:24:36.052712+00:00"
     },
-    "69b35ace-d590-46e1-b7d5-6401f4b21da9": {
-      "title": "CRM Designer - Beach Bum",
-      "first_seen": "2026-08-18T19:28:22.746067+00:00"
-    },
     "a46cf224-bf7c-4aa5-a8e8-a4b34c925d9c": {
       "title": "2D/Concept Artist - Beach Bum",
       "first_seen": "2026-09-04T16:13:10.667705+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 2
 }
