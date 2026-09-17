@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-17T04:39:21.566259+00:00",
-  "last_count": 31,
+  "last_success": "2026-09-17T11:28:45.525998+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000150029889": {
+      "title": "DevOps Engineer - Cloud Infra Team",
+      "first_seen": "2026-09-17T11:28:45.525998+00:00"
+    },
     "https://careers.wix.com/position/oracle-aed3cf5c-229a-5c18-a8d3-dc5d5ca8395e-T1789470063-744000149843089": {
       "title": "Experienced Motion Designer",
       "first_seen": "2026-09-16T16:40:48.285698+00:00"

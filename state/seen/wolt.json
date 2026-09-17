@@ -1,11 +1,27 @@
 {
-  "last_success": "2026-09-17T04:39:21.697131+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-17T11:28:45.975440+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
+    "8009734": {
+      "title": "Account Manager - Enterprise Ads",
+      "first_seen": "2026-09-17T11:28:45.975440+00:00"
+    },
+    "8078746": {
+      "title": "Ads & Promotions Operations Specialist",
+      "first_seen": "2026-09-17T11:28:45.975440+00:00"
+    },
+    "8208032": {
+      "title": "Brand Media Manager",
+      "first_seen": "2026-09-17T11:28:45.975440+00:00"
+    },
     "8201361": {
       "title": "Enterprise Sales Manager - Wolt Benefits",
       "first_seen": "2026-09-15T11:34:08.140186+00:00"
+    },
+    "7865639": {
+      "title": "Enterprise Sales - Retail Media",
+      "first_seen": "2026-09-17T11:28:45.975440+00:00"
     },
     "8088630": {
       "title": "Head of Support Israel, CXI International Operations",

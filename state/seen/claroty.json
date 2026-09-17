@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T04:39:21.590105+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-17T11:28:45.555918+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -14,10 +14,6 @@
     "DD.17E": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-31T20:45:43.712074+00:00"
-    },
-    "D5.076": {
-      "title": "DevOps Engineer",
-      "first_seen": "2026-09-07T12:15:48.910348+00:00"
     },
     "77.C60": {
       "title": "Director of Data & AI",
@@ -34,10 +30,6 @@
     "05.276": {
       "title": "Network Analyst",
       "first_seen": "2026-09-16T11:21:29.934717+00:00"
-    },
-    "7C.27C": {
-      "title": "Product Analyst",
-      "first_seen": "2026-09-16T16:40:48.307267+00:00"
     },
     "1D.46B": {
       "title": "Senior Product Manager",
@@ -56,5 +48,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 26
 }

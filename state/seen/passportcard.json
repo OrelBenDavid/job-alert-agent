@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T04:39:21.655742+00:00",
-  "last_count": 16,
+  "last_success": "2026-09-17T11:28:45.945162+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "CF.666": {
@@ -10,6 +10,10 @@
     "69.A45": {
       "title": "Internal Auditor",
       "first_seen": "2026-08-23T09:01:23.825516+00:00"
+    },
+    "3D.27E": {
+      "title": "Product Manager - AI",
+      "first_seen": "2026-09-17T11:28:45.945162+00:00"
     },
     "0F.E63": {
       "title": "Sales Representative",
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

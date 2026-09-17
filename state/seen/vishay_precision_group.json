@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-09-17T04:39:21.692258+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-17T11:28:45.971951+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
       "title": "Application Engineer",
       "first_seen": "2026-09-03T11:04:08.149731+00:00"
-    },
-    "10.F64": {
-      "title": "Buyer",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
     "A0.F62": {
       "title": "CRM Senior Manager",
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 62
 }

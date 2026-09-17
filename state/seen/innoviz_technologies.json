@@ -1,22 +1,10 @@
 {
-  "last_success": "2026-09-17T04:39:21.622504+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-17T11:28:45.585995+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "23.F64": {
-      "title": "C/C++ Software Tools Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
     "CF.E6E": {
       "title": "Director of Sales & Business Development - EU Defense & Security",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "54.C6F": {
-      "title": "Embedded Software Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "B4.F6D": {
-      "title": "Embedded Software Engineer - Lidar Firmware",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "4D.066": {
@@ -24,5 +12,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 2
 }

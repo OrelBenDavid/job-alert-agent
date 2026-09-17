@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T04:39:21.639999+00:00",
-  "last_count": 157,
+  "last_success": "2026-09-17T11:28:45.928098+00:00",
+  "last_count": 165,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -111,9 +111,17 @@
       "title": "Deep Learning Algorithm Engineer | Learned-Policy Group",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
+    "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
+      "title": "Deep Learning Developer - REM Modeling",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
+      "title": "Director of Release Management",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
     },
     "a6711d79-22df-4e2f-a21a-3b31b9337175": {
       "title": "Electrical Practical Engineer",
@@ -255,6 +263,10 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "90d6a522-a4a1-42ba-a89b-55609a4f8c12": {
+      "title": "Experienced Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
+    },
     "97753ee7-1701-4c30-9d5a-964fc310e371": {
       "title": "Experienced Technical Project Manager",
       "first_seen": "2026-08-17T12:58:53.722628+00:00"
@@ -263,13 +275,29 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
+    "2c818cc2-24a1-4fca-93f2-340e2c9ad82c": {
+      "title": "Junior C++/Python Integration Engineer",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
+    "bf35f001-5134-49fb-ae37-29d6b277e51c": {
+      "title": "Junior C++/Python Integration Engineer",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
     },
+    "ba443a6c-1d5a-41a0-9fde-3bc60af20484": {
+      "title": "Marketing Specialist – Content, SEO & GEO- Temporary Position",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
     "7a258e61-6cdc-431c-adf2-36b67ef05353": {
       "title": "Mechanical Engineer - Automotive ECU",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
+    "aba0e48e-1023-4bfc-82b4-0cf56091d66d": {
+      "title": "Model Performance Analyst | Learned-Policy Group",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
     },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
@@ -375,6 +403,10 @@
       "title": "Senior Computer Vision Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "35d894ad-8260-4ce3-ab56-0ff03c474009": {
+      "title": "Senior Customer Solutions Engineer",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
     "b5e33bc9-f6e1-4201-a42d-61cd409b60c5": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -382,6 +414,10 @@
     "60c33ad2-695a-43ca-a557-5c204dad5820": {
       "title": "Senior Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9df72c7f-8ae9-420c-a024-c9a3f1cf2998": {
+      "title": "Senior Deep Learning Software Engineer",
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
     },
     "1fcefccb-abe1-4bfd-b5c2-46be82d3cd4f": {
       "title": "Senior Embedded Software Engineer",
@@ -535,10 +571,6 @@
       "title": "Software Linux Integration Engineer - OS team",
       "first_seen": "2026-09-01T14:06:11.124056+00:00"
     },
-    "90d6a522-a4a1-42ba-a89b-55609a4f8c12": {
-      "title": "Software Linux Integration Engineer - OS team",
-      "first_seen": "2026-09-01T14:06:11.124056+00:00"
-    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -611,9 +643,9 @@
       "title": "Technical Program Manager",
       "first_seen": "2026-08-25T13:01:52.093241+00:00"
     },
-    "042a1734-99a5-4151-9269-7c2bbcba87f4": {
+    "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
-      "first_seen": "2026-09-16T16:40:48.710692+00:00"
+      "first_seen": "2026-09-17T11:28:45.928098+00:00"
     },
     "d8277a1c-bb21-4473-85c6-e9ae35c0f9d3": {
       "title": "Technical Project Manager- AV",
@@ -632,5 +664,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 183
+  "last_board_total": 191
 }
