@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T11:28:45.928098+00:00",
-  "last_count": 165,
+  "last_success": "2026-09-17T16:47:40.582549+00:00",
+  "last_count": 161,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -35,10 +35,6 @@
       "title": "Algorithm Engineer Senior Technical Expert - Objects Perception",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "510d7b7d-4d58-4411-99c0-02a91022a7c6": {
-      "title": "Algorithm Performance & Data Analyst",
-      "first_seen": "2026-09-16T11:21:29.994329+00:00"
-    },
     "055a3a86-a6d4-42ae-a09c-8adb41c5b383": {
       "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -70,10 +66,6 @@
     "9495066e-ebcc-49ed-bac5-0480be15753f": {
       "title": "C++ Software Engineer",
       "first_seen": "2026-09-15T16:48:16.854612+00:00"
-    },
-    "a0280601-36db-40d7-a52d-996b772d4e84": {
-      "title": "C++ Software Engineer - Compilers Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
       "title": "Camera System Engineer",
@@ -263,6 +255,14 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "78d2b642-98cd-4eeb-893f-3662c46ae13c": {
+      "title": "Experienced Software Engineer - Data Systems & Tools",
+      "first_seen": "2026-09-17T16:47:40.582549+00:00"
+    },
+    "cf198663-8759-4f08-96c3-e564aca85d8d": {
+      "title": "Experienced Software Engineer - Data Systems & Tools",
+      "first_seen": "2026-09-17T16:47:40.582549+00:00"
+    },
     "90d6a522-a4a1-42ba-a89b-55609a4f8c12": {
       "title": "Experienced Software Linux Integration Engineer - OS team",
       "first_seen": "2026-09-01T14:06:11.124056+00:00"
@@ -275,17 +275,17 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "2c818cc2-24a1-4fca-93f2-340e2c9ad82c": {
-      "title": "Junior C++/Python Integration Engineer",
-      "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
-    "bf35f001-5134-49fb-ae37-29d6b277e51c": {
-      "title": "Junior C++/Python Integration Engineer",
-      "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "1b3f71b9-fe39-41d3-bd43-4ae7ad18f92e": {
+      "title": "Machine Learning Software Engineer",
+      "first_seen": "2026-09-17T16:47:40.582549+00:00"
+    },
+    "72e986e2-94b4-49f6-be5f-74a48de8a71d": {
+      "title": "Machine Learning Software Engineer",
+      "first_seen": "2026-09-17T16:47:40.582549+00:00"
     },
     "ba443a6c-1d5a-41a0-9fde-3bc60af20484": {
       "title": "Marketing Specialist – Content, SEO & GEO- Temporary Position",
@@ -459,18 +459,6 @@
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "68245f41-2091-471c-9d65-6b4747ea02d5": {
-      "title": "Senior Python Infrastructure Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "7969248d-a14e-4a4e-a316-ff323f6d49ff": {
-      "title": "Senior Python Infrastructure Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "c3489228-75ae-4338-a99d-b8be98e6e79b": {
-      "title": "Senior Python Infrastructure Developer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
       "title": "Senior Signal Integrity Engineer-AV Hardware",
       "first_seen": "2026-08-12T10:15:21.611278+00:00"
@@ -635,10 +623,6 @@
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "24b128d9-342e-4127-9dac-cde79f0a8652": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
     "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
       "title": "Technical Program Manager",
       "first_seen": "2026-08-25T13:01:52.093241+00:00"
@@ -664,5 +648,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 191
+  "last_board_total": 186
 }

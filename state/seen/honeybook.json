@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T11:28:45.583004+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-17T16:47:40.557389+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "e2fdd8c6-eaa6-4537-98bb-f467256587f8": {
@@ -38,7 +38,11 @@
     "52b3afd4-ca18-47ed-b19a-640038c6a024": {
       "title": "Director of SMB Sales",
       "first_seen": "2026-09-01T14:06:10.589679+00:00"
+    },
+    "2e6bcde3-60e3-4f1d-9e62-c650f1c77ee8": {
+      "title": "Lead Motion Designer",
+      "first_seen": "2026-09-17T16:47:40.557389+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

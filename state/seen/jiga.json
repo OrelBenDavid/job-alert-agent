@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-09-17T11:28:45.587726+00:00",
+  "last_success": "2026-09-17T16:47:40.563624+00:00",
   "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "706cd16e-0181-415e-9f27-37e2fd19f385": {
-      "title": "Account Executive Defense - Israel",
+      "title": "Senior Account Executive Defense - Israel",
       "first_seen": "2026-08-25T18:50:07.809548+00:00"
     }
   },

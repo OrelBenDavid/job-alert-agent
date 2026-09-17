@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T11:28:45.556202+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-17T16:47:40.527967+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "14.067": {
@@ -10,11 +10,7 @@
     "7C.068": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
-    "16.468": {
-      "title": "Team Lead",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

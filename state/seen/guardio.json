@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T11:28:45.580905+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-17T16:47:40.555000+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
@@ -51,10 +51,6 @@
       "title": "IT Specialist",
       "first_seen": "2026-09-02T11:06:52.018920+00:00"
     },
-    "14.E66": {
-      "title": "Legal Compliance Counsel",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
     "2D.F64": {
       "title": "Lifecycle & Automation Lead",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -104,5 +100,5 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 24
 }

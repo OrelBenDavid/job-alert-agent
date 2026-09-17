@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T11:28:45.556939+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-17T16:47:40.528899+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "4F.F60": {
@@ -31,10 +31,6 @@
       "title": "Marketing Operations Manager",
       "first_seen": "2026-08-18T13:00:34.197694+00:00"
     },
-    "82.A61": {
-      "title": "Pre-Sales Engineer",
-      "first_seen": "2026-08-13T11:24:19.146322+00:00"
-    },
     "A5.D6C": {
       "title": "Product Expert",
       "first_seen": "2026-08-13T11:24:19.146322+00:00"
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-13T11:24:19.146322+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 40
 }

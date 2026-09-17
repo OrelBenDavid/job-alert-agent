@@ -1,15 +1,23 @@
 {
-  "last_success": "2026-09-17T11:28:45.943593+00:00",
-  "last_count": 152,
+  "last_success": "2026-09-17T16:47:40.611936+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-022296": {
-      "title": "Sr MSIAM SOC Engineer (Unit 42)",
-      "first_seen": "2026-09-17T11:28:45.943593+00:00"
+    "JR-018775": {
+      "title": "Principal/Senior Principal Software Engineer Data Platform ( Cortex)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020012": {
       "title": "Principal Backend Engineer (CORTEX -  Autonomous SOC)",
       "first_seen": "2026-09-09T16:27:11.365290+00:00"
+    },
+    "JR-022341": {
+      "title": "Sr Principal Software Architect",
+      "first_seen": "2026-09-17T16:47:40.611936+00:00"
+    },
+    "JR-022296": {
+      "title": "Sr MSIAM SOC Engineer (Unit 42)",
+      "first_seen": "2026-09-17T11:28:45.943593+00:00"
     },
     "JR-020085": {
       "title": "Sr Staff Engineer Software (Directory Services)",
@@ -70,10 +78,6 @@
     "JR-020445": {
       "title": "Experienced Backend  Engineer (Cortex XSOAR)",
       "first_seen": "2026-09-09T16:27:11.365290+00:00"
-    },
-    "JR-018775": {
-      "title": "Principal/Senior Principal Software Engineer Data Platform ( Cortex)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-021406": {
       "title": "Experienced DevOps Engineer (Cortex)",
@@ -612,5 +616,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 154
 }
