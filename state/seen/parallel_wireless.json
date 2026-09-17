@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T16:47:40.613434+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-17T21:14:08.380022+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -67,18 +67,10 @@
       "title": "Sr. AI PHY System Engineer",
       "first_seen": "2026-09-02T11:06:52.072849+00:00"
     },
-    "d47fdbd3-a0d5-45a8-94a0-19d2a640e3ae": {
-      "title": "Sr. Principal, DevOps",
-      "first_seen": "2026-08-13T11:24:34.304909+00:00"
-    },
-    "eaf8378b-46aa-4d6e-a73f-124f43cf2ece": {
-      "title": "System Architecture Team Lead (Platform, Cloud)",
-      "first_seen": "2026-08-13T11:24:34.304909+00:00"
-    },
     "d1f8165d-a13b-47d4-b4e4-9c22d12cd6ba": {
       "title": "Technical Lead, Artificial Intelligence",
       "first_seen": "2026-09-15T11:34:07.675531+00:00"
     }
   },
-  "last_board_total": 51
+  "last_board_total": 49
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-17T16:47:40.582549+00:00",
-  "last_count": 161,
+  "last_success": "2026-09-17T21:14:08.369363+00:00",
+  "last_count": 160,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -306,10 +306,6 @@
     "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
       "title": "Operations Division Global Admin",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
-    },
-    "33b78738-e376-44db-8014-904f07782707": {
-      "title": "Optical Lab Technician – Temporary Position",
-      "first_seen": "2026-09-16T16:40:48.710692+00:00"
     },
     "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
       "title": "Outstanding Graduate - Machine Learning Engineer",
@@ -648,5 +644,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 186
+  "last_board_total": 185
 }
