@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-18T11:01:52.109528+00:00",
-  "last_count": 153,
+  "last_success": "2026-09-18T16:16:36.695388+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021385": {
@@ -579,10 +579,6 @@
       "title": "District Sales Manager Public Sector & Defense",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-016806": {
-      "title": "Principal Engineer Software  - LLM(Cortex Agentix)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-013102": {
       "title": "Engineering Software Manager (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -616,5 +612,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 154
+  "last_board_total": 153
 }

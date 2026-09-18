@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-18T11:01:52.094208+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-18T16:16:36.672194+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
+    "R415292": {
+      "title": "EHS Lead",
+      "first_seen": "2026-09-18T16:16:36.672194+00:00"
+    },
     "R405231": {
       "title": "Financial Administrative Support Intern – Clinical Department",
       "first_seen": "2026-09-14T12:31:04.080095+00:00"
@@ -16,5 +20,5 @@
       "first_seen": "2026-08-23T09:01:21.827833+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 5
 }

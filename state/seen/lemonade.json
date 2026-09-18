@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-18T11:01:52.087350+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-18T16:16:36.657310+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -50,6 +50,10 @@
     "581af361-6d5e-4bda-a380-5fdaf49a6f31": {
       "title": "Senior Director of Brand Marketing",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
+    },
+    "4ffc2cdb-a2b6-400e-8b51-c3c3cd3efd65": {
+      "title": "CLX Property Advocate, Contents",
+      "first_seen": "2026-09-18T16:16:36.657310+00:00"
     },
     "e0559560-e074-4993-9f2d-65d706708f28": {
       "title": "Senior Car Insurance Pricing Expert",
@@ -112,5 +116,5 @@
       "first_seen": "2026-09-16T21:12:04.430224+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 39
 }
