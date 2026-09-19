@@ -1,16 +1,7 @@
 {
-  "last_success": "2026-09-18T23:11:26.405286+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-19T04:21:11.607895+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "8a9fff99-5cf3-48ac-95d5-918edb608184": {
-      "title": "Account Executive – New Business",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "ce7b220a-b27a-4b75-94fd-263e7ea2b1ed": {
-      "title": "Account Manager – New & Existing Business",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    }
-  },
-  "last_board_total": 2
+  "jobs": {},
+  "last_board_total": 0
 }
