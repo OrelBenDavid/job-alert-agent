@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-19T15:47:01.625173+00:00",
-  "last_count": 24,
+  "last_success": "2026-09-19T20:28:43.264787+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -30,6 +30,10 @@
     "74.C60": {
       "title": "Forward Deployed Engineer (FDE)",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "51.E63": {
+      "title": "Head Of Manufacturing",
+      "first_seen": "2026-09-19T20:28:43.264787+00:00"
     },
     "4E.F6E": {
       "title": "Internal Operations Lead",
@@ -100,5 +104,5 @@
       "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

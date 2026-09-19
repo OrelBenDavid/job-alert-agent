@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-19T15:47:01.588745+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-19T20:28:43.226118+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -67,10 +67,6 @@
       "title": "SecOps Engineer",
       "first_seen": "2026-09-07T12:15:48.902317+00:00"
     },
-    "04.D69": {
-      "title": "Senior Technical Product Manager",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
     "6E.179": {
       "title": "Supply Planner – Student",
       "first_seen": "2026-09-01T14:06:10.567325+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     }
   },
-  "last_board_total": 55
+  "last_board_total": 54
 }
