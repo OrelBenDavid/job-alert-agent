@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-20T04:39:50.476598+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-20T11:08:28.470636+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "BD.177": {
@@ -10,11 +10,7 @@
     "74.E58": {
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
-    },
-    "17.075": {
-      "title": "Product Marketing Manager",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

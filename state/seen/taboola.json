@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-20T04:39:50.486484+00:00",
-  "last_count": 21,
+  "last_success": "2026-09-20T11:08:28.481413+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -26,6 +26,10 @@
     "8074123": {
       "title": "Business Applications Manager",
       "first_seen": "2026-09-07T12:15:49.351874+00:00"
+    },
+    "8188092": {
+      "title": "Business Applications Team Lead",
+      "first_seen": "2026-09-20T11:08:28.481413+00:00"
     },
     "8079088": {
       "title": "Creative Strategist - Maternity Leave Replacement / Contractor",
@@ -88,5 +92,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 88
 }
