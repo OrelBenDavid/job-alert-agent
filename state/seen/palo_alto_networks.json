@@ -1,14 +1,26 @@
 {
-  "last_success": "2026-09-20T11:08:28.457578+00:00",
-  "last_count": 145,
+  "last_success": "2026-09-20T15:55:44.409769+00:00",
+  "last_count": 146,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-018846": {
-      "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018159": {
       "title": "Product Manager - Agentic AI",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-021300": {
+      "title": "Director, Product Management (IDIRA, Discovery, Risk & Threat Platform)",
+      "first_seen": "2026-09-20T15:55:44.409769+00:00"
+    },
+    "JR-018088": {
+      "title": "Senior Software Engineer (Secure Agentic AI)",
+      "first_seen": "2026-09-20T15:55:44.409769+00:00"
+    },
+    "JR-018077": {
+      "title": "Senior Software Engineer (Secure Agentic AI)",
+      "first_seen": "2026-09-20T15:55:44.409769+00:00"
+    },
+    "JR-018846": {
+      "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-018098": {
@@ -98,10 +110,6 @@
     "JR-022296": {
       "title": "Sr MSIAM SOC Engineer (Unit 42)",
       "first_seen": "2026-09-17T11:28:45.943593+00:00"
-    },
-    "JR-020085": {
-      "title": "Sr Staff Engineer Software (Directory Services)",
-      "first_seen": "2026-09-16T21:12:04.458608+00:00"
     },
     "JR-021261": {
       "title": "Sr. Principal AI Researcher, AI Transformation",
@@ -491,10 +499,6 @@
       "title": "Principal AI Software Engineer (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018592": {
-      "title": "Senior \\ Principal Software Engineer (Secure Agentic AI)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018778": {
       "title": "Principal DevOps Engineer - AI Platforms (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -584,5 +588,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 146
+  "last_board_total": 147
 }
