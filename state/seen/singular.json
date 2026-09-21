@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-21T12:37:04.729507+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-21T19:56:41.263640+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "89b94db2-bd95-470b-b5bf-b8c0481b133e": {
@@ -11,6 +11,10 @@
       "title": "Senior Full-Stack Engineer",
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
     },
+    "bd912c6b-17a3-4b24-be8c-5905b4080b6d": {
+      "title": "Partnership Lead",
+      "first_seen": "2026-09-21T19:56:41.263640+00:00"
+    },
     "8418045d-9559-4766-a31b-852a477b98ca": {
       "title": "Account Executive",
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
@@ -20,5 +24,5 @@
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

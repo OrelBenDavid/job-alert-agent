@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-21T12:37:04.724337+00:00",
-  "last_count": 30,
+  "last_success": "2026-09-21T19:56:41.258305+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
     "4919302101": {
@@ -74,6 +74,10 @@
     "4919431101": {
       "title": "Researcher",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "4981459101": {
+      "title": "Revenue Operations Manager",
+      "first_seen": "2026-09-21T19:56:41.258305+00:00"
     },
     "4921341101": {
       "title": "Sales Development Representative",

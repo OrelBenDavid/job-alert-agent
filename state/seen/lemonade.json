@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-21T12:37:04.687788+00:00",
+  "last_success": "2026-09-21T19:56:41.215850+00:00",
   "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,6 +23,10 @@
       "title": "Senior Product Manager - Claims Experience",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
+    "997826c2-f2d5-4988-9ecf-ead1c39e8480": {
+      "title": "CLX Property Advocate, Liability",
+      "first_seen": "2026-09-21T19:56:41.215850+00:00"
+    },
     "1d294035-e723-497b-bdc4-f95d0b4a5573": {
       "title": "Senior Director of Engineering",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
@@ -42,10 +46,6 @@
     "1201a0bd-89cc-419f-b2dc-260ad758e6ea": {
       "title": "Sr Decision Science Analyst, Capital & CAT Modeling",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "a1eb0625-40de-4e1a-992f-8f5bdc1af1d7": {
-      "title": "Senior Learning Designer, Leadership Development",
-      "first_seen": "2026-09-17T21:14:08.361966+00:00"
     },
     "581af361-6d5e-4bda-a380-5fdaf49a6f31": {
       "title": "Senior Director of Brand Marketing",
