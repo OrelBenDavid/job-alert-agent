@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-21T04:38:01.859213+00:00",
-  "last_count": 49,
+  "last_success": "2026-09-21T12:37:04.647929+00:00",
+  "last_count": 47,
   "consecutive_failures": 0,
   "jobs": {
     "CE.E62": {
@@ -79,10 +79,6 @@
       "title": "IT Solutions Architect",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "5F.074": {
-      "title": "IT Systems Engineer",
-      "first_seen": "2026-08-24T15:47:25.849026+00:00"
-    },
     "A2.27B": {
       "title": "IT Systems Team Lead",
       "first_seen": "2026-09-02T16:27:20.420841+00:00"
@@ -159,10 +155,6 @@
       "title": "Software Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "AD.176": {
-      "title": "Software Team Leader",
-      "first_seen": "2026-08-31T13:26:59.921219+00:00"
-    },
     "0F.C60": {
       "title": "System Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -200,5 +192,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 155
+  "last_board_total": 144
 }

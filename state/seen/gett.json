@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-21T04:38:01.877755+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-21T12:37:04.666427+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "46.A6A": {
@@ -10,6 +10,10 @@
     "D4.F61": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "C4.F65": {
+      "title": "Business Analyst- Maternity Leave Replacement",
+      "first_seen": "2026-09-21T12:37:04.666427+00:00"
     },
     "45.F6B": {
       "title": "Customer Service Representative",
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

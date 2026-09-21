@@ -1,16 +1,20 @@
 {
-  "last_success": "2026-09-21T04:38:01.865671+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-21T12:37:04.654198+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8092637": {
       "title": "Commercial Sales Engineer (Tel Aviv)",
       "first_seen": "2026-08-13T11:30:57.414099+00:00"
     },
+    "8098863": {
+      "title": "Director, Engineering",
+      "first_seen": "2026-09-21T12:37:04.654198+00:00"
+    },
     "4599111": {
       "title": "Senior Software Engineer - Distributed Systems",
       "first_seen": "2026-09-07T12:15:49.239832+00:00"
     }
   },
-  "last_board_total": 453
+  "last_board_total": 454
 }
