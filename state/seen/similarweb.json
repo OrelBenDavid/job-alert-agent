@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.083837+00:00",
-  "last_count": 26,
+  "last_success": "2026-09-22T16:46:17.013469+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -22,6 +22,10 @@
     "6829705": {
       "title": "Data Scientist",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8222946": {
+      "title": "Data Scientist Team Manager",
+      "first_seen": "2026-09-22T16:46:17.013469+00:00"
     },
     "8084086": {
       "title": "Director - Corporate Development & M&A",

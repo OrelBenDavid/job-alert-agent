@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:07.964848+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-22T16:46:15.901242+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -27,6 +27,10 @@
       "title": "Network Analyst",
       "first_seen": "2026-09-16T11:21:29.934717+00:00"
     },
+    "2D.073": {
+      "title": "Senior Manager, Engineering - xDome",
+      "first_seen": "2026-09-22T16:46:15.901242+00:00"
+    },
     "1D.46B": {
       "title": "Senior Product Manager",
       "first_seen": "2026-09-09T11:10:07.685596+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }

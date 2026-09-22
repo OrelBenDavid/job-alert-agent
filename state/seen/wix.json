@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-09-22T11:24:07.925069+00:00",
-  "last_count": 33,
+  "last_success": "2026-09-22T16:46:15.873797+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000151022358": {
+      "title": "Performance Marketing Analyst - Base44",
+      "first_seen": "2026-09-22T16:46:15.873797+00:00"
+    },
+    "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000151019349": {
+      "title": "Performance Marketing Manager - Base44",
+      "first_seen": "2026-09-22T16:46:15.873797+00:00"
+    },
     "https://careers.wix.com/position/oracle-9242893b-1f61-5d2a-b3ff-dcba4e1c760d-T1788979486-744000150952320": {
       "title": "QA Engineer - Domains",
       "first_seen": "2026-09-22T11:24:07.925069+00:00"
@@ -121,10 +129,6 @@
     },
     "https://careers.wix.com/position/oracle-0e12307b-4f71-5674-b656-d4dc6e345856-T1785146313-744000140238949": {
       "title": "Bookkeeper",
-      "first_seen": "2026-08-12T11:43:17.595643+00:00"
-    },
-    "https://careers.wix.com/position/REF3088Y-744000140209529": {
-      "title": "AI Creative Gen - Base44",
       "first_seen": "2026-08-12T11:43:17.595643+00:00"
     },
     "https://careers.wix.com/position/oracle-31ef6155-f134-54a5-89fa-ccad0a958a39-T1774782714-744000132934508": {

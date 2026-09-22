@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.114217+00:00",
-  "last_count": 34,
+  "last_success": "2026-09-22T16:46:17.036011+00:00",
+  "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
     "5A.66C": {
@@ -33,10 +33,6 @@
     },
     "74.12D": {
       "title": "Hardware System Engineer",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
-    },
-    "A3.B25": {
-      "title": "Infrastructure Group manager",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
     "EA.44C": {
@@ -119,9 +115,9 @@
       "title": "Software Engineer -New College Grad",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     },
-    "81.A34": {
-      "title": "Software Engineer- New college Grad",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    "8E.D58": {
+      "title": "Sr HW Technical Program Manager",
+      "first_seen": "2026-09-22T16:46:17.036011+00:00"
     },
     "1F.919": {
       "title": "SW Development Team Leader",
@@ -140,5 +136,5 @@
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     }
   },
-  "last_board_total": 252
+  "last_board_total": 249
 }

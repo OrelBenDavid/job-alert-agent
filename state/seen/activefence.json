@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-22T11:24:07.930606+00:00",
+  "last_success": "2026-09-22T16:46:15.877680+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -36,7 +36,7 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
     "96.279": {
-      "title": "Member of the Technical Staff - CTO Office",
+      "title": "Member of the Technical Staff, AI Research - CTO Office",
       "first_seen": "2026-09-09T16:27:11.262685+00:00"
     },
     "36.07C": {

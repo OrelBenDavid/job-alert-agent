@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.092625+00:00",
-  "last_count": 42,
+  "last_success": "2026-09-22T16:46:17.025754+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
@@ -163,6 +163,10 @@
       "title": "Team8-Cyber Startup, Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
+    "5F.277": {
+      "title": "Team8-Executive Assistant-Temp-Maternity leave replacement",
+      "first_seen": "2026-09-22T16:46:17.025754+00:00"
+    },
     "1F.07C": {
       "title": "Team8-Office & Employee Experience Manager-  Maternity Leave Cover",
       "first_seen": "2026-08-24T09:56:22.925881+00:00"
@@ -172,5 +176,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 59
 }

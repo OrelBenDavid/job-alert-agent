@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:07.936423+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-22T16:46:15.882627+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
@@ -26,10 +26,6 @@
     "8611961002": {
       "title": "FP&A Business Partner",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
-    },
-    "8781235002": {
-      "title": "Mobile SDK Engineer",
-      "first_seen": "2026-09-03T11:04:08.001125+00:00"
     },
     "8692870002": {
       "title": "Partner Development Manager",
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 45
 }

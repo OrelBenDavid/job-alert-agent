@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-22T11:24:08.007651+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-22T16:46:15.936946+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "63.D6F": {
-      "title": "BI Analyst",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
     "2E.17A": {
       "title": "Bookkeeper (Maternity Leave cover)",
       "first_seen": "2026-09-01T08:32:41.369814+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-19T09:41:25.001368+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 22
 }

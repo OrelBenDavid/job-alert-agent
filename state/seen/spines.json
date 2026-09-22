@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.087942+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-22T16:46:17.017205+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "3A.275": {
@@ -26,7 +26,11 @@
     "5D.27F": {
       "title": "Sales Representative",
       "first_seen": "2026-09-17T11:28:45.962531+00:00"
+    },
+    "5F.27E": {
+      "title": "User Acquisition",
+      "first_seen": "2026-09-22T16:46:17.017205+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }

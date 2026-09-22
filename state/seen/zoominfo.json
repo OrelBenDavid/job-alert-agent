@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.126156+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-22T16:46:17.054725+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8770556002": {
@@ -14,6 +14,10 @@
     "8561611002": {
       "title": "Principal Business Intelligence Analyst",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8626991002": {
+      "title": "Principal Infrastructure Architect - Cloud Platform",
+      "first_seen": "2026-09-22T16:46:17.054725+00:00"
     },
     "8626996002": {
       "title": "Principal Infrastructure Architect: Data Platform",

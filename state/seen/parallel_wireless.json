@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T11:24:08.053838+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-22T16:46:16.988041+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -26,10 +26,6 @@
     "b4b602b6-c32d-4868-af7e-2bfa41623d74": {
       "title": "PHY/RF Algorithms Engineer",
       "first_seen": "2026-09-02T11:06:52.072849+00:00"
-    },
-    "e615e732-e7ea-406c-938a-4632b189b7ba": {
-      "title": "Platform Director",
-      "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
     "69161322-74af-4dbb-8060-ca7d8bf7cedd": {
       "title": "RAN Digital Twin Engineer",
@@ -76,5 +72,5 @@
       "first_seen": "2026-09-15T11:34:07.675531+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 46
 }
