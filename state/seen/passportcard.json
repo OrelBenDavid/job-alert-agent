@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.257119+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-22T11:24:08.054314+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "0F.075": {
@@ -19,6 +19,10 @@
       "title": "Internal Auditor",
       "first_seen": "2026-08-23T09:01:23.825516+00:00"
     },
+    "DE.279": {
+      "title": "Marketing Automation Specialist",
+      "first_seen": "2026-09-22T11:24:08.054314+00:00"
+    },
     "3D.27E": {
       "title": "Product Manager - AI",
       "first_seen": "2026-09-17T11:28:45.945162+00:00"
@@ -30,6 +34,10 @@
     "7D.F63": {
       "title": "Sales Representative",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "DE.27D": {
+      "title": "Solution Architct",
+      "first_seen": "2026-09-22T11:24:08.054314+00:00"
     },
     "92.A02": {
       "title": "איש/ אשת מכירות - Passportcard Relocation",
@@ -80,5 +88,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 21
 }

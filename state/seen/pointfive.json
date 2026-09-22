@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-22T04:44:59.259320+00:00",
+  "last_success": "2026-09-22T11:24:08.063637+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -16,7 +16,7 @@
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "5cee7d05-e155-4a9a-a6ae-27068e251d2b": {
-      "title": "LLM Researcher",
+      "title": "LLM Researcher Lead",
       "first_seen": "2026-09-17T16:47:40.617927+00:00"
     },
     "4e3fda32-c387-46bd-ab47-bb8cb6937918": {

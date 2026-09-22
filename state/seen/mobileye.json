@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.249210+00:00",
-  "last_count": 161,
+  "last_success": "2026-09-22T11:24:08.035644+00:00",
+  "last_count": 157,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -91,17 +91,9 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
-    "c359a528-8058-4393-818b-52e162418a58": {
-      "title": "Deep Learning Algorithm Developer",
-      "first_seen": "2026-09-16T11:21:29.994329+00:00"
-    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
-    "01a16cde-2ce4-4c80-a6df-fe56bc223816": {
-      "title": "Deep Learning Algorithm Engineer | Learned-Policy Group",
-      "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
     "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
       "title": "Deep Learning Developer - REM Modeling",
@@ -295,10 +287,6 @@
       "title": "Mechanical Engineer - Automotive ECU",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
-    "aba0e48e-1023-4bfc-82b4-0cf56091d66d": {
-      "title": "Model Performance Analyst | Learned-Policy Group",
-      "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
@@ -358,10 +346,6 @@
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
-    },
-    "998b921e-04c5-4aef-b86d-1c13d518e53c": {
-      "title": "Reinforcement Learning Researcher | Learned-Policy Group",
-      "first_seen": "2026-09-15T16:48:16.854612+00:00"
     },
     "c24c144a-031e-4008-8ddb-424b83307ec2": {
       "title": "SecOps Specialist",
@@ -454,6 +438,10 @@
     "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0f7933a9-6b28-44e4-8398-a443e0ec0eb2": {
+      "title": "Senior Release Manager",
+      "first_seen": "2026-09-22T11:24:08.035644+00:00"
     },
     "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
       "title": "Senior Signal Integrity Engineer-AV Hardware",
@@ -623,10 +611,6 @@
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-08-25T13:01:52.093241+00:00"
-    },
     "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
@@ -648,5 +632,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 186
+  "last_board_total": 183
 }

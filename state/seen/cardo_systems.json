@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.220698+00:00",
-  "last_count": 5,
+  "last_success": "2026-09-22T11:24:07.955540+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "EA.272": {
@@ -15,14 +15,10 @@
       "title": "Product Marketing Manager",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
-    "F8.F4B": {
-      "title": "Senior System Priority Engineer",
-      "first_seen": "2026-08-19T13:01:25.197133+00:00"
-    },
     "05.27E": {
       "title": "טכנאי/ת הרכבות אלקטרו-מכאניות – משרה זמנית",
       "first_seen": "2026-09-09T11:10:07.679559+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

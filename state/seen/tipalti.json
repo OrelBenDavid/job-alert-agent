@@ -1,11 +1,11 @@
 {
-  "last_success": "2026-09-22T04:44:59.271120+00:00",
+  "last_success": "2026-09-22T11:24:08.094361+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
-    "6011644004": {
+    "6201950004": {
       "title": "Applied AI Scientist",
-      "first_seen": "2026-08-13T11:24:41.076387+00:00"
+      "first_seen": "2026-09-22T11:24:08.094361+00:00"
     },
     "6186950004": {
       "title": "Director of Product Management",
@@ -24,5 +24,5 @@
       "first_seen": "2026-09-02T11:06:52.106349+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 26
 }

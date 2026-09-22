@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.252876+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-22T11:24:08.044146+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "4904281101": {
@@ -11,13 +11,13 @@
       "title": "Cloud FinOps Business Partner",
       "first_seen": "2026-09-01T18:20:52.195346+00:00"
     },
-    "4969705101": {
-      "title": "Director of Engineering",
-      "first_seen": "2026-09-10T11:06:09.943762+00:00"
-    },
     "4867642101": {
       "title": "Director of Engineering",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "4969705101": {
+      "title": "Director of Engineering",
+      "first_seen": "2026-09-10T11:06:09.943762+00:00"
     },
     "4860273101": {
       "title": "Director of Engineering ,Automation, Performance & AI Quality",
@@ -51,10 +51,6 @@
       "title": "Employer Branding Student (Temporary )",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "4972168101": {
-      "title": "Operations Program Manager",
-      "first_seen": "2026-09-09T16:27:11.359070+00:00"
-    },
     "4965103101": {
       "title": "QA Director",
       "first_seen": "2026-09-01T14:06:11.132498+00:00"
@@ -62,10 +58,6 @@
     "4966216101": {
       "title": "Quality Director",
       "first_seen": "2026-09-02T11:06:52.064936+00:00"
-    },
-    "4933210101": {
-      "title": "R&D Operations Program Manager",
-      "first_seen": "2026-09-06T15:21:45.290605+00:00"
     },
     "4923953101": {
       "title": "Senior Agentic Systems Engineer",
@@ -84,5 +76,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 165
+  "last_board_total": 164
 }

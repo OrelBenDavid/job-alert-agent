@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-22T04:44:59.242268+00:00",
+  "last_success": "2026-09-22T11:24:08.014818+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -13,10 +13,6 @@
     },
     "70.D6F": {
       "title": "DevOps Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "98.E6D": {
-      "title": "DevOps Team Leader - Infra and DevEx",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "45.F66": {
@@ -70,7 +66,11 @@
     "90.F6A": {
       "title": "Senior Performance Marketing Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "FE.277": {
+      "title": "Technical Support Engineer",
+      "first_seen": "2026-09-22T11:24:08.014818+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 27
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-22T04:44:59.209556+00:00",
-  "last_count": 32,
+  "last_success": "2026-09-22T11:24:07.925069+00:00",
+  "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-9242893b-1f61-5d2a-b3ff-dcba4e1c760d-T1788979486-744000150952320": {
+      "title": "QA Engineer - Domains",
+      "first_seen": "2026-09-22T11:24:07.925069+00:00"
+    },
     "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000150029889": {
       "title": "DevOps Engineer - Cloud Infra Team",
       "first_seen": "2026-09-17T11:28:45.525998+00:00"

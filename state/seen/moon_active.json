@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.249865+00:00",
-  "last_count": 26,
+  "last_success": "2026-09-22T11:24:08.037147+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
@@ -75,6 +75,10 @@
       "title": "Application Security Researcher",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
     },
+    "661f0a53-334b-4f74-b952-88f0e72cd772": {
+      "title": "E-Commerce Product Manager",
+      "first_seen": "2026-09-22T11:24:08.037147+00:00"
+    },
     "6da1d55a-8681-439b-baba-ed823acac61b": {
       "title": "Level Designer",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
@@ -108,5 +112,5 @@
       "first_seen": "2026-09-08T16:30:33.570437+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }

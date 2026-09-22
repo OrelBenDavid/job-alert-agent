@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.241669+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-22T11:24:08.009614+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -12,7 +12,7 @@
       "first_seen": "2026-09-03T16:17:31.997522+00:00"
     },
     "7694707": {
-      "title": "Business Development Representative - German Speaker",
+      "title": "Business Development Representative",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "8131718": {
@@ -30,6 +30,10 @@
     "7939091": {
       "title": "GenAI & Competitive Intelligence Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8156179": {
+      "title": "GRC Specialist",
+      "first_seen": "2026-09-22T11:24:08.009614+00:00"
     },
     "8156071": {
       "title": "IS Integration Engineer",

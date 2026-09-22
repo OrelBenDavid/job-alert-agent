@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.232139+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-22T11:24:07.987358+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "05.27D": {
@@ -55,14 +55,6 @@
       "title": "Director of Data Science",
       "first_seen": "2026-09-14T12:31:04.048377+00:00"
     },
-    "B6.D6A": {
-      "title": "MLOps Engineer",
-      "first_seen": "2026-08-17T09:51:51.522746+00:00"
-    },
-    "B6.D6A-9D.50A": {
-      "title": "MLOps Engineer",
-      "first_seen": "2026-08-17T09:51:51.522746+00:00"
-    },
     "B8.E68": {
       "title": "MLOps Team Lead",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
@@ -104,5 +96,5 @@
       "first_seen": "2026-09-03T11:04:08.034036+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 37
 }

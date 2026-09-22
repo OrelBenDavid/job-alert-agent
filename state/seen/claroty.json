@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.222802+00:00",
-  "last_count": 11,
+  "last_success": "2026-09-22T11:24:07.964848+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -18,10 +18,6 @@
     "77.C60": {
       "title": "Director of Data & AI",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
-    },
-    "9F.E6E": {
-      "title": "EMEA & APAC Controller",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "E0.E63": {
       "title": "Manager, Security Operations Engineering",
@@ -48,5 +44,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 23
 }

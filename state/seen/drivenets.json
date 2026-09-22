@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.229269+00:00",
-  "last_count": 37,
+  "last_success": "2026-09-22T11:24:07.978699+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -19,16 +19,16 @@
       "title": "ATE Software Engineer",
       "first_seen": "2026-09-08T11:05:09.116025+00:00"
     },
+    "4A.065": {
+      "title": "Board Design Engineer",
+      "first_seen": "2026-09-22T11:24:07.978699+00:00"
+    },
     "89.E64": {
       "title": "Controller",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
     "40.F61": {
       "title": "Data Center Manager",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
-    "D8.E56": {
-      "title": "GPU Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
     "66.D61": {
@@ -66,10 +66,6 @@
     "0B.163": {
       "title": "Principal Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
-    "2C.F69": {
-      "title": "QA / E2E engineer",
-      "first_seen": "2026-09-15T11:34:07.597510+00:00"
     },
     "81.369": {
       "title": "Senior Backend Developer /Tech Lead",
@@ -123,10 +119,6 @@
       "title": "Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
-    "51.85A": {
-      "title": "Software Engineer - AI Datacenter Networking",
-      "first_seen": "2026-08-13T11:24:19.177817+00:00"
-    },
     "99.757": {
       "title": "Software Engineer – BSP & Firmware",
       "first_seen": "2026-09-15T11:34:07.597510+00:00"
@@ -152,5 +144,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 43
 }

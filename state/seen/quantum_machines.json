@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T04:44:59.260801+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-22T11:24:08.067034+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -47,6 +47,10 @@
       "title": "Micro-Architect",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
+    "CE.27F": {
+      "title": "Planning Leader",
+      "first_seen": "2026-09-22T11:24:08.067034+00:00"
+    },
     "7E.A62": {
       "title": "Production Engineering Leader",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -72,5 +76,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 53
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-22T04:44:59.238699+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-22T11:24:08.001656+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
-    "e2fdd8c6-eaa6-4537-98bb-f467256587f8": {
-      "title": "Sr. Staff Product Manager",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "7c1b51ec-915b-4ea7-a1f8-767069d3144e": {
       "title": "Senior Fraud Analyst",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-09-17T16:47:40.557389+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 9
 }

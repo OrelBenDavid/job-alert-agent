@@ -1,8 +1,36 @@
 {
-  "last_success": "2026-09-22T04:44:59.256135+00:00",
-  "last_count": 145,
+  "last_success": "2026-09-22T11:24:08.052008+00:00",
+  "last_count": 144,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-020565": {
+      "title": "Principal / Sr. Principal Security Research - Advanced Cyber Research (Cortex)",
+      "first_seen": "2026-09-22T11:24:08.052008+00:00"
+    },
+    "JR-020948": {
+      "title": "Sr/Principal Engineer Software - AI Transformation (Cortex Cloud)",
+      "first_seen": "2026-09-10T20:45:40.129679+00:00"
+    },
+    "JR-021385": {
+      "title": "Senior Angular Frontend Engineer - Email Security (Cortex)",
+      "first_seen": "2026-09-17T21:14:08.378823+00:00"
+    },
+    "JR-021236": {
+      "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
+      "first_seen": "2026-08-20T21:34:57.979231+00:00"
+    },
+    "JR-015576": {
+      "title": "Sr. Product Manager-  Prisma Browser",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-015044": {
+      "title": "Senior Backend Engineer - AppSec ShiftLeft (Cortex Cloud)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
+    "JR-014486": {
+      "title": "Senior Product Manager-  Application Security (Cortex Cloud)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
     "JR-018995": {
       "title": "Major Account Manager Public Sector & Defense",
       "first_seen": "2026-09-20T20:40:34.787947+00:00"
@@ -91,10 +119,6 @@
       "title": "Principal Engineer Software- Identity User Management (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-021385": {
-      "title": "Senior Angular Frontend Engineer - Email Security (Cortex)",
-      "first_seen": "2026-09-17T21:14:08.378823+00:00"
-    },
     "JR-021161": {
       "title": "Director Product Operations (Cortex)",
       "first_seen": "2026-09-01T14:06:11.135965+00:00"
@@ -146,10 +170,6 @@
     "JR-019823": {
       "title": "Sr. Principal Backend Engineer (Cortex XSIAM)",
       "first_seen": "2026-09-14T12:31:04.094965+00:00"
-    },
-    "JR-020948": {
-      "title": "Sr/Principal Engineer Software - AI Transformation (Cortex Cloud)",
-      "first_seen": "2026-09-10T20:45:40.129679+00:00"
     },
     "JR-018209": {
       "title": "Principal Software Engineer (ITDR)",
@@ -255,10 +275,6 @@
       "title": "Senior Staff Software Engineer (Secrets Manager)",
       "first_seen": "2026-08-27T14:03:31.447390+00:00"
     },
-    "JR-012870": {
-      "title": "Staff Escalation Engineer (Cortex Platform)",
-      "first_seen": "2026-08-26T07:01:03.595247+00:00"
-    },
     "JR-015162": {
       "title": "Senior/Principal Backend  AI Engineer (Cortex XSIAM)",
       "first_seen": "2026-08-26T13:07:18.677549+00:00"
@@ -278,14 +294,6 @@
     "JR-020384": {
       "title": "Senior Staff Software Engineer (Data & AI Platform)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-021155": {
-      "title": "Sr Manager, UX",
-      "first_seen": "2026-08-23T18:39:51.195091+00:00"
-    },
-    "JR-021236": {
-      "title": "Senior / Principal Backend Engineer – AppSec Platform (Cortex Cloud)",
-      "first_seen": "2026-08-20T21:34:57.979231+00:00"
     },
     "JR-014640": {
       "title": "Senior/ Principal Backend Engineer - Data & AI Security (Cortex Cloud)",
@@ -355,10 +363,6 @@
       "title": "Senior Staff Software Engineer (Secure Agentic AI)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-015044": {
-      "title": "Senior Backend Engineer - AppSec ShiftLeft (Cortex Cloud)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-014874": {
       "title": "Principal UX designer (Cloud Application Security)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -415,20 +419,12 @@
       "title": "Sr. Technical Product Engineer (Cortex Agentic Endpoint Security)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-015576": {
-      "title": "Sr. Product Manager-  Prisma Browser",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-016610": {
       "title": "Principal Data Engineer (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-019065": {
       "title": "Sr Director, Product Managemnt (Cortex XDR)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-014486": {
-      "title": "Senior Product Manager-  Application Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-019263": {
@@ -584,5 +580,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 146
+  "last_board_total": 145
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-22T04:44:59.272801+00:00",
+  "last_success": "2026-09-22T11:24:08.112327+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,10 +10,6 @@
     "4973654101": {
       "title": "DevSecOps Engineer",
       "first_seen": "2026-09-10T20:45:40.151157+00:00"
-    },
-    "4966546101": {
-      "title": "Forward Deployed Engineer",
-      "first_seen": "2026-09-02T16:27:20.526236+00:00"
     },
     "4979673101": {
       "title": "Full Stack Software Engineer",
@@ -30,6 +26,10 @@
     "4975344101": {
       "title": "Product Manager",
       "first_seen": "2026-09-14T12:31:04.136099+00:00"
+    },
+    "4982468101": {
+      "title": "Recruiter",
+      "first_seen": "2026-09-22T11:24:08.112327+00:00"
     },
     "4976806101": {
       "title": "Senior Software Engineer",
