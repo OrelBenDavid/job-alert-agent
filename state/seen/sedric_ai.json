@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-22T16:46:17.009896+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-22T21:11:16.120946+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
       "title": "AI Architect (hands on)",
       "first_seen": "2026-08-25T18:50:07.844799+00:00"
+    },
+    "FE.27D": {
+      "title": "Product Designer",
+      "first_seen": "2026-09-22T21:11:16.120946+00:00"
     },
     "EC.077": {
       "title": "Senior Backend Software Engineer",
@@ -16,5 +20,5 @@
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

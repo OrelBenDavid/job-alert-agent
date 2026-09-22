@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-22T16:46:15.937598+00:00",
-  "last_count": 13,
+  "last_success": "2026-09-22T21:11:15.753352+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -9,10 +9,6 @@
     },
     "54.F67": {
       "title": "Network QA Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "40.460": {
-      "title": "QA Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "6E.D38": {
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-19T09:41:25.004836+00:00"
     }
   },
-  "last_board_total": 40
+  "last_board_total": 39
 }

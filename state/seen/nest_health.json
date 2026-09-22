@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-09-22T16:46:15.993974+00:00",
-  "last_count": 0,
+  "last_success": "2026-09-22T21:11:15.772738+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 8
+  "jobs": {
+    "892a22e9-ec54-4b05-a2ba-86ec4623427e": {
+      "title": "Chief of Staff",
+      "first_seen": "2026-09-22T21:11:15.772738+00:00"
+    }
+  },
+  "last_board_total": 9
 }
