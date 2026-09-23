@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-23T16:42:31.315277+00:00",
-  "last_count": 11,
+  "last_success": "2026-09-23T21:24:50.420976+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -27,6 +27,10 @@
       "title": "Penetration Tester & Security Researcher",
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     },
+    "20.377": {
+      "title": "Security Research Team Lead",
+      "first_seen": "2026-09-23T21:24:50.420976+00:00"
+    },
     "2F.074": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-24T13:05:04.492567+00:00"
@@ -48,5 +52,5 @@
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }
