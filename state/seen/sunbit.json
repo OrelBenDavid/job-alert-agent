@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-23T11:20:30.715461+00:00",
+  "last_success": "2026-09-23T16:42:31.636829+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,10 +27,6 @@
       "title": "Machine Learning Engineer",
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
     },
-    "F2.17E": {
-      "title": "Program Manager",
-      "first_seen": "2026-08-26T09:51:33.870218+00:00"
-    },
     "46.07D": {
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
@@ -50,6 +46,10 @@
     "07.362": {
       "title": "Software Team Lead",
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
+    },
+    "F2.17E": {
+      "title": "Technical Program Manager Fintech)",
+      "first_seen": "2026-08-26T09:51:33.870218+00:00"
     }
   },
   "last_board_total": 43

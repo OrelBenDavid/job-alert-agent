@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-23T11:20:30.688096+00:00",
-  "last_count": 156,
+  "last_success": "2026-09-23T16:42:31.303884+00:00",
+  "last_count": 148,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -47,10 +47,6 @@
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
     },
-    "ec113302-db65-4c5a-86d6-1adfc58a6113": {
-      "title": "Algorithms Validation & Data Student",
-      "first_seen": "2026-09-23T11:20:30.688096+00:00"
-    },
     "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
       "title": "Applied AI Engineer - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -62,10 +58,6 @@
     "d10617da-c4fb-4470-9347-07ae6981cf0c": {
       "title": "AV Perception Product Manager",
       "first_seen": "2026-08-25T09:43:09.056470+00:00"
-    },
-    "da7710f3-ab2e-4d26-9603-a1a71b2338cc": {
-      "title": "AVV PMO",
-      "first_seen": "2026-09-22T16:46:15.959623+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -167,18 +159,6 @@
       "title": "Embedded Team Leader -OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
-      "title": "Execution Program Manager",
-      "first_seen": "2026-09-08T11:05:09.168651+00:00"
-    },
-    "8d09a950-7497-409c-a7d2-4a72458435de": {
-      "title": "Execution Program Manager",
-      "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
-    "b6db859a-bb49-4e66-ac3d-d111eeb03bd1": {
-      "title": "Execution Program Manager",
-      "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
     "c3bb544b-d499-4844-afdc-5abf54fd2073": {
       "title": "Experienced C++ Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -255,13 +235,13 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "78d2b642-98cd-4eeb-893f-3662c46ae13c": {
-      "title": "Experienced Software Engineer - Data Systems & Tools",
-      "first_seen": "2026-09-17T16:47:40.582549+00:00"
+    "45b127ea-6069-420f-81fd-adf236d08de4": {
+      "title": "Experienced Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
     },
-    "cf198663-8759-4f08-96c3-e564aca85d8d": {
-      "title": "Experienced Software Engineer - Data Systems & Tools",
-      "first_seen": "2026-09-17T16:47:40.582549+00:00"
+    "86638ec0-b5f8-4cd5-b3f9-19b1b8932368": {
+      "title": "Experienced Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-09-01T14:06:11.124056+00:00"
     },
     "90d6a522-a4a1-42ba-a89b-55609a4f8c12": {
       "title": "Experienced Software Linux Integration Engineer - OS team",
@@ -326,10 +306,6 @@
     "820209f4-b8a0-4b3b-b2de-46d62cad0aac": {
       "title": "Product Environmental Compliance Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
-    },
-    "95a8d51f-c038-465e-baca-6e0cd1ffaa95": {
-      "title": "Product Manager for AV Cloud services",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",
@@ -531,14 +507,6 @@
       "title": "Software Integration and Field Application Engineer",
       "first_seen": "2026-08-18T13:00:34.221999+00:00"
     },
-    "45b127ea-6069-420f-81fd-adf236d08de4": {
-      "title": "Software Linux Integration Engineer - OS team",
-      "first_seen": "2026-09-01T14:06:11.124056+00:00"
-    },
-    "86638ec0-b5f8-4cd5-b3f9-19b1b8932368": {
-      "title": "Software Linux Integration Engineer - OS team",
-      "first_seen": "2026-09-01T14:06:11.124056+00:00"
-    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -628,5 +596,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 174
 }

@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-09-23T11:20:30.699207+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-23T16:42:31.315277+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
+    "20.376": {
+      "title": "AI Security Researcher",
+      "first_seen": "2026-09-23T16:42:31.315277+00:00"
+    },
     "3C.179": {
       "title": "Cloud Product Manager",
       "first_seen": "2026-08-27T14:03:31.450585+00:00"
+    },
+    "7D.276": {
+      "title": "Cyber Field Engineer",
+      "first_seen": "2026-09-23T16:42:31.315277+00:00"
     },
     "3C.17A": {
       "title": "Data & AI Product Manager",
@@ -40,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 22
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-23T11:20:30.176481+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-23T16:42:31.266288+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "53.E6A": {
@@ -35,10 +35,6 @@
       "title": "Senior Application Security Engineer",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     },
-    "59.85F": {
-      "title": "Senior Automation Engineer",
-      "first_seen": "2026-08-13T11:24:19.151984+00:00"
-    },
     "A2.934": {
       "title": "Senior Back-End Engineer",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }
