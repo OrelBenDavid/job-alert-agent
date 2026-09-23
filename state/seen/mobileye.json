@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-23T04:30:24.724299+00:00",
-  "last_count": 154,
+  "last_success": "2026-09-23T11:20:30.688096+00:00",
+  "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -46,6 +46,10 @@
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
+    },
+    "ec113302-db65-4c5a-86d6-1adfc58a6113": {
+      "title": "Algorithms Validation & Data Student",
+      "first_seen": "2026-09-23T11:20:30.688096+00:00"
     },
     "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
       "title": "Applied AI Engineer - Temporary Position",
@@ -106,6 +110,10 @@
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
+    "04c8ffeb-012c-4461-88a1-58acc073958b": {
+      "title": "EHS specialist - Safety Officer",
+      "first_seen": "2026-09-22T16:46:15.959623+00:00"
     },
     "a6711d79-22df-4e2f-a21a-3b31b9337175": {
       "title": "Electrical Practical Engineer",
@@ -335,10 +343,6 @@
       "title": "Radar System Integration Engineer – Functional & System Flows",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
     },
-    "04c8ffeb-012c-4461-88a1-58acc073958b": {
-      "title": "Safety Officer",
-      "first_seen": "2026-09-22T16:46:15.959623+00:00"
-    },
     "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
       "title": "Senior Algorithm Engineer - Model Training & Optimization",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -356,7 +360,7 @@
       "first_seen": "2026-09-02T11:06:52.049186+00:00"
     },
     "ee246ef1-c9ae-4a05-ad95-ad37a744db48": {
-      "title": "Senior C\\C++ Software Engineer",
+      "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
     "2c2e26d6-d40a-40d1-b6f8-510781e9a3f4": {
@@ -390,6 +394,18 @@
     "1fcefccb-abe1-4bfd-b5c2-46be82d3cd4f": {
       "title": "Senior Embedded Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2465ade2-5473-448c-a9ee-0b09e8ec9e58": {
+      "title": "Senior Embedded System Architect",
+      "first_seen": "2026-09-23T11:20:30.688096+00:00"
+    },
+    "3f07f195-1b22-4c03-85fb-129a488d4b8a": {
+      "title": "Senior Embedded System Architect",
+      "first_seen": "2026-09-23T11:20:30.688096+00:00"
+    },
+    "46bc20f4-a59e-41a5-996a-a56761167d8e": {
+      "title": "Senior Embedded System Architect",
+      "first_seen": "2026-09-23T11:20:30.688096+00:00"
     },
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
@@ -445,14 +461,6 @@
     },
     "ffd7b3b0-bde6-447f-89cd-1c7f9abf17e5": {
       "title": "Senior System Architect",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "9a5f8911-4fa3-45fd-bc56-48e12533e3f5": {
-      "title": "Senior System Architect for ECU designs",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "f566122f-06cb-4359-a7cd-49ee17ec9528": {
-      "title": "Senior System Architect for ECU designs",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "84adcedb-0384-4662-909b-e20fd90d64ea": {
@@ -620,5 +628,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 180
+  "last_board_total": 182
 }

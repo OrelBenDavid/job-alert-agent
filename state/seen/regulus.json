@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-23T04:30:24.760154+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-23T11:20:30.706436+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
+    "B4.279": {
+      "title": "Bid Manager & Pre-Sales Support",
+      "first_seen": "2026-09-23T11:20:30.706436+00:00"
+    },
     "F6.075": {
       "title": "Bookkeeper",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-09-10T16:17:01.386562+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

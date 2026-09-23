@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-23T04:30:24.635777+00:00",
+  "last_success": "2026-09-23T11:20:30.163712+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,6 +11,10 @@
       "title": "Automation Infrastructure Engineer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
+    "5F.07D": {
+      "title": "Business Development Representative (BDR) – International",
+      "first_seen": "2026-09-07T23:25:18.825591+00:00"
+    },
     "07.76F": {
       "title": "DevOps Engineer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
@@ -18,10 +22,6 @@
     "19.866": {
       "title": "Escalation Engineer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
-    },
-    "5F.07D": {
-      "title": "Inside Sales Representative - International Markets",
-      "first_seen": "2026-09-07T23:25:18.825591+00:00"
     },
     "E0.65E": {
       "title": "Software Engineering Team Lead",

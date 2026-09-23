@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-23T04:30:24.765719+00:00",
+  "last_success": "2026-09-23T11:20:30.708919+00:00",
   "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
@@ -55,6 +55,10 @@
       "title": "Infra Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
+    "4963790101": {
+      "title": "IT Manager",
+      "first_seen": "2026-09-23T11:20:30.708919+00:00"
+    },
     "4921303101": {
       "title": "Legal Counsel",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
@@ -97,10 +101,6 @@
     },
     "4919434101": {
       "title": "Software Architect",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
-    "4930931101": {
-      "title": "Talent Acquisition Partner",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "4919437101": {

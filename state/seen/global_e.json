@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-23T04:30:24.689943+00:00",
+  "last_success": "2026-09-23T11:20:30.188461+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -9,10 +9,6 @@
     },
     "DA.566": {
       "title": "Assistant Controller",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "52.B6B": {
-      "title": "Bookkeeper",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
     "23.F62": {
@@ -43,6 +39,10 @@
       "title": "Payroll Specialist",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
+    "AF.274": {
+      "title": "PPC Campaign Specialist",
+      "first_seen": "2026-09-23T11:20:30.188461+00:00"
+    },
     "BD.F6B": {
       "title": "Product Manager- CRM System",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
@@ -72,5 +72,5 @@
       "first_seen": "2026-09-14T12:31:04.055441+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 49
 }

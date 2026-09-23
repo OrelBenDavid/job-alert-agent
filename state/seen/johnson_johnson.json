@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-23T04:30:24.705165+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-23T11:20:30.197202+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "R-100261": {
+      "title": "Clinical Support",
+      "first_seen": "2026-09-23T11:20:30.197202+00:00"
+    },
     "R-098171": {
       "title": "Product Specialist Immunology",
       "first_seen": "2026-09-16T16:40:48.347173+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

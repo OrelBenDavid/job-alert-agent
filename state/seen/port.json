@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-23T04:30:24.752876+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-23T11:20:30.701705+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "FE.27C": {
@@ -14,6 +14,10 @@
     "C3.27B": {
       "title": "Head of Marketing Operations & Digital",
       "first_seen": "2026-09-17T11:28:45.948969+00:00"
+    },
+    "AF.279": {
+      "title": "Paid Media Specialist",
+      "first_seen": "2026-09-23T11:20:30.701705+00:00"
     },
     "A5.D6D": {
       "title": "Procurement Manager",
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-18T13:00:34.240366+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 31
 }
