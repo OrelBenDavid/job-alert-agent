@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T17:00:04.610556+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-24T21:25:46.829955+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "R-100109": {
@@ -14,10 +14,6 @@
     "R-098171": {
       "title": "Product Specialist Immunology",
       "first_seen": "2026-09-16T16:40:48.347173+00:00"
-    },
-    "R-074410": {
-      "title": "Manager, QARA Israel",
-      "first_seen": "2026-09-11T16:20:32.365000+00:00"
     },
     "R-086359": {
       "title": "Medical Science Liaison",
@@ -92,5 +88,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 22
 }

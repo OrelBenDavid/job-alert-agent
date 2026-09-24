@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T17:00:04.643789+00:00",
-  "last_count": 151,
+  "last_success": "2026-09-24T21:25:46.864068+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "JR-022400": {
@@ -487,10 +487,6 @@
       "title": "Senior Staff Software Engineer (EPM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018237": {
-      "title": "Senior Staff AI Software Engineer (CORA AI)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018226": {
       "title": "Manager, SW Engineering (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -608,5 +604,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 152
 }

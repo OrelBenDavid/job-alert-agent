@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T17:00:04.627374+00:00",
-  "last_count": 153,
+  "last_success": "2026-09-24T21:25:46.847769+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -343,14 +343,6 @@
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
-    "259be22c-bbf2-4eb2-a959-2d0e409dcdd1": {
-      "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
-      "first_seen": "2026-09-24T17:00:04.627374+00:00"
-    },
-    "a9bb24f6-dc2b-4efd-8b7b-23e62fdee3b0": {
-      "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
-      "first_seen": "2026-09-24T17:00:04.627374+00:00"
-    },
     "2c2e26d6-d40a-40d1-b6f8-510781e9a3f4": {
       "title": "Senior C++ Software Engineer - Integration & Delivery (CTO Team)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -616,5 +608,5 @@
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 180
+  "last_board_total": 178
 }
