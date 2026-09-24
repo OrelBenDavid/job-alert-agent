@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T11:33:41.794947+00:00",
-  "last_count": 23,
+  "last_success": "2026-09-24T17:00:04.541015+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -25,10 +25,6 @@
     },
     "4925761101": {
       "title": "Backend Tech Lead",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
-    "4925753101": {
-      "title": "Core Backend Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4941568101": {
@@ -83,10 +79,6 @@
       "title": "Senior Security Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
-    "4864308101": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
     "4864312101": {
       "title": "Staff Software Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -96,5 +88,5 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }

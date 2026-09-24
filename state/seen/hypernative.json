@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T11:33:41.870902+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-24T17:00:04.600031+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "2A.B5C": {
@@ -26,11 +26,7 @@
     "D1.D61": {
       "title": "Senior Software Engineer - Detection",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
-    "21.F66": {
-      "title": "Technical Trainer",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-24T11:33:41.857557+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-24T17:00:04.584151+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
+    "C0.372": {
+      "title": "Bookkeeper and Payroll Controller",
+      "first_seen": "2026-09-24T17:00:04.584151+00:00"
+    },
     "6E.D52": {
       "title": "DBA MySQL",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
@@ -16,5 +20,5 @@
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

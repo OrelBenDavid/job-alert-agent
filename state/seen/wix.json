@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T11:33:41.789019+00:00",
-  "last_count": 35,
+  "last_success": "2026-09-24T17:00:04.535710+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-1cde0a80-e2b2-587b-95d6-dd600388f932-T1788788675-744000151591749": {
@@ -10,10 +10,6 @@
     "https://careers.wix.com/position/REF3106P-744000151543868": {
       "title": "Creative Product Marketing Manager - Base44",
       "first_seen": "2026-09-24T11:33:41.789019+00:00"
-    },
-    "https://careers.wix.com/position/oracle-9242893b-1f61-5d2a-b3ff-dcba4e1c760d-T1788979486-744000151330569": {
-      "title": "QA Engineer - Domains",
-      "first_seen": "2026-09-23T11:20:30.158957+00:00"
     },
     "https://careers.wix.com/position/oracle-f0b68fb4-042d-5011-a974-42374c8aa125-T1790146037-744000151318039": {
       "title": "Forward Deployed Engineer - Base44",

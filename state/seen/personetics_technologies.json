@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-24T11:33:41.928237+00:00",
-  "last_count": 8,
+  "last_success": "2026-09-24T17:00:04.647980+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
+    "A0.379": {
+      "title": "Applied Data Scientist",
+      "first_seen": "2026-09-24T17:00:04.647980+00:00"
+    },
     "CD.071": {
       "title": "Business Applications Manager",
       "first_seen": "2026-08-23T09:01:23.827100+00:00"
@@ -36,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:34.310930+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-24T11:33:41.920573+00:00",
+  "last_success": "2026-09-24T17:00:04.643789+00:00",
   "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022400": {
+      "title": "Principal Engineer Software- Backend Infra (Cortex)",
+      "first_seen": "2026-09-24T17:00:04.643789+00:00"
+    },
     "JR-022684": {
       "title": "Sr Staff Data Scientist",
       "first_seen": "2026-09-24T11:33:41.920573+00:00"
@@ -226,10 +230,6 @@
     "JR-021900": {
       "title": "Software Engineering Manager, Idira Platform Services, Idira Platform Services",
       "first_seen": "2026-09-15T11:34:07.673982+00:00"
-    },
-    "JR-021678": {
-      "title": "Domain Consultant (Pre Sales) - Idira",
-      "first_seen": "2026-09-09T04:22:53.154207+00:00"
     },
     "JR-019823": {
       "title": "Sr. Principal Backend Engineer (Cortex XSIAM)",

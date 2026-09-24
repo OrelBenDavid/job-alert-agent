@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-24T11:33:41.889498+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-24T17:00:04.622789+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "f4a655af-c35f-4efc-90ee-fc30889b510f": {
       "title": "Account Executive, EMEA & APAC",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "551cc2b0-5e68-4165-a6a7-b994b872dc65": {
-      "title": "Head of DevOps",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
     "f9eef01d-77c6-4749-8edb-320e3cce8cc5": {
@@ -20,5 +16,5 @@
       "first_seen": "2026-09-10T20:45:40.120987+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

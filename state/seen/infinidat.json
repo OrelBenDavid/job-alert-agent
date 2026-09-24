@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T11:33:41.873573+00:00",
-  "last_count": 28,
+  "last_success": "2026-09-24T17:00:04.602557+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "9D.078": {
@@ -14,6 +14,10 @@
     "C6.D60": {
       "title": "C++ Backend Software Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "4C.D6A": {
+      "title": "C++ Software Engineer - NAS Group",
+      "first_seen": "2026-09-24T17:00:04.602557+00:00"
     },
     "4C.D6B": {
       "title": "C++ Software Engineer - NAS Group",
@@ -116,5 +120,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 49
 }
