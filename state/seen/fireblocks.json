@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.619533+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-24T11:33:41.855491+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "4713012006": {
@@ -26,10 +26,6 @@
     "4701826006": {
       "title": "Information Security Engineer",
       "first_seen": "2026-09-03T11:04:08.034799+00:00"
-    },
-    "4683003006": {
-      "title": "Product Manager, Mobile",
-      "first_seen": "2026-08-13T11:24:25.525766+00:00"
     },
     "4655907006": {
       "title": "Security Operations Team Lead",

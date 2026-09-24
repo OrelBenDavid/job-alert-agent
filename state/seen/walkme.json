@@ -1,22 +1,14 @@
 {
-  "last_success": "2026-09-24T04:27:34.686242+00:00",
-  "last_count": 6,
+  "last_success": "2026-09-24T11:33:41.979783+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
-    "2698c9aa-1445-4407-9d58-66aa2d260dc2": {
-      "title": "DevSecOps Engineer",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
       "title": "Product Designer",
       "first_seen": "2026-08-25T13:01:52.139714+00:00"
     },
     "2594252b-3e93-4b2e-918a-8a00ae684fe1": {
       "title": "QA Engineer – Manual & Automation Testing",
-      "first_seen": "2026-08-13T11:24:49.428833+00:00"
-    },
-    "5bc3e506-86a5-49cd-bbd3-6166517712cc": {
-      "title": "Senior C# Developer",
       "first_seen": "2026-08-13T11:24:49.428833+00:00"
     },
     "cf715cec-2464-46f1-a05a-792aa1769a39": {
@@ -28,5 +20,5 @@
       "first_seen": "2026-09-23T11:20:30.724337+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }

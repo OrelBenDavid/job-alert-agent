@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-24T04:27:34.670752+00:00",
+  "last_success": "2026-09-24T11:33:41.953289+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,6 +23,10 @@
       "title": "Product Manager",
       "first_seen": "2026-08-13T11:24:41.051708+00:00"
     },
+    "90.37D": {
+      "title": "Senior Backend Software Engineer",
+      "first_seen": "2026-09-24T11:33:41.953289+00:00"
+    },
     "7E.F60": {
       "title": "Senior Backend Software Engineer (AI Engineering)",
       "first_seen": "2026-08-25T09:43:09.806245+00:00"
@@ -33,10 +37,6 @@
     },
     "84.F60": {
       "title": "Senior Full Stack Software Engineer",
-      "first_seen": "2026-08-13T11:24:41.051708+00:00"
-    },
-    "BB.A6E": {
-      "title": "Senior Low Level Software Engineer",
       "first_seen": "2026-08-13T11:24:41.051708+00:00"
     },
     "18.E6F": {

@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-09-24T04:27:34.654710+00:00",
-  "last_count": 149,
+  "last_success": "2026-09-24T11:33:41.920573+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022684": {
+      "title": "Sr Staff Data Scientist",
+      "first_seen": "2026-09-24T11:33:41.920573+00:00"
+    },
+    "JR-020079": {
+      "title": "Staff Software Automation Engineer (SDET)  – Identity Authentication",
+      "first_seen": "2026-09-24T11:33:41.920573+00:00"
+    },
+    "JR-022891": {
+      "title": "Manager Software Engineering - Data Security (Cortex)",
+      "first_seen": "2026-09-24T11:33:41.920573+00:00"
+    },
     "JR-021366": {
       "title": "Commercial Sales Manager",
       "first_seen": "2026-09-03T20:54:14.339810+00:00"
@@ -22,10 +34,6 @@
     "JR-018806": {
       "title": "Senior/ Principal Frontend Engineer (Cortex Platform)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-022627": {
-      "title": "Principal DevOps Engineer",
-      "first_seen": "2026-09-23T11:20:30.697510+00:00"
     },
     "JR-017962": {
       "title": "Senior Technical Program Manager",
@@ -600,5 +608,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 152
+  "last_board_total": 153
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.603267+00:00",
-  "last_count": 46,
+  "last_success": "2026-09-24T11:33:41.834242+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "A6.079": {
@@ -55,16 +55,8 @@
       "title": "DevOps Engineer (GCP Specialist)",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "2F.07E": {
-      "title": "Forward Deployed Engineer",
-      "first_seen": "2026-08-24T13:05:04.440109+00:00"
-    },
     "F5.D68": {
       "title": "Hardware Development Team Lead",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "89.D6A": {
-      "title": "Integration & DevOps Engineer (Kubernetes / OpenShift)",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "E3.E6E": {
@@ -135,10 +127,6 @@
       "title": "Software Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "5E.E6E": {
-      "title": "Software Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "A5.D62": {
       "title": "Software Project Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -151,17 +139,9 @@
       "title": "Software Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "0F.C60": {
-      "title": "System Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "24.245": {
       "title": "System Expert",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "53.276": {
-      "title": "System Security Expert",
-      "first_seen": "2026-09-03T11:04:08.024331+00:00"
     },
     "C5.F62": {
       "title": "Systems & Infrastructure Administrator",
@@ -188,5 +168,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 147
+  "last_board_total": 141
 }

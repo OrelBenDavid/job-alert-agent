@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.612489+00:00",
-  "last_count": 35,
+  "last_success": "2026-09-24T11:33:41.848395+00:00",
+  "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -38,6 +38,10 @@
     "2B.271": {
       "title": "IT DevOps Engineer",
       "first_seen": "2026-09-14T12:31:04.038394+00:00"
+    },
+    "80.375": {
+      "title": "Logistics Specialist",
+      "first_seen": "2026-09-24T11:33:41.848395+00:00"
     },
     "2C.171": {
       "title": "Material Planner",
@@ -144,5 +148,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 45
 }

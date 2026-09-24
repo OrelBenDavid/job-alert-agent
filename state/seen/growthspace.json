@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-09-24T04:27:34.625918+00:00",
-  "last_count": 0,
+  "last_success": "2026-09-24T11:33:41.864541+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 0
+  "jobs": {
+    "80.378": {
+      "title": "AI Agent Designer (Part-Time)",
+      "first_seen": "2026-09-24T11:33:41.864541+00:00"
+    }
+  },
+  "last_board_total": 1
 }

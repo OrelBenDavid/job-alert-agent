@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.599238+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-24T11:33:41.826985+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "82.F6C": {
@@ -10,6 +10,10 @@
     "36.F64": {
       "title": "AI NPU VLSI Team Leader",
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
+    },
+    "70.377": {
+      "title": "AI SW Engineer (C++)",
+      "first_seen": "2026-09-24T11:33:41.826985+00:00"
     },
     "ED.F64": {
       "title": "Architecture software tools developer student",
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:10.823521+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }

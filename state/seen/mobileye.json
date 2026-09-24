@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.644057+00:00",
-  "last_count": 147,
+  "last_success": "2026-09-24T11:33:41.898207+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -251,6 +251,10 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
+    "5777fd3d-d3aa-4134-9d0b-884856519a38": {
+      "title": "IT Support Specialist - Temporary (1 year)",
+      "first_seen": "2026-09-24T11:33:41.898207+00:00"
+    },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
@@ -302,6 +306,10 @@
     "820209f4-b8a0-4b3b-b2de-46d62cad0aac": {
       "title": "Product Environmental Compliance Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
+    "f4c63464-9fcc-40ed-b9fd-a21d815cfdd9": {
+      "title": "Program Manager - Product & Engineering Operations",
+      "first_seen": "2026-09-24T11:33:41.898207+00:00"
     },
     "f08cf90a-2e96-4d27-86db-e124676b4d53": {
       "title": "Radar ATE Engineer",
@@ -426,6 +434,10 @@
     "f3de4dd1-fed7-4d16-825a-562746ccfe79": {
       "title": "Senior Software Engineer - C++ Embedded Systems (Autonomous Driving)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "8ad31b79-8816-4142-a677-4bea7a452328": {
+      "title": "Senior Software Engineer - Data Infrastructure",
+      "first_seen": "2026-09-24T11:33:41.898207+00:00"
     },
     "fcdf3814-81f3-4802-be16-26ef77ac5ac7": {
       "title": "Senior SOTIF Analyst",
@@ -571,6 +583,10 @@
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
+      "title": "Technical Project Manager",
+      "first_seen": "2026-09-24T11:33:41.898207+00:00"
+    },
     "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
@@ -587,10 +603,14 @@
       "title": "Validation & Analysis Project Manager - Temporary Position",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
+      "title": "Validation Analytics Tools Developer",
+      "first_seen": "2026-09-24T11:33:41.898207+00:00"
+    },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
       "title": "Validation Engineer & Embedded System Integration",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     }
   },
-  "last_board_total": 173
+  "last_board_total": 178
 }

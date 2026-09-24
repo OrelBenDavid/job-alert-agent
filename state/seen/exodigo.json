@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.616467+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-24T11:33:41.851865+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-09-01T08:32:41.333227+00:00"
     },
     "EF.273": {
-      "title": "Algorithms Engineer – Data Fusion & Mapping",
+      "title": "Algorithms Developer",
       "first_seen": "2026-09-23T11:20:30.181281+00:00"
     },
     "22.F6B": {
@@ -22,6 +22,10 @@
     "4E.E46": {
       "title": "Engineering Map Lead",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
+    },
+    "FC.070": {
+      "title": "Executive Assistant to the CEO",
+      "first_seen": "2026-09-24T11:33:41.851865+00:00"
     },
     "DF.E68": {
       "title": "Field Operations - Global Team",
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-13T12:34:58.624563+00:00"
     }
   },
-  "last_board_total": 56
+  "last_board_total": 57
 }

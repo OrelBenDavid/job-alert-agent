@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.647578+00:00",
-  "last_count": 82,
+  "last_success": "2026-09-24T11:33:41.909860+00:00",
+  "last_count": 83,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -19,11 +19,11 @@
       "title": "Cloud Solution Architect - Educational Content Author, Nebius Academy",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784195101": {
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784157101": {
+    "4784195101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -57,6 +57,10 @@
     },
     "4930968101": {
       "title": "DFIR Lead",
+      "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4942511101": {
+      "title": "Director of Analytics",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4902513101": {
@@ -94,10 +98,6 @@
     "4967578101": {
       "title": "GRC Program Coordinator",
       "first_seen": "2026-09-07T12:15:49.295011+00:00"
-    },
-    "4942511101": {
-      "title": "Head of Analytics",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4961188101": {
       "title": "Head of Proactive Security",
@@ -190,6 +190,10 @@
     "4939760101": {
       "title": "Senior HR Systems Analyst",
       "first_seen": "2026-08-31T13:27:00.372387+00:00"
+    },
+    "4986448101": {
+      "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
+      "first_seen": "2026-09-24T11:33:41.909860+00:00"
     },
     "4704805101": {
       "title": "Senior ML Engineer (AI Research)",
@@ -332,5 +336,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 381
+  "last_board_total": 383
 }

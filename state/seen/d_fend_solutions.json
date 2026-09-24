@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-24T04:27:34.608608+00:00",
-  "last_count": 18,
+  "last_success": "2026-09-24T11:33:41.844143+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
@@ -9,10 +9,6 @@
     },
     "f0fa08d2-0d69-408c-b45f-05e0cb794660": {
       "title": "Controller",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "4c023bc1-9863-47b6-9143-8e15bd837e22": {
-      "title": "Director of Engineering (Operations)",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
     "04088468-f37a-441a-8f8d-10be41619d4c": {
@@ -76,5 +72,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }
