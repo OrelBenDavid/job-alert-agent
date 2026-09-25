@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-25T11:39:57.035037+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-25T17:02:02.492305+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-1cde0a80-e2b2-587b-95d6-dd600388f932-T1788788675-744000151591749": {
@@ -22,10 +22,6 @@
     "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000151022358": {
       "title": "Performance Marketing Analyst - Base44",
       "first_seen": "2026-09-22T16:46:15.873797+00:00"
-    },
-    "https://careers.wix.com/position/oracle-98184094-baea-5754-8f4b-7c9df928de2c-T1787676518-744000145682188": {
-      "title": "Social Content Creator - Base44",
-      "first_seen": "2026-08-26T09:51:33.796649+00:00"
     },
     "https://careers.wix.com/position/oracle-a0b3ca2d-025f-5974-a49c-fd8991fb0f06-T1787212968-744000144513379": {
       "title": "Dynamics 365 CRM Developer",
