@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-25T04:38:59.942102+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-25T11:39:57.153261+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "JR112570": {
@@ -10,10 +10,6 @@
     "JR112731": {
       "title": "R&D Geometry Creo Intern",
       "first_seen": "2026-09-16T11:21:30.017648+00:00"
-    },
-    "JR112600": {
-      "title": "R&D Intern",
-      "first_seen": "2026-09-24T21:25:46.874863+00:00"
     }
   },
   "last_board_total": 40
