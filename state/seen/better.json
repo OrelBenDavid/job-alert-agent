@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-25T17:02:02.509071+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-25T21:26:32.050257+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "f2795e55-8e04-4c52-9f29-4eb59d2a9ad7": {
-      "title": "Mortgage Operations Academy Associate",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "bb8eb91e-a8a4-4caa-94e9-49d7aad339dc": {
       "title": "Production Partner",
       "first_seen": "2026-09-14T12:31:04.016053+00:00"
@@ -16,5 +12,5 @@
       "first_seen": "2026-09-08T21:02:17.509460+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }
