@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.462372+00:00",
-  "last_count": 22,
+  "last_success": "2026-09-27T11:52:38.235416+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -79,18 +79,10 @@
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
-    "5F.274": {
-      "title": "System Engineer",
-      "first_seen": "2026-09-22T16:46:16.996467+00:00"
-    },
-    "B0.372-47.20D": {
-      "title": "Validation Engineer- Quantum Control Systems",
-      "first_seen": "2026-09-24T17:00:04.658462+00:00"
-    },
     "42.364": {
       "title": "Verification Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 60
 }

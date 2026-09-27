@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.372357+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-27T11:52:38.145586+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "84.F67": {
@@ -10,11 +10,7 @@
     "A6.274": {
       "title": "Head of Billing & Collections",
       "first_seen": "2026-09-09T16:27:11.283848+00:00"
-    },
-    "AF.C6E": {
-      "title": "Onboarding & Implementation Lead",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

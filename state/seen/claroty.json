@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.373526+00:00",
-  "last_count": 10,
+  "last_success": "2026-09-27T11:52:38.146404+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -11,10 +11,6 @@
       "title": "Backend Software Engineer",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
     },
-    "DD.17E": {
-      "title": "Bookkeeper",
-      "first_seen": "2026-08-31T20:45:43.712074+00:00"
-    },
     "77.C60": {
       "title": "Director of Data & AI",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
@@ -24,7 +20,7 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "2D.073": {
-      "title": "Senior Manager, Engineering - xDome",
+      "title": "Senior Manager Engineering - xDome",
       "first_seen": "2026-09-22T16:46:15.901242+00:00"
     },
     "1D.46B": {
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

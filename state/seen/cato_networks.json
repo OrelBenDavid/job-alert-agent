@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.369568+00:00",
-  "last_count": 38,
+  "last_success": "2026-09-27T11:52:38.138386+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -75,6 +75,10 @@
       "title": "Payroll Admin",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "4976758101": {
+      "title": "Product Management - PLG",
+      "first_seen": "2026-09-27T11:52:38.138386+00:00"
+    },
     "4633928101": {
       "title": "Product Manager - Access",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -111,13 +115,13 @@
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4970648101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-09-14T12:31:04.028546+00:00"
-    },
     "4901284101": {
       "title": "Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "4970648101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-09-14T12:31:04.028546+00:00"
     },
     "4860424101": {
       "title": "Software Engineer (Endpoint DLP)",
@@ -156,5 +160,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 99
+  "last_board_total": 100
 }

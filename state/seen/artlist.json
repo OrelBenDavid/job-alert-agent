@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.357592+00:00",
-  "last_count": 11,
+  "last_success": "2026-09-27T11:52:38.128369+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "45.F61": {
@@ -10,6 +10,10 @@
     "7E.F6F": {
       "title": "AI Ops Engineer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    },
+    "B1.377": {
+      "title": "Creative Director",
+      "first_seen": "2026-09-27T11:52:38.128369+00:00"
     },
     "06.F65": {
       "title": "Customer Experience Specialist - Creative AI",
@@ -48,5 +52,5 @@
       "first_seen": "2026-09-22T11:24:07.938437+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

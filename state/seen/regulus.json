@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.465621+00:00",
-  "last_count": 11,
+  "last_success": "2026-09-27T11:52:38.238021+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "B4.279": {
@@ -9,10 +9,6 @@
     },
     "F6.075": {
       "title": "Bookkeeper",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
-    },
-    "02.C66": {
-      "title": "C++ Software Engineer",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     },
     "72.A6B": {
@@ -35,18 +31,18 @@
       "title": "Mechanical Design Engineer",
       "first_seen": "2026-09-24T17:00:04.665837+00:00"
     },
-    "8A.66A": {
-      "title": "Sales Manager-EU",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
-    },
     "23.171": {
       "title": "Senior Real-Time Embedded Software Engineer (C++)",
       "first_seen": "2026-09-22T16:46:17.004247+00:00"
+    },
+    "02.C66": {
+      "title": "Senior Software Engineer (Rust / GPU)",
+      "first_seen": "2026-08-20T06:56:56.915754+00:00"
     },
     "F2.762": {
       "title": "V&V Manager",
       "first_seen": "2026-09-10T16:17:01.386562+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

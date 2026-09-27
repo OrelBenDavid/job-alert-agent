@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.401284+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-27T11:52:38.173405+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "46.A6A": {
@@ -50,7 +50,11 @@
     "4B.D69": {
       "title": "Senior Salesforce and Business Applications Analyst",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "30.37C": {
+      "title": "Telemarketing Representative",
+      "first_seen": "2026-09-27T11:52:38.173405+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

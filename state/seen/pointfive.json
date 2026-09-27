@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-27T05:03:25.458650+00:00",
+  "last_success": "2026-09-27T11:52:38.232530+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "5cee7d05-e155-4a9a-a6ae-27068e251d2b": {
-      "title": "AI Research Lead",
+      "title": "Head of LLM research",
       "first_seen": "2026-09-17T16:47:40.617927+00:00"
     },
     "4e3fda32-c387-46bd-ab47-bb8cb6937918": {

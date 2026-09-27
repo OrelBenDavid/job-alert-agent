@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.376932+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-27T11:52:38.151223+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "eb1b2fb8-38b2-4ad9-b486-2c6af5ee363a": {
@@ -14,11 +14,7 @@
     "55a4eace-0c76-46c0-bb5b-f434cb026034": {
       "title": "Project Manager - Product & R&D",
       "first_seen": "2026-09-02T16:27:20.422057+00:00"
-    },
-    "fd2d44ab-7fa3-42bd-9b4d-9925baa56621": {
-      "title": "Technical Product Manager",
-      "first_seen": "2026-08-23T12:54:49.940421+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

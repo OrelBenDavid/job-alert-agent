@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.415479+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-27T11:52:38.186560+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -39,10 +39,6 @@
       "title": "Senior Product Security Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "78.266": {
-      "title": "Senior Security Researcher",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
     "4E.D3D": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-19T09:41:25.004836+00:00"
     }
   },
-  "last_board_total": 40
+  "last_board_total": 39
 }

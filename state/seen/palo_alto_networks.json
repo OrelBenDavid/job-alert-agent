@@ -1,8 +1,32 @@
 {
-  "last_success": "2026-09-27T05:03:25.451197+00:00",
+  "last_success": "2026-09-27T11:52:38.220909+00:00",
   "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023104": {
+      "title": "Senior Staff AI Software Engineer (CORA AI)",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-022256": {
+      "title": "Senior DevOps Engineer  - Backend Infrastructure Team (Cortex)",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-017751": {
+      "title": "Security Researcher Manager - Cloud & Kubernetes (Cortex)",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-022747": {
+      "title": "Senior/Principal Site Reliability Engineer",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-019822": {
+      "title": "Senior /Principal AI Engineer, Security Automation & LLM Integration (Cortex)",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-022627": {
+      "title": "Principal DevOps Engineer",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
     "JR-020727": {
       "title": "Senior Linux Detection Researcher (Cortex)",
       "first_seen": "2026-09-25T11:39:57.143553+00:00"
@@ -103,10 +127,6 @@
       "title": "Sr. Product Manager-  Prisma Browser",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-015044": {
-      "title": "Senior Backend Engineer - AppSec ShiftLeft (Cortex Cloud)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-014486": {
       "title": "Senior Product Manager-  Application Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -139,10 +159,6 @@
       "title": "Senior Product Manager,  Identity Security Platform",
       "first_seen": "2026-08-20T13:03:13.982466+00:00"
     },
-    "JR-020037": {
-      "title": "Sr Staff Engineer Software- Authentication Team (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-019915": {
       "title": "Principal Engineer Software- Modern Auth (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -155,19 +171,11 @@
       "title": "Manager, SW Engineering- Authentication Team (Idira)",
       "first_seen": "2026-08-23T12:54:49.993458+00:00"
     },
-    "JR-020034": {
-      "title": "Staff Engineer Software- Authentication Team",
-      "first_seen": "2026-08-24T13:05:04.489771+00:00"
-    },
     "JR-020078": {
       "title": "Principal Engineer Software- Authentication Team (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020211": {
-      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-020214": {
       "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
@@ -419,10 +427,6 @@
       "title": "Product Design Manager -UX/UI (Cortex XSIAM)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-019735": {
-      "title": "Engineering Escalation Manager (Identity)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-019542": {
       "title": "Senior/Principal SRE Engineer",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -519,10 +523,6 @@
       "title": "Mgr, Domain Consulting",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018473": {
-      "title": "Senior Product Manager (Idira, TDR)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018899": {
       "title": "Principal AI Software Engineer (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -604,5 +604,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 152
+  "last_board_total": 153
 }

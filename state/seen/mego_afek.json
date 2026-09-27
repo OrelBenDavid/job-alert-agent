@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T05:03:25.429267+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-27T11:52:38.198743+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "04.E6E": {
@@ -11,10 +11,14 @@
       "title": "Quality Engineer - Design Control",
       "first_seen": "2026-08-20T06:56:54.034592+00:00"
     },
+    "81.379": {
+      "title": "Software & Firmware Team Manager",
+      "first_seen": "2026-09-27T11:52:38.198743+00:00"
+    },
     "13.463": {
       "title": "מחסנאי.ת",
       "first_seen": "2026-08-20T06:56:54.034592+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }
