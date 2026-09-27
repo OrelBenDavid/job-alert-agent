@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T11:52:38.154661+00:00",
-  "last_count": 30,
+  "last_success": "2026-09-27T16:51:09.673617+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "75.277": {
@@ -10,10 +10,6 @@
     "2B.D67": {
       "title": "AI Researcher",
       "first_seen": "2026-09-08T11:05:09.109198+00:00"
-    },
-    "AF.66B": {
-      "title": "Automation Infrastructure Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "0B.B65": {
       "title": "Automation Infrastructure Team Lead",
@@ -61,10 +57,6 @@
     },
     "FF.C63": {
       "title": "Product Manager, AI Security",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "67.F50": {
-      "title": "QA Automation Engineer - Backend Team",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "45.F54": {
@@ -124,5 +116,5 @@
       "first_seen": "2026-09-09T11:10:07.691467+00:00"
     }
   },
-  "last_board_total": 221
+  "last_board_total": 219
 }

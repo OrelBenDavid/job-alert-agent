@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T11:52:38.220909+00:00",
-  "last_count": 150,
+  "last_success": "2026-09-27T16:51:09.764899+00:00",
+  "last_count": 146,
   "consecutive_failures": 0,
   "jobs": {
     "JR-023104": {
@@ -159,10 +159,6 @@
       "title": "Senior Product Manager,  Identity Security Platform",
       "first_seen": "2026-08-20T13:03:13.982466+00:00"
     },
-    "JR-019915": {
-      "title": "Principal Engineer Software- Modern Auth (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-020036": {
       "title": "Sr Staff Engineer Software- Authentication Team (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -171,20 +167,12 @@
       "title": "Manager, SW Engineering- Authentication Team (Idira)",
       "first_seen": "2026-08-23T12:54:49.993458+00:00"
     },
-    "JR-020078": {
-      "title": "Principal Engineer Software- Authentication Team (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-020211": {
       "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020087": {
       "title": "Principal Engineer Software- Authentication Team (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-020213": {
-      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-020210": {
@@ -197,10 +185,6 @@
     },
     "JR-020212": {
       "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-018041": {
-      "title": "Principal Engineer Software- Identity User Management (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-021161": {
@@ -604,5 +588,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 148
 }

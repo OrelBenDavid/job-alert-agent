@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-27T11:52:38.235416+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-27T16:51:09.780267+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "C1.37A": {
+      "title": "Architecture Prototyping Engineer",
+      "first_seen": "2026-09-27T16:51:09.780267+00:00"
+    },
     "13.05B": {
       "title": "Backend Tech Lead",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"

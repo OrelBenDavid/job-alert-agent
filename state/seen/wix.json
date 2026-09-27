@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-09-27T11:52:38.118400+00:00",
+  "last_success": "2026-09-27T16:51:09.626677+00:00",
   "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000152029748": {
+      "title": "Experienced AI Product Marketing Manager - Base44",
+      "first_seen": "2026-09-27T16:51:09.626677+00:00"
+    },
+    "https://careers.wix.com/position/REF3097W-744000152028049": {
+      "title": "xEngineer (Backend oriented), Premium Billing Platform",
+      "first_seen": "2026-09-27T16:51:09.626677+00:00"
+    },
     "https://careers.wix.com/position/oracle-1cde0a80-e2b2-587b-95d6-dd600388f932-T1788788675-744000151591749": {
       "title": "Product Manager - WOW",
       "first_seen": "2026-09-24T11:33:41.789019+00:00"
@@ -75,16 +83,8 @@
       "title": "Senior AI Engineer - Marketing AI Transformation",
       "first_seen": "2026-09-25T21:26:32.036584+00:00"
     },
-    "https://careers.wix.com/position/oracle-359ab7a7-df53-5e08-9896-5040d09bc776-T1788425931-744000147684569": {
-      "title": "Product Designer",
-      "first_seen": "2026-09-25T21:26:32.036584+00:00"
-    },
     "https://careers.wix.com/position/oracle-aadb352b-218d-5bc2-abf2-2c2234062e81-T1788436737-744000147233909": {
       "title": "Animator - Base44",
-      "first_seen": "2026-09-25T21:26:32.036584+00:00"
-    },
-    "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000147160953": {
-      "title": "Experienced AI Product Marketing Manager - Base44",
       "first_seen": "2026-09-25T21:26:32.036584+00:00"
     },
     "https://careers.wix.com/position/REF12W-744000146957552": {

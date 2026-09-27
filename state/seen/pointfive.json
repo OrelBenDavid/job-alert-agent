@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-27T11:52:38.232530+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-27T16:51:09.775960+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "6e1c4d79-a7c3-473d-bb25-c670dca0b3e4": {
@@ -27,10 +27,18 @@
       "title": "Controller",
       "first_seen": "2026-09-08T11:05:09.190312+00:00"
     },
+    "26ed9572-2119-48fd-a9b2-3e17e5c73ce8": {
+      "title": "Integrated Marketing Lead",
+      "first_seen": "2026-09-27T16:51:09.775960+00:00"
+    },
     "bf0b9450-79ff-4234-a690-17ffafcece86": {
       "title": "Senior Software Engineer - Endpoint",
       "first_seen": "2026-09-22T16:46:16.993101+00:00"
+    },
+    "dd08d676-3748-4346-9b8e-118619c432a5": {
+      "title": "Creative Growth Lead",
+      "first_seen": "2026-09-27T16:51:09.775960+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 13
 }
