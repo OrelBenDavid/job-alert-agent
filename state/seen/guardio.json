@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T05:05:05.136981+00:00",
-  "last_count": 24,
+  "last_success": "2026-09-28T13:38:07.470613+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
@@ -67,10 +67,6 @@
       "title": "Personal Assistant",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "9D.C56": {
-      "title": "Product Manager - Technical Growth",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
     "0B.B60": {
       "title": "Senior BI Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -95,10 +91,10 @@
       "title": "Talent Acquisition Specialist",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "9D.C53": {
+    "9D.C56": {
       "title": "Technical Product Growth Manager",
-      "first_seen": "2026-09-20T11:08:28.432467+00:00"
+      "first_seen": "2026-08-13T11:24:25.544419+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

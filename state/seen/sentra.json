@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T05:05:05.226740+00:00",
-  "last_count": 8,
+  "last_success": "2026-09-28T13:38:07.576302+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "F6.078": {
@@ -23,10 +23,6 @@
       "title": "Senior Backend Engineer (Data Team)",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     },
-    "D3.965": {
-      "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-20T06:56:59.884573+00:00"
-    },
     "6E.E61": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
@@ -36,5 +32,5 @@
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }

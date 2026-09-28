@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-28T05:05:05.268386+00:00",
+  "last_success": "2026-09-28T13:38:07.594291+00:00",
   "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
+    "BF.546": {
+      "title": "Big Data & Data Infrastructure Engineer",
+      "first_seen": "2026-08-13T11:24:49.422813+00:00"
+    },
     "5A.66C": {
       "title": "Cloud FinOps Engineer",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
@@ -111,10 +115,6 @@
       "title": "Senior Software Engineer -Kafka / Event Streaming",
       "first_seen": "2026-09-15T16:48:16.917260+00:00"
     },
-    "BF.546": {
-      "title": "Senior Solutions Engineer – Big Data & Data Infrastructure",
-      "first_seen": "2026-08-13T11:24:49.422813+00:00"
-    },
     "A8.D05": {
       "title": "Software Engineer -New College Grad",
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
@@ -144,5 +144,5 @@
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     }
   },
-  "last_board_total": 252
+  "last_board_total": 253
 }

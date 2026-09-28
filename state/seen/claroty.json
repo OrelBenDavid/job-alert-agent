@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T05:05:05.108634+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-28T13:38:07.436536+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -11,6 +11,10 @@
       "title": "Backend Software Engineer",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
     },
+    "D5.076": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-09-28T13:38:07.436536+00:00"
+    },
     "77.C60": {
       "title": "Director of Data & AI",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
@@ -20,12 +24,12 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "2D.073": {
-      "title": "Senior Manager Engineering - xDome",
+      "title": "Senior Manager - Software Engineering",
       "first_seen": "2026-09-22T16:46:15.901242+00:00"
     },
-    "1D.46B": {
+    "D4.F64": {
       "title": "Senior Product Manager",
-      "first_seen": "2026-09-09T11:10:07.685596+00:00"
+      "first_seen": "2026-09-28T13:38:07.436536+00:00"
     },
     "E0.E67": {
       "title": "Senior Security Operations Engineer",
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }

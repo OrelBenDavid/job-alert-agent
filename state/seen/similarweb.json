@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-09-28T05:05:05.229886+00:00",
+  "last_success": "2026-09-28T13:38:07.578631+00:00",
   "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
       "title": "AI Engineer",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8235845": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-09-27T11:52:38.247309+00:00"
     },
     "6897277": {
       "title": "Big Data Analyst",
@@ -98,11 +102,7 @@
     "8093782": {
       "title": "Senior Software Engineer - B2C",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
-    },
-    "8235845": {
-      "title": "Server Developer",
-      "first_seen": "2026-09-27T11:52:38.247309+00:00"
     }
   },
-  "last_board_total": 69
+  "last_board_total": 70
 }

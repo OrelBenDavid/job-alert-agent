@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T05:05:05.277932+00:00",
-  "last_count": 9,
+  "last_success": "2026-09-28T13:38:07.604170+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
@@ -38,7 +38,11 @@
     "c6d2f202-b511-4c8b-80cf-f7345cb25dd6": {
       "title": "Product Partnerships Manager",
       "first_seen": "2026-09-22T21:11:16.151145+00:00"
+    },
+    "62b02f77-ef83-4bcb-b5ee-330a247085a5": {
+      "title": "ServiceNow Application Engineer - Workflows Team",
+      "first_seen": "2026-09-28T13:38:07.604170+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 30
 }

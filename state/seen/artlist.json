@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-28T05:05:05.093304+00:00",
+  "last_success": "2026-09-28T13:38:07.418104+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
+    "AD.27F": {
+      "title": "AI Application Security Engineer",
+      "first_seen": "2026-09-22T11:24:07.938437+00:00"
+    },
     "45.F61": {
       "title": "AI Enterprise Solution Expert",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
@@ -46,10 +50,6 @@
     "EF.07C": {
       "title": "Senior Backend Developer",
       "first_seen": "2026-09-02T16:27:20.390493+00:00"
-    },
-    "AD.27F": {
-      "title": "Senior DevSecOps Engineer",
-      "first_seen": "2026-09-22T11:24:07.938437+00:00"
     }
   },
   "last_board_total": 15

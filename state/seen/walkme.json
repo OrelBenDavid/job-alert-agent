@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T05:05:05.272384+00:00",
-  "last_count": 4,
+  "last_success": "2026-09-28T13:38:07.598339+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
@@ -15,10 +15,14 @@
       "title": "Senior Product Marketing Manager (Temporary Position)",
       "first_seen": "2026-09-02T11:06:52.119913+00:00"
     },
+    "523740d8-98cd-43a2-8c2a-a94fa1c24705": {
+      "title": "Senior Software Engineer - Big Data Platform",
+      "first_seen": "2026-09-28T13:38:07.598339+00:00"
+    },
     "36d967b4-facf-4128-b841-810ccce2e572": {
       "title": "Software Engineer Commando Team",
       "first_seen": "2026-09-23T11:20:30.724337+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }
