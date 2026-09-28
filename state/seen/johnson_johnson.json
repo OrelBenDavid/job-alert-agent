@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-09-28T13:38:07.494604+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-28T21:11:02.406438+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
+    "R-101296": {
+      "title": "Quality Systems Expert",
+      "first_seen": "2026-09-28T21:11:02.406438+00:00"
+    },
     "R-101266": {
       "title": "Quality Systems Team Leader",
       "first_seen": "2026-09-28T13:38:07.494604+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }

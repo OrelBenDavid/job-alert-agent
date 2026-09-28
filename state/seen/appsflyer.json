@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T13:38:07.416156+00:00",
-  "last_count": 12,
+  "last_success": "2026-09-28T21:11:02.369009+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
@@ -43,6 +43,10 @@
       "title": "Security Architect",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
     },
+    "8852064002": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-09-28T21:11:02.369009+00:00"
+    },
     "8535473002": {
       "title": "Senior Support Engineer",
       "first_seen": "2026-08-18T19:28:22.746067+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-20T13:03:13.900782+00:00"
     }
   },
-  "last_board_total": 43
+  "last_board_total": 44
 }

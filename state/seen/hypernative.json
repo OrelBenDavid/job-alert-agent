@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-28T13:38:07.474710+00:00",
+  "last_success": "2026-09-28T21:11:02.399398+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,12 +11,12 @@
       "title": "BE R&D Team Lead",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
+    "62.37A": {
+      "title": "HR & Talent Partner (Temporary Position)",
+      "first_seen": "2026-09-28T21:11:02.399398+00:00"
+    },
     "81.262": {
       "title": "Security Research Engineer",
-      "first_seen": "2026-08-20T06:56:53.996569+00:00"
-    },
-    "1A.B5F": {
-      "title": "Senior Backend Software Engineer",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
     "2A.B5B": {

@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-09-28T13:38:07.450191+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-28T21:11:02.384419+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "b39bbd95-5891-4bf8-b460-d485900da7e6": {
       "title": "Communication PHY Algorithms Engineer",
-      "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "f0fa08d2-0d69-408c-b45f-05e0cb794660": {
-      "title": "Controller",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
     "dc1b0f80-3ba6-4077-b815-41d3a2ccdeab": {
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 21
 }

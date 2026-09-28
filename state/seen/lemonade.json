@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T13:38:07.506001+00:00",
-  "last_count": 27,
+  "last_success": "2026-09-28T21:11:02.409251+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -26,6 +26,10 @@
     "997826c2-f2d5-4988-9ecf-ead1c39e8480": {
       "title": "CLX Property Advocate, Liability",
       "first_seen": "2026-09-21T19:56:41.215850+00:00"
+    },
+    "db553023-cb55-4ec8-92a9-5ae7ec315818": {
+      "title": "CLX Pet Advocate",
+      "first_seen": "2026-09-28T21:11:02.409251+00:00"
     },
     "1d294035-e723-497b-bdc4-f95d0b4a5573": {
       "title": "Senior Director of Engineering",
@@ -110,7 +114,11 @@
     "7c2c925f-480d-40dc-bbeb-fd71065cd276": {
       "title": "Staff Product Designer",
       "first_seen": "2026-09-16T21:12:04.430224+00:00"
+    },
+    "c6f9237e-b270-4692-b427-3a72ef98c6ea": {
+      "title": "Director of Talent Acquisition",
+      "first_seen": "2026-09-28T21:11:02.409251+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 39
 }

@@ -1,14 +1,14 @@
 {
-  "last_success": "2026-09-28T13:38:07.398081+00:00",
+  "last_success": "2026-09-28T21:11:02.362640+00:00",
   "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-51251b22-2f6c-5d92-83f1-eeb61baa37c0-T1788691456-744000152182655": {
+      "title": "Treasury & Automation Analyst",
+      "first_seen": "2026-09-28T21:11:02.362640+00:00"
+    },
     "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000152173702": {
       "title": "User Acquisition Analyst- Base44",
-      "first_seen": "2026-09-28T13:38:07.398081+00:00"
-    },
-    "https://careers.wix.com/position/oracle-51251b22-2f6c-5d92-83f1-eeb61baa37c0-T1788691456-744000152091289": {
-      "title": "Treasury & Automation Analyst",
       "first_seen": "2026-09-28T13:38:07.398081+00:00"
     },
     "https://careers.wix.com/position/oracle-d5a4b6da-e535-5ca0-b4f6-318fbb7fa707-T1785835786-744000152029748": {

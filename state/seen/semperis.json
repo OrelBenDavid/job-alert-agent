@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-28T13:38:07.575233+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-28T21:11:02.446885+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "539020fb-cbe5-4cb1-a550-4a63c440ceb5": {
@@ -10,10 +10,6 @@
     "e536f847-0553-4b2d-9bc6-e2c008e4688d": {
       "title": "Receptionist",
       "first_seen": "2026-08-30T11:45:37.338138+00:00"
-    },
-    "29e6e0f9-328b-48e0-bcda-68dcfd4c4e42": {
-      "title": "Revenue Controller",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "60055110-5514-476c-b385-f189558695bf": {
       "title": "Product Support Engineer, Team Lead",
@@ -26,11 +22,7 @@
     "c1da783e-3f12-4b2f-b991-a7a4aafe282b": {
       "title": "Director of Platform Engineering",
       "first_seen": "2026-09-08T21:02:17.586589+00:00"
-    },
-    "8569cc43-d45e-4351-b305-f94c58dc1cad": {
-      "title": "Senior SecOps Engineer",
-      "first_seen": "2026-09-28T13:38:07.575233+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 27
 }
