@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-29T12:38:07.511945+00:00",
-  "last_count": 20,
+  "last_success": "2026-09-29T19:55:52.317206+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "4C.C69": {
@@ -55,6 +55,10 @@
       "title": "Revenue Operations Manager",
       "first_seen": "2026-09-27T11:52:38.268159+00:00"
     },
+    "A1.543": {
+      "title": "Security Analyst (Student Position)",
+      "first_seen": "2026-09-29T19:55:52.317206+00:00"
+    },
     "26.D6E": {
       "title": "Senior Vulnerability Researcher",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 76
+  "last_board_total": 77
 }

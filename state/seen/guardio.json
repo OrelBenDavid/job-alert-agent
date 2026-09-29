@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-29T12:38:07.393850+00:00",
-  "last_count": 24,
+  "last_success": "2026-09-29T19:55:52.214832+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
@@ -55,10 +55,6 @@
       "title": "Lifecycle & Automation Lead",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "D6.072": {
-      "title": "Office Admin",
-      "first_seen": "2026-08-18T13:00:34.210560+00:00"
-    },
     "6E.C60": {
       "title": "People Operations",
       "first_seen": "2026-09-17T11:28:45.580905+00:00"
@@ -100,5 +96,5 @@
       "first_seen": "2026-09-28T21:11:02.396696+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

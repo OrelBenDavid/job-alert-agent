@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-09-29T12:38:07.452362+00:00",
+  "last_success": "2026-09-29T19:55:52.264915+00:00",
   "last_count": 147,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022769": {
+      "title": "Senior Principal Software Engineer Chief Architect Office - (Idira)",
+      "first_seen": "2026-09-29T19:55:52.264915+00:00"
+    },
+    "JR-018773": {
+      "title": "Principal DevOps Engineer - AI Platforms",
+      "first_seen": "2026-09-29T19:55:52.264915+00:00"
+    },
+    "JR-018152": {
+      "title": "Senior Staff Software Engineer (Endpoint Privilege Manager - Idira)",
+      "first_seen": "2026-08-23T09:01:22.409577+00:00"
+    },
+    "JR-021052": {
+      "title": "Senior Staff C++ Win Engineer (Endpoint Privilege Manager - Idira)",
+      "first_seen": "2026-08-18T22:29:25.523407+00:00"
+    },
     "JR-022741": {
       "title": "Principal Software Engineer for SaaS (SIA for Databases)- Idira",
       "first_seen": "2026-09-29T12:38:07.452362+00:00"
@@ -371,10 +387,6 @@
       "title": "Sr. Product Manager, Technology Alliances",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-021052": {
-      "title": "Senior Staff C++ Win Engineer (EPM-Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-019895": {
       "title": "Principal DevOps Engineer (Prisma Access Browser)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -479,10 +491,6 @@
       "title": "Senior Principal Quality Lead (Idira)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018152": {
-      "title": "Senior Staff Software Engineer (EPM)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018226": {
       "title": "Manager, SW Engineering (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -513,10 +521,6 @@
     },
     "JR-018899": {
       "title": "Principal AI Software Engineer (CORA AI)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-018778": {
-      "title": "Principal DevOps Engineer - AI Platforms (Cortex)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-018658": {
@@ -577,10 +581,6 @@
     },
     "JR-014484": {
       "title": "Sr Product Manager - Cortex cloud ASPM",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-016673": {
-      "title": "Senior/Principal Backend Engineer (CIEM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-014644": {
