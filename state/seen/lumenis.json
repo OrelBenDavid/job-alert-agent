@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-09-29T05:29:21.144450+00:00",
-  "last_count": 7,
+  "last_success": "2026-09-29T12:38:07.415066+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "2E.C6E": {
       "title": "Assistant Controller- EMEA",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
-    "83.27B": {
-      "title": "Bookkeeper",
-      "first_seen": "2026-09-07T12:15:49.281988+00:00"
     },
     "D2.D6D": {
       "title": "Clinical Manager",
@@ -23,14 +19,10 @@
       "title": "NPI Engineer",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     },
-    "F1.D65": {
-      "title": "Project Engineer",
-      "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
     "73.E6E": {
       "title": "Regional Sales Manager EU",
       "first_seen": "2026-08-19T09:41:25.011152+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 6
 }

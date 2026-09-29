@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-29T05:29:21.208104+00:00",
+  "last_success": "2026-09-29T12:38:07.501776+00:00",
   "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
@@ -163,6 +163,10 @@
       "title": "Team8 Stealth Mode Startup-Marketing Lead",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
+    "3F.C6D": {
+      "title": "Team8 Stealth Startup- CTO (IC)",
+      "first_seen": "2026-09-29T12:38:07.501776+00:00"
+    },
     "2C.F66": {
       "title": "Team8- Bookkeeper",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
@@ -178,10 +182,6 @@
     "5F.277": {
       "title": "Team8-Executive Assistant-Temp-Maternity leave replacement",
       "first_seen": "2026-09-22T16:46:17.025754+00:00"
-    },
-    "1F.07C": {
-      "title": "Team8-Office & Employee Experience Manager-  Maternity Leave Cover",
-      "first_seen": "2026-08-24T09:56:22.925881+00:00"
     },
     "13.46A": {
       "title": "US CPA – Financial Intelligence Architect (Service SMB Focus)",

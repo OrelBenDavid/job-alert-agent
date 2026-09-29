@@ -1,7 +1,7 @@
 {
   "last_success": "2026-09-29T05:29:21.097380+00:00",
   "last_count": 3,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "eb1b2fb8-38b2-4ad9-b486-2c6af5ee363a": {
       "title": "Devops Engineer",

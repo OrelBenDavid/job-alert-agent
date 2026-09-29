@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-29T05:29:21.177418+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-29T12:38:07.458601+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
-    "4943620101": {
-      "title": "2D Animator",
-      "first_seen": "2026-08-13T11:24:34.316436+00:00"
-    },
     "4901047101": {
       "title": "3D Character Animator",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-26T07:01:03.601442+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

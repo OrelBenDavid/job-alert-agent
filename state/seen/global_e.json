@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-29T05:29:21.121941+00:00",
-  "last_count": 17,
+  "last_success": "2026-09-29T12:38:07.382544+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "D9.963": {
@@ -70,7 +70,11 @@
     "0B.279": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-14T12:31:04.055441+00:00"
+    },
+    "D2.372": {
+      "title": "Trade Compliance Specialist",
+      "first_seen": "2026-09-29T12:38:07.382544+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 50
 }

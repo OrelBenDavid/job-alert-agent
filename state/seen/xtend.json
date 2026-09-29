@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-29T05:29:21.224666+00:00",
-  "last_count": 14,
+  "last_success": "2026-09-29T12:38:07.525087+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "DF.665": {
@@ -31,6 +31,10 @@
       "title": "Employee Experience & Office Manager",
       "first_seen": "2026-09-01T08:32:41.905061+00:00"
     },
+    "52.37A": {
+      "title": "Engineering Pilot",
+      "first_seen": "2026-09-29T12:38:07.525087+00:00"
+    },
     "B1.37B": {
       "title": "Financial Controller",
       "first_seen": "2026-09-27T16:51:09.834269+00:00"
@@ -60,5 +64,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 30
 }

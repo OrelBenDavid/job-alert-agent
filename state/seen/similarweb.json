@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-29T05:29:21.199010+00:00",
-  "last_count": 25,
+  "last_success": "2026-09-29T12:38:07.479020+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "7556263": {
@@ -35,6 +35,10 @@
       "title": "Director of Business Analytics",
       "first_seen": "2026-08-24T09:56:22.918238+00:00"
     },
+    "8239114": {
+      "title": "Equity Manager",
+      "first_seen": "2026-09-29T12:38:07.479020+00:00"
+    },
     "7785555": {
       "title": "Market Intelligence Representative (MIR) | French Speaker",
       "first_seen": "2026-08-30T11:45:37.340825+00:00"
@@ -50,6 +54,10 @@
     "7548388": {
       "title": "Product Analyst",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8239121": {
+      "title": "Product Data Scientist (Customer-facing)",
+      "first_seen": "2026-09-29T12:38:07.479020+00:00"
     },
     "8152015": {
       "title": "Product Designer, Growth-Maternity Leave Replacement",
@@ -104,5 +112,5 @@
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
     }
   },
-  "last_board_total": 70
+  "last_board_total": 71
 }

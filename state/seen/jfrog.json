@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-09-29T05:29:21.134945+00:00",
+  "last_success": "2026-09-29T12:38:07.403729+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
-      "title": "AI Solutions Specialist",
+      "title": "AI Solutions Builder",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
     },
     "8167054": {
