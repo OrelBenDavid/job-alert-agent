@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-30T09:34:02.764160+00:00",
+  "last_success": "2026-09-30T17:56:23.306517+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,13 +23,13 @@
       "title": "Bookkeeper",
       "first_seen": "2026-08-24T13:05:04.515858+00:00"
     },
+    "C2.37D": {
+      "title": "Business Data Analyst",
+      "first_seen": "2026-09-30T17:56:23.306517+00:00"
+    },
     "2F.07C": {
       "title": "FP&A Analyst",
       "first_seen": "2026-08-26T13:07:18.688200+00:00"
-    },
-    "22.347": {
-      "title": "Game Economist",
-      "first_seen": "2026-08-27T14:03:31.475374+00:00"
     },
     "FB.F66": {
       "title": "Head of Data",

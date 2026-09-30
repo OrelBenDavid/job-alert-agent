@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-30T09:34:02.731057+00:00",
+  "last_success": "2026-09-30T17:56:23.270457+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -56,7 +56,7 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "7E.A62": {
-      "title": "Production Engineering Leader",
+      "title": "Production Engineering Lead",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "82.D69": {
@@ -96,5 +96,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 63
 }

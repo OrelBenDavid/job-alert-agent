@@ -1,7 +1,7 @@
 {
   "last_success": "2026-09-30T09:34:02.711704+00:00",
   "last_count": 84,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "4863862101": {
       "title": "AI Full-Stack Developer",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-30T09:34:02.271129+00:00",
-  "last_count": 15,
+  "last_success": "2026-09-30T17:56:23.170949+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "82.F6C": {
@@ -46,10 +46,6 @@
     "5E.173": {
       "title": "Formal verification engineer",
       "first_seen": "2026-09-01T14:06:10.570475+00:00"
-    },
-    "4A.767": {
-      "title": "R&D Technical Project Manager, AI Division",
-      "first_seen": "2026-08-13T11:24:10.823521+00:00"
     },
     "4C.F6C": {
       "title": "Senior Compiler Engineer",

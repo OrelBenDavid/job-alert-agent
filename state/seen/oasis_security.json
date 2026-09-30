@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-09-30T09:34:02.716256+00:00",
-  "last_count": 1,
+  "last_success": "2026-09-30T17:56:23.252697+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "5263080008": {
-      "title": "Solution Architect",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    }
-  },
-  "last_board_total": 1
+  "jobs": {},
+  "last_board_total": 0
 }

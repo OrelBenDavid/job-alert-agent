@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-30T09:34:02.692162+00:00",
+  "last_success": "2026-09-30T17:56:23.226365+00:00",
   "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
@@ -13,10 +13,6 @@
     },
     "7cdf4386-e378-42b6-8f52-58ef7ff99ba8": {
       "title": "Backend Engineer - ML Platform",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "c3b3d3f7-73b6-47d7-aaba-e1229b851a8a": {
-      "title": "Data Group Tech Lead, Staff Engineer",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "fa5d18a4-f425-4e88-8d9c-340f3bb32a8f": {
@@ -46,6 +42,10 @@
     "8fbb803d-fd4d-4472-b8e4-a4af6e0cd037": {
       "title": "Data Warehouse Tech Lead",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
+    },
+    "a1eb0625-40de-4e1a-992f-8f5bdc1af1d7": {
+      "title": "Senior Learning Designer, Leadership Development",
+      "first_seen": "2026-09-30T17:56:23.226365+00:00"
     },
     "581af361-6d5e-4bda-a380-5fdaf49a6f31": {
       "title": "Senior Director of Brand Marketing",
