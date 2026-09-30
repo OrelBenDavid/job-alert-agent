@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-09-30T17:56:23.235839+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-30T22:09:48.644849+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "R415292": {
       "title": "EHS Lead",
       "first_seen": "2026-09-18T16:16:36.672194+00:00"
-    },
-    "R389182": {
-      "title": "PCBA Technologist for Engineering Team",
-      "first_seen": "2026-08-23T09:01:21.827833+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 3
 }

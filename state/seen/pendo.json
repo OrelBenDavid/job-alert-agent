@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-30T17:56:23.261528+00:00",
-  "last_count": 2,
+  "last_success": "2026-09-30T22:09:48.668918+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8839291002": {
@@ -10,7 +10,11 @@
     "8446575002": {
       "title": "Sr. AI Backend & Data Engineer",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
+    },
+    "8858977002": {
+      "title": "Sr. Product Manager, Mobile SDK - 9-Month Fixed-Term",
+      "first_seen": "2026-09-30T22:09:48.668918+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }

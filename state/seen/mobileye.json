@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-30T17:56:23.239460+00:00",
-  "last_count": 153,
+  "last_success": "2026-09-30T22:09:48.648408+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -42,10 +42,6 @@
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
-    },
-    "2dcef828-5169-4a8c-8975-6f4cedf183d9": {
-      "title": "Applied AI Engineer - Temporary Position",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "73a651f5-963c-447d-b0ae-b6c9ee06f684": {
       "title": "Applied AI Researcher - Visual GenAI",
@@ -616,5 +612,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 181
 }

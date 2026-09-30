@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-09-30T09:34:02.711704+00:00",
-  "last_count": 84,
-  "consecutive_failures": 1,
+  "last_success": "2026-09-30T22:09:48.653631+00:00",
+  "last_count": 86,
+  "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
       "title": "AI Full-Stack Developer",
@@ -53,10 +53,6 @@
     },
     "4918986101": {
       "title": "Detection Engineering & Response Engineer",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4948062101": {
-      "title": "DevOps Engineer (Agentic Search)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4930968101": {
@@ -187,6 +183,10 @@
       "title": "Security Solutions Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "4990886101": {
+      "title": "Senior Applied Scientist, Efficient LLM Inference & Model Optimization",
+      "first_seen": "2026-09-30T22:09:48.653631+00:00"
+    },
     "4930028101": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -255,6 +255,10 @@
       "title": "Senior Security & Operations Coordinator",
       "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
+    "4948062101": {
+      "title": "Senior Site Reliability Engineer (Agentic Search)",
+      "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
     "4889227101": {
       "title": "Senior Site Reliability Engineer (DevTools)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -262,6 +266,10 @@
     "4376374101": {
       "title": "Senior Site Reliability Engineer (SRE)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4989755101": {
+      "title": "Senior Software Engineer - Search Application (Agentic Search)",
+      "first_seen": "2026-09-30T22:09:48.653631+00:00"
     },
     "4754609101": {
       "title": "Senior Software Engineer (Token Factory)",
@@ -340,5 +348,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 376
+  "last_board_total": 377
 }

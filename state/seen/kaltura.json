@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-30T17:56:23.222279+00:00",
+  "last_success": "2026-09-30T22:09:48.619898+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,9 +23,9 @@
       "title": "DevOps Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "C2.079-97.006": {
-      "title": "FDE",
-      "first_seen": "2026-09-30T09:34:02.680375+00:00"
+    "96.37A": {
+      "title": "Forward Deployed Engineer",
+      "first_seen": "2026-09-30T22:09:48.619898+00:00"
     },
     "45.F66": {
       "title": "HR manager (Maternity Leave Cover)",
