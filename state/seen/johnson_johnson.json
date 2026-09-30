@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-09-30T00:18:13.976937+00:00",
-  "last_count": 19,
+  "last_success": "2026-09-30T09:34:02.304459+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "R-069067": {
+      "title": "Medical Device Sales Representative- Central Israel (Shfela area)",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-080950": {
+      "title": "Embedded Software Engineer",
+      "first_seen": "2026-09-30T09:34:02.304459+00:00"
+    },
+    "R-087063": {
+      "title": "Medical device Sales Representative- Jerusalem area",
+      "first_seen": "2026-08-23T09:01:19.830908+00:00"
+    },
+    "R-091273": {
+      "title": "Sales Representative for the Surgery team",
+      "first_seen": "2026-09-30T09:34:02.304459+00:00"
+    },
     "R-101296": {
       "title": "Quality Systems Expert",
       "first_seen": "2026-09-28T21:11:02.406438+00:00"
@@ -43,10 +59,6 @@
       "title": "Quality Engineer",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     },
-    "R-087063": {
-      "title": "Medical device Sales Representative",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
     "R-087909": {
       "title": "Hardware Analog Engineer",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -74,11 +86,7 @@
     "R-080936": {
       "title": "Systems Engineer",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
-    "R-069067": {
-      "title": "Medical Device Sales Representative",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 22
 }

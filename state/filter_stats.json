@@ -1,32 +1,32 @@
 {
-  "last_run_at": "2026-09-30T00:18:14.075094+00:00",
+  "last_run_at": "2026-09-30T09:34:02.782172+00:00",
   "last_run": {
     "role": {
-      "target_role": 4,
-      "off_target": 0,
-      "unclassified_sent": 1,
+      "target_role": 6,
+      "off_target": 5,
+      "unclassified_sent": 7,
       "unclassified_dropped": 0
     },
     "experience": {
-      "rejected_by_title": 4,
+      "rejected_by_title": 9,
       "passed_with_number": 0,
       "rejected_with_number": 1,
-      "undetermined": 0,
-      "undetermined_signals": 0
+      "undetermined": 1,
+      "undetermined_signals": 2
     }
   },
   "totals": {
     "experience": {
-      "rejected_by_title": 982,
+      "rejected_by_title": 991,
       "passed_with_number": 53,
-      "rejected_with_number": 357,
-      "undetermined": 281,
-      "undetermined_signals": 102
+      "rejected_with_number": 358,
+      "undetermined": 282,
+      "undetermined_signals": 104
     },
     "role": {
-      "target_role": 1156,
-      "off_target": 406,
-      "unclassified_sent": 415,
+      "target_role": 1162,
+      "off_target": 411,
+      "unclassified_sent": 422,
       "unclassified_dropped": 0
     }
   }

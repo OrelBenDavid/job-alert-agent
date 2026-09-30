@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-09-30T00:18:13.991686+00:00",
-  "last_count": 3,
+  "last_success": "2026-09-30T09:34:02.700402+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "2F.F63": {
-      "title": "Ad Ops Manager",
-      "first_seen": "2026-08-20T06:56:56.889318+00:00"
-    },
     "79.E6F": {
       "title": "Data Scientist",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
@@ -16,5 +12,5 @@
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

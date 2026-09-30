@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-09-30T00:18:13.931025+00:00",
-  "last_count": 38,
+  "last_success": "2026-09-30T09:34:02.270063+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -37,10 +37,6 @@
     },
     "4949427101": {
       "title": "Facilities Operations Specialist",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4769033101": {
-      "title": "Field AI Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4853323101": {
@@ -156,5 +152,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 96
+  "last_board_total": 95
 }

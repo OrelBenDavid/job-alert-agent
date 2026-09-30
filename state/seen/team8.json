@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-09-30T00:18:14.054358+00:00",
+  "last_success": "2026-09-30T09:34:02.766945+00:00",
   "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
@@ -164,7 +164,7 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "3F.C6D": {
-      "title": "Team8 Stealth Startup- CTO (IC)",
+      "title": "Team8 Stealth Startup- CTO",
       "first_seen": "2026-09-29T12:38:07.501776+00:00"
     },
     "2C.F66": {
