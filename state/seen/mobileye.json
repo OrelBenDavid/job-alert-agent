@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T12:58:35.309410+00:00",
-  "last_count": 149,
+  "last_success": "2026-10-01T20:18:05.241549+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -42,6 +42,10 @@
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
+    },
+    "da7710f3-ab2e-4d26-9603-a1a71b2338cc": {
+      "title": "AVV PMO",
+      "first_seen": "2026-10-01T20:18:05.241549+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -551,11 +555,11 @@
       "title": "System validation engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
     },
-    "35d41f76-5f20-4fc8-b108-f761582083f2": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-09-02T16:27:20.471052+00:00"
+    "758f27a6-1204-434a-b55d-8cbef1069d01": {
+      "title": "Talent Acquisition Partner",
+      "first_seen": "2026-10-01T20:18:05.241549+00:00"
     },
-    "79932ba7-840a-4c1b-8dca-80722712d51b": {
+    "35d41f76-5f20-4fc8-b108-f761582083f2": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
     },
@@ -600,5 +604,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 178
+  "last_board_total": 179
 }

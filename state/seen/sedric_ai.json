@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T12:58:35.347049+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-01T20:18:05.281915+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
@@ -14,11 +14,7 @@
     "EC.077": {
       "title": "Senior Backend Software Engineer",
       "first_seen": "2026-09-02T11:06:52.094090+00:00"
-    },
-    "F4.F65": {
-      "title": "Software Engineer Team Leader",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 4
 }

@@ -1,20 +1,12 @@
 {
-  "last_success": "2026-10-01T12:58:35.242805+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-01T20:18:05.172016+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
       "title": "Fullstack Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "9a4eec37-952c-4a79-8991-9fe5d1fcd5d4": {
-      "title": "Applied AI Attorney",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "3f9db6ac-7e75-456d-b724-e5a318717db3": {
-      "title": "Lead Customer Success Manager",
-      "first_seen": "2026-09-01T08:32:41.318947+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 7
 }

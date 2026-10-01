@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T12:58:35.237498+00:00",
-  "last_count": 35,
+  "last_success": "2026-10-01T20:18:05.170045+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -62,10 +62,6 @@
     "4908469101": {
       "title": "Payroll Admin",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4976758101": {
-      "title": "Product Management - PLG",
-      "first_seen": "2026-09-27T11:52:38.138386+00:00"
     },
     "4633928101": {
       "title": "Product Manager - Access",
@@ -144,5 +140,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 96
+  "last_board_total": 95
 }

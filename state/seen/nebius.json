@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T12:58:35.314473+00:00",
-  "last_count": 85,
+  "last_success": "2026-10-01T20:18:05.249081+00:00",
+  "last_count": 83,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -73,10 +73,6 @@
     },
     "4941795101": {
       "title": "Electrical Engineer- Data Centers",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4773113101": {
-      "title": "Executive Support IT Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4767268101": {
@@ -191,13 +187,13 @@
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4724503101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-09T16:27:11.356104+00:00"
-    },
     "4982904101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    },
+    "4724503101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
     "4939760101": {
       "title": "Senior HR Systems Analyst",
@@ -287,10 +283,6 @@
       "title": "Senior Support Engineer - EU",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4837283101": {
-      "title": "Senior Systems Software Engineer, GPU Compute",
-      "first_seen": "2026-09-25T11:39:57.131193+00:00"
-    },
     "4844291101": {
       "title": "Senior Technical Program Manager (Cloud Platform)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -344,5 +336,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 372
+  "last_board_total": 373
 }

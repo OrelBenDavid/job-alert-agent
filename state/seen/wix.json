@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-01T12:58:35.212917+00:00",
-  "last_count": 35,
+  "last_success": "2026-10-01T20:18:05.146027+00:00",
+  "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-742b13eb-7d73-5bf5-8b36-1a2b1496f5ac-T1790851709-744000152936549": {
+      "title": "Performance Marketing Analyst",
+      "first_seen": "2026-10-01T20:18:05.146027+00:00"
+    },
     "https://careers.wix.com/position/oracle-95a6acf6-c476-51f1-8f67-73d97a6e17cb-T1790858013-744000152930574": {
       "title": "DevOps Engineer - Base44",
       "first_seen": "2026-10-01T12:58:35.212917+00:00"
