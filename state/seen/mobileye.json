@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T05:32:14.679997+00:00",
-  "last_count": 152,
+  "last_success": "2026-10-01T12:58:35.309410+00:00",
+  "last_count": 149,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -42,10 +42,6 @@
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
-    },
-    "73a651f5-963c-447d-b0ae-b6c9ee06f684": {
-      "title": "Applied AI Researcher - Visual GenAI",
-      "first_seen": "2026-09-29T12:38:07.422231+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -137,10 +133,6 @@
     },
     "cbb56190-180f-4d21-8a21-95418a3eb8a5": {
       "title": "Embedded Linux OS Architect",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "608dac79-7323-419b-a044-8b8e8fd26618": {
-      "title": "Embedded Software Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "d1f956e3-fc71-4a88-90d1-bdaf99fa96f0": {
@@ -235,10 +227,6 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "8ad31b79-8816-4142-a677-4bea7a452328": {
-      "title": "Experienced Software Engineer - Data Infrastructure",
-      "first_seen": "2026-09-24T11:33:41.898207+00:00"
-    },
     "45b127ea-6069-420f-81fd-adf236d08de4": {
       "title": "Experienced Software Linux Integration Engineer - OS team",
       "first_seen": "2026-09-01T14:06:11.124056+00:00"
@@ -258,6 +246,10 @@
     "15ecbd22-fd82-431c-93ff-2ece2caf808e": {
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
+    },
+    "290558a5-2d4b-459d-9739-28cd904b7d6c": {
+      "title": "Hardware Team Lead",
+      "first_seen": "2026-10-01T12:58:35.309410+00:00"
     },
     "ff18850c-3397-4fde-aedb-383b83c249ea": {
       "title": "HVAC & Refrigeration Systems Technician",
@@ -338,6 +330,10 @@
     "fddc1e14-fb29-4181-9228-2a0e12d299bc": {
       "title": "Real-Time Embedded SW Engineer",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
+    },
+    "73a651f5-963c-447d-b0ae-b6c9ee06f684": {
+      "title": "Senior AI Researcher - VIsual GenAI",
+      "first_seen": "2026-09-29T12:38:07.422231+00:00"
     },
     "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
       "title": "Senior Algorithm Engineer - Model Training & Optimization",
@@ -527,10 +523,6 @@
       "title": "Software Group Manager - OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "f10044d7-c978-4fed-bb58-0bd0170ab8ec": {
-      "title": "Software Integration and Field Application Engineer",
-      "first_seen": "2026-08-18T13:00:34.221999+00:00"
-    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -562,10 +554,6 @@
     "35d41f76-5f20-4fc8-b108-f761582083f2": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
-    },
-    "5aeac1a2-386c-4444-ac70-584f3a96a19d": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-09-10T11:06:09.934558+00:00"
     },
     "79932ba7-840a-4c1b-8dca-80722712d51b": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
@@ -612,5 +600,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 178
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T05:32:14.720940+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-01T12:58:35.347423+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "3E.17E": {
@@ -11,14 +11,10 @@
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-20T06:56:59.874097+00:00"
     },
-    "03.76D": {
-      "title": "Senior Python AI Engineer (LLM & Multi-Agent Systems)",
-      "first_seen": "2026-08-20T06:56:59.874097+00:00"
-    },
     "13.761": {
       "title": "Senior Software Engineer \\ Search Engineer  (Elasticsearch & Vector Search)",
       "first_seen": "2026-08-20T06:56:59.874097+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 10
 }

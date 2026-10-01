@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T05:32:14.722267+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-01T12:58:35.348698+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "F6.078": {
@@ -23,14 +23,10 @@
       "title": "Senior Backend Engineer (Data Team)",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     },
-    "6E.E61": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-20T06:56:59.884573+00:00"
-    },
     "88.155": {
       "title": "Software Architect",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

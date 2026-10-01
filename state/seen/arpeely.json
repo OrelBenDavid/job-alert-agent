@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T05:32:14.588492+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-01T12:58:35.225252+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "69.766": {
@@ -27,10 +27,6 @@
       "title": "Director of User Acquisition & Media Buying",
       "first_seen": "2026-09-29T19:55:52.163970+00:00"
     },
-    "2D.F69": {
-      "title": "Office Manager",
-      "first_seen": "2026-08-13T11:24:10.788867+00:00"
-    },
     "50.373": {
       "title": "Product Data Analyst",
       "first_seen": "2026-09-23T21:24:50.321793+00:00"
@@ -38,10 +34,6 @@
     "9F.078": {
       "title": "Senior AI Growth Builder",
       "first_seen": "2026-09-01T18:20:52.129738+00:00"
-    },
-    "F3.B65": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-08-13T11:24:10.788867+00:00"
     },
     "8D.07C": {
       "title": "Senior Full-Stack Mobile Developer",
@@ -52,5 +44,5 @@
       "first_seen": "2026-08-13T11:24:10.788867+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 10
 }

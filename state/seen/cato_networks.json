@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T05:32:14.601513+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-01T12:58:35.237498+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "4863034101": {
@@ -142,11 +142,7 @@
     "4650566101": {
       "title": "Talent Acquisition Partner - Temporary",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4920920101": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 95
+  "last_board_total": 96
 }
