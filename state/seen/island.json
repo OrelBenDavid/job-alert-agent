@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-01T20:18:05.223092+00:00",
-  "last_count": 8,
+  "last_success": "2026-10-02T00:38:56.838284+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "66.95E": {
@@ -34,7 +34,11 @@
     "4E.D3D": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "51.373": {
+      "title": "Technical Account Manager - U.S. Federal",
+      "first_seen": "2026-10-02T00:38:56.838284+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 40
 }
