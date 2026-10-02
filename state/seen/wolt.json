@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-02T09:36:50.714584+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-02T17:47:12.720219+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -18,6 +18,10 @@
     "7865639": {
       "title": "Enterprise Sales - Retail Media",
       "first_seen": "2026-09-17T11:28:45.975440+00:00"
+    },
+    "8245851": {
+      "title": "Head of Public Policy - Israel",
+      "first_seen": "2026-10-02T17:47:12.720219+00:00"
     },
     "8171321": {
       "title": "Media Sales SMB",
@@ -56,5 +60,5 @@
       "first_seen": "2026-09-29T12:38:07.520411+00:00"
     }
   },
-  "last_board_total": 219
+  "last_board_total": 215
 }
