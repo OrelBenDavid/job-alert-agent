@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-03T16:06:38.837425+00:00",
-  "last_count": 150,
+  "last_success": "2026-10-03T20:56:32.600168+00:00",
+  "last_count": 149,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -54,10 +54,6 @@
     "a6711d79-22df-4e2f-a21a-3b31b9337175": {
       "title": "Building Systems & Technical Projects Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
-    },
-    "9495066e-ebcc-49ed-bac5-0480be15753f": {
-      "title": "C++ Software Engineer",
-      "first_seen": "2026-09-15T16:48:16.854612+00:00"
     },
     "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
       "title": "Camera System Engineer",
@@ -604,5 +600,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 179
+  "last_board_total": 178
 }
