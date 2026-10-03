@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-03T20:56:32.587797+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-03T23:43:52.592847+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "R-069067": {
@@ -51,10 +51,6 @@
       "title": "Assistant Controller",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     },
-    "R-087332": {
-      "title": "Customer Service Representative",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
     "R-093278": {
       "title": "Quality Engineer",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -88,5 +84,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }
