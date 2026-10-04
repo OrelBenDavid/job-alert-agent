@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.207992+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-04T12:11:38.128989+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "8333912002": {
@@ -27,10 +27,6 @@
       "title": "IT Manager",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     },
-    "5315164002": {
-      "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-18T19:28:26.423735+00:00"
-    },
     "6918572002": {
       "title": "Senior iOS Software Engineer",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
@@ -40,5 +36,5 @@
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

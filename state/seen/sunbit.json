@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-04T05:34:53.257802+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-04T12:11:38.531499+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "32.A60": {
       "title": "Application Security Engineer",
       "first_seen": "2026-08-20T06:56:59.893603+00:00"
+    },
+    "B2.36C": {
+      "title": "Deputy CISO",
+      "first_seen": "2026-10-04T12:11:38.531499+00:00"
     },
     "B5.279": {
       "title": "Front End Engineer",
@@ -44,5 +48,5 @@
       "first_seen": "2026-08-26T09:51:33.870218+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 45
 }

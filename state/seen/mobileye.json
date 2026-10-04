@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.209385+00:00",
-  "last_count": 148,
+  "last_success": "2026-10-04T12:11:38.480792+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -42,10 +42,6 @@
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
-    },
-    "da7710f3-ab2e-4d26-9603-a1a71b2338cc": {
-      "title": "AVV PMO",
-      "first_seen": "2026-10-01T20:18:05.241549+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -138,6 +134,10 @@
     "d1f956e3-fc71-4a88-90d1-bdaf99fa96f0": {
       "title": "Embedded SW and Validation Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "5dc1fe67-93f1-481c-bbd4-06b3125f7493": {
+      "title": "EU Strategic Account Manager - Temporary",
+      "first_seen": "2026-10-04T12:11:38.480792+00:00"
     },
     "4dea897b-07f2-4e1e-a7a0-8352f15e75bb": {
       "title": "Experience Embedded Integrator",
@@ -254,10 +254,6 @@
     "ff18850c-3397-4fde-aedb-383b83c249ea": {
       "title": "HVAC & Refrigeration Systems Technician",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
-    },
-    "e2ee0c35-3025-490e-9918-e44cfb937907": {
-      "title": "HW R&D Director",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
     },
     "c964c792-eff5-4427-a847-38144b9cd7cd": {
       "title": "Information Security Engineer",
@@ -451,9 +447,21 @@
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "758f27a6-1204-434a-b55d-8cbef1069d01": {
+      "title": "Senior Talent Acquisition Partner",
+      "first_seen": "2026-10-01T20:18:05.241549+00:00"
+    },
+    "d7f0dc54-948b-4917-be5a-539c0fd5f61d": {
+      "title": "Senior Talent Acquisition Partner",
+      "first_seen": "2026-10-04T12:11:38.480792+00:00"
+    },
     "b62913b8-da97-4467-85ff-7d495ef44cf4": {
       "title": "Senior Technical Program Manager",
       "first_seen": "2026-08-20T09:42:36.524681+00:00"
+    },
+    "ec69a3de-fd8e-429c-a492-74c73940a032": {
+      "title": "Senior Technical Project Manager – Robotaxi",
+      "first_seen": "2026-10-04T12:11:38.480792+00:00"
     },
     "72b82d00-3d08-499b-84ca-c90b12db479d": {
       "title": "Senior Technical Project Manager (Autonomous Driving)",
@@ -547,10 +555,6 @@
       "title": "System validation engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
     },
-    "758f27a6-1204-434a-b55d-8cbef1069d01": {
-      "title": "Talent Acquisition Partner",
-      "first_seen": "2026-10-01T20:18:05.241549+00:00"
-    },
     "35d41f76-5f20-4fc8-b108-f761582083f2": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-09-02T16:27:20.471052+00:00"
@@ -583,6 +587,10 @@
       "title": "Technical Support Engineer",
       "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
+    "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
+      "title": "Test Automation Technical Lead",
+      "first_seen": "2026-10-04T12:11:38.480792+00:00"
+    },
     "a6cf562b-dca7-4708-9772-7539a13b9a37": {
       "title": "Validation & Integration Engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
@@ -596,5 +604,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 177
+  "last_board_total": 181
 }

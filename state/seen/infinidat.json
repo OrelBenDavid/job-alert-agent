@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.189032+00:00",
-  "last_count": 29,
+  "last_success": "2026-10-04T12:11:37.784117+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "9D.078": {
@@ -38,6 +38,10 @@
     "EE.C60": {
       "title": "Experienced Test Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "22.372": {
+      "title": "Global Field Support manager",
+      "first_seen": "2026-10-04T12:11:37.784117+00:00"
     },
     "32.D63": {
       "title": "Hardware Integration Engineer",
@@ -120,5 +124,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 47
+  "last_board_total": 48
 }

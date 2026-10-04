@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.174721+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-04T12:11:37.768725+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "6349983002": {
@@ -19,14 +19,10 @@
       "title": "Senior Software Engineer ll, Core Engineering",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "8289641002": {
-      "title": "Senior Software Engineer ll, Customer Experience",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
     "8670848002": {
       "title": "Staff Engineer, Core Engineering",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 25
 }

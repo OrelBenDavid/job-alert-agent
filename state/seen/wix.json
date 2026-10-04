@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-04T05:34:53.124321+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-04T12:11:37.714006+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-2488fc83-3ce8-5faf-8671-2bb2f2f26828-T1791108234-744000153371359": {
+      "title": "UI Designer – Brand UI team",
+      "first_seen": "2026-10-04T12:11:37.714006+00:00"
+    },
     "https://careers.wix.com/position/oracle-742b13eb-7d73-5bf5-8b36-1a2b1496f5ac-T1790851709-744000152936549": {
       "title": "Performance Marketing Analyst",
       "first_seen": "2026-10-01T20:18:05.146027+00:00"

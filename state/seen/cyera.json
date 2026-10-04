@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-04T05:34:53.159982+00:00",
+  "last_success": "2026-10-04T12:11:37.750423+00:00",
   "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,6 +10,10 @@
     "2B.D67": {
       "title": "AI Researcher",
       "first_seen": "2026-09-08T11:05:09.109198+00:00"
+    },
+    "EB.F63": {
+      "title": "Application Security Lead",
+      "first_seen": "2026-10-04T12:11:37.750423+00:00"
     },
     "0B.B65": {
       "title": "Automation Infrastructure Team Lead",
@@ -53,10 +57,6 @@
     },
     "99.553": {
       "title": "Senior Backend Engineer – Core Engineering",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "40.767": {
-      "title": "Senior Data Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "E2.565": {

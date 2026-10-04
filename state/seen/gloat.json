@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.178856+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-04T12:11:37.772425+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "90.376": {
@@ -22,11 +22,7 @@
     "13.F62": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "32.F66": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.259965+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-04T12:11:38.536149+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -11,16 +11,8 @@
       "title": "Algorithm Engineer (RTB)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
-    "8131711": {
-      "title": "Algorithm Team Lead",
-      "first_seen": "2026-08-16T06:53:11.713173+00:00"
-    },
     "7845371": {
       "title": "Assistant Corporate Controller",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
-    "8074372": {
-      "title": "Bidding Strategies Algo Team Leader",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
     "8074123": {
@@ -92,5 +84,5 @@
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 81
 }

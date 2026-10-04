@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.129049+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-04T12:11:37.718028+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "BE.070": {
@@ -14,10 +14,6 @@
     "15.766": {
       "title": "Fraud Threat Analyst",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
-    },
-    "66.27B": {
-      "title": "Global Recruiter - Talent Acquisition Team",
-      "first_seen": "2026-09-09T11:10:07.663778+00:00"
     },
     "E0.E61": {
       "title": "Malware Research (Mid-Level)",
@@ -56,5 +52,5 @@
       "first_seen": "2026-09-23T11:20:30.162183+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 30
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T05:34:53.150361+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-04T12:11:37.737128+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "82.F6C": {
@@ -62,7 +62,11 @@
     "E2.376": {
       "title": "VLSI Backend Team Leader",
       "first_seen": "2026-09-29T12:38:07.355811+00:00"
+    },
+    "B7.374": {
+      "title": "Wireless Platform Architect",
+      "first_seen": "2026-10-04T12:11:37.737128+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 27
 }
