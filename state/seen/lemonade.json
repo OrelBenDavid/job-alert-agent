@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T12:11:38.119530+00:00",
-  "last_count": 31,
+  "last_success": "2026-10-04T18:36:01.503985+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -29,10 +29,6 @@
     },
     "1d294035-e723-497b-bdc4-f95d0b4a5573": {
       "title": "Senior Director of Engineering",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "5a856db7-2c07-4b98-8a01-69d15b98071d": {
-      "title": "Senior Backend Engineer - Platform",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "8e911c39-caae-43d2-8908-d579a2739a0e": {
@@ -128,5 +124,5 @@
       "first_seen": "2026-09-28T21:11:02.409251+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 40
 }

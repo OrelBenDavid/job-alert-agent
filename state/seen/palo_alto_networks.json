@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-04T12:11:38.501118+00:00",
-  "last_count": 148,
+  "last_success": "2026-10-04T18:36:01.844335+00:00",
+  "last_count": 149,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021730": {
+      "title": "C++ Developer - macOS Platform Engineer (Cortex XDR)",
+      "first_seen": "2026-10-04T18:36:01.844335+00:00"
+    },
     "JR-019816": {
       "title": "Experienced Backend Engineer (Cortex Agentix)",
       "first_seen": "2026-10-04T12:11:38.501118+00:00"
@@ -596,5 +600,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 150
+  "last_board_total": 151
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T12:11:38.480792+00:00",
-  "last_count": 150,
+  "last_success": "2026-10-04T18:36:01.832073+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
     "bb661a53-79b8-459d-a8df-5dd419d62596": {
@@ -567,6 +567,10 @@
       "title": "Technical PM",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "e54024e2-45ed-482c-a777-251f602d6484": {
+      "title": "Technical PM",
+      "first_seen": "2026-10-04T18:36:01.832073+00:00"
+    },
     "303d899e-2b03-41f7-97d2-824da4e51190": {
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -604,5 +608,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 182
 }

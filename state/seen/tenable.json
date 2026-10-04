@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T12:11:38.538360+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-04T18:36:02.333192+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "5423058008": {
@@ -10,6 +10,10 @@
     "4019356008": {
       "title": "Product Engineering - Future Opportunities",
       "first_seen": "2026-08-18T19:28:34.688782+00:00"
+    },
+    "5274441008": {
+      "title": "Product Manager - Cloud Risk",
+      "first_seen": "2026-10-04T18:36:02.333192+00:00"
     },
     "5150588008": {
       "title": "Staff Product Manager Cloud Threat Detection",
@@ -24,5 +28,5 @@
       "first_seen": "2026-09-16T16:40:48.763483+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 37
 }
