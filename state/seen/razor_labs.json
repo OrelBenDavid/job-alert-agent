@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-04T23:55:02.684852+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-05T05:18:28.395914+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "CB.D6C": {
@@ -18,11 +18,7 @@
     "98.E61": {
       "title": "Senior Manufacturing & NPI Engineer (Prototype to Low-Volume)",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "E9.D63": {
-      "title": "Senior Technical Project Manager",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 6
 }
