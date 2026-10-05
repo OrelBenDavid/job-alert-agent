@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T05:18:28.404175+00:00",
+  "last_success": "2026-10-05T14:24:12.543071+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "83.272": {
-      "title": "AI Engineer",
-      "first_seen": "2026-09-03T11:04:08.100405+00:00"
-    },
     "73.27E": {
       "title": "AI Engineer Team Lead - Innovation unit",
       "first_seen": "2026-09-03T11:04:08.100405+00:00"
@@ -14,6 +10,10 @@
     "0B.270": {
       "title": "Infrastructure Engineering Lead",
       "first_seen": "2026-09-14T12:31:04.122173+00:00"
+    },
+    "48.371": {
+      "title": "Senior DevOps Architect",
+      "first_seen": "2026-10-05T14:24:12.543071+00:00"
     }
   },
   "last_board_total": 32

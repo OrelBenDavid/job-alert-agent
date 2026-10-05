@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T05:18:28.385736+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-05T14:24:12.511035+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "CE.073": {
@@ -43,6 +43,10 @@
       "title": "Operation Quality TL",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
+    "58.370": {
+      "title": "Program Manager",
+      "first_seen": "2026-10-05T14:24:12.511035+00:00"
+    },
     "BE.07D": {
       "title": "Purchasing Buyer",
       "first_seen": "2026-08-23T15:30:12.098094+00:00"
@@ -54,6 +58,10 @@
     "2D.B6F": {
       "title": "Senior System Engineer AMS",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "CB.D68": {
+      "title": "Student R&D Innovation Team",
+      "first_seen": "2026-10-05T14:24:12.511035+00:00"
     },
     "53.E68": {
       "title": "Supply Chain Manager",
@@ -84,5 +92,5 @@
       "first_seen": "2026-09-03T11:04:08.083592+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 22
 }

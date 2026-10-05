@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T05:18:28.341474+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-05T14:24:12.405464+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "84.F67": {
-      "title": "Data Platform Team Lead",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
     "A6.274": {
       "title": "Head of Billing & Collections",
       "first_seen": "2026-09-09T16:27:11.283848+00:00"
@@ -16,5 +12,5 @@
       "first_seen": "2026-09-29T12:38:07.357350+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

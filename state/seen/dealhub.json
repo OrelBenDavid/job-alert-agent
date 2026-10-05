@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T05:18:28.348986+00:00",
-  "last_count": 14,
+  "last_success": "2026-10-05T14:24:12.423795+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "B5.071": {
@@ -21,10 +21,6 @@
     },
     "A3.753": {
       "title": "Enterprise Account Executive",
-      "first_seen": "2026-08-13T11:24:19.173800+00:00"
-    },
-    "82.E69": {
-      "title": "Head of Social Media",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
     "EF.27B": {
@@ -60,5 +56,5 @@
       "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T05:18:28.352354+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-05T14:24:12.429126+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -22,10 +22,6 @@
     "4E.E46": {
       "title": "Engineering Maps Lead",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
-    },
-    "FC.070": {
-      "title": "Executive Assistant to the CEO",
-      "first_seen": "2026-09-24T11:33:41.851865+00:00"
     },
     "DF.E68": {
       "title": "Field Operations - Global Team",
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-13T12:34:58.624563+00:00"
     }
   },
-  "last_board_total": 68
+  "last_board_total": 67
 }

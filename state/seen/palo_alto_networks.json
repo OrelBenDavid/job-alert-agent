@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-05T05:18:28.387917+00:00",
-  "last_count": 149,
+  "last_success": "2026-10-05T14:24:12.516606+00:00",
+  "last_count": 146,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021720": {
+      "title": "Senior/Principal Product Manager - Data Security (Cortex Cloud)",
+      "first_seen": "2026-09-10T11:06:09.955579+00:00"
+    },
     "JR-021730": {
       "title": "C++ Developer - macOS Platform Engineer (Cortex XDR)",
       "first_seen": "2026-10-04T18:36:01.844335+00:00"
@@ -235,10 +239,6 @@
       "title": "Principal Technical Program Manager",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-020212": {
-      "title": "Sr Staff Engineer Software- Identity SSO (Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-021161": {
       "title": "Director Product Operations (Cortex)",
       "first_seen": "2026-09-01T14:06:11.135965+00:00"
@@ -262,10 +262,6 @@
     "JR-022235": {
       "title": "Director of Israel Tax",
       "first_seen": "2026-09-16T16:40:48.733790+00:00"
-    },
-    "JR-021720": {
-      "title": "Senior/Principal Product Manager - Data Security (Cortex Cloud)",
-      "first_seen": "2026-09-10T11:06:09.955579+00:00"
     },
     "JR-021900": {
       "title": "Software Engineering Manager, Idira Platform Services, Idira Platform Services",
@@ -403,10 +399,6 @@
       "title": "Sr. Product Manager, Technology Alliances",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-019895": {
-      "title": "Principal DevOps Engineer (Prisma Access Browser)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-016613": {
       "title": "Senior AI Engineer (Cortex XSOAR/XSIAM)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -457,10 +449,6 @@
     },
     "JR-019026": {
       "title": "Technical Program Leader - Enterprise SaaS (Idira)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-020081": {
-      "title": "Group Manager – Directory Services (Identity)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-018039": {
@@ -600,5 +588,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 151
+  "last_board_total": 148
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-05T05:18:28.394793+00:00",
+  "last_success": "2026-10-05T14:24:12.527761+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
@@ -52,7 +52,7 @@
       "first_seen": "2026-09-22T11:24:08.067034+00:00"
     },
     "04.E6B": {
-      "title": "Procurement Specialist",
+      "title": "Purchasing Specialis",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "82.D69": {

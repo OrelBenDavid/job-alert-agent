@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T05:18:28.377461+00:00",
+  "last_success": "2026-10-05T14:24:12.490486+00:00",
   "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
-    "bb661a53-79b8-459d-a8df-5dd419d62596": {
-      "title": "3D Algorithm Developer",
-      "first_seen": "2026-09-16T16:40:48.710692+00:00"
-    },
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -43,6 +39,10 @@
       "title": "Algorithm Team Lead – Geometric Data Infrastructure",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
     },
+    "92113388-2b09-41dd-95d9-9291d4bb8648": {
+      "title": "ASIC Design Engineer",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -75,6 +75,10 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -83,9 +87,21 @@
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "2b2ece5e-eff8-49ae-b13b-be3de1122eb0": {
+      "title": "Director of Release Management",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
+    "7e5223a3-ffe2-4d05-8ae7-07b26e48c049": {
+      "title": "Director of Release Management",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
+    "5fc76d9c-d34b-4b36-9e40-23d474bedebd": {
+      "title": "Director Product & Engineering Operations",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
     },
     "04c8ffeb-012c-4461-88a1-58acc073958b": {
       "title": "EHS specialist - Safety Officer",
@@ -187,10 +203,6 @@
       "title": "Experienced Deep Learning Optimization Engineer- Compilers Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "7ae498b0-6d23-4346-87df-0f97a82b53e0": {
-      "title": "Experienced Deep Learning Software Engineer - Algorithms & Data",
-      "first_seen": "2026-09-14T12:31:04.081629+00:00"
-    },
     "25b51d8d-b2aa-49b9-9864-3b78e8a2a591": {
       "title": "Experienced DFT Engineer",
       "first_seen": "2026-09-07T12:15:49.288407+00:00"
@@ -247,6 +259,10 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
+    "3c8b6509-bee6-4599-86b7-81b413e4e074": {
+      "title": "Functional Regression Engineer",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
     "290558a5-2d4b-459d-9739-28cd904b7d6c": {
       "title": "Hardware Team Lead",
       "first_seen": "2026-10-01T12:58:35.309410+00:00"
@@ -266,22 +282,6 @@
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
-    "0ed51c78-c71a-4bff-a2d0-f7d64bf2d60b": {
-      "title": "Junior-Mid Content & Digital Marketing Professional- Temporary Position",
-      "first_seen": "2026-09-29T12:38:07.422231+00:00"
-    },
-    "ba443a6c-1d5a-41a0-9fde-3bc60af20484": {
-      "title": "Junior-Mid Content & Digital Marketing Professional- Temporary Position",
-      "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
-    "1b3f71b9-fe39-41d3-bd43-4ae7ad18f92e": {
-      "title": "Machine Learning Software Engineer",
-      "first_seen": "2026-09-17T16:47:40.582549+00:00"
-    },
-    "72e986e2-94b4-49f6-be5f-74a48de8a71d": {
-      "title": "Machine Learning Software Engineer",
-      "first_seen": "2026-09-17T16:47:40.582549+00:00"
     },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
@@ -527,6 +527,10 @@
       "title": "Software Group Manager - OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "f10044d7-c978-4fed-bb58-0bd0170ab8ec": {
+      "title": "Software Integration and Field Application Engineer",
+      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -554,10 +558,6 @@
     "c457aba7-5e7c-4085-ae7d-f9e2001621b6": {
       "title": "System validation engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
-    },
-    "35d41f76-5f20-4fc8-b108-f761582083f2": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-09-02T16:27:20.471052+00:00"
     },
     "a5e1a798-a47e-4cc7-960a-3a61859b2ec4": {
       "title": "Technical Execution Program Manager",

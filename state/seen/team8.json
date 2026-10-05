@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T05:18:28.408907+00:00",
-  "last_count": 52,
+  "last_success": "2026-10-05T14:24:12.551154+00:00",
+  "last_count": 51,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
@@ -10,10 +10,6 @@
     "46.370": {
       "title": "Bluespine-Product, Delivery & Operations Lead— Bluespine",
       "first_seen": "2026-09-30T17:56:23.314059+00:00"
-    },
-    "D2.C6D": {
-      "title": "Bluespine-Senior Data Engineer, Analytics & Data Infrastructure",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "13.B63": {
       "title": "Briya- Backend Engineer",
@@ -212,5 +208,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 68
+  "last_board_total": 67
 }

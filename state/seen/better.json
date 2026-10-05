@@ -1,16 +1,7 @@
 {
-  "last_success": "2026-10-05T05:18:28.335543+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-05T14:24:12.389670+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "bb8eb91e-a8a4-4caa-94e9-49d7aad339dc": {
-      "title": "Production Partner",
-      "first_seen": "2026-09-14T12:31:04.016053+00:00"
-    },
-    "67036220-7dd1-40bc-9892-7e7211c1fde6": {
-      "title": "Founding National Wholesale Account Executive -- HELOC",
-      "first_seen": "2026-09-08T21:02:17.509460+00:00"
-    }
-  },
-  "last_board_total": 9
+  "jobs": {},
+  "last_board_total": 7
 }

@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-10-05T05:18:28.378949+00:00",
-  "last_count": 0,
+  "last_success": "2026-10-05T14:24:12.499583+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 0
+  "jobs": {
+    "38.375": {
+      "title": "Marketing Automation Manager",
+      "first_seen": "2026-10-05T14:24:12.499583+00:00"
+    }
+  },
+  "last_board_total": 1
 }

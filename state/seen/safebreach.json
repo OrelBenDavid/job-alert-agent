@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T05:18:28.399118+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-05T14:24:12.534734+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "4291547009": {
-      "title": "Lab Manager",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
     "4355685009": {
       "title": "Product Manager - Connectors and AI Infrastructure",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

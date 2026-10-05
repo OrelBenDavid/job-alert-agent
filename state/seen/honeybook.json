@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T05:18:28.362382+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-05T14:24:12.450071+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
-    "7c1b51ec-915b-4ea7-a1f8-767069d3144e": {
-      "title": "Senior Fraud Analyst",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "b8b8e816-102d-40fa-887c-cc230e0f9db9": {
       "title": "Director of Product Management – Financial Products",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -32,5 +28,5 @@
       "first_seen": "2026-09-29T12:38:07.397021+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

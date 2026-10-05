@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-05T05:18:28.374412+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-05T14:24:12.480801+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
+    "7806719003": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-10-05T14:24:12.480801+00:00"
+    },
     "7748138003": {
       "title": "Data Scientist",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
@@ -15,12 +19,12 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
-    "7792385003": {
+    "7820287003": {
       "title": "Senior Data Analyst",
       "first_seen": "2026-10-01T05:32:14.674669+00:00"
     },
-    "7820287003": {
-      "title": "Senior Data Analyst",
+    "7792385003": {
+      "title": "Senior Data Analyst- Risk",
       "first_seen": "2026-10-01T05:32:14.674669+00:00"
     },
     "7572393003": {
@@ -32,5 +36,5 @@
       "first_seen": "2026-09-15T11:34:07.653932+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }
