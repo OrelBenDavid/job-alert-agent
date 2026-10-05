@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.490486+00:00",
-  "last_count": 151,
+  "last_success": "2026-10-05T21:57:14.749133+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -161,10 +161,6 @@
     },
     "feda1f63-bf73-42dd-abe1-cfd26d16a0ca": {
       "title": "Experience Embedded Integrator",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
-    },
-    "e4ff9bf6-2346-4421-8945-38aff4bc62be": {
-      "title": "Experienced Backend Developer for Cloud Infrastructure",
       "first_seen": "2026-09-30T17:56:23.239460+00:00"
     },
     "c3bb544b-d499-4844-afdc-5abf54fd2073": {
@@ -608,5 +604,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 179
 }

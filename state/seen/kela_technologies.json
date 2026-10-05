@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.462843+00:00",
-  "last_count": 29,
+  "last_success": "2026-10-05T21:57:14.732158+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -71,6 +71,10 @@
       "title": "NPI / Product Operations Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
+    "A8.377": {
+      "title": "Office & Operations Manager",
+      "first_seen": "2026-10-05T21:57:14.732158+00:00"
+    },
     "F1.373": {
       "title": "Quality Engineer",
       "first_seen": "2026-09-28T13:38:07.495801+00:00"
@@ -120,5 +124,5 @@
       "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 38
 }

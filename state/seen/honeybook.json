@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-05T14:24:12.450071+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-05T21:57:14.722943+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
-    "b8b8e816-102d-40fa-887c-cc230e0f9db9": {
-      "title": "Director of Product Management – Financial Products",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "5b41fb85-7d2a-4186-a26a-94f9afb66973": {
       "title": "Senior Marketing Designer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -28,5 +24,5 @@
       "first_seen": "2026-09-29T12:38:07.397021+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

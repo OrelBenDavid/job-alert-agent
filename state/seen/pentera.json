@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.519381+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-05T21:57:14.767613+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -35,10 +35,6 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-24T13:05:04.492567+00:00"
     },
-    "E3.F68": {
-      "title": "Senior Bookkeeper",
-      "first_seen": "2026-08-13T11:24:34.306915+00:00"
-    },
     "90.E69": {
       "title": "Senior Director Technical Support",
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }

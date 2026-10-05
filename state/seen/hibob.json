@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.449603+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-05T21:57:14.722491+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -55,10 +55,6 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
-    "94aa25ef-4179-4297-aaf4-62fce069a03f": {
-      "title": "AI Senior Backend Engineer - Maternity Leave",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
     "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
       "title": "Software Architect - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
@@ -80,5 +76,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 78
+  "last_board_total": 77
 }

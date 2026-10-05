@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.457472+00:00",
-  "last_count": 30,
+  "last_success": "2026-10-05T21:57:14.726714+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "9D.078": {
@@ -79,10 +79,6 @@
       "title": "Python Infrastructure Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "17.D6B": {
-      "title": "Python Software Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
     "4C.D6F": {
       "title": "Scale Testing Team Leader",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -124,5 +120,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 47
 }

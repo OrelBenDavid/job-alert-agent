@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-05T14:24:12.368120+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-05T21:57:14.665312+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -34,6 +34,10 @@
     "4965332101": {
       "title": "Director of IT Security",
       "first_seen": "2026-09-01T14:06:10.552096+00:00"
+    },
+    "4951044101": {
+      "title": "Director of Product Design",
+      "first_seen": "2026-10-05T21:57:14.665312+00:00"
     },
     "4937902101": {
       "title": "Employee Experience Partner",
@@ -80,5 +84,5 @@
       "first_seen": "2026-10-05T14:24:12.368120+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 31
 }

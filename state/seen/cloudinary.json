@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-05T14:24:12.407585+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-05T21:57:14.690473+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "53cf2efa-45e6-44d3-af28-0065b0f04aa7": {
       "title": "Corporate Controller (Maternity Leave Cover)",
       "first_seen": "2026-09-30T17:56:23.174654+00:00"
+    },
+    "f4f6b55a-2344-423f-a207-a9119ff67f3f": {
+      "title": "Head of MIS",
+      "first_seen": "2026-10-05T21:57:14.690473+00:00"
     },
     "7f3812ca-d4c6-4d7f-acb0-9206c2984a64": {
       "title": "Product Operations Lead",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }
