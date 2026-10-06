@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-10-06T15:50:15.981583+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-06T22:35:24.723263+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "8624027002": {
-      "title": "Software Engineer",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    }
-  },
-  "last_board_total": 5
+  "jobs": {},
+  "last_board_total": 0
 }

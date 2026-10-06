@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T15:50:16.417807+00:00",
-  "last_count": 147,
+  "last_success": "2026-10-06T22:35:24.758070+00:00",
+  "last_count": 146,
   "consecutive_failures": 0,
   "jobs": {
     "JR-020385": {
@@ -242,10 +242,6 @@
     "JR-017964": {
       "title": "Principal Technical Program Manager",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-021161": {
-      "title": "Director Product Operations (Cortex)",
-      "first_seen": "2026-09-01T14:06:11.135965+00:00"
     },
     "JR-018775": {
       "title": "Principal/Senior Principal Software Engineer Data Platform ( Cortex)",
@@ -592,5 +588,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 149
+  "last_board_total": 148
 }

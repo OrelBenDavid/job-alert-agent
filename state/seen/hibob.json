@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T15:50:15.974952+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-06T22:35:24.719066+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -59,10 +59,6 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
-    "14abc3c2-7fc7-41cd-9f48-f1aaf12ae590": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-10-06T15:50:15.974952+00:00"
-    },
     "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
       "title": "Software Architect - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 79
+  "last_board_total": 78
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T15:50:15.977535+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-06T22:35:24.719788+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "2d6f4777-b6b4-4624-bc38-e51e7f00e736": {
@@ -18,7 +18,11 @@
     "5dca2dd2-7e72-4fcf-82fa-12f58ee40d08": {
       "title": "Medical Director",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "c1380bd3-5f57-4c8e-984f-b52031b28c61": {
+      "title": "Sr Accountant",
+      "first_seen": "2026-10-06T22:35:24.719788+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }
