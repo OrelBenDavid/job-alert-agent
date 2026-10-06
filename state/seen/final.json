@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-06T06:02:40.079407+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-06T15:50:15.962332+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "78.370": {
-      "title": "Junior System & Infrastructure Engineer",
-      "first_seen": "2026-10-05T14:24:12.432054+00:00"
-    },
     "BD.76C": {
       "title": "ML Systems Engineer",
       "first_seen": "2026-08-19T09:41:24.977539+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-19T09:41:24.977539+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }

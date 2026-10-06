@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T06:02:40.062476+00:00",
-  "last_count": 42,
+  "last_success": "2026-10-06T15:50:15.922516+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
     "A6.079": {
@@ -87,10 +87,6 @@
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "DC.A67": {
-      "title": "QA Automation Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "F2.17F": {
       "title": "QA Automation Engineer",
       "first_seen": "2026-08-26T09:51:33.814639+00:00"
@@ -102,6 +98,10 @@
     "08.37F": {
       "title": "RevOps & AI Operations",
       "first_seen": "2026-10-05T14:24:12.408928+00:00"
+    },
+    "29.371": {
+      "title": "RevOps Expert",
+      "first_seen": "2026-10-06T15:50:15.922516+00:00"
     },
     "E7.37F": {
       "title": "Senior AI Product Manager",
@@ -151,6 +151,10 @@
       "title": "אינטגרטור/ית RF",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "49.37B": {
+      "title": "אינטגרטור/ית תקשורת וLinux",
+      "first_seen": "2026-10-06T15:50:15.922516+00:00"
+    },
     "38.37B": {
       "title": "טכנאי/ת תקשורת ותשתיות רשת",
       "first_seen": "2026-10-05T14:24:12.408928+00:00"
@@ -172,5 +176,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 153
+  "last_board_total": 155
 }

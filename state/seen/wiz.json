@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-06T06:02:40.193658+00:00",
+  "last_success": "2026-10-06T15:50:16.500195+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -35,10 +35,6 @@
       "title": "DevOps Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
-    "4663668006": {
-      "title": "Enterprise Account Executive",
-      "first_seen": "2026-09-24T11:33:41.983293+00:00"
-    },
     "4615211006": {
       "title": "Expert Backend Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
@@ -66,6 +62,10 @@
     "4599708006": {
       "title": "Product Designer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4710823006": {
+      "title": "Product Marketing Manager",
+      "first_seen": "2026-10-06T15:50:16.500195+00:00"
     },
     "4615226006": {
       "title": "Product Technical Architect, CTO Office",
@@ -96,5 +96,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 130
+  "last_board_total": 131
 }

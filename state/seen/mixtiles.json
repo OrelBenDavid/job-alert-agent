@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-06T06:02:40.115889+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-06T15:50:16.375705+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
+    "8869904002": {
+      "title": "Creative Director, Oasis",
+      "first_seen": "2026-10-06T15:50:16.375705+00:00"
+    },
     "8333912002": {
       "title": "Data Engineering Lead",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

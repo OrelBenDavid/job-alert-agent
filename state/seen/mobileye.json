@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T06:02:40.117349+00:00",
-  "last_count": 150,
+  "last_success": "2026-10-06T15:50:16.377509+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -35,21 +35,21 @@
       "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
-      "title": "Algorithm Team Lead – Geometric Data Infrastructure",
-      "first_seen": "2026-09-09T11:10:07.736530+00:00"
-    },
-    "92113388-2b09-41dd-95d9-9291d4bb8648": {
-      "title": "ASIC Design Engineer",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
+    "b2d82205-1d0a-4fbd-be32-1e77efa22c76": {
+      "title": "ATE & Manufacturing Engineer",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "a6711d79-22df-4e2f-a21a-3b31b9337175": {
-      "title": "Building Systems & Technical Projects Specialist",
-      "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
+      "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
+    "e58368d8-ec21-4e5e-871d-40707762b959": {
+      "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
     "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
       "title": "Camera System Engineer",
@@ -74,10 +74,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
-      "title": "Data Analytics Project Manager",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -235,6 +231,18 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
+      "title": "Experienced Software Developer – REM Validation",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
+    "78d2b642-98cd-4eeb-893f-3662c46ae13c": {
+      "title": "Experienced Software Engineer - Data Systems & Tools",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
+    "cf198663-8759-4f08-96c3-e564aca85d8d": {
+      "title": "Experienced Software Engineer - Data Systems & Tools",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
     "45b127ea-6069-420f-81fd-adf236d08de4": {
       "title": "Experienced Software Linux Integration Engineer - OS team",
       "first_seen": "2026-09-01T14:06:11.124056+00:00"
@@ -250,6 +258,10 @@
     "97753ee7-1701-4c30-9d5a-964fc310e371": {
       "title": "Experienced Technical Project Manager",
       "first_seen": "2026-08-17T12:58:53.722628+00:00"
+    },
+    "b279801b-89b2-4e67-a095-0c8435580997": {
+      "title": "Experienced Test Automation Engineer",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
     "15ecbd22-fd82-431c-93ff-2ece2caf808e": {
       "title": "Experienced Verification Engineer",
@@ -283,10 +295,6 @@
       "title": "Operations Control Center Operator - Student Position",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
     },
-    "1c2ce540-67f9-4da0-bd19-36e8238db42a": {
-      "title": "Operations Division Global Admin",
-      "first_seen": "2026-09-03T11:04:08.063162+00:00"
-    },
     "c5d0b91a-8a21-490f-a02b-23b5ebaa2ec5": {
       "title": "Outstanding Graduate - Machine Learning Engineer",
       "first_seen": "2026-08-18T13:00:34.221999+00:00"
@@ -310,10 +318,6 @@
     "f4c63464-9fcc-40ed-b9fd-a21d815cfdd9": {
       "title": "Program Manager - Product & Engineering Operations",
       "first_seen": "2026-09-24T11:33:41.898207+00:00"
-    },
-    "f08cf90a-2e96-4d27-86db-e124676b4d53": {
-      "title": "Radar ATE Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
@@ -410,10 +414,6 @@
     "5d044c94-826e-4685-853f-b70069e3f0a9": {
       "title": "Senior ML Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "f15e7124-1aab-4301-9fec-547c7c24c6b1": {
-      "title": "Senior Platform Software Project Manager",
-      "first_seen": "2026-09-08T11:05:09.168651+00:00"
     },
     "1d83cd20-6e61-44b8-aa23-895c67e9d010": {
       "title": "Senior Product Manager",
@@ -527,6 +527,10 @@
       "title": "Software Integration and Field Application Engineer",
       "first_seen": "2026-10-05T14:24:12.490486+00:00"
     },
+    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
+      "title": "Software Team Lead - Data Infrastructure & Algorithm",
+      "first_seen": "2026-09-09T11:10:07.736530+00:00"
+    },
     "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
       "title": "Solution Architect for Cloud Communication",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -587,6 +591,10 @@
       "title": "Technical Support Engineer",
       "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
+    "a63c9e92-7a60-4366-b853-ed3f33777abb": {
+      "title": "Test Automation Developer- Student Position",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
     "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
       "title": "Test Automation Technical Lead",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
@@ -604,5 +612,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 179
+  "last_board_total": 182
 }

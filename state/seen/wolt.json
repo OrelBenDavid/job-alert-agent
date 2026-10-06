@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T06:02:40.194190+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-06T15:50:16.500824+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -43,6 +43,10 @@
       "title": "Supply Chain Manager (WM)",
       "first_seen": "2026-10-05T14:24:12.570535+00:00"
     },
+    "8258127": {
+      "title": "Support Quality Manager",
+      "first_seen": "2026-10-06T15:50:16.500824+00:00"
+    },
     "8173457": {
       "title": "Trust and Safety Associate",
       "first_seen": "2026-09-03T20:54:14.844821+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-09-29T12:38:07.520411+00:00"
     }
   },
-  "last_board_total": 215
+  "last_board_total": 214
 }

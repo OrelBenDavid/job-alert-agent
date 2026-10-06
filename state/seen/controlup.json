@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-06T06:02:40.063611+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-06T15:50:15.926186+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "eb1b2fb8-38b2-4ad9-b486-2c6af5ee363a": {
       "title": "Devops Engineer",
       "first_seen": "2026-08-27T14:03:31.336994+00:00"
+    },
+    "5574e19c-7c98-4cd1-b3de-c110ac8744de": {
+      "title": "Engineering Manager",
+      "first_seen": "2026-10-06T15:50:15.926186+00:00"
     },
     "a1075daa-fd72-46b4-974d-8c4139e20bdf": {
       "title": "HR Business Partner",
@@ -16,5 +20,5 @@
       "first_seen": "2026-09-02T16:27:20.422057+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 13
 }

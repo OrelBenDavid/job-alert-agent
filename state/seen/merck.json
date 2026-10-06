@@ -1,12 +1,20 @@
 {
-  "last_success": "2026-10-06T06:02:40.113668+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-06T15:50:16.005023+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
+    "R419576": {
+      "title": "Brand and Customer Manager - HPV",
+      "first_seen": "2026-10-06T15:50:16.005023+00:00"
+    },
+    "R421307": {
+      "title": "R&D IP Strategist",
+      "first_seen": "2026-10-06T15:50:16.005023+00:00"
+    },
     "R395666": {
       "title": "Senior / Data & AI Solutions Engineer – Automation, Analytics & AI",
       "first_seen": "2026-10-05T14:24:12.486920+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 5
 }

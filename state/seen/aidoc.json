@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-06T06:02:40.037460+00:00",
+  "last_success": "2026-10-06T15:50:15.879474+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -52,7 +52,7 @@
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4920296101": {
-      "title": "SecOps Detection & Response",
+      "title": "SecOps Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
     },
     "4904239101": {
