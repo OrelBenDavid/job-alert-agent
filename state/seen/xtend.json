@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-06T22:35:24.801368+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-07T05:37:56.830392+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "66.371": {
@@ -35,10 +35,6 @@
       "title": "Embedded Team Lead",
       "first_seen": "2026-09-22T11:24:08.123651+00:00"
     },
-    "96.178": {
-      "title": "Employee Experience & Office Manager",
-      "first_seen": "2026-09-01T08:32:41.905061+00:00"
-    },
     "52.37A": {
       "title": "Engineering Pilot",
       "first_seen": "2026-09-29T12:38:07.525087+00:00"
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 32
 }
