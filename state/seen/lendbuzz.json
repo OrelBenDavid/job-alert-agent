@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T13:08:46.782011+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-07T20:32:54.213957+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "f234abf5-c204-4b15-986a-d8ce996883fd": {
@@ -9,10 +9,6 @@
     },
     "5ed02028-50e3-40d6-b56f-cebf72321238": {
       "title": "Floorplan Sales Associate",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "8aa5733a-a812-41e7-b14d-e088532a4008": {
-      "title": "Genesys WFM/Dialer Manager",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
     "cb49985a-7683-4c84-88c5-ee4f28d7cd4d": {
@@ -32,5 +28,5 @@
       "first_seen": "2026-09-25T17:02:02.562107+00:00"
     }
   },
-  "last_board_total": 55
+  "last_board_total": 54
 }

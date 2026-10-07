@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T13:08:47.196964+00:00",
-  "last_count": 79,
+  "last_success": "2026-10-07T20:32:54.894639+00:00",
+  "last_count": 77,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -23,11 +23,11 @@
       "title": "Cybersecurity Project Management Team Lead",
       "first_seen": "2026-09-28T21:11:02.423048+00:00"
     },
-    "4784157101": {
+    "4784195101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4784195101": {
+    "4784157101": {
       "title": "Data Center IT Infrastructure Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
@@ -191,13 +191,13 @@
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4724503101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-09T16:27:11.356104+00:00"
-    },
     "4982904101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    },
+    "4724503101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
     "4986448101": {
       "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
@@ -209,14 +209,6 @@
     },
     "4906640101": {
       "title": "Senior ML Engineer, Search Optimization (Agentic Search)",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4780713101": {
-      "title": "Senior ML Engineer (Token Factory)",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4790283101": {
-      "title": "Senior ML Engineer (Token Factory)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4797092101": {
@@ -320,5 +312,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 364
+  "last_board_total": 365
 }

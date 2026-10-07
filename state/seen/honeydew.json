@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T13:08:46.768573+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-07T20:32:54.190515+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "2d6f4777-b6b4-4624-bc38-e51e7f00e736": {
@@ -22,7 +22,11 @@
     "c1380bd3-5f57-4c8e-984f-b52031b28c61": {
       "title": "Sr Accountant",
       "first_seen": "2026-10-06T22:35:24.719788+00:00"
+    },
+    "7efaf793-e5ef-44f4-8ed8-4ddafa0bd070": {
+      "title": "Care Coordinator",
+      "first_seen": "2026-10-07T20:32:54.190515+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 8
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T13:08:47.291947+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-07T20:32:54.945021+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "6177745004": {
@@ -22,11 +22,7 @@
     "6123462004": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "5806980004": {
-      "title": "Technical Product Manager",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 25
 }
