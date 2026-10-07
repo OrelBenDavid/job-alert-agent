@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-07T05:37:56.796833+00:00",
+  "last_success": "2026-10-07T13:08:47.229644+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,10 +19,6 @@
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
     },
-    "660174e6-d315-4eaf-9b3e-d400a177d8e2": {
-      "title": "Lead Software Engineer",
-      "first_seen": "2026-08-31T20:45:43.782399+00:00"
-    },
     "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
       "title": "PHY Algorithms Senior Engineer - AI/ML",
       "first_seen": "2026-09-09T16:27:11.366944+00:00"
@@ -30,10 +26,6 @@
     "b4b602b6-c32d-4868-af7e-2bfa41623d74": {
       "title": "PHY/RF Algorithms Engineer",
       "first_seen": "2026-09-02T11:06:52.072849+00:00"
-    },
-    "69161322-74af-4dbb-8060-ca7d8bf7cedd": {
-      "title": "RAN Digital Twin Engineer",
-      "first_seen": "2026-09-14T12:31:04.096013+00:00"
     },
     "51a23cf6-8341-49eb-8404-58e6bee73cf9": {
       "title": "Senior Applied AI Evaluation Engineer - RAN Ticket Intelligence",
@@ -43,8 +35,12 @@
       "title": "Senior Data Scientist — Network Intelligence",
       "first_seen": "2026-08-31T20:45:43.782399+00:00"
     },
+    "660174e6-d315-4eaf-9b3e-d400a177d8e2": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-08-31T20:45:43.782399+00:00"
+    },
     "233858ab-104d-42fe-8b5b-f9d86aa8f5a4": {
-      "title": "Senior/Principal Local LLM & Generative AI Platform Engineer",
+      "title": "Senior/Principal Language Model Engineer",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
     "870976cd-2100-47c6-af9b-6fa347073189": {
@@ -62,7 +58,11 @@
     "d1f8165d-a13b-47d4-b4e4-9c22d12cd6ba": {
       "title": "Technical Lead, Artificial Intelligence",
       "first_seen": "2026-09-15T11:34:07.675531+00:00"
+    },
+    "69161322-74af-4dbb-8060-ca7d8bf7cedd": {
+      "title": "Wireless Systems Software Engineer",
+      "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 45
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-07T05:37:56.817812+00:00",
+  "last_success": "2026-10-07T13:08:47.279877+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,10 +23,6 @@
       "title": "Business Applications Team Lead",
       "first_seen": "2026-09-20T11:08:28.481413+00:00"
     },
-    "8079088": {
-      "title": "Creative Strategist - Maternity Leave Replacement / Contractor",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
     "7903597": {
       "title": "Data Platform Engineering Team Leader",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
@@ -38,6 +34,10 @@
     "8166705": {
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
       "first_seen": "2026-09-03T16:17:32.035800+00:00"
+    },
+    "8243356": {
+      "title": "Product Analyst",
+      "first_seen": "2026-10-07T13:08:47.279877+00:00"
     },
     "8176690": {
       "title": "Product Design Team Lead",
@@ -88,5 +88,5 @@
       "first_seen": "2026-08-23T21:28:46.613864+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 84
 }

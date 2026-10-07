@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T05:37:56.772115+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-07T13:08:46.777021+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "DD.075": {
@@ -34,10 +34,6 @@
     "F7.370": {
       "title": "Finance Operations Director",
       "first_seen": "2026-10-04T18:36:01.497188+00:00"
-    },
-    "96.37A": {
-      "title": "Forward Deployed Engineer",
-      "first_seen": "2026-09-30T22:09:48.619898+00:00"
     },
     "45.F66": {
       "title": "HR manager (Maternity Leave Cover)",
@@ -96,5 +92,5 @@
       "first_seen": "2026-09-22T11:24:08.014818+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 34
 }

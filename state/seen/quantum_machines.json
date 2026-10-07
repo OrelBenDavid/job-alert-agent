@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T05:37:56.803080+00:00",
-  "last_count": 26,
+  "last_success": "2026-10-07T13:08:47.239428+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -18,10 +18,6 @@
     "CC.F46": {
       "title": "Compiler Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "C8.37F": {
-      "title": "CTO AI Solutions Builder",
-      "first_seen": "2026-10-06T06:02:40.143811+00:00"
     },
     "5E.E51": {
       "title": "Customer Success Physicist- Tel Aviv",
@@ -47,10 +43,6 @@
       "title": "Logic Design Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
-    "C8.B6E": {
-      "title": "Machine Learning Engineer",
-      "first_seen": "2026-09-16T11:21:30.309934+00:00"
-    },
     "DF.857": {
       "title": "Micro-Architect",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -58,10 +50,6 @@
     "CE.27F": {
       "title": "Planning Leader",
       "first_seen": "2026-09-22T11:24:08.067034+00:00"
-    },
-    "C8.37D": {
-      "title": "Product Operations",
-      "first_seen": "2026-10-06T06:02:40.143811+00:00"
     },
     "04.E6B": {
       "title": "Purchasing Specialis",
@@ -108,5 +96,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 66
+  "last_board_total": 64
 }

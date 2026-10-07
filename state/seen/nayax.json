@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T05:37:56.787844+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-07T13:08:47.196505+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "8D.F65": {
@@ -10,10 +10,6 @@
     "F8.371": {
       "title": "Inside Sales Representative- English Speaker",
       "first_seen": "2026-10-06T15:50:16.389365+00:00"
-    },
-    "97.37C": {
-      "title": "Inside Sales Representative- German Speaker",
-      "first_seen": "2026-10-04T12:11:38.490565+00:00"
     },
     "4D.173": {
       "title": "NOC Team Leader",
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

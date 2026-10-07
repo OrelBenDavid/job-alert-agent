@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T05:37:56.784136+00:00",
-  "last_count": 152,
+  "last_success": "2026-10-07T13:08:47.179245+00:00",
+  "last_count": 158,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -10,10 +10,6 @@
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "2a8920e0-6dc6-48a8-b8b7-2f42f432e637": {
-      "title": "Algorithm Developer for Objects Modeling",
-      "first_seen": "2026-09-10T16:17:00.425215+00:00"
     },
     "331ce77a-8179-444a-924c-189f131afd50": {
       "title": "Algorithm Developer for Radar/Lidar Group",
@@ -43,6 +39,14 @@
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "1e62d075-9af9-445c-af3e-b8e35bb1e85c": {
+      "title": "Business Applications Implementation Engineer",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "4eaa5993-36a0-4424-8154-853f3eeb4801": {
+      "title": "Business Applications Implementation Engineer",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
@@ -50,6 +54,10 @@
     "e58368d8-ec21-4e5e-871d-40707762b959": {
       "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
+    },
+    "5d034aa4-279a-4538-9e76-ba5300a6dfc8": {
+      "title": "C++ Software Engineer - Tools Team",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
     "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
       "title": "Camera System Engineer",
@@ -75,6 +83,10 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -82,14 +94,6 @@
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "2b2ece5e-eff8-49ae-b13b-be3de1122eb0": {
-      "title": "Director of Release Management",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
-    },
-    "7e5223a3-ffe2-4d05-8ae7-07b26e48c049": {
-      "title": "Director of Release Management",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
     },
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
@@ -290,6 +294,18 @@
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
+    },
+    "b1883e14-5a78-4cd4-af6d-f22790187366": {
+      "title": "Junior Validation & Integration Engineer",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "0ed51c78-c71a-4bff-a2d0-f7d64bf2d60b": {
+      "title": "Junior-Mid Content & Digital Marketing Professional- Temporary Position",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
+      "title": "Mechanical Test Engineer",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
@@ -567,6 +583,10 @@
       "title": "Technical PM",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "a0f7bc46-fd68-481a-a646-46c2a943e031": {
+      "title": "Technical PM",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
     "e54024e2-45ed-482c-a777-251f602d6484": {
       "title": "Technical PM",
       "first_seen": "2026-10-04T18:36:01.832073+00:00"
@@ -574,6 +594,10 @@
     "303d899e-2b03-41f7-97d2-824da4e51190": {
       "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3d955240-fd2d-419d-8035-bf647c3da076": {
+      "title": "Technical Product Strategy Manager",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
     "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
       "title": "Technical Project Manager",
@@ -612,5 +636,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 188
 }

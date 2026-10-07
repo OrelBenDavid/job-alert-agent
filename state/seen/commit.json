@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-07T05:37:56.746228+00:00",
+  "last_success": "2026-10-07T13:08:46.721517+00:00",
   "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
@@ -66,6 +66,10 @@
     "D6.D6C": {
       "title": "Junior Electronics Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "49.37B": {
+      "title": "Network & Linux Integrator",
+      "first_seen": "2026-10-06T15:50:15.922516+00:00"
     },
     "8D.F19": {
       "title": "Network Architect",
@@ -151,10 +155,6 @@
       "title": "אינטגרטור/ית RF",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "49.37B": {
-      "title": "אינטגרטור/ית תקשורת וLinux",
-      "first_seen": "2026-10-06T15:50:15.922516+00:00"
-    },
     "38.37B": {
       "title": "טכנאי/ת תקשורת ותשתיות רשת",
       "first_seen": "2026-10-05T14:24:12.408928+00:00"
@@ -176,5 +176,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 155
+  "last_board_total": 154
 }

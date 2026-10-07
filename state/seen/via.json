@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T05:37:56.824997+00:00",
-  "last_count": 8,
+  "last_success": "2026-10-07T13:08:47.301042+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "8627735002": {
@@ -19,10 +19,6 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
-    "8587562002": {
-      "title": "Senior Backend Engineer- Routing Data",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
     "8356511002": {
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
@@ -36,5 +32,5 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 159
+  "last_board_total": 158
 }

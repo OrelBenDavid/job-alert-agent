@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-07T05:37:56.725157+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-07T13:08:46.659064+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-352b3883-9718-5d79-90a7-9bd5d46e8633-T1790589778-744000154046539": {
+      "title": "PR Expert",
+      "first_seen": "2026-10-07T13:08:46.659064+00:00"
+    },
     "https://careers.wix.com/position/oracle-2656ac50-2531-58c6-9fff-6c628afff2d7-T1785661175-744000153735750": {
       "title": "Head Of Security - Base44",
       "first_seen": "2026-10-06T15:50:15.872636+00:00"

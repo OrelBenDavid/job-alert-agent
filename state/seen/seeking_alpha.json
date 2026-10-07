@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-10-07T05:37:56.810070+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-07T13:08:47.259809+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "03.36C": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-20T06:56:59.874097+00:00"
-    },
-    "13.761": {
-      "title": "Senior Software Engineer \\ Search Engineer  (Elasticsearch & Vector Search)",
-      "first_seen": "2026-08-20T06:56:59.874097+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }
