@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T00:54:45.499764+00:00",
-  "last_count": 159,
+  "last_success": "2026-10-08T10:21:48.773430+00:00",
+  "last_count": 162,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -94,6 +94,14 @@
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0ed51c78-c71a-4bff-a2d0-f7d64bf2d60b": {
+      "title": "Digital Marketing Specialist - Temporary Position",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "ba443a6c-1d5a-41a0-9fde-3bc60af20484": {
+      "title": "Digital Marketing Specialist - Temporary Position",
+      "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
@@ -303,9 +311,9 @@
       "title": "Junior Validation & Integration Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
-    "0ed51c78-c71a-4bff-a2d0-f7d64bf2d60b": {
-      "title": "Junior-Mid Content & Digital Marketing Professional- Temporary Position",
-      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    "d58c12f6-be27-4bbc-9cb7-38558e65b0f1": {
+      "title": "Live Mapping Validation Analyst",
+      "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
@@ -382,10 +390,6 @@
     "35d894ad-8260-4ce3-ab56-0ff03c474009": {
       "title": "Senior Customer Solutions Engineer",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
-    "b5e33bc9-f6e1-4201-a42d-61cd409b60c5": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "60c33ad2-695a-43ca-a557-5c204dad5820": {
       "title": "Senior Deep Learning Researcher",
@@ -567,6 +571,10 @@
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "c26290b9-f51a-48dc-b319-45f2c9131b42": {
+      "title": "System Engineer",
+      "first_seen": "2026-10-08T10:21:48.773430+00:00"
+    },
     "0f3e6a6a-45a7-4e4e-9bb9-f7bb11f92443": {
       "title": "System Integration Engineer",
       "first_seen": "2026-09-09T16:27:11.343251+00:00"
@@ -576,7 +584,7 @@
       "first_seen": "2026-08-26T09:51:33.846604+00:00"
     },
     "c457aba7-5e7c-4085-ae7d-f9e2001621b6": {
-      "title": "System validation engineer",
+      "title": "System Validation Engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
     },
     "a5e1a798-a47e-4cc7-960a-3a61859b2ec4": {
@@ -602,6 +610,10 @@
     "3d955240-fd2d-419d-8035-bf647c3da076": {
       "title": "Technical Product Strategy Manager",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
+      "title": "Technical Program Manager",
+      "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
     "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
       "title": "Technical Project Manager",

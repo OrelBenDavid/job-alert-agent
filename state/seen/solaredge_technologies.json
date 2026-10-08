@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T00:54:45.538596+00:00",
-  "last_count": 47,
+  "last_success": "2026-10-08T10:21:48.851042+00:00",
+  "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -98,10 +98,6 @@
     "74.965": {
       "title": "Integration Technician",
       "first_seen": "2026-08-30T11:45:37.349266+00:00"
-    },
-    "C4.278": {
-      "title": "IT Operations Manager",
-      "first_seen": "2026-09-06T15:21:45.320520+00:00"
     },
     "66.278": {
       "title": "Junior Embedded Software Engineer",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T00:54:45.423929+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-08T10:21:48.675238+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-352b3883-9718-5d79-90a7-9bd5d46e8633-T1790589778-744000154046539": {
@@ -111,10 +111,6 @@
       "title": "Senior AI Engineer - Marketing AI Transformation",
       "first_seen": "2026-09-25T21:26:32.036584+00:00"
     },
-    "https://careers.wix.com/position/REF12W-744000146957552": {
-      "title": "xEngineer Team Lead for Document Management",
-      "first_seen": "2026-09-25T21:26:32.036584+00:00"
-    },
     "https://careers.wix.com/position/REF3097W-744000146343209": {
       "title": "Senior xEngineer (Backend Oriented) - User Voice",
       "first_seen": "2026-09-25T21:26:32.036584+00:00"
@@ -130,10 +126,6 @@
     "https://careers.wix.com/position/REF3097W-744000144261939": {
       "title": "xEngineer (Backend Oriented) for Wix Code Infrastructure",
       "first_seen": "2026-08-19T09:41:24.899011+00:00"
-    },
-    "https://careers.wix.com/position/oracle-a9ff52ee-1881-5764-b2c3-5970fbac721c-T1786948339-744000143985674": {
-      "title": "Payroll Accountant",
-      "first_seen": "2026-08-18T06:56:29.720093+00:00"
     },
     "https://careers.wix.com/position/oracle-56d742ca-136e-55ce-bcb6-30c6a0f0d617-T1786374970-744000143036214": {
       "title": "FP&A Analyst",

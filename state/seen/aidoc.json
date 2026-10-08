@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T00:54:45.428752+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-08T10:21:48.679708+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -71,6 +71,10 @@
       "title": "Senior Product Analyst",
       "first_seen": "2026-10-05T14:24:12.368120+00:00"
     },
+    "5000297101": {
+      "title": "Senior Quality Specialist",
+      "first_seen": "2026-10-08T10:21:48.679708+00:00"
+    },
     "4920094101": {
       "title": "Senior Security Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-10-05T14:24:12.368120+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

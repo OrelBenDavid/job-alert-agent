@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-08T00:54:45.481317+00:00",
+  "last_success": "2026-10-08T10:21:48.746367+00:00",
   "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
@@ -35,6 +35,10 @@
       "title": "Customer Support Operations Specialist",
       "first_seen": "2026-09-14T12:31:04.059716+00:00"
     },
+    "32.D63": {
+      "title": "Experience Hardware Integration Engineer",
+      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
     "EE.C60": {
       "title": "Experienced Test Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -43,9 +47,9 @@
       "title": "Global Field Support manager",
       "first_seen": "2026-10-04T12:11:37.784117+00:00"
     },
-    "32.D63": {
+    "90.375": {
       "title": "Hardware Integration Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
+      "first_seen": "2026-10-08T10:21:48.746367+00:00"
     },
     "BD.B6D": {
       "title": "In-direct Procurement Specialist",
@@ -61,10 +65,6 @@
     },
     "FD.F6B": {
       "title": "NPI Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "4F.C6F": {
-      "title": "Procurement Specialist",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "84.C62": {

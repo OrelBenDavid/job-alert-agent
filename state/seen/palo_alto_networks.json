@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-08T00:54:45.513917+00:00",
-  "last_count": 145,
+  "last_success": "2026-10-08T10:21:48.799245+00:00",
+  "last_count": 144,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023147": {
+      "title": "Principal/ Senior Automation Engineer (Data Security)",
+      "first_seen": "2026-10-08T10:21:48.799245+00:00"
+    },
     "JR-022627": {
       "title": "Principal DevOps Engineer (Prisma Browser)",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
@@ -467,10 +471,6 @@
       "title": "Sr. Technical Product Engineer (Cortex Agentic Endpoint Security)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-016610": {
-      "title": "Principal Data Engineer (Cortex)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-019065": {
       "title": "Sr Director, Product Managemnt (Cortex XDR)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -493,10 +493,6 @@
     },
     "JR-018226": {
       "title": "Manager, SW Engineering (CORA AI)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-018172": {
-      "title": "Principal QA Architect (Secure Cloud Access)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-017437": {
@@ -584,5 +580,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 146
+  "last_board_total": 145
 }

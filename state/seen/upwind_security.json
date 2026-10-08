@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T00:54:45.549240+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-08T10:21:48.868691+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "4C.C69": {
@@ -47,6 +47,10 @@
       "title": "Growth Marketing Manager",
       "first_seen": "2026-09-07T12:15:49.358514+00:00"
     },
+    "CA.379": {
+      "title": "Marketing Operations Lead",
+      "first_seen": "2026-10-08T10:21:48.868691+00:00"
+    },
     "52.375": {
       "title": "Pre-Sales Engineer- TLV",
       "first_seen": "2026-09-28T21:11:02.457688+00:00"
@@ -83,6 +87,10 @@
       "title": "Technical Account Manager",
       "first_seen": "2026-09-09T11:10:07.797861+00:00"
     },
+    "FA.37B": {
+      "title": "Technical Product Marketing",
+      "first_seen": "2026-10-08T10:21:48.868691+00:00"
+    },
     "78.E65": {
       "title": "Technical Support Engineer – Student Position",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
@@ -96,5 +104,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 89
 }
