@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-07T20:32:54.932034+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-08T00:54:45.542300+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -30,10 +30,6 @@
     "8073783": {
       "title": "Experienced Full Stack Engineer",
       "first_seen": "2026-09-02T11:06:52.103436+00:00"
-    },
-    "8230021": {
-      "title": "Junior Software Engineer",
-      "first_seen": "2026-10-07T20:32:54.932034+00:00"
     },
     "8166705": {
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
@@ -87,14 +83,10 @@
       "title": "Software Development Team Leader – Production Engineering",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
     },
-    "8229871": {
-      "title": "Software Engineer Intern",
-      "first_seen": "2026-10-07T20:32:54.932034+00:00"
-    },
     "8103937": {
       "title": "Strategy Manager",
       "first_seen": "2026-08-23T21:28:46.613864+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 86
 }

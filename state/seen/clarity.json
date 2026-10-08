@@ -1,7 +1,7 @@
 {
   "last_success": "2026-10-06T06:02:40.060022+00:00",
   "last_count": 3,
-  "consecutive_failures": 5,
+  "consecutive_failures": 6,
   "jobs": {
     "4846731101": {
       "title": "AI & Data Science Director",

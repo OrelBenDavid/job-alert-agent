@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-07T20:32:54.189410+00:00",
-  "last_count": 8,
+  "last_success": "2026-10-08T00:54:45.476320+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "5198641007": {
       "title": "Content Engineer, Developer Relations",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "5256226007": {
+      "title": "Customer Experience Engineer I/II",
+      "first_seen": "2026-10-08T00:54:45.476320+00:00"
     },
     "5075790007": {
       "title": "Principal Software Engineer",
@@ -31,10 +35,14 @@
       "title": "Staff Security Analyst - GRC",
       "first_seen": "2026-09-21T23:59:59.941727+00:00"
     },
+    "5249667007": {
+      "title": "Staff/Senior Software Engineer - Cloud Platform Engineering",
+      "first_seen": "2026-10-08T00:54:45.476320+00:00"
+    },
     "4803804007": {
       "title": "Staff Software Engineer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 65
 }
