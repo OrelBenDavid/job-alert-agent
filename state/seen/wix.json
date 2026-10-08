@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-08T10:21:48.675238+00:00",
-  "last_count": 34,
+  "last_success": "2026-10-08T18:46:43.335216+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-e2a2cd53-3ff2-58a5-816d-d3aa2d9a7684-T1791455667-744000154401111": {
+      "title": "Social Media Manager",
+      "first_seen": "2026-10-08T18:46:43.335216+00:00"
+    },
     "https://careers.wix.com/position/oracle-352b3883-9718-5d79-90a7-9bd5d46e8633-T1790589778-744000154046539": {
       "title": "PR Expert",
       "first_seen": "2026-10-07T13:08:46.659064+00:00"

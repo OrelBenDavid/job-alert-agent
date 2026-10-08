@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.731482+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-08T18:46:43.401917+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "B1.D61": {
@@ -10,7 +10,11 @@
     "C9.E66": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
+    },
+    "4B.37F": {
+      "title": "VP Security & Research",
+      "first_seen": "2026-10-08T18:46:43.401917+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 3
 }

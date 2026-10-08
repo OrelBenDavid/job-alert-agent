@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.877176+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-08T18:46:43.576449+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "CF.078": {
@@ -15,14 +15,10 @@
       "title": "Product Operations Manager",
       "first_seen": "2026-08-26T16:24:36.127788+00:00"
     },
-    "AE.F6B": {
-      "title": "Sales Director",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
     "AE.F60": {
       "title": "Solution Engineer",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 17
+  "last_board_total": 16
 }

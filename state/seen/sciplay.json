@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-08T10:21:48.831300+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-08T18:46:43.535785+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "R322863": {
+      "title": "Head of Engineering",
+      "first_seen": "2026-10-08T18:46:43.535785+00:00"
+    },
     "R322814": {
       "title": "Head of Production",
       "first_seen": "2026-09-10T16:17:01.391407+00:00"
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-18T22:29:25.533195+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

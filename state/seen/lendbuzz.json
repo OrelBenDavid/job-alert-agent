@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.762197+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-08T18:46:43.454280+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "f234abf5-c204-4b15-986a-d8ce996883fd": {
@@ -23,10 +23,14 @@
       "title": "Senior DevOps / Site Reliability Engineer (SRE)",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
+    "08b42330-f76c-4e2a-863f-4e8ae7d48b3c": {
+      "title": "Senior Security Lead",
+      "first_seen": "2026-10-08T18:46:43.454280+00:00"
+    },
     "d2e93e58-79dd-4361-9c14-95310a7771a5": {
       "title": "Talent Acquisition Specialist (Sales)",
       "first_seen": "2026-09-25T17:02:02.562107+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 55
 }

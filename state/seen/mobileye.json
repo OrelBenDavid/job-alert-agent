@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.773430+00:00",
-  "last_count": 162,
+  "last_success": "2026-10-08T18:46:43.465889+00:00",
+  "last_count": 160,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -30,6 +30,10 @@
     "99456421-9f43-4f5b-98d1-4f2e0695ba04": {
       "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "bbeb4626-09ea-4975-b5a2-56e4441b8784": {
+      "title": "Algorithm SW Developer Student - Calibration Team",
+      "first_seen": "2026-10-08T18:46:43.465889+00:00"
     },
     "b2d82205-1d0a-4fbd-be32-1e77efa22c76": {
       "title": "ATE & Manufacturing Engineer",
@@ -83,9 +87,9 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
-    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
-      "title": "Data Analytics Project Manager",
-      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    "83504cce-0f0c-4893-8c09-c9a21a3aeaa5": {
+      "title": "Data Analyst – Automotive Lighting Systems - Temporary position for 9 months",
+      "first_seen": "2026-10-08T18:46:43.465889+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -106,6 +110,10 @@
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
+    "9863bd24-bd51-48c5-9e81-9676db076919": {
+      "title": "Director of Technical Program Management",
+      "first_seen": "2026-10-08T18:46:43.465889+00:00"
     },
     "5fc76d9c-d34b-4b36-9e40-23d474bedebd": {
       "title": "Director Product & Engineering Operations",
@@ -299,21 +307,9 @@
       "title": "Information Security Engineer",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
     },
-    "5777fd3d-d3aa-4134-9d0b-884856519a38": {
-      "title": "IT Support Specialist - Temporary (1 year)",
-      "first_seen": "2026-09-24T11:33:41.898207+00:00"
-    },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
-    "b1883e14-5a78-4cd4-af6d-f22790187366": {
-      "title": "Junior Validation & Integration Engineer",
-      "first_seen": "2026-10-07T13:08:47.179245+00:00"
-    },
-    "d58c12f6-be27-4bbc-9cb7-38558e65b0f1": {
-      "title": "Live Mapping Validation Analyst",
-      "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
@@ -414,6 +410,10 @@
     "46bc20f4-a59e-41a5-996a-a56761167d8e": {
       "title": "Senior Embedded System Architect",
       "first_seen": "2026-09-23T11:20:30.688096+00:00"
+    },
+    "c6857a0e-92a8-4aca-b656-d040427c3fe9": {
+      "title": "Senior Engineering Program Manager (EPM) - REM Map Development",
+      "first_seen": "2026-10-08T18:46:43.465889+00:00"
     },
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
@@ -603,10 +603,6 @@
       "title": "Technical PM",
       "first_seen": "2026-10-04T18:36:01.832073+00:00"
     },
-    "303d899e-2b03-41f7-97d2-824da4e51190": {
-      "title": "Technical Product Manager — Cloud & Services (Maternity Leave Cover)",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "3d955240-fd2d-419d-8035-bf647c3da076": {
       "title": "Technical Product Strategy Manager",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
@@ -614,10 +610,6 @@
     "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
       "title": "Technical Program Manager",
       "first_seen": "2026-10-08T10:21:48.773430+00:00"
-    },
-    "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
-      "title": "Technical Project Manager",
-      "first_seen": "2026-09-24T11:33:41.898207+00:00"
     },
     "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
@@ -652,5 +644,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 188
+  "last_board_total": 186
 }

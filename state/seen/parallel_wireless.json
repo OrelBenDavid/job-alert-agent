@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.800927+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-08T18:46:43.505511+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -18,6 +18,10 @@
     "aae3fb69-b696-4925-a7fe-5ca6b3aee726": {
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
+    },
+    "846f8f4b-2c12-42f8-9822-00f7542f0d26": {
+      "title": "Junior Automation Engineer",
+      "first_seen": "2026-10-08T18:46:43.505511+00:00"
     },
     "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
       "title": "PHY Algorithms Senior Engineer - AI/ML",
@@ -51,9 +55,9 @@
       "title": "Sr. Principal, DevOps",
       "first_seen": "2026-09-24T17:00:04.645751+00:00"
     },
-    "632ab8ce-087a-44e0-8865-2d7e815e3c69": {
+    "5cf0faeb-0216-4850-91f2-d81bd7e6dc0e": {
       "title": "System Engineer",
-      "first_seen": "2026-10-08T10:21:48.800927+00:00"
+      "first_seen": "2026-10-08T18:46:43.505511+00:00"
     },
     "d1f8165d-a13b-47d4-b4e4-9c22d12cd6ba": {
       "title": "Technical Lead, Artificial Intelligence",
@@ -64,5 +68,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 46
 }

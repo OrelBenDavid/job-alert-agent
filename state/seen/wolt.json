@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T10:21:48.878473+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-08T18:46:43.577722+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -30,6 +30,10 @@
     "8119266": {
       "title": "Retail Enterprise Development Specialist - ML Replacement",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "8264306": {
+      "title": "Retail Inside Sales Associate",
+      "first_seen": "2026-10-08T18:46:43.577722+00:00"
     },
     "7218515": {
       "title": "Store Manager",
@@ -64,5 +68,5 @@
       "first_seen": "2026-09-29T12:38:07.520411+00:00"
     }
   },
-  "last_board_total": 219
+  "last_board_total": 222
 }
