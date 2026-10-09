@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-09T01:08:59.512291+00:00",
-  "last_count": 144,
+  "last_success": "2026-10-09T10:22:25.803304+00:00",
+  "last_count": 142,
   "consecutive_failures": 0,
   "jobs": {
     "JR-023369": {
@@ -515,10 +515,6 @@
       "title": "Principal AI Software Engineer (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018658": {
-      "title": "Senior/Principal Linux Security Analytics Researcher (Cortex)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-009669": {
       "title": "Sr Product Manager- AI  (Cortex XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -559,10 +555,6 @@
       "title": "Engineering Software Manager (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-012548": {
-      "title": "Security Research Manager: Identity, SaaS, and Cloud (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-013064": {
       "title": "Principal Product Manager -  Application Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -580,5 +572,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 145
+  "last_board_total": 143
 }

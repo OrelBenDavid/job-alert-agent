@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-09T01:08:59.439944+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-09T10:22:25.741068+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -119,10 +119,6 @@
       "title": "Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
-    "99.757": {
-      "title": "Software Engineer – BSP & Firmware",
-      "first_seen": "2026-09-15T11:34:07.597510+00:00"
-    },
     "EE.277": {
       "title": "Software Engineer- AI Datacenter Orchestration Platform",
       "first_seen": "2026-10-06T15:50:15.935694+00:00"
@@ -148,5 +144,5 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 44
 }
