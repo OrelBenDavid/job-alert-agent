@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-10-09T10:22:25.720974+00:00",
+  "last_success": "2026-10-09T18:17:00.372345+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "1287724": {
-      "title": "Senior DevOps Engineer (browser CI/CD + AWS)",
+      "title": "Senior Build Systems Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "8075785": {
