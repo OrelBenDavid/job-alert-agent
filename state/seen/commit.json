@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-08T18:46:43.372330+00:00",
-  "last_count": 42,
+  "last_success": "2026-10-09T01:08:59.421613+00:00",
+  "last_count": 44,
   "consecutive_failures": 0,
   "jobs": {
     "93.E65": {
@@ -47,9 +47,17 @@
       "title": "DBA",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "DE.27A": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-10-09T01:08:59.421613+00:00"
+    },
     "1B.061": {
       "title": "DevOps Engineer (GCP Specialist)",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "EA.37E": {
+      "title": "DevOps Team Lead",
+      "first_seen": "2026-10-09T01:08:59.421613+00:00"
     },
     "F5.D68": {
       "title": "Hardware Development Team Lead",
@@ -172,5 +180,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 128
+  "last_board_total": 130
 }

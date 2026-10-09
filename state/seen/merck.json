@@ -1,15 +1,15 @@
 {
-  "last_success": "2026-10-08T18:46:43.462380+00:00",
+  "last_success": "2026-10-09T01:08:59.492305+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
+    "R415292": {
+      "title": "EHS Lead",
+      "first_seen": "2026-10-09T01:08:59.492305+00:00"
+    },
     "R404697": {
       "title": "Algorithm Engineer",
       "first_seen": "2026-10-07T20:32:54.220816+00:00"
-    },
-    "R389182": {
-      "title": "PCBA Technologist for Engineering Team",
-      "first_seen": "2026-10-07T13:08:46.790275+00:00"
     },
     "R419576": {
       "title": "Brand and Customer Manager - HPV",
