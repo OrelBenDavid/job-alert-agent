@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-11T12:36:12.481666+00:00",
+  "last_success": "2026-10-11T19:27:32.778583+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-08-13T11:24:49.418947+00:00"
     },
     "0B.E46": {
-      "title": "Senior Product Manager",
+      "title": "Technical Product Manager",
       "first_seen": "2026-08-13T11:24:49.418947+00:00"
     }
   },

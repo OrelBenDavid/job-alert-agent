@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T12:36:12.433855+00:00",
-  "last_count": 158,
+  "last_success": "2026-10-11T19:27:32.719874+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -359,10 +359,6 @@
       "title": "Senior Algorithm Engineer - Objects Perception",
       "first_seen": "2026-08-13T09:40:45.264644+00:00"
     },
-    "402007d2-e42d-4006-9319-8ea87599ba2e": {
-      "title": "Senior AV Product Manager - Temporary Position (One year replacement)",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "ee246ef1-c9ae-4a05-ad95-ad37a744db48": {
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
@@ -451,10 +447,6 @@
       "title": "Senior Software Engineer - C++ Embedded Systems (Autonomous Driving)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "fcdf3814-81f3-4802-be16-26ef77ac5ac7": {
-      "title": "Senior SOTIF Analyst",
-      "first_seen": "2026-09-14T12:31:04.081629+00:00"
-    },
     "ffd7b3b0-bde6-447f-89cd-1c7f9abf17e5": {
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -466,6 +458,10 @@
     "d7f0dc54-948b-4917-be5a-539c0fd5f61d": {
       "title": "Senior Talent Acquisition Partner",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
+    },
+    "fcdf3814-81f3-4802-be16-26ef77ac5ac7": {
+      "title": "Senior Technical Product Analyst - SOTIF",
+      "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
     "b62913b8-da97-4467-85ff-7d495ef44cf4": {
       "title": "Senior Technical Program Manager",
@@ -547,14 +543,6 @@
       "title": "Software Team Lead - Data Infrastructure & Algorithm",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
     },
-    "277476b2-bd2a-44d8-a727-caca1dcb4b45": {
-      "title": "Solution Architect for Cloud Communication",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "539e7cc7-1c30-43fd-8a72-a631aba80d26": {
-      "title": "Solution Architect for Cloud Communication",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "5d23dc1d-fc84-427d-96cf-cd151087561d": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -623,10 +611,6 @@
       "title": "Test Automation Technical Lead",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
     },
-    "a6cf562b-dca7-4708-9772-7539a13b9a37": {
-      "title": "Validation & Integration Engineer",
-      "first_seen": "2026-09-29T19:55:52.242566+00:00"
-    },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
       "title": "Validation Engineer & Embedded System Integration",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -636,5 +620,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 184
+  "last_board_total": 180
 }

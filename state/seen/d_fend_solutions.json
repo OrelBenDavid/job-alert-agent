@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-11T12:36:12.391578+00:00",
+  "last_success": "2026-10-11T19:27:32.653735+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -35,10 +35,6 @@
       "title": "Sales Operations Team Lead",
       "first_seen": "2026-08-20T18:51:26.374540+00:00"
     },
-    "f952f781-68e1-44ea-bf47-6b4efe3b0723": {
-      "title": "Senior Buyer / Strategic Sourcing Specialist (Electromechanical Commodities)",
-      "first_seen": "2026-10-11T12:36:12.391578+00:00"
-    },
     "ecb21abd-803d-4cb9-a6a9-9d5869343e2c": {
       "title": "Senior Communication PHY Algorithms Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
@@ -54,6 +50,10 @@
     "67b5b100-6c79-4c61-a159-7fe815339187": {
       "title": "Senior Organizational Development Lead & HRBP",
       "first_seen": "2026-10-11T12:36:12.391578+00:00"
+    },
+    "68f76df0-357e-4e16-b131-da844a19df2b": {
+      "title": "System Engineer",
+      "first_seen": "2026-10-11T19:27:32.653735+00:00"
     }
   },
   "last_board_total": 21

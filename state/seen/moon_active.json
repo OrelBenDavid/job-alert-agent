@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T12:36:12.441387+00:00",
-  "last_count": 27,
+  "last_success": "2026-10-11T19:27:32.721388+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
@@ -87,10 +87,6 @@
       "title": "IP and Brand Protection Specialist - Student Position",
       "first_seen": "2026-10-07T13:08:47.192790+00:00"
     },
-    "6140b3a4-417d-4aa4-a19e-808b8faf17f0": {
-      "title": "Product UX Designer",
-      "first_seen": "2026-08-23T09:01:22.335333+00:00"
-    },
     "bb0cb6e0-0560-42d7-bff4-e7883141cd63": {
       "title": "CX Solutions Specialist",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
@@ -112,5 +108,5 @@
       "first_seen": "2026-09-08T16:30:33.570437+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }
