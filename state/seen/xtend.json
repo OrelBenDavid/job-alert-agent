@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T05:29:07.308425+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-11T12:36:12.494593+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "66.371": {
@@ -26,6 +26,10 @@
     "91.376": {
       "title": "Director BD and Sales",
       "first_seen": "2026-09-27T16:51:09.834269+00:00"
+    },
+    "3C.37F": {
+      "title": "Drone Lab Technician",
+      "first_seen": "2026-10-11T12:36:12.494593+00:00"
     },
     "FE.275": {
       "title": "Embedded Team Lead",
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

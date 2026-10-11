@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T05:29:07.301471+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-11T12:36:12.488597+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -23,13 +23,9 @@
       "title": "Field Design Engineer",
       "first_seen": "2026-09-27T11:52:38.271422+00:00"
     },
-    "01.172": {
-      "title": "Global Sales Operations Senior Manager",
-      "first_seen": "2026-10-06T15:50:16.490364+00:00"
-    },
-    "24.E66": {
-      "title": "Production Planning & Scheduling",
-      "first_seen": "2026-08-20T06:56:59.903629+00:00"
+    "EB.37E": {
+      "title": "Production Planner",
+      "first_seen": "2026-10-11T12:36:12.488597+00:00"
     },
     "32.D6C": {
       "title": "Production Section Manager",
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 75
+  "last_board_total": 74
 }

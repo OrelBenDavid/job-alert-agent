@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T05:29:07.246731+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-11T12:36:12.443979+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "8D.F65": {
@@ -19,14 +19,10 @@
       "title": "Project Manager- Retail",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     },
-    "E9.27B": {
-      "title": "Revenue Operations Manager - Temporary position",
-      "first_seen": "2026-09-10T11:06:09.941403+00:00"
-    },
     "ED.C61": {
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-08-20T06:56:56.889318+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 21
 }

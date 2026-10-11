@@ -1,8 +1,28 @@
 {
-  "last_success": "2026-10-11T05:29:07.155133+00:00",
-  "last_count": 35,
+  "last_success": "2026-10-11T12:36:12.347675+00:00",
+  "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-103a0d77-ec9c-533e-9309-8d265256b245-T1791200042-744000154875719": {
+      "title": "Product Analyst - Base44",
+      "first_seen": "2026-10-11T12:36:12.347675+00:00"
+    },
+    "https://careers.wix.com/position/oracle-49bdb95b-4c89-5088-9e3d-6342bfb29181-T1791704265-744000154874769": {
+      "title": "Procurement Business Partner – Base44",
+      "first_seen": "2026-10-11T12:36:12.347675+00:00"
+    },
+    "https://careers.wix.com/position/oracle-3fb8de7c-214f-5189-9024-82a57df3d8e5-T1791703364-744000154874469": {
+      "title": "Web Designer - Content Generation team",
+      "first_seen": "2026-10-11T12:36:12.347675+00:00"
+    },
+    "https://careers.wix.com/position/oracle-2488fc83-3ce8-5faf-8671-2bb2f2f26828-T1791108234-744000154874429": {
+      "title": "UI Designer – Brand UI team",
+      "first_seen": "2026-10-11T12:36:12.347675+00:00"
+    },
+    "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000154874389": {
+      "title": "DevOps Engineer - Cloud Infra Team",
+      "first_seen": "2026-10-11T12:36:12.347675+00:00"
+    },
     "https://careers.wix.com/position/oracle-e2a2cd53-3ff2-58a5-816d-d3aa2d9a7684-T1791455667-744000154401111": {
       "title": "Social Media Manager",
       "first_seen": "2026-10-08T18:46:43.335216+00:00"
@@ -22,10 +42,6 @@
     "https://careers.wix.com/position/oracle-d245b566-fd52-5062-9364-4d2b560ef6d0-T1791187438-744000153428309": {
       "title": "AI Analyst",
       "first_seen": "2026-10-05T14:24:12.362183+00:00"
-    },
-    "https://careers.wix.com/position/oracle-2488fc83-3ce8-5faf-8671-2bb2f2f26828-T1791108234-744000153371359": {
-      "title": "UI Designer – Brand UI team",
-      "first_seen": "2026-10-04T12:11:37.714006+00:00"
     },
     "https://careers.wix.com/position/oracle-95a6acf6-c476-51f1-8f67-73d97a6e17cb-T1790858013-744000152930574": {
       "title": "DevOps Engineer - Base44",
@@ -66,10 +82,6 @@
     "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000151022358": {
       "title": "Performance Marketing Analyst - Base44",
       "first_seen": "2026-09-22T16:46:15.873797+00:00"
-    },
-    "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000150029889": {
-      "title": "DevOps Engineer - Cloud Infra Team",
-      "first_seen": "2026-09-25T21:26:32.036584+00:00"
     },
     "https://careers.wix.com/position/oracle-aed3cf5c-229a-5c18-a8d3-dc5d5ca8395e-T1789470063-744000149843089": {
       "title": "Experienced Motion Designer",

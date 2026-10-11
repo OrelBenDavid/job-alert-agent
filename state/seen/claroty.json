@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-11T05:29:07.183714+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-11T12:36:12.378885+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
+    "66.271": {
+      "title": "AI Platform, Backend Software Engineer",
+      "first_seen": "2026-10-11T12:36:12.378885+00:00"
+    },
     "CE.079": {
       "title": "AI Platform- Software Engineer Team Leader",
       "first_seen": "2026-08-23T15:30:12.038716+00:00"
@@ -22,6 +26,10 @@
     "E0.E63": {
       "title": "Manager, Security Operations Engineering",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
+    },
+    "3C.374": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-10-11T12:36:12.378885+00:00"
     },
     "2D.073": {
       "title": "Senior Manager - Software Engineering",
@@ -44,5 +52,5 @@
       "first_seen": "2026-08-17T07:09:57.456756+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 25
 }

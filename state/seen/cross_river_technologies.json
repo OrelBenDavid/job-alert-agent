@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T05:29:07.188549+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-11T12:36:12.388839+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "53.E6A": {
@@ -10,6 +10,10 @@
     "50.F68": {
       "title": "Employer Brand & Talent Marketing",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "47.D3D": {
+      "title": "Engineering Manager",
+      "first_seen": "2026-10-11T12:36:12.388839+00:00"
     },
     "BA.96B": {
       "title": "IT Compliance Analyst",
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

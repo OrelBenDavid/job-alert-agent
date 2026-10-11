@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-10-11T05:29:07.215094+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-11T12:36:12.411919+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
       "title": "Senior IT Platform Engineer",
-      "first_seen": "2026-09-08T11:05:09.147673+00:00"
-    },
-    "e41aa061-751d-436f-a34c-d8f7bb65cb57": {
-      "title": "Finance Applications Product Manager",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
     },
     "a7e6da7e-ef7d-45dc-994b-e03e9319f1e8": {
@@ -80,5 +76,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 80
+  "last_board_total": 79
 }
