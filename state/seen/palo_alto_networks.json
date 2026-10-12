@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T19:27:32.740035+00:00",
-  "last_count": 135,
+  "last_success": "2026-10-12T00:25:01.823310+00:00",
+  "last_count": 134,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021196": {
@@ -343,10 +343,6 @@
       "title": "Senior Principal DevOps Engineer (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-020823": {
-      "title": "Senior Software Engineer | Cortex Detection team",
-      "first_seen": "2026-08-28T00:21:17.728913+00:00"
-    },
     "JR-015162": {
       "title": "Senior/Principal Backend  AI Engineer (Cortex XSIAM)",
       "first_seen": "2026-08-26T13:07:18.677549+00:00"
@@ -544,5 +540,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 136
+  "last_board_total": 135
 }

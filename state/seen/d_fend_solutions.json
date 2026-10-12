@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-11T19:27:32.653735+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-12T00:25:01.766376+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "b3830cf8-8f19-4ae7-888e-54b15fc00848": {
@@ -47,14 +47,10 @@
       "title": "Senior Mechanical Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
-    "67b5b100-6c79-4c61-a159-7fe815339187": {
-      "title": "Senior Organizational Development Lead & HRBP",
-      "first_seen": "2026-10-11T12:36:12.391578+00:00"
-    },
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }
