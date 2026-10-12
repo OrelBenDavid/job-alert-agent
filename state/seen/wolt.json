@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-12T10:35:45.239110+00:00",
+  "last_success": "2026-10-12T21:12:11.994821+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -36,7 +36,7 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
     "8258127": {
-      "title": "Support Quality Manager",
+      "title": "Support Quality Manager (Maternity Leave Replacement)",
       "first_seen": "2026-10-06T15:50:16.500824+00:00"
     },
     "8173457": {
@@ -64,5 +64,5 @@
       "first_seen": "2026-09-29T12:38:07.520411+00:00"
     }
   },
-  "last_board_total": 220
+  "last_board_total": 224
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T10:35:45.192506+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-12T21:12:11.906660+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "4938801101": {
@@ -47,6 +47,10 @@
       "title": "Employer Branding Student (Temporary )",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
+    "5003377101": {
+      "title": "HR Operations Specialist",
+      "first_seen": "2026-10-12T21:12:11.906660+00:00"
+    },
     "4983402101": {
       "title": "Platform Engineering Group Leader",
       "first_seen": "2026-09-28T21:11:02.425252+00:00"
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 173
+  "last_board_total": 176
 }

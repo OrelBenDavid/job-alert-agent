@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T10:35:45.242466+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-12T21:12:12.003554+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "B1.373": {
@@ -35,10 +35,6 @@
       "title": "E-commerce Product & CRO Manager",
       "first_seen": "2026-08-20T06:56:59.913661+00:00"
     },
-    "B3.A69": {
-      "title": "Lifecycle Marketing Manager",
-      "first_seen": "2026-08-20T06:56:59.913661+00:00"
-    },
     "FE.271": {
       "title": "Marketing Designer",
       "first_seen": "2026-09-22T11:24:08.126568+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-20T06:56:59.913661+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }

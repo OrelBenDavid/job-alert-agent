@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T10:35:45.167452+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-12T21:12:11.541529+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -67,17 +67,9 @@
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
     },
-    "8118681": {
-      "title": "Sales Program Manager",
-      "first_seen": "2026-08-21T09:45:05.231822+00:00"
-    },
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
-    },
-    "7657193": {
-      "title": "Senior Product Manager - JFrog Security",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "7510102": {
       "title": "Senior Software Engineer",
@@ -88,5 +80,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 65
+  "last_board_total": 61
 }

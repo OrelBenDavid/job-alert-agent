@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-12T10:35:45.134571+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-12T21:12:11.513744+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
+    "0f2c807c-3f3d-4383-8c12-75641066438b": {
+      "title": "Full Stack Software Engineering Team Leader",
+      "first_seen": "2026-10-12T21:12:11.513744+00:00"
+    },
     "b3830cf8-8f19-4ae7-888e-54b15fc00848": {
       "title": "Hardware Product Manager -Deployment Kits & Configurations",
       "first_seen": "2026-09-09T11:10:07.697737+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 21
 }

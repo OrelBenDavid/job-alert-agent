@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-12T10:35:45.099215+00:00",
+  "last_success": "2026-10-12T21:12:11.475546+00:00",
   "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,10 +10,6 @@
     "2C.370": {
       "title": "AI Red Team – GenAI Adversarial Evaluation",
       "first_seen": "2026-10-11T12:36:12.351370+00:00"
-    },
-    "BE.070": {
-      "title": "Child Safety Researcher",
-      "first_seen": "2026-08-23T12:54:49.917391+00:00"
     },
     "CD.171": {
       "title": "Data Science Engineering Manager",
@@ -26,6 +22,10 @@
     "2B.37A-D5.20E": {
       "title": "Fraud Threat Team Lead",
       "first_seen": "2026-10-11T12:36:12.351370+00:00"
+    },
+    "BC.37C": {
+      "title": "Head of RL Gym - Program Operations",
+      "first_seen": "2026-10-12T21:12:11.475546+00:00"
     },
     "E0.E61": {
       "title": "Malware Research (Mid-Level)",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T10:35:45.188032+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-12T21:12:11.895811+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "8184071": {
@@ -10,6 +10,10 @@
     "8210699": {
       "title": "Controller",
       "first_seen": "2026-09-17T16:47:40.586457+00:00"
+    },
+    "8273879": {
+      "title": "Director of Science",
+      "first_seen": "2026-10-12T21:12:11.895811+00:00"
     },
     "8184075": {
       "title": "Retention Representative",
@@ -24,5 +28,5 @@
       "first_seen": "2026-09-06T15:21:45.286392+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

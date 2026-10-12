@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-12T10:35:45.163534+00:00",
+  "last_success": "2026-10-12T21:12:11.537248+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,9 +7,9 @@
       "title": "Lead Solutions Engineer",
       "first_seen": "2026-08-31T20:45:43.738059+00:00"
     },
-    "c7748207-bf90-4a4f-b8c2-f9e28b8f51e6": {
-      "title": "Fraud Ops Specialist",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    "936fe2a1-bcce-4ab9-a51a-42c11c203406": {
+      "title": "Sr. Manager of CX Enablement",
+      "first_seen": "2026-10-12T21:12:11.537248+00:00"
     },
     "b48db81c-e19e-4fdd-a453-578a440320f9": {
       "title": "Partner Marketing Manager",
@@ -44,5 +44,5 @@
       "first_seen": "2026-09-30T00:18:13.970518+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }

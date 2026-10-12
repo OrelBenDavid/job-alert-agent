@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T10:35:45.128676+00:00",
-  "last_count": 45,
+  "last_success": "2026-10-12T21:12:11.505587+00:00",
+  "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
     "9C.D6C": {
@@ -136,7 +136,7 @@
       "first_seen": "2026-09-22T11:24:07.966858+00:00"
     },
     "0B.373": {
-      "title": "Senior System Engineer",
+      "title": "Senior System Architect",
       "first_seen": "2026-10-08T18:46:43.372330+00:00"
     },
     "38.260": {
@@ -182,7 +182,11 @@
     "98.96C": {
       "title": "מנהל/ת פרויקטים",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "9C.372": {
+      "title": "ראש צוות מעבדת שילובים",
+      "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 134
+  "last_board_total": 137
 }
