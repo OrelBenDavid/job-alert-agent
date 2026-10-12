@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-12T00:25:01.816729+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-12T10:35:45.192506+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
-    "4904281101": {
-      "title": "AI QA Automation Lead",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4938801101": {
       "title": "Cloud FinOps Business Partner",
       "first_seen": "2026-09-01T18:20:52.195346+00:00"
@@ -19,13 +15,13 @@
       "title": "DevOps Team Lead",
       "first_seen": "2026-09-28T21:11:02.425252+00:00"
     },
-    "4867642101": {
-      "title": "Director of Engineering",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "4969705101": {
       "title": "Director of Engineering",
       "first_seen": "2026-09-10T11:06:09.943762+00:00"
+    },
+    "4867642101": {
+      "title": "Director of Engineering",
+      "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "4860273101": {
       "title": "Director of Engineering ,Automation, Performance & AI Quality",
@@ -63,18 +59,10 @@
       "title": "Quality Director",
       "first_seen": "2026-09-02T11:06:52.064936+00:00"
     },
-    "4923953101": {
-      "title": "Senior Agentic Systems Engineer",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "4967467101": {
-      "title": "Senior HR Operations Specialist",
-      "first_seen": "2026-09-03T11:04:08.080968+00:00"
-    },
     "4911286101": {
       "title": "Senior Product Manager, AI",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 174
+  "last_board_total": 173
 }

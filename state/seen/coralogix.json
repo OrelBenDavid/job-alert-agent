@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.761902+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-12T10:35:45.130148+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -47,10 +47,14 @@
       "title": "Team Lead, Technical Account Manager -IL",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
     },
+    "0C.D60": {
+      "title": "VP Information Systems",
+      "first_seen": "2026-10-12T10:35:45.130148+00:00"
+    },
     "B5.F66": {
       "title": "VP Operations",
       "first_seen": "2026-10-11T12:36:12.387858+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 63
 }

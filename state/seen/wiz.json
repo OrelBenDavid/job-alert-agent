@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.866050+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-12T10:35:45.238633+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "4681239006": {
@@ -59,6 +59,10 @@
       "title": "Product Designer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
+    "4004237006": {
+      "title": "Product Manager, AI",
+      "first_seen": "2026-10-12T10:35:45.238633+00:00"
+    },
     "4710823006": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-10-06T15:50:16.500195+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 125
+  "last_board_total": 126
 }

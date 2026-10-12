@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-12T00:25:01.809881+00:00",
-  "last_count": 154,
+  "last_success": "2026-10-12T10:35:45.180661+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6e5ec7a5-aa8b-4f8d-bdfd-d301bde6098f": {
+      "title": "Algorithm Developer – REM Change Detection Team",
+      "first_seen": "2026-10-12T10:35:45.180661+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -30,6 +34,10 @@
     "99456421-9f43-4f5b-98d1-4f2e0695ba04": {
       "title": "Algorithm Researcher – Autonomous Driving (CTO Group)",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "92113388-2b09-41dd-95d9-9291d4bb8648": {
+      "title": "ASIC Design Engineer",
+      "first_seen": "2026-10-12T10:35:45.180661+00:00"
     },
     "b2d82205-1d0a-4fbd-be32-1e77efa22c76": {
       "title": "ATE & Manufacturing Engineer",
@@ -111,10 +119,6 @@
       "title": "Digital Marketing Specialist - Temporary Position",
       "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
-    "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
-      "title": "Director of Release Management",
-      "first_seen": "2026-09-17T11:28:45.928098+00:00"
-    },
     "9863bd24-bd51-48c5-9e81-9676db076919": {
       "title": "Director of Technical Program Management",
       "first_seen": "2026-10-08T18:46:43.465889+00:00"
@@ -130,14 +134,6 @@
     "7095ceb2-0f4a-4cb1-a7dd-642d2cff9dcd": {
       "title": "Embedded C++ Software Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "3d960f95-4021-413a-b81c-46dde8329a2d": {
-      "title": "Embedded Integrator",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
-    },
-    "a2fe71b4-1d27-4842-84c4-500e6e994d32": {
-      "title": "Embedded Integrator",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
     },
     "04853139-2a12-4d1e-8ce3-6d315ec31081": {
       "title": "Embedded Integrator - Temporary",
@@ -170,14 +166,6 @@
     "5dc1fe67-93f1-481c-bbd4-06b3125f7493": {
       "title": "EU Strategic Account Manager - Temporary",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
-    },
-    "4dea897b-07f2-4e1e-a7a0-8352f15e75bb": {
-      "title": "Experience Embedded Integrator",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
-    },
-    "feda1f63-bf73-42dd-abe1-cfd26d16a0ca": {
-      "title": "Experience Embedded Integrator",
-      "first_seen": "2026-09-30T17:56:23.239460+00:00"
     },
     "e4ff9bf6-2346-4421-8945-38aff4bc62be": {
       "title": "Experienced Backend Developer for Cloud Infrastructure",
@@ -343,6 +331,10 @@
       "title": "Real-Time Embedded SW Engineer",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
     },
+    "998b921e-04c5-4aef-b86d-1c13d518e53c": {
+      "title": "Reinforcement Learning Researcher | Learned-Policy Group",
+      "first_seen": "2026-10-12T10:35:45.180661+00:00"
+    },
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
       "title": "Semiconductor Quality & Reliability Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
@@ -434,10 +426,6 @@
     "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "0f7933a9-6b28-44e4-8398-a443e0ec0eb2": {
-      "title": "Senior Release Manager",
-      "first_seen": "2026-09-22T11:24:08.035644+00:00"
     },
     "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
       "title": "Senior Signal Integrity Engineer-AV Hardware",
@@ -567,6 +555,10 @@
       "title": "System Validation Engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
     },
+    "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
+      "title": "Technical Assistant for Executive VP",
+      "first_seen": "2026-10-12T10:35:45.180661+00:00"
+    },
     "a5e1a798-a47e-4cc7-960a-3a61859b2ec4": {
       "title": "Technical Execution Program Manager",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -620,5 +612,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 180
+  "last_board_total": 179
 }

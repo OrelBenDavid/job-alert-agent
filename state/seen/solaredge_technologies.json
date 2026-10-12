@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.847968+00:00",
-  "last_count": 45,
+  "last_success": "2026-10-12T10:35:45.218652+00:00",
+  "last_count": 44,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -54,10 +54,6 @@
     "7C.C62": {
       "title": "Embedded Software Engineer",
       "first_seen": "2026-08-24T13:05:04.511358+00:00"
-    },
-    "DB.270": {
-      "title": "Embedded Software Engineer",
-      "first_seen": "2026-09-17T21:14:08.469196+00:00"
     },
     "0E.860": {
       "title": "Experienced ATE HW Engineer",
@@ -184,5 +180,5 @@
       "first_seen": "2026-09-23T11:20:30.713036+00:00"
     }
   },
-  "last_board_total": 102
+  "last_board_total": 101
 }

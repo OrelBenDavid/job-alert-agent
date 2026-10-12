@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.823310+00:00",
-  "last_count": 134,
+  "last_success": "2026-10-12T10:35:45.198022+00:00",
+  "last_count": 132,
   "consecutive_failures": 0,
   "jobs": {
     "JR-021196": {
@@ -153,10 +153,6 @@
     },
     "JR-022684": {
       "title": "Sr Staff Data Scientist",
-      "first_seen": "2026-09-24T11:33:41.920573+00:00"
-    },
-    "JR-022891": {
-      "title": "Manager Software Engineering - Data Security (Cortex)",
       "first_seen": "2026-09-24T11:33:41.920573+00:00"
     },
     "JR-022742": {
@@ -534,11 +530,7 @@
     "JR-014644": {
       "title": "Principal Engineer Software(Cortex XSOAR/XSIAM)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-010424": {
-      "title": "Dir / Sr Dir , SW Engineering ( Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 135
+  "last_board_total": 133
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-12T00:25:01.760617+00:00",
-  "last_count": 44,
+  "last_success": "2026-10-12T10:35:45.128676+00:00",
+  "last_count": 45,
   "consecutive_failures": 0,
   "jobs": {
+    "9C.D6C": {
+      "title": "AI Project Manager",
+      "first_seen": "2026-10-12T10:35:45.128676+00:00"
+    },
     "93.E65": {
       "title": "AI R&D Transformation Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -180,5 +184,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 130
+  "last_board_total": 134
 }

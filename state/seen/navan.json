@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-10-12T00:25:01.813261+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-12T10:35:45.188938+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "7896395": {
       "title": "AI Engineer",
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
-    },
-    "8103243": {
-      "title": "Director, Engineering",
-      "first_seen": "2026-09-01T08:32:41.852231+00:00"
     },
     "8239887": {
       "title": "IT Support Engineer",
@@ -64,5 +60,5 @@
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
     }
   },
-  "last_board_total": 207
+  "last_board_total": 206
 }

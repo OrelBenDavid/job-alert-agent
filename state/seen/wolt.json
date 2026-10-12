@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.866556+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-12T10:35:45.239110+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -30,10 +30,6 @@
     "8264306": {
       "title": "Retail Inside Sales Associate",
       "first_seen": "2026-10-08T18:46:43.577722+00:00"
-    },
-    "8098398": {
-      "title": "SSC Operational Excellence Team Manager",
-      "first_seen": "2026-10-09T10:22:25.855903+00:00"
     },
     "7218515": {
       "title": "Store Manager",
@@ -68,5 +64,5 @@
       "first_seen": "2026-09-29T12:38:07.520411+00:00"
     }
   },
-  "last_board_total": 222
+  "last_board_total": 220
 }

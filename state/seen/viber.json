@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T00:25:01.861196+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-12T10:35:45.234191+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "CC.C69": {
@@ -31,10 +31,6 @@
       "title": "Product Manager – Viber Dating",
       "first_seen": "2026-10-06T15:50:16.489694+00:00"
     },
-    "52.F64": {
-      "title": "Senior Director, Fraud Prevention & Platform Integrity",
-      "first_seen": "2026-08-13T11:24:49.426826+00:00"
-    },
     "9A.D6B": {
       "title": "Social Media Manager (B2C)",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-10-06T15:50:16.489694+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 29
 }
