@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-13T06:35:37.285278+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-13T16:52:24.830242+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "332aa0e9-46b5-4f89-bee8-3e63362d3056": {
@@ -17,10 +17,6 @@
     },
     "3277b37e-4972-4152-a379-9c58c000b08e": {
       "title": "Data Scientist, Risk",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
-    "428ac214-5b4a-4ac1-b6f5-ae7bc35dce7e": {
-      "title": "Email Automation & QA Specialist",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
     },
     "8b9bee00-2a81-4872-93f9-e85b1f3cef07": {
@@ -44,5 +40,5 @@
       "first_seen": "2026-09-30T00:18:13.970518+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 22
 }

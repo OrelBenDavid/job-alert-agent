@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-10-13T06:35:37.167157+00:00",
-  "last_count": 45,
+  "last_success": "2026-10-13T16:52:24.769762+00:00",
+  "last_count": 44,
   "consecutive_failures": 0,
   "jobs": {
     "9C.D6C": {
       "title": "AI Project Manager",
       "first_seen": "2026-10-12T10:35:45.128676+00:00"
-    },
-    "93.E65": {
-      "title": "AI R&D Transformation Lead",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "B6.272": {
       "title": "Analytics Data Engineer",
@@ -59,6 +55,10 @@
       "title": "DevOps Team Lead",
       "first_seen": "2026-10-09T01:08:59.421613+00:00"
     },
+    "65.56C": {
+      "title": "GenAI Expert",
+      "first_seen": "2026-10-13T16:52:24.769762+00:00"
+    },
     "F5.D68": {
       "title": "Hardware Development Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -87,6 +87,10 @@
       "title": "Network Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "5D.37F": {
+      "title": "PMO",
+      "first_seen": "2026-10-13T16:52:24.769762+00:00"
+    },
     "DD.07A": {
       "title": "Product Director",
       "first_seen": "2026-08-20T15:40:50.829993+00:00"
@@ -94,10 +98,6 @@
     "74.D65": {
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "F2.17F": {
-      "title": "QA Automation Engineer",
-      "first_seen": "2026-08-26T09:51:33.814639+00:00"
     },
     "CD.07F": {
       "title": "R&D Director",
@@ -134,10 +134,6 @@
     "0B.373": {
       "title": "Senior System Architect",
       "first_seen": "2026-10-08T18:46:43.372330+00:00"
-    },
-    "38.260": {
-      "title": "Software Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "A5.D62": {
       "title": "Software Project Manager",
@@ -184,5 +180,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 136
+  "last_board_total": 133
 }

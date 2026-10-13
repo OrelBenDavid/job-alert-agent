@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-13T06:35:37.159753+00:00",
+  "last_success": "2026-10-13T16:52:24.755886+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,6 +14,10 @@
     "21.641": {
       "title": "*Senior Backend Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "EE.649": {
+      "title": "*Senior Frontend Engineer",
+      "first_seen": "2026-10-13T16:52:24.755886+00:00"
     },
     "EE.E63": {
       "title": "*Senior Full-Stack Engineer",
@@ -50,10 +54,6 @@
     "BD.271": {
       "title": "GTM AI Engineer",
       "first_seen": "2026-09-17T16:47:40.515903+00:00"
-    },
-    "F8.26A": {
-      "title": "Project Configuration Specialist",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
   "last_board_total": 42

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-13T06:35:37.302426+00:00",
+  "last_success": "2026-10-13T16:52:25.844896+00:00",
   "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
@@ -46,10 +46,6 @@
     "b2d82205-1d0a-4fbd-be32-1e77efa22c76": {
       "title": "ATE & Manufacturing Engineer",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
-    },
-    "1feca106-ab12-4c5b-a2b4-71cf1e3e47a5": {
-      "title": "Autonomous Vehicles Performance Analyst",
-      "first_seen": "2026-10-11T12:36:12.433855+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -122,10 +118,6 @@
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "9863bd24-bd51-48c5-9e81-9676db076919": {
-      "title": "Director of Technical Program Management",
-      "first_seen": "2026-10-08T18:46:43.465889+00:00"
     },
     "04c8ffeb-012c-4461-88a1-58acc073958b": {
       "title": "EHS specialist - Safety Officer",
@@ -283,6 +275,10 @@
       "title": "IC Package Layout Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
     },
+    "c964c792-eff5-4427-a847-38144b9cd7cd": {
+      "title": "Information Security Engineer",
+      "first_seen": "2026-10-13T16:52:25.844896+00:00"
+    },
     "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
       "title": "Junior Physical Design Engineer",
       "first_seen": "2026-09-03T16:17:32.007271+00:00"
@@ -344,7 +340,7 @@
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
     },
     "73a651f5-963c-447d-b0ae-b6c9ee06f684": {
-      "title": "Senior AI Researcher - VIsual GenAI",
+      "title": "Senior AI Researcher - Visual GenAI",
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     },
     "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
@@ -527,10 +523,6 @@
       "title": "Software Group Manager - OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "f10044d7-c978-4fed-bb58-0bd0170ab8ec": {
-      "title": "Software Integration and Field Application Engineer",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
-    },
     "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
       "title": "Software Team Lead - Data Infrastructure & Algorithm",
       "first_seen": "2026-09-09T11:10:07.736530+00:00"
@@ -606,6 +598,14 @@
     "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
       "title": "Test Automation Technical Lead",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
+    },
+    "e447ddd1-b3aa-4afe-b23e-b40ec58f8a08": {
+      "title": "Test Driver for Autonomous Vehicles",
+      "first_seen": "2026-10-13T16:52:25.844896+00:00"
+    },
+    "a6cf562b-dca7-4708-9772-7539a13b9a37": {
+      "title": "Validation & Integration Engineer",
+      "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
       "title": "Validation Engineer & Embedded System Integration",

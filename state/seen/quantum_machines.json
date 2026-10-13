@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-13T06:35:37.324568+00:00",
+  "last_success": "2026-10-13T16:52:25.878416+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
@@ -56,7 +56,7 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "04.E6B": {
-      "title": "Purchasing Specialis",
+      "title": "Purchasing Specialist",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "93.E6E": {
@@ -88,5 +88,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 62
 }
