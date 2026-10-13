@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T21:12:11.541529+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-13T06:35:37.288775+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "8138480": {
@@ -75,10 +75,14 @@
       "title": "Senior Software Engineer",
       "first_seen": "2026-09-27T11:52:38.187480+00:00"
     },
+    "8274188": {
+      "title": "Senior Solution Engineer, New Logo",
+      "first_seen": "2026-10-13T06:35:37.288775+00:00"
+    },
     "8242727": {
       "title": "Technical Success Manager",
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 62
 }

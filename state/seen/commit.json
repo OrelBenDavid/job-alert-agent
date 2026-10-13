@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T21:12:11.505587+00:00",
-  "last_count": 46,
+  "last_success": "2026-10-13T06:35:37.167157+00:00",
+  "last_count": 45,
   "consecutive_failures": 0,
   "jobs": {
     "9C.D6C": {
@@ -45,10 +45,6 @@
     },
     "97.76F": {
       "title": "Data Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "33.560": {
-      "title": "DBA",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "DE.27A": {
@@ -155,6 +151,10 @@
       "title": "System Expert",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "53.276": {
+      "title": "System Security Expert",
+      "first_seen": "2026-10-13T06:35:37.167157+00:00"
+    },
     "C5.F62": {
       "title": "Systems & Infrastructure Administrator",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -179,14 +179,10 @@
       "title": "מחווט/ת אלקטרוניקה",
       "first_seen": "2026-09-27T11:52:38.147902+00:00"
     },
-    "98.96C": {
-      "title": "מנהל/ת פרויקטים",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "9C.372": {
       "title": "ראש צוות מעבדת שילובים",
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 137
+  "last_board_total": 136
 }

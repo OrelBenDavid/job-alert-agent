@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-12T21:12:11.890194+00:00",
-  "last_count": 151,
+  "last_success": "2026-10-13T06:35:37.302426+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
@@ -110,6 +110,10 @@
     "83504cce-0f0c-4893-8c09-c9a21a3aeaa5": {
       "title": "Data Analyst – Automotive Lighting Systems - Temporary position for 9 months",
       "first_seen": "2026-10-08T18:46:43.465889+00:00"
+    },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-10-13T06:35:37.302426+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -286,6 +290,10 @@
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "79781651-55c8-427f-852a-ca132a5d8a44": {
+      "title": "NOC Service Analyst (Student Position)",
+      "first_seen": "2026-10-13T06:35:37.302426+00:00"
     },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
@@ -608,5 +616,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 178
+  "last_board_total": 179
 }
