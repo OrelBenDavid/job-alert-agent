@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T04:36:53.861939+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-14T11:38:23.232902+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -31,9 +31,9 @@
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
       "first_seen": "2026-09-03T16:17:32.035800+00:00"
     },
-    "8274053": {
+    "8243356": {
       "title": "Product Analyst",
-      "first_seen": "2026-10-12T21:12:11.956730+00:00"
+      "first_seen": "2026-10-14T11:38:23.232902+00:00"
     },
     "8176690": {
       "title": "Product Design Team Lead",
@@ -62,6 +62,10 @@
     "8258238": {
       "title": "Senior GenAI Engineer",
       "first_seen": "2026-10-12T21:12:11.956730+00:00"
+    },
+    "8273430": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-10-14T11:38:23.232902+00:00"
     },
     "8236852": {
       "title": "Senior Product Manager - Platform Experience & AI",

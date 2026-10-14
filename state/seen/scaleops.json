@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T04:36:53.849143+00:00",
-  "last_count": 32,
+  "last_success": "2026-10-14T11:38:23.222516+00:00",
+  "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
     "4919302101": {
@@ -54,6 +54,10 @@
     "4919428101": {
       "title": "Infra Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "5005916101": {
+      "title": "Infra Engineer Team Lead - IL",
+      "first_seen": "2026-10-14T11:38:23.222516+00:00"
     },
     "4963790101": {
       "title": "IT Manager",
@@ -132,5 +136,5 @@
       "first_seen": "2026-09-08T21:02:17.585638+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 59
 }

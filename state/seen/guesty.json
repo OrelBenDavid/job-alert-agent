@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-14T04:36:53.789040+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-14T11:38:22.156848+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "13.275": {
       "title": "Director of CX Operations",
       "first_seen": "2026-09-02T20:55:41.935570+00:00"
+    },
+    "D2.370": {
+      "title": "Email & Lifecycle Operations Manager",
+      "first_seen": "2026-10-14T11:38:22.156848+00:00"
     },
     "0D.F6D": {
       "title": "Head of Finance Applications",
@@ -24,5 +28,5 @@
       "first_seen": "2026-10-11T19:27:32.687619+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 21
 }

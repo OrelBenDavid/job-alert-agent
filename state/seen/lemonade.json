@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T04:36:53.803787+00:00",
-  "last_count": 29,
+  "last_success": "2026-10-14T11:38:22.175945+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -87,10 +87,6 @@
       "title": "Senior Product Designer",
       "first_seen": "2026-09-14T19:48:42.893891+00:00"
     },
-    "eb855637-aa5f-44b5-8b37-69ab045c3300": {
-      "title": "Senior People Ops Specialist",
-      "first_seen": "2026-08-31T20:45:43.745608+00:00"
-    },
     "436a57de-015f-4386-9cc8-b5cf7d87d0ab": {
       "title": "Sr. Compliance Analyst",
       "first_seen": "2026-09-02T20:55:41.971813+00:00"
@@ -120,5 +116,5 @@
       "first_seen": "2026-10-07T20:32:54.209800+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 40
 }

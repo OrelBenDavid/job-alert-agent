@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-14T04:36:53.802662+00:00",
+  "last_success": "2026-10-14T11:38:22.172430+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "Backend Software Engineer",
       "first_seen": "2026-10-13T22:34:33.150900+00:00"
     },
-    "CA.371": {
+    "6D.27C": {
       "title": "HR Student",
-      "first_seen": "2026-10-08T10:21:48.757388+00:00"
+      "first_seen": "2026-10-14T11:38:22.172430+00:00"
     },
     "7F.16B": {
       "title": "Material Planner",

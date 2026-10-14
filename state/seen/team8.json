@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T04:36:53.863670+00:00",
-  "last_count": 47,
+  "last_success": "2026-10-14T11:38:23.238833+00:00",
+  "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
@@ -17,10 +17,6 @@
     },
     "13.B66": {
       "title": "Briya- Full Stack Engineer (Frontend Oriented)",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
-    "13.B6B": {
-      "title": "Briya- Medical Data Analyst",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     },
     "F6.D6F": {
@@ -192,5 +188,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 60
 }

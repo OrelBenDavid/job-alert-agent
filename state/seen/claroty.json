@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-14T04:36:53.759313+00:00",
+  "last_success": "2026-10-14T11:38:22.116672+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -35,9 +35,9 @@
       "title": "Senior Manager - Software Engineering",
       "first_seen": "2026-09-22T16:46:15.901242+00:00"
     },
-    "1D.46B": {
+    "D4.F64": {
       "title": "Senior Product Manager",
-      "first_seen": "2026-10-08T18:46:43.370142+00:00"
+      "first_seen": "2026-10-14T11:38:22.116672+00:00"
     },
     "E0.E67": {
       "title": "Senior Security Operations Engineer",

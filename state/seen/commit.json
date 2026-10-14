@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T04:36:53.761392+00:00",
-  "last_count": 44,
+  "last_success": "2026-10-14T11:38:22.118379+00:00",
+  "last_count": 48,
   "consecutive_failures": 0,
   "jobs": {
     "9C.D6C": {
@@ -26,6 +26,10 @@
     "50.F67": {
       "title": "Automation Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A0.47B": {
+      "title": "Backend & Cloud Infrastructure Team Lead (Node.js / AWS)",
+      "first_seen": "2026-10-14T11:38:22.118379+00:00"
     },
     "96.173": {
       "title": "Backend Engineer (Go / Java)",
@@ -63,6 +67,10 @@
       "title": "Hardware Development Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "2D.375": {
+      "title": "Help Desk",
+      "first_seen": "2026-10-14T11:38:22.118379+00:00"
+    },
     "13.F49": {
       "title": "IT Solutions Architect",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -90,6 +98,10 @@
     "5D.37F": {
       "title": "PMO",
       "first_seen": "2026-10-13T16:52:24.769762+00:00"
+    },
+    "5D.37F-8A.20A": {
+      "title": "PMO",
+      "first_seen": "2026-10-14T11:38:22.118379+00:00"
     },
     "DD.07A": {
       "title": "Product Director",
@@ -151,6 +163,10 @@
       "title": "System Security Expert",
       "first_seen": "2026-10-13T06:35:37.167157+00:00"
     },
+    "2D.374": {
+      "title": "System Security Expert",
+      "first_seen": "2026-10-14T11:38:22.118379+00:00"
+    },
     "C5.F62": {
       "title": "Systems & Infrastructure Administrator",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -180,5 +196,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 133
+  "last_board_total": 136
 }
