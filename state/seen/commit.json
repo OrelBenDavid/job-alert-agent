@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:22.118379+00:00",
-  "last_count": 48,
+  "last_success": "2026-10-14T17:00:25.284967+00:00",
+  "last_count": 47,
   "consecutive_failures": 0,
   "jobs": {
     "9C.D6C": {
@@ -114,10 +114,6 @@
     "CD.07F": {
       "title": "R&D Director",
       "first_seen": "2026-08-20T15:40:50.829993+00:00"
-    },
-    "08.37F": {
-      "title": "RevOps & AI Operations",
-      "first_seen": "2026-10-05T14:24:12.408928+00:00"
     },
     "29.371": {
       "title": "RevOps Expert",

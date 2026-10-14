@@ -1,30 +1,14 @@
 {
-  "last_success": "2026-10-14T11:38:23.246567+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-14T17:00:25.419937+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
-    "371d2c11-b264-44f6-a877-73e60d7de192": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "e9c08fb4-ed5b-450b-bdda-66a46088411c": {
-      "title": "Product Manager",
-      "first_seen": "2026-08-18T19:28:38.367077+00:00"
-    },
-    "3cb53713-29bc-48d2-84bd-b7a49123c501": {
-      "title": "Data Engineer",
-      "first_seen": "2026-10-12T21:12:11.971656+00:00"
-    },
     "d42d204f-4749-42e0-89e5-c308004d7077": {
       "title": "AI Engineer",
       "first_seen": "2026-10-12T21:12:11.971656+00:00"
     },
     "8b452e00-8e03-4013-9a15-59c080bc9588": {
       "title": "Full Stack Engineer (Frontend-focused)",
-      "first_seen": "2026-10-12T21:12:11.971656+00:00"
-    },
-    "36c3258e-1938-4768-a743-f0f216e358b4": {
-      "title": "Resilience Analyst",
       "first_seen": "2026-10-12T21:12:11.971656+00:00"
     },
     "6b785edd-7c39-4a42-a28c-a7000f4e1842": {
@@ -34,11 +18,7 @@
     "807149f8-8d83-4dbf-a929-5e49a4dbcec4": {
       "title": "Marketing Operations Specialist",
       "first_seen": "2026-10-12T21:12:11.971656+00:00"
-    },
-    "a5510152-f6ed-42e3-a10e-3107ff26446c": {
-      "title": "Data Scientist",
-      "first_seen": "2026-10-12T21:12:11.971656+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 5
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:22.161626+00:00",
-  "last_count": 25,
+  "last_success": "2026-10-14T17:00:25.318963+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "84.C68": {
@@ -79,10 +79,6 @@
       "title": "Senior DevSecOps Engineer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "4C.D6E": {
-      "title": "Senior Java Developer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
     "D5.07B": {
       "title": "Senior Product Manager - Data AI Services",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -104,5 +100,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 42
+  "last_board_total": 41
 }

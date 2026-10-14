@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-14T11:38:22.086130+00:00",
-  "last_count": 35,
+  "last_success": "2026-10-14T17:00:25.248504+00:00",
+  "last_count": 36,
   "consecutive_failures": 0,
   "jobs": {
-    "https://careers.wix.com/position/oracle-bae92baf-9383-54fe-b396-32fa2ce83cbf-T1791961696-744000155442635": {
+    "https://careers.wix.com/position/oracle-02bdc9c7-b3a0-5d87-8acf-81da3719210a-T1791985098-744000155520955": {
+      "title": "Product Manager - Wix Editor Platform",
+      "first_seen": "2026-10-14T17:00:25.248504+00:00"
+    },
+    "https://careers.wix.com/position/oracle-bae92baf-9383-54fe-b396-32fa2ce83cbf-T1791961696-744000155517674": {
       "title": "Product Manager - Base44",
-      "first_seen": "2026-10-14T11:38:22.086130+00:00"
+      "first_seen": "2026-10-14T17:00:25.248504+00:00"
     },
     "https://careers.wix.com/position/oracle-00dd8145-594a-52e2-9db7-79b3288c1b23-T1791899586-744000155273100": {
       "title": "AI Engineer - Base44",

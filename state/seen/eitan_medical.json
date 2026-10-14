@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:22.144637+00:00",
-  "last_count": 8,
+  "last_success": "2026-10-14T17:00:25.297095+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "85.275": {
@@ -22,6 +22,10 @@
     "35.273": {
       "title": "Verification & Validation (V&V) Manager",
       "first_seen": "2026-09-07T12:15:49.243219+00:00"
+    },
+    "F0.475": {
+      "title": "מחסנאי",
+      "first_seen": "2026-10-14T17:00:25.297095+00:00"
     },
     "E2.269": {
       "title": "מלחימ.ה",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:23.210880+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-14T17:00:25.371767+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -38,6 +38,10 @@
     "1A.C34": {
       "title": "Logic Design Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "11.475": {
+      "title": "Mechanical Engineer - Test Station Development",
+      "first_seen": "2026-10-14T17:00:25.371767+00:00"
     },
     "02.377": {
       "title": "Mechanical Practical Engineer – Product Engineering team",
@@ -88,5 +92,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 62
 }

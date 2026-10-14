@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:23.214186+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-14T17:00:25.380400+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "70.370": {
@@ -15,10 +15,14 @@
       "title": "Legal Counsel",
       "first_seen": "2026-10-13T16:52:25.882779+00:00"
     },
+    "D0.475": {
+      "title": "Professional Services Engineer",
+      "first_seen": "2026-10-14T17:00:25.380400+00:00"
+    },
     "F3.B6B": {
       "title": "Strategic Partnerships Manager - Demand",
       "first_seen": "2026-08-13T11:24:41.038127+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 5
 }

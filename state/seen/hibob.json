@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:22.158245+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-14T17:00:25.314544+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -26,6 +26,10 @@
     "15550225-d68a-436c-86a9-df9174c9c443": {
       "title": "Finops Lead",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    },
+    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
+      "title": "Account Manager IL",
+      "first_seen": "2026-10-14T17:00:25.314544+00:00"
     },
     "ec18133d-9feb-4128-9d7a-05874672cf5f": {
       "title": "Senior Director Product Marketing",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-14T11:38:22.125020+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-14T17:00:25.286540+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -18,6 +18,10 @@
     "AE.079": {
       "title": "Senior AI Product Manager",
       "first_seen": "2026-08-23T12:54:49.940728+00:00"
+    },
+    "E0.475": {
+      "title": "Senior Mobile SDK Engineer",
+      "first_seen": "2026-10-14T17:00:25.286540+00:00"
     },
     "3B.27F": {
       "title": "Senior Product Designer",
