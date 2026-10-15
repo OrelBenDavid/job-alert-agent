@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.749357+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-15T16:47:46.871423+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "01.474": {
@@ -10,6 +10,10 @@
     "4C.374": {
       "title": "Group Lead",
       "first_seen": "2026-10-11T12:36:12.365501+00:00"
+    },
+    "B1.47B": {
+      "title": "Production Operations Manager",
+      "first_seen": "2026-10-15T16:47:46.871423+00:00"
     },
     "37.070": {
       "title": "Senior Product Manager – AI Gateway.",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.786622+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-15T16:47:46.907625+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "06.65B": {
@@ -22,10 +22,6 @@
     "C0.47A": {
       "title": "Head of Integrated Marketing",
       "first_seen": "2026-10-14T11:38:22.130675+00:00"
-    },
-    "2E.86A": {
-      "title": "Java Team Lead",
-      "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
     "26.46D": {
       "title": "Pre-Sales Engineer",
@@ -56,5 +52,5 @@
       "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 22
 }

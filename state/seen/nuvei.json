@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-10-15T11:17:05.873652+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-15T16:47:46.972361+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
+    "CC1691A47F": {
+      "title": "Agentic Softwaer Engineering Expert",
+      "first_seen": "2026-10-15T16:47:46.972361+00:00"
+    },
+    "F0C5556A76": {
+      "title": "Agentic Software Engineer",
+      "first_seen": "2026-10-15T16:47:46.972361+00:00"
+    },
     "EFD04385D2": {
       "title": "Financial Controller",
       "first_seen": "2026-08-24T13:05:04.486166+00:00"
@@ -32,5 +40,5 @@
       "first_seen": "2026-08-20T13:03:13.977268+00:00"
     }
   },
-  "last_board_total": 57
+  "last_board_total": 58
 }

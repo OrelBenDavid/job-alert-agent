@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.788703+00:00",
-  "last_count": 37,
+  "last_success": "2026-10-15T16:47:46.909683+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "51.859": {
@@ -10,6 +10,10 @@
     "0F.274": {
       "title": "ACO QA E2E Team Leader",
       "first_seen": "2026-10-14T11:38:22.135350+00:00"
+    },
+    "D0.477": {
+      "title": "AI Fabric - QA SIT Team Leader",
+      "first_seen": "2026-10-15T16:47:46.909683+00:00"
     },
     "AA.B6C": {
       "title": "AI Platform Software Engineer",
@@ -38,6 +42,10 @@
     "57.F57": {
       "title": "Fronted Engineer – AI Datacenter Orchestration Platform",
       "first_seen": "2026-10-06T15:50:15.935694+00:00"
+    },
+    "B1.473": {
+      "title": "Hardware Project Manager – AI Data Center",
+      "first_seen": "2026-10-15T16:47:46.909683+00:00"
     },
     "86.161": {
       "title": "IT Devops Engineer",
@@ -147,10 +155,14 @@
       "title": "System Validation Engineer",
       "first_seen": "2026-09-08T16:30:33.513102+00:00"
     },
+    "D1.471": {
+      "title": "Tactical Buyer",
+      "first_seen": "2026-10-15T16:47:46.909683+00:00"
+    },
     "F1.C65": {
       "title": "Vendor Managment",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 48
 }

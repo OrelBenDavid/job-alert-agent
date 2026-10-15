@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.885042+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-15T16:47:46.991591+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "e7b83c02-55c2-4037-9209-93deb3b7492c": {
@@ -13,10 +13,6 @@
     },
     "1ddd1eb8-9b2d-4f2a-9e70-4f76bb764e7f": {
       "title": "Staff DevOps Engineer (Platform)",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
-    "d480082b-a446-40fb-be24-f364c07ef8a9": {
-      "title": "Staff Software Engineer (SRE)",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "be5a838e-a6f4-4d99-be08-e6419a857289": {
@@ -44,5 +40,5 @@
       "first_seen": "2026-09-14T19:48:42.930395+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

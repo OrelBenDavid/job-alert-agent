@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.734881+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-15T16:47:46.860965+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "36.07C": {
@@ -14,6 +14,10 @@
     "CD.171": {
       "title": "Data Science Engineering Manager",
       "first_seen": "2026-08-31T13:26:59.893939+00:00"
+    },
+    "B1.47E": {
+      "title": "Director of AI Security Research",
+      "first_seen": "2026-10-15T16:47:46.860965+00:00"
     },
     "15.766": {
       "title": "Fraud Threat Analyst",
@@ -43,6 +47,10 @@
       "title": "Senior AI Researcher",
       "first_seen": "2026-10-06T22:35:24.673721+00:00"
     },
+    "91.47E": {
+      "title": "Senior Data Product Manager, AI",
+      "first_seen": "2026-10-15T16:47:46.860965+00:00"
+    },
     "96.270": {
       "title": "Senior GenAI Data Scientist",
       "first_seen": "2026-09-09T16:27:11.262685+00:00"
@@ -64,5 +72,5 @@
       "first_seen": "2026-09-23T11:20:30.162183+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 38
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.828532+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-15T16:47:46.943583+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "R-085826": {
@@ -35,10 +35,6 @@
       "title": "Sales Representative for the Surgery team",
       "first_seen": "2026-09-30T09:34:02.304459+00:00"
     },
-    "R-101266": {
-      "title": "Quality Systems Team Leader",
-      "first_seen": "2026-09-28T13:38:07.494604+00:00"
-    },
     "R-100261": {
       "title": "Clinical Support",
       "first_seen": "2026-09-23T11:20:30.197202+00:00"
@@ -53,10 +49,6 @@
     },
     "R-089751": {
       "title": "Assistant Controller",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
-    "R-093278": {
-      "title": "Quality Engineer",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     },
     "R-091480": {
@@ -76,5 +68,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 17
 }

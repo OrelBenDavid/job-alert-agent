@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.871645+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-15T16:47:46.970505+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "97.F5B": {
@@ -39,10 +39,6 @@
       "title": "Senior Logic Design Engineer",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     },
-    "EF.26A": {
-      "title": "Software Engineer - CodeGen",
-      "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
     "33.469": {
       "title": "Technical Program Manager",
       "first_seen": "2026-09-16T16:40:48.727468+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 30
 }

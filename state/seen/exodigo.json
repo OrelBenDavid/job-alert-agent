@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.792338+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-15T16:47:46.918705+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -35,10 +35,6 @@
       "title": "Hardware Team Lead",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
-    "9D.17B": {
-      "title": "Legal Operations Specialist",
-      "first_seen": "2026-09-28T13:38:07.457584+00:00"
-    },
     "C0.470": {
       "title": "Logistics Manager",
       "first_seen": "2026-10-14T21:32:18.419153+00:00"
@@ -72,5 +68,5 @@
       "first_seen": "2026-10-06T15:50:15.952397+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 63
 }

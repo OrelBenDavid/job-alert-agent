@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-15T11:17:05.880406+00:00",
-  "last_count": 133,
+  "last_success": "2026-10-15T16:47:46.987305+00:00",
+  "last_count": 134,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-020079": {
+      "title": "Senior Staff Software Automation Engineer (SDET)  – Identity Authentication",
+      "first_seen": "2026-10-15T16:47:46.987305+00:00"
+    },
     "JR-021719": {
       "title": "Principal Platform Engineer - Devops (Cortex)",
       "first_seen": "2026-10-15T11:17:05.880406+00:00"
@@ -536,5 +540,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 134
+  "last_board_total": 135
 }

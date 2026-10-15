@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.778733+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-15T16:47:46.899627+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -14,10 +14,6 @@
     "D5.077": {
       "title": "Director of Engineering Security",
       "first_seen": "2026-08-24T09:56:22.831995+00:00"
-    },
-    "AE.079": {
-      "title": "Senior AI Product Manager",
-      "first_seen": "2026-08-23T12:54:49.940728+00:00"
     },
     "E0.475": {
       "title": "Senior Mobile SDK Engineer",
@@ -56,5 +52,5 @@
       "first_seen": "2026-10-11T12:36:12.387858+00:00"
     }
   },
-  "last_board_total": 62
+  "last_board_total": 61
 }

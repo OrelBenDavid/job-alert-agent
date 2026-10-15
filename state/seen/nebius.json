@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.868552+00:00",
-  "last_count": 81,
+  "last_success": "2026-10-15T16:47:46.967481+00:00",
+  "last_count": 79,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -139,10 +139,6 @@
       "title": "People Program Manager",
       "first_seen": "2026-10-14T11:38:22.543871+00:00"
     },
-    "4967692101": {
-      "title": "Presentation & Customer-facing Assets Designer",
-      "first_seen": "2026-09-18T16:16:36.679747+00:00"
-    },
     "4937238101": {
       "title": "Project Development Manager- Data Centers, EMEA",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -271,10 +267,6 @@
       "title": "Senior Software Engineer - Search Application (Agentic Search)",
       "first_seen": "2026-09-30T22:09:48.653631+00:00"
     },
-    "4754609101": {
-      "title": "Senior Software Engineer (Token Factory)",
-      "first_seen": "2026-09-10T16:17:00.434542+00:00"
-    },
     "4537282101": {
       "title": "Senior/Staff Application Security Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -328,5 +320,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 380
+  "last_board_total": 376
 }

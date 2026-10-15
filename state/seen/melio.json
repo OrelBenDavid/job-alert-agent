@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T11:17:05.842520+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-15T16:47:46.955149+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "7806719003": {
@@ -35,10 +35,14 @@
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
+    "8029987003": {
+      "title": "Senior Product Designer",
+      "first_seen": "2026-10-15T16:47:46.955149+00:00"
+    },
     "7994125003": {
       "title": "Senior Product Manager",
       "first_seen": "2026-09-15T11:34:07.653932+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }
