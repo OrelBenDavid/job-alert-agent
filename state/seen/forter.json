@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-10-15T16:47:46.924979+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-15T21:14:39.876362+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "6349983002": {
       "title": "General Application (Israel)",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8887212002": {
-      "title": "Recovery Analyst Student",
-      "first_seen": "2026-10-15T11:17:05.802160+00:00"
     },
     "8534195002": {
       "title": "Senior Full Stack Engineer II - CX Offering",
@@ -24,5 +20,5 @@
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 21
 }

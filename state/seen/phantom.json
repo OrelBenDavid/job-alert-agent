@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-15T16:47:46.991591+00:00",
+  "last_success": "2026-10-15T21:14:39.943628+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,10 +15,6 @@
       "title": "Staff DevOps Engineer (Platform)",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
-    "be5a838e-a6f4-4d99-be08-e6419a857289": {
-      "title": "Software Engineer, Frontend / Full Stack (Identity Platform)",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
-    },
     "504baea1-48c7-458d-9f45-36e24dbf7035": {
       "title": "Staff Platform Security Engineer (Security)",
       "first_seen": "2026-09-16T21:12:04.462302+00:00"
@@ -30,6 +26,10 @@
     "5198c911-6232-493d-bf14-41a13e713b99": {
       "title": "Staff Engineer, Full Stack (Trust, Safety & Risk)",
       "first_seen": "2026-09-21T19:56:41.246348+00:00"
+    },
+    "b853c28e-15a7-4dac-be01-b0fbc00cd006": {
+      "title": "Staff Software Engineer (SRE)",
+      "first_seen": "2026-10-15T21:14:39.943628+00:00"
     },
     "84bfcb1e-74a6-4cd7-b1d4-01b7b5d59d2e": {
       "title": "VIP Account Manager",
