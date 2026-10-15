@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-10-15T04:19:27.934432+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-15T11:17:05.887732+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "4901047101": {
       "title": "3D Character Animator",
-      "first_seen": "2026-08-13T11:24:34.316436+00:00"
-    },
-    "4940501101": {
-      "title": "Bookkeeper - Maternity Leave Replacement",
       "first_seen": "2026-08-13T11:24:34.316436+00:00"
     },
     "4971991101": {
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-26T07:01:03.601442+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 18
 }

@@ -1,7 +1,20 @@
 {
-  "last_success": "2026-10-15T04:19:27.898672+00:00",
-  "last_count": 0,
+  "last_success": "2026-10-15T11:17:05.834282+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 0
+  "jobs": {
+    "8891190002": {
+      "title": "Assistant Controller",
+      "first_seen": "2026-10-15T11:17:05.834282+00:00"
+    },
+    "8869922002": {
+      "title": "Office Manager",
+      "first_seen": "2026-10-15T11:17:05.834282+00:00"
+    },
+    "8836386002": {
+      "title": "Senior Applied Researcher",
+      "first_seen": "2026-10-15T11:17:05.834282+00:00"
+    }
+  },
+  "last_board_total": 5
 }

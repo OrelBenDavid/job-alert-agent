@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T04:19:27.969094+00:00",
-  "last_count": 46,
+  "last_success": "2026-10-15T11:17:05.930300+00:00",
+  "last_count": 47,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
@@ -34,6 +34,10 @@
     "D0.36A": {
       "title": "Charm Security-Senior Full Stack Software Engineer",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "5D.86D": {
+      "title": "Espresso Clinical - Senior Full Stack Developer",
+      "first_seen": "2026-10-15T11:17:05.930300+00:00"
     },
     "7D.17A": {
       "title": "FlowRx-  Product Lead",
@@ -188,5 +192,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 60
 }

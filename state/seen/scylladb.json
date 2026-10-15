@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T04:19:27.950293+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-15T11:17:05.909427+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "FC.078-75.10C": {
@@ -11,10 +11,14 @@
       "title": "GTM Engineer (AI & Automation)",
       "first_seen": "2026-09-06T20:18:45.235003+00:00"
     },
+    "AC.370-75.10C": {
+      "title": "Software Engineer Team Lead",
+      "first_seen": "2026-10-15T11:17:05.909427+00:00"
+    },
     "1E.C62": {
       "title": "Solution Architect (Israel)",
       "first_seen": "2026-08-13T11:24:41.044983+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 7
 }

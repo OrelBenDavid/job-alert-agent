@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-15T04:19:27.891927+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-15T11:17:05.828532+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "R-085826": {
@@ -34,10 +34,6 @@
     "R-091273": {
       "title": "Sales Representative for the Surgery team",
       "first_seen": "2026-09-30T09:34:02.304459+00:00"
-    },
-    "R-101296": {
-      "title": "Quality Systems Expert",
-      "first_seen": "2026-09-28T21:11:02.406438+00:00"
     },
     "R-101266": {
       "title": "Quality Systems Team Leader",
@@ -80,5 +76,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

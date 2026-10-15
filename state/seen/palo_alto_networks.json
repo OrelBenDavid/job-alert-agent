@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-10-15T04:19:27.927698+00:00",
-  "last_count": 132,
+  "last_success": "2026-10-15T11:17:05.880406+00:00",
+  "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021719": {
+      "title": "Principal Platform Engineer - Devops (Cortex)",
+      "first_seen": "2026-10-15T11:17:05.880406+00:00"
+    },
+    "JR-020201": {
+      "title": "Senior Principal DevOps Engineer (Cortex Cloud)",
+      "first_seen": "2026-10-15T11:17:05.880406+00:00"
+    },
+    "JR-018965": {
+      "title": "Senior Staff C++ Win Internals Engineer (Endpoint Privilege Manager - Idira)",
+      "first_seen": "2026-10-15T11:17:05.880406+00:00"
+    },
     "JR-023624": {
       "title": "Software Engineer – Graduate Program (Bootcamp)",
       "first_seen": "2026-10-14T11:38:22.557036+00:00"
@@ -130,10 +142,6 @@
     "JR-018152": {
       "title": "Senior Staff Software Engineer (Endpoint Privilege Manager - Idira)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-021052": {
-      "title": "Senior Staff C++ Win Engineer (Endpoint Privilege Manager - Idira)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-022741": {
       "title": "Principal Software Engineer for SaaS (SIA for Databases)- Idira",
@@ -347,10 +355,6 @@
       "title": "Major Account Manager - Telco/Service Providers",
       "first_seen": "2026-08-31T13:27:00.382058+00:00"
     },
-    "JR-016604": {
-      "title": "Principal Software Engineer - Identity Security",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-021408": {
       "title": "Senior DevOps Engineer - Data Platform (Cortex)",
       "first_seen": "2026-08-24T13:05:04.489771+00:00"
@@ -532,5 +536,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 133
+  "last_board_total": 134
 }

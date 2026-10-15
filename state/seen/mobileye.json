@@ -1,19 +1,27 @@
 {
-  "last_success": "2026-10-15T04:19:27.910562+00:00",
-  "last_count": 150,
+  "last_success": "2026-10-15T11:17:05.847778+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
+    "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
+      "title": "AI Algorithm Engineer - Vision Localization Group",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "51ce434c-d324-4817-bd2f-55fe5046991e": {
+      "title": "AI Engineering Execution Manager",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
+    "d324d672-2b02-434d-b17a-e5036e2f35d6": {
+      "title": "AI Engineering Execution Manager (Temporary Position - Maternity Leave)",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
     "4445a729-d5ec-4ae4-b1f6-5bea979b4dce": {
       "title": "Algorithm Developer - Vision Algorithms",
       "first_seen": "2026-10-12T21:12:11.890194+00:00"
-    },
-    "6e5ec7a5-aa8b-4f8d-bdfd-d301bde6098f": {
-      "title": "Algorithm Developer – REM Change Detection Team",
-      "first_seen": "2026-10-12T10:35:45.180661+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -82,6 +90,10 @@
     "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
       "title": "Camera System Engineer",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
+    "bc5af7e1-27cc-4e86-a0cc-b4e5628e81d0": {
+      "title": "Commercial Legal Counsel",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
     },
     "8e12e6c1-44a9-4eb7-b041-9f212505da00": {
       "title": "Corporate Controller",
@@ -279,10 +291,6 @@
       "title": "NOC Service Analyst (Student Position)",
       "first_seen": "2026-10-13T06:35:37.302426+00:00"
     },
-    "12c753a2-6aea-4528-b700-5c96ec833c35": {
-      "title": "Operations Control Center Operator - Student Position",
-      "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
     "83eaec09-649e-4ea6-b6c8-ace482eb2f59": {
       "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
       "first_seen": "2026-08-26T07:01:03.578507+00:00"
@@ -302,6 +310,10 @@
     "fac143e4-0dba-4912-ae9e-d168249a95d8": {
       "title": "Python Data Solutions Specialist-Temporary Position",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
+    },
+    "f4c63464-9fcc-40ed-b9fd-a21d815cfdd9": {
+      "title": "R&D Lifecycle & Process Management",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
     },
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
@@ -591,6 +603,10 @@
       "title": "Validation & Integration Engineer",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
+    "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
+      "title": "Validation Analytics Tools Developer",
+      "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
     "e5a7fb78-7847-499a-94b8-a66033db3998": {
       "title": "Validation Engineer",
       "first_seen": "2026-10-14T11:38:22.537446+00:00"
@@ -604,5 +620,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 174
+  "last_board_total": 171
 }
