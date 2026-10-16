@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-16T04:14:46.667516+00:00",
-  "last_count": 79,
+  "last_success": "2026-10-16T11:11:26.191413+00:00",
+  "last_count": 77,
   "consecutive_failures": 0,
   "jobs": {
     "4863862101": {
@@ -39,10 +39,6 @@
       "title": "Data Engineer (Agentic Search)",
       "first_seen": "2026-08-25T09:43:09.059165+00:00"
     },
-    "5000604101": {
-      "title": "Delivery Operations Manager - Token Factory",
-      "first_seen": "2026-10-09T18:17:00.437800+00:00"
-    },
     "4918986101": {
       "title": "Detection & Response Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -57,10 +53,6 @@
     },
     "4902513101": {
       "title": "Director, Pricing",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "4941795101": {
-      "title": "Electrical Engineer- Data Centers",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "4882746101": {
@@ -320,5 +312,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 375
+  "last_board_total": 371
 }
