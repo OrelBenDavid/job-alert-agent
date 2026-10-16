@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-16T11:11:26.200781+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-16T16:30:22.537170+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -79,6 +79,10 @@
       "title": "Quantum Control Systems Engineer (Application Validation Team)",
       "first_seen": "2026-09-28T21:11:02.436159+00:00"
     },
+    "12.470": {
+      "title": "Quantum Product Research",
+      "first_seen": "2026-10-16T16:30:22.537170+00:00"
+    },
     "13.264": {
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
@@ -96,5 +100,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 66
+  "last_board_total": 70
 }
