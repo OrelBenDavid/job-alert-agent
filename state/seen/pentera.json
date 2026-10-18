@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T15:45:05.366386+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-18T20:27:50.136829+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -47,14 +47,10 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-24T13:05:04.492567+00:00"
     },
-    "90.E69": {
-      "title": "Senior Director Technical Support",
-      "first_seen": "2026-08-13T11:24:34.306915+00:00"
-    },
     "79.D6D": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 24
 }
