@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-18T10:50:46.682904+00:00",
+  "last_success": "2026-10-18T15:45:05.276787+00:00",
   "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,10 +14,6 @@
     "6a52d9de-ec0e-48f7-8c4f-ba409b0dd256": {
       "title": "Market Intelligence Analyst (Drone & Counter-Drone Systems)",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "faf30d54-914a-4c74-a63c-f4eb54bd5779": {
-      "title": "Multi-Layer C-UAS - Product Manager",
-      "first_seen": "2026-08-23T12:54:49.943801+00:00"
     },
     "7139e425-aa61-40c1-953d-6df953b055ae": {
       "title": "Operations Finance Controller",
@@ -54,6 +50,10 @@
     "12e2ff81-95ed-4a85-90c9-89603768bc27": {
       "title": "Senior Mechanical Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
+    },
+    "85dedca0-73a9-4acd-a299-e24a9831f82a": {
+      "title": "Senior Software Engineer (Cloud/Backend)",
+      "first_seen": "2026-10-18T15:45:05.276787+00:00"
     },
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",

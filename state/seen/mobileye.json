@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T10:50:47.106141+00:00",
-  "last_count": 152,
+  "last_success": "2026-10-18T15:45:05.338505+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -114,6 +114,10 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
+    },
+    "568f4a72-8cd2-4c33-9d09-1a62e21dacc7": {
+      "title": "Data Analysis Engineer - Student Position",
+      "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
     "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
       "title": "Data Analytics Project Manager",
@@ -275,10 +279,6 @@
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
-    "79781651-55c8-427f-852a-ca132a5d8a44": {
-      "title": "NOC Service Analyst (Student Position)",
-      "first_seen": "2026-10-13T06:35:37.302426+00:00"
-    },
     "83eaec09-649e-4ea6-b6c8-ace482eb2f59": {
       "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
       "first_seen": "2026-08-26T07:01:03.578507+00:00"
@@ -430,6 +430,10 @@
     "ffd7b3b0-bde6-447f-89cd-1c7f9abf17e5": {
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b105f36b-5fe8-43c5-a89e-4c8dd64d6732": {
+      "title": "Senior System Hardware Architect",
+      "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
     "758f27a6-1204-434a-b55d-8cbef1069d01": {
       "title": "Senior Talent Acquisition Partner",
@@ -591,13 +595,13 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
-    "a6cf562b-dca7-4708-9772-7539a13b9a37": {
-      "title": "Validation & Integration Engineer",
-      "first_seen": "2026-10-13T16:52:25.844896+00:00"
-    },
     "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
       "title": "Validation Analytics Tools Developer",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
+    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
+      "title": "Validation and Testing Engineer",
+      "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
     "e5a7fb78-7847-499a-94b8-a66033db3998": {
       "title": "Validation Engineer",
@@ -612,5 +616,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 169
+  "last_board_total": 170
 }

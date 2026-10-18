@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T10:50:46.690776+00:00",
-  "last_count": 14,
+  "last_success": "2026-10-18T15:45:05.284716+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -35,6 +35,14 @@
       "title": "Logistics Manager",
       "first_seen": "2026-10-14T21:32:18.419153+00:00"
     },
+    "B2.47E": {
+      "title": "Production Team Leader",
+      "first_seen": "2026-10-18T15:45:05.284716+00:00"
+    },
+    "B2.47E-F6.508": {
+      "title": "Production Team Leader",
+      "first_seen": "2026-10-18T15:45:05.284716+00:00"
+    },
     "2A.279": {
       "title": "Senior CAD/BIM Drafter & Modeler",
       "first_seen": "2026-09-10T16:17:00.381264+00:00"
@@ -60,5 +68,5 @@
       "first_seen": "2026-10-06T15:50:15.952397+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 63
 }

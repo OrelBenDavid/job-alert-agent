@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T10:50:47.137879+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-18T15:45:05.383227+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "4956767101": {
@@ -10,15 +10,7 @@
     "4860694101": {
       "title": "IT Specialist",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
-    "4942999101": {
-      "title": "Operations Manager",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
-    "4988318101": {
-      "title": "Technical Product Manager",
-      "first_seen": "2026-09-28T13:38:07.560488+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 2
 }
