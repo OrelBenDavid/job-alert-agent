@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.764509+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-18T10:50:46.677514+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -10,10 +10,6 @@
     "1B.E5C": {
       "title": "Backend Engineer - Alerting",
       "first_seen": "2026-10-07T13:08:46.723122+00:00"
-    },
-    "D5.077": {
-      "title": "Director of Engineering Security",
-      "first_seen": "2026-08-24T09:56:22.831995+00:00"
     },
     "E0.475": {
       "title": "Senior Mobile SDK Engineer",
@@ -52,5 +48,5 @@
       "first_seen": "2026-10-11T12:36:12.387858+00:00"
     }
   },
-  "last_board_total": 60
+  "last_board_total": 59
 }

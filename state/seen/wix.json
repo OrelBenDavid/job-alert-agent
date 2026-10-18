@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-10-18T04:13:01.733040+00:00",
-  "last_count": 38,
+  "last_success": "2026-10-18T10:50:46.639752+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000156182419": {
+      "title": "DevOps Engineer - Cloud Infra Team",
+      "first_seen": "2026-10-18T10:50:46.639752+00:00"
+    },
+    "https://careers.wix.com/position/REF3097W-744000156181029": {
+      "title": "Tech Lead - Fed Core",
+      "first_seen": "2026-10-18T10:50:46.639752+00:00"
+    },
     "https://careers.wix.com/position/oracle-7aba6c53-8db3-55f0-a35d-ae607103c84a-T1792057102-744000155746889": {
       "title": "Brand and Web Designer - DesignDev team",
       "first_seen": "2026-10-15T16:47:46.856187+00:00"
@@ -49,10 +57,6 @@
     },
     "https://careers.wix.com/position/oracle-2488fc83-3ce8-5faf-8671-2bb2f2f26828-T1791108234-744000154874429": {
       "title": "UI Designer – Brand UI team",
-      "first_seen": "2026-10-11T12:36:12.347675+00:00"
-    },
-    "https://careers.wix.com/position/oracle-25f2c6bd-bd3d-5a34-8742-fcec85101a32-T1789628523-744000154874389": {
-      "title": "DevOps Engineer - Cloud Infra Team",
       "first_seen": "2026-10-11T12:36:12.347675+00:00"
     },
     "https://careers.wix.com/position/oracle-e2a2cd53-3ff2-58a5-816d-d3aa2d9a7684-T1791455667-744000154401111": {

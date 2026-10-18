@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.850124+00:00",
-  "last_count": 24,
+  "last_success": "2026-10-18T10:50:47.138255+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -18,6 +18,10 @@
     "CC.F46": {
       "title": "Compiler Engineer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "C2.477": {
+      "title": "Configuration Management Lead",
+      "first_seen": "2026-10-18T10:50:47.138255+00:00"
     },
     "5E.E51": {
       "title": "Customer Success Physicist- Tel Aviv",
@@ -51,6 +55,10 @@
       "title": "Micro-Architect",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
+    "C2.476": {
+      "title": "NPI Engineer",
+      "first_seen": "2026-10-18T10:50:47.138255+00:00"
+    },
     "CE.27F": {
       "title": "Planning Leader",
       "first_seen": "2026-09-22T11:24:08.067034+00:00"
@@ -70,10 +78,6 @@
     "93.E6E": {
       "title": "Python Engineer",
       "first_seen": "2026-10-06T15:50:16.438064+00:00"
-    },
-    "10.37F": {
-      "title": "Quantum Computing Intern- IQCC",
-      "first_seen": "2026-09-23T16:42:31.618539+00:00"
     },
     "FF.274-47.20D": {
       "title": "Quantum Control Systems Engineer (Application Validation Team)",
@@ -100,5 +104,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 70
+  "last_board_total": 71
 }

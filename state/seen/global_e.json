@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.787719+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-18T10:50:46.701750+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "D9.963": {
@@ -30,6 +30,10 @@
     "F2.37B": {
       "title": "Duty Drawback Analyst",
       "first_seen": "2026-10-04T12:11:37.772782+00:00"
+    },
+    "D1.37A": {
+      "title": "Finance Operations Team Lead",
+      "first_seen": "2026-10-18T10:50:46.701750+00:00"
     },
     "86.D6E": {
       "title": "FP&A Analyst - Student Position",
@@ -76,5 +80,5 @@
       "first_seen": "2026-09-29T12:38:07.382544+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 49
 }

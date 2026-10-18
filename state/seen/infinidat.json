@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.799890+00:00",
-  "last_count": 24,
+  "last_success": "2026-10-18T10:50:46.713629+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "84.C68": {
@@ -22,10 +22,6 @@
     "32.D60": {
       "title": "C/C++ Senior Developer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "1A.27B": {
-      "title": "Customer Support Operations Specialist",
-      "first_seen": "2026-09-14T12:31:04.059716+00:00"
     },
     "32.D63": {
       "title": "Experience Hardware Integration Engineer",
@@ -53,10 +49,6 @@
     },
     "FD.F6B": {
       "title": "NPI Engineer",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "84.C62": {
-      "title": "Python Automation Tech Lead",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "17.D69": {
@@ -100,5 +92,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 39
 }

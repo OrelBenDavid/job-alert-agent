@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.830443+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-18T10:50:47.119772+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "4938801101": {
@@ -14,6 +14,10 @@
     "4988910101": {
       "title": "DevOps Team Lead",
       "first_seen": "2026-09-28T21:11:02.425252+00:00"
+    },
+    "5009476101": {
+      "title": "Director Engineering",
+      "first_seen": "2026-10-18T10:50:47.119772+00:00"
     },
     "4969705101": {
       "title": "Director of Engineering",
@@ -63,10 +67,14 @@
       "title": "Quality Director",
       "first_seen": "2026-09-02T11:06:52.064936+00:00"
     },
+    "5009477101": {
+      "title": "R&D Director",
+      "first_seen": "2026-10-18T10:50:47.119772+00:00"
+    },
     "4911286101": {
       "title": "Senior Product Manager, AI",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 179
+  "last_board_total": 181
 }

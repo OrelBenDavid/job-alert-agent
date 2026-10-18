@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-18T04:13:01.762985+00:00",
-  "last_count": 47,
+  "last_success": "2026-10-18T10:50:46.675891+00:00",
+  "last_count": 48,
   "consecutive_failures": 0,
   "jobs": {
+    "BD.277": {
+      "title": ".NET Team Lead",
+      "first_seen": "2026-10-18T10:50:46.675891+00:00"
+    },
     "9C.D6C": {
       "title": "AI Project Manager",
       "first_seen": "2026-10-12T10:35:45.128676+00:00"
@@ -192,5 +196,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 137
+  "last_board_total": 138
 }

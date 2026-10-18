@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.795427+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-18T10:50:46.707374+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -10,10 +10,6 @@
     "a7e6da7e-ef7d-45dc-994b-e03e9319f1e8": {
       "title": "Senior Field Deployment Engineer (FDE)",
       "first_seen": "2026-09-29T12:38:07.396447+00:00"
-    },
-    "7fd1b0e9-447f-486e-8e38-87cef4f4b308": {
-      "title": "CX Process Specialist- Engineering (Maternity Leave)",
-      "first_seen": "2026-09-08T11:05:09.147673+00:00"
     },
     "3a70c667-91c5-4dbd-bf1c-93b4ff931c55": {
       "title": "Field Deployment Engineering (FDE) Team Lead",
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 82
 }

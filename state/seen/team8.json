@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-18T04:13:01.874318+00:00",
-  "last_count": 47,
+  "last_success": "2026-10-18T10:50:47.174795+00:00",
+  "last_count": 48,
   "consecutive_failures": 0,
   "jobs": {
     "9D.26D": {
       "title": "Bluespine-Backend/Data Engineer",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
+    },
+    "B2.472": {
+      "title": "Bluespine-Medical Fraud & Anomaly",
+      "first_seen": "2026-10-18T10:50:47.174795+00:00"
     },
     "46.370": {
       "title": "Bluespine-Product, Delivery & Operations Lead— Bluespine",
@@ -192,5 +196,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 62
 }

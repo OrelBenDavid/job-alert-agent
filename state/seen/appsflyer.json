@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-18T04:13:01.743174+00:00",
+  "last_success": "2026-10-18T10:50:46.650313+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,6 +14,10 @@
     "8816216002": {
       "title": "Assistant Controller - Corporate Team",
       "first_seen": "2026-10-11T12:36:12.361004+00:00"
+    },
+    "8897823002": {
+      "title": "Backend Software Engineer",
+      "first_seen": "2026-10-17T20:27:13.316528+00:00"
     },
     "8813084002": {
       "title": "Bookkeeper - temporary position (Herzliya)",
@@ -90,10 +94,6 @@
     "8868191002": {
       "title": "Software Team Leader- Domain Team",
       "first_seen": "2026-10-05T21:57:14.670358+00:00"
-    },
-    "8897823002": {
-      "title": "SW Engineer",
-      "first_seen": "2026-10-17T20:27:13.316528+00:00"
     }
   },
   "last_board_total": 49

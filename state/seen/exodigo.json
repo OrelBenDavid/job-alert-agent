@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-18T04:13:01.777181+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-18T10:50:46.690776+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -31,10 +31,6 @@
       "title": "Field Operations Employee",
       "first_seen": "2026-10-04T18:36:01.474655+00:00"
     },
-    "D0.E6E": {
-      "title": "Hardware Team Lead",
-      "first_seen": "2026-08-13T11:24:19.185292+00:00"
-    },
     "C0.470": {
       "title": "Logistics Manager",
       "first_seen": "2026-10-14T21:32:18.419153+00:00"
@@ -59,14 +55,10 @@
       "title": "Student Tier 1 Support Specialist",
       "first_seen": "2026-10-11T19:27:32.665034+00:00"
     },
-    "5E.E68": {
-      "title": "Systems Engineer - RF & Multidisciplinary Systems",
-      "first_seen": "2026-08-13T12:34:58.624563+00:00"
-    },
     "09.374": {
       "title": "Utilities Coordinator",
       "first_seen": "2026-10-06T15:50:15.952397+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 61
 }
