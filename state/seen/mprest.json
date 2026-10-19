@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.949949+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-19T12:52:15.523602+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "F9.569": {
@@ -35,10 +35,6 @@
       "title": "Purchasing Specialist",
       "first_seen": "2026-10-05T14:24:12.500028+00:00"
     },
-    "5D.B62": {
-      "title": "QC Engineer",
-      "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
     "5C.D53": {
       "title": "Senior Recruitment Manager",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
@@ -47,14 +43,10 @@
       "title": "Software Team Leader (Defense)",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     },
-    "48.E50": {
-      "title": "System Engineer (Defense)",
-      "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
     "AD.C61": {
       "title": "System Integrator",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 11
 }

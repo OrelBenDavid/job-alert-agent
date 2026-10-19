@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.910107+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-19T12:52:14.746754+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "956668dd-19b4-49f9-ba62-d7b2fd791efe": {
@@ -18,7 +18,11 @@
     "2ad8bbf0-450c-4a2a-8c9c-5b6439b159aa": {
       "title": "People Operations Specialist",
       "first_seen": "2026-09-09T16:27:11.309593+00:00"
+    },
+    "39cd531b-23bc-458c-a39b-146c65c1f47c": {
+      "title": "Technical Product Manager",
+      "first_seen": "2026-10-19T12:52:14.746754+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 14
 }

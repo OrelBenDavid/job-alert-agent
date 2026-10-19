@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.997151+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-19T12:52:15.572235+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -26,6 +26,10 @@
     "8073783": {
       "title": "Experienced Full Stack Engineer",
       "first_seen": "2026-09-02T11:06:52.103436+00:00"
+    },
+    "8280941": {
+      "title": "Experienced Software Engineer",
+      "first_seen": "2026-10-19T12:52:15.572235+00:00"
     },
     "8166705": {
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
@@ -63,6 +67,10 @@
       "title": "Senior GenAI Engineer",
       "first_seen": "2026-10-12T21:12:11.956730+00:00"
     },
+    "8278521": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-10-19T12:52:15.572235+00:00"
+    },
     "8273430": {
       "title": "Senior Product Manager",
       "first_seen": "2026-10-14T11:38:23.232902+00:00"
@@ -83,10 +91,6 @@
       "title": "Software Developer – Production Engineering",
       "first_seen": "2026-09-15T11:34:08.117669+00:00"
     },
-    "7903594": {
-      "title": "Software Development Team Leader – Production Engineering",
-      "first_seen": "2026-08-13T11:24:41.066252+00:00"
-    },
     "8261478": {
       "title": "Tax Manager",
       "first_seen": "2026-10-13T16:52:25.911150+00:00"
@@ -96,5 +100,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 87
 }

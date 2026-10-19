@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-19T04:21:44.873860+00:00",
+  "last_success": "2026-10-19T12:52:14.698100+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -9,10 +9,6 @@
     },
     "55.964": {
       "title": "AI Product Builder",
-      "first_seen": "2026-08-13T11:24:10.788867+00:00"
-    },
-    "FB.55E": {
-      "title": "C++ Developer",
       "first_seen": "2026-08-13T11:24:10.788867+00:00"
     },
     "83.B60": {
@@ -38,6 +34,10 @@
     "E7.37E": {
       "title": "Senior Back-End Developer",
       "first_seen": "2026-10-13T16:52:24.738329+00:00"
+    },
+    "A2.47C": {
+      "title": "Senior C++ Developer",
+      "first_seen": "2026-10-19T12:52:14.698100+00:00"
     },
     "6C.168": {
       "title": "Senior Product Manager",

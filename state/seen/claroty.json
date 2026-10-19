@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-19T04:21:44.889794+00:00",
+  "last_success": "2026-10-19T12:52:14.722274+00:00",
   "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
@@ -47,9 +47,9 @@
       "title": "Software Engineering Team Lead",
       "first_seen": "2026-09-14T19:48:42.850944+00:00"
     },
-    "94.A63": {
+    "63.472": {
       "title": "Vulnerability Research Team Lead",
-      "first_seen": "2026-08-17T07:09:57.456756+00:00"
+      "first_seen": "2026-10-19T12:52:14.722274+00:00"
     }
   },
   "last_board_total": 25

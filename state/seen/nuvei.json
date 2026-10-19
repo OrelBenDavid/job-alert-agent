@@ -1,15 +1,23 @@
 {
-  "last_success": "2026-10-19T04:21:44.958709+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-19T12:52:15.530499+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "CC1691A47F": {
       "title": "Agentic Softwaer Engineering Expert",
       "first_seen": "2026-10-15T16:47:46.972361+00:00"
     },
+    "A039E14CD6": {
+      "title": "Agentic Software Architect",
+      "first_seen": "2026-10-19T12:52:15.530499+00:00"
+    },
     "F0C5556A76": {
       "title": "Agentic Software Engineer",
       "first_seen": "2026-10-15T16:47:46.972361+00:00"
+    },
+    "CFE404846D": {
+      "title": "Director, Agentic Engineering",
+      "first_seen": "2026-10-19T12:52:15.530499+00:00"
     },
     "EFD04385D2": {
       "title": "Financial Controller",
@@ -40,5 +48,5 @@
       "first_seen": "2026-08-20T13:03:13.977268+00:00"
     }
   },
-  "last_board_total": 61
+  "last_board_total": 63
 }

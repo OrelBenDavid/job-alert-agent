@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-19T04:21:44.965163+00:00",
-  "last_count": 134,
+  "last_success": "2026-10-19T12:52:15.536816+00:00",
+  "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022983": {
+      "title": "Senior Lead, Cortex Communications",
+      "first_seen": "2026-10-19T12:52:15.536816+00:00"
+    },
     "JR-021852": {
       "title": "Manager, Product Management- Idira Secure Cloud Access",
       "first_seen": "2026-10-11T12:36:12.454072+00:00"
@@ -42,10 +46,6 @@
     "JR-018965": {
       "title": "Senior Staff C++ Win Internals Engineer (Endpoint Privilege Manager - Idira)",
       "first_seen": "2026-10-15T11:17:05.880406+00:00"
-    },
-    "JR-023624": {
-      "title": "Software Engineer – Graduate Program (Bootcamp)",
-      "first_seen": "2026-10-14T11:38:22.557036+00:00"
     },
     "JR-023533": {
       "title": "InfoSec Engineer – Endpoint, Identity & AI Security",
@@ -459,10 +459,6 @@
       "title": "Sr. Product Manager (Cortex Platform)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-018090": {
-      "title": "Senior Principal Quality Lead (Idira)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018226": {
       "title": "Manager, SW Engineering (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -540,5 +536,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 135
+  "last_board_total": 134
 }

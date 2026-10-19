@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.872059+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-19T12:52:14.692483+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "8394076002": {
@@ -19,6 +19,14 @@
       "title": "Backend Software Engineer",
       "first_seen": "2026-10-17T20:27:13.316528+00:00"
     },
+    "8899639002": {
+      "title": "Backend Software Engineer",
+      "first_seen": "2026-10-19T12:52:14.692483+00:00"
+    },
+    "8899626002": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-10-19T12:52:14.692483+00:00"
+    },
     "8813084002": {
       "title": "Bookkeeper - temporary position (Herzliya)",
       "first_seen": "2026-09-16T11:21:29.921478+00:00"
@@ -30,10 +38,6 @@
     "8805502002": {
       "title": "Commission Analyst",
       "first_seen": "2026-09-17T16:47:40.497983+00:00"
-    },
-    "8882917002": {
-      "title": "Data Analyst",
-      "first_seen": "2026-10-11T12:36:12.361004+00:00"
     },
     "8874236002": {
       "title": "IT Service Desk Team Leader",

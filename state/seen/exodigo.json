@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-19T04:21:44.906862+00:00",
+  "last_success": "2026-10-19T12:52:14.743502+00:00",
   "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,6 +10,10 @@
     "EF.273": {
       "title": "Algorithm Developer",
       "first_seen": "2026-09-23T11:20:30.181281+00:00"
+    },
+    "43.470": {
+      "title": "Algorithms Team Lead",
+      "first_seen": "2026-10-19T12:52:14.743502+00:00"
     },
     "22.F6B": {
       "title": "BIM Modeler",
@@ -36,10 +40,6 @@
       "first_seen": "2026-10-14T21:32:18.419153+00:00"
     },
     "B2.47E": {
-      "title": "Production Team Leader",
-      "first_seen": "2026-10-18T15:45:05.284716+00:00"
-    },
-    "B2.47E-F6.508": {
       "title": "Production Team Leader",
       "first_seen": "2026-10-18T15:45:05.284716+00:00"
     },

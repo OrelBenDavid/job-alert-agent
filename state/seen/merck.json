@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-19T04:21:44.944261+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-19T12:52:14.788098+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "R422809": {
+      "title": "Mechanical QC Inspector",
+      "first_seen": "2026-10-19T12:52:14.788098+00:00"
+    },
     "R405910": {
       "title": "Senior Technical Project Manager",
       "first_seen": "2026-10-13T16:52:25.840738+00:00"
@@ -24,5 +28,5 @@
       "first_seen": "2026-10-05T14:24:12.486920+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

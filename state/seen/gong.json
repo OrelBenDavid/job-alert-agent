@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.918006+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-19T12:52:14.760121+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "4693375006": {
@@ -47,6 +47,14 @@
       "title": "Senior Director of Platform Security",
       "first_seen": "2026-08-13T11:24:25.541413+00:00"
     },
+    "4695788006": {
+      "title": "Senior Director of Quality",
+      "first_seen": "2026-10-19T12:52:14.760121+00:00"
+    },
+    "4718329006": {
+      "title": "Senior Frontend Engineer",
+      "first_seen": "2026-10-19T12:52:14.760121+00:00"
+    },
     "4716960006": {
       "title": "Senior Product Designer",
       "first_seen": "2026-09-27T16:51:09.694737+00:00"
@@ -64,5 +72,5 @@
       "first_seen": "2026-09-29T12:38:07.386680+00:00"
     }
   },
-  "last_board_total": 97
+  "last_board_total": 99
 }

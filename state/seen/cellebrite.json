@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.886436+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-19T12:52:14.718746+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -14,6 +14,10 @@
     "01.37F": {
       "title": "Android Vulnerability Researcher",
       "first_seen": "2026-09-24T21:25:46.769788+00:00"
+    },
+    "E0.470": {
+      "title": "Associate Account Executive",
+      "first_seen": "2026-10-19T12:52:14.718746+00:00"
     },
     "DE.B60": {
       "title": "Director of Global Procurement",
@@ -59,10 +63,18 @@
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-10-17T15:24:09.342357+00:00"
     },
+    "43.47E": {
+      "title": "Senior FP&A Analyst - COGS & Operations",
+      "first_seen": "2026-10-19T12:52:14.718746+00:00"
+    },
+    "53.479": {
+      "title": "Senior FP&A Analyst - SaaS, Cloud & G&A",
+      "first_seen": "2026-10-19T12:52:14.718746+00:00"
+    },
     "4D.370": {
       "title": "Solutions Expert",
       "first_seen": "2026-10-18T10:50:46.669994+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 36
 }

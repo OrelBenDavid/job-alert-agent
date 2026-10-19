@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-19T04:21:44.947567+00:00",
+  "last_success": "2026-10-19T12:52:15.517986+00:00",
   "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
@@ -26,6 +26,10 @@
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "2a8920e0-6dc6-48a8-b8b7-2f42f432e637": {
+      "title": "Algorithm Developer for Objects Modeling",
+      "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
     "331ce77a-8179-444a-924c-189f131afd50": {
       "title": "Algorithm Developer for Radar/Lidar Group",
@@ -83,6 +87,10 @@
       "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
+    "2a817378-710e-43df-929b-a53ce94f1daa": {
+      "title": "C++ Software Developer",
+      "first_seen": "2026-10-19T12:52:15.517986+00:00"
+    },
     "5d034aa4-279a-4538-9e76-ba5300a6dfc8": {
       "title": "C++ Software Engineer - Tools Team",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
@@ -114,10 +122,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "568f4a72-8cd2-4c33-9d09-1a62e21dacc7": {
-      "title": "Data Analysis Engineer - Student Position",
-      "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
     "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
       "title": "Data Analytics Project Manager",
@@ -295,6 +299,14 @@
       "title": "Product Environmental Compliance Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
+    "08dcd65b-5888-4972-98fb-a4759692a056": {
+      "title": "Product Execution Manager",
+      "first_seen": "2026-10-19T12:52:15.517986+00:00"
+    },
+    "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
+      "title": "Product Execution Manager",
+      "first_seen": "2026-10-19T12:52:15.517986+00:00"
+    },
     "b571e504-4e18-4de1-a12f-eaac1392bf8f": {
       "title": "Production Software Engineer for Algo Objects",
       "first_seen": "2026-10-18T10:50:47.106141+00:00"
@@ -334,6 +346,10 @@
     "14e467d6-6412-479d-a827-fb9184522869": {
       "title": "Senior Algorithm Engineer - Objects Perception",
       "first_seen": "2026-08-13T09:40:45.264644+00:00"
+    },
+    "a2369d4c-e0ef-41e7-bf8a-db12cc46c79e": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
     "ee246ef1-c9ae-4a05-ad95-ad37a744db48": {
       "title": "Senior C Software Engineer",
@@ -411,10 +427,6 @@
       "title": "Senior ML Data Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "1d83cd20-6e61-44b8-aa23-895c67e9d010": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -442,10 +454,6 @@
     "d7f0dc54-948b-4917-be5a-539c0fd5f61d": {
       "title": "Senior Talent Acquisition Partner",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
-    },
-    "fcdf3814-81f3-4802-be16-26ef77ac5ac7": {
-      "title": "Senior Technical Product Analyst - SOTIF",
-      "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
     "b62913b8-da97-4467-85ff-7d495ef44cf4": {
       "title": "Senior Technical Program Manager",
@@ -587,10 +595,6 @@
       "title": "Technical Support Engineer",
       "first_seen": "2026-09-08T16:30:33.563948+00:00"
     },
-    "a63c9e92-7a60-4366-b853-ed3f33777abb": {
-      "title": "Test Automation Developer- Student Position",
-      "first_seen": "2026-10-06T15:50:16.377509+00:00"
-    },
     "5a7ec5bf-3d6c-4460-9320-61583c09a76d": {
       "title": "Test Automation Technical Lead",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
@@ -598,10 +602,6 @@
     "e447ddd1-b3aa-4afe-b23e-b40ec58f8a08": {
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
-    },
-    "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
-      "title": "Validation Analytics Tools Developer",
-      "first_seen": "2026-10-15T11:17:05.847778+00:00"
     },
     "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
       "title": "Validation and Testing Engineer",
@@ -620,5 +620,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 171
+  "last_board_total": 172
 }

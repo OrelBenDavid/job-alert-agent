@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T04:21:44.930205+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-19T12:52:14.772109+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -55,10 +55,6 @@
       "title": "R&D Team Lead",
       "first_seen": "2026-09-09T16:27:11.329124+00:00"
     },
-    "8184079": {
-      "title": "R&D Team Lead, Data Engineering- JFrog Security",
-      "first_seen": "2026-09-08T16:30:33.545293+00:00"
-    },
     "8175114": {
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
@@ -80,5 +76,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 63
 }
