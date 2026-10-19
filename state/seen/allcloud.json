@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-19T12:52:14.690050+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-19T20:31:00.986358+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
-    "F4.27D": {
-      "title": "Account Executive",
-      "first_seen": "2026-09-07T19:05:45.370761+00:00"
-    },
     "34.278": {
       "title": "AI and Data Science Team Lead",
       "first_seen": "2026-10-05T14:24:12.377089+00:00"
@@ -68,5 +64,5 @@
       "first_seen": "2026-09-23T21:24:50.317480+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 25
 }

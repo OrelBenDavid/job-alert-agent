@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T12:52:15.551013+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-19T20:31:01.100256+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "F6.075": {
@@ -35,6 +35,10 @@
       "title": "Senior Real-Time Embedded Software Engineer (C++)",
       "first_seen": "2026-09-22T16:46:17.004247+00:00"
     },
+    "63.470": {
+      "title": "Senior RF Engineer",
+      "first_seen": "2026-10-19T20:31:01.100256+00:00"
+    },
     "02.C66": {
       "title": "Senior Software Engineer (Rust / GPU)",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-10-18T15:45:05.387097+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

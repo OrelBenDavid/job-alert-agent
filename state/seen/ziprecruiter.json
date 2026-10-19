@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T12:52:15.604251+00:00",
-  "last_count": 11,
+  "last_success": "2026-10-19T20:31:01.146174+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "8129327": {
@@ -9,10 +9,6 @@
     },
     "8128603": {
       "title": "Engineering Manager, Machine Learning",
-      "first_seen": "2026-08-18T19:28:38.383070+00:00"
-    },
-    "7858982": {
-      "title": "Enterprise, Account Executive",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     },
     "7624253": {
@@ -48,5 +44,5 @@
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 43
 }

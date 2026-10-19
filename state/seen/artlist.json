@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T12:52:14.698658+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-19T20:31:00.990491+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "E2.378": {
@@ -14,6 +14,10 @@
     "AD.27F": {
       "title": "Application Security Engineer - AI & Product Security",
       "first_seen": "2026-09-22T11:24:07.938437+00:00"
+    },
+    "73.47C": {
+      "title": "Assistant controller",
+      "first_seen": "2026-10-19T20:31:00.990491+00:00"
     },
     "D2.474": {
       "title": "Billing / Collections Specialist",
@@ -56,5 +60,5 @@
       "first_seen": "2026-09-02T16:27:20.390493+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

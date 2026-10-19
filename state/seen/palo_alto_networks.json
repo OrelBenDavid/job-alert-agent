@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-19T12:52:15.536816+00:00",
+  "last_success": "2026-10-19T20:31:01.086902+00:00",
   "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-022684": {
+      "title": "Senior Staff Data Scientist (AI Solutions)",
+      "first_seen": "2026-09-24T11:33:41.920573+00:00"
+    },
     "JR-022983": {
       "title": "Senior Lead, Cortex Communications",
       "first_seen": "2026-10-19T12:52:15.536816+00:00"
@@ -198,10 +202,6 @@
     "JR-022400": {
       "title": "Principal Engineer Software- Backend Infra (Cortex)",
       "first_seen": "2026-09-24T17:00:04.643789+00:00"
-    },
-    "JR-022684": {
-      "title": "Sr Staff Data Scientist",
-      "first_seen": "2026-09-24T11:33:41.920573+00:00"
     },
     "JR-022742": {
       "title": "Senior / Principal Angular Frontend Engineer (Cortex Platform - AgentiX)",

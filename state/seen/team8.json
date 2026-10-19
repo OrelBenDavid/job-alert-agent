@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-19T12:52:15.574136+00:00",
-  "last_count": 50,
+  "last_success": "2026-10-19T20:31:01.122686+00:00",
+  "last_count": 49,
   "consecutive_failures": 0,
   "jobs": {
     "B2.472": {
@@ -124,7 +124,7 @@
       "first_seen": "2026-08-23T06:53:45.590721+00:00"
     },
     "B6.375": {
-      "title": "Team8  -Security and IT Team Lead",
+      "title": "Team8  -Security & IT Team Lead",
       "first_seen": "2026-10-01T12:58:35.360009+00:00"
     },
     "9F.95F": {
@@ -154,10 +154,6 @@
     "F6.376": {
       "title": "Team8 Stealth Cyber Startup - Founding Vulnerability Researcher",
       "first_seen": "2026-10-01T12:58:35.360009+00:00"
-    },
-    "15.27A": {
-      "title": "Team8 Stealth Cyber Startup – Director of Marketing",
-      "first_seen": "2026-09-07T12:15:49.353478+00:00"
     },
     "DF.367": {
       "title": "Team8 Stealth Cyber Startup- Software Developer",
@@ -204,5 +200,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 64
+  "last_board_total": 63
 }
