@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-18T22:58:10.564761+00:00",
+  "last_success": "2026-10-19T04:21:44.922662+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,21 +7,37 @@
       "title": "Senior IT Platform Engineer",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
     },
+    "a7e6da7e-ef7d-45dc-994b-e03e9319f1e8": {
+      "title": "Senior Field Deployment Engineer (FDE)",
+      "first_seen": "2026-09-29T12:38:07.396447+00:00"
+    },
     "3a70c667-91c5-4dbd-bf1c-93b4ff931c55": {
       "title": "Field Deployment Engineering (FDE) Team Lead",
       "first_seen": "2026-09-02T20:55:41.938107+00:00"
     },
-    "a7e6da7e-ef7d-45dc-994b-e03e9319f1e8": {
-      "title": "Senior Field Deployment Engineer (FDE)",
-      "first_seen": "2026-09-29T12:38:07.396447+00:00"
+    "c6ab01a2-c1c6-48ea-9969-87b8bf7ae632": {
+      "title": "Revenue Controller",
+      "first_seen": "2026-09-28T13:38:07.472973+00:00"
     },
     "15550225-d68a-436c-86a9-df9174c9c443": {
       "title": "Finops Lead",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "c6ab01a2-c1c6-48ea-9969-87b8bf7ae632": {
-      "title": "Revenue Controller",
+    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
+      "title": "Account Manager IL",
+      "first_seen": "2026-10-14T17:00:25.314544+00:00"
+    },
+    "ec18133d-9feb-4128-9d7a-05874672cf5f": {
+      "title": "Senior Director Product Marketing",
+      "first_seen": "2026-10-06T15:50:15.974952+00:00"
+    },
+    "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {
+      "title": "Account Executive",
       "first_seen": "2026-09-28T13:38:07.472973+00:00"
+    },
+    "32c6fd23-60fc-426d-b2bd-3d6db1f85eab": {
+      "title": "Senior Account Executive",
+      "first_seen": "2026-09-18T11:01:52.076268+00:00"
     },
     "3347caaf-0ae3-405f-a50e-3857b4461768": {
       "title": "Senior Lifecycle Marketing Manager",
@@ -31,29 +47,25 @@
       "title": "Creative Director",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "32c6fd23-60fc-426d-b2bd-3d6db1f85eab": {
-      "title": "Senior Account Executive",
-      "first_seen": "2026-09-18T11:01:52.076268+00:00"
-    },
-    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
-      "title": "Account Manager IL",
-      "first_seen": "2026-10-14T17:00:25.314544+00:00"
-    },
-    "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {
-      "title": "Account Executive",
-      "first_seen": "2026-09-28T13:38:07.472973+00:00"
-    },
-    "ec18133d-9feb-4128-9d7a-05874672cf5f": {
-      "title": "Senior Director Product Marketing",
-      "first_seen": "2026-10-06T15:50:15.974952+00:00"
-    },
     "15060fa3-7b16-4f70-8e1f-0190a1e6005b": {
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
-    "7f8b464c-f0b0-43a7-8092-f10515206edd": {
-      "title": "AI Platform Product Manager",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    "9010e73d-8849-4c6c-b0de-aecaa27add51": {
+      "title": "AI Backend Engineer",
+      "first_seen": "2026-10-12T10:35:45.152916+00:00"
+    },
+    "3ad5440b-6e7a-4a06-a4ec-3555a90716d1": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-10-12T10:35:45.152916+00:00"
+    },
+    "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
+      "title": "Software Architect - Data Platform",
+      "first_seen": "2026-09-08T11:05:09.147673+00:00"
+    },
+    "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
+      "title": "Senior AI Ops Engineer",
+      "first_seen": "2026-09-07T23:25:18.849113+00:00"
     },
     "ab1200c3-0dcc-4d54-b58c-136461dbe586": {
       "title": "Backend Tech Lead – AI Platform",
@@ -63,21 +75,9 @@
       "title": "Senior Product Manager- Core HR",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
-      "title": "Senior AI Ops Engineer",
-      "first_seen": "2026-09-07T23:25:18.849113+00:00"
-    },
-    "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
-      "title": "Software Architect - Data Platform",
-      "first_seen": "2026-09-08T11:05:09.147673+00:00"
-    },
-    "9010e73d-8849-4c6c-b0de-aecaa27add51": {
-      "title": "AI Backend Engineer",
-      "first_seen": "2026-10-12T10:35:45.152916+00:00"
-    },
-    "3ad5440b-6e7a-4a06-a4ec-3555a90716d1": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-10-12T10:35:45.152916+00:00"
+    "7f8b464c-f0b0-43a7-8092-f10515206edd": {
+      "title": "AI Platform Product Manager",
+      "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
   "last_board_total": 81
