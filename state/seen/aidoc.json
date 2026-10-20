@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T00:12:31.465519+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-20T08:24:16.420700+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -47,6 +47,10 @@
       "title": "Engineering Team Lead",
       "first_seen": "2026-10-19T12:52:14.687565+00:00"
     },
+    "5009604101": {
+      "title": "Legal Director",
+      "first_seen": "2026-10-20T08:24:16.420700+00:00"
+    },
     "4882428101": {
       "title": "Principal Engineer - AI First Development Lead",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-10-05T14:24:12.368120+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

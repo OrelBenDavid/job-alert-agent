@@ -1,15 +1,19 @@
 {
-  "last_success": "2026-10-20T00:12:31.593435+00:00",
-  "last_count": 8,
+  "last_success": "2026-10-20T08:24:16.539588+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
-    "R323041": {
-      "title": "Data Science and AI builder",
-      "first_seen": "2026-10-15T16:47:47.010297+00:00"
+    "R322897": {
+      "title": "IT Support / HelpDesk Tier 1 /2",
+      "first_seen": "2026-10-20T08:24:16.539588+00:00"
     },
     "R323011": {
       "title": "Global Talent Acquisition Partner – Maternity Leave Replacement",
       "first_seen": "2026-10-11T12:36:12.468224+00:00"
+    },
+    "R323041": {
+      "title": "Data Science and AI builder",
+      "first_seen": "2026-10-15T16:47:47.010297+00:00"
     },
     "R322863": {
       "title": "Head of Engineering",
@@ -36,5 +40,5 @@
       "first_seen": "2026-08-18T22:29:25.533195+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-20T00:12:31.565955+00:00",
+  "last_success": "2026-10-20T08:24:16.512497+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -55,9 +55,9 @@
       "title": "HR Operations Specialist",
       "first_seen": "2026-10-12T21:12:11.906660+00:00"
     },
-    "4983402101": {
-      "title": "Platform Engineering Group Leader",
-      "first_seen": "2026-09-28T21:11:02.425252+00:00"
+    "5010669101": {
+      "title": "Platform Engineering Team Leader",
+      "first_seen": "2026-10-20T08:24:16.512497+00:00"
     },
     "4965103101": {
       "title": "QA Director",
@@ -76,5 +76,5 @@
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 182
 }

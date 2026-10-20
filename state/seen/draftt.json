@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-10-20T00:12:31.513273+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-20T08:24:16.456914+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "B6.35A": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
     "E2.47E": {
       "title": "Senior Frontend Engineer",
       "first_seen": "2026-10-19T20:31:01.018139+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }
