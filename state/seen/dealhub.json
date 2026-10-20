@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-20T08:24:16.455629+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-20T14:14:49.298910+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "06.65B": {
       "title": "Business Development Representative",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
+    },
+    "34.474": {
+      "title": "Collections & Billing Specialist",
+      "first_seen": "2026-10-20T14:14:49.298910+00:00"
     },
     "56.070": {
       "title": "Customer Success Manager",
@@ -56,5 +60,5 @@
       "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }

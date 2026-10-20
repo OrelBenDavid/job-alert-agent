@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.504660+00:00",
-  "last_count": 153,
+  "last_success": "2026-10-20T14:14:49.862148+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -95,18 +95,6 @@
       "title": "Camera System Engineer",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
-    "bc5af7e1-27cc-4e86-a0cc-b4e5628e81d0": {
-      "title": "Commercial Legal Counsel",
-      "first_seen": "2026-10-15T11:17:05.847778+00:00"
-    },
-    "8e12e6c1-44a9-4eb7-b041-9f212505da00": {
-      "title": "Corporate Controller",
-      "first_seen": "2026-08-16T12:53:50.849516+00:00"
-    },
-    "de078a5a-f9b1-4f3f-8b02-b19241cbd1c6": {
-      "title": "Corporate Controller",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "6a5a0009-af24-4325-8451-e391c691611b": {
       "title": "Cyber Security Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -143,6 +131,18 @@
       "title": "Embedded C++ Software Developer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "04853139-2a12-4d1e-8ce3-6d315ec31081": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
+    },
+    "0fa71098-1f99-4528-8f23-5369eec1b7d5": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
+    },
+    "f197016b-7b7a-46a2-991d-c48852099048": {
+      "title": "Embedded Integrator - Temporary",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
+    },
     "62f6ee02-6f82-4044-819e-c7207995cd24": {
       "title": "Embedded Linux OS Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -158,6 +158,14 @@
     "5dc1fe67-93f1-481c-bbd4-06b3125f7493": {
       "title": "EU Strategic Account Manager - Temporary",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
+    },
+    "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
+    },
+    "8d09a950-7497-409c-a7d2-4a72458435de": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
     },
     "e4ff9bf6-2346-4421-8945-38aff4bc62be": {
       "title": "Experienced Backend Developer for Cloud Infrastructure",
@@ -407,6 +415,10 @@
       "title": "Senior Full Stack Developer",
       "first_seen": "2026-10-14T11:38:22.537446+00:00"
     },
+    "d623a866-9435-4b6d-aab8-17b835a64509": {
+      "title": "Senior Hardware Engineer – Signal Integrity",
+      "first_seen": "2026-10-20T14:14:49.862148+00:00"
+    },
     "4d129447-0cad-4b11-9825-e86b8fe09e47": {
       "title": "Senior HW Board Design Engineer",
       "first_seen": "2026-08-16T12:53:50.849516+00:00"
@@ -458,18 +470,6 @@
     "72b82d00-3d08-499b-84ca-c90b12db479d": {
       "title": "Senior Technical Project Manager (Autonomous Driving)",
       "first_seen": "2026-08-16T15:29:12.951324+00:00"
-    },
-    "067d6e5e-f0e2-4cbf-82fd-43c0af539e2b": {
-      "title": "Senior Thermal Engineer",
-      "first_seen": "2026-08-24T07:12:36.749462+00:00"
-    },
-    "818b9690-8c09-4be1-b680-43084a1324a0": {
-      "title": "Senior Thermal Engineer",
-      "first_seen": "2026-08-24T13:05:04.480071+00:00"
-    },
-    "da38c082-c92f-4287-8d87-ffdb1ad6696f": {
-      "title": "Senior Thermal Engineer",
-      "first_seen": "2026-08-24T13:05:04.480071+00:00"
     },
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
@@ -599,10 +599,6 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
-    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
-      "title": "Validation and Testing Engineer",
-      "first_seen": "2026-10-18T15:45:05.338505+00:00"
-    },
     "e5a7fb78-7847-499a-94b8-a66033db3998": {
       "title": "Validation Engineer",
       "first_seen": "2026-10-14T11:38:22.537446+00:00"
@@ -616,5 +612,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 171
+  "last_board_total": 170
 }

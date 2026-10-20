@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.497471+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-20T14:14:49.331788+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "46.07A": {
@@ -26,11 +26,7 @@
     "D5.27E": {
       "title": "Senior data platform engineer",
       "first_seen": "2026-09-08T16:30:33.555120+00:00"
-    },
-    "46.076": {
-      "title": "Support Escalation Specialist (Tier 2)",
-      "first_seen": "2026-08-17T15:33:11.137927+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

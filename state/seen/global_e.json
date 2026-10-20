@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.471296+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-20T14:14:49.315700+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "D9.963": {
@@ -74,11 +74,7 @@
     "A5.27F": {
       "title": "Trade Analyst - Temporary position",
       "first_seen": "2026-09-09T11:10:07.712162+00:00"
-    },
-    "D2.372": {
-      "title": "Trade Compliance Specialist",
-      "first_seen": "2026-09-29T12:38:07.382544+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 48
 }

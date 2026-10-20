@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.472090+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-20T14:14:49.316266+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "4693375006": {
@@ -49,10 +49,6 @@
     },
     "4695788006": {
       "title": "Senior Director of Quality",
-      "first_seen": "2026-10-19T12:52:14.760121+00:00"
-    },
-    "4718329006": {
-      "title": "Senior Frontend Engineer",
       "first_seen": "2026-10-19T12:52:14.760121+00:00"
     },
     "4716960006": {

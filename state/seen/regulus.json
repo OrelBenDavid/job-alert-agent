@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.534045+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-20T14:14:49.884259+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "F6.075": {
@@ -18,6 +18,10 @@
     "FC.061": {
       "title": "Customer Service Lead",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
+    },
+    "64.F65": {
+      "title": "Drone Technology Research Lead",
+      "first_seen": "2026-10-20T14:14:49.884259+00:00"
     },
     "F2.472": {
       "title": "Field Testing Team Lead",
@@ -56,5 +60,5 @@
       "first_seen": "2026-10-18T15:45:05.387097+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 14
 }

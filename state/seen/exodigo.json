@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.461007+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-20T14:14:49.308850+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
@@ -51,10 +51,6 @@
       "title": "Senior Corporate Controller",
       "first_seen": "2026-08-27T14:03:31.361982+00:00"
     },
-    "13.260": {
-      "title": "Senior Software Engineer - Data Acquistion (Field Team)",
-      "first_seen": "2026-08-13T11:24:19.185292+00:00"
-    },
     "62.942": {
       "title": "Signal Analyst",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
@@ -68,5 +64,5 @@
       "first_seen": "2026-10-06T15:50:15.952397+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 62
 }

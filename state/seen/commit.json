@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T08:24:16.445483+00:00",
-  "last_count": 47,
+  "last_success": "2026-10-20T14:14:49.292751+00:00",
+  "last_count": 48,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -70,6 +70,10 @@
     "13.F49": {
       "title": "IT Solutions Architect",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "14.479": {
+      "title": "Junior Customer Success Manager",
+      "first_seen": "2026-10-20T14:14:49.292751+00:00"
     },
     "D6.D6C": {
       "title": "Junior Electronics Engineer",
@@ -192,5 +196,5 @@
       "first_seen": "2026-10-06T15:50:15.922516+00:00"
     }
   },
-  "last_board_total": 135
+  "last_board_total": 134
 }
