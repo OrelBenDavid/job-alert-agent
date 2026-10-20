@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-10-20T19:07:44.243388+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-20T23:45:59.736815+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "5181469007": {
-      "title": "Analyst, Diligence",
-      "first_seen": "2026-08-18T19:28:34.688782+00:00"
-    }
-  },
-  "last_board_total": 8
+  "jobs": {},
+  "last_board_total": 7
 }

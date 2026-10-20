@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-20T19:07:44.169723+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-20T23:45:59.673345+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "c8071efd-109f-43f3-9632-e677e10c9cf2": {
       "title": "Product Designer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
+    },
+    "05ef9055-06b9-4d00-b58a-51a65da38830": {
+      "title": "Product Manager",
+      "first_seen": "2026-10-20T23:45:59.673345+00:00"
     },
     "d8088166-0fad-44d6-befe-30aa1cccc1ea": {
       "title": "Senior Data Scientist",
@@ -16,5 +20,5 @@
       "first_seen": "2026-10-16T20:53:14.953334+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }
