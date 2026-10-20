@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-10-20T14:14:49.874627+00:00",
-  "last_count": 135,
+  "last_success": "2026-10-20T19:07:44.211195+00:00",
+  "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
     "JR-023719": {
       "title": "Senior/Principal Backend Engineer - Cortex Platform and Application",
       "first_seen": "2026-10-20T14:14:49.874627+00:00"
-    },
-    "JR-018147": {
-      "title": "Engineering Software Manager (Secure Agentic AI)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-023402": {
       "title": "Sr Principal / Architect Engineer Software Chief Architect Office (Idira)",
@@ -431,10 +427,6 @@
       "title": "Principal UX designer (Cloud Application Security)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-018844": {
-      "title": "Senior/Principal Backend Engineer - Application (Cortex Platform)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-017263": {
       "title": "Product Design Manager -UX/UI (Cortex XSIAM)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -544,5 +536,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 136
+  "last_board_total": 134
 }

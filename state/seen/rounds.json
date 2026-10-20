@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-10-20T14:14:49.886672+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-20T19:07:44.232443+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "44.36A": {
       "title": "DevOps Team Lead",
-      "first_seen": "2026-08-20T06:56:56.915754+00:00"
-    },
-    "67.C6A": {
-      "title": "Senior Business Analyst",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     },
     "64.D60": {
@@ -16,5 +12,5 @@
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

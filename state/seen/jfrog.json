@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T14:14:49.324740+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-20T19:07:44.175655+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -55,6 +55,10 @@
       "title": "R&D Team Leader- DevFlows",
       "first_seen": "2026-10-20T14:14:49.324740+00:00"
     },
+    "8199380": {
+      "title": "R&D Team Lead - JFrog Security",
+      "first_seen": "2026-10-20T19:07:44.175655+00:00"
+    },
     "8175114": {
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
@@ -76,5 +80,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 64
 }

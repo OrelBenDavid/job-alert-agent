@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T14:14:49.322579+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-20T19:07:44.172719+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "C6.D60": {
@@ -13,10 +13,6 @@
     },
     "5C.D61": {
       "title": "C++ Software Engineer for AI",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
-    },
-    "32.D60": {
-      "title": "C/C++ Senior Developer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "32.D63": {
@@ -79,10 +75,6 @@
       "title": "Software  Engineering Team Lead - NAS Group",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
-    "FA.27B": {
-      "title": "Software Developer",
-      "first_seen": "2026-10-20T08:24:16.480835+00:00"
-    },
     "84.C67": {
       "title": "Software Developer Engineer in Test",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
@@ -92,5 +84,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 39
+  "last_board_total": 37
 }

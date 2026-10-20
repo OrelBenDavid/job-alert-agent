@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T14:14:49.321194+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-20T19:07:44.171221+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "332aa0e9-46b5-4f89-bee8-3e63362d3056": {
@@ -34,11 +34,7 @@
     "99f7c9bd-9932-4d42-9087-02f9180a1869": {
       "title": "Director, Strategic Customer Relations",
       "first_seen": "2026-09-18T16:16:36.647506+00:00"
-    },
-    "0076b32f-eacd-41d9-a6cb-a0a2af0621f9": {
-      "title": "Director of Fraud Strategy",
-      "first_seen": "2026-09-30T00:18:13.970518+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 23
 }

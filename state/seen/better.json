@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-10-20T14:14:49.281641+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-20T19:07:44.127024+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "eada8e34-0208-4955-8b67-8dda4d36e913": {
-      "title": "Senior DevOps Engineer",
-      "first_seen": "2026-10-15T21:14:39.840059+00:00"
-    }
-  },
-  "last_board_total": 6
+  "jobs": {},
+  "last_board_total": 5
 }

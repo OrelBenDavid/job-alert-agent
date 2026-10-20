@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-20T14:14:49.919315+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-20T19:07:44.271723+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
@@ -38,7 +38,11 @@
     "62b02f77-ef83-4bcb-b5ee-330a247085a5": {
       "title": "ServiceNow Application Engineer - Workflows Team",
       "first_seen": "2026-09-28T13:38:07.604170+00:00"
+    },
+    "bed6a7eb-e610-4b1d-94bf-9c7c39c53c57": {
+      "title": "Channel Account Manager (EMEA)",
+      "first_seen": "2026-10-20T19:07:44.271723+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 27
 }
