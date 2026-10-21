@@ -1,7 +1,7 @@
 {
   "last_success": "2026-10-21T17:02:52.240111+00:00",
   "last_count": 7,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "3fd1c2c4-f731-4e4b-87b2-d63403563a25": {
       "title": "BDR Team Lead",

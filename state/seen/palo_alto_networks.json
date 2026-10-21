@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-10-21T17:02:52.821561+00:00",
-  "last_count": 133,
+  "last_success": "2026-10-21T21:31:27.258320+00:00",
+  "last_count": 131,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023785": {
+      "title": "Sr Staff Engineer Software (Cortex R&D Operation)",
+      "first_seen": "2026-10-21T21:31:27.258320+00:00"
+    },
+    "JR-022627": {
+      "title": "Principal DevOps Engineer (Prisma Browser)",
+      "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
     "JR-016993": {
       "title": "Senior Product Manager- Application Security (Cortex Cloud)",
       "first_seen": "2026-10-21T17:02:52.821561+00:00"
@@ -79,10 +87,6 @@
       "title": "Manager, Product Management- Idira Secure Cloud Access",
       "first_seen": "2026-10-11T12:36:12.454072+00:00"
     },
-    "JR-022627": {
-      "title": "Principal DevOps Engineer (Prisma Browser)",
-      "first_seen": "2026-09-27T11:52:38.220909+00:00"
-    },
     "JR-022769": {
       "title": "Senior Principal Software Engineer Chief Architect Office - (Idira)",
       "first_seen": "2026-09-29T19:55:52.264915+00:00"
@@ -154,10 +158,6 @@
     "JR-023147": {
       "title": "Principal Automation Engineer (Data Security)",
       "first_seen": "2026-10-08T10:21:48.799245+00:00"
-    },
-    "JR-023369": {
-      "title": "Senior Principal Backend Engineer (CORTEX - Autonomous SOC)",
-      "first_seen": "2026-10-08T18:46:43.503762+00:00"
     },
     "JR-023339": {
       "title": "Principal Product Manager- Agentic Browser (PB)",
@@ -363,10 +363,6 @@
       "title": "Sr Staff Engineer Software (Credential Provider)",
       "first_seen": "2026-09-03T20:54:14.339810+00:00"
     },
-    "JR-021134": {
-      "title": "Internal Audit Manager",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-022022": {
       "title": "Senior Manager, Talent Acquisition - Israel",
       "first_seen": "2026-09-02T11:06:52.071078+00:00"
@@ -519,10 +515,6 @@
       "title": "District Sales Manager Public Sector & Defense",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
-    "JR-013102": {
-      "title": "Engineering Software Manager (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-013064": {
       "title": "Principal Product Manager -  Application Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -536,5 +528,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 134
+  "last_board_total": 132
 }

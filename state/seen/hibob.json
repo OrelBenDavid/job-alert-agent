@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-21T17:02:52.262140+00:00",
+  "last_success": "2026-10-21T21:31:27.227137+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,9 +23,9 @@
       "title": "Finops Lead",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "847f5f90-d2a5-4ae9-807a-bd15d8ad4598": {
+    "efc9a66e-b067-40c9-a504-4a94f282b3ca": {
       "title": "VP Revenue Marketing",
-      "first_seen": "2026-10-21T11:36:48.022148+00:00"
+      "first_seen": "2026-10-21T21:31:27.227137+00:00"
     },
     "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
       "title": "SMB Account Manager IL",

@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-21T17:02:52.234979+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-21T21:31:27.204983+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "53cf2efa-45e6-44d3-af28-0065b0f04aa7": {
       "title": "Corporate Controller (Maternity Leave Cover)",
       "first_seen": "2026-09-30T17:56:23.174654+00:00"
+    },
+    "58464bf0-84a9-4b6a-91e1-9b0844475583": {
+      "title": "Director of Global Corporate Program Management",
+      "first_seen": "2026-10-21T21:31:27.204983+00:00"
     },
     "f4f6b55a-2344-423f-a207-a9119ff67f3f": {
       "title": "Head of MIS",
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }
