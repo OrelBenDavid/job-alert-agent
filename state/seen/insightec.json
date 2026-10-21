@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:48.027377+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-21T17:02:52.267147+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "D2.47B": {
@@ -11,10 +11,14 @@
       "title": "MRI Systems Protocols Implementation & Support",
       "first_seen": "2026-09-09T16:27:11.324120+00:00"
     },
+    "B4.47E": {
+      "title": "Senior Design Quality Engineer",
+      "first_seen": "2026-10-21T17:02:52.267147+00:00"
+    },
     "A2.473": {
       "title": "Software Automation and DevOps Manager",
       "first_seen": "2026-10-18T10:50:46.715111+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 19
 }

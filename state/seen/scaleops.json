@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:48.108374+00:00",
-  "last_count": 33,
+  "last_success": "2026-10-21T17:02:54.108634+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "4919302101": {
@@ -38,6 +38,10 @@
     "4976404101": {
       "title": "Director of Full stack",
       "first_seen": "2026-09-16T11:21:30.323164+00:00"
+    },
+    "5012315101": {
+      "title": "Director of Product - IL",
+      "first_seen": "2026-10-21T17:02:54.108634+00:00"
     },
     "4913581101": {
       "title": "Director of R&D",
@@ -136,5 +140,5 @@
       "first_seen": "2026-09-08T21:02:17.585638+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 59
 }

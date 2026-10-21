@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:47.954868+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-21T17:02:52.209011+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "36.07C": {
@@ -47,6 +47,10 @@
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     },
+    "05.478": {
+      "title": "People Operations & HRIS Specialist",
+      "first_seen": "2026-10-21T17:02:52.209011+00:00"
+    },
     "D2.470": {
       "title": "Principal AI Research Scientist (Israel / UK)",
       "first_seen": "2026-10-18T15:45:05.216899+00:00"
@@ -88,5 +92,5 @@
       "first_seen": "2026-09-23T11:20:30.162183+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 42
 }

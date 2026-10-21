@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:47.975283+00:00",
-  "last_count": 39,
+  "last_success": "2026-10-21T17:02:52.227988+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -123,6 +123,10 @@
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "4953528101": {
+      "title": "Software Engineer – Cato Apps Team (AI)",
+      "first_seen": "2026-10-21T17:02:52.227988+00:00"
+    },
     "4860424101": {
       "title": "Software Engineer (Endpoint DLP)",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -160,5 +164,5 @@
       "first_seen": "2026-10-13T16:52:24.757933+00:00"
     }
   },
-  "last_board_total": 107
+  "last_board_total": 106
 }

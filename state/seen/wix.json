@@ -1,19 +1,23 @@
 {
-  "last_success": "2026-10-21T11:36:47.950587+00:00",
-  "last_count": 43,
+  "last_success": "2026-10-21T17:02:52.202318+00:00",
+  "last_count": 44,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-93eee5ac-c063-552b-9517-1eb363c39af7-T1791474744-744000156819255": {
+      "title": "Business Analyst - Wix Marketing",
+      "first_seen": "2026-10-21T17:02:52.202318+00:00"
+    },
+    "https://careers.wix.com/position/oracle-208a12aa-caff-5a3d-9dce-9f2994efeb61-T1792405436-744000156822229": {
+      "title": "Full stack organic growth marketer",
+      "first_seen": "2026-10-21T17:02:52.202318+00:00"
+    },
+    "https://careers.wix.com/position/REF3097W-744000156782609": {
+      "title": "Full Stack Engineer - Wix Code",
+      "first_seen": "2026-10-21T17:02:52.202318+00:00"
+    },
     "https://careers.wix.com/position/oracle-ee8b8c8e-e8b6-57f0-9a1e-47db7a062d8d-T1792498149-744000156542479": {
       "title": "Wix Product Counsel (Parental leave)",
       "first_seen": "2026-10-21T04:24:37.970496+00:00"
-    },
-    "https://careers.wix.com/position/oracle-678456a6-55ae-5f85-bf4f-e183f702df1f-T1788360224-744000156520574": {
-      "title": "Wellbeing Manager (Parental leave)",
-      "first_seen": "2026-10-21T04:24:37.970496+00:00"
-    },
-    "https://careers.wix.com/position/oracle-208a12aa-caff-5a3d-9dce-9f2994efeb61-T1792405436-744000156311634": {
-      "title": "SEO & GEO Expert",
-      "first_seen": "2026-10-19T20:31:00.978137+00:00"
     },
     "https://careers.wix.com/position/oracle-395bb518-03f1-554d-a7ba-b07d45a875e0-T1792048103-744000156261770": {
       "title": "Product & Content Designer - Wix Editor",

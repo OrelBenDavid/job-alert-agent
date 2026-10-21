@@ -1,7 +1,7 @@
 {
   "last_success": "2026-10-21T11:36:48.135981+00:00",
   "last_count": 5,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
       "title": "Product Designer",

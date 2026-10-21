@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-21T11:36:48.036326+00:00",
+  "last_success": "2026-10-21T17:02:52.796878+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-09-14T12:31:04.068374+00:00"
     },
     "61.47B": {
-      "title": "Operations & Automation Manager,",
+      "title": "Operations & Automation Manager",
       "first_seen": "2026-10-20T14:14:49.328360+00:00"
     },
     "E1.376": {

@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-10-21T11:36:48.090516+00:00",
+  "last_success": "2026-10-21T17:02:52.821561+00:00",
   "last_count": 133,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-016993": {
+      "title": "Senior Product Manager- Application Security (Cortex Cloud)",
+      "first_seen": "2026-10-21T17:02:52.821561+00:00"
+    },
+    "JR-023570": {
+      "title": "R&D Intern (Alero - Idira)",
+      "first_seen": "2026-10-21T17:02:52.821561+00:00"
+    },
+    "JR-023786": {
+      "title": "R&D Intern for Windows Agent (Endpoint Privilege Management)",
+      "first_seen": "2026-10-21T17:02:52.821561+00:00"
+    },
     "JR-022256": {
       "title": "Senior DevOps Engineer  - Backend Infrastructure Team (Cortex)",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
@@ -139,10 +151,6 @@
       "title": "Sr Principal Software Architect (Idira,  Secrets Manager SAAS)",
       "first_seen": "2026-09-22T21:11:15.781097+00:00"
     },
-    "JR-019026": {
-      "title": "Technical Program Leader - Enterprise SaaS (Idira)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-023147": {
       "title": "Principal Automation Engineer (Data Security)",
       "first_seen": "2026-10-08T10:21:48.799245+00:00"
@@ -275,17 +283,9 @@
       "title": "Senior Angular Frontend Engineer - Email Security (Cortex)",
       "first_seen": "2026-09-17T21:14:08.378823+00:00"
     },
-    "JR-015576": {
-      "title": "Sr. Product Manager-  Prisma Browser",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-018995": {
       "title": "Major Account Manager Public Sector & Defense",
       "first_seen": "2026-09-20T20:40:34.787947+00:00"
-    },
-    "JR-021300": {
-      "title": "Director, Product Management (IDIRA, Discovery, Risk & Threat Platform)",
-      "first_seen": "2026-09-20T15:55:44.409769+00:00"
     },
     "JR-018846": {
       "title": "Sr Manager, Product Management (Cortex ,XSOAR/XSIAM)",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:47.969250+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-21T17:02:52.223168+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "DB.27A": {
@@ -75,14 +75,10 @@
       "title": "System Engineer",
       "first_seen": "2026-10-19T12:52:14.704795+00:00"
     },
-    "B1.667": {
-      "title": "System Engineer -EO& RADAR",
-      "first_seen": "2026-08-19T09:41:24.926419+00:00"
-    },
     "AD.260": {
       "title": "Warehouse Specialist",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

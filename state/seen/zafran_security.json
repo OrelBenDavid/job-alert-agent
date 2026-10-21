@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T11:36:48.141199+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-21T17:02:54.159819+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
@@ -42,7 +42,11 @@
     "bed6a7eb-e610-4b1d-94bf-9c7c39c53c57": {
       "title": "Channel Account Manager (EMEA)",
       "first_seen": "2026-10-20T19:07:44.271723+00:00"
+    },
+    "adfc36d6-d37f-4880-82a1-d074031a422f": {
+      "title": "Senior Bookkeeper",
+      "first_seen": "2026-10-21T17:02:54.159819+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 29
 }
