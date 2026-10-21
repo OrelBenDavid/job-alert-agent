@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.122227+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-21T11:36:48.139275+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -18,6 +18,10 @@
     "8245851": {
       "title": "Head of Public Policy - Israel",
       "first_seen": "2026-10-02T17:47:12.720219+00:00"
+    },
+    "8171321": {
+      "title": "Media Sales SMB",
+      "first_seen": "2026-10-21T11:36:48.139275+00:00"
     },
     "7303949": {
       "title": "Regional Strategy & Operations Manager, Consumer",
@@ -64,5 +68,5 @@
       "first_seen": "2026-09-06T10:45:35.038311+00:00"
     }
   },
-  "last_board_total": 203
+  "last_board_total": 204
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.087541+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-21T11:36:48.103705+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "F6.075": {
@@ -58,11 +58,7 @@
     "F2.762": {
       "title": "V&V Manager",
       "first_seen": "2026-09-10T16:17:01.386562+00:00"
-    },
-    "F2.471": {
-      "title": "Verification Engineer",
-      "first_seen": "2026-10-18T15:45:05.387097+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 14
 }

@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-10-21T04:24:38.068777+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-21T11:36:48.086383+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "d3c8a14e-8472-454c-8ccc-1c3ac7ba64fa": {
-      "title": "Head of Influencer Marketing",
-      "first_seen": "2026-09-27T16:51:09.760032+00:00"
-    },
     "c43827f9-2453-4282-9d75-9322ce8507fd": {
       "title": "Senior Full-Stack Developer",
       "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }

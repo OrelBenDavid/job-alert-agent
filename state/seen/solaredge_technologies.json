@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.101320+00:00",
-  "last_count": 38,
+  "last_success": "2026-10-21T11:36:48.116731+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
     "22.A6A": {
@@ -80,7 +80,7 @@
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
     "34.478": {
-      "title": "Layout Designer",
+      "title": "Layout Design Team Leader",
       "first_seen": "2026-10-20T14:14:49.897181+00:00"
     },
     "D2.E62": {
@@ -94,10 +94,6 @@
     "ED.761": {
       "title": "Sales Data Analyst",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
-    },
-    "27.076": {
-      "title": "Sales Operations Account Manager",
-      "first_seen": "2026-08-18T15:40:36.082467+00:00"
     },
     "D2.274": {
       "title": "Senior Electrical Engineer (Licensed Engineer Electrician)",
@@ -156,5 +152,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 94
+  "last_board_total": 92
 }

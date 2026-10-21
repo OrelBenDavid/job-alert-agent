@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-21T04:24:38.013000+00:00",
+  "last_success": "2026-10-21T11:36:48.006002+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -19,13 +19,13 @@
       "title": "Strategic Buyer",
       "first_seen": "2026-09-29T19:55:52.194953+00:00"
     },
+    "F0.475": {
+      "title": "Temp Warehouseman",
+      "first_seen": "2026-10-14T17:00:25.297095+00:00"
+    },
     "35.273": {
       "title": "Verification & Validation (V&V) Manager",
       "first_seen": "2026-09-07T12:15:49.243219+00:00"
-    },
-    "F0.475": {
-      "title": "מחסנאי",
-      "first_seen": "2026-10-14T17:00:25.297095+00:00"
     },
     "E2.269": {
       "title": "מלחימ.ה",
@@ -40,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:19.179824+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 9
 }

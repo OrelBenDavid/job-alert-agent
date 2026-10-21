@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.001200+00:00",
-  "last_count": 48,
+  "last_success": "2026-10-21T11:36:47.981579+00:00",
+  "last_count": 49,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -115,6 +115,10 @@
       "title": "R&D Director",
       "first_seen": "2026-08-20T15:40:50.829993+00:00"
     },
+    "29.371": {
+      "title": "RevOps Expert",
+      "first_seen": "2026-10-06T15:50:15.922516+00:00"
+    },
     "E7.37F": {
       "title": "Senior AI Product Manager",
       "first_seen": "2026-10-04T18:36:01.466502+00:00"
@@ -142,6 +146,10 @@
     "A1.479": {
       "title": "Software Architect",
       "first_seen": "2026-10-15T16:47:46.889604+00:00"
+    },
+    "A4.47B": {
+      "title": "Software Engineer",
+      "first_seen": "2026-10-21T11:36:47.981579+00:00"
     },
     "A5.D62": {
       "title": "Software Project Manager",
@@ -190,11 +198,7 @@
     "9C.372": {
       "title": "ראש צוות מעבדת שילובים",
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
-    },
-    "29.371": {
-      "title": "רכז/ת מכרזים",
-      "first_seen": "2026-10-06T15:50:15.922516+00:00"
     }
   },
-  "last_board_total": 132
+  "last_board_total": 133
 }

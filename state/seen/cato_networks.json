@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-21T04:24:37.995317+00:00",
+  "last_success": "2026-10-21T11:36:47.975283+00:00",
   "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
@@ -50,6 +50,10 @@
     "4970686101": {
       "title": "IT System Engineer",
       "first_seen": "2026-09-10T11:06:08.961280+00:00"
+    },
+    "4642142101": {
+      "title": "IT System Team Lead",
+      "first_seen": "2026-10-21T11:36:47.975283+00:00"
     },
     "4897189101": {
       "title": "Lead Security Researcher - AI Threat Intelligence",
@@ -118,10 +122,6 @@
     "4632362101": {
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4970648101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-09-14T12:31:04.028546+00:00"
     },
     "4860424101": {
       "title": "Software Engineer (Endpoint DLP)",

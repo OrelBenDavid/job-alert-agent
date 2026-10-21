@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:37.995823+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-21T11:36:47.975925+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -30,6 +30,10 @@
     "E0.F50": {
       "title": "Exploit Engineer",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
+    },
+    "64.47A": {
+      "title": "Global Talent Acquisition Partner, Labs",
+      "first_seen": "2026-10-21T11:36:47.975925+00:00"
     },
     "17.270": {
       "title": "HR Data & AI Lead",
@@ -64,11 +68,11 @@
       "first_seen": "2026-10-17T15:24:09.342357+00:00"
     },
     "43.47E": {
-      "title": "Senior FP&A Analyst - COGS & Operations",
+      "title": "Senior FP&A Analyst - Operations",
       "first_seen": "2026-10-19T12:52:14.718746+00:00"
     },
     "53.479": {
-      "title": "Senior FP&A Analyst - SaaS, Cloud & G&A",
+      "title": "Senior FP&A Analyst - SaaS",
       "first_seen": "2026-10-19T12:52:14.718746+00:00"
     },
     "4D.370": {
@@ -76,5 +80,5 @@
       "first_seen": "2026-10-18T10:50:46.669994+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 39
 }

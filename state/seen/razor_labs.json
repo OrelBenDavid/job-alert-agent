@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.086025+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-21T11:36:48.102141+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "C2.663": {
@@ -15,10 +15,14 @@
       "title": "Senior Backend Developr",
       "first_seen": "2026-10-08T18:46:43.528735+00:00"
     },
+    "94.479": {
+      "title": "Senior Linux user space application developer (Freelancer)",
+      "first_seen": "2026-10-21T11:36:48.102141+00:00"
+    },
     "98.E61": {
       "title": "Senior Manufacturing & NPI Engineer (Prototype to Low-Volume)",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.056635+00:00",
-  "last_count": 153,
+  "last_success": "2026-10-21T11:36:48.047295+00:00",
+  "last_count": 160,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -207,6 +207,10 @@
       "title": "Experienced Formal Verification  Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "4defafe4-48ba-444b-8037-a56119c0956d": {
+      "title": "Experienced Laboratory Integration Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
     "ae0844fc-26c2-4df9-9a11-03e80dbc90e8": {
       "title": "Experienced Low Level Software Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -310,6 +314,22 @@
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
+    },
+    "0a1d7baf-bfbe-466a-b12b-05ca3936108c": {
+      "title": "Production Quality Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
+    "23239c7c-5aa1-449b-bc44-4b754d4f42c5": {
+      "title": "Production Quality Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
+    "6c2c3630-b6cc-465b-9671-2a5dbbf0017d": {
+      "title": "Production Quality Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
+    "ad23da3b-e74e-4b41-84b5-bb8abfa125a6": {
+      "title": "Production Quality Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
     },
     "b571e504-4e18-4de1-a12f-eaac1392bf8f": {
       "title": "Production Software Engineer for Algo Objects",
@@ -495,6 +515,10 @@
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
+    "fa8e04f5-58b3-49be-87a3-5dcc561fd48c": {
+      "title": "SOC Analyst (Student position)",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
     "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
       "title": "Software Algorithms RT Engineer - Active Sensor Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -603,6 +627,10 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
+    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
+      "title": "Validation and Testing Engineer",
+      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    },
     "e5a7fb78-7847-499a-94b8-a66033db3998": {
       "title": "Validation Engineer",
       "first_seen": "2026-10-14T11:38:22.537446+00:00"
@@ -616,5 +644,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 171
+  "last_board_total": 184
 }

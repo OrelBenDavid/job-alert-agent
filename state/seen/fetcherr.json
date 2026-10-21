@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-10-21T04:24:38.017415+00:00",
+  "last_success": "2026-10-21T11:36:48.009877+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "05.27D": {
       "title": "Account Director",
       "first_seen": "2026-09-07T12:15:49.246797+00:00"
+    },
+    "4A.27B": {
+      "title": "Algorithm team lead",
+      "first_seen": "2026-09-10T16:17:00.383610+00:00"
+    },
+    "4A.27B-9D.50A": {
+      "title": "Algorithm team lead",
+      "first_seen": "2026-09-10T16:17:00.383610+00:00"
     },
     "A5.D67": {
       "title": "Data Analyst- Tableau",
@@ -58,14 +66,6 @@
     "33.478": {
       "title": "Payroll Manager",
       "first_seen": "2026-10-19T12:52:14.745890+00:00"
-    },
-    "4A.27B": {
-      "title": "Price optimization decision team lead",
-      "first_seen": "2026-09-10T16:17:00.383610+00:00"
-    },
-    "4A.27B-9D.50A": {
-      "title": "Price optimization decision team lead",
-      "first_seen": "2026-09-10T16:17:00.383610+00:00"
     },
     "93.D6E": {
       "title": "Senior DevOps Engineer",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-21T04:24:38.002558+00:00",
-  "last_count": 11,
+  "last_success": "2026-10-21T11:36:47.985433+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -10,6 +10,10 @@
     "1B.E5C": {
       "title": "Backend Engineer - Alerting",
       "first_seen": "2026-10-07T13:08:46.723122+00:00"
+    },
+    "D3.270-20.20A": {
+      "title": "Senior Frontend Engineer",
+      "first_seen": "2026-10-21T11:36:47.985433+00:00"
     },
     "E0.475": {
       "title": "Senior Mobile SDK Engineer",
@@ -39,6 +43,10 @@
       "title": "Team Lead, Technical Account Manager -IL",
       "first_seen": "2026-08-13T11:24:19.148327+00:00"
     },
+    "4B.75E-1A.203": {
+      "title": "Team Lead, Technical Account Manager -IL",
+      "first_seen": "2026-10-21T11:36:47.985433+00:00"
+    },
     "0C.D60": {
       "title": "VP Information Systems",
       "first_seen": "2026-10-12T10:35:45.130148+00:00"
@@ -48,5 +56,5 @@
       "first_seen": "2026-10-11T12:36:12.387858+00:00"
     }
   },
-  "last_board_total": 60
+  "last_board_total": 62
 }
