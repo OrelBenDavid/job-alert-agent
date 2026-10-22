@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-10-22T11:36:45.929112+00:00",
+  "last_success": "2026-10-22T21:26:51.557456+00:00",
   "last_count": 15,
-  "consecutive_failures": 1,
+  "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
       "title": "AI Engineering Team Manager",
