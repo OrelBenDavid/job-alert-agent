@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T11:36:42.385984+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-22T17:01:56.071204+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -51,6 +51,10 @@
       "title": "Senior Lifecycle Marketing Manager",
       "first_seen": "2026-08-19T15:39:40.394991+00:00"
     },
+    "15fcddef-badd-46a4-913f-d2c0bae0ed40": {
+      "title": "People and Culture Partner",
+      "first_seen": "2026-10-22T17:01:56.071204+00:00"
+    },
     "15060fa3-7b16-4f70-8e1f-0190a1e6005b": {
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
@@ -88,5 +92,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 77
+  "last_board_total": 78
 }

@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-10-22T11:36:42.336766+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-22T17:01:56.017491+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "310b54f4-471a-41bc-bd6a-19179b431c03": {
-      "title": "Financial Reporting Manager/Senior Manager",
-      "first_seen": "2026-10-20T23:45:59.628075+00:00"
-    }
-  },
-  "last_board_total": 6
+  "jobs": {},
+  "last_board_total": 5
 }

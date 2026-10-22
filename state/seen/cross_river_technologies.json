@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T11:36:42.360759+00:00",
-  "last_count": 14,
+  "last_success": "2026-10-22T17:01:56.035970+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "53.E6A": {
@@ -14,6 +14,10 @@
     "78.D53": {
       "title": "Engineering Manager",
       "first_seen": "2026-10-15T11:17:05.779936+00:00"
+    },
+    "D4.47B": {
+      "title": "Engineering Support Team Lead",
+      "first_seen": "2026-10-22T17:01:56.035970+00:00"
     },
     "A3.278": {
       "title": "IT Enterprise Systems Support Engineer",
@@ -60,5 +64,5 @@
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }

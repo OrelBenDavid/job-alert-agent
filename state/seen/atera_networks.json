@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T11:36:42.334173+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-22T17:01:56.012707+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "3D.B6A": {
@@ -10,10 +10,6 @@
     "EE.E6C": {
       "title": "Director of Sales",
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
-    },
-    "64.27D": {
-      "title": "Executive Assistant to CEO",
-      "first_seen": "2026-09-06T10:45:33.723392+00:00"
     },
     "1C.F6A": {
       "title": "Platform Tech Lead",
@@ -32,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

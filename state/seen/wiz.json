@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-22T11:36:45.976144+00:00",
+  "last_success": "2026-10-22T17:01:56.171322+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
+    "4621534006": {
+      "title": "Applied Data Scientist Expert",
+      "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
     "4692874006": {
       "title": "Applied Security Researcher",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
@@ -17,10 +21,6 @@
     },
     "4650468006": {
       "title": "CTO Operations Engineer",
-      "first_seen": "2026-08-23T09:01:23.865955+00:00"
-    },
-    "4621534006": {
-      "title": "Data Scientist Expert",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
     },
     "4615172006": {
@@ -96,5 +96,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 126
+  "last_board_total": 127
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T11:36:45.523068+00:00",
-  "last_count": 156,
+  "last_success": "2026-10-22T17:01:56.097307+00:00",
+  "last_count": 162,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -18,6 +18,10 @@
     "d324d672-2b02-434d-b17a-e5036e2f35d6": {
       "title": "AI Engineering Execution Manager (Temporary Position - Maternity Leave)",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
+    "fe24233e-b5fd-401e-b71b-0690043ad207": {
+      "title": "Algorithm Data Analyst - Temporary position for 9 months",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -115,9 +119,9 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
-    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
-      "title": "Data Analytics Project Manager",
-      "first_seen": "2026-10-13T06:35:37.302426+00:00"
+    "7a25ec5f-8955-4538-94bd-5c0e847475b4": {
+      "title": "Data Manager",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
     },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
@@ -271,6 +275,10 @@
       "title": "Hardware Team Lead",
       "first_seen": "2026-10-01T12:58:35.309410+00:00"
     },
+    "25c80488-23a2-4a27-bf37-7cc46533cbd0": {
+      "title": "HW Board Design Engineer",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
+    },
     "f405d1be-1fde-4d92-8710-96d8ed0cc620": {
       "title": "IC Package Layout Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
@@ -302,6 +310,10 @@
     "820209f4-b8a0-4b3b-b2de-46d62cad0aac": {
       "title": "Product Environmental Compliance Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
+    },
+    "08dcd65b-5888-4972-98fb-a4759692a056": {
+      "title": "Product Execution Manager",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
     },
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
@@ -346,6 +358,10 @@
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
       "title": "Semiconductor Quality & Reliability Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
+    },
+    "963a696d-bd85-445a-9481-f6ba1812b310": {
+      "title": "Senior AI Algorithm Engineer - Vision Localization Group",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
     },
     "73a651f5-963c-447d-b0ae-b6c9ee06f684": {
       "title": "Senior AI Researcher - Visual GenAI",
@@ -455,6 +471,14 @@
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "3f7ed722-46cf-4851-8c41-6e477f0b2aec": {
+      "title": "Senior System Hardware Architect",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
+    },
+    "78d97259-3100-40d6-a6f1-91d1b490682a": {
+      "title": "Senior System Hardware Architect",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
+    },
     "b105f36b-5fe8-43c5-a89e-4c8dd64d6732": {
       "title": "Senior System Hardware Architect",
       "first_seen": "2026-10-18T15:45:05.338505+00:00"
@@ -470,10 +494,6 @@
     "b62913b8-da97-4467-85ff-7d495ef44cf4": {
       "title": "Senior Technical Program Manager",
       "first_seen": "2026-08-20T09:42:36.524681+00:00"
-    },
-    "72b82d00-3d08-499b-84ca-c90b12db479d": {
-      "title": "Senior Technical Project Manager (Autonomous Driving)",
-      "first_seen": "2026-08-16T15:29:12.951324+00:00"
     },
     "4c272b78-4384-4ceb-88d4-22161fba5d30": {
       "title": "Senior Thermal-Mechanical Engineer",
@@ -611,6 +631,10 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
+    "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
+      "title": "Validation Analytics Tools Developer",
+      "first_seen": "2026-10-22T17:01:56.097307+00:00"
+    },
     "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
       "title": "Validation and Testing Engineer",
       "first_seen": "2026-10-21T11:36:48.047295+00:00"
@@ -628,5 +652,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 190
 }

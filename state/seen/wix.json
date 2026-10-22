@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T11:36:42.323460+00:00",
-  "last_count": 44,
+  "last_success": "2026-10-22T17:01:55.981033+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
     "https://careers.wix.com/position/oracle-93eee5ac-c063-552b-9517-1eb363c39af7-T1791474744-744000156819255": {
@@ -38,10 +38,6 @@
     "https://careers.wix.com/position/oracle-7aba6c53-8db3-55f0-a35d-ae607103c84a-T1792057102-744000155746889": {
       "title": "Brand and Web Designer - DesignDev team",
       "first_seen": "2026-10-15T16:47:46.856187+00:00"
-    },
-    "https://careers.wix.com/position/REF3112Q-744000155728063": {
-      "title": "Base44 for Good Lead",
-      "first_seen": "2026-10-15T11:17:05.728131+00:00"
     },
     "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000155710054": {
       "title": "IT Professional Services",
