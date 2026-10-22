@@ -1,7 +1,7 @@
 {
   "last_success": "2026-10-22T04:23:46.403011+00:00",
   "last_count": 14,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "0f2c807c-3f3d-4383-8c12-75641066438b": {
       "title": "Full Stack Software Engineering Team Leader",

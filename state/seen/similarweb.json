@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-22T04:23:46.492098+00:00",
-  "last_count": 29,
+  "last_success": "2026-10-22T11:36:45.950570+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
+    "8312125": {
+      "title": "Account Manager",
+      "first_seen": "2026-10-22T11:36:45.950570+00:00"
+    },
     "8264120": {
       "title": "Agent Platform Engineer",
       "first_seen": "2026-10-08T10:21:48.836786+00:00"

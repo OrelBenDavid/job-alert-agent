@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T04:23:46.499458+00:00",
-  "last_count": 23,
+  "last_success": "2026-10-22T11:36:45.956456+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -38,6 +38,10 @@
     "8281185": {
       "title": "Product Analyst",
       "first_seen": "2026-10-14T17:00:25.400947+00:00"
+    },
+    "8300216": {
+      "title": "Product Designer- Maternity Leave Cover",
+      "first_seen": "2026-10-22T11:36:45.956456+00:00"
     },
     "8176690": {
       "title": "Product Design Team Lead",
@@ -87,6 +91,10 @@
       "title": "Site Reliability Engineer, Traffic Infrastructure",
       "first_seen": "2026-09-14T12:31:04.128440+00:00"
     },
+    "8264032": {
+      "title": "Staff Engineer — Data Platform",
+      "first_seen": "2026-10-22T11:36:45.956456+00:00"
+    },
     "8261478": {
       "title": "Tax Manager",
       "first_seen": "2026-10-13T16:52:25.911150+00:00"
@@ -96,5 +104,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 85
 }

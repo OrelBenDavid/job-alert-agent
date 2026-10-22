@@ -1,12 +1,20 @@
 {
-  "last_success": "2026-10-22T04:23:46.369310+00:00",
-  "last_count": 1,
+  "last_success": "2026-10-22T11:36:42.327976+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "CC.372": {
       "title": "Deep Learning Engineer",
       "first_seen": "2026-10-15T11:17:05.735923+00:00"
+    },
+    "95.47C": {
+      "title": "Senior Marketing Designer",
+      "first_seen": "2026-10-22T11:36:42.327976+00:00"
+    },
+    "95.47D": {
+      "title": "Technical Project Manager - Post training",
+      "first_seen": "2026-10-22T11:36:42.327976+00:00"
     }
   },
-  "last_board_total": 1
+  "last_board_total": 3
 }

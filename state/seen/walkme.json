@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T04:23:46.515000+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-22T11:36:45.973713+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
@@ -22,7 +22,11 @@
     "770d46c6-6770-4e0f-8054-5f48354a4658": {
       "title": "Technical Architect II - German Speaking",
       "first_seen": "2026-10-19T20:31:01.134898+00:00"
+    },
+    "a1ba108a-ab97-42c5-971e-93c12f86226f": {
+      "title": "Technical Solution Engineer",
+      "first_seen": "2026-10-22T11:36:45.973713+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

@@ -1,15 +1,19 @@
 {
-  "last_success": "2026-10-22T04:23:46.504845+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-22T11:36:45.964603+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "7974762002": {
-      "title": "Engineering Team Lead",
+      "title": "Engineering Team Lead (Data Platform)",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
     },
     "8539030002": {
       "title": "Engineering Team Lead - Data Science Team",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
+    },
+    "8905403002": {
+      "title": "Engineering Team Lead (Identity Verification)",
+      "first_seen": "2026-10-22T11:36:45.964603+00:00"
     },
     "8781444002": {
       "title": "GTM Engineer",
@@ -39,9 +43,9 @@
       "title": "Senior Devops Engineer",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
     },
-    "7763271002": {
-      "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-13T11:24:41.078385+00:00"
+    "8902101002": {
+      "title": "Senior Full Stack Engineer (BE Oriented)",
+      "first_seen": "2026-10-22T11:36:45.964603+00:00"
     },
     "7565350002": {
       "title": "Senior Mobile SDK Engineer",
@@ -56,5 +60,5 @@
       "first_seen": "2026-09-06T15:21:45.329530+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 16
 }

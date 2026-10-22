@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T04:23:46.467552+00:00",
-  "last_count": 131,
+  "last_success": "2026-10-22T11:36:45.927902+00:00",
+  "last_count": 128,
   "consecutive_failures": 0,
   "jobs": {
     "JR-023785": {
@@ -13,14 +13,6 @@
     },
     "JR-016993": {
       "title": "Senior Product Manager- Application Security (Cortex Cloud)",
-      "first_seen": "2026-10-21T17:02:52.821561+00:00"
-    },
-    "JR-023570": {
-      "title": "R&D Intern (Alero - Idira)",
-      "first_seen": "2026-10-21T17:02:52.821561+00:00"
-    },
-    "JR-023786": {
-      "title": "R&D Intern for Windows Agent (Endpoint Privilege Management)",
       "first_seen": "2026-10-21T17:02:52.821561+00:00"
     },
     "JR-022256": {
@@ -423,10 +415,6 @@
       "title": "Principal UX designer (Cloud Application Security)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-017263": {
-      "title": "Product Design Manager -UX/UI (Cortex XSIAM)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-020031": {
       "title": "Manager SW Engineering (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
@@ -528,5 +516,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 132
+  "last_board_total": 129
 }

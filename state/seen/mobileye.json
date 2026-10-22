@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-22T04:23:46.452050+00:00",
+  "last_success": "2026-10-22T11:36:45.523068+00:00",
   "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
@@ -55,6 +55,10 @@
       "title": "ATE & Manufacturing Engineer",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
+    "a24468db-ec96-48fc-bb2b-fcd576e39ba1": {
+      "title": "Autonomous Vehicle System Integrator",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
     "03446649-8a1a-493f-91f8-16c235548c48": {
       "title": "AV Production Analysis",
       "first_seen": "2026-10-15T16:47:46.960647+00:00"
@@ -95,6 +99,10 @@
       "title": "Camera System Engineer",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
+    "3846fe0f-fb31-4502-ab36-bcf7d404f973": {
+      "title": "Compute HW Platform Manager",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
     "6a5a0009-af24-4325-8451-e391c691611b": {
       "title": "Cyber Security Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -110,6 +118,10 @@
     "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
       "title": "Data Analytics Project Manager",
       "first_seen": "2026-10-13T06:35:37.302426+00:00"
+    },
+    "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
+      "title": "Data Product Manager - Algorithms Division",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -291,29 +303,13 @@
       "title": "Product Environmental Compliance Specialist",
       "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
-    "08dcd65b-5888-4972-98fb-a4759692a056": {
-      "title": "Product Execution Manager",
-      "first_seen": "2026-10-19T12:52:15.517986+00:00"
-    },
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
-    "0a1d7baf-bfbe-466a-b12b-05ca3936108c": {
-      "title": "Production Quality Engineer",
-      "first_seen": "2026-10-21T11:36:48.047295+00:00"
-    },
-    "23239c7c-5aa1-449b-bc44-4b754d4f42c5": {
-      "title": "Production Quality Engineer",
-      "first_seen": "2026-10-21T11:36:48.047295+00:00"
-    },
-    "6c2c3630-b6cc-465b-9671-2a5dbbf0017d": {
-      "title": "Production Quality Engineer",
-      "first_seen": "2026-10-21T11:36:48.047295+00:00"
-    },
-    "ad23da3b-e74e-4b41-84b5-bb8abfa125a6": {
-      "title": "Production Quality Engineer",
-      "first_seen": "2026-10-21T11:36:48.047295+00:00"
+    "481c9d4f-f7b3-42f6-a896-1ab6d14cd094": {
+      "title": "Product Manager- Autonomous Driving",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
     "b571e504-4e18-4de1-a12f-eaac1392bf8f": {
       "title": "Production Software Engineer for Algo Objects",
@@ -339,6 +335,14 @@
       "title": "Reinforcement Learning Researcher | Learned-Policy Group",
       "first_seen": "2026-10-12T10:35:45.180661+00:00"
     },
+    "c980d794-a1c8-41c3-ae2c-730e1260831e": {
+      "title": "Reinforcement Learning Researcher | Learned-Policy Group",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
+    "cfd0e9f7-d62e-408b-90e5-91d3046d130e": {
+      "title": "Reinforcement Learning Researcher | Learned-Policy Group",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
       "title": "Semiconductor Quality & Reliability Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
@@ -354,10 +358,6 @@
     "14e467d6-6412-479d-a827-fb9184522869": {
       "title": "Senior Algorithm Engineer - Objects Perception",
       "first_seen": "2026-08-13T09:40:45.264644+00:00"
-    },
-    "a2369d4c-e0ef-41e7-bf8a-db12cc46c79e": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
     "ee246ef1-c9ae-4a05-ad95-ad37a744db48": {
       "title": "Senior C Software Engineer",
@@ -499,10 +499,6 @@
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "fa8e04f5-58b3-49be-87a3-5dcc561fd48c": {
-      "title": "SOC Analyst (Student position)",
-      "first_seen": "2026-10-21T11:36:48.047295+00:00"
-    },
     "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
       "title": "Software Algorithms RT Engineer - Active Sensor Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -538,6 +534,10 @@
     "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6a585853-ec67-49fb-af6d-68adc60b5977": {
+      "title": "Strategic Account Manager",
+      "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
     "c26290b9-f51a-48dc-b319-45f2c9131b42": {
       "title": "System Engineer",
@@ -628,5 +628,5 @@
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     }
   },
-  "last_board_total": 180
+  "last_board_total": 182
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-22T04:23:46.411048+00:00",
+  "last_success": "2026-10-22T11:36:42.370220+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,13 +31,13 @@
       "title": "Field Operations - Global Team",
       "first_seen": "2026-08-13T11:24:19.185292+00:00"
     },
-    "85.549": {
-      "title": "Field Operations Employee",
-      "first_seen": "2026-10-04T18:36:01.474655+00:00"
-    },
     "C0.470": {
       "title": "Logistics Manager",
       "first_seen": "2026-10-14T21:32:18.419153+00:00"
+    },
+    "B5.470": {
+      "title": "Office Administrator",
+      "first_seen": "2026-10-22T11:36:42.370220+00:00"
     },
     "B2.47E": {
       "title": "Production Team Leader",

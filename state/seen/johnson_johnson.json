@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-10-22T04:23:46.435319+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-22T11:36:42.425048+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
+    "R-087909": {
+      "title": "Hardware Analog Engineer",
+      "first_seen": "2026-10-22T11:36:42.425048+00:00"
+    },
+    "R-106390": {
+      "title": "Clinical Trial Assistant",
+      "first_seen": "2026-10-22T11:36:42.425048+00:00"
+    },
+    "R-093278": {
+      "title": "Quality Engineer",
+      "first_seen": "2026-10-22T11:36:42.425048+00:00"
+    },
     "R-105769": {
       "title": "Production Operations Student",
       "first_seen": "2026-10-21T17:02:52.269624+00:00"
@@ -72,5 +84,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 21
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-22T04:23:46.453088+00:00",
-  "last_count": 25,
+  "last_success": "2026-10-22T11:36:45.541539+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
-    "f9d414e9-6bb9-4e35-99c2-6d452a66c7ae": {
-      "title": "DevOps Engineer",
-      "first_seen": "2026-08-23T09:01:22.335333+00:00"
-    },
     "9f1eb9b4-17d3-43e3-8d96-ef168ff07c6f": {
       "title": "Full Stack Developer",
       "first_seen": "2026-08-23T12:54:49.975867+00:00"
@@ -104,5 +100,5 @@
       "first_seen": "2026-10-20T14:14:49.864026+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 31
 }

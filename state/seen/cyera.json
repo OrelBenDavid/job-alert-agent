@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-22T04:23:46.401715+00:00",
-  "last_count": 31,
+  "last_success": "2026-10-22T11:36:42.362986+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
     "75.277": {
@@ -79,6 +79,10 @@
       "title": "Senior Full Stack Engineer - Identity (Oasis Security)",
       "first_seen": "2026-10-11T19:27:32.652006+00:00"
     },
+    "75.47D": {
+      "title": "Senior Full Stack Engineer - Infrastructure",
+      "first_seen": "2026-10-22T11:36:42.362986+00:00"
+    },
     "A5.865": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -128,5 +132,5 @@
       "first_seen": "2026-10-21T11:36:47.989029+00:00"
     }
   },
-  "last_board_total": 253
+  "last_board_total": 254
 }

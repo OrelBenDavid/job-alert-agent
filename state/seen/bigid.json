@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-22T04:23:46.381602+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-22T11:36:42.337013+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
+    "8908475002": {
+      "title": "Principal Product Manager - AI Security",
+      "first_seen": "2026-10-22T11:36:42.337013+00:00"
+    },
     "8874136002": {
       "title": "Senior Product Manager – Agentic AI",
       "first_seen": "2026-10-07T13:08:46.678011+00:00"
@@ -12,5 +16,5 @@
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 8
 }
