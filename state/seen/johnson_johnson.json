@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-24T20:35:51.612460+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-24T23:03:57.906295+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "R-087909": {
@@ -63,10 +63,6 @@
       "title": "Product Specialist Immunology",
       "first_seen": "2026-09-16T16:40:48.347173+00:00"
     },
-    "R-089751": {
-      "title": "Assistant Controller",
-      "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
     "R-091480": {
       "title": "Logic Designer and FPGA Tech Lead",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }
