@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-23T21:18:14.788896+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-24T04:18:50.024139+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
+    "6233904004": {
+      "title": "Business Analyst - REMOTE",
+      "first_seen": "2026-10-24T04:18:50.024139+00:00"
+    },
     "6202778004": {
       "title": "Director of Sales - Remote",
       "first_seen": "2026-10-20T19:07:44.179191+00:00"
@@ -32,5 +36,5 @@
       "first_seen": "2026-09-28T05:05:05.157779+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 8
 }
