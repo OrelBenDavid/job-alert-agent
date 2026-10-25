@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-25T11:10:18.667906+00:00",
+  "last_success": "2026-10-25T15:58:07.823233+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-09-30T17:56:23.344899+00:00"
     },
     "C5.079": {
-      "title": "Supply Chain & Planning Specialist",
+      "title": "Supply Chain & Procurement Specialist",
       "first_seen": "2026-08-20T06:56:59.911657+00:00"
     }
   },

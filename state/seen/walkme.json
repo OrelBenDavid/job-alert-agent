@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-10-25T11:10:18.663263+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-25T15:58:07.818590+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "74aa0b46-d56c-44fe-9946-9b14b8a27bcc": {
       "title": "Product Designer",
       "first_seen": "2026-10-18T10:50:47.193173+00:00"
-    },
-    "cf715cec-2464-46f1-a05a-792aa1769a39": {
-      "title": "Senior Product Marketing Manager (Temporary Position)",
-      "first_seen": "2026-09-02T11:06:52.119913+00:00"
     },
     "523740d8-98cd-43a2-8c2a-a94fa1c24705": {
       "title": "Senior Software Engineer - Big Data Platform",
@@ -28,5 +24,5 @@
       "first_seen": "2026-10-22T11:36:45.973713+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 21
 }

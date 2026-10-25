@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-25T11:10:18.615752+00:00",
-  "last_count": 155,
+  "last_success": "2026-10-25T15:58:07.767024+00:00",
+  "last_count": 156,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -95,6 +95,10 @@
       "title": "Camera System Engineer",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
+    "bc5af7e1-27cc-4e86-a0cc-b4e5628e81d0": {
+      "title": "Commercial Legal Counsel",
+      "first_seen": "2026-10-25T15:58:07.767024+00:00"
+    },
     "3846fe0f-fb31-4502-ab36-bcf7d404f973": {
       "title": "Compute HW Platform Manager",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
@@ -115,6 +119,10 @@
       "title": "Data Product Manager - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
+    "c359a528-8058-4393-818b-52e162418a58": {
+      "title": "Deep Learning Algorithm Developer",
+      "first_seen": "2026-10-25T15:58:07.767024+00:00"
+    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -122,14 +130,6 @@
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "0ed51c78-c71a-4bff-a2d0-f7d64bf2d60b": {
-      "title": "Digital Marketing Specialist - Temporary Position",
-      "first_seen": "2026-10-21T21:31:27.247672+00:00"
-    },
-    "ba443a6c-1d5a-41a0-9fde-3bc60af20484": {
-      "title": "Digital Marketing Specialist - Temporary Position",
-      "first_seen": "2026-10-21T21:31:27.247672+00:00"
     },
     "04c8ffeb-012c-4461-88a1-58acc073958b": {
       "title": "EHS specialist - Safety Officer",
@@ -622,7 +622,11 @@
     "f9789d96-131d-4fcb-820c-5ad0f5b53cc2": {
       "title": "Validation Engineer & Embedded System Integration (Temporary Position - Maternity Leave)",
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
+    },
+    "5f2f6179-1784-48cc-bd30-4571ea29aba9": {
+      "title": "Visual GenAI Research Expert",
+      "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 182
 }

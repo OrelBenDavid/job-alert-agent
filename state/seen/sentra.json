@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-25T11:10:18.646006+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-25T15:58:07.798846+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "F2.470": {
+      "title": "AI Engineering Lead - R&D Agents & Automation",
+      "first_seen": "2026-10-25T15:58:07.798846+00:00"
+    },
     "F6.078": {
       "title": "Data Science Team Lead",
       "first_seen": "2026-08-27T14:03:31.468821+00:00"
@@ -22,7 +26,11 @@
     "88.155": {
       "title": "Software Architect",
       "first_seen": "2026-08-20T06:56:59.884573+00:00"
+    },
+    "C6.473": {
+      "title": "Talent Acquisition Partner",
+      "first_seen": "2026-10-25T15:58:07.798846+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 13
 }
