@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-25T15:58:07.724310+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-25T20:43:18.971026+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "20792f61-d947-4535-acb2-2f55814ce733": {
-      "title": "Fullstack Engineer",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "761d8da7-7775-4884-8625-8b298debbcbf": {
       "title": "Head of Product",
       "first_seen": "2026-10-04T12:11:37.737772+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-10-22T11:36:42.343591+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 8
 }
