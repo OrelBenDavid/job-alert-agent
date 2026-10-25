@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-25T20:43:19.048512+00:00",
-  "last_count": 130,
+  "last_success": "2026-10-25T23:08:41.411889+00:00",
+  "last_count": 129,
   "consecutive_failures": 0,
   "jobs": {
     "JR-019918": {
@@ -327,10 +327,6 @@
       "title": "Principal Software Engineer – Identity SSO (Idira)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-017964": {
-      "title": "Principal Technical Program Manager",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-022296": {
       "title": "Sr MSIAM SOC Engineer (Unit 42)",
       "first_seen": "2026-09-17T11:28:45.943593+00:00"
@@ -524,5 +520,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 131
+  "last_board_total": 130
 }
