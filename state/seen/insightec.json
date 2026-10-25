@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-25T04:22:30.452882+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-25T11:10:18.602312+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "D2.47B": {
       "title": "Electronics Engineer",
       "first_seen": "2026-10-18T15:45:05.305052+00:00"
+    },
+    "E4.473": {
+      "title": "Logistics Operations Specialist",
+      "first_seen": "2026-10-25T11:10:18.602312+00:00"
     },
     "A6.27A": {
       "title": "MRI Systems Protocols Implementation & Support",
@@ -20,5 +24,5 @@
       "first_seen": "2026-10-18T10:50:46.715111+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }

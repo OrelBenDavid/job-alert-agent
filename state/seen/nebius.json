@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-25T04:22:30.472926+00:00",
-  "last_count": 75,
+  "last_success": "2026-10-25T11:10:18.619483+00:00",
+  "last_count": 74,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -30,10 +30,6 @@
     "4953622101": {
       "title": "Data Center - Supply Chain Manager (EMEA)",
       "first_seen": "2026-09-14T12:31:04.090357+00:00"
-    },
-    "4958594101": {
-      "title": "Data Engineer (Agentic Search)",
-      "first_seen": "2026-08-25T09:43:09.059165+00:00"
     },
     "5008588101": {
       "title": "Deputy SOC Manager",
@@ -179,13 +175,13 @@
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
     },
-    "4724503101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-09T16:27:11.356104+00:00"
-    },
     "4982904101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    },
+    "4724503101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
     "4986448101": {
       "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
@@ -287,13 +283,13 @@
       "title": "Threat Hunting Team Lead (Cyber Security)",
       "first_seen": "2026-10-12T10:35:45.189751+00:00"
     },
-    "4995853101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-16T16:30:21.568679+00:00"
-    },
     "4913573101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-21T17:02:52.811980+00:00"
+    },
+    "4995853101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-16T16:30:21.568679+00:00"
     },
     "4928221101": {
       "title": "Vulnerability Operation Center Lead",
@@ -304,5 +300,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 384
+  "last_board_total": 383
 }

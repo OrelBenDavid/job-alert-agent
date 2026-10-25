@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-25T04:22:30.494024+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-25T11:10:18.638004+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "70.370": {
       "title": "Backend Engineer",
       "first_seen": "2026-09-24T11:33:41.940112+00:00"
+    },
+    "85.47B": {
+      "title": "Business AI Solutions Engineer",
+      "first_seen": "2026-10-25T11:10:18.638004+00:00"
     },
     "36.C44": {
       "title": "Data Scientist",
@@ -28,5 +32,5 @@
       "first_seen": "2026-08-13T11:24:41.038127+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

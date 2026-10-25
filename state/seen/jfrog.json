@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-25T04:22:30.454340+00:00",
+  "last_success": "2026-10-25T11:10:18.603754+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -39,10 +39,6 @@
       "title": "IS Product Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "8302975": {
-      "title": "IS QA Engineer",
-      "first_seen": "2026-10-22T11:36:42.414895+00:00"
-    },
     "7996600": {
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -66,6 +62,10 @@
     "8175114": {
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
+    },
+    "8305312": {
+      "title": "Senior Graphic & Motion Designer",
+      "first_seen": "2026-10-25T11:10:18.603754+00:00"
     },
     "8222516": {
       "title": "Senior Offensive Security Engineer",

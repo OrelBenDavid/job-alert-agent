@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-25T04:22:30.428676+00:00",
-  "last_count": 32,
+  "last_success": "2026-10-25T11:10:18.575919+00:00",
+  "last_count": 33,
   "consecutive_failures": 0,
   "jobs": {
     "75.277": {
@@ -54,6 +54,10 @@
     "FF.C63": {
       "title": "Product Manager, AI Security",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "45.F54": {
+      "title": "QA Automation Engineer – Agent DLP",
+      "first_seen": "2026-10-25T11:10:18.575919+00:00"
     },
     "93.470": {
       "title": "Security Operations Engineer",
@@ -132,5 +136,5 @@
       "first_seen": "2026-10-21T11:36:47.989029+00:00"
     }
   },
-  "last_board_total": 254
+  "last_board_total": 255
 }

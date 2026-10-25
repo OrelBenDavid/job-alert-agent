@@ -1,15 +1,31 @@
 {
-  "last_success": "2026-10-25T04:22:30.481905+00:00",
-  "last_count": 126,
+  "last_success": "2026-10-25T11:10:18.626870+00:00",
+  "last_count": 127,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-023785": {
-      "title": "Sr Staff Engineer Software (Cortex R&D Operation)",
-      "first_seen": "2026-10-21T21:31:27.258320+00:00"
+    "JR-021196": {
+      "title": "Senior Staff Software Engineer (Secrets Manager SAAS)",
+      "first_seen": "2026-08-27T14:03:31.447390+00:00"
+    },
+    "JR-023673": {
+      "title": "Senior Product Designer (Cortex Platform)",
+      "first_seen": "2026-10-25T11:10:18.626870+00:00"
     },
     "JR-022627": {
       "title": "Principal DevOps Engineer (Prisma Browser)",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-023576": {
+      "title": "Senior Product Manager, Privileged Access Management (PAM) Self-Hosted (Idira)",
+      "first_seen": "2026-10-25T11:10:18.626870+00:00"
+    },
+    "JR-022705": {
+      "title": "Legal Intern, Intellectual Property",
+      "first_seen": "2026-10-25T11:10:18.626870+00:00"
+    },
+    "JR-023785": {
+      "title": "Sr Staff Engineer Software (Cortex R&D Operation)",
+      "first_seen": "2026-10-21T21:31:27.258320+00:00"
     },
     "JR-016993": {
       "title": "Senior Product Manager- Application Security (Cortex Cloud)",
@@ -139,10 +155,6 @@
       "title": "Distinguished Architect Software Engineer (Cortex AgentiX)",
       "first_seen": "2026-10-12T21:12:11.923839+00:00"
     },
-    "JR-021196": {
-      "title": "Senior Staff Software Engineer (Secrets Manager SAAS)",
-      "first_seen": "2026-08-27T14:03:31.447390+00:00"
-    },
     "JR-022122": {
       "title": "Sr Principal Software Architect (Idira,  Secrets Manager SAAS)",
       "first_seen": "2026-09-22T21:11:15.781097+00:00"
@@ -182,10 +194,6 @@
     "JR-021730": {
       "title": "C++ Developer - macOS Platform Engineer (Cortex XDR)",
       "first_seen": "2026-10-04T18:36:01.844335+00:00"
-    },
-    "JR-019816": {
-      "title": "Experienced Backend Engineer (Cortex Agentix)",
-      "first_seen": "2026-10-04T12:11:38.501118+00:00"
     },
     "JR-019054": {
       "title": "Staff AI Support Engineer (AgentiX Support - Cortex)",
@@ -415,10 +423,6 @@
       "title": "Manager SW Engineering (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-018039": {
-      "title": "Senior Software Engineer (Secure Agentic AI - Be'er Sheva)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
     "JR-019687": {
       "title": "Principal/Senior Engineer Software - Data Security (Cortex Cloud)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -508,5 +512,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 127
+  "last_board_total": 128
 }

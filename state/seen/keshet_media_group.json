@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-25T04:22:30.456687+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-25T11:10:18.605421+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
+    "A1.478": {
+      "title": "Senior Java Developer",
+      "first_seen": "2026-10-25T11:10:18.605421+00:00"
+    },
     "DB.07D": {
       "title": "איש.ת קריאייטיב ותוכן - סושיאל מסחרי",
       "first_seen": "2026-08-27T14:03:31.394810+00:00"
@@ -76,5 +80,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 28
 }

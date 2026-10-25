@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-25T04:22:30.440731+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-25T11:10:18.589208+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "C0.372": {
@@ -19,10 +19,14 @@
       "title": "Head of  IT",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     },
+    "86.470": {
+      "title": "Head of Automation",
+      "first_seen": "2026-10-25T11:10:18.589208+00:00"
+    },
     "C9.55C": {
       "title": "Head of DevOps",
       "first_seen": "2026-08-20T06:56:44.577812+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 15
 }
