@@ -1,20 +1,16 @@
 {
-  "last_success": "2026-10-26T04:25:43.709432+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-26T12:44:14.655799+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "A6.274": {
       "title": "Head of Billing & Collections",
       "first_seen": "2026-09-09T16:27:11.283848+00:00"
     },
-    "3C.375": {
-      "title": "Implementation Engineer (Customer-Facing)",
-      "first_seen": "2026-10-11T12:36:12.375259+00:00"
-    },
     "AF.C6E": {
       "title": "Technical Onboarding & Implementation Manager",
       "first_seen": "2026-09-29T12:38:07.357350+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 7
 }

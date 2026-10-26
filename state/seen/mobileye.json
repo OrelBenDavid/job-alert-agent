@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.790557+00:00",
-  "last_count": 155,
+  "last_success": "2026-10-26T12:44:14.710309+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -155,6 +155,10 @@
       "title": "Embedded Linux OS Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "fddc1e14-fb29-4181-9228-2a0e12d299bc": {
+      "title": "Embedded Software Application Engineer",
+      "first_seen": "2026-09-28T13:38:07.517226+00:00"
+    },
     "5dc1fe67-93f1-481c-bbd4-06b3125f7493": {
       "title": "EU Strategic Account Manager - Temporary",
       "first_seen": "2026-10-04T12:11:38.480792+00:00"
@@ -206,10 +210,6 @@
     "4defafe4-48ba-444b-8037-a56119c0956d": {
       "title": "Experienced Laboratory Integration Engineer",
       "first_seen": "2026-10-21T11:36:48.047295+00:00"
-    },
-    "ae0844fc-26c2-4df9-9a11-03e80dbc90e8": {
-      "title": "Experienced Low Level Software Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "e85566dc-9827-4058-a1d2-cc6a63f7e286": {
       "title": "Experienced Machine Learning Engineer",
@@ -307,10 +307,6 @@
       "title": "Production Software Engineer for Algo Objects",
       "first_seen": "2026-10-18T10:50:47.106141+00:00"
     },
-    "fac143e4-0dba-4912-ae9e-d168249a95d8": {
-      "title": "Python Data Solutions Specialist-Temporary Position",
-      "first_seen": "2026-10-11T12:36:12.433855+00:00"
-    },
     "f4c63464-9fcc-40ed-b9fd-a21d815cfdd9": {
       "title": "R&D Lifecycle & Process Management",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
@@ -318,10 +314,6 @@
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
-    },
-    "fddc1e14-fb29-4181-9228-2a0e12d299bc": {
-      "title": "Real-Time Embedded SW Engineer",
-      "first_seen": "2026-09-28T13:38:07.517226+00:00"
     },
     "998b921e-04c5-4aef-b86d-1c13d518e53c": {
       "title": "Reinforcement Learning Researcher | Learned-Policy Group",
@@ -334,6 +326,10 @@
     "cfd0e9f7-d62e-408b-90e5-91d3046d130e": {
       "title": "Reinforcement Learning Researcher | Learned-Policy Group",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
+    "c24c144a-031e-4008-8ddb-424b83307ec2": {
+      "title": "SecOps Specialist",
+      "first_seen": "2026-10-26T12:44:14.710309+00:00"
     },
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
       "title": "Semiconductor Quality & Reliability Engineer",
@@ -624,5 +620,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 180
 }

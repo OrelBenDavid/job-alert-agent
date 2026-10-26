@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.840242+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-26T12:44:14.748211+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "7994122003": {
@@ -18,6 +18,10 @@
     "7989880003": {
       "title": "Senior Software Engineer, Detection Platform",
       "first_seen": "2026-09-11T11:05:02.216992+00:00"
+    },
+    "8038687003": {
+      "title": "Senior Software Engineer in Test, Prompt",
+      "first_seen": "2026-10-26T12:44:14.748211+00:00"
     },
     "7799385003": {
       "title": "Senior Solutions Engineer - Prompt",
@@ -43,13 +47,13 @@
       "title": "Staff Product Manager -  Prompt Security",
       "first_seen": "2026-08-25T06:59:42.981381+00:00"
     },
-    "7996120003": {
-      "title": "Staff Security Researcher- Detection AI Research",
-      "first_seen": "2026-09-23T16:42:31.631858+00:00"
-    },
     "8003129003": {
       "title": "Staff Security Researcher- Detection AI Research",
       "first_seen": "2026-09-28T21:11:02.447114+00:00"
+    },
+    "7996120003": {
+      "title": "Staff Security Researcher- Detection AI Research",
+      "first_seen": "2026-09-23T16:42:31.631858+00:00"
     },
     "7812592003": {
       "title": "Staff Software Engineer, Detection Platform",
@@ -72,5 +76,5 @@
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
     }
   },
-  "last_board_total": 270
+  "last_board_total": 281
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.756019+00:00",
-  "last_count": 6,
+  "last_success": "2026-10-26T12:44:14.688335+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "C2.472": {
@@ -10,6 +10,10 @@
     "D2.370": {
       "title": "Email & Lifecycle Operations Manager",
       "first_seen": "2026-10-14T11:38:22.156848+00:00"
+    },
+    "F6.479": {
+      "title": "Head of AI Transformation",
+      "first_seen": "2026-10-26T12:44:14.688335+00:00"
     },
     "13.275": {
       "title": "Head of CX Operations",

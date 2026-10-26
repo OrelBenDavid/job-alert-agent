@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.767912+00:00",
-  "last_count": 20,
+  "last_success": "2026-10-26T12:44:14.695521+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -63,10 +63,6 @@
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
     },
-    "8305312": {
-      "title": "Senior Graphic & Motion Designer",
-      "first_seen": "2026-10-25T11:10:18.603754+00:00"
-    },
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 69
+  "last_board_total": 68
 }

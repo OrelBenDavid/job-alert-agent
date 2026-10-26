@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-26T04:25:43.728065+00:00",
-  "last_count": 14,
+  "last_success": "2026-10-26T12:44:14.668705+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
+    "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
+      "title": "Director Of Supply Chain",
+      "first_seen": "2026-10-26T12:44:14.668705+00:00"
+    },
     "0f2c807c-3f3d-4383-8c12-75641066438b": {
       "title": "Full Stack Software Engineering Team Leader",
       "first_seen": "2026-10-12T21:12:11.513744+00:00"
@@ -58,7 +62,11 @@
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
+    },
+    "5c2062dc-1b68-44b2-b02d-cdbb0d569e33": {
+      "title": "Warehouse Manager",
+      "first_seen": "2026-10-26T12:44:14.668705+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 25
 }

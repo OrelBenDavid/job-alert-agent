@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-26T04:25:43.786228+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-26T12:44:14.707525+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
+    "R415292": {
+      "title": "EHS Lead",
+      "first_seen": "2026-10-26T12:44:14.707525+00:00"
+    },
     "R422809": {
       "title": "Mechanical QC Inspector",
       "first_seen": "2026-10-19T12:52:14.788098+00:00"
@@ -16,5 +20,5 @@
       "first_seen": "2026-10-05T14:24:12.486920+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 4
 }

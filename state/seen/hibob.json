@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.758337+00:00",
-  "last_count": 22,
+  "last_success": "2026-10-26T12:44:14.689693+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
@@ -59,6 +59,10 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
+    "e98de9e6-88c1-4b37-9ee6-34864a54a2d3": {
+      "title": "Engineering Team Leader",
+      "first_seen": "2026-10-26T12:44:14.689693+00:00"
+    },
     "c2c868e0-dde9-40b5-8342-d4f6cb9fc02f": {
       "title": "Backend Engineer",
       "first_seen": "2026-10-19T20:31:01.043348+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 84
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-26T04:25:43.776086+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-26T12:44:14.699779+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
-    "f234abf5-c204-4b15-986a-d8ce996883fd": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-10-01T12:58:35.292661+00:00"
-    },
     "39015135-c274-4048-9a67-5cbd59a60a58": {
       "title": "Collections Recovery Coordinator",
       "first_seen": "2026-10-22T21:26:51.531003+00:00"
@@ -32,5 +28,5 @@
       "first_seen": "2026-10-08T18:46:43.454280+00:00"
     }
   },
-  "last_board_total": 55
+  "last_board_total": 54
 }

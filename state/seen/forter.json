@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T04:25:43.745885+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-26T12:44:14.682308+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8905280002": {
@@ -14,15 +14,7 @@
     "8534195002": {
       "title": "Senior Full Stack Engineer II - CX Offering",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8578429002": {
-      "title": "Senior Software Engineer ll, Core Engineering",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "8670848002": {
-      "title": "Staff Engineer, Core Engineering",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 20
 }

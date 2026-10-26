@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-26T04:25:43.697845+00:00",
+  "last_success": "2026-10-26T12:44:14.649207+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -9,10 +9,6 @@
     },
     "51.05B": {
       "title": "Aircrafts electrical engineer",
-      "first_seen": "2026-08-19T09:41:24.926419+00:00"
-    },
-    "85.D6A": {
-      "title": "AMPS Mechanical Engineer",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     },
     "B6.861": {
@@ -62,6 +58,10 @@
     "AD.76C": {
       "title": "Sales, Marketing & BD Director",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "07.477": {
+      "title": "Senior RF Engineer",
+      "first_seen": "2026-10-26T12:44:14.649207+00:00"
     },
     "7D.175": {
       "title": "Senior Systems Engineer – System of Systems",
