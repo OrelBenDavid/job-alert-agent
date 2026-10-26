@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.782023+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-26T20:24:20.721217+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "66.371": {
@@ -31,10 +31,6 @@
       "title": "Engineering Pilot",
       "first_seen": "2026-09-29T12:38:07.525087+00:00"
     },
-    "E6.E6A": {
-      "title": "Flight Test & Evaluation",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
-    },
     "2C.F6B": {
       "title": "Senior Guidance Engineer",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }

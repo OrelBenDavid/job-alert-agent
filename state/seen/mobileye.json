@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.710309+00:00",
-  "last_count": 154,
+  "last_success": "2026-10-26T20:24:20.635275+00:00",
+  "last_count": 155,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -122,6 +122,10 @@
     "c359a528-8058-4393-818b-52e162418a58": {
       "title": "Deep Learning Algorithm Developer",
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
+    },
+    "be730214-2c22-4acf-aff9-422fb6823f3e": {
+      "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
+      "first_seen": "2026-10-26T20:24:20.635275+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -620,5 +624,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 180
+  "last_board_total": 181
 }

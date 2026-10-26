@@ -1,16 +1,20 @@
 {
-  "last_success": "2026-10-26T12:44:14.650284+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-26T20:24:20.544036+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "2B.B68": {
       "title": "Full-Stack Developer",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
+    "27.47B": {
+      "title": "Sales Development & Account Growth Representative",
+      "first_seen": "2026-10-26T20:24:20.544036+00:00"
+    },
     "76.47B": {
       "title": "Talent Acquisition Manager – Maternity Leave Cover (Part-Time)",
       "first_seen": "2026-10-25T11:10:18.561698+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 3
 }

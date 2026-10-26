@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-26T12:44:14.759936+00:00",
+  "last_success": "2026-10-26T20:24:20.696957+00:00",
   "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
@@ -75,13 +75,13 @@
       "title": "Senior GenAI Engineer",
       "first_seen": "2026-10-12T21:12:11.956730+00:00"
     },
-    "8278521": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-10-19T12:52:15.572235+00:00"
-    },
     "8273430": {
       "title": "Senior Product Manager",
       "first_seen": "2026-10-14T11:38:23.232902+00:00"
+    },
+    "8278521": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-10-19T12:52:15.572235+00:00"
     },
     "8236852": {
       "title": "Senior Product Manager - Platform Experience & AI",
@@ -108,5 +108,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 83
+  "last_board_total": 84
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.686058+00:00",
-  "last_count": 13,
+  "last_success": "2026-10-26T20:24:20.602088+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "4693375006": {
@@ -46,10 +46,6 @@
     "4695788006": {
       "title": "Senior Director of Quality",
       "first_seen": "2026-10-19T12:52:14.760121+00:00"
-    },
-    "4716960006": {
-      "title": "Senior Product Designer",
-      "first_seen": "2026-09-27T16:51:09.694737+00:00"
     },
     "4712289006": {
       "title": "Software Architect, AI Applications",

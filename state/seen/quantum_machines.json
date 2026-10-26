@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-26T12:44:14.735892+00:00",
+  "last_success": "2026-10-26T20:24:20.669179+00:00",
   "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
@@ -55,10 +55,6 @@
       "title": "Micro-Architect",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
-    "CE.27F": {
-      "title": "Planning Leader",
-      "first_seen": "2026-09-22T11:24:08.067034+00:00"
-    },
     "C1.47B": {
       "title": "Product & Architecture Lead",
       "first_seen": "2026-10-16T11:11:26.200781+00:00"
@@ -78,6 +74,10 @@
     "12.470": {
       "title": "Quantum Product Research",
       "first_seen": "2026-10-16T16:30:22.537170+00:00"
+    },
+    "CE.27F": {
+      "title": "Senior planner",
+      "first_seen": "2026-09-22T11:24:08.067034+00:00"
     },
     "13.264": {
       "title": "Senior Verification Engineer",

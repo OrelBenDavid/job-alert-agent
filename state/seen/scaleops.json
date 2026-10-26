@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.745870+00:00",
-  "last_count": 31,
+  "last_success": "2026-10-26T20:24:20.679051+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
     "4919302101": {
@@ -14,6 +14,14 @@
     "4913574101": {
       "title": "AI Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
+    },
+    "5016555101": {
+      "title": "AI Platform Engineer",
+      "first_seen": "2026-10-26T20:24:20.679051+00:00"
+    },
+    "5016557101": {
+      "title": "AI Platform Team Lead",
+      "first_seen": "2026-10-26T20:24:20.679051+00:00"
     },
     "4944210101": {
       "title": "Backend Engineer",
@@ -96,11 +104,7 @@
       "first_seen": "2026-09-24T17:00:04.674665+00:00"
     },
     "4919434101": {
-      "title": "Software Architect",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
-    },
-    "4919437101": {
-      "title": "Tech Lead",
+      "title": "Staff Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     },
     "4919667101": {
@@ -128,5 +132,5 @@
       "first_seen": "2026-09-08T21:02:17.585638+00:00"
     }
   },
-  "last_board_total": 56
+  "last_board_total": 57
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-26T12:44:14.709162+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-26T20:24:20.633299+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
+    "8916613002": {
+      "title": "Bookkeeper",
+      "first_seen": "2026-10-26T20:24:20.633299+00:00"
+    },
     "8915138002": {
       "title": "Data Analyst Lead, easyplant",
       "first_seen": "2026-10-25T11:10:18.614768+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

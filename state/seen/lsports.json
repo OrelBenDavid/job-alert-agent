@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.701703+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-26T20:24:20.625336+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "28.376": {
@@ -10,7 +10,11 @@
     "96.27C": {
       "title": "Business Development Director",
       "first_seen": "2026-09-10T11:06:09.010784+00:00"
+    },
+    "57.475": {
+      "title": "Chief Marketing Officer (CMO)",
+      "first_seen": "2026-10-26T20:24:20.625336+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

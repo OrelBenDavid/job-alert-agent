@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-26T12:44:14.672549+00:00",
-  "last_count": 41,
+  "last_success": "2026-10-26T20:24:20.578584+00:00",
+  "last_count": 42,
   "consecutive_failures": 0,
   "jobs": {
     "51.859": {
@@ -70,6 +70,10 @@
     "3D.27D": {
       "title": "NPI & System Product Engineer",
       "first_seen": "2026-09-17T11:28:45.566474+00:00"
+    },
+    "29.370": {
+      "title": "People Business Partner",
+      "first_seen": "2026-10-26T20:24:20.578584+00:00"
     },
     "0B.163": {
       "title": "Principal Software Engineer",
@@ -168,5 +172,5 @@
       "first_seen": "2026-10-22T11:36:42.367247+00:00"
     }
   },
-  "last_board_total": 47
+  "last_board_total": 48
 }
