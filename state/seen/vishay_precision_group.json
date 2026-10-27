@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-27T15:16:56.330374+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-27T22:04:21.898204+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -26,10 +26,6 @@
     "01.172": {
       "title": "Global Sales Operations Senior Manager",
       "first_seen": "2026-10-22T11:36:45.972064+00:00"
-    },
-    "F4.476": {
-      "title": "Global Supply Chain PMO",
-      "first_seen": "2026-10-21T17:02:54.152910+00:00"
     },
     "EB.37E": {
       "title": "Production & Material Planner",
@@ -76,5 +72,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 84
+  "last_board_total": 83
 }
