@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-27T08:51:47.627042+00:00",
-  "last_count": 160,
+  "last_success": "2026-10-27T15:16:56.272915+00:00",
+  "last_count": 159,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -563,10 +563,6 @@
       "title": "System Integration Engineer",
       "first_seen": "2026-08-26T09:51:33.846604+00:00"
     },
-    "cb66d92f-f4e9-4578-9d51-2ac0394aca20": {
-      "title": "System Integration Engineer",
-      "first_seen": "2026-10-18T10:50:47.106141+00:00"
-    },
     "c457aba7-5e7c-4085-ae7d-f9e2001621b6": {
       "title": "System Validation Engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
@@ -644,5 +640,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 187
+  "last_board_total": 184
 }

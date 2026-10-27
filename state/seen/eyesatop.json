@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-27T08:51:47.583599+00:00",
-  "last_count": 12,
+  "last_success": "2026-10-27T15:16:56.235549+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "2B.76D": {
@@ -39,6 +39,10 @@
       "title": "Mechanical Engineer",
       "first_seen": "2026-08-21T09:45:05.209122+00:00"
     },
+    "C7.47C": {
+      "title": "Product Manager",
+      "first_seen": "2026-10-27T15:16:56.235549+00:00"
+    },
     "44.F64": {
       "title": "Senior Hardware Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 19
 }
