@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-27T00:20:35.314970+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-27T08:51:47.555956+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
-    "F2.C56": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-08-26T13:07:18.186817+00:00"
-    },
     "AF.077": {
       "title": "Full-Stack Engineer",
       "first_seen": "2026-10-12T10:35:45.114923+00:00"
@@ -24,5 +20,5 @@
       "first_seen": "2026-10-14T11:38:22.105629+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }
