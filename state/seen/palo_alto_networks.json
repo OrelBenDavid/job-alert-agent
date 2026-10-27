@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-26T20:24:20.654255+00:00",
-  "last_count": 124,
+  "last_success": "2026-10-27T00:20:36.307189+00:00",
+  "last_count": 125,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-018092": {
+      "title": "Senior Staff Software Engineer (Secure Agentic AI - Be'er Sheva)",
+      "first_seen": "2026-10-27T00:20:36.307189+00:00"
+    },
     "JR-021195": {
       "title": "Staff Software Engineer (Secrets Manager SAAS)",
       "first_seen": "2026-10-26T12:44:14.725133+00:00"
@@ -500,5 +504,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 125
+  "last_board_total": 126
 }
