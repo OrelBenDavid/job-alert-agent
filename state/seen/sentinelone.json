@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.988823+00:00",
-  "last_count": 18,
+  "last_success": "2026-10-28T12:37:13.886463+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "7994122003": {
@@ -34,6 +34,10 @@
     "8007919003": {
       "title": "Staff AI Security Researcher",
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
+    },
+    "8038775003": {
+      "title": "Staff Data Scientist",
+      "first_seen": "2026-10-28T12:37:13.886463+00:00"
     },
     "7831318003": {
       "title": "Staff Product Manager - AI SIEM, Detection and Response",
@@ -76,5 +80,5 @@
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
     }
   },
-  "last_board_total": 284
+  "last_board_total": 285
 }

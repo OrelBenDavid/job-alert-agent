@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.900628+00:00",
-  "last_count": 34,
+  "last_success": "2026-10-28T12:37:13.772118+00:00",
+  "last_count": 35,
   "consecutive_failures": 0,
   "jobs": {
     "75.277": {
@@ -22,6 +22,10 @@
     "0B.B65": {
       "title": "Automation Infrastructure Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "E4.47D": {
+      "title": "Brand Designer",
+      "first_seen": "2026-10-28T12:37:13.772118+00:00"
     },
     "18.370": {
       "title": "Compensation Manager",
@@ -140,5 +144,5 @@
       "first_seen": "2026-10-21T11:36:47.989029+00:00"
     }
   },
-  "last_board_total": 258
+  "last_board_total": 259
 }

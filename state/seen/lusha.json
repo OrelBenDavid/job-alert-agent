@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-28T05:19:03.943148+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-28T12:37:13.823557+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
-    "46.07A": {
-      "title": "AI and Knowledge Manager",
-      "first_seen": "2026-09-15T11:34:07.651760+00:00"
-    },
     "3B.D68": {
       "title": "BI & Data Engineering Team Lead",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
@@ -32,5 +28,5 @@
       "first_seen": "2026-09-08T16:30:33.555120+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

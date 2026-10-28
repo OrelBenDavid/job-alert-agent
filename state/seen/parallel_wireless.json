@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.967913+00:00",
-  "last_count": 15,
+  "last_success": "2026-10-28T12:37:13.862920+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -43,10 +43,6 @@
       "title": "Senior/Principal RAN Digital Twin & AI Simulation Engineer",
       "first_seen": "2026-08-13T11:24:34.304909+00:00"
     },
-    "c463a312-8daf-492d-922b-760449509793": {
-      "title": "Sr. AI PHY System Engineer",
-      "first_seen": "2026-09-02T11:06:52.072849+00:00"
-    },
     "d47fdbd3-a0d5-45a8-94a0-19d2a640e3ae": {
       "title": "Sr. Principal, DevOps",
       "first_seen": "2026-09-24T17:00:04.645751+00:00"
@@ -64,5 +60,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 45
 }

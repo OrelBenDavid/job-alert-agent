@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-28T05:19:03.901950+00:00",
-  "last_count": 16,
+  "last_success": "2026-10-28T12:37:13.773586+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
       "title": "Director Of Supply Chain",
       "first_seen": "2026-10-26T12:44:14.668705+00:00"
+    },
+    "c0efcb66-b228-4e30-8e2e-bd7d60eb127a": {
+      "title": "Field System QA",
+      "first_seen": "2026-10-28T12:37:13.773586+00:00"
     },
     "0f2c807c-3f3d-4383-8c12-75641066438b": {
       "title": "Full Stack Software Engineering Team Leader",
@@ -68,5 +72,5 @@
       "first_seen": "2026-10-26T12:44:14.668705+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

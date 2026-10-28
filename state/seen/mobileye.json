@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.950617+00:00",
-  "last_count": 159,
+  "last_success": "2026-10-28T12:37:13.831250+00:00",
+  "last_count": 158,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -18,6 +18,10 @@
     "d324d672-2b02-434d-b17a-e5036e2f35d6": {
       "title": "AI Engineering Execution Manager (Temporary Position - Maternity Leave)",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
+    "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
+      "title": "Algo Software Engineer",
+      "first_seen": "2026-10-06T15:50:16.377509+00:00"
     },
     "3934efbd-71a7-4c15-b552-167d73a1375d": {
       "title": "Algorithm Developer for Geometric Team",
@@ -118,6 +122,10 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
+    },
+    "1e12a744-eebb-45a4-b4e0-22555c82e0c2": {
+      "title": "Data & ML Engineer",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
     },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
@@ -239,10 +247,6 @@
       "title": "Experienced SoC Verification Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
-      "title": "Experienced Software Developer – REM Validation",
-      "first_seen": "2026-10-06T15:50:16.377509+00:00"
-    },
     "78d2b642-98cd-4eeb-893f-3662c46ae13c": {
       "title": "Experienced Software Engineer - Data Systems & Tools",
       "first_seen": "2026-10-12T21:12:11.890194+00:00"
@@ -279,10 +283,6 @@
       "title": "Information Security Engineer",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
-    "94aff90b-7e5e-4ae7-8dc8-acdae34673b9": {
-      "title": "Junior Physical Design Engineer",
-      "first_seen": "2026-09-03T16:17:32.007271+00:00"
-    },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
@@ -311,6 +311,10 @@
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
+    "cf8ef8a3-5c2c-4a30-b50e-004e1c35492e": {
+      "title": "Product Team Manager",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
+    },
     "0a1d7baf-bfbe-466a-b12b-05ca3936108c": {
       "title": "Production Quality Engineer",
       "first_seen": "2026-10-27T08:51:47.627042+00:00"
@@ -331,10 +335,6 @@
       "title": "Production Software Engineer for Algo Objects",
       "first_seen": "2026-10-18T10:50:47.106141+00:00"
     },
-    "f4c63464-9fcc-40ed-b9fd-a21d815cfdd9": {
-      "title": "R&D Lifecycle & Process Management",
-      "first_seen": "2026-10-15T11:17:05.847778+00:00"
-    },
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
       "first_seen": "2026-08-19T13:01:25.232459+00:00"
@@ -352,7 +352,7 @@
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
     "c24c144a-031e-4008-8ddb-424b83307ec2": {
-      "title": "SecOps Specialist",
+      "title": "SecOps Specialist",
       "first_seen": "2026-10-26T12:44:14.710309+00:00"
     },
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
@@ -487,14 +487,6 @@
       "title": "Senior System Hardware Architect",
       "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
-    "758f27a6-1204-434a-b55d-8cbef1069d01": {
-      "title": "Senior Talent Acquisition Partner",
-      "first_seen": "2026-10-01T20:18:05.241549+00:00"
-    },
-    "d7f0dc54-948b-4917-be5a-539c0fd5f61d": {
-      "title": "Senior Talent Acquisition Partner",
-      "first_seen": "2026-10-04T12:11:38.480792+00:00"
-    },
     "b62913b8-da97-4467-85ff-7d495ef44cf4": {
       "title": "Senior Technical Program Manager",
       "first_seen": "2026-08-20T09:42:36.524681+00:00"
@@ -510,14 +502,6 @@
     "7494fc97-906c-4ebd-a862-1b6995b82765": {
       "title": "Senior Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
-    },
-    "ac5f0c5c-3652-478e-aa66-783f70af24b7": {
-      "title": "Software Algorithms RT Engineer - Active Sensor Group",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "b8c0334c-51c5-420f-8fb1-3f8bf641c9cb": {
-      "title": "Software Algorithms RT Engineer - Active Sensor Group",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "1c3bb641-7d60-4cf6-b997-d6e5633f7c12": {
       "title": "Software Execution Project Manager - Camera Team",
@@ -563,13 +547,25 @@
       "title": "System Integration Engineer",
       "first_seen": "2026-08-26T09:51:33.846604+00:00"
     },
+    "cb66d92f-f4e9-4578-9d51-2ac0394aca20": {
+      "title": "System Integration Engineer",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
+    },
     "c457aba7-5e7c-4085-ae7d-f9e2001621b6": {
       "title": "System Validation Engineer",
       "first_seen": "2026-09-29T19:55:52.242566+00:00"
     },
-    "072a02e8-0ac6-47e8-b36d-a7c50b896ca6": {
-      "title": "Talent Sourcer Specialist - Temporary (1 year)",
-      "first_seen": "2026-10-20T19:07:44.192577+00:00"
+    "35d41f76-5f20-4fc8-b108-f761582083f2": {
+      "title": "Talent Acquisition Partner - Temporary (1 year)",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
+    },
+    "5aeac1a2-386c-4444-ac70-584f3a96a19d": {
+      "title": "Talent Acquisition Partner - Temporary (1 year)",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
+    },
+    "79932ba7-840a-4c1b-8dca-80722712d51b": {
+      "title": "Talent Acquisition Partner - Temporary (1 year)",
+      "first_seen": "2026-10-28T12:37:13.831250+00:00"
     },
     "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
       "title": "Technical Assistant for Executive VP",
@@ -640,5 +636,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 185
+  "last_board_total": 184
 }

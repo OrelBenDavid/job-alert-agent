@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.896517+00:00",
-  "last_count": 3,
+  "last_success": "2026-10-28T12:37:13.767956+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "5574e19c-7c98-4cd1-b3de-c110ac8744de": {
@@ -10,11 +10,7 @@
     "a1075daa-fd72-46b4-974d-8c4139e20bdf": {
       "title": "HR Business Partner",
       "first_seen": "2026-08-18T19:28:22.772257+00:00"
-    },
-    "55a4eace-0c76-46c0-bb5b-f434cb026034": {
-      "title": "Project Manager - Product & R&D",
-      "first_seen": "2026-09-02T16:27:20.422057+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.934892+00:00",
-  "last_count": 26,
+  "last_success": "2026-10-28T12:37:13.815243+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -14,10 +14,6 @@
     "2D.37A": {
       "title": "Data / ML Platform Engineer",
       "first_seen": "2026-10-14T11:38:22.165523+00:00"
-    },
-    "9F.966": {
-      "title": "Director of FP&A",
-      "first_seen": "2026-09-02T20:55:41.955748+00:00"
     },
     "74.C60": {
       "title": "Forward Deployed Engineer (FDE)",
@@ -108,5 +104,5 @@
       "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 32
 }

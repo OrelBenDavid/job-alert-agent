@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.951684+00:00",
-  "last_count": 24,
+  "last_success": "2026-10-28T12:37:13.838172+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "9f1eb9b4-17d3-43e3-8d96-ef168ff07c6f": {
@@ -42,6 +42,10 @@
     "97952ab6-4175-4727-8c16-914895df3726": {
       "title": "Mobile User Acquisition Manager",
       "first_seen": "2026-08-23T09:01:22.335333+00:00"
+    },
+    "537eb1da-d8c8-47b1-ac67-cfccd8bf8f43": {
+      "title": "Market Researcher",
+      "first_seen": "2026-10-28T12:37:13.838172+00:00"
     },
     "1bf17c68-9808-4e48-943b-7c76d75a3803": {
       "title": "Product Monetization Manager",
@@ -100,5 +104,5 @@
       "first_seen": "2026-10-20T14:14:49.864026+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

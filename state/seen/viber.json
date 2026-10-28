@@ -1,18 +1,18 @@
 {
-  "last_success": "2026-10-28T05:19:04.009982+00:00",
+  "last_success": "2026-10-28T12:37:13.917242+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
-    "B0.F66": {
-      "title": "Creative Brand & Motion Designer",
-      "first_seen": "2026-08-13T11:24:49.426826+00:00"
-    },
     "CC.C69": {
       "title": "Creative Lead",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     },
     "B5.71E": {
       "title": "Didn't find anything that suits you?",
+      "first_seen": "2026-08-13T11:24:49.426826+00:00"
+    },
+    "B0.F66": {
+      "title": "Motion & Brand Designer",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     },
     "23.D65": {
@@ -32,5 +32,5 @@
       "first_seen": "2026-10-06T15:50:16.489694+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 21
 }

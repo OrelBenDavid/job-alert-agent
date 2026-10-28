@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-28T05:19:03.991451+00:00",
+  "last_success": "2026-10-28T12:37:13.889424+00:00",
   "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
@@ -63,9 +63,9 @@
       "title": "Enterprise Account Manager",
       "first_seen": "2026-10-22T11:36:45.950570+00:00"
     },
-    "8239114": {
-      "title": "Global Stock Administration Manager",
-      "first_seen": "2026-09-29T12:38:07.479020+00:00"
+    "8330601": {
+      "title": "Finance Operation specialist",
+      "first_seen": "2026-10-28T12:37:13.889424+00:00"
     },
     "8124606": {
       "title": "ML & Big Data Analyst",

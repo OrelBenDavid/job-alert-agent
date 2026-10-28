@@ -1,10 +1,10 @@
 {
-  "last_success": "2026-10-28T05:19:03.941569+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-28T12:37:13.821967+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "584dba4c-139a-4943-bcf0-4757242d1b1e": {
-      "title": "User Acquisition Manager",
+      "title": "User Acquisition Manager- Google Ads",
       "first_seen": "2026-10-17T22:59:54.145519+00:00"
     },
     "f2a31e7f-d110-48e7-a908-b7a79c0f0050": {
@@ -18,11 +18,7 @@
     "bf50dead-8367-4db2-ae9f-73f9486ef4b2": {
       "title": "Account Executive",
       "first_seen": "2026-09-04T20:40:57.045610+00:00"
-    },
-    "54f74705-6d02-4fe5-86b0-ab0fd93163ce": {
-      "title": "AI Researcher",
-      "first_seen": "2026-09-16T21:12:04.432662+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 4
 }

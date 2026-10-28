@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T05:19:03.927921+00:00",
-  "last_count": 7,
+  "last_success": "2026-10-28T12:37:13.807238+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "25.471": {
@@ -23,14 +23,10 @@
       "title": "Senior AI Engineer",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
-    "1C.17C": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-08-28T00:21:17.692033+00:00"
-    },
     "B8.767": {
       "title": "Staff Architect, Data & AI Infra",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }
