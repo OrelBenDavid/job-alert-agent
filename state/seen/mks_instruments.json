@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-10-28T12:37:13.830184+00:00",
-  "last_count": 17,
+  "last_success": "2026-10-28T20:11:58.106547+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
+    "R22859": {
+      "title": "Talent Acquisition Specialist- temp for 8 months",
+      "first_seen": "2026-10-07T13:08:47.178007+00:00"
+    },
+    "R23740": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-10-28T20:11:58.106547+00:00"
+    },
     "R22687": {
       "title": "Mechanical Engineer Student/סטודנט.ית להנדסה מכנית",
       "first_seen": "2026-10-20T14:14:49.336188+00:00"
@@ -22,10 +30,6 @@
     "R21699": {
       "title": "Production Tech / טכנאי/ת בד\"ס",
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
-    },
-    "R22859": {
-      "title": "Talent Acquisition Specialist- temp for 8 months",
-      "first_seen": "2026-10-07T13:08:47.178007+00:00"
     },
     "R23068": {
       "title": "Temporary Shipper/Receiver - מחסנאי/ת זמני/ת",
@@ -72,5 +76,5 @@
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     }
   },
-  "last_board_total": 17
+  "last_board_total": 18
 }

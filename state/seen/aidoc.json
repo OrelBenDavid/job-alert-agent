@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T12:37:13.733311+00:00",
-  "last_count": 25,
+  "last_success": "2026-10-28T20:11:58.030302+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -34,6 +34,10 @@
     "4925761101": {
       "title": "Backend Tech Lead",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "5018967101": {
+      "title": "Director of Enterprise Portfolio Marketing",
+      "first_seen": "2026-10-28T20:11:58.030302+00:00"
     },
     "4941568101": {
       "title": "Director of GenAI Operations",
@@ -104,5 +108,5 @@
       "first_seen": "2026-10-05T14:24:12.368120+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 36
 }

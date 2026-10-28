@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-28T12:37:13.914391+00:00",
-  "last_count": 5,
+  "last_success": "2026-10-28T20:11:58.165582+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
-    "BF.277": {
-      "title": "Office Manager",
-      "first_seen": "2026-09-23T11:20:30.720021+00:00"
-    },
     "F4.47B": {
       "title": "QA Team Lead",
       "first_seen": "2026-10-21T17:02:54.150220+00:00"
@@ -24,5 +20,5 @@
       "first_seen": "2026-08-20T06:56:59.901622+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 6
 }

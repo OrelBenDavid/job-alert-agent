@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-28T12:37:13.831250+00:00",
+  "last_success": "2026-10-28T20:11:58.107617+00:00",
   "last_count": 158,
   "consecutive_failures": 0,
   "jobs": {
@@ -115,6 +115,10 @@
       "title": "Cyber Security Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "c24c144a-031e-4008-8ddb-424b83307ec2": {
+      "title": "Cyber Security Operations Specialist",
+      "first_seen": "2026-10-26T12:44:14.710309+00:00"
+    },
     "89b5d584-1a18-4087-a8ca-46172fdf9c29": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
@@ -122,10 +126,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "1e12a744-eebb-45a4-b4e0-22555c82e0c2": {
-      "title": "Data & ML Engineer",
-      "first_seen": "2026-10-28T12:37:13.831250+00:00"
     },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
@@ -138,6 +138,10 @@
     "be730214-2c22-4acf-aff9-422fb6823f3e": {
       "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
       "first_seen": "2026-10-26T20:24:20.635275+00:00"
+    },
+    "48bc6d00-8668-41e4-803d-22fe7c74fcf8": {
+      "title": "Deep Learning Algorithm Developer - SUN",
+      "first_seen": "2026-10-28T20:11:58.107617+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
@@ -350,10 +354,6 @@
     "cfd0e9f7-d62e-408b-90e5-91d3046d130e": {
       "title": "Reinforcement Learning Researcher | Learned-Policy Group",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
-    },
-    "c24c144a-031e-4008-8ddb-424b83307ec2": {
-      "title": "SecOps Specialist",
-      "first_seen": "2026-10-26T12:44:14.710309+00:00"
     },
     "0540e217-a692-4847-8c81-46d1c9c02c6e": {
       "title": "Semiconductor Quality & Reliability Engineer",
@@ -636,5 +636,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 184
+  "last_board_total": 183
 }

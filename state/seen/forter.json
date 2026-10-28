@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T12:37:13.790112+00:00",
-  "last_count": 4,
+  "last_success": "2026-10-28T20:11:58.075365+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8905280002": {
@@ -11,14 +11,10 @@
       "title": "General Application (Israel)",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "8867716002": {
-      "title": "People Partner (Maternity Leave Replacement - 1 Year)",
-      "first_seen": "2026-10-26T20:24:20.595874+00:00"
-    },
     "8534195002": {
       "title": "Senior Full Stack Engineer II - CX Offering",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }

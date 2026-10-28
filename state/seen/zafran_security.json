@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-28T12:37:13.927568+00:00",
+  "last_success": "2026-10-28T20:11:58.174864+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -28,7 +28,7 @@
       "first_seen": "2026-08-23T15:30:12.143677+00:00"
     },
     "31d1e657-3b35-430c-84ff-96906f96807c": {
-      "title": "Data Infra Senior Engineer",
+      "title": "DevOps Data Infra Engineer",
       "first_seen": "2026-09-14T12:31:04.144324+00:00"
     },
     "c6d2f202-b511-4c8b-80cf-f7345cb25dd6": {

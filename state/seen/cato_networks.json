@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T12:37:13.753945+00:00",
-  "last_count": 36,
+  "last_success": "2026-10-28T20:11:58.051540+00:00",
+  "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -26,10 +26,6 @@
     "4937879101": {
       "title": "Automation Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4967775101": {
-      "title": "Biz Ops Coordinator (Temporary position for Maternity Leave)",
-      "first_seen": "2026-10-08T18:46:43.359967+00:00"
     },
     "4853323101": {
       "title": "Full Stack Developer",
@@ -69,10 +65,6 @@
     },
     "4908469101": {
       "title": "Payroll Admin",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4633928101": {
-      "title": "Product Manager - Access",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4882479101": {
@@ -148,5 +140,5 @@
       "first_seen": "2026-10-13T16:52:24.757933+00:00"
     }
   },
-  "last_board_total": 106
+  "last_board_total": 103
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T12:37:13.813357+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-28T20:11:58.093774+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -63,6 +63,10 @@
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
     },
+    "8312052": {
+      "title": "Senior Financial Analyst",
+      "first_seen": "2026-10-28T20:11:58.093774+00:00"
+    },
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 67
+  "last_board_total": 68
 }

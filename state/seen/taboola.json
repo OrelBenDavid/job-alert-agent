@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-28T12:37:13.901598+00:00",
-  "last_count": 26,
+  "last_success": "2026-10-28T20:11:58.152929+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -10,6 +10,10 @@
     "8081260": {
       "title": "Algorithm Engineer (RTB)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
+    },
+    "8264354": {
+      "title": "Bid Ops Optimization Engineer (Maternity Leave Cover)",
+      "first_seen": "2026-10-28T20:11:58.152929+00:00"
     },
     "8074123": {
       "title": "Business Applications Manager",
@@ -108,5 +112,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 84
+  "last_board_total": 85
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-28T12:37:13.817829+00:00",
+  "last_success": "2026-10-28T20:11:58.097203+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "Backend Software Engineer",
       "first_seen": "2026-10-13T22:34:33.150900+00:00"
     },
-    "F2.47B": {
+    "D8.47B": {
       "title": "Controller",
-      "first_seen": "2026-10-18T20:27:50.109952+00:00"
+      "first_seen": "2026-10-28T20:11:58.097203+00:00"
     },
     "32.E6A": {
       "title": "Head of AI Transformation",

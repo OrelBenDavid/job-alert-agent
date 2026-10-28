@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-10-28T12:37:13.882873+00:00",
-  "last_count": 2,
+  "last_success": "2026-10-28T20:11:58.137347+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "5272412007": {
       "title": "Talent Acquisition & HR Operations Partner",
       "first_seen": "2026-10-22T17:01:56.139405+00:00"
-    },
-    "5164439007": {
-      "title": "Technical Marketing Manager",
-      "first_seen": "2026-08-18T19:28:34.673082+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }
