@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-29T09:45:42.107227+00:00",
-  "last_count": 34,
+  "last_success": "2026-10-29T18:22:31.187052+00:00",
+  "last_count": 32,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -67,6 +67,10 @@
       "title": "Payroll Admin",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "5016288101": {
+      "title": "Product Designer",
+      "first_seen": "2026-10-29T18:22:31.187052+00:00"
+    },
     "4882479101": {
       "title": "Product Manager - AI Security",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -99,24 +103,12 @@
       "title": "Senior Software Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "4603397101": {
-      "title": "Senior Software Engineer (C)",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "4953528101": {
       "title": "Senior Software Engineer – Cato Apps Team (AI)",
       "first_seen": "2026-10-21T17:02:52.227988+00:00"
     },
     "4632362101": {
       "title": "Software Architect",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4860424101": {
-      "title": "Software Engineer (Endpoint DLP)",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "4855946101": {
-      "title": "Software Engineer, Lakehouse (Data Platform Group)",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
     "4895403101": {

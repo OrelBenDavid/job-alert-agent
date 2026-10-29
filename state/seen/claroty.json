@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-29T09:45:42.112641+00:00",
-  "last_count": 10,
+  "last_success": "2026-10-29T18:22:31.192967+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "66.271": {
@@ -10,6 +10,10 @@
     "CE.079": {
       "title": "AI Platform- Software Engineer Team Leader",
       "first_seen": "2026-08-23T15:30:12.038716+00:00"
+    },
+    "58.479": {
+      "title": "Backend Platform Engineer",
+      "first_seen": "2026-10-28T12:37:13.759018+00:00"
     },
     "0A.374": {
       "title": "Backend Software Engineer",
@@ -23,9 +27,9 @@
       "title": "Director of Data & AI",
       "first_seen": "2026-09-15T11:34:07.580426+00:00"
     },
-    "58.479": {
-      "title": "Platform Engineer",
-      "first_seen": "2026-10-28T12:37:13.759018+00:00"
+    "36.371": {
+      "title": "Paralegal",
+      "first_seen": "2026-10-29T18:22:31.192967+00:00"
     },
     "3C.374": {
       "title": "QA Automation Engineer",
@@ -44,5 +48,5 @@
       "first_seen": "2026-10-19T12:52:14.722274+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

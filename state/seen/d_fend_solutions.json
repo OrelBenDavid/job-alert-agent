@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-29T09:45:42.124058+00:00",
+  "last_success": "2026-10-29T18:22:31.202597+00:00",
   "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
@@ -18,6 +18,10 @@
     "b3830cf8-8f19-4ae7-888e-54b15fc00848": {
       "title": "Hardware Product Manager -Deployment Kits & Configurations",
       "first_seen": "2026-09-09T11:10:07.697737+00:00"
+    },
+    "3c2159b1-a9c1-4f7a-b6c2-ef3117cd264e": {
+      "title": "Legal & Compliance Counsel",
+      "first_seen": "2026-10-29T18:22:31.202597+00:00"
     },
     "6a52d9de-ec0e-48f7-8c4f-ba409b0dd256": {
       "title": "Market Intelligence Analyst (Drone & Counter-Drone Systems)",
@@ -66,10 +70,6 @@
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
-    },
-    "5c2062dc-1b68-44b2-b02d-cdbb0d569e33": {
-      "title": "Warehouse Manager",
-      "first_seen": "2026-10-26T12:44:14.668705+00:00"
     }
   },
   "last_board_total": 26

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-29T09:45:42.148473+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-29T18:22:31.221812+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "F6.477": {
@@ -71,6 +71,10 @@
       "title": "Senior Product Manager - Finance",
       "first_seen": "2026-08-19T10:21:23.616185+00:00"
     },
+    "69.474": {
+      "title": "Senior Product Manager - Post-Purchase",
+      "first_seen": "2026-10-29T18:22:31.221812+00:00"
+    },
     "0B.279": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-14T12:31:04.055441+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-09-09T11:10:07.712162+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }

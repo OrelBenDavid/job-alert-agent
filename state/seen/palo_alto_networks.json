@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-10-29T09:45:42.213059+00:00",
-  "last_count": 122,
+  "last_success": "2026-10-29T18:22:32.223569+00:00",
+  "last_count": 124,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023892": {
+      "title": "Principal DevOps Engineer (DexEx Platform)",
+      "first_seen": "2026-10-29T18:22:32.223569+00:00"
+    },
+    "JR-023430": {
+      "title": "Senior Staff Automation Engineer (Endpoint Privilege Manager - Idira)",
+      "first_seen": "2026-10-29T18:22:32.223569+00:00"
+    },
+    "JR-023899": {
+      "title": "Director Software Engineering - Secure Cloud Access (Idira- B7))",
+      "first_seen": "2026-10-29T18:22:32.223569+00:00"
+    },
     "JR-018226": {
       "title": "Manager, AI Software Engineering (CORA AI)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
@@ -173,10 +185,6 @@
     },
     "JR-023569": {
       "title": "Senior/Principal Linux Security Analytics Researcher (Cortex)",
-      "first_seen": "2026-10-12T21:12:11.923839+00:00"
-    },
-    "JR-021410": {
-      "title": "Distinguished Architect Software Engineer (Cortex AgentiX)",
       "first_seen": "2026-10-12T21:12:11.923839+00:00"
     },
     "JR-022122": {
@@ -492,5 +500,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 123
+  "last_board_total": 125
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-10-29T09:45:42.158226+00:00",
-  "last_count": 21,
+  "last_success": "2026-10-29T18:22:31.230617+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
-    "96c4f519-f64b-4a99-941f-8e2ca79e004c": {
-      "title": "Senior IT Platform Engineer",
-      "first_seen": "2026-09-08T11:05:09.147673+00:00"
-    },
     "3a70c667-91c5-4dbd-bf1c-93b4ff931c55": {
       "title": "Field Deployment Engineering (FDE) Team Lead",
       "first_seen": "2026-09-02T20:55:41.938107+00:00"
@@ -59,10 +55,6 @@
       "title": "Backend Tech Lead – AI Platform",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "c04d8531-aa98-45c0-9fd4-14b7b9855b50": {
-      "title": "Senior Product Manager- Core HR",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
     "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
       "title": "Senior AI Ops Engineer",
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
@@ -88,5 +80,5 @@
       "first_seen": "2026-10-26T12:44:14.689693+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 86
 }
