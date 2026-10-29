@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-29T00:44:51.811208+00:00",
+  "last_success": "2026-10-29T09:45:42.059222+00:00",
   "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
@@ -47,10 +47,6 @@
       "title": "Director of IT Security",
       "first_seen": "2026-09-01T14:06:10.552096+00:00"
     },
-    "5011870101": {
-      "title": "Director of Operations, Workplace Experience",
-      "first_seen": "2026-10-22T17:01:55.987040+00:00"
-    },
     "4951044101": {
       "title": "Director of Product Design",
       "first_seen": "2026-10-05T21:57:14.665312+00:00"
@@ -70,6 +66,10 @@
     "4871455101": {
       "title": "Principal Software Engineer",
       "first_seen": "2026-08-23T09:01:19.731952+00:00"
+    },
+    "5015400101": {
+      "title": "Regulatory Affairs Specialist",
+      "first_seen": "2026-10-29T09:45:42.059222+00:00"
     },
     "4920296101": {
       "title": "SecOps Engineer",

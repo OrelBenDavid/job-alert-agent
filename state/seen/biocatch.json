@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-10-29T00:44:51.822383+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-29T09:45:42.089210+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
+    "29.477": {
+      "title": "AI & Software Infra Engineer",
+      "first_seen": "2026-10-29T09:45:42.089210+00:00"
+    },
+    "29.47A": {
+      "title": "DevOps Engineer (Data Platform)",
+      "first_seen": "2026-10-29T09:45:42.089210+00:00"
+    },
     "F6.B6E": {
       "title": "IT Team Lead",
       "first_seen": "2026-09-05T10:26:46.515603+00:00"
@@ -40,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 28
 }

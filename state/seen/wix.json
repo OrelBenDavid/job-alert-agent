@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-10-29T00:44:51.806013+00:00",
-  "last_count": 46,
+  "last_success": "2026-10-29T09:45:42.051176+00:00",
+  "last_count": 47,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-9f1aa496-65f2-5ede-ac33-6f2725429d2a-T1793195723-744000158466419": {
+      "title": "Video Creator - Wix Motion Studio",
+      "first_seen": "2026-10-29T09:45:42.051176+00:00"
+    },
     "https://careers.wix.com/position/oracle-b9f3d085-d05a-5dcd-b011-916437fb0715-T1793177716-744000158310438": {
       "title": "Experienced Motion Designer",
       "first_seen": "2026-10-28T20:11:58.025105+00:00"

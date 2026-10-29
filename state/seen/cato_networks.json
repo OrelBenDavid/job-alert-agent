@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-10-29T00:44:51.827663+00:00",
+  "last_success": "2026-10-29T09:45:42.107227+00:00",
   "last_count": 34,
   "consecutive_failures": 0,
   "jobs": {
@@ -87,13 +87,13 @@
       "title": "Research Engineer (Cyber security)",
       "first_seen": "2026-10-15T11:17:05.767173+00:00"
     },
-    "4850403101": {
-      "title": "Research Engineer (Network)",
-      "first_seen": "2026-08-23T12:54:49.933003+00:00"
-    },
     "4996966101": {
       "title": "Research SW Engineer",
       "first_seen": "2026-10-07T20:32:54.151801+00:00"
+    },
+    "5015580101": {
+      "title": "Senior Field Operations Manager EMEA",
+      "first_seen": "2026-10-29T09:45:42.107227+00:00"
     },
     "4888366101": {
       "title": "Senior Software Engineer",

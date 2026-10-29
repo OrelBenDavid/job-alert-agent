@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-29T00:44:51.929880+00:00",
-  "last_count": 14,
+  "last_success": "2026-10-29T09:45:42.292986+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "5004111101": {
@@ -27,9 +27,9 @@
       "title": "Group Product Manager – Product Growth",
       "first_seen": "2026-10-26T20:24:20.705843+00:00"
     },
-    "4975363101": {
-      "title": "Group Product Manager, Product Solutions",
-      "first_seen": "2026-09-14T12:31:04.136099+00:00"
+    "5020195101": {
+      "title": "Group Product Manager - Product Solutions",
+      "first_seen": "2026-10-29T09:45:42.292986+00:00"
     },
     "4990837101": {
       "title": "Product Manager",
@@ -42,10 +42,6 @@
     "4904270101": {
       "title": "QA Engineer",
       "first_seen": "2026-10-08T18:46:43.563743+00:00"
-    },
-    "5003725101": {
-      "title": "Recruiter",
-      "first_seen": "2026-10-12T21:12:11.967730+00:00"
     },
     "4996953101": {
       "title": "Senior Software Engineer",
@@ -60,5 +56,5 @@
       "first_seen": "2026-10-19T20:31:01.128631+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }

@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-10-29T00:44:51.932538+00:00",
-  "last_count": 9,
+  "last_success": "2026-10-29T09:45:42.303627+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "8875777002": {
       "title": "Application Security Engineer",
       "first_seen": "2026-10-08T00:54:45.551604+00:00"
+    },
+    "8018712002": {
+      "title": "Expansion Principal",
+      "first_seen": "2026-10-29T09:45:42.303627+00:00"
     },
     "8627735002": {
       "title": "Front-End Engineer",
@@ -18,6 +22,10 @@
     "8625905002": {
       "title": "Mobile Team Lead",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
+    },
+    "8923130002": {
+      "title": "Partner Delivery Engineer",
+      "first_seen": "2026-10-29T09:45:42.303627+00:00"
     },
     "7992214002": {
       "title": "Senior Backend Engineer",
@@ -40,5 +48,5 @@
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     }
   },
-  "last_board_total": 174
+  "last_board_total": 177
 }
