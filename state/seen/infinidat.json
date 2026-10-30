@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-29T18:22:31.234000+00:00",
-  "last_count": 19,
+  "last_success": "2026-10-30T00:45:41.600054+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "C6.D60": {
@@ -26,6 +26,10 @@
     "90.375": {
       "title": "Hardware Integration Engineer",
       "first_seen": "2026-10-08T10:21:48.746367+00:00"
+    },
+    "84.473": {
+      "title": "HR - HRBP for EMEA & APJ and Israel",
+      "first_seen": "2026-10-30T00:45:41.600054+00:00"
     },
     "BD.B6D": {
       "title": "In-direct Procurement Specialist",
@@ -80,5 +84,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 36
 }
