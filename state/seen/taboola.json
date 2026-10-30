@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-10-30T00:45:41.681456+00:00",
-  "last_count": 29,
+  "last_success": "2026-10-30T09:51:47.524626+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -38,10 +38,6 @@
     "8305984": {
       "title": "Innovation Partnerships Manager",
       "first_seen": "2026-10-29T18:22:32.692315+00:00"
-    },
-    "8230021": {
-      "title": "Junior Software Engineer",
-      "first_seen": "2026-10-29T09:45:42.276059+00:00"
     },
     "8166705": {
       "title": "Marketing Manager, Israel- Maternity Leave Cover",
@@ -87,13 +83,13 @@
       "title": "Senior GenAI Engineer",
       "first_seen": "2026-10-12T21:12:11.956730+00:00"
     },
-    "8273430": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-10-14T11:38:23.232902+00:00"
-    },
     "8278521": {
       "title": "Senior Product Manager",
       "first_seen": "2026-10-19T12:52:15.572235+00:00"
+    },
+    "8273430": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-10-14T11:38:23.232902+00:00"
     },
     "8236852": {
       "title": "Senior Product Manager - Platform Experience & AI",
@@ -120,5 +116,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 90
+  "last_board_total": 89
 }

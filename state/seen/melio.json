@@ -1,44 +1,7 @@
 {
-  "last_success": "2026-10-28T12:37:13.826099+00:00",
-  "last_count": 9,
-  "consecutive_failures": 5,
-  "jobs": {
-    "7977869003": {
-      "title": "Data Engineer",
-      "first_seen": "2026-10-22T11:36:44.794134+00:00"
-    },
-    "7748138003": {
-      "title": "Data Scientist",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "8029831003": {
-      "title": "Engineering Manager, Partnerships",
-      "first_seen": "2026-10-13T16:52:25.838596+00:00"
-    },
-    "7806724003": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "7820287003": {
-      "title": "Senior Data Analyst- Product",
-      "first_seen": "2026-10-01T05:32:14.674669+00:00"
-    },
-    "7792385003": {
-      "title": "Senior Data Analyst- Risk",
-      "first_seen": "2026-10-01T05:32:14.674669+00:00"
-    },
-    "7572393003": {
-      "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "8029987003": {
-      "title": "Senior Product Designer",
-      "first_seen": "2026-10-15T16:47:46.955149+00:00"
-    },
-    "7994125003": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-09-15T11:34:07.653932+00:00"
-    }
-  },
-  "last_board_total": 21
+  "last_success": "2026-10-30T09:51:47.471023+00:00",
+  "last_count": 0,
+  "consecutive_failures": 0,
+  "jobs": {},
+  "last_board_total": 0
 }
