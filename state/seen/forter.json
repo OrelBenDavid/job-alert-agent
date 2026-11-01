@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T13:07:06.218830+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-01T19:29:19.145490+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "8905280002": {
@@ -22,7 +22,11 @@
     "8534195002": {
       "title": "Senior Full Stack Engineer II - CX Offering",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
+    },
+    "8878373002": {
+      "title": "Senior Product Manager – Chargeback Recovery & Dispute Management",
+      "first_seen": "2026-11-01T19:29:19.145490+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }

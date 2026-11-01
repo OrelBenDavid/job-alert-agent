@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-11-01T13:07:06.558568+00:00",
-  "last_count": 0,
+  "last_success": "2026-11-01T19:29:19.186780+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 1
+  "jobs": {
+    "1cd2f5ba-c32d-469f-845e-76248a06ee01": {
+      "title": "Technical Support Engineer – Night Shifts (Student )",
+      "first_seen": "2026-11-01T19:29:19.186780+00:00"
+    }
+  },
+  "last_board_total": 2
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T13:07:06.187704+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-01T19:29:19.127451+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8bfc7694-8d9c-4fe6-8cf0-14ec48e28665": {
@@ -10,7 +10,11 @@
     "4f66214c-7a46-4f79-a3f9-7ca66c0e2d2f": {
       "title": "Technical Integration & Implementation Engineer",
       "first_seen": "2026-10-22T11:36:42.343591+00:00"
+    },
+    "b77f93a2-6df4-426f-b35d-f26b2398c17d": {
+      "title": "Senior Application Security Engineer",
+      "first_seen": "2026-11-01T19:29:19.127451+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }

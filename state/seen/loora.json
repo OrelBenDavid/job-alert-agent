@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-01T13:07:06.532579+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-01T19:29:19.167186+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "584dba4c-139a-4943-bcf0-4757242d1b1e": {
       "title": "User Acquisition Manager- Google Ads",
       "first_seen": "2026-10-17T22:59:54.145519+00:00"
+    },
+    "24d0f250-69be-4e60-93f9-5f681fb58c00": {
+      "title": "Founding Business Development Representative",
+      "first_seen": "2026-11-01T19:29:19.167186+00:00"
     },
     "2b361f36-4c4d-4bc6-807a-313dd51f9c60": {
       "title": "Product Marketing Lead- B2B",
@@ -16,5 +20,5 @@
       "first_seen": "2026-09-04T20:40:57.045610+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 4
 }

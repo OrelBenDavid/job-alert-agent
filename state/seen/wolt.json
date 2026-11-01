@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T13:07:06.668829+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-01T19:29:19.231718+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -18,6 +18,10 @@
     "7865639": {
       "title": "Enterprise Sales - Retail Media",
       "first_seen": "2026-09-17T11:28:45.975440+00:00"
+    },
+    "8344596": {
+      "title": "Group Support Service Manager",
+      "first_seen": "2026-11-01T19:29:19.231718+00:00"
     },
     "8245851": {
       "title": "Head of Public Policy - Israel",
@@ -60,5 +64,5 @@
       "first_seen": "2026-10-26T20:24:20.719839+00:00"
     }
   },
-  "last_board_total": 198
+  "last_board_total": 199
 }
