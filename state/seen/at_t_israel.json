@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.010770+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-01T13:07:06.170263+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "01.474": {
@@ -10,6 +10,10 @@
     "4C.374": {
       "title": "Group Lead",
       "first_seen": "2026-10-11T12:36:12.365501+00:00"
+    },
+    "3A.471": {
+      "title": "Product Lead Manager – GenAI acceleration",
+      "first_seen": "2026-11-01T13:07:06.170263+00:00"
     },
     "B1.47B": {
       "title": "Production Operations Manager",
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

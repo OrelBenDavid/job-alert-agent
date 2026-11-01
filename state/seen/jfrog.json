@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.070069+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-01T13:07:06.255553+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -26,6 +26,10 @@
     "8264438": {
       "title": "Developer Support Engineer",
       "first_seen": "2026-10-18T15:45:05.310945+00:00"
+    },
+    "8334509": {
+      "title": "Global Organization Development Partner",
+      "first_seen": "2026-11-01T13:07:06.255553+00:00"
     },
     "8273868": {
       "title": "GRC Manager",
@@ -84,5 +88,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 72
+  "last_board_total": 74
 }

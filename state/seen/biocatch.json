@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.016103+00:00",
-  "last_count": 11,
+  "last_success": "2026-11-01T13:07:06.175226+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "29.477": {
@@ -39,6 +39,10 @@
       "title": "Senior Full Stack Developer",
       "first_seen": "2026-10-28T12:37:13.746020+00:00"
     },
+    "6A.477": {
+      "title": "Service Operations Specialist",
+      "first_seen": "2026-11-01T13:07:06.175226+00:00"
+    },
     "8D.279": {
       "title": "Software Engineer - Web SDK",
       "first_seen": "2026-09-17T11:28:45.537040+00:00"
@@ -48,5 +52,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 27
+  "last_board_total": 28
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.138708+00:00",
-  "last_count": 28,
+  "last_success": "2026-11-01T13:07:06.629695+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -46,6 +46,10 @@
     "8281185": {
       "title": "Product Analyst",
       "first_seen": "2026-10-14T17:00:25.400947+00:00"
+    },
+    "8312030": {
+      "title": "Product Analyst",
+      "first_seen": "2026-11-01T13:07:06.629695+00:00"
     },
     "8300216": {
       "title": "Product Designer- Maternity Leave Cover",
@@ -116,5 +120,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 88
+  "last_board_total": 89
 }

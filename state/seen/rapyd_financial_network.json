@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-01T05:52:54.117294+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-01T13:07:06.578713+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "6C.27F": {
       "title": "Compliance Operations Expert - Infra",
       "first_seen": "2026-09-23T16:42:31.625481+00:00"
+    },
+    "4D.A49": {
+      "title": "Controller",
+      "first_seen": "2026-11-01T13:07:06.578713+00:00"
     },
     "9D.178": {
       "title": "Customer Delivery Manager",
@@ -43,6 +47,10 @@
       "title": "Sales Manager",
       "first_seen": "2026-08-16T15:29:12.960716+00:00"
     },
+    "95.075": {
+      "title": "Senior Controller",
+      "first_seen": "2026-11-01T13:07:06.578713+00:00"
+    },
     "B0.754": {
       "title": "Senior Developer (DevOps and Infrastructure)",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
@@ -52,5 +60,5 @@
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 25
 }

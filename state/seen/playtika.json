@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.109931+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-01T13:07:06.571743+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "4901047101": {
@@ -10,10 +10,6 @@
     "4971991101": {
       "title": "Data Scientist",
       "first_seen": "2026-09-15T16:48:16.877258+00:00"
-    },
-    "4871873101": {
-      "title": "Director of Information Security",
-      "first_seen": "2026-08-13T11:24:34.316436+00:00"
     },
     "5009505101": {
       "title": "FP&A Specialist",
@@ -27,18 +23,14 @@
       "title": "Product Manager - Maternity leave replacement",
       "first_seen": "2026-10-04T12:11:38.507087+00:00"
     },
-    "4970069101": {
-      "title": "Product Security Team Leader",
-      "first_seen": "2026-09-16T11:21:30.016010+00:00"
-    },
     "4929765101": {
       "title": "Technical Artist",
       "first_seen": "2026-09-07T12:15:49.318383+00:00"
     },
     "5015432101": {
-      "title": "UX/UI Designer",
+      "title": "UI Designer",
       "first_seen": "2026-10-25T15:58:07.784484+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 11
 }

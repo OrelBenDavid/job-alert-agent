@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T05:52:54.091558+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-01T13:07:06.553721+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "8314100": {
@@ -35,10 +35,6 @@
       "title": "Senior Marketing Designer",
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
     },
-    "7522825": {
-      "title": "Senior Product Manager",
-      "first_seen": "2026-08-13T11:30:57.416106+00:00"
-    },
     "8314104": {
       "title": "Senior Product Manager, Flights",
       "first_seen": "2026-10-26T20:24:20.641116+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T11:30:57.416106+00:00"
     }
   },
-  "last_board_total": 224
+  "last_board_total": 223
 }
