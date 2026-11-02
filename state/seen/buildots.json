@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T10:52:35.628020+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-02T21:39:34.029440+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "DA.964": {
@@ -43,10 +43,6 @@
       "title": "GTM AI Engineer",
       "first_seen": "2026-09-17T16:47:40.515903+00:00"
     },
-    "78.47E": {
-      "title": "Insurance Manager",
-      "first_seen": "2026-10-28T12:37:13.751059+00:00"
-    },
     "E6.47B": {
       "title": "Office Manager (Maternity leave)",
       "first_seen": "2026-10-26T12:44:14.651947+00:00"
@@ -56,5 +52,5 @@
       "first_seen": "2026-09-17T11:28:45.543633+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 24
 }

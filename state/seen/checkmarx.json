@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T10:52:35.634683+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-02T21:39:34.035917+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "52.E6E": {
@@ -11,10 +11,6 @@
       "title": "DevOps Manager",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
-    "69.37E": {
-      "title": "Director of IT & Information Security",
-      "first_seen": "2026-10-09T01:08:59.417669+00:00"
-    },
     "C4.272": {
       "title": "Director of Product Management",
       "first_seen": "2026-09-07T12:15:48.909617+00:00"
@@ -24,5 +20,5 @@
       "first_seen": "2026-09-17T16:47:40.526892+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }

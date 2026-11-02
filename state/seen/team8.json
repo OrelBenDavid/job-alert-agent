@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T10:52:36.115038+00:00",
-  "last_count": 47,
+  "last_success": "2026-11-02T21:39:34.214053+00:00",
+  "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -159,10 +159,6 @@
       "title": "Team8 Stealth Cyber Startup- Solution Engineer",
       "first_seen": "2026-09-24T11:33:41.963038+00:00"
     },
-    "3F.C6D": {
-      "title": "Team8 Stealth Startup- CTO",
-      "first_seen": "2026-09-29T12:38:07.501776+00:00"
-    },
     "2C.F66": {
       "title": "Team8- Bookkeeper",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
@@ -192,5 +188,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 62
 }

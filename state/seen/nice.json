@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T10:52:36.036006+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-02T21:39:34.153099+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "4938801101": {
@@ -70,10 +70,6 @@
     "5009477101": {
       "title": "R&D Director",
       "first_seen": "2026-10-18T10:50:47.119772+00:00"
-    },
-    "4911286101": {
-      "title": "Senior Product Manager, AI",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
   "last_board_total": 171

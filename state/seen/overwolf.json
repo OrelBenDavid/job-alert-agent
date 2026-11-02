@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T10:52:36.042370+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-02T21:39:34.164489+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "FC.37D": {
@@ -19,14 +19,10 @@
       "title": "Publisher Operations Manager",
       "first_seen": "2026-09-14T12:31:04.094113+00:00"
     },
-    "14.473": {
-      "title": "Senior Developer - AdTech Platform",
-      "first_seen": "2026-10-22T11:36:45.926401+00:00"
-    },
     "CE.C68": {
       "title": "Web Designer",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

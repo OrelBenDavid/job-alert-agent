@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-11-02T10:52:35.634254+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-02T21:39:34.035420+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "A6.274": {
       "title": "Head of Billing & Collections",
       "first_seen": "2026-09-09T16:27:11.283848+00:00"
-    },
-    "AF.C6E": {
-      "title": "Technical Onboarding & Implementation Manager",
-      "first_seen": "2026-09-29T12:38:07.357350+00:00"
     }
   },
   "last_board_total": 6

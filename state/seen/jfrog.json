@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-02T10:52:35.706118+00:00",
+  "last_success": "2026-11-02T21:39:34.088863+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "AI Solutions Builder",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
     },
-    "8344440": {
-      "title": "Back-End Engineer",
-      "first_seen": "2026-11-02T10:52:35.706118+00:00"
+    "8345559": {
+      "title": "Back End Engineer - JFrog Security",
+      "first_seen": "2026-11-02T21:39:34.088863+00:00"
     },
     "7694707": {
       "title": "Business Development Representative",
@@ -92,5 +92,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 74
+  "last_board_total": 75
 }
