@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T19:29:19.171368+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-02T00:30:53.596693+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "R424425": {
@@ -14,15 +14,7 @@
     "R424919": {
       "title": "Customer & Account Specialist",
       "first_seen": "2026-10-29T18:22:31.258568+00:00"
-    },
-    "R415292": {
-      "title": "EHS Lead",
-      "first_seen": "2026-10-26T12:44:14.707525+00:00"
-    },
-    "R422809": {
-      "title": "Mechanical QC Inspector",
-      "first_seen": "2026-10-19T12:52:14.788098+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 4
 }

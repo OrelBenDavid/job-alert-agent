@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-01T19:29:19.153098+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-02T00:30:53.574390+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "3a70c667-91c5-4dbd-bf1c-93b4ff931c55": {
@@ -63,10 +63,6 @@
       "title": "Software Architect - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
     },
-    "c2c868e0-dde9-40b5-8342-d4f6cb9fc02f": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-10-19T20:31:01.043348+00:00"
-    },
     "9010e73d-8849-4c6c-b0de-aecaa27add51": {
       "title": "AI Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
@@ -80,5 +76,5 @@
       "first_seen": "2026-10-26T12:44:14.689693+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 86
 }

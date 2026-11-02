@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-01T19:29:19.195572+00:00",
-  "last_count": 123,
+  "last_success": "2026-11-02T00:30:53.616109+00:00",
+  "last_count": 122,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023958": {
+      "title": "Principal/Senior Engineer Software - SaaS Data Security (Cortex Cloud)",
+      "first_seen": "2026-11-02T00:30:53.616109+00:00"
+    },
     "JR-022627": {
       "title": "Principal DevOps Engineer (Prisma Browser)",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
@@ -415,17 +419,9 @@
       "title": "Principal Software Engineer (Secure Agentic AI) - Petach Tikva \\ Be'er Sheva",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
-    "JR-014874": {
-      "title": "Principal UX designer (Cloud Application Security)",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
     "JR-020031": {
       "title": "Manager SW Engineering (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-019687": {
-      "title": "Principal/Senior Engineer Software - Data Security (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-019920": {
       "title": "Sr. Technical Product Engineer (Cortex Agentic Endpoint Security)",
@@ -496,5 +492,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 124
+  "last_board_total": 123
 }
