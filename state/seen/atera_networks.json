@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-02T00:30:53.523912+00:00",
   "last_count": 6,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "3D.B6A": {
       "title": "Controller",

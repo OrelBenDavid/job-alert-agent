@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.656515+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-02T10:52:36.121864+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "5C.375": {
@@ -63,10 +63,6 @@
       "title": "Product Marketing Manager",
       "first_seen": "2026-08-30T11:45:37.362583+00:00"
     },
-    "3A.47F": {
-      "title": "Research Analyst",
-      "first_seen": "2026-11-01T13:07:06.644848+00:00"
-    },
     "5C.D67": {
       "title": "Research Software Engineer",
       "first_seen": "2026-10-13T22:34:33.238386+00:00"
@@ -108,5 +104,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 97
+  "last_board_total": 96
 }

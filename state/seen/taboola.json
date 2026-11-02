@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.648653+00:00",
-  "last_count": 29,
+  "last_success": "2026-11-02T10:52:36.103379+00:00",
+  "last_count": 30,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -34,6 +34,10 @@
     "8280941": {
       "title": "Experienced Software Engineer",
       "first_seen": "2026-10-19T12:52:15.572235+00:00"
+    },
+    "8176662": {
+      "title": "Fraud Analyst",
+      "first_seen": "2026-11-02T10:52:36.103379+00:00"
     },
     "8305984": {
       "title": "Innovation Partnerships Manager",
@@ -120,5 +124,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 89
+  "last_board_total": 90
 }

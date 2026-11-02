@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.599954+00:00",
-  "last_count": 158,
+  "last_success": "2026-11-02T10:52:36.022278+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -55,13 +55,13 @@
       "title": "Autonomous Vehicle System Integrator",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
+    "1feca106-ab12-4c5b-a2b4-71cf1e3e47a5": {
+      "title": "Autonomous Vehicles Performance Analyst",
+      "first_seen": "2026-11-02T10:52:36.022278+00:00"
+    },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "c4c85c07-2b70-4b90-8795-10b9dc7f36bc": {
-      "title": "Board Design Engineer for Customer Engineer Team",
-      "first_seen": "2026-10-12T21:12:11.890194+00:00"
     },
     "1e62d075-9af9-445c-af3e-b8e35bb1e85c": {
       "title": "Business Applications Implementation Engineer",
@@ -123,10 +123,6 @@
       "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
       "first_seen": "2026-10-26T20:24:20.635275+00:00"
     },
-    "48bc6d00-8668-41e4-803d-22fe7c74fcf8": {
-      "title": "Deep Learning Algorithm Developer - SUN",
-      "first_seen": "2026-10-28T20:11:58.107617+00:00"
-    },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
@@ -162,10 +158,6 @@
     "fddc1e14-fb29-4181-9228-2a0e12d299bc": {
       "title": "Embedded Software Application Engineer",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
-    },
-    "5dc1fe67-93f1-481c-bbd4-06b3125f7493": {
-      "title": "EU Strategic Account Manager - Temporary",
-      "first_seen": "2026-10-04T12:11:38.480792+00:00"
     },
     "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
       "title": "Execution Program Manager",
@@ -274,14 +266,6 @@
     "c964c792-eff5-4427-a847-38144b9cd7cd": {
       "title": "Information Security Engineer",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
-    },
-    "1b3f71b9-fe39-41d3-bd43-4ae7ad18f92e": {
-      "title": "Machine Learning Software Engineer",
-      "first_seen": "2026-11-01T13:07:06.541381+00:00"
-    },
-    "72e986e2-94b4-49f6-be5f-74a48de8a71d": {
-      "title": "Machine Learning Software Engineer",
-      "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
@@ -636,5 +620,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 183
+  "last_board_total": 179
 }

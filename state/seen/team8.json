@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.650366+00:00",
-  "last_count": 49,
+  "last_success": "2026-11-02T10:52:36.115038+00:00",
+  "last_count": 47,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -123,10 +123,6 @@
       "title": "Team8  -Security & IT Manager",
       "first_seen": "2026-10-01T12:58:35.360009+00:00"
     },
-    "9F.95F": {
-      "title": "Team8 - Cybersecurity Business Development Manager",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
     "FB.D63": {
       "title": "Team8 Cyber Stealth Startup- Business Development Representative (BDR)",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
@@ -163,10 +159,6 @@
       "title": "Team8 Stealth Cyber Startup- Solution Engineer",
       "first_seen": "2026-09-24T11:33:41.963038+00:00"
     },
-    "B0.E6C": {
-      "title": "Team8 Stealth Mode Startup-Marketing Lead",
-      "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
     "3F.C6D": {
       "title": "Team8 Stealth Startup- CTO",
       "first_seen": "2026-09-29T12:38:07.501776+00:00"
@@ -200,5 +192,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 65
+  "last_board_total": 63
 }

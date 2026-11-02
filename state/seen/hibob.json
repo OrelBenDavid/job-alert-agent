@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-02T00:30:53.574390+00:00",
+  "last_success": "2026-11-02T10:52:35.697629+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-09-18T11:01:52.076268+00:00"
     },
     "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
-      "title": "Account Manager IL",
+      "title": "Account Manager- Mid Market IL",
       "first_seen": "2026-10-14T17:00:25.314544+00:00"
     },
     "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {

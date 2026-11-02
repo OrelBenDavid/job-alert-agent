@@ -1,15 +1,19 @@
 {
-  "last_success": "2026-11-02T00:30:53.616109+00:00",
-  "last_count": 122,
+  "last_success": "2026-11-02T10:52:36.044364+00:00",
+  "last_count": 123,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-023958": {
-      "title": "Principal/Senior Engineer Software - SaaS Data Security (Cortex Cloud)",
-      "first_seen": "2026-11-02T00:30:53.616109+00:00"
-    },
     "JR-022627": {
       "title": "Principal DevOps Engineer (Prisma Browser)",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
+    },
+    "JR-024164": {
+      "title": "Senior Staff C++ Engineer (Endpoint Privilege Manager - Idira)",
+      "first_seen": "2026-11-02T10:52:36.044364+00:00"
+    },
+    "JR-023958": {
+      "title": "Principal/Senior Engineer Software - SaaS Data Security (Cortex Cloud)",
+      "first_seen": "2026-11-02T00:30:53.616109+00:00"
     },
     "JR-021852": {
       "title": "Manager, Product Management- Idira Secure Cloud Access",
@@ -492,5 +496,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 123
+  "last_board_total": 124
 }

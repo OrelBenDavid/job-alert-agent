@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.541718+00:00",
-  "last_count": 46,
+  "last_success": "2026-11-02T10:52:35.644776+00:00",
+  "last_count": 45,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -42,10 +42,6 @@
     "DE.27A": {
       "title": "DevOps Engineer",
       "first_seen": "2026-10-09T01:08:59.421613+00:00"
-    },
-    "1B.061": {
-      "title": "DevOps Engineer (GCP Specialist)",
-      "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
     "EA.37E": {
       "title": "DevOps Team Lead",
@@ -103,6 +99,10 @@
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
+    "CD.07F": {
+      "title": "R&D Director",
+      "first_seen": "2026-11-02T10:52:35.644776+00:00"
+    },
     "29.371": {
       "title": "RevOps Expert",
       "first_seen": "2026-10-06T15:50:15.922516+00:00"
@@ -134,10 +134,6 @@
     "A1.479": {
       "title": "Software Architect",
       "first_seen": "2026-10-15T16:47:46.889604+00:00"
-    },
-    "A4.47B": {
-      "title": "Software Engineer",
-      "first_seen": "2026-10-21T11:36:47.981579+00:00"
     },
     "A5.D62": {
       "title": "Software Project Manager",
@@ -188,5 +184,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 126
+  "last_board_total": 125
 }

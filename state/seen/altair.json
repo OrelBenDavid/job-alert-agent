@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-02T00:30:53.518993+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-02T10:52:35.598114+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "D1.837": {
@@ -10,6 +10,10 @@
     "05.27C": {
       "title": "Hardware Engineer",
       "first_seen": "2026-09-07T12:15:48.885280+00:00"
+    },
+    "DA.47E": {
+      "title": "RF System Engineer – RFIC & Transceivers",
+      "first_seen": "2026-11-02T10:52:35.598114+00:00"
     },
     "B0.47A": {
       "title": "RFIC Analysis Engineer",
