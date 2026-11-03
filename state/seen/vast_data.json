@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-03T06:23:30.444040+00:00",
-  "last_count": 40,
+  "last_success": "2026-11-03T16:57:45.105152+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "9A.472": {
@@ -58,6 +58,10 @@
     "91.475": {
       "title": "Network Engineer - AI Infrastructure, RDMA & Storage",
       "first_seen": "2026-10-15T16:47:47.367480+00:00"
+    },
+    "DB.47F": {
+      "title": "Office & Welfare Admin (Student Position)",
+      "first_seen": "2026-11-03T16:57:45.105152+00:00"
     },
     "96.616": {
       "title": "Platform Senior Software Engineer",
@@ -164,5 +168,5 @@
       "first_seen": "2026-08-13T11:24:49.422813+00:00"
     }
   },
-  "last_board_total": 264
+  "last_board_total": 265
 }

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-03T06:23:30.399855+00:00",
+  "last_success": "2026-11-03T16:57:45.060732+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -40,7 +40,7 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     },
     "56.274": {
-      "title": "מנהל/ת צוות שירות לקוחות ותביעות- PassportCard Reloction",
+      "title": "מנהל/ת צוות שירות לקוחות - PassportCard Reloction",
       "first_seen": "2026-09-09T11:10:07.757095+00:00"
     },
     "2F.340": {

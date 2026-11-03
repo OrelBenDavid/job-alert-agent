@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-11-03T06:23:30.315577+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-03T16:57:44.508811+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
+    "b71809e1-4d9e-462e-b432-5d9c59adc8e8": {
+      "title": "Senior Backend Engineer",
+      "first_seen": "2026-11-03T16:57:44.508811+00:00"
+    },
+    "7144f524-5857-4b55-93e2-fa77f491177f": {
+      "title": "Customer Success Manager – LegalTech",
+      "first_seen": "2026-11-03T16:57:44.508811+00:00"
+    },
     "8bfc7694-8d9c-4fe6-8cf0-14ec48e28665": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-10-13T16:52:24.765179+00:00"
@@ -16,5 +24,5 @@
       "first_seen": "2026-11-01T19:29:19.127451+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 12
 }

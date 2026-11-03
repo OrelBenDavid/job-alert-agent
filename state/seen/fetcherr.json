@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-03T06:23:30.338102+00:00",
+  "last_success": "2026-11-03T16:57:44.538576+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,6 +14,14 @@
     "4A.27B-9D.50A": {
       "title": "Algorithm team lead",
       "first_seen": "2026-09-10T16:17:00.383610+00:00"
+    },
+    "12.D61": {
+      "title": "Cloud Platform Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "12.D61-9D.50A": {
+      "title": "Cloud Platform Team Lead",
+      "first_seen": "2026-09-14T12:31:04.048377+00:00"
     },
     "A5.D67": {
       "title": "Data Analyst- Tableau",
@@ -42,14 +50,6 @@
     "F6.47E": {
       "title": "Data Scientist - Time Series Forecasting",
       "first_seen": "2026-10-26T12:44:14.676936+00:00"
-    },
-    "12.D61": {
-      "title": "Devops Team Lead",
-      "first_seen": "2026-08-13T11:24:25.510473+00:00"
-    },
-    "12.D61-9D.50A": {
-      "title": "Devops Team Lead",
-      "first_seen": "2026-09-14T12:31:04.048377+00:00"
     },
     "1B.27B": {
       "title": "Director of Data Science",

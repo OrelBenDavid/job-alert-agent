@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-03T06:23:30.317796+00:00",
+  "last_success": "2026-11-03T16:57:44.510876+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,9 +23,9 @@
       "title": "Data Platform Engineer",
       "first_seen": "2026-11-02T10:52:35.635603+00:00"
     },
-    "C2.47E": {
+    "BB.478": {
       "title": "DevOps Engineer",
-      "first_seen": "2026-10-18T15:45:05.256207+00:00"
+      "first_seen": "2026-11-03T16:57:44.510876+00:00"
     },
     "77.C60": {
       "title": "Director of Data & AI",
@@ -56,5 +56,5 @@
       "first_seen": "2026-10-19T12:52:14.722274+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 30
 }

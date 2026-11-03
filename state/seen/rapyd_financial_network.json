@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-03T06:23:30.410134+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-03T16:57:45.074209+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "4D.A49": {
@@ -35,14 +35,10 @@
       "title": "NOC - Student Position",
       "first_seen": "2026-09-29T12:38:07.463477+00:00"
     },
-    "C2.C65": {
-      "title": "NOC Team Leader",
-      "first_seen": "2026-08-13T11:24:41.029739+00:00"
-    },
     "26.F63": {
       "title": "Tax Manager",
       "first_seen": "2026-08-13T11:24:41.029739+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 19
 }

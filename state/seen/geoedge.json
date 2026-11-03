@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-03T06:23:30.345053+00:00",
+  "last_success": "2026-11-03T16:57:44.551091+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-10-22T17:01:56.063627+00:00"
     },
     "4B.37F": {
-      "title": "VP Security & Research",
+      "title": "Head of Security & Research",
       "first_seen": "2026-10-08T18:46:43.401917+00:00"
     }
   },

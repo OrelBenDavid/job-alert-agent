@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-03T06:23:30.299483+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-03T16:57:44.488693+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "73.36A": {
-      "title": "Head of Finance and Operations",
-      "first_seen": "2026-10-18T10:50:46.652923+00:00"
-    },
     "D4.479": {
       "title": "Research Lead",
       "first_seen": "2026-10-26T12:44:14.644531+00:00"
@@ -14,11 +10,7 @@
     "6F.26F": {
       "title": "Research Student",
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
-    },
-    "72.260": {
-      "title": "VP Engineering",
-      "first_seen": "2026-08-20T06:56:44.546300+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 5
 }

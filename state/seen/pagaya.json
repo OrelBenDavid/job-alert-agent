@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-03T06:23:30.396931+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-03T16:57:45.057875+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "7981453003": {
@@ -23,13 +23,17 @@
       "title": "HR Business Partner (HRBP)",
       "first_seen": "2026-10-06T15:50:16.408850+00:00"
     },
+    "8156624003": {
+      "title": "Lead Data Scientist",
+      "first_seen": "2026-11-02T10:52:36.043280+00:00"
+    },
     "7720946003": {
       "title": "Lead Data Scientist",
       "first_seen": "2026-08-31T13:27:00.381002+00:00"
     },
-    "8156624003": {
-      "title": "Lead Data Scientist",
-      "first_seen": "2026-11-02T10:52:36.043280+00:00"
+    "8176922003": {
+      "title": "Product Manager- Avon.AI",
+      "first_seen": "2026-11-03T16:57:45.057875+00:00"
     },
     "7720945003": {
       "title": "Senior Data Scientist",
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

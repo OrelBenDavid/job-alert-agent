@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-03T06:23:30.380848+00:00",
-  "last_count": 157,
+  "last_success": "2026-11-03T16:57:45.033227+00:00",
+  "last_count": 154,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -22,10 +22,6 @@
     "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
       "title": "Algo Software Engineer",
       "first_seen": "2026-10-06T15:50:16.377509+00:00"
-    },
-    "3934efbd-71a7-4c15-b552-167d73a1375d": {
-      "title": "Algorithm Developer for Geometric Team",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "2a8920e0-6dc6-48a8-b8b7-2f42f432e637": {
       "title": "Algorithm Developer for Objects Modeling",
@@ -58,10 +54,6 @@
     "a24468db-ec96-48fc-bb2b-fcd576e39ba1": {
       "title": "Autonomous Vehicle System Integrator",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
-    },
-    "1feca106-ab12-4c5b-a2b4-71cf1e3e47a5": {
-      "title": "Autonomous Vehicles Performance Analyst",
-      "first_seen": "2026-11-02T10:52:36.022278+00:00"
     },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
@@ -115,13 +107,17 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
+    "1feca106-ab12-4c5b-a2b4-71cf1e3e47a5": {
+      "title": "Data Analyst",
+      "first_seen": "2026-11-02T10:52:36.022278+00:00"
+    },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
-    "c359a528-8058-4393-818b-52e162418a58": {
-      "title": "Deep Learning Algorithm Developer",
-      "first_seen": "2026-10-25T15:58:07.767024+00:00"
+    "df0e4aa1-62ca-4774-b443-cc806a8d28ab": {
+      "title": "Deep Learning Algorithm Developer - Ground Truth",
+      "first_seen": "2026-11-03T16:57:45.033227+00:00"
     },
     "be730214-2c22-4acf-aff9-422fb6823f3e": {
       "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
@@ -283,10 +279,6 @@
       "title": "NOC Service Analyst (Student Position)",
       "first_seen": "2026-10-29T18:22:32.207381+00:00"
     },
-    "83eaec09-649e-4ea6-b6c8-ace482eb2f59": {
-      "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
-      "first_seen": "2026-08-26T07:01:03.578507+00:00"
-    },
     "ba1193d8-8c0f-4103-a04c-be61e67c6b5e": {
       "title": "Physical Design  Backend Engineer",
       "first_seen": "2026-08-31T20:45:43.754663+00:00"
@@ -294,10 +286,6 @@
     "570619b3-b8ec-478c-916a-04c588feb434": {
       "title": "Physical Design Expert",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "820209f4-b8a0-4b3b-b2de-46d62cad0aac": {
-      "title": "Product Environmental Compliance Specialist",
-      "first_seen": "2026-09-03T11:04:08.063162+00:00"
     },
     "08dcd65b-5888-4972-98fb-a4759692a056": {
       "title": "Product Execution Manager",
@@ -439,10 +427,6 @@
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "0f7933a9-6b28-44e4-8398-a443e0ec0eb2": {
-      "title": "Senior Release Manager",
-      "first_seen": "2026-10-25T11:10:18.615752+00:00"
-    },
     "b7c55f83-ff0c-47ca-aaad-8acea30083a6": {
       "title": "Senior Signal Integrity Engineer-AV Hardware",
       "first_seen": "2026-08-12T10:15:21.611278+00:00"
@@ -495,10 +479,6 @@
       "title": "SOC Analyst (Student position)",
       "first_seen": "2026-11-02T21:39:34.126367+00:00"
     },
-    "1c3bb641-7d60-4cf6-b997-d6e5633f7c12": {
-      "title": "Software Execution Project Manager - Camera Team",
-      "first_seen": "2026-08-18T13:00:34.221999+00:00"
-    },
     "999d5e75-7d50-42f1-879b-18035226641f": {
       "title": "Software Group Manager - OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -522,6 +502,14 @@
     "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "6a585853-ec67-49fb-af6d-68adc60b5977": {
+      "title": "Strategic Account Manager",
+      "first_seen": "2026-11-03T16:57:45.033227+00:00"
+    },
+    "d4010f4a-cf36-46ca-8237-8ef76b8b82e7": {
+      "title": "Strategic Sales and Account Management Team Lead",
+      "first_seen": "2026-11-03T16:57:45.033227+00:00"
     },
     "c26290b9-f51a-48dc-b319-45f2c9131b42": {
       "title": "System Engineer",
@@ -632,5 +620,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 182
+  "last_board_total": 179
 }
