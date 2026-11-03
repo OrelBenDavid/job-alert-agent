@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-03T16:57:45.082958+00:00",
   "last_count": 1,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "379a0c39-8c5f-4d57-a0df-94fb18747e06": {
       "title": "Head of Go-To-Market Engineering",

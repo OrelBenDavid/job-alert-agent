@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-11-03T16:57:45.106134+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-03T23:10:41.140548+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
+    "8165447003": {
+      "title": "Human Resources Manager",
+      "first_seen": "2026-11-03T23:10:41.140548+00:00"
+    },
     "7820464003": {
       "title": "Sales Account Manager for Strategic Customers",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 36
 }
