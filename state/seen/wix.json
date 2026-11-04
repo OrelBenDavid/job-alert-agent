@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-11-04T05:56:58.985734+00:00",
+  "last_success": "2026-11-04T14:18:42.965308+00:00",
   "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/REF3097W-744000159633149": {
+      "title": "Senior AI Engineer - Marketing AI Transformation",
+      "first_seen": "2026-11-04T14:18:42.965308+00:00"
+    },
+    "https://careers.wix.com/position/oracle-947ace7e-0b29-5ca5-8748-047616aa683d-T1792913993-744000159588879": {
+      "title": "Infrastructure Engineer – DevOps & Core Systems",
+      "first_seen": "2026-11-04T14:18:42.965308+00:00"
+    },
     "https://careers.wix.com/position/oracle-62003c5f-cf9f-5b6d-83e3-fa5a0bfc8c59-T1793708004-744000159377632": {
       "title": "Microsoft Dynamics 365 – Technical Lead & Solution Architect",
       "first_seen": "2026-11-03T16:57:44.470943+00:00"
@@ -70,10 +78,6 @@
     "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000157737599": {
       "title": "Account Executive, Enterprise - Base44",
       "first_seen": "2026-10-26T12:44:14.631665+00:00"
-    },
-    "https://careers.wix.com/position/oracle-947ace7e-0b29-5ca5-8748-047616aa683d-T1792913993-744000157666489": {
-      "title": "Infrastructure Engineer - Core Systems",
-      "first_seen": "2026-10-25T11:10:18.546548+00:00"
     },
     "https://careers.wix.com/position/REF3097W-744000156782609": {
       "title": "Full Stack Engineer - Wix Code",
@@ -157,10 +161,6 @@
     },
     "https://careers.wix.com/position/REF3097W-744000149251909": {
       "title": "Infrastructure Fullstack Developer - Fed Core",
-      "first_seen": "2026-09-25T21:26:32.036584+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000148186416": {
-      "title": "Senior AI Engineer - Marketing AI Transformation",
       "first_seen": "2026-09-25T21:26:32.036584+00:00"
     },
     "https://careers.wix.com/position/REF3097W-744000144261939": {

@@ -1,16 +1,20 @@
 {
-  "last_success": "2026-11-04T05:56:59.043622+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-04T14:18:43.046914+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "F5.47D": {
       "title": "Customer Success Manager - AppHarbr",
       "first_seen": "2026-10-22T17:01:56.063627+00:00"
     },
+    "8C.479": {
+      "title": "Head of Product Marketing",
+      "first_seen": "2026-11-04T14:18:43.046914+00:00"
+    },
     "4B.37F": {
       "title": "Head of Security & Research",
       "first_seen": "2026-10-08T18:46:43.401917+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 4
 }

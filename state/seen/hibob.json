@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-04T05:56:59.051346+00:00",
+  "last_success": "2026-11-04T14:18:43.055231+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -27,13 +27,13 @@
       "title": "Senior Director Product Marketing",
       "first_seen": "2026-10-06T15:50:15.974952+00:00"
     },
-    "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {
-      "title": "Account Executive",
-      "first_seen": "2026-09-28T13:38:07.472973+00:00"
-    },
     "32c6fd23-60fc-426d-b2bd-3d6db1f85eab": {
       "title": "Senior Account Executive",
       "first_seen": "2026-09-18T11:01:52.076268+00:00"
+    },
+    "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {
+      "title": "Account Executive",
+      "first_seen": "2026-09-28T13:38:07.472973+00:00"
     },
     "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
       "title": "SMB Account Manager IL",
@@ -46,6 +46,10 @@
     "15fcddef-badd-46a4-913f-d2c0bae0ed40": {
       "title": "People and Culture Partner",
       "first_seen": "2026-10-22T17:01:56.071204+00:00"
+    },
+    "9010e73d-8849-4c6c-b0de-aecaa27add51": {
+      "title": "AI Backend Engineer",
+      "first_seen": "2026-10-12T10:35:45.152916+00:00"
     },
     "3ad5440b-6e7a-4a06-a4ec-3555a90716d1": {
       "title": "Senior Backend Engineer",
@@ -67,14 +71,10 @@
       "title": "Software Architect - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
     },
-    "9010e73d-8849-4c6c-b0de-aecaa27add51": {
-      "title": "AI Backend Engineer",
-      "first_seen": "2026-10-12T10:35:45.152916+00:00"
-    },
     "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
       "title": "Senior AI Ops Engineer",
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 87
 }

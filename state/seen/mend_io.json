@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-04T05:56:59.072921+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-04T14:18:43.076174+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "f4a655af-c35f-4efc-90ee-fc30889b510f": {
       "title": "Account Executive, EMEA & APAC",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
+    },
+    "6d0e7a32-5bd8-401a-ba5a-6b102688f8c4": {
+      "title": "Head of Security",
+      "first_seen": "2026-11-04T14:18:43.076174+00:00"
     },
     "0c6f2910-3b05-4308-8b91-4dc97f837623": {
       "title": "Digital Success Manager",

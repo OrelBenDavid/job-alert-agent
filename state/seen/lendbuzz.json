@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.065548+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-04T14:18:43.069433+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "39015135-c274-4048-9a67-5cbd59a60a58": {
@@ -10,10 +10,6 @@
     "5ed02028-50e3-40d6-b56f-cebf72321238": {
       "title": "Floorplan Sales Associate",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
-    "cb49985a-7683-4c84-88c5-ee4f28d7cd4d": {
-      "title": "Platform Engineering Team Lead",
-      "first_seen": "2026-10-06T15:50:15.997172+00:00"
     },
     "80ca3378-de0c-4007-badf-5f040a713300": {
       "title": "Senior Cloud Engineer",
@@ -28,5 +24,5 @@
       "first_seen": "2026-10-08T18:46:43.454280+00:00"
     }
   },
-  "last_board_total": 54
+  "last_board_total": 53
 }

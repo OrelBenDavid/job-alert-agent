@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.008792+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-04T14:18:42.990012+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "DB.27A": {
@@ -34,6 +34,10 @@
     "C0.F51": {
       "title": "Project Manager for Products",
       "first_seen": "2026-09-28T13:38:07.424246+00:00"
+    },
+    "A5.478": {
+      "title": "Project Operations Manager",
+      "first_seen": "2026-11-04T14:18:42.990012+00:00"
     },
     "AE.665": {
       "title": "Quality Control Inspector (QC)",
@@ -76,5 +80,5 @@
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 19
 }

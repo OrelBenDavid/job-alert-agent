@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.117511+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-04T14:18:43.132688+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
@@ -10,11 +10,7 @@
     "1A.37A": {
       "title": "Data Lead",
       "first_seen": "2026-10-08T18:46:43.537011+00:00"
-    },
-    "EC.077": {
-      "title": "Senior Backend Software Engineer",
-      "first_seen": "2026-09-02T11:06:52.094090+00:00"
     }
   },
-  "last_board_total": 3
+  "last_board_total": 2
 }

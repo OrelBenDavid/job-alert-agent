@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-04T05:56:59.049757+00:00",
+  "last_success": "2026-11-04T14:18:43.054019+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "5025881101": {
+      "title": "AI Engineer - Agentic Products",
+      "first_seen": "2026-11-03T16:57:44.557270+00:00"
+    },
     "4821256101": {
       "title": "Builder Product Manager",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -15,12 +19,8 @@
       "title": "Global Partner Sales Manager",
       "first_seen": "2026-10-14T21:32:18.433650+00:00"
     },
-    "5025881101": {
-      "title": "Senior AI Engineer - Agentic Products",
-      "first_seen": "2026-11-03T16:57:44.557270+00:00"
-    },
     "5026771101": {
-      "title": "Senior Software Engineer - AI-Native",
+      "title": "Software Engineer - AI-Native",
       "first_seen": "2026-11-04T05:56:59.049757+00:00"
     },
     "4964089101": {

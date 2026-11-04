@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.141708+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-04T14:18:43.169134+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -30,10 +30,6 @@
     "EB.37E": {
       "title": "Production & Material Planner",
       "first_seen": "2026-10-11T12:36:12.488597+00:00"
-    },
-    "F3.47C": {
-      "title": "Production & Material Planner - Maternity leave cover",
-      "first_seen": "2026-10-20T14:14:49.911323+00:00"
     },
     "92.47A": {
       "title": "Production chemical technician",

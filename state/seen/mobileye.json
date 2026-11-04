@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.077181+00:00",
-  "last_count": 154,
+  "last_success": "2026-11-04T14:18:43.080260+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -18,6 +18,14 @@
     "d324d672-2b02-434d-b17a-e5036e2f35d6": {
       "title": "AI Engineering Execution Manager (Temporary Position - Maternity Leave)",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
+    },
+    "b1abd9a9-39f4-466b-b14b-f16013202861": {
+      "title": "AI Implementer",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
+    },
+    "e190d4bb-4ef0-4aaa-ab44-b55858a29d14": {
+      "title": "AI Implementer",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
       "title": "Algo Software Engineer",
@@ -107,10 +115,6 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
-    "1feca106-ab12-4c5b-a2b4-71cf1e3e47a5": {
-      "title": "Data Analyst",
-      "first_seen": "2026-11-02T10:52:36.022278+00:00"
-    },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
@@ -130,6 +134,10 @@
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "9094ef44-cd99-4b42-ad8d-eb5f99beb5b1": {
+      "title": "DV Integration and Validation Architect",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "04c8ffeb-012c-4461-88a1-58acc073958b": {
       "title": "EHS specialist - Safety Officer",
@@ -166,10 +174,6 @@
     "8d09a950-7497-409c-a7d2-4a72458435de": {
       "title": "Execution Program Manager",
       "first_seen": "2026-10-20T14:14:49.862148+00:00"
-    },
-    "b6db859a-bb49-4e66-ac3d-d111eeb03bd1": {
-      "title": "Execution Program Manager",
-      "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
     "33ea9cd2-d1b8-41a2-bdec-d71659de14f7": {
       "title": "Experienced Algorithm & Software Engineer",
@@ -279,6 +283,10 @@
       "title": "NOC Service Analyst (Student Position)",
       "first_seen": "2026-10-29T18:22:32.207381+00:00"
     },
+    "83eaec09-649e-4ea6-b6c8-ace482eb2f59": {
+      "title": "Outstanding Graduate Algorithm Developer - Vision Localization Group",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
+    },
     "ba1193d8-8c0f-4103-a04c-be61e67c6b5e": {
       "title": "Physical Design  Backend Engineer",
       "first_seen": "2026-08-31T20:45:43.754663+00:00"
@@ -294,6 +302,10 @@
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
+    },
+    "bafb6b0d-6d6f-41ed-a5c8-073e2b88bc1a": {
+      "title": "Product Operations Manager - Planning & Visibility",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "0a1d7baf-bfbe-466a-b12b-05ca3936108c": {
       "title": "Production Quality Engineer",
@@ -355,10 +367,6 @@
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
-    "ade97368-7948-4dbb-a574-1268ad41cbf0": {
-      "title": "Senior Computer Vision Data Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "0d17f0b5-29db-4e7e-8688-08f69d91ad0f": {
       "title": "Senior Data & ML Engineer - 3D Perception Team",
       "first_seen": "2026-10-25T11:10:18.615752+00:00"
@@ -387,10 +395,6 @@
       "title": "Senior Embedded System Architect",
       "first_seen": "2026-09-23T11:20:30.688096+00:00"
     },
-    "c6857a0e-92a8-4aca-b656-d040427c3fe9": {
-      "title": "Senior Engineering Program Manager (EPM) - REM Map Development",
-      "first_seen": "2026-10-08T18:46:43.465889+00:00"
-    },
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
@@ -415,13 +419,9 @@
       "title": "Senior Information Systems Engineer AI & Automation",
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     },
-    "25f2cd2f-fbac-4101-b913-045cdc4458a3": {
-      "title": "Senior ML Data Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "5d044c94-826e-4685-853f-b70069e3f0a9": {
-      "title": "Senior ML Data Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    "0dc494b2-3b63-49f6-8270-6471ee0627c0": {
+      "title": "Senior Mechanical Engineer",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
       "title": "Senior Python Developer for Map Management",
@@ -451,9 +451,9 @@
       "title": "Senior System Hardware Architect",
       "first_seen": "2026-10-18T15:45:05.338505+00:00"
     },
-    "b62913b8-da97-4467-85ff-7d495ef44cf4": {
-      "title": "Senior Technical Program Manager",
-      "first_seen": "2026-08-20T09:42:36.524681+00:00"
+    "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
+      "title": "Senior Technical Project Manager",
+      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "ec69a3de-fd8e-429c-a492-74c73940a032": {
       "title": "Senior Technical Project Manager – Robotaxi",
@@ -507,10 +507,6 @@
       "title": "Strategic Account Manager",
       "first_seen": "2026-11-03T16:57:45.033227+00:00"
     },
-    "d4010f4a-cf36-46ca-8237-8ef76b8b82e7": {
-      "title": "Strategic Sales and Account Management Team Lead",
-      "first_seen": "2026-11-03T16:57:45.033227+00:00"
-    },
     "c26290b9-f51a-48dc-b319-45f2c9131b42": {
       "title": "System Engineer",
       "first_seen": "2026-10-08T10:21:48.773430+00:00"
@@ -550,10 +546,6 @@
     "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
       "title": "Technical Assistant for Executive VP",
       "first_seen": "2026-10-12T10:35:45.180661+00:00"
-    },
-    "a5e1a798-a47e-4cc7-960a-3a61859b2ec4": {
-      "title": "Technical Execution Program Manager",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
       "title": "Technical PM",
@@ -620,5 +612,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 178
+  "last_board_total": 176
 }

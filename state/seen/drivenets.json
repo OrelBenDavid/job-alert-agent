@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T05:56:59.032305+00:00",
-  "last_count": 41,
+  "last_success": "2026-11-04T14:18:43.022158+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "51.859": {
@@ -95,10 +95,6 @@
       "title": "Senior Backend Developer /Tech Lead",
       "first_seen": "2026-08-19T09:41:24.968640+00:00"
     },
-    "86.277": {
-      "title": "Senior DevOps Engineer — Cybersecurity business unit",
-      "first_seen": "2026-09-09T11:10:07.701237+00:00"
-    },
     "B5.F62": {
       "title": "Senior Finance Systems & AI Implementer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
@@ -159,14 +155,14 @@
       "title": "Tactical Buyer",
       "first_seen": "2026-10-15T16:47:46.909683+00:00"
     },
-    "E2.D67": {
-      "title": "Talent Acquisition Specialist – Temporary Position (for 8 months)",
-      "first_seen": "2026-10-25T15:58:07.735151+00:00"
-    },
     "85.476": {
       "title": "Team Lead- AI Datacenter Orchestration Platform",
       "first_seen": "2026-10-22T11:36:42.367247+00:00"
+    },
+    "F1.C65": {
+      "title": "Vendor Managment",
+      "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 47
+  "last_board_total": 46
 }
