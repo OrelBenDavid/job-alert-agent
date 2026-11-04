@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-04T14:18:43.100771+00:00",
+  "last_success": "2026-11-04T21:13:28.719308+00:00",
   "last_count": 120,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-021197": {
+      "title": "Sr Staff Fullstack Software Engineer (Idira, Secrets Manager SAAS)",
+      "first_seen": "2026-11-04T21:13:28.719308+00:00"
+    },
     "JR-024396": {
       "title": "Senior/ Principal Security Researcher - MacOS (Cortex)",
       "first_seen": "2026-11-03T23:10:41.092097+00:00"
@@ -457,10 +461,6 @@
     },
     "JR-009669": {
       "title": "Sr Product Manager- AI  (Cortex XSIAM)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
-    },
-    "JR-018107": {
-      "title": "Senior DevOps Engineer (Secrets Manager)",
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-017960": {

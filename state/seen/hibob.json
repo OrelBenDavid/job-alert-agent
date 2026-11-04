@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T14:18:43.055231+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-04T21:13:28.672774+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "0ee828c5-909d-4f4c-9e5d-2fbb7c1ce5b5": {
@@ -47,6 +47,10 @@
       "title": "People and Culture Partner",
       "first_seen": "2026-10-22T17:01:56.071204+00:00"
     },
+    "53939773-777e-4976-a34c-8d79ee5f8f8f": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-11-04T21:13:28.672774+00:00"
+    },
     "9010e73d-8849-4c6c-b0de-aecaa27add51": {
       "title": "AI Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
@@ -76,5 +80,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 89
 }

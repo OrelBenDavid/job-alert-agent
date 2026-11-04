@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T14:18:43.104897+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-04T21:13:28.721370+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -47,10 +47,14 @@
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:34.306915+00:00"
     },
+    "BB.47E": {
+      "title": "Senior Software Engineer -  Platform",
+      "first_seen": "2026-11-04T21:13:28.721370+00:00"
+    },
     "EB.47C": {
       "title": "Senior Software Engineer - AI Autonomous Attacker",
       "first_seen": "2026-11-03T16:57:45.061560+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 30
 }

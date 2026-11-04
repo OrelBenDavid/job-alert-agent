@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-04T14:18:43.178053+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-04T21:13:28.764503+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "8129327": {
@@ -10,6 +10,10 @@
     "8128603": {
       "title": "Engineering Manager, Machine Learning",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8348000": {
+      "title": "Engineering Manager, Machine Learning, Ranking",
+      "first_seen": "2026-11-04T21:13:28.764503+00:00"
     },
     "6557032": {
       "title": "Senior Software Engineer, Big Data",
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 52
 }
