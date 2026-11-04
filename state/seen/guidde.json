@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-03T23:10:41.047676+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-04T05:56:59.049757+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "4821256101": {
@@ -19,10 +19,14 @@
       "title": "Senior AI Engineer - Agentic Products",
       "first_seen": "2026-11-03T16:57:44.557270+00:00"
     },
+    "5026771101": {
+      "title": "Senior Software Engineer - AI-Native",
+      "first_seen": "2026-11-04T05:56:59.049757+00:00"
+    },
     "4964089101": {
       "title": "User Acquisition Manager",
       "first_seen": "2026-08-31T13:26:59.959562+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }
