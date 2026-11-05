@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-05T06:20:29.066676+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-05T17:16:52.303407+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "53.E6A": {
       "title": "AI Security Engineer",
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
+    },
+    "2D.47E": {
+      "title": "Data Reporting Lead",
+      "first_seen": "2026-11-05T17:16:52.303407+00:00"
     },
     "50.F68": {
       "title": "Employer Brand & Talent Marketing",
@@ -68,5 +72,5 @@
       "first_seen": "2026-08-13T11:24:19.151984+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

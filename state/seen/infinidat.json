@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.090916+00:00",
-  "last_count": 21,
+  "last_success": "2026-11-05T17:16:52.751346+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "C6.D60": {
@@ -38,10 +38,6 @@
     "17.476": {
       "title": "IT Infrastructure Engineer",
       "first_seen": "2026-11-01T19:29:19.156279+00:00"
-    },
-    "90.374": {
-      "title": "Junior Automation & Systems Developer",
-      "first_seen": "2026-11-04T21:13:28.686177+00:00"
     },
     "FD.F6B": {
       "title": "NPI Engineer",
@@ -88,5 +84,5 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 37
 }

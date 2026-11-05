@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.063471+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-05T17:16:52.297165+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "f4f6b55a-2344-423f-a207-a9119ff67f3f": {
@@ -22,11 +22,7 @@
     "7d5a3660-5cba-4b63-876a-77096b072e8c": {
       "title": "Staff Backend Engineer - Moderation",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
-    "5cd7d5b3-2577-4c50-89dd-d11e0448a752": {
-      "title": "Staff Backend Engineer- Agent Experience (AX)",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 10
 }

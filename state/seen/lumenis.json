@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.100618+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-05T17:16:52.761716+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "2E.C6E": {
@@ -26,7 +26,11 @@
     "73.E6E": {
       "title": "Regional Sales Manager EU",
       "first_seen": "2026-08-19T09:41:25.011152+00:00"
+    },
+    "4D.47A": {
+      "title": "Security & Network Administrator",
+      "first_seen": "2026-11-05T17:16:52.761716+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 8
 }

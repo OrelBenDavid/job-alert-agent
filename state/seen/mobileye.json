@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.106241+00:00",
-  "last_count": 148,
+  "last_success": "2026-11-05T17:16:53.363700+00:00",
+  "last_count": 153,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -67,6 +67,10 @@
       "title": "Business Applications Implementation Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
+    "e58368d8-ec21-4e5e-871d-40707762b959": {
+      "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
+    },
     "2a817378-710e-43df-929b-a53ce94f1daa": {
       "title": "C++ Software Developer",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
@@ -78,10 +82,6 @@
     "5d034aa4-279a-4538-9e76-ba5300a6dfc8": {
       "title": "C++ Software Engineer - Tools Team",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
-    },
-    "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
-      "title": "Camera System Engineer",
-      "first_seen": "2026-08-27T14:03:31.417061+00:00"
     },
     "bc5af7e1-27cc-4e86-a0cc-b4e5628e81d0": {
       "title": "Commercial Legal Counsel",
@@ -147,6 +147,10 @@
       "title": "Embedded Software Application Engineer",
       "first_seen": "2026-09-28T13:38:07.517226+00:00"
     },
+    "2c8dbb83-2f6d-4e2a-a393-770d2a27e679": {
+      "title": "Embedded System Engineer - Camera Team",
+      "first_seen": "2026-08-27T14:03:31.417061+00:00"
+    },
     "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
       "title": "Execution Program Manager",
       "first_seen": "2026-10-20T14:14:49.862148+00:00"
@@ -195,9 +199,9 @@
       "title": "Experienced Formal Verification  Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "e85566dc-9827-4058-a1d2-cc6a63f7e286": {
-      "title": "Experienced Machine Learning Engineer",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    "4defafe4-48ba-444b-8037-a56119c0956d": {
+      "title": "Experienced Laboratory Integration Engineer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "49084f32-4a0d-4641-a034-c22310218bb1": {
       "title": "Experienced Physical Design Engineer",
@@ -222,6 +226,10 @@
     "cf198663-8759-4f08-96c3-e564aca85d8d": {
       "title": "Experienced Software Engineer - Data Systems & Tools",
       "first_seen": "2026-10-12T21:12:11.890194+00:00"
+    },
+    "86638ec0-b5f8-4cd5-b3f9-19b1b8932368": {
+      "title": "Experienced Software Linux Integration Engineer - OS team",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "a7d5dc9d-6f9f-4572-8932-71f57cc6c7db": {
       "title": "Experienced Technical Project Manager",
@@ -283,6 +291,10 @@
       "title": "Physical Design Expert",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
+    "9c57eb67-ad02-455f-a13e-c113e0963405": {
+      "title": "PMO -Cloud & Services",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
+    },
     "08dcd65b-5888-4972-98fb-a4759692a056": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-22T17:01:56.097307+00:00"
@@ -290,10 +302,6 @@
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
-    },
-    "bafb6b0d-6d6f-41ed-a5c8-073e2b88bc1a": {
-      "title": "Product Operations Manager - Planning & Visibility",
-      "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
     "0a1d7baf-bfbe-466a-b12b-05ca3936108c": {
       "title": "Production Quality Engineer",
@@ -331,6 +339,10 @@
       "title": "Semiconductor Quality & Reliability Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
     },
+    "32b2bae5-bb30-49fa-b7df-41387fcdc5c9": {
+      "title": "Semiconductor Quality & Reliability Engineer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
+    },
     "963a696d-bd85-445a-9481-f6ba1812b310": {
       "title": "Senior AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-10-22T17:01:56.097307+00:00"
@@ -351,9 +363,17 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
+    "3e606a90-02b2-4449-959d-e9a12ce7cd53": {
+      "title": "Senior Backend Python Developer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
+    },
     "ee246ef1-c9ae-4a05-ad95-ad37a744db48": {
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
+    },
+    "0568658c-174c-43ff-86c8-7a42202cbd8f": {
+      "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "0d17f0b5-29db-4e7e-8688-08f69d91ad0f": {
       "title": "Senior Data & ML Engineer - 3D Perception Team",
@@ -386,10 +406,6 @@
     "2f097b49-9076-460e-8eb1-581746890e00": {
       "title": "Senior Financial Analyst",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
-    },
-    "050c9118-b8bd-42c7-9a5d-bf0ef7e6a196": {
-      "title": "Senior Full Stack Developer",
-      "first_seen": "2026-10-14T11:38:22.537446+00:00"
     },
     "d623a866-9435-4b6d-aab8-17b835a64509": {
       "title": "Senior Hardware Engineer – Signal Integrity",
@@ -511,10 +527,6 @@
       "title": "System Integration Engineer",
       "first_seen": "2026-10-28T12:37:13.831250+00:00"
     },
-    "c457aba7-5e7c-4085-ae7d-f9e2001621b6": {
-      "title": "System Validation Engineer",
-      "first_seen": "2026-09-29T19:55:52.242566+00:00"
-    },
     "35d41f76-5f20-4fc8-b108-f761582083f2": {
       "title": "Talent Acquisition Partner - Temporary (1 year)",
       "first_seen": "2026-10-28T12:37:13.831250+00:00"
@@ -579,9 +591,17 @@
       "title": "Validation & Integration Engineer",
       "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
+    "28d00939-d06e-4f6d-84aa-4f155fe88b62": {
+      "title": "Validation Analytics Tools Developer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
+    },
     "eb0fa8ab-c69b-495b-87e2-67ce9bf6b61a": {
       "title": "Validation Analytics Tools Developer",
       "first_seen": "2026-10-22T17:01:56.097307+00:00"
+    },
+    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
+      "title": "Validation and Testing Engineer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "7837f11d-f347-40ff-b5c7-6e296be994fb": {
       "title": "Validation Engineer & Embedded System Integration",
@@ -596,5 +616,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 172
+  "last_board_total": 177
 }

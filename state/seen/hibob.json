@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.087775+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-05T17:16:52.744551+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "0ee828c5-909d-4f4c-9e5d-2fbb7c1ce5b5": {
@@ -43,10 +43,6 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
-    "15fcddef-badd-46a4-913f-d2c0bae0ed40": {
-      "title": "People and Culture Partner",
-      "first_seen": "2026-10-22T17:01:56.071204+00:00"
-    },
     "53939773-777e-4976-a34c-8d79ee5f8f8f": {
       "title": "Frontend Engineer",
       "first_seen": "2026-11-04T21:13:28.672774+00:00"
@@ -80,5 +76,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 89
+  "last_board_total": 86
 }

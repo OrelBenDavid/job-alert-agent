@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-05T06:20:29.145028+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-05T17:16:54.095763+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
-    "5B.278": {
-      "title": "R&D Group Lead",
-      "first_seen": "2026-10-18T10:50:47.181021+00:00"
-    },
     "BF.16A": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
@@ -20,5 +16,5 @@
       "first_seen": "2026-08-13T11:24:41.078385+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 5
 }

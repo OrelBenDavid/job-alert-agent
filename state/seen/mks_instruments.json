@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-11-05T06:20:29.105484+00:00",
-  "last_count": 21,
+  "last_success": "2026-11-05T17:16:52.771590+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
+    "R23487": {
+      "title": "Mechanical Engineer/מהנדס/ת מכונות",
+      "first_seen": "2026-11-05T17:16:52.771590+00:00"
+    },
+    "R23740": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-10-28T20:11:58.106547+00:00"
+    },
+    "R20589": {
+      "title": "2027 Spring Industrial Engineer Undergraduate Intern",
+      "first_seen": "2026-11-05T17:16:52.771590+00:00"
+    },
     "R23474": {
       "title": "Assembler /מרכיב/ה מכאני/ת",
       "first_seen": "2026-11-03T16:57:44.586971+00:00"
@@ -18,10 +30,6 @@
     "R22859": {
       "title": "Talent Acquisition Specialist- temp for 8 months",
       "first_seen": "2026-10-07T13:08:47.178007+00:00"
-    },
-    "R23740": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-10-28T20:11:58.106547+00:00"
     },
     "R22687": {
       "title": "Mechanical Engineer Student/סטודנט.ית להנדסה מכנית",
@@ -88,5 +96,5 @@
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 23
 }

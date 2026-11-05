@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.125943+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-05T17:16:54.066688+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -59,14 +59,6 @@
       "title": "Product & Architecture Lead",
       "first_seen": "2026-10-16T11:11:26.200781+00:00"
     },
-    "C8.37D": {
-      "title": "Product Operations",
-      "first_seen": "2026-11-04T14:18:43.112765+00:00"
-    },
-    "04.E6B": {
-      "title": "Purchasing Specialist",
-      "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
     "93.E6E": {
       "title": "Python Engineer",
       "first_seen": "2026-10-06T15:50:16.438064+00:00"
@@ -108,5 +100,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 71
+  "last_board_total": 69
 }

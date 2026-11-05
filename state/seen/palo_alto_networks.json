@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-11-05T06:20:29.118143+00:00",
-  "last_count": 120,
+  "last_success": "2026-11-05T17:16:54.060820+00:00",
+  "last_count": 119,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-019816": {
+      "title": "Experienced Backend Engineer (Cortex Agentix)",
+      "first_seen": "2026-11-05T17:16:54.060820+00:00"
+    },
+    "JR-024032": {
+      "title": "Senior Principal Quality Lead (Idira) (Idira)",
+      "first_seen": "2026-11-05T17:16:54.060820+00:00"
+    },
     "JR-021197": {
       "title": "Sr Staff Fullstack Software Engineer (Idira, Secrets Manager SAAS)",
       "first_seen": "2026-11-04T21:13:28.719308+00:00"
@@ -223,10 +231,6 @@
       "title": "Senior/Principal Site Reliability Engineer",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
     },
-    "JR-020510": {
-      "title": "Senior Product Manager (Idira, Data & AI/ML Platforms)",
-      "first_seen": "2026-10-07T13:08:47.227820+00:00"
-    },
     "JR-020455": {
       "title": "Senior/ Principal Security Researcher - Cloud (Cortex)",
       "first_seen": "2026-09-22T16:46:16.003215+00:00"
@@ -290,10 +294,6 @@
     "JR-018806": {
       "title": "Senior/ Principal Frontend Engineer (Cortex Platform)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-017962": {
-      "title": "Senior Technical Program Manager",
-      "first_seen": "2026-09-23T11:20:30.697510+00:00"
     },
     "JR-018209": {
       "title": "Principal Software Engineer (ITDR)",
@@ -425,10 +425,6 @@
     },
     "JR-018160": {
       "title": "Principal Software Engineer (Secure Agentic AI) - Petach Tikva \\ Be'er Sheva",
-      "first_seen": "2026-08-18T22:29:25.523407+00:00"
-    },
-    "JR-020031": {
-      "title": "Manager SW Engineering (Directory Services)",
       "first_seen": "2026-08-18T22:29:25.523407+00:00"
     },
     "JR-019920": {

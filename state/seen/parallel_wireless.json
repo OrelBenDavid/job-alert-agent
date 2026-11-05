@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.119218+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-05T17:16:54.061663+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -18,6 +18,10 @@
     "aae3fb69-b696-4925-a7fe-5ca6b3aee726": {
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
+    },
+    "56786ab6-bdb3-41f2-b749-b77b7c834ef2": {
+      "title": "Junior System Integration Engineer",
+      "first_seen": "2026-11-05T17:16:54.061663+00:00"
     },
     "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
       "title": "PHY Algorithms Senior Engineer - AI/ML",
@@ -68,5 +72,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }

@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-05T06:20:29.065110+00:00",
+  "last_success": "2026-11-05T17:16:52.299330+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
-    "6228416004": {
-      "title": "Account Executive - SMB EMEA",
-      "first_seen": "2026-10-20T08:24:16.446212+00:00"
-    },
     "5549978004": {
       "title": "AI Developer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
@@ -34,6 +30,10 @@
     "5997770004": {
       "title": "Gen AI Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
+    },
+    "6192755004": {
+      "title": "Junior Platform Engineer",
+      "first_seen": "2026-11-05T17:16:52.299330+00:00"
     },
     "6227876004": {
       "title": "Marketing Operations Manager",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T06:20:29.141946+00:00",
-  "last_count": 30,
+  "last_success": "2026-11-05T17:16:54.093943+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -106,10 +106,6 @@
     "8200807": {
       "title": "Site Reliability Engineer, Traffic Infrastructure",
       "first_seen": "2026-09-14T12:31:04.128440+00:00"
-    },
-    "8229871": {
-      "title": "Software Engineer Intern",
-      "first_seen": "2026-11-04T21:13:28.744077+00:00"
     },
     "8264032": {
       "title": "Staff Engineer — Data Platform",
