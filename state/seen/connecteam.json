@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T17:16:52.299330+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-05T23:31:43.003379+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "5549978004": {
@@ -30,10 +30,6 @@
     "5997770004": {
       "title": "Gen AI Engineer",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "6192755004": {
-      "title": "Junior Platform Engineer",
-      "first_seen": "2026-11-05T17:16:52.299330+00:00"
     },
     "6227876004": {
       "title": "Marketing Operations Manager",
@@ -84,5 +80,5 @@
       "first_seen": "2026-10-22T17:01:56.033791+00:00"
     }
   },
-  "last_board_total": 67
+  "last_board_total": 66
 }

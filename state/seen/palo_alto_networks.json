@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-05T17:16:54.060820+00:00",
-  "last_count": 119,
+  "last_success": "2026-11-05T23:31:43.568179+00:00",
+  "last_count": 117,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-019816": {
-      "title": "Experienced Backend Engineer (Cortex Agentix)",
-      "first_seen": "2026-11-05T17:16:54.060820+00:00"
-    },
     "JR-024032": {
       "title": "Senior Principal Quality Lead (Idira) (Idira)",
       "first_seen": "2026-11-05T17:16:54.060820+00:00"
@@ -230,10 +226,6 @@
     "JR-022747": {
       "title": "Senior/Principal Site Reliability Engineer",
       "first_seen": "2026-09-27T11:52:38.220909+00:00"
-    },
-    "JR-020455": {
-      "title": "Senior/ Principal Security Researcher - Cloud (Cortex)",
-      "first_seen": "2026-09-22T16:46:16.003215+00:00"
     },
     "JR-020385": {
       "title": "Senior Staff Software Engineer (Idira Data & AI Platform)",
@@ -480,5 +472,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 120
+  "last_board_total": 118
 }

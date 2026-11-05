@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T17:16:52.755014+00:00",
-  "last_count": 27,
+  "last_success": "2026-11-05T23:31:43.075402+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -102,6 +102,10 @@
     "F2.96B": {
       "title": "Talent Acquisition Lead & HRBP",
       "first_seen": "2026-11-04T14:18:43.065175+00:00"
+    },
+    "C4.472": {
+      "title": "Tech Leader- Relocation",
+      "first_seen": "2026-11-05T23:31:43.075402+00:00"
     },
     "B2.272": {
       "title": "Technical Deployment Engineer",

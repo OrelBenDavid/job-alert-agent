@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-05T17:16:52.750663+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-05T23:31:43.065467+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "332aa0e9-46b5-4f89-bee8-3e63362d3056": {
@@ -22,11 +22,7 @@
     "8b9bee00-2a81-4872-93f9-e85b1f3cef07": {
       "title": "Sr. Marketing Designer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
-    "8e5af965-9975-4347-9c3e-411bd629c8f6": {
-      "title": "Senior Marketing Design Manager",
-      "first_seen": "2026-09-29T19:55:52.220213+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 18
 }
