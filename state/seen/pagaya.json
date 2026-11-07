@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-07T12:49:57.784626+00:00",
+  "last_success": "2026-11-07T19:20:03.475944+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -16,7 +16,7 @@
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
     },
     "8006459003": {
-      "title": "DevOps Engineer- Avon",
+      "title": "DevOps Engineer- Avon.AI",
       "first_seen": "2026-09-28T13:38:07.540417+00:00"
     },
     "7763481003": {

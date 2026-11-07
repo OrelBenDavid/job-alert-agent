@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-07T12:49:57.785377+00:00",
-  "last_count": 115,
+  "last_success": "2026-11-07T19:20:03.476331+00:00",
+  "last_count": 114,
   "consecutive_failures": 0,
   "jobs": {
     "JR-024032": {
@@ -14,10 +14,6 @@
     "JR-024396": {
       "title": "Senior/ Principal Security Researcher - MacOS (Cortex)",
       "first_seen": "2026-11-03T23:10:41.092097+00:00"
-    },
-    "JR-013064": {
-      "title": "Principal Product Manager -  Application Security (Cortex Cloud)",
-      "first_seen": "2026-08-23T09:01:22.409577+00:00"
     },
     "JR-024164": {
       "title": "Senior Staff C++ Engineer (Endpoint Privilege Manager - Idira)",
@@ -464,5 +460,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 116
+  "last_board_total": 115
 }
