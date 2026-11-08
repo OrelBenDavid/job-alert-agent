@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T00:22:28.145838+00:00",
-  "last_count": 153,
+  "last_success": "2026-11-08T10:06:45.293864+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -13,10 +13,6 @@
     },
     "51ce434c-d324-4817-bd2f-55fe5046991e": {
       "title": "AI Engineering Execution Manager",
-      "first_seen": "2026-10-15T11:17:05.847778+00:00"
-    },
-    "d324d672-2b02-434d-b17a-e5036e2f35d6": {
-      "title": "AI Engineering Execution Manager (Temporary Position - Maternity Leave)",
       "first_seen": "2026-10-15T11:17:05.847778+00:00"
     },
     "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
@@ -99,13 +95,13 @@
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
     },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-11-08T10:06:45.293864+00:00"
+    },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Product Manager - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
-    },
-    "df0e4aa1-62ca-4774-b443-cc806a8d28ab": {
-      "title": "Deep Learning Algorithm Developer - Ground Truth",
-      "first_seen": "2026-11-03T16:57:45.033227+00:00"
     },
     "be730214-2c22-4acf-aff9-422fb6823f3e": {
       "title": "Deep Learning Algorithm Developer - M.Sc. Graduate",
@@ -271,6 +267,10 @@
       "title": "IT Lab Administrator",
       "first_seen": "2026-11-02T21:39:34.126367+00:00"
     },
+    "ebd7cc3a-1f87-44f8-91df-44118414f5fd": {
+      "title": "Junior Execution Program Manager",
+      "first_seen": "2026-11-08T10:06:45.293864+00:00"
+    },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
@@ -318,6 +318,10 @@
     "ad23da3b-e74e-4b41-84b5-bb8abfa125a6": {
       "title": "Production Quality Engineer",
       "first_seen": "2026-10-27T08:51:47.627042+00:00"
+    },
+    "b571e504-4e18-4de1-a12f-eaac1392bf8f": {
+      "title": "Production Software Engineer for Algo Objects",
+      "first_seen": "2026-11-08T10:06:45.293864+00:00"
     },
     "d9a6d581-00ee-417b-90de-d9c57c998950": {
       "title": "Radar System Integration Engineer – Functional & System Flows",
@@ -495,10 +499,6 @@
       "title": "Software Group Manager - OS Integration & Automation",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "48a6b951-576a-45cd-b347-9eeb2e3a6e34": {
-      "title": "Software Team Lead - Data Infrastructure & Algorithm",
-      "first_seen": "2026-09-09T11:10:07.736530+00:00"
-    },
     "5d23dc1d-fc84-427d-96cf-cd151087561d": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -506,10 +506,6 @@
     "9a48ee39-91f4-4722-a6b4-0f2800b4863c": {
       "title": "Solution Architect for Embedded Autonomous Vehicle System",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "6a585853-ec67-49fb-af6d-68adc60b5977": {
-      "title": "Strategic Account Manager",
-      "first_seen": "2026-11-03T16:57:45.033227+00:00"
     },
     "c26290b9-f51a-48dc-b319-45f2c9131b42": {
       "title": "System Engineer",
@@ -616,5 +612,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 177
+  "last_board_total": 176
 }

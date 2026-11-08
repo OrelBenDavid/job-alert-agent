@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T00:22:28.196688+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-08T10:06:45.370558+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "8078746": {
@@ -30,6 +30,10 @@
     "8171321": {
       "title": "Media Sales SMB",
       "first_seen": "2026-10-21T11:36:48.139275+00:00"
+    },
+    "8355902": {
+      "title": "Restaurant Partnership Manager - North",
+      "first_seen": "2026-11-08T10:06:45.370558+00:00"
     },
     "8119266": {
       "title": "Retail Enterprise Development Specialist - ML Replacement",
@@ -68,5 +72,5 @@
       "first_seen": "2026-10-26T20:24:20.719839+00:00"
     }
   },
-  "last_board_total": 205
+  "last_board_total": 206
 }

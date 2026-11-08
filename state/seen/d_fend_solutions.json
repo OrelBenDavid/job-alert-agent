@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T00:22:28.109882+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-08T10:06:45.229763+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
@@ -70,7 +70,11 @@
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
+    },
+    "5c2062dc-1b68-44b2-b02d-cdbb0d569e33": {
+      "title": "Warehouse Manager",
+      "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 25
 }

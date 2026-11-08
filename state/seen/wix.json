@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-08T00:22:28.082864+00:00",
-  "last_count": 42,
+  "last_success": "2026-11-08T10:06:44.681584+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
-    "https://careers.wix.com/position/oracle-6ba48d9d-95b7-5c05-9ea0-7c01685d5b39-T1792661965-744000159646510": {
-      "title": "Talent Sourcer (Temp Position)",
-      "first_seen": "2026-11-04T21:13:28.614129+00:00"
-    },
     "https://careers.wix.com/position/REF3097W-744000159633149": {
       "title": "Senior AI Engineer - Marketing AI Transformation",
       "first_seen": "2026-11-04T14:18:42.965308+00:00"

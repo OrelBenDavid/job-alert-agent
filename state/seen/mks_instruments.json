@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-08T00:22:28.145010+00:00",
+  "last_success": "2026-11-08T10:06:45.292904+00:00",
   "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
+    "R20589": {
+      "title": "סטודנט/ית להנדסת מכונות/אופטיקה",
+      "first_seen": "2026-11-05T17:16:52.771590+00:00"
+    },
     "R23487": {
       "title": "Mechanical Engineer/מהנדס/ת מכונות",
       "first_seen": "2026-11-05T17:16:52.771590+00:00"
@@ -10,10 +14,6 @@
     "R23740": {
       "title": "Senior Software Engineer",
       "first_seen": "2026-10-28T20:11:58.106547+00:00"
-    },
-    "R20589": {
-      "title": "2027 Spring Industrial Engineer Undergraduate Intern",
-      "first_seen": "2026-11-05T17:16:52.771590+00:00"
     },
     "R23474": {
       "title": "Assembler /מרכיב/ה מכאני/ת",

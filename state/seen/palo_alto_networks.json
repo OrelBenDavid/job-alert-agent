@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-08T00:22:28.158711+00:00",
+  "last_success": "2026-11-08T10:06:45.315335+00:00",
   "last_count": 114,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-023813": {
+      "title": "Senior DevOps Engineer (Cortex)",
+      "first_seen": "2026-11-08T10:06:45.315335+00:00"
+    },
     "JR-024032": {
       "title": "Senior Principal Quality Lead (Idira) (Idira)",
       "first_seen": "2026-11-05T17:16:54.060820+00:00"
@@ -74,10 +78,6 @@
     "JR-023791": {
       "title": "Sr Principal Architect Engineer Software (Privileged Cloud Digital Vault - Idira)",
       "first_seen": "2026-10-25T15:58:07.779582+00:00"
-    },
-    "JR-023673": {
-      "title": "Senior Product Designer (Cortex Platform)",
-      "first_seen": "2026-10-25T11:10:18.626870+00:00"
     },
     "JR-023576": {
       "title": "Senior Product Manager, Privileged Access Management (PAM) Self-Hosted (Idira)",
