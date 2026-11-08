@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-08T10:06:45.229763+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-08T17:52:13.189846+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
+    "a117f717-b22f-4688-aa9e-b65384471a03": {
+      "title": "Customer Program Manager",
+      "first_seen": "2026-11-08T17:52:13.189846+00:00"
+    },
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
       "title": "Director Of Supply Chain",
       "first_seen": "2026-10-26T12:44:14.668705+00:00"
@@ -43,6 +47,10 @@
       "title": "RF Automation Developer Engineer",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
+    "d712bc16-5e8e-479d-ac01-342edd0b0c96": {
+      "title": "RMA and Delivery Projects Manager",
+      "first_seen": "2026-11-08T17:52:13.189846+00:00"
+    },
     "98f7f648-e1ed-4eb0-9e3b-c25279afba21": {
       "title": "Sales Operations Team Lead",
       "first_seen": "2026-08-20T18:51:26.374540+00:00"
@@ -76,5 +84,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 27
 }

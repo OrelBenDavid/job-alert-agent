@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T10:06:45.271359+00:00",
-  "last_count": 22,
+  "last_success": "2026-11-08T17:52:13.220894+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -38,10 +38,6 @@
     "7996600": {
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "8131976": {
-      "title": "Marketing Coordinator",
-      "first_seen": "2026-10-01T12:58:35.283867+00:00"
     },
     "8169233": {
       "title": "Principal Product Manager -  Business Applications",
@@ -92,5 +88,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 74
+  "last_board_total": 73
 }

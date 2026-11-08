@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-08T10:06:45.170994+00:00",
+  "last_success": "2026-11-08T17:52:13.177180+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-10-22T11:36:42.343591+00:00"
     },
     "b77f93a2-6df4-426f-b35d-f26b2398c17d": {
-      "title": "Senior Application Security Engineer",
+      "title": "Senior Security Engineer",
       "first_seen": "2026-11-01T19:29:19.127451+00:00"
     }
   },

@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-08T10:06:45.317223+00:00",
+  "last_success": "2026-11-08T17:52:13.256004+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -10,10 +10,6 @@
     "32.371": {
       "title": "Customer Service Rep.",
       "first_seen": "2026-09-28T13:38:07.550970+00:00"
-    },
-    "DE.27D": {
-      "title": "Enterprise Architect",
-      "first_seen": "2026-09-24T11:33:41.922853+00:00"
     },
     "CF.666": {
       "title": "Finance Analyst",
@@ -26,6 +22,10 @@
     "69.A45": {
       "title": "Internal Auditor",
       "first_seen": "2026-08-23T09:01:23.825516+00:00"
+    },
+    "DE.27D": {
+      "title": "Lead Solutions Architect",
+      "first_seen": "2026-09-24T11:33:41.922853+00:00"
     },
     "DE.279": {
       "title": "Marketing Automation Specialist",

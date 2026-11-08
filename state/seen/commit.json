@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T10:06:45.174906+00:00",
-  "last_count": 44,
+  "last_success": "2026-11-08T17:52:13.180894+00:00",
+  "last_count": 45,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -48,7 +48,7 @@
       "first_seen": "2026-10-09T01:08:59.421613+00:00"
     },
     "6E.47E": {
-      "title": "DevOps Team Lead- Cloud Security",
+      "title": "DevOps Tech Lead- Cloud Security",
       "first_seen": "2026-11-08T10:06:45.174906+00:00"
     },
     "65.56C": {
@@ -131,6 +131,10 @@
       "title": "Software Architect",
       "first_seen": "2026-10-15T16:47:46.889604+00:00"
     },
+    "A4.47B": {
+      "title": "Software Engineer",
+      "first_seen": "2026-11-08T17:52:13.180894+00:00"
+    },
     "A5.D62": {
       "title": "Software Project Manager",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -180,5 +184,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 123
+  "last_board_total": 124
 }

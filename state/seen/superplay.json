@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T10:06:45.350666+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-08T17:52:13.281998+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "88.E47": {
@@ -22,10 +22,6 @@
     "C2.37D": {
       "title": "Business Data Analyst",
       "first_seen": "2026-10-21T17:02:54.122185+00:00"
-    },
-    "1A.37E": {
-      "title": "Economy Operations Manager",
-      "first_seen": "2026-11-08T10:06:45.350666+00:00"
     },
     "2F.07C": {
       "title": "FP&A Analyst",
@@ -56,5 +52,5 @@
       "first_seen": "2026-08-16T09:35:33.190901+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

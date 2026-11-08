@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T10:06:45.334022+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-08T17:52:13.268735+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "8891146002": {
@@ -35,6 +35,10 @@
       "title": "Product Sales Specialist",
       "first_seen": "2026-10-14T04:36:53.845335+00:00"
     },
+    "8934488002": {
+      "title": "Recruiter (Maternity Leave cover for 8 months)",
+      "first_seen": "2026-11-08T17:52:13.268735+00:00"
+    },
     "8888283002": {
       "title": "Sales Engineer",
       "first_seen": "2026-10-14T21:32:18.489455+00:00"
@@ -56,5 +60,5 @@
       "first_seen": "2026-10-21T17:02:54.105710+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 38
 }
