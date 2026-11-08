@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-07T19:20:03.477553+00:00",
+  "last_success": "2026-11-08T00:22:28.160789+00:00",
   "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,10 +15,6 @@
       "title": "Cyber Field Engineer",
       "first_seen": "2026-09-23T16:42:31.315277+00:00"
     },
-    "3C.17A": {
-      "title": "Data & AI Product Manager",
-      "first_seen": "2026-08-27T14:03:31.450585+00:00"
-    },
     "55.27B": {
       "title": "Lead AI Transformation Engineer",
       "first_seen": "2026-09-07T19:05:45.477549+00:00"
@@ -30,6 +26,10 @@
     "96.47B": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-10-25T11:10:18.629001+00:00"
+    },
+    "4E.474": {
+      "title": "SDR IBERIA",
+      "first_seen": "2026-11-08T00:22:28.160789+00:00"
     },
     "20.377": {
       "title": "Security Research Team Lead",
@@ -56,5 +56,5 @@
       "first_seen": "2026-11-03T16:57:45.061560+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 31
 }
