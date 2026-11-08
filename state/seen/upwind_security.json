@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T17:52:13.294972+00:00",
-  "last_count": 27,
+  "last_success": "2026-11-08T21:56:02.727254+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "5C.375": {
@@ -46,10 +46,6 @@
     "CA.042": {
       "title": "Frontend Software Engineer",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
-    },
-    "35.27C": {
-      "title": "Growth Marketing Manager",
-      "first_seen": "2026-09-07T12:15:49.358514+00:00"
     },
     "CA.379": {
       "title": "Marketing Operations Lead",
@@ -112,5 +108,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 99
+  "last_board_total": 98
 }

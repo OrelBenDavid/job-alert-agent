@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-08T17:52:13.305409+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-08T21:56:02.736238+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
@@ -43,14 +43,10 @@
       "title": "Senior Bookkeeper",
       "first_seen": "2026-10-21T17:02:54.159819+00:00"
     },
-    "ff55ae68-4982-4253-89a7-a2f7db407261": {
-      "title": "Senior AI Engineer",
-      "first_seen": "2026-11-02T10:52:36.137465+00:00"
-    },
     "3182fd63-e7cc-433a-a53f-47b6b3e2a3b4": {
       "title": "Backend Engineer – Discover Team",
       "first_seen": "2026-11-02T21:39:34.237738+00:00"
     }
   },
-  "last_board_total": 32
+  "last_board_total": 31
 }
