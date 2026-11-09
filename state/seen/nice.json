@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.092284+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-09T15:56:39.529278+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "5011031101": {
@@ -18,14 +18,6 @@
     "4969705101": {
       "title": "Director of Engineering",
       "first_seen": "2026-09-10T11:06:09.943762+00:00"
-    },
-    "4969388101": {
-      "title": "Director, Talent Acquisition Transformation",
-      "first_seen": "2026-09-06T10:45:34.617081+00:00"
-    },
-    "4912601101": {
-      "title": "Employer Branding Student (Temporary )",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
     },
     "5010848101": {
       "title": "FP&A Analyst",
@@ -52,5 +44,5 @@
       "first_seen": "2026-10-18T10:50:47.119772+00:00"
     }
   },
-  "last_board_total": 118
+  "last_board_total": 115
 }

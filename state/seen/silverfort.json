@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.120205+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-09T15:56:39.575383+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "E8.E66": {
@@ -31,6 +31,10 @@
       "title": "Senior Full Stack Software Engineer",
       "first_seen": "2026-08-13T11:24:41.051708+00:00"
     },
+    "89.47C": {
+      "title": "Solutions Architect, Cloud Identity Security",
+      "first_seen": "2026-11-09T15:56:39.575383+00:00"
+    },
     "18.E6F": {
       "title": "Technical Enablement Manager",
       "first_seen": "2026-08-13T11:24:41.051708+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-09-01T18:20:52.227607+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 29
 }

@@ -1,8 +1,20 @@
 {
-  "last_success": "2026-11-09T05:55:04.098837+00:00",
+  "last_success": "2026-11-09T15:56:39.547271+00:00",
   "last_count": 114,
   "consecutive_failures": 0,
   "jobs": {
+    "JR-024032": {
+      "title": "Senior Principal Quality Lead (Idira)",
+      "first_seen": "2026-11-05T17:16:54.060820+00:00"
+    },
+    "JR-023673": {
+      "title": "Senior Product Designer (Cortex Platform)",
+      "first_seen": "2026-11-09T15:56:39.547271+00:00"
+    },
+    "JR-021134": {
+      "title": "Internal Audit Manager (AI & Technology)",
+      "first_seen": "2026-11-09T15:56:39.547271+00:00"
+    },
     "JR-023726": {
       "title": "Senior Manager Security Research -  Linux Low Level (Cortex)",
       "first_seen": "2026-11-08T17:52:13.254265+00:00"
@@ -10,10 +22,6 @@
     "JR-023813": {
       "title": "Senior DevOps Engineer (Cortex)",
       "first_seen": "2026-11-08T10:06:45.315335+00:00"
-    },
-    "JR-024032": {
-      "title": "Senior Principal Quality Lead (Idira) (Idira)",
-      "first_seen": "2026-11-05T17:16:54.060820+00:00"
     },
     "JR-021197": {
       "title": "Sr Staff Fullstack Software Engineer (Idira, Secrets Manager SAAS)",
@@ -231,10 +239,6 @@
       "title": "C++ Developer - macOS Platform Engineer (Cortex XDR)",
       "first_seen": "2026-10-04T18:36:01.844335+00:00"
     },
-    "JR-019054": {
-      "title": "Staff AI Support Engineer (AgentiX Support - Cortex)",
-      "first_seen": "2026-10-04T12:11:38.501118+00:00"
-    },
     "JR-022741": {
       "title": "Principal Software Engineer for SaaS (SIA for Databases)- Idira",
       "first_seen": "2026-09-29T12:38:07.452362+00:00"
@@ -370,10 +374,6 @@
     "JR-019009": {
       "title": "Major Account Manager - Telco/Service Providers",
       "first_seen": "2026-08-31T13:27:00.382058+00:00"
-    },
-    "JR-021153": {
-      "title": "Senior Staff Data Engineer (Data & AI solutions)",
-      "first_seen": "2026-08-19T06:57:01.815036+00:00"
     },
     "JR-014640": {
       "title": "Senior/ Principal Backend Engineer - Data & AI Security (Cortex Cloud)",

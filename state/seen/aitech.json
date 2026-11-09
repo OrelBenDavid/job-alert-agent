@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.013955+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-09T15:56:38.563921+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "0D.F55": {
@@ -22,11 +22,7 @@
     "9A.471": {
       "title": "Testing Technician",
       "first_seen": "2026-11-01T19:29:19.108328+00:00"
-    },
-    "E3.E6B": {
-      "title": "Warehouse Clerk",
-      "first_seen": "2026-08-13T11:24:10.777326+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 17
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.078742+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-09T15:56:38.647325+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "AD.A58": {
@@ -19,6 +19,10 @@
       "title": "Purchasing Buyer",
       "first_seen": "2026-08-20T06:56:54.028386+00:00"
     },
+    "BE.47C": {
+      "title": "Software Engineer (.NET / Distributed Systems)",
+      "first_seen": "2026-11-09T15:56:38.647325+00:00"
+    },
     "D4.27C": {
       "title": "Supplier Bookkeeper",
       "first_seen": "2026-09-06T20:18:45.201210+00:00"
@@ -34,15 +38,7 @@
     "E4.C67": {
       "title": "מלחימ/ה",
       "first_seen": "2026-08-20T06:56:54.028386+00:00"
-    },
-    "6E.F60": {
-      "title": "מרכיב מכאני",
-      "first_seen": "2026-08-20T06:56:54.028386+00:00"
-    },
-    "E4.C65": {
-      "title": "רתך/מסגר",
-      "first_seen": "2026-08-20T06:56:54.028386+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 9
 }

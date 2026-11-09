@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-09T05:55:04.063013+00:00",
-  "last_count": 21,
+  "last_success": "2026-11-09T15:56:38.626088+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
-    "0ee828c5-909d-4f4c-9e5d-2fbb7c1ce5b5": {
-      "title": "Enterprise Customer Success Manager",
-      "first_seen": "2026-11-03T16:57:44.558578+00:00"
-    },
     "faa5807c-2256-4e74-9f3f-7e15e083d667": {
       "title": "Finops Lead",
       "first_seen": "2026-11-08T17:52:13.211118+00:00"
@@ -19,13 +15,13 @@
       "title": "Senior Marketing Manager – Israel & Central Europe",
       "first_seen": "2026-11-08T17:52:13.211118+00:00"
     },
-    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
-      "title": "Account Manager- Mid Market IL",
-      "first_seen": "2026-10-14T17:00:25.314544+00:00"
-    },
     "391498dd-d77a-460e-977a-00b5105927d6": {
       "title": "Sales Manager IL & CEE",
       "first_seen": "2026-11-02T21:39:34.078849+00:00"
+    },
+    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
+      "title": "Account Manager- Mid Market IL",
+      "first_seen": "2026-10-14T17:00:25.314544+00:00"
     },
     "efc9a66e-b067-40c9-a504-4a94f282b3ca": {
       "title": "VP Revenue Marketing",
@@ -38,10 +34,6 @@
     "32c6fd23-60fc-426d-b2bd-3d6db1f85eab": {
       "title": "Senior Account Executive",
       "first_seen": "2026-09-18T11:01:52.076268+00:00"
-    },
-    "bdf7e5b1-a098-4077-9eab-01d24a33f0e8": {
-      "title": "Account Executive",
-      "first_seen": "2026-09-28T13:38:07.472973+00:00"
     },
     "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
       "title": "SMB Account Manager IL",
@@ -88,5 +80,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 93
+  "last_board_total": 88
 }

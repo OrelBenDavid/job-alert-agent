@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.032004+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-09T15:56:38.584944+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "70.F65": {
@@ -35,22 +35,10 @@
       "title": "Product Engineering",
       "first_seen": "2026-08-19T10:21:23.599750+00:00"
     },
-    "7B.A62": {
-      "title": "Radio Customer Support Expert",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
     "13.378": {
       "title": "Regulatory and compliance Engineer",
       "first_seen": "2026-10-01T05:32:14.602528+00:00"
-    },
-    "E8.765": {
-      "title": "RF System Architect",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
-    "FA.272": {
-      "title": "Senior RF & PHY Systems Engineer",
-      "first_seen": "2026-09-14T12:31:04.031819+00:00"
     }
   },
-  "last_board_total": 39
+  "last_board_total": 36
 }

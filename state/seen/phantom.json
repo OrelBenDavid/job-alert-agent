@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-09T05:55:04.102191+00:00",
+  "last_success": "2026-11-09T15:56:39.553779+00:00",
   "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
@@ -40,7 +40,7 @@
       "first_seen": "2026-09-07T23:25:18.868781+00:00"
     },
     "2152bd2d-cdf8-418e-9c03-eae970e630a2": {
-      "title": "Senior Data Scientist",
+      "title": "Staff Data Scientist",
       "first_seen": "2026-10-28T05:19:03.970454+00:00"
     }
   },

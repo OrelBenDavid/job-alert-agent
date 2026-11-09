@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-09T05:55:04.041881+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-09T15:56:38.595252+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
-    "a117f717-b22f-4688-aa9e-b65384471a03": {
-      "title": "Customer Program Manager",
-      "first_seen": "2026-11-08T17:52:13.189846+00:00"
-    },
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
       "title": "Director Of Supply Chain",
       "first_seen": "2026-10-26T12:44:14.668705+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 25
 }

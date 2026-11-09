@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-11-09T05:55:04.024636+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-09T15:56:38.574074+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "4857516101": {
-      "title": "Senior Full-Stack Engineer",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    }
-  },
-  "last_board_total": 4
+  "jobs": {},
+  "last_board_total": 3
 }

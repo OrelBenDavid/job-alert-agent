@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.101135+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-09T15:56:39.549895+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -28,7 +28,7 @@
       "first_seen": "2026-10-25T11:10:18.629001+00:00"
     },
     "4E.474": {
-      "title": "SDR IBERIA",
+      "title": "Sales Development Representative IBERIA",
       "first_seen": "2026-11-08T00:22:28.160789+00:00"
     },
     "20.377": {
@@ -54,7 +54,11 @@
     "EB.47C": {
       "title": "Senior Software Engineer - AI Autonomous Attacker",
       "first_seen": "2026-11-03T16:57:45.061560+00:00"
+    },
+    "EE.47F": {
+      "title": "Technical Support - Tier 1",
+      "first_seen": "2026-11-09T15:56:39.549895+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.088733+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-09T15:56:39.513620+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8314100": {
@@ -26,6 +26,10 @@
     "7874429": {
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-09-27T11:52:38.211282+00:00"
+    },
+    "8314105": {
+      "title": "Senior Full Stack Engineer",
+      "first_seen": "2026-11-09T15:56:39.513620+00:00"
     },
     "8188569": {
       "title": "Senior Full Stack Engineer, Frontend-Oriented",
@@ -60,5 +64,5 @@
       "first_seen": "2026-10-20T08:24:16.508573+00:00"
     }
   },
-  "last_board_total": 228
+  "last_board_total": 229
 }

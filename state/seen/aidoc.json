@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.013406+00:00",
-  "last_count": 25,
+  "last_success": "2026-11-09T15:56:38.563507+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -75,10 +75,6 @@
       "title": "Senior DevOps Engineer",
       "first_seen": "2026-11-02T10:52:35.594774+00:00"
     },
-    "4889904101": {
-      "title": "Senior Full Stack Engineer",
-      "first_seen": "2026-08-23T09:01:19.731952+00:00"
-    },
     "4868634101": {
       "title": "Senior Product Analyst",
       "first_seen": "2026-11-01T19:29:19.107884+00:00"
@@ -104,5 +100,5 @@
       "first_seen": "2026-11-05T17:16:52.278215+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 33
 }

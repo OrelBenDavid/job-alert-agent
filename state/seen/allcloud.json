@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.015755+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-09T15:56:38.565385+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "E0.47A": {
@@ -27,10 +27,6 @@
       "title": "Data Architect",
       "first_seen": "2026-10-18T15:45:05.228250+00:00"
     },
-    "92.476": {
-      "title": "Data Engineer",
-      "first_seen": "2026-10-18T15:45:05.228250+00:00"
-    },
     "9B.473": {
       "title": "Data Presale Solution Architect",
       "first_seen": "2026-11-03T16:57:44.479146+00:00"
@@ -55,10 +51,6 @@
       "title": "Paralegal Law Student",
       "first_seen": "2026-10-21T11:36:47.959056+00:00"
     },
-    "DD.27C": {
-      "title": "Salesforce Solutions Architect",
-      "first_seen": "2026-09-17T16:47:40.495202+00:00"
-    },
     "CC.271": {
       "title": "Senior Software Engineer GenAI",
       "first_seen": "2026-09-16T16:40:48.292436+00:00"
@@ -68,5 +60,5 @@
       "first_seen": "2026-09-23T21:24:50.317480+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }

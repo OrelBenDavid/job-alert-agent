@@ -1,12 +1,7 @@
 {
-  "last_success": "2026-11-09T05:55:04.119190+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-09T15:56:39.574373+00:00",
+  "last_count": 0,
   "consecutive_failures": 0,
-  "jobs": {
-    "AB.D6D": {
-      "title": "Software Engineer (Full Stack)",
-      "first_seen": "2026-08-13T11:24:41.049701+00:00"
-    }
-  },
-  "last_board_total": 1
+  "jobs": {},
+  "last_board_total": 0
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T05:55:04.128459+00:00",
-  "last_count": 43,
+  "last_success": "2026-11-09T15:56:39.584181+00:00",
+  "last_count": 42,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -70,10 +70,6 @@
     "5B.E57": {
       "title": "Panax- Full Stack Developer",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
-    },
-    "F9.27C": {
-      "title": "Popai Health- AI Engineer",
-      "first_seen": "2026-09-10T11:06:09.982907+00:00"
     },
     "A4.271": {
       "title": "Popai Health- Full Stack Developer",
@@ -176,5 +172,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 58
 }
