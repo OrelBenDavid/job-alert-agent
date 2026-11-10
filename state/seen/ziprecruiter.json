@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-09T15:56:39.615161+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-10T01:25:33.137742+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8129327": {
       "title": "Engineering Manager, Big Data",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
+    "8360745": {
+      "title": "Engineering Manager, Big Data, Job Understanding",
+      "first_seen": "2026-11-10T01:25:33.137742+00:00"
     },
     "8128603": {
       "title": "Engineering Manager, Machine Learning",
@@ -51,10 +55,14 @@
       "title": "Sr. Manager, Revenue Operations",
       "first_seen": "2026-10-15T21:14:39.993992+00:00"
     },
+    "8360716": {
+      "title": "Staff Software Engineer, Job Seeker Apps",
+      "first_seen": "2026-11-10T01:25:33.137742+00:00"
+    },
     "5167480": {
       "title": "Staff Software Engineer, Machine Learning",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 68
 }

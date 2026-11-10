@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-09T15:56:38.607232+00:00",
+  "last_success": "2026-11-10T01:25:33.027041+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
-    "7C.479": {
-      "title": "Algo Infrastructure Engineer",
-      "first_seen": "2026-11-05T17:16:52.731455+00:00"
-    },
     "DC.07F": {
       "title": "Backend Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
@@ -14,6 +10,10 @@
     "E0.D61": {
       "title": "Controller",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "7C.479": {
+      "title": "Infrastructure Engineer",
+      "first_seen": "2026-11-05T17:16:52.731455+00:00"
     },
     "13.661": {
       "title": "IT & Corporate Infrastructure Engineer",

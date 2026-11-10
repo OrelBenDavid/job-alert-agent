@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-09T15:56:38.639269+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-10T01:25:33.048732+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "DD.075": {
@@ -59,6 +59,10 @@
       "title": "Senior AI Engineer",
       "first_seen": "2026-09-08T21:02:17.560637+00:00"
     },
+    "5F.479": {
+      "title": "Senior Backend Engineer – AI Platform",
+      "first_seen": "2026-11-10T01:25:33.048732+00:00"
+    },
     "90.F6A": {
       "title": "Senior Performance Marketing Manager",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
@@ -72,5 +76,5 @@
       "first_seen": "2026-09-22T11:24:08.014818+00:00"
     }
   },
-  "last_board_total": 32
+  "last_board_total": 33
 }
