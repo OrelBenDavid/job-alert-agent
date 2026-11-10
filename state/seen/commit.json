@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T10:57:45.070780+00:00",
-  "last_count": 45,
+  "last_success": "2026-11-10T19:36:40.130356+00:00",
+  "last_count": 46,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -71,13 +71,13 @@
       "title": "IT Solutions Architect",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "14.479": {
-      "title": "Junior Customer Success Manager",
-      "first_seen": "2026-10-20T14:14:49.292751+00:00"
-    },
     "D6.D6C": {
       "title": "Junior Electronics Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "14.479": {
+      "title": "Junior Sales Manager",
+      "first_seen": "2026-10-20T14:14:49.292751+00:00"
     },
     "49.37B": {
       "title": "Network & Linux Integrator",
@@ -94,6 +94,10 @@
     "45.D57": {
       "title": "Network Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "17.A63": {
+      "title": "Presale Engineer",
+      "first_seen": "2026-11-10T19:36:40.130356+00:00"
     },
     "DD.07A": {
       "title": "Product Director",
@@ -184,5 +188,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 131
+  "last_board_total": 136
 }

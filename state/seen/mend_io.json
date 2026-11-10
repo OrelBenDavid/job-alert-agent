@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T10:57:45.127695+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-10T19:36:40.197077+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "f4a655af-c35f-4efc-90ee-fc30889b510f": {
@@ -14,7 +14,11 @@
     "0c6f2910-3b05-4308-8b91-4dc97f837623": {
       "title": "Digital Success Manager",
       "first_seen": "2026-10-13T16:52:25.839671+00:00"
+    },
+    "fabd644a-0913-4b5c-bcf2-a994aa9831a8": {
+      "title": "Account Manager & Customer Success Manager, International",
+      "first_seen": "2026-11-10T19:36:40.197077+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

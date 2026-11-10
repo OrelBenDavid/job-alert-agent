@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-10T10:57:45.034464+00:00",
-  "last_count": 42,
+  "last_success": "2026-11-10T19:36:40.072404+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-02bdc9c7-b3a0-5d87-8acf-81da3719210a-T1791985098-744000160863329": {
+      "title": "Product Manager - Wix Editor Platform",
+      "first_seen": "2026-11-10T19:36:40.072404+00:00"
+    },
     "https://careers.wix.com/position/oracle-35096f7b-ba46-5aee-8de6-9ecfe016eb5c-T1793880696-744000160833890": {
       "title": "Data Engineer - AI Core Data",
       "first_seen": "2026-11-10T10:57:45.034464+00:00"

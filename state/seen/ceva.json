@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-10T10:57:45.066710+00:00",
+  "last_success": "2026-11-10T19:36:40.121805+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "A4.471": {
       "title": "AI & DSP Processor Simulators Team Lead",
       "first_seen": "2026-10-21T11:36:47.976821+00:00"
+    },
+    "FF.47B": {
+      "title": "AI NPU Integration & Validation Engineer",
+      "first_seen": "2026-11-10T19:36:40.121805+00:00"
     },
     "36.F64": {
       "title": "AI NPU VLSI Team Leader",
@@ -46,10 +50,6 @@
     "05.47C": {
       "title": "Senior VLSI Design Engineer",
       "first_seen": "2026-10-21T17:02:52.232091+00:00"
-    },
-    "15.F64": {
-      "title": "System Architect",
-      "first_seen": "2026-08-13T11:24:10.823521+00:00"
     },
     "90.47E": {
       "title": "Technical Program Manager – AI Division",

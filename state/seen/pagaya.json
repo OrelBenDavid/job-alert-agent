@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-10T10:57:45.448059+00:00",
+  "last_success": "2026-11-10T19:36:40.224044+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -23,10 +23,6 @@
       "title": "Lead Data Scientist",
       "first_seen": "2026-08-31T13:27:00.381002+00:00"
     },
-    "8156624003": {
-      "title": "Lead Data Scientist",
-      "first_seen": "2026-11-02T10:52:36.043280+00:00"
-    },
     "8198803003": {
       "title": "Production Analyst",
       "first_seen": "2026-11-09T15:56:39.541303+00:00"
@@ -34,6 +30,10 @@
     "7720945003": {
       "title": "Senior Data Scientist",
       "first_seen": "2026-08-13T11:24:34.297495+00:00"
+    },
+    "8156624003": {
+      "title": "Senior Data Scientist",
+      "first_seen": "2026-11-02T10:52:36.043280+00:00"
     },
     "7731816003": {
       "title": "Senior Product Manager",

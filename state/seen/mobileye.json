@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T10:57:45.432830+00:00",
-  "last_count": 152,
+  "last_success": "2026-11-10T19:36:40.201189+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -10,6 +10,14 @@
     "d85072cf-3d47-4c42-a760-2c691af6093b": {
       "title": "AI Algorithm Engineer - Vision Localization Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "b1abd9a9-39f4-466b-b14b-f16013202861": {
+      "title": "AI Implementer",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
+    },
+    "e190d4bb-4ef0-4aaa-ab44-b55858a29d14": {
+      "title": "AI Implementer",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
     },
     "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
       "title": "Algo Software Engineer",
@@ -67,10 +75,6 @@
       "title": "Business Applications Implementation Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
-    "e58368d8-ec21-4e5e-871d-40707762b959": {
-      "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
-      "first_seen": "2026-11-05T17:16:53.363700+00:00"
-    },
     "2a817378-710e-43df-929b-a53ce94f1daa": {
       "title": "C++ Software Developer",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
@@ -98,10 +102,6 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
-    },
-    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
-      "title": "Data Analytics Project Manager",
-      "first_seen": "2026-11-08T10:06:45.293864+00:00"
     },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Science Product Lead - Algorithms Division",
@@ -162,10 +162,6 @@
     "a262af21-b179-42a9-b8e4-1b1a32eb66f4": {
       "title": "Experience Python Developer",
       "first_seen": "2026-11-09T15:56:39.507119+00:00"
-    },
-    "33ea9cd2-d1b8-41a2-bdec-d71659de14f7": {
-      "title": "Experienced Algorithm & Software Engineer",
-      "first_seen": "2026-10-29T18:22:32.207381+00:00"
     },
     "0029e8b1-bdf1-4d0a-9895-7b5ee22c4837": {
       "title": "Experienced Control Algorithms Engineer",
@@ -247,10 +243,6 @@
       "title": "Experienced Verification Engineer",
       "first_seen": "2026-08-23T09:01:22.333835+00:00"
     },
-    "3c8b6509-bee6-4599-86b7-81b413e4e074": {
-      "title": "Functional Regression Engineer",
-      "first_seen": "2026-10-05T14:24:12.490486+00:00"
-    },
     "290558a5-2d4b-459d-9739-28cd904b7d6c": {
       "title": "Hardware Team Lead",
       "first_seen": "2026-10-01T12:58:35.309410+00:00"
@@ -283,9 +275,9 @@
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
     },
-    "d067c94b-f63b-4100-bb3a-229427dd750c": {
-      "title": "NOC Service Analyst (Student Position)",
-      "first_seen": "2026-10-29T18:22:32.207381+00:00"
+    "12c753a2-6aea-4528-b700-5c96ec833c35": {
+      "title": "Operations Control Center Operator - Student Position",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
     },
     "18798a36-f350-4166-a3aa-1d863708cfc9": {
       "title": "Optical Path Safety Architect Manager",
@@ -383,10 +375,6 @@
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
-    "0568658c-174c-43ff-86c8-7a42202cbd8f": {
-      "title": "Senior C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
-      "first_seen": "2026-11-05T17:16:53.363700+00:00"
-    },
     "0d17f0b5-29db-4e7e-8688-08f69d91ad0f": {
       "title": "Senior Data & ML Engineer - 3D Perception Team",
       "first_seen": "2026-10-25T11:10:18.615752+00:00"
@@ -435,6 +423,18 @@
       "title": "Senior Mechanical Engineer",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
+    "76620f20-417e-4849-9d6f-51a7876695e3": {
+      "title": "Senior Network System Architect",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
+    },
+    "d98280e7-0daa-48fa-b1ce-5d4dbc547d83": {
+      "title": "Senior Network System Architect",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
+    },
+    "e5d147ca-0420-4483-94ad-63e2ea8265bd": {
+      "title": "Senior Network System Architect",
+      "first_seen": "2026-11-10T19:36:40.201189+00:00"
+    },
     "bfee467c-d620-41fd-803e-ae9846568ef6": {
       "title": "Senior Product Manager - Autonomous Urban Driving",
       "first_seen": "2026-11-10T10:57:45.432830+00:00"
@@ -474,10 +474,6 @@
     "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
       "title": "Senior Technical Project Manager",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
-    },
-    "ec69a3de-fd8e-429c-a492-74c73940a032": {
-      "title": "Senior Technical Project Manager – Robotaxi",
-      "first_seen": "2026-10-29T18:22:32.207381+00:00"
     },
     "72b82d00-3d08-499b-84ca-c90b12db479d": {
       "title": "Senior Technical Project Manager (Autonomous Driving)",
@@ -555,22 +551,6 @@
       "title": "Technical Assistant & Business Operations for Executive VP",
       "first_seen": "2026-10-12T10:35:45.180661+00:00"
     },
-    "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
-      "title": "Technical PM",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "a0f7bc46-fd68-481a-a646-46c2a943e031": {
-      "title": "Technical PM",
-      "first_seen": "2026-10-07T13:08:47.179245+00:00"
-    },
-    "e54024e2-45ed-482c-a777-251f602d6484": {
-      "title": "Technical PM",
-      "first_seen": "2026-10-04T18:36:01.832073+00:00"
-    },
-    "303d899e-2b03-41f7-97d2-824da4e51190": {
-      "title": "Technical Product Manager — Cloud & Services Temporary Position",
-      "first_seen": "2026-10-25T11:10:18.615752+00:00"
-    },
     "3d955240-fd2d-419d-8035-bf647c3da076": {
       "title": "Technical Product Strategy Manager",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
@@ -582,6 +562,18 @@
     "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
+    },
+    "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
+      "title": "Technical Project Manager - EPGSW",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "a0f7bc46-fd68-481a-a646-46c2a943e031": {
+      "title": "Technical Project Manager - EPGSW",
+      "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "e54024e2-45ed-482c-a777-251f602d6484": {
+      "title": "Technical Project Manager - EPGSW",
+      "first_seen": "2026-10-04T18:36:01.832073+00:00"
     },
     "d8277a1c-bb21-4473-85c6-e9ae35c0f9d3": {
       "title": "Technical Project Manager- AV",
@@ -612,5 +604,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 178
+  "last_board_total": 175
 }

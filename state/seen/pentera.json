@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T10:57:45.453256+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-10T19:36:40.227748+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -55,10 +55,14 @@
       "title": "Senior Software Engineer - AI Autonomous Attacker",
       "first_seen": "2026-11-03T16:57:45.061560+00:00"
     },
+    "BF.474": {
+      "title": "System Administrator",
+      "first_seen": "2026-11-10T19:36:40.227748+00:00"
+    },
     "EE.47F": {
       "title": "Technical Support - Tier 1",
       "first_seen": "2026-11-09T15:56:39.549895+00:00"
     }
   },
-  "last_board_total": 32
+  "last_board_total": 33
 }

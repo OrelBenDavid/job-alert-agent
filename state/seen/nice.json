@@ -1,19 +1,11 @@
 {
-  "last_success": "2026-11-09T15:56:39.529278+00:00",
-  "last_count": 10,
-  "consecutive_failures": 2,
+  "last_success": "2026-11-10T19:36:40.215594+00:00",
+  "last_count": 7,
+  "consecutive_failures": 0,
   "jobs": {
     "5011031101": {
       "title": "Compensation & Benefits Manager, International Region",
       "first_seen": "2026-10-20T14:14:49.869075+00:00"
-    },
-    "5011029101": {
-      "title": "Compensation & Benefits Manager, Israel, EMEA & APAC",
-      "first_seen": "2026-10-20T14:14:49.869075+00:00"
-    },
-    "5009476101": {
-      "title": "Director Engineering",
-      "first_seen": "2026-10-18T10:50:47.119772+00:00"
     },
     "4969705101": {
       "title": "Director of Engineering",
@@ -27,10 +19,6 @@
       "title": "HR Operations Specialist",
       "first_seen": "2026-10-12T21:12:11.906660+00:00"
     },
-    "5011028101": {
-      "title": "Manager, Compensation & Benefits, Israel, EMEA & APAC",
-      "first_seen": "2026-10-20T14:14:49.869075+00:00"
-    },
     "5009701101": {
       "title": "Manager, International Compensation & Benefits",
       "first_seen": "2026-10-20T14:14:49.869075+00:00"
@@ -39,9 +27,9 @@
       "title": "Payroll Accountant part-time",
       "first_seen": "2026-10-21T11:36:48.079989+00:00"
     },
-    "5009477101": {
-      "title": "R&D Director",
-      "first_seen": "2026-10-18T10:50:47.119772+00:00"
+    "5027679101": {
+      "title": "Senior Technology Procurement Specialist: Software, SaaS & Cloud",
+      "first_seen": "2026-11-10T19:36:40.215594+00:00"
     }
   },
   "last_board_total": 115

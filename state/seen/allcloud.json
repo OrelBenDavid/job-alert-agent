@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-10T10:57:45.041683+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-10T19:36:40.092403+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
-    "E0.47A": {
-      "title": "Account Executive - Enterprise Sector",
-      "first_seen": "2026-10-23T11:25:59.835335+00:00"
-    },
     "34.278": {
       "title": "AI and Data Science Team Lead",
       "first_seen": "2026-10-05T14:24:12.377089+00:00"
@@ -15,6 +11,10 @@
       "title": "Assistant Financial Controller (Maternity Cover)",
       "first_seen": "2026-11-02T21:39:34.012118+00:00"
     },
+    "72.376": {
+      "title": "Backend Developer",
+      "first_seen": "2026-11-10T19:36:40.092403+00:00"
+    },
     "08.470": {
       "title": "Cloud DevOps Engineer",
       "first_seen": "2026-10-27T22:04:21.726185+00:00"
@@ -22,6 +22,10 @@
     "F2.F6D": {
       "title": "D&A - Senior Data Engineer",
       "first_seen": "2026-08-20T09:42:36.430143+00:00"
+    },
+    "CC.271": {
+      "title": "D&A - Senior Software Engineer GenAI",
+      "first_seen": "2026-09-16T16:40:48.292436+00:00"
     },
     "EC.370": {
       "title": "Data Architect",
@@ -36,29 +40,29 @@
       "first_seen": "2026-08-20T06:56:44.546300+00:00"
     },
     "3B.47E": {
-      "title": "IT Specialist",
+      "title": "G&A - IT Specialist",
       "first_seen": "2026-11-04T21:13:28.623410+00:00"
     },
     "1F.27B": {
-      "title": "Junior Office & Operations Assistant",
+      "title": "G&A - Junior Office & Operations Assistant",
       "first_seen": "2026-09-28T13:38:07.409898+00:00"
+    },
+    "D4.476": {
+      "title": "G&A - Paralegal Law Student",
+      "first_seen": "2026-10-21T11:36:47.959056+00:00"
     },
     "7A.474": {
       "title": "Marketing Cloud Consultant",
       "first_seen": "2026-11-02T10:52:35.597163+00:00"
     },
-    "D4.476": {
-      "title": "Paralegal Law Student",
-      "first_seen": "2026-10-21T11:36:47.959056+00:00"
-    },
-    "CC.271": {
-      "title": "Senior Software Engineer GenAI",
-      "first_seen": "2026-09-16T16:40:48.292436+00:00"
+    "E0.47A": {
+      "title": "Sales - Account Executive - Enterprise Sector",
+      "first_seen": "2026-10-23T11:25:59.835335+00:00"
     },
     "5F.27C": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-23T21:24:50.317480+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 24
 }
