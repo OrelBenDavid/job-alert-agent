@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T01:25:33.047499+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-10T10:57:45.109288+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -22,6 +22,10 @@
     "8131741": {
       "title": "Data Scientist",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
+    },
+    "8264438": {
+      "title": "Developer Support Engineer",
+      "first_seen": "2026-11-10T10:57:45.109288+00:00"
     },
     "8273868": {
       "title": "GRC Manager",
@@ -55,6 +59,10 @@
       "title": "Revenue Enablement Manager",
       "first_seen": "2026-09-07T12:15:49.274185+00:00"
     },
+    "8330463": {
+      "title": "Senior Automation Engineer",
+      "first_seen": "2026-11-10T10:57:45.109288+00:00"
+    },
     "8312052": {
       "title": "Senior Financial Analyst",
       "first_seen": "2026-10-28T20:11:58.093774+00:00"
@@ -67,9 +75,13 @@
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
     },
-    "7510102": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-09-27T11:52:38.187480+00:00"
+    "8188191": {
+      "title": "Senior Software Engineer, Developer Experience (AI Enablement)",
+      "first_seen": "2026-11-10T10:57:45.109288+00:00"
+    },
+    "8349209": {
+      "title": "Senior Software Engineer- Generative AI",
+      "first_seen": "2026-11-10T10:57:45.109288+00:00"
     },
     "8274188": {
       "title": "Senior Solution Engineer, New Logo",
@@ -84,5 +96,5 @@
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 72
+  "last_board_total": 76
 }

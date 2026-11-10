@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-11-10T01:25:33.094038+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-10T10:57:45.462725+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
+    "9F.470": {
+      "title": "FDE",
+      "first_seen": "2026-11-10T10:57:45.462725+00:00"
+    },
     "74.E58": {
       "title": "Product Manager",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T01:25:33.004398+00:00",
-  "last_count": 37,
+  "last_success": "2026-11-10T10:57:45.065263+00:00",
+  "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -135,6 +135,10 @@
       "title": "Software Engineer – RBI",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
+    "5027533101": {
+      "title": "Staff Software Engineer — AI Enablement Group",
+      "first_seen": "2026-11-10T10:57:45.065263+00:00"
+    },
     "4961284101": {
       "title": "Support Enablement Engineer",
       "first_seen": "2026-08-31T13:26:59.910189+00:00"
@@ -152,5 +156,5 @@
       "first_seen": "2026-11-08T17:52:13.174961+00:00"
     }
   },
-  "last_board_total": 120
+  "last_board_total": 124
 }

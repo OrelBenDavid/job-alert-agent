@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T01:25:33.019859+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-10T10:57:45.080479+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
@@ -71,6 +71,10 @@
       "title": "Senior Software Engineer (Cloud/Backend)",
       "first_seen": "2026-10-18T15:45:05.276787+00:00"
     },
+    "4941ae42-6e45-4748-a72d-bc124422d63a": {
+      "title": "Senior System Engineer",
+      "first_seen": "2026-11-10T10:57:45.080479+00:00"
+    },
     "68f76df0-357e-4e16-b131-da844a19df2b": {
       "title": "System Engineer",
       "first_seen": "2026-10-11T19:27:32.653735+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

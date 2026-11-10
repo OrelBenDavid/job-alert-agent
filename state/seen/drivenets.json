@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-10T01:25:33.023699+00:00",
+  "last_success": "2026-11-10T10:57:45.084865+00:00",
   "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
@@ -39,14 +39,6 @@
       "title": "IT DevOps Engineer",
       "first_seen": "2026-09-14T12:31:04.038394+00:00"
     },
-    "80.375": {
-      "title": "Logistics Specialist",
-      "first_seen": "2026-09-24T11:33:41.848395+00:00"
-    },
-    "95.277": {
-      "title": "Mechanical NPI & Manufacturing Engineer",
-      "first_seen": "2026-10-07T13:08:46.737728+00:00"
-    },
     "07.077": {
       "title": "NetSuite Logistics & Supply Chain Specialist",
       "first_seen": "2026-08-18T15:40:35.028027+00:00"
@@ -66,6 +58,10 @@
     "9F.278": {
       "title": "Principal Technologist AI Compute",
       "first_seen": "2026-09-23T04:30:24.673293+00:00"
+    },
+    "AF.470": {
+      "title": "Product Manager, AI Factories Orchestration, Agent Harness",
+      "first_seen": "2026-11-10T10:57:45.084865+00:00"
     },
     "2C.F69": {
       "title": "QA / E2E engineer",
@@ -110,6 +106,10 @@
     "9A.37C": {
       "title": "Senior Product Manager - Switch Network Operating System",
       "first_seen": "2026-10-07T20:32:54.173113+00:00"
+    },
+    "6E.477": {
+      "title": "Senior Product Manager, AI Factories Provisioning and Orchestration",
+      "first_seen": "2026-11-10T10:57:45.084865+00:00"
     },
     "C8.45B": {
       "title": "Senior Signal Integrity Engineer",

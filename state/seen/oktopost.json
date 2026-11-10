@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-10T01:25:33.078256+00:00",
   "last_count": 3,
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "jobs": {
     "45b60435-f236-45ad-955e-954844ff8d3c": {
       "title": "Infrastructure Tech Lead",

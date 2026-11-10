@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-10T01:25:33.072626+00:00",
+  "last_success": "2026-11-10T10:57:45.438878+00:00",
   "last_count": 70,
   "consecutive_failures": 0,
   "jobs": {
@@ -123,10 +123,6 @@
       "title": "Partner Solutions Architect",
       "first_seen": "2026-10-22T17:01:56.108561+00:00"
     },
-    "5004901101": {
-      "title": "People Program Manager",
-      "first_seen": "2026-10-14T11:38:22.543871+00:00"
-    },
     "5001806101": {
       "title": "Product Manager - Anti Fraud",
       "first_seen": "2026-10-22T17:01:56.108561+00:00"
@@ -159,6 +155,10 @@
       "title": "Security Engineering Lead",
       "first_seen": "2026-08-27T14:03:31.438634+00:00"
     },
+    "4967584101": {
+      "title": "Security Risk Lead",
+      "first_seen": "2026-11-10T10:57:45.438878+00:00"
+    },
     "4945568101": {
       "title": "Security Solutions Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
@@ -171,21 +171,21 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "5009601101": {
-      "title": "Senior Customer AI Engineer - Token Factory",
-      "first_seen": "2026-10-30T09:51:47.480406+00:00"
-    },
     "5000504101": {
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
     },
-    "4982904101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    "5009601101": {
+      "title": "Senior Customer AI Engineer - Token Factory",
+      "first_seen": "2026-10-30T09:51:47.480406+00:00"
     },
     "4724503101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-09T16:27:11.356104+00:00"
+    },
+    "4982904101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-23T11:20:30.692096+00:00"
     },
     "4986448101": {
       "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
@@ -271,18 +271,18 @@
       "title": "Threat Hunting Team Lead (Cyber Security)",
       "first_seen": "2026-10-12T10:35:45.189751+00:00"
     },
-    "4913573101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-21T17:02:52.811980+00:00"
-    },
     "4995853101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-16T16:30:21.568679+00:00"
+    },
+    "4913573101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-21T17:02:52.811980+00:00"
     },
     "4794078101": {
       "title": "Warehouse Logistics Specialist",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 380
+  "last_board_total": 379
 }

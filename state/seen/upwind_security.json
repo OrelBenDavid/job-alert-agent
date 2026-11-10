@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T01:25:33.123672+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-10T10:57:45.488710+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "5C.375": {
@@ -10,6 +10,10 @@
     "4C.C69": {
       "title": "AI Engineering Lead",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
+    },
+    "9F.472": {
+      "title": "AI Product Manager",
+      "first_seen": "2026-11-10T10:57:45.488710+00:00"
     },
     "BA.04A": {
       "title": "Backend Software Engineer",
@@ -103,10 +107,14 @@
       "title": "Technical Support Engineer – Student Position",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     },
+    "BF.477": {
+      "title": "Technical Writer",
+      "first_seen": "2026-11-10T10:57:45.488710+00:00"
+    },
     "C6.E69": {
       "title": "Threat Security Researcher",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 99
+  "last_board_total": 102
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-10T01:25:33.018719+00:00",
-  "last_count": 30,
+  "last_success": "2026-11-10T10:57:45.075506+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
     "75.277": {
@@ -27,9 +27,9 @@
       "title": "Full Stack Engineer - CTO Office",
       "first_seen": "2026-11-08T10:06:45.223560+00:00"
     },
-    "59.472": {
-      "title": "Low Level engineer- Endpoint team",
-      "first_seen": "2026-10-29T18:22:31.198819+00:00"
+    "5E.47F": {
+      "title": "MLOps Engineer",
+      "first_seen": "2026-11-10T10:57:45.075506+00:00"
     },
     "A4.562": {
       "title": "Product Manager",
@@ -74,6 +74,10 @@
     "75.47D": {
       "title": "Senior Full Stack Engineer - Infrastructure",
       "first_seen": "2026-10-22T11:36:42.362986+00:00"
+    },
+    "59.472": {
+      "title": "Senior Low Level Engineer- Endpoint Team",
+      "first_seen": "2026-10-29T18:22:31.198819+00:00"
     },
     "A5.865": {
       "title": "Senior Product Manager",

@@ -1,15 +1,15 @@
 {
-  "last_success": "2026-11-10T01:25:33.040550+00:00",
+  "last_success": "2026-11-10T10:57:45.102290+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
-    "faa5807c-2256-4e74-9f3f-7e15e083d667": {
-      "title": "Finops Lead",
-      "first_seen": "2026-11-08T17:52:13.211118+00:00"
-    },
     "c6ab01a2-c1c6-48ea-9969-87b8bf7ae632": {
       "title": "Revenue Controller",
       "first_seen": "2026-09-28T13:38:07.472973+00:00"
+    },
+    "faa5807c-2256-4e74-9f3f-7e15e083d667": {
+      "title": "Finops Lead",
+      "first_seen": "2026-11-08T17:52:13.211118+00:00"
     },
     "c35023b7-e40a-48b1-bdc6-1b307c1c9e39": {
       "title": "Senior Marketing Manager – Israel & Central Europe",
@@ -47,6 +47,10 @@
       "title": "Frontend Engineer",
       "first_seen": "2026-11-04T21:13:28.672774+00:00"
     },
+    "e1979e64-6c15-476b-b573-61da7524d7cb": {
+      "title": "AI Product Data Analyst",
+      "first_seen": "2026-11-08T17:52:13.211118+00:00"
+    },
     "9010e73d-8849-4c6c-b0de-aecaa27add51": {
       "title": "AI Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
@@ -63,10 +67,6 @@
       "title": "AI Platform Product Manager",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
-    "e1979e64-6c15-476b-b573-61da7524d7cb": {
-      "title": "AI Product Data Analyst",
-      "first_seen": "2026-11-08T17:52:13.211118+00:00"
-    },
     "e98de9e6-88c1-4b37-9ee6-34864a54a2d3": {
       "title": "Engineering Team Lead",
       "first_seen": "2026-10-26T12:44:14.689693+00:00"
@@ -80,5 +80,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 89
+  "last_board_total": 91
 }
