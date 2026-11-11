@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.396452+00:00",
-  "last_count": 39,
+  "last_success": "2026-11-11T19:29:47.803144+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -63,9 +63,9 @@
       "title": "Product Manager, AI Factories Spatial Planning Tool",
       "first_seen": "2026-11-11T01:11:08.775761+00:00"
     },
-    "70.57F": {
-      "title": "Project Manager",
-      "first_seen": "2026-11-11T10:40:02.396452+00:00"
+    "90.57A": {
+      "title": "Product Manager, Network Domain",
+      "first_seen": "2026-11-11T19:29:47.803144+00:00"
     },
     "2C.F69": {
       "title": "QA / E2E engineer",
@@ -155,10 +155,14 @@
       "title": "Team Lead- AI Datacenter Orchestration Platform",
       "first_seen": "2026-10-22T11:36:42.367247+00:00"
     },
+    "70.57F": {
+      "title": "Technical Project Manager",
+      "first_seen": "2026-11-11T10:40:02.396452+00:00"
+    },
     "F1.C65": {
       "title": "Vendor Managment",
       "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 46
+  "last_board_total": 48
 }

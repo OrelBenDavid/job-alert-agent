@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-11-11T10:40:02.507557+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-11T19:29:48.335027+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
       "title": "AI Engineering Tech Lead – Hands-on",
       "first_seen": "2026-08-25T18:50:07.844799+00:00"
-    },
-    "1A.37A": {
-      "title": "Data Lead",
-      "first_seen": "2026-10-08T18:46:43.537011+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.476500+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-11T19:29:48.310968+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -26,10 +26,6 @@
     "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
       "title": "PHY Algorithms Senior Engineer - AI/ML",
       "first_seen": "2026-09-09T16:27:11.366944+00:00"
-    },
-    "08381099-f5c2-4fd8-ac1c-a1b59368aac8": {
-      "title": "PHY System Manager",
-      "first_seen": "2026-11-09T15:56:39.548616+00:00"
     },
     "3fd7bb8a-41d8-47a0-a9bf-95e3ccd406d7": {
       "title": "Product Line Manager",
@@ -76,5 +72,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 51
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.377014+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-11T19:29:47.769526+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -63,14 +63,10 @@
       "title": "Senior FP&A Analyst - SaaS",
       "first_seen": "2026-10-19T12:52:14.718746+00:00"
     },
-    "4D.370": {
-      "title": "Solutions Expert",
-      "first_seen": "2026-10-18T10:50:46.669994+00:00"
-    },
     "8B.278": {
       "title": "Staff DevOps Engineer",
       "first_seen": "2026-11-03T06:23:30.313373+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 37
 }

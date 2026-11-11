@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.439905+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-11T19:29:48.260055+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "DD.075": {
@@ -74,7 +74,11 @@
     "FE.277": {
       "title": "Technical Support Engineer",
       "first_seen": "2026-09-22T11:24:08.014818+00:00"
+    },
+    "4F.478": {
+      "title": "Technical Trainer",
+      "first_seen": "2026-11-11T19:29:48.260055+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 35
 }

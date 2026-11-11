@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.470679+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-11T19:29:48.298505+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "45b60435-f236-45ad-955e-954844ff8d3c": {
@@ -10,11 +10,7 @@
     "8dfeffc6-566e-4efb-b5d1-a98af6d3a7e6": {
       "title": "QA Automation Engineer",
       "first_seen": "2026-11-09T15:56:39.532010+00:00"
-    },
-    "c43827f9-2453-4282-9d75-9322ce8507fd": {
-      "title": "Senior Full-Stack Developer",
-      "first_seen": "2026-08-18T19:28:34.657398+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.391891+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-11T19:29:47.798594+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
@@ -51,6 +51,10 @@
       "title": "Senior Embedded Vulnerability Researcher",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
     },
+    "c52b5124-fe2a-4acf-9ad1-a943598a2df5": {
+      "title": "Senior Mechanical Engineer",
+      "first_seen": "2026-11-11T19:29:47.798594+00:00"
+    },
     "67b5b100-6c79-4c61-a159-7fe815339187": {
       "title": "Senior Organizational Development (OD) Lead",
       "first_seen": "2026-11-03T16:57:44.529105+00:00"
@@ -80,5 +84,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

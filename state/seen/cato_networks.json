@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.376486+00:00",
-  "last_count": 40,
+  "last_success": "2026-11-11T19:29:47.768999+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -75,10 +75,6 @@
       "title": "Product Designer",
       "first_seen": "2026-10-29T18:22:31.187052+00:00"
     },
-    "4882479101": {
-      "title": "Product Manager - AI Security",
-      "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
     "5000667101": {
       "title": "Product Manager - Data Security",
       "first_seen": "2026-10-11T19:27:32.637554+00:00"
@@ -123,11 +119,11 @@
       "title": "Software Engineer",
       "first_seen": "2026-11-03T16:57:44.503344+00:00"
     },
-    "5030360101": {
+    "5030362101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-10T19:36:40.115616+00:00"
     },
-    "5030362101": {
+    "5030360101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-10T19:36:40.115616+00:00"
     },
@@ -164,5 +160,5 @@
       "first_seen": "2026-11-08T17:52:13.174961+00:00"
     }
   },
-  "last_board_total": 125
+  "last_board_total": 124
 }

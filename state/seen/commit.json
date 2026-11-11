@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.382656+00:00",
-  "last_count": 47,
+  "last_success": "2026-11-11T19:29:47.782597+00:00",
+  "last_count": 49,
   "consecutive_failures": 0,
   "jobs": {
     "BD.277": {
@@ -34,6 +34,10 @@
     "96.D65": {
       "title": "Board Design Engineer",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "90.57C": {
+      "title": "Chief Information Security Officer",
+      "first_seen": "2026-11-11T19:29:47.782597+00:00"
     },
     "97.76F": {
       "title": "Data Engineer",
@@ -98,6 +102,10 @@
     "45.D57": {
       "title": "Network Team Lead",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "A0.578": {
+      "title": "NOC Analyst",
+      "first_seen": "2026-11-11T19:29:47.782597+00:00"
     },
     "17.A63": {
       "title": "Presale Engineer",
@@ -192,5 +200,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 138
+  "last_board_total": 141
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.464155+00:00",
-  "last_count": 70,
+  "last_success": "2026-11-11T19:29:48.292169+00:00",
+  "last_count": 71,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -163,6 +163,10 @@
       "title": "Security Solutions Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
+    "5030796101": {
+      "title": "Senior AP Accountant",
+      "first_seen": "2026-11-11T19:29:48.292169+00:00"
+    },
     "4990886101": {
       "title": "Senior Applied Scientist, Efficient LLM Inference & Model Optimization",
       "first_seen": "2026-09-30T22:09:48.653631+00:00"
@@ -284,5 +288,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 374
+  "last_board_total": 377
 }

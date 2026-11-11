@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-11-11T10:40:02.414974+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-11T19:29:47.829113+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
+    "d1188742-792c-4202-873c-d4600a1f22c1": {
+      "title": "Customer Experience Specialist",
+      "first_seen": "2026-11-11T19:29:47.829113+00:00"
+    },
     "c6ab01a2-c1c6-48ea-9969-87b8bf7ae632": {
       "title": "Revenue Controller",
       "first_seen": "2026-09-28T13:38:07.472973+00:00"
+    },
+    "833324dd-0120-4432-a0d9-b7f6c6df8c91": {
+      "title": "Head of Revenue Operation",
+      "first_seen": "2026-11-11T19:29:47.829113+00:00"
     },
     "faa5807c-2256-4e74-9f3f-7e15e083d667": {
       "title": "Finops Lead",
@@ -76,5 +84,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 91
+  "last_board_total": 97
 }

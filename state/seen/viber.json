@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-11T10:40:02.530163+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-11T19:29:48.357099+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
+    "E5.47B": {
+      "title": "AI Creative Designer",
+      "first_seen": "2026-11-11T19:29:48.357099+00:00"
+    },
     "CC.C69": {
       "title": "B2B Marketing Design Lead",
       "first_seen": "2026-08-13T11:24:49.426826+00:00"
@@ -20,5 +24,5 @@
       "first_seen": "2026-10-06T15:50:16.489694+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 19
 }

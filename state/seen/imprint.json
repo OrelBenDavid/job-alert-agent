@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T10:40:02.418004+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-11T19:29:47.832136+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "332aa0e9-46b5-4f89-bee8-3e63362d3056": {
@@ -15,10 +15,6 @@
       "title": "Partner Marketing Manager",
       "first_seen": "2026-09-09T20:50:52.932578+00:00"
     },
-    "3277b37e-4972-4152-a379-9c58c000b08e": {
-      "title": "Data Scientist, Risk",
-      "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
     "8b9bee00-2a81-4872-93f9-e85b1f3cef07": {
       "title": "Sr. Marketing Designer",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
@@ -28,5 +24,5 @@
       "first_seen": "2026-11-06T22:58:43.241583+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 18
 }
