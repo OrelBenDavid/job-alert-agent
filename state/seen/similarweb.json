@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T01:11:08.870427+00:00",
-  "last_count": 25,
+  "last_success": "2026-11-11T10:40:02.512101+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "6897277": {
@@ -10,6 +10,10 @@
     "7972320": {
       "title": "Big Data Engineer",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8377855": {
+      "title": "Customer Success Manager- SMB",
+      "first_seen": "2026-11-11T10:40:02.512101+00:00"
     },
     "8284137": {
       "title": "Data Analyst- Product Data & AI Quality",
@@ -104,5 +108,5 @@
       "first_seen": "2026-11-01T13:07:06.616871+00:00"
     }
   },
-  "last_board_total": 59
+  "last_board_total": 60
 }

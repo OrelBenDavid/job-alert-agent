@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T01:11:08.885236+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-11T10:40:02.527238+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "5C.375": {
@@ -79,14 +79,6 @@
       "title": "Senior Vulnerability Researcher",
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     },
-    "7F.F61": {
-      "title": "Talent Acquisition Partner",
-      "first_seen": "2026-08-20T06:56:59.899617+00:00"
-    },
-    "A9.863": {
-      "title": "Talent Sourcing Partner",
-      "first_seen": "2026-09-05T04:09:25.616350+00:00"
-    },
     "76.27A": {
       "title": "Technical Account Manager",
       "first_seen": "2026-09-09T11:10:07.797861+00:00"
@@ -108,5 +100,5 @@
       "first_seen": "2026-08-20T06:56:59.899617+00:00"
     }
   },
-  "last_board_total": 100
+  "last_board_total": 98
 }

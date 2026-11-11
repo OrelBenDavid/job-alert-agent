@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T01:11:08.775761+00:00",
-  "last_count": 38,
+  "last_success": "2026-11-11T10:40:02.396452+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -62,6 +62,10 @@
     "40.572": {
       "title": "Product Manager, AI Factories Spatial Planning Tool",
       "first_seen": "2026-11-11T01:11:08.775761+00:00"
+    },
+    "70.57F": {
+      "title": "Project Manager",
+      "first_seen": "2026-11-11T10:40:02.396452+00:00"
     },
     "2C.F69": {
       "title": "QA / E2E engineer",
@@ -156,5 +160,5 @@
       "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 46
 }
