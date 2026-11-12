@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T02:12:22.129738+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-12T10:52:16.250925+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -39,9 +39,9 @@
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
-    "8169233": {
-      "title": "Principal Product Manager -  Business Applications",
-      "first_seen": "2026-09-06T15:21:44.981526+00:00"
+    "8312198": {
+      "title": "Product Manager, Artifactory Packages",
+      "first_seen": "2026-11-12T10:52:16.250925+00:00"
     },
     "8074288": {
       "title": "R&D Team Leader - Package Security",
@@ -63,6 +63,10 @@
       "title": "Senior Global Organizational Development Partner",
       "first_seen": "2026-11-01T13:07:06.255553+00:00"
     },
+    "8305312": {
+      "title": "Senior Graphic & Motion Designer",
+      "first_seen": "2026-11-12T10:52:16.250925+00:00"
+    },
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
@@ -79,10 +83,14 @@
       "title": "Software Architect, Security",
       "first_seen": "2026-11-04T14:18:43.063097+00:00"
     },
+    "8344440": {
+      "title": "Software Engineer - Artifactory",
+      "first_seen": "2026-11-12T10:52:16.250925+00:00"
+    },
     "8242727": {
       "title": "Technical Success Manager",
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 75
+  "last_board_total": 77
 }

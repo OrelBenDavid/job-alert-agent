@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-12T02:12:22.191464+00:00",
+  "last_success": "2026-11-12T10:52:16.330346+00:00",
   "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
@@ -43,6 +43,10 @@
       "title": "Hardware Team Leader – Mixed-Signal Design",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
+    "96.47A": {
+      "title": "HR Business Partner – Global G&A",
+      "first_seen": "2026-11-12T10:52:16.330346+00:00"
+    },
     "74.965": {
       "title": "Integration Technician",
       "first_seen": "2026-08-30T11:45:37.349266+00:00"
@@ -74,10 +78,6 @@
     "66.274": {
       "title": "Senior Embedded Infrastructure Engineer",
       "first_seen": "2026-09-28T13:38:07.581678+00:00"
-    },
-    "8D.474": {
-      "title": "Senior FP&A",
-      "first_seen": "2026-11-09T15:56:39.578865+00:00"
     },
     "B2.476": {
       "title": "Senior Network & Information Security Engineer",
@@ -112,5 +112,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 84
+  "last_board_total": 86
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T02:12:22.166545+00:00",
-  "last_count": 15,
+  "last_success": "2026-11-12T10:52:16.303289+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "20.376": {
@@ -30,6 +30,10 @@
     "4E.474": {
       "title": "Sales Development Representative IBERIA",
       "first_seen": "2026-11-08T00:22:28.160789+00:00"
+    },
+    "A3.57B": {
+      "title": "Sales Development Representative – UAE",
+      "first_seen": "2026-11-12T10:52:16.303289+00:00"
     },
     "20.377": {
       "title": "Security Research Team Lead",
@@ -64,5 +68,5 @@
       "first_seen": "2026-11-09T15:56:39.549895+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }

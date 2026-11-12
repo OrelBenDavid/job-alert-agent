@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T02:12:22.085283+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-12T10:52:16.196405+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -17,10 +17,6 @@
     },
     "DE.B60": {
       "title": "Director of Global Procurement",
-      "first_seen": "2026-08-13T11:24:10.811891+00:00"
-    },
-    "84.561": {
-      "title": "Embedded Linux & Security Engineer",
       "first_seen": "2026-08-13T11:24:10.811891+00:00"
     },
     "E0.F50": {
@@ -62,11 +58,7 @@
     "53.479": {
       "title": "Senior FP&A Analyst - SaaS",
       "first_seen": "2026-10-19T12:52:14.718746+00:00"
-    },
-    "8B.278": {
-      "title": "Staff DevOps Engineer",
-      "first_seen": "2026-11-03T06:23:30.313373+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 35
 }

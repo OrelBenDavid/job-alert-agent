@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-11-12T02:12:22.080055+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-12T10:52:16.191063+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "57.477": {
-      "title": "Controller",
-      "first_seen": "2026-10-27T15:16:56.213690+00:00"
-    },
     "AE.07E": {
       "title": "Legal Counsel",
       "first_seen": "2026-11-01T19:29:19.122941+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 4
 }

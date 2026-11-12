@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T02:12:22.118722+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-12T10:52:16.240844+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "CD.B67": {
@@ -31,10 +31,6 @@
       "title": "Frontend Tech Lead",
       "first_seen": "2026-08-19T13:01:25.217272+00:00"
     },
-    "B8.440": {
-      "title": "Fullstack Growth Engineer",
-      "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
     "6E.C60": {
       "title": "HRIS Manager",
       "first_seen": "2026-11-08T10:06:45.259830+00:00"
@@ -56,5 +52,5 @@
       "first_seen": "2026-09-28T21:11:02.396696+00:00"
     }
   },
-  "last_board_total": 13
+  "last_board_total": 12
 }

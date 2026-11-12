@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-12T02:12:22.127613+00:00",
+  "last_success": "2026-11-12T10:52:16.248953+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
@@ -20,7 +20,7 @@
       "first_seen": "2026-11-04T14:18:43.061157+00:00"
     },
     "A2.473": {
-      "title": "Software Automation and DevOps Manager",
+      "title": "Software System Infrastructure and DevOps Manager",
       "first_seen": "2026-10-18T10:50:46.715111+00:00"
     }
   },

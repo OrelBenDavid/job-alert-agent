@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-12T02:12:22.121962+00:00",
+  "last_success": "2026-11-12T10:52:16.243205+00:00",
   "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
@@ -59,12 +59,12 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
     },
-    "ab1200c3-0dcc-4d54-b58c-136461dbe586": {
-      "title": "Backend Tech Lead – AI Platform",
-      "first_seen": "2026-08-13T12:03:53.803704+00:00"
-    },
     "7f8b464c-f0b0-43a7-8092-f10515206edd": {
       "title": "AI Platform Product Manager",
+      "first_seen": "2026-08-13T12:03:53.803704+00:00"
+    },
+    "ab1200c3-0dcc-4d54-b58c-136461dbe586": {
+      "title": "Backend Tech Lead – AI Platform",
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     },
     "e98de9e6-88c1-4b37-9ee6-34864a54a2d3": {
@@ -80,5 +80,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 96
+  "last_board_total": 95
 }

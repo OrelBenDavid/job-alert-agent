@@ -1,14 +1,10 @@
 {
-  "last_success": "2026-11-12T02:12:22.088484+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-12T10:52:16.203801+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "52.E6E": {
       "title": "DevOps Engineer",
-      "first_seen": "2026-08-13T11:24:19.135360+00:00"
-    },
-    "52.F6F": {
-      "title": "DevOps Manager",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
     "C4.272": {
@@ -20,5 +16,5 @@
       "first_seen": "2026-09-17T16:47:40.526892+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 32
 }

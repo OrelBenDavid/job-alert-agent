@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T02:12:22.188401+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-12T10:52:16.327107+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "6897277": {
@@ -18,10 +18,6 @@
     "8284137": {
       "title": "Data Analyst- Product Data & AI Quality",
       "first_seen": "2026-10-15T11:17:05.914433+00:00"
-    },
-    "8239378": {
-      "title": "Data Engineer – Applied ML",
-      "first_seen": "2026-09-30T09:34:02.753315+00:00"
     },
     "6829705": {
       "title": "Data Scientist",
@@ -75,6 +71,10 @@
       "title": "Product Manager",
       "first_seen": "2026-10-12T10:35:45.216313+00:00"
     },
+    "8382497": {
+      "title": "Program Manager, Engineering Operations",
+      "first_seen": "2026-11-12T10:52:16.327107+00:00"
+    },
     "7894254": {
       "title": "Sales Manager",
       "first_seen": "2026-09-04T11:05:18.657150+00:00"
@@ -90,6 +90,10 @@
     "7911963": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-08-13T13:25:04.791162+00:00"
+    },
+    "8239378": {
+      "title": "Senior Data Engineer – Applied ML",
+      "first_seen": "2026-09-30T09:34:02.753315+00:00"
     },
     "7556162": {
       "title": "Senior Data Engineer (Infrastructure)",
@@ -108,5 +112,5 @@
       "first_seen": "2026-11-01T13:07:06.616871+00:00"
     }
   },
-  "last_board_total": 60
+  "last_board_total": 61
 }
