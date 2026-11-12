@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-11T19:29:47.829113+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-12T02:12:22.121962+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "d1188742-792c-4202-873c-d4600a1f22c1": {
@@ -55,10 +55,6 @@
       "title": "Frontend Engineer",
       "first_seen": "2026-11-04T21:13:28.672774+00:00"
     },
-    "9010e73d-8849-4c6c-b0de-aecaa27add51": {
-      "title": "AI Backend Engineer",
-      "first_seen": "2026-10-12T10:35:45.152916+00:00"
-    },
     "3ad5440b-6e7a-4a06-a4ec-3555a90716d1": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
     }
   },
-  "last_board_total": 97
+  "last_board_total": 96
 }
