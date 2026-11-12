@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-11-12T10:52:16.167492+00:00",
-  "last_count": 44,
+  "last_success": "2026-11-12T19:47:36.803665+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-97a9febc-7839-518e-91fd-bdcf7cfad332-T1794211935-744000161298399": {
+      "title": "FP&A analyst",
+      "first_seen": "2026-11-12T19:47:36.803665+00:00"
+    },
+    "https://careers.wix.com/position/oracle-e185ca04-b927-59fa-8b38-7747c55cd41d-T1786870929-744000161296064": {
+      "title": "Product Manager - Premium Services",
+      "first_seen": "2026-11-12T19:47:36.803665+00:00"
+    },
     "https://careers.wix.com/position/oracle-56a5f9ea-12b7-516d-a620-d1d91068a0d5-T1794227382-744000161234245": {
       "title": "Data Analyst - Customer Care (Base44)",
       "first_seen": "2026-11-12T10:52:16.167492+00:00"
@@ -23,10 +31,6 @@
       "title": "Account Manager - Base44",
       "first_seen": "2026-11-10T10:57:45.034464+00:00"
     },
-    "https://careers.wix.com/position/oracle-97a9febc-7839-518e-91fd-bdcf7cfad332-T1794211935-744000160617949": {
-      "title": "FP&A analyst",
-      "first_seen": "2026-11-09T15:56:38.558078+00:00"
-    },
     "https://careers.wix.com/position/oracle-947ace7e-0b29-5ca5-8748-047616aa683d-T1792913993-744000159588879": {
       "title": "Infrastructure Engineer – DevOps & Core Systems",
       "first_seen": "2026-11-04T14:18:42.965308+00:00"
@@ -42,10 +46,6 @@
     "https://careers.wix.com/position/oracle-d55e7819-32f2-5cda-9ef2-197144e94782-T1793521555-744000159308349": {
       "title": "IL Benefits Expert",
       "first_seen": "2026-11-03T16:57:44.470943+00:00"
-    },
-    "https://careers.wix.com/position/oracle-c3ca7595-b6a9-5113-aad1-32db6250eb8b-T1787130157-744000158972379": {
-      "title": "Product Manager - Premium Growth",
-      "first_seen": "2026-11-01T19:29:19.103480+00:00"
     },
     "https://careers.wix.com/position/oracle-329c5d81-7461-5d14-92be-07811f8b2b55-T1792481048-744000158971809": {
       "title": "Technical Support Team Lead | Customer Care",
@@ -153,10 +153,6 @@
     },
     "https://careers.wix.com/position/REF3097W-744000156782609": {
       "title": "Full Stack Engineer - Wix Code",
-      "first_seen": "2026-11-06T16:42:05.263937+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000156181029": {
-      "title": "Tech Lead - Fed Core",
       "first_seen": "2026-11-06T16:42:05.263937+00:00"
     },
     "https://careers.wix.com/position/REF3097W-744000152028049": {

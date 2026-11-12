@@ -1,18 +1,22 @@
 {
-  "last_success": "2026-11-12T10:52:16.235124+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-12T19:47:36.844716+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
+    "F3.578": {
+      "title": "DevSecOps Engineer",
+      "first_seen": "2026-11-12T19:47:36.844716+00:00"
+    },
     "6C.478": {
       "title": "Fullstack Engineer - CDP",
       "first_seen": "2026-11-05T17:16:52.737074+00:00"
     },
-    "D4.277": {
-      "title": "Hands-On Backend Team Lead",
-      "first_seen": "2026-09-09T11:10:07.709550+00:00"
+    "E3.578": {
+      "title": "Hands-On Backend Team Lead (Jerusalem)",
+      "first_seen": "2026-11-12T19:47:36.844716+00:00"
     },
-    "D4.277-41.10D": {
-      "title": "Hands-On Backend Team Lead",
+    "D4.277": {
+      "title": "Hands-On Backend Team Lead (Tel-Aviv)",
       "first_seen": "2026-09-09T11:10:07.709550+00:00"
     },
     "E8.663": {
@@ -60,5 +64,5 @@
       "first_seen": "2026-09-01T18:20:52.161733+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

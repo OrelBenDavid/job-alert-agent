@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T10:52:16.250925+00:00",
-  "last_count": 22,
+  "last_success": "2026-11-12T19:47:36.869799+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
@@ -63,10 +63,6 @@
       "title": "Senior Global Organizational Development Partner",
       "first_seen": "2026-11-01T13:07:06.255553+00:00"
     },
-    "8305312": {
-      "title": "Senior Graphic & Motion Designer",
-      "first_seen": "2026-11-12T10:52:16.250925+00:00"
-    },
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
@@ -79,18 +75,18 @@
       "title": "Senior Solution Engineer, New Logo",
       "first_seen": "2026-10-13T06:35:37.288775+00:00"
     },
+    "8382400": {
+      "title": "Software Architect, CTO Lab",
+      "first_seen": "2026-11-12T19:47:36.869799+00:00"
+    },
     "8344450": {
       "title": "Software Architect, Security",
       "first_seen": "2026-11-04T14:18:43.063097+00:00"
-    },
-    "8344440": {
-      "title": "Software Engineer - Artifactory",
-      "first_seen": "2026-11-12T10:52:16.250925+00:00"
     },
     "8242727": {
       "title": "Technical Success Manager",
       "first_seen": "2026-10-05T14:24:12.460892+00:00"
     }
   },
-  "last_board_total": 77
+  "last_board_total": 76
 }

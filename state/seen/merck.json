@@ -1,8 +1,16 @@
 {
-  "last_success": "2026-11-12T10:52:16.268147+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-12T19:47:36.893101+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "R416472": {
+      "title": "Clinical Trial Coordinator - Intern",
+      "first_seen": "2026-11-12T19:47:36.893101+00:00"
+    },
+    "R426983": {
+      "title": "Finance Analyst",
+      "first_seen": "2026-11-12T19:47:36.893101+00:00"
+    },
     "R424919": {
       "title": "Customer & Account Specialist",
       "first_seen": "2026-11-09T15:56:38.655986+00:00"
@@ -24,5 +32,5 @@
       "first_seen": "2026-11-02T10:52:35.733104+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 8
 }

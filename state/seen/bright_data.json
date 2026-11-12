@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T10:52:16.191946+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-12T19:47:36.820572+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "E8.37C": {
@@ -10,6 +10,10 @@
     "A5.C6D": {
       "title": "FP&A",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
+    },
+    "9B.477": {
+      "title": "Partnerships Manager (Academy) - Temp",
+      "first_seen": "2026-11-12T19:47:36.820572+00:00"
     },
     "8E.07C": {
       "title": "Payroll Controller",
@@ -40,5 +44,5 @@
       "first_seen": "2026-11-11T10:40:02.370700+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 23
 }

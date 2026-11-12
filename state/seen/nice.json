@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T10:52:16.287805+00:00",
-  "last_count": 7,
+  "last_success": "2026-11-12T19:47:37.709085+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "5011031101": {
@@ -30,7 +30,15 @@
     "5027679101": {
       "title": "Senior Technology Procurement Specialist: Software, SaaS & Cloud",
       "first_seen": "2026-11-10T19:36:40.215594+00:00"
+    },
+    "5034959101": {
+      "title": "Telephony Network Engineer, TSM",
+      "first_seen": "2026-11-12T19:47:37.709085+00:00"
+    },
+    "5034750101": {
+      "title": "Unified Communication Engineer, TSM",
+      "first_seen": "2026-11-12T19:47:37.709085+00:00"
     }
   },
-  "last_board_total": 116
+  "last_board_total": 118
 }

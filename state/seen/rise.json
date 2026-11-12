@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T10:52:16.318038+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-12T19:47:37.734224+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "70.370": {
@@ -22,7 +22,11 @@
     "D0.475": {
       "title": "Professional Services Engineer",
       "first_seen": "2026-10-14T17:00:25.380400+00:00"
+    },
+    "04.572": {
+      "title": "Technical Account Manager, Search Partnerships",
+      "first_seen": "2026-11-12T19:47:37.734224+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

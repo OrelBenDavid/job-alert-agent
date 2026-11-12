@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T10:52:16.230279+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-12T19:47:36.840389+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "4A.27B": {
@@ -75,14 +75,10 @@
       "title": "Support Engineer",
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     },
-    "04.E62": {
-      "title": "SVP Product",
-      "first_seen": "2026-08-26T16:24:36.075903+00:00"
-    },
     "73.276": {
       "title": "System Architect -Azure",
       "first_seen": "2026-09-03T11:04:08.034036+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }
