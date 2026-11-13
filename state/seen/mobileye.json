@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-13T10:48:26.394563+00:00",
-  "last_count": 152,
+  "last_success": "2026-11-13T19:31:05.344015+00:00",
+  "last_count": 151,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -555,10 +555,6 @@
       "title": "Talent Sourcer",
       "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
-    "18dafd7e-c37c-4339-96e0-fe17cb2c6390": {
-      "title": "Technical Assistant & Business Operations for Executive VP",
-      "first_seen": "2026-10-12T10:35:45.180661+00:00"
-    },
     "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
       "title": "Technical Program Manager",
       "first_seen": "2026-10-08T10:21:48.773430+00:00"
@@ -612,5 +608,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 177
+  "last_board_total": 176
 }
