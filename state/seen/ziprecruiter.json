@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-12T19:47:37.786483+00:00",
+  "last_success": "2026-11-13T01:45:37.238650+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -31,6 +31,10 @@
       "title": "Senior Software Engineer, Full Stack",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
     },
+    "5167480": {
+      "title": "Senior Software Engineer II",
+      "first_seen": "2026-08-18T19:28:38.383070+00:00"
+    },
     "5167472": {
       "title": "Senior Software Engineer, Machine Learning",
       "first_seen": "2026-08-18T19:28:38.383070+00:00"
@@ -58,10 +62,6 @@
     "8360716": {
       "title": "Staff Software Engineer, Job Seeker Apps",
       "first_seen": "2026-11-10T01:25:33.137742+00:00"
-    },
-    "5167480": {
-      "title": "Staff Software Engineer, Machine Learning",
-      "first_seen": "2026-08-18T19:28:38.383070+00:00"
     }
   },
   "last_board_total": 57

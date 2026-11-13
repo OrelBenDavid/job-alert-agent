@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-12T19:47:37.706471+00:00",
-  "last_count": 70,
+  "last_success": "2026-11-13T01:45:37.195600+00:00",
+  "last_count": 71,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -167,21 +167,21 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "5009601101": {
-      "title": "Senior Customer AI Engineer - Token Factory",
-      "first_seen": "2026-10-30T09:51:47.480406+00:00"
-    },
     "5000504101": {
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
     },
-    "4724503101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-09T16:27:11.356104+00:00"
+    "5009601101": {
+      "title": "Senior Customer AI Engineer - Token Factory",
+      "first_seen": "2026-10-30T09:51:47.480406+00:00"
     },
     "4982904101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    },
+    "4724503101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
     "5024849101": {
       "title": "Senior / Lead Program Manager",
@@ -239,6 +239,10 @@
       "title": "Senior Software Engineer (Agentic Search) – Web Rendering (Chromium)",
       "first_seen": "2026-10-12T10:35:45.189751+00:00"
     },
+    "4989755101": {
+      "title": "Senior Software Engineer - Search Application (Agentic Search)",
+      "first_seen": "2026-11-13T01:45:37.195600+00:00"
+    },
     "4781977101": {
       "title": "Senior Software Engineer (YDB Team)",
       "first_seen": "2026-10-21T17:02:52.811980+00:00"
@@ -284,5 +288,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 373
+  "last_board_total": 375
 }
