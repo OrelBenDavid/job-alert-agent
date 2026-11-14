@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-11-13T19:31:05.327315+00:00",
+  "last_success": "2026-11-14T17:53:41.223442+00:00",
   "last_count": 21,
-  "consecutive_failures": 2,
+  "consecutive_failures": 0,
   "jobs": {
     "R-076856": {
       "title": "Sales Representative - Joints",
