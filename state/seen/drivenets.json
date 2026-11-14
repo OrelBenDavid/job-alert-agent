@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-14T17:53:41.196460+00:00",
-  "last_count": 41,
+  "last_success": "2026-11-14T22:14:47.149838+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -159,14 +159,10 @@
       "title": "Team Lead- AI Datacenter Orchestration Platform",
       "first_seen": "2026-10-22T11:36:42.367247+00:00"
     },
-    "70.57F": {
-      "title": "Technical Project Manager",
-      "first_seen": "2026-11-11T10:40:02.396452+00:00"
-    },
     "F1.C65": {
       "title": "Vendor Managment",
       "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 49
 }
