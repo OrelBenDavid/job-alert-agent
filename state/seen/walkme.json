@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-13T19:31:05.404972+00:00",
+  "last_success": "2026-11-14T01:22:57.581379+00:00",
   "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,9 +11,9 @@
       "title": "Product Designer",
       "first_seen": "2026-10-18T10:50:47.193173+00:00"
     },
-    "4a69295b-7007-46e9-8c47-f642ac0c9d5a": {
+    "c810c5c9-e9c7-4b01-a361-e9034997de7d": {
       "title": "Product Manager",
-      "first_seen": "2026-11-04T14:18:43.171288+00:00"
+      "first_seen": "2026-11-14T01:22:57.581379+00:00"
     },
     "8a6a1463-8425-4161-a504-9378cc83a903": {
       "title": "Senior C# Developer",
