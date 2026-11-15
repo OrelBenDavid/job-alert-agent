@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-15T06:03:29.022767+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-15T16:13:48.218553+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
+    "R24096": {
+      "title": "אורז.ת  /Distribution Coordinator",
+      "first_seen": "2026-11-15T16:13:48.218553+00:00"
+    },
     "R23644": {
       "title": "Global calibration engineer / מהנדס/ת כיול גלובלי",
       "first_seen": "2026-11-12T19:47:37.383231+00:00"
@@ -108,5 +112,5 @@
       "first_seen": "2026-08-18T22:29:25.515378+00:00"
     }
   },
-  "last_board_total": 26
+  "last_board_total": 27
 }

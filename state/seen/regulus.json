@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:29.048471+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-15T16:13:48.258679+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "3B.473": {
@@ -22,10 +22,6 @@
     "0A.371": {
       "title": "FP&A Analyst",
       "first_seen": "2026-10-11T12:36:12.464346+00:00"
-    },
-    "A1.374": {
-      "title": "Junior / Mid-level Software Engineer (Rust / C++ / GPU)",
-      "first_seen": "2026-11-10T19:36:40.243188+00:00"
     },
     "85.472": {
       "title": "Marketing Communications Manager",
@@ -84,5 +80,5 @@
       "first_seen": "2026-11-04T14:18:43.123162+00:00"
     }
   },
-  "last_board_total": 20
+  "last_board_total": 19
 }

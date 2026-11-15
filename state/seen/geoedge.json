@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-11-15T06:03:28.995225+00:00",
+  "last_success": "2026-11-15T16:13:48.161781+00:00",
   "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "F5.47D": {
       "title": "Customer Success Manager - AppHarbr",
       "first_seen": "2026-10-22T17:01:56.063627+00:00"
-    },
-    "8C.479": {
-      "title": "Head of Product Marketing",
-      "first_seen": "2026-11-04T14:18:43.046914+00:00"
     },
     "4B.37F": {
       "title": "Head of Security & Research",
@@ -18,6 +14,10 @@
     "8D.473": {
       "title": "Senior Security Researcher – Web Threats",
       "first_seen": "2026-11-05T17:16:52.741011+00:00"
+    },
+    "F4.571": {
+      "title": "VP Marketing",
+      "first_seen": "2026-11-15T16:13:48.161781+00:00"
     }
   },
   "last_board_total": 5

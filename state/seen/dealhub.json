@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-15T06:03:28.983671+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-15T16:13:48.140800+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
+    "B5.071": {
+      "title": "AI Solution Expert",
+      "first_seen": "2026-08-16T12:53:49.769613+00:00"
+    },
     "06.65B": {
       "title": "Business Development Representative",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
@@ -43,6 +47,10 @@
       "title": "Payroll Controller Assistant",
       "first_seen": "2026-10-19T20:31:01.016848+00:00"
     },
+    "7A.47C": {
+      "title": "PMO",
+      "first_seen": "2026-11-15T16:13:48.140800+00:00"
+    },
     "26.46D": {
       "title": "Pre-Sales Engineer",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
@@ -55,6 +63,10 @@
       "title": "Product Marketing Manager - GTM Content",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
+    "B4.572": {
+      "title": "Senior SEO & GEO Specialist",
+      "first_seen": "2026-11-15T16:13:48.140800+00:00"
+    },
     "EE.479": {
       "title": "Senior Talent Recruiter & HR Partner",
       "first_seen": "2026-11-09T15:56:38.597394+00:00"
@@ -62,10 +74,6 @@
     "B4.550": {
       "title": "Solution Expert",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
-    },
-    "B5.071": {
-      "title": "Solution Expert",
-      "first_seen": "2026-08-16T12:53:49.769613+00:00"
     },
     "DC.27C": {
       "title": "Staff Software Engineer",
@@ -76,5 +84,5 @@
       "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 31
 }

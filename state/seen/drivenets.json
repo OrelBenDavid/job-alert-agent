@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:28.985425+00:00",
-  "last_count": 40,
+  "last_success": "2026-11-15T16:13:48.146584+00:00",
+  "last_count": 41,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -144,8 +144,12 @@
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
     },
     "B5.117": {
-      "title": "System Architect – Routing and Data Path",
+      "title": "System Architect – Networking Solution",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
+    },
+    "F4.572": {
+      "title": "System Architect- Infrastructure and Platform",
+      "first_seen": "2026-11-15T16:13:48.146584+00:00"
     },
     "8C.067": {
       "title": "System Validation Engineer",
@@ -164,5 +168,5 @@
       "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 49
+  "last_board_total": 50
 }

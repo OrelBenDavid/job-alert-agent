@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-15T06:03:29.008499+00:00",
+  "last_success": "2026-11-15T16:13:48.189018+00:00",
   "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "7939091": {
       "title": "AI Fullstack Engineer - Competitive Intelligence",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
+    },
+    "8391555": {
+      "title": "Assistant Controller, Revenues",
+      "first_seen": "2026-11-15T16:13:48.189018+00:00"
     },
     "7694707": {
       "title": "Business Development Representative",
@@ -23,6 +27,10 @@
       "title": "Developer Support Engineer",
       "first_seen": "2026-11-10T10:57:45.109288+00:00"
     },
+    "8364137": {
+      "title": "Director of Solution Engineering, EMEA",
+      "first_seen": "2026-11-15T16:13:48.189018+00:00"
+    },
     "8273868": {
       "title": "GRC Manager",
       "first_seen": "2026-10-13T16:52:24.835061+00:00"
@@ -38,10 +46,6 @@
     "7996600": {
       "title": "Malware Researcher",
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
-    },
-    "8312198": {
-      "title": "Product Manager, Artifactory Packages",
-      "first_seen": "2026-11-12T10:52:16.250925+00:00"
     },
     "8074288": {
       "title": "R&D Team Leader - Package Security",
@@ -66,10 +70,6 @@
     "8222516": {
       "title": "Senior Offensive Security Engineer",
       "first_seen": "2026-09-28T13:38:07.480458+00:00"
-    },
-    "7510102": {
-      "title": "Senior Software Engineer",
-      "first_seen": "2026-11-11T10:40:02.438482+00:00"
     },
     "8274188": {
       "title": "Senior Solution Engineer, New Logo",

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:28.963091+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-15T16:13:48.107495+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "51.05B": {
@@ -23,6 +23,10 @@
       "title": "Junior System Engineer",
       "first_seen": "2026-10-19T12:52:14.704795+00:00"
     },
+    "A4.573": {
+      "title": "Mechanics Practical Engineer",
+      "first_seen": "2026-11-15T16:13:48.107495+00:00"
+    },
     "5B.A52": {
       "title": "Planner",
       "first_seen": "2026-09-06T10:45:33.728081+00:00"
@@ -41,14 +45,6 @@
     },
     "AE.665": {
       "title": "Quality Control Inspector (QC)",
-      "first_seen": "2026-08-19T09:41:24.926419+00:00"
-    },
-    "95.D65": {
-      "title": "Radar Algorithm Engineer",
-      "first_seen": "2026-08-19T09:41:24.926419+00:00"
-    },
-    "A5.863": {
-      "title": "Radar Systems Engineer",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     },
     "4D.549": {
@@ -72,5 +68,5 @@
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 17
+  "last_board_total": 16
 }

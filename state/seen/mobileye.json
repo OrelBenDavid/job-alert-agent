@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:29.023580+00:00",
-  "last_count": 151,
+  "last_success": "2026-11-15T16:13:48.219620+00:00",
+  "last_count": 149,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -66,10 +66,6 @@
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
-    "3598731b-e2b3-4bd2-8bce-7a17aecf7421": {
-      "title": "Budget & Operations Coordinator",
-      "first_seen": "2026-11-11T10:40:02.456360+00:00"
     },
     "1e62d075-9af9-445c-af3e-b8e35bb1e85c": {
       "title": "Business Applications Implementation Engineer",
@@ -279,10 +275,6 @@
       "title": "Integration and Validation Architect",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
-    "b1883e14-5a78-4cd4-af6d-f22790187366": {
-      "title": "Junior Validation & Integration Engineer",
-      "first_seen": "2026-11-12T19:47:37.701020+00:00"
-    },
     "0dc9875d-91a5-4b2f-a6d1-f7b630123616": {
       "title": "Linux Lab Systems Engineer",
       "first_seen": "2026-11-02T21:39:34.126367+00:00"
@@ -391,9 +383,17 @@
       "title": "Senior C Software Engineer",
       "first_seen": "2026-09-14T12:31:04.081629+00:00"
     },
+    "d1b15808-b89c-4b61-b329-438963133015": {
+      "title": "Senior Data & ML Engineer",
+      "first_seen": "2026-11-15T16:13:48.219620+00:00"
+    },
     "0d17f0b5-29db-4e7e-8688-08f69d91ad0f": {
       "title": "Senior Data & ML Engineer - 3D Perception Team",
       "first_seen": "2026-10-25T11:10:18.615752+00:00"
+    },
+    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
+      "title": "Senior Data Product Validation Engineer",
+      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "aed812a3-0f66-4ec1-baf9-a0bbb4e9c8d2": {
       "title": "Senior Deep Learning Researcher",
@@ -475,18 +475,6 @@
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "3f7ed722-46cf-4851-8c41-6e477f0b2aec": {
-      "title": "Senior System Hardware Architect",
-      "first_seen": "2026-10-22T17:01:56.097307+00:00"
-    },
-    "78d97259-3100-40d6-a6f1-91d1b490682a": {
-      "title": "Senior System Hardware Architect",
-      "first_seen": "2026-10-22T17:01:56.097307+00:00"
-    },
-    "b105f36b-5fe8-43c5-a89e-4c8dd64d6732": {
-      "title": "Senior System Hardware Architect",
-      "first_seen": "2026-10-18T15:45:05.338505+00:00"
-    },
     "9a8fdfe7-1660-4723-8f22-214cb8646f04": {
       "title": "Senior Technical Project Manager",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
@@ -559,6 +547,10 @@
       "title": "Technical Program Manager",
       "first_seen": "2026-10-08T10:21:48.773430+00:00"
     },
+    "72dc088f-2f63-48b7-8e5c-a5ea354c1ec9": {
+      "title": "Technical Project Manager",
+      "first_seen": "2026-11-15T16:13:48.219620+00:00"
+    },
     "f6564ba2-6042-4a14-8106-55ec735ecaf0": {
       "title": "Technical Project Manager",
       "first_seen": "2026-09-17T11:28:45.928098+00:00"
@@ -583,13 +575,13 @@
       "title": "Test Driver for Autonomous Vehicles",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
     },
+    "0dfdcb44-5d96-4700-bd9a-c89eeeef1061": {
+      "title": "US ADAS/AD Business Development Manager - Relocation to Detroit",
+      "first_seen": "2026-11-15T16:13:48.219620+00:00"
+    },
     "a6cf562b-dca7-4708-9772-7539a13b9a37": {
       "title": "Validation & Integration Engineer",
       "first_seen": "2026-11-01T13:07:06.541381+00:00"
-    },
-    "032848ce-2904-4aeb-9caf-3374ddbe8ac4": {
-      "title": "Validation and Testing Engineer",
-      "first_seen": "2026-11-05T17:16:53.363700+00:00"
     },
     "e5a7fb78-7847-499a-94b8-a66033db3998": {
       "title": "Validation Engineer",
@@ -608,5 +600,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 176
+  "last_board_total": 174
 }

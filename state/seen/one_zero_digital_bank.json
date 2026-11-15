@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:29.033238+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-15T16:13:48.237331+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "B4.277": {
@@ -10,10 +10,6 @@
     "B3.575": {
       "title": "Backend Developer – AI Team",
       "first_seen": "2026-11-12T10:52:16.291235+00:00"
-    },
-    "50.762": {
-      "title": "Controller",
-      "first_seen": "2026-08-25T06:59:42.960861+00:00"
     },
     "C9.763": {
       "title": "Data Engineering Team Leader",
@@ -52,5 +48,5 @@
       "first_seen": "2026-11-09T15:56:39.536111+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 11
 }

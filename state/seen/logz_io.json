@@ -1,15 +1,15 @@
 {
-  "last_success": "2026-11-15T06:03:29.015340+00:00",
+  "last_success": "2026-11-15T16:13:48.210497+00:00",
   "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
-    "55b2afb6-9b40-4e34-a2f7-f5821177e19b": {
-      "title": "GTM Engineer – Marketing",
-      "first_seen": "2026-11-04T14:18:43.071150+00:00"
-    },
     "2e02efbc-b0c5-49f3-8a76-9fa56ffe7242": {
       "title": "Head Of Business Operations",
       "first_seen": "2026-10-15T11:17:05.836033+00:00"
+    },
+    "55b2afb6-9b40-4e34-a2f7-f5821177e19b": {
+      "title": "Marketing AI Specialist",
+      "first_seen": "2026-11-04T14:18:43.071150+00:00"
     }
   },
   "last_board_total": 3

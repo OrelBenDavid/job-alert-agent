@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:29.027650+00:00",
-  "last_count": 71,
+  "last_success": "2026-11-15T16:13:48.230957+00:00",
+  "last_count": 69,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -34,10 +34,6 @@
     "5016255101": {
       "title": "Data Center Technician (Early Talent) - Masmiya",
       "first_seen": "2026-11-09T15:56:39.514538+00:00"
-    },
-    "5013930101": {
-      "title": "Data Excellence Manager",
-      "first_seen": "2026-10-26T20:24:20.642261+00:00"
     },
     "5008588101": {
       "title": "Deputy SOC Manager",
@@ -94,10 +90,6 @@
     "4930998101": {
       "title": "Lead Detection Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
-    "5029513101": {
-      "title": "Legal Counsel — Cyber Security, Technology Safety & Physical Security",
-      "first_seen": "2026-11-10T19:36:40.212213+00:00"
     },
     "4952091101": {
       "title": "Manager, ML Solutions Architecture - Token Factory",
@@ -175,13 +167,13 @@
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
     },
-    "4982904101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-23T11:20:30.692096+00:00"
-    },
     "4724503101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-09T16:27:11.356104+00:00"
+    },
+    "4982904101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-23T11:20:30.692096+00:00"
     },
     "5024849101": {
       "title": "Senior / Lead Program Manager",
@@ -288,5 +280,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 374
+  "last_board_total": 371
 }

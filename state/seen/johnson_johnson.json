@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-15T06:03:29.009210+00:00",
-  "last_count": 21,
+  "last_success": "2026-11-15T16:13:48.190021+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
+    "R-109017": {
+      "title": "Engineering Team Leader",
+      "first_seen": "2026-11-15T16:13:48.190021+00:00"
+    },
     "R-076856": {
       "title": "Sales Representative - Joints",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -22,10 +26,6 @@
     "R-082002": {
       "title": "Sales Representative - Surgery",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
-    },
-    "R-105813": {
-      "title": "FPPF Machine operator",
-      "first_seen": "2026-11-01T13:07:06.260204+00:00"
     },
     "R-107543": {
       "title": "Distribution Center Manager",
@@ -51,10 +51,6 @@
       "title": "Quality Engineer",
       "first_seen": "2026-10-22T11:36:42.425048+00:00"
     },
-    "R-101483": {
-      "title": "Senior Product Specialist – Spine, Advanced Technologies & NPI",
-      "first_seen": "2026-10-18T10:50:46.718136+00:00"
-    },
     "R-080950": {
       "title": "Embedded Software Engineer",
       "first_seen": "2026-09-30T09:34:02.304459+00:00"
@@ -75,10 +71,6 @@
       "title": "Clinical Support",
       "first_seen": "2026-09-23T11:20:30.197202+00:00"
     },
-    "R-098171": {
-      "title": "Product Specialist Immunology",
-      "first_seen": "2026-09-16T16:40:48.347173+00:00"
-    },
     "R-091480": {
       "title": "Logic Designer and FPGA Tech Lead",
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
@@ -88,5 +80,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 20
 }

@@ -1,15 +1,39 @@
 {
-  "last_success": "2026-11-15T06:03:29.007491+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-15T16:13:48.175863+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "3D.472": {
       "title": "Head of Corporate Security",
       "first_seen": "2026-11-11T19:29:47.835742+00:00"
     },
+    "BE.474": {
+      "title": "ML Ops Engineer",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
+    },
+    "78.266": {
+      "title": "Security Researcher",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
+    },
+    "6E.D38": {
+      "title": "Senior C++ Engineer",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
+    },
+    "6E.D38-DF.50F": {
+      "title": "Senior C++ Engineer",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
+    },
     "EE.D33": {
       "title": "Senior Devops Engineer",
       "first_seen": "2026-11-11T10:40:02.421750+00:00"
+    },
+    "A4.144": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
+    },
+    "4E.D3D": {
+      "title": "Senior Software Engineer",
+      "first_seen": "2026-11-15T16:13:48.175863+00:00"
     },
     "AE.D38": {
       "title": "Test Development Engineer - Israel",
@@ -24,5 +48,5 @@
       "first_seen": "2026-11-11T10:40:02.421750+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 16
 }

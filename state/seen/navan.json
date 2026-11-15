@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-15T06:03:29.026890+00:00",
+  "last_success": "2026-11-15T16:13:48.223673+00:00",
   "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
@@ -26,10 +26,6 @@
     "7874429": {
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-09-27T11:52:38.211282+00:00"
-    },
-    "8314105": {
-      "title": "Senior Full Stack Engineer - Edge",
-      "first_seen": "2026-11-09T15:56:39.513620+00:00"
     },
     "8188569": {
       "title": "Senior IOS Developer",
@@ -62,6 +58,10 @@
     "8300972": {
       "title": "Staff Full Stack Engineer",
       "first_seen": "2026-10-20T08:24:16.508573+00:00"
+    },
+    "8314105": {
+      "title": "Staff Full Stack Engineer - Edge",
+      "first_seen": "2026-11-09T15:56:39.513620+00:00"
     }
   },
   "last_board_total": 234

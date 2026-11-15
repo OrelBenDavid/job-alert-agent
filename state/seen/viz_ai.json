@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:29.074765+00:00",
-  "last_count": 7,
+  "last_success": "2026-11-15T16:13:48.310736+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "b91dbb83-7901-4927-909f-514e8c0e23f6": {
@@ -26,11 +26,7 @@
     "af774cb0-2b99-4c34-8cea-ab5f6e658a46": {
       "title": "Senior System Engineer",
       "first_seen": "2026-10-05T21:57:14.809965+00:00"
-    },
-    "fc21d226-6a48-4ca2-9e75-a8d609e2d7d1": {
-      "title": "Finance & Accounting Manager",
-      "first_seen": "2026-10-11T19:27:32.792373+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 20
 }

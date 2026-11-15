@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-15T06:03:28.994506+00:00",
-  "last_count": 15,
+  "last_success": "2026-11-15T16:13:48.160854+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "F3.578": {
@@ -26,14 +26,6 @@
     "E8.663-41.10D": {
       "title": "Head of Product - CRM",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
-    "14.47C": {
-      "title": "Marketing Content Specialist -Temporary (Mat Leave Replacement)",
-      "first_seen": "2026-10-20T14:14:49.313485+00:00"
-    },
-    "14.47C-41.10D": {
-      "title": "Marketing Content Specialist -Temporary (Mat Leave Replacement)",
-      "first_seen": "2026-10-20T14:14:49.313485+00:00"
     },
     "3D.37F": {
       "title": "Product Manager - Digital Advertising",
@@ -64,5 +56,5 @@
       "first_seen": "2026-09-01T18:20:52.161733+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 22
 }
