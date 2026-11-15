@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-14T22:14:47.167483+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-15T06:03:29.002700+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "2d6f4777-b6b4-4624-bc38-e51e7f00e736": {
@@ -38,11 +38,7 @@
     "1fea537a-71d6-41c4-b770-10f9bed419ae": {
       "title": "Engineering Manager",
       "first_seen": "2026-11-03T06:23:30.354104+00:00"
-    },
-    "bf5cf208-3d30-4a54-aba3-e01bcef3addc": {
-      "title": "Member Coordinator",
-      "first_seen": "2026-11-12T19:47:36.857920+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 15
 }
