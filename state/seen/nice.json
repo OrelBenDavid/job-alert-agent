@@ -1,15 +1,11 @@
 {
-  "last_success": "2026-11-15T16:13:48.234044+00:00",
+  "last_success": "2026-11-15T22:42:31.108986+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "5011031101": {
       "title": "Compensation & Benefits Manager, International Region",
       "first_seen": "2026-10-20T14:14:49.869075+00:00"
-    },
-    "4969705101": {
-      "title": "Director of Engineering",
-      "first_seen": "2026-09-10T11:06:09.943762+00:00"
     },
     "5010848101": {
       "title": "FP&A Analyst",
@@ -26,6 +22,10 @@
     "5010070101": {
       "title": "Payroll Accountant part-time",
       "first_seen": "2026-10-21T11:36:48.079989+00:00"
+    },
+    "5009477101": {
+      "title": "R&D Director",
+      "first_seen": "2026-11-15T22:42:31.108986+00:00"
     },
     "5027679101": {
       "title": "Senior Technology Procurement Specialist: Software, SaaS & Cloud",

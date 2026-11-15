@@ -1,14 +1,18 @@
 {
-  "last_success": "2026-11-15T16:13:48.243984+00:00",
-  "last_count": 114,
+  "last_success": "2026-11-15T22:42:31.114876+00:00",
+  "last_count": 115,
   "consecutive_failures": 0,
   "jobs": {
-    "JR-024404": {
-      "title": "Senior Principal / Principal Data Scientist Data Scientist - Cloud Team AI&ML  (Cortex)",
-      "first_seen": "2026-11-15T16:13:48.243984+00:00"
+    "JR-019817": {
+      "title": "AI Engineer (Cortex Agenitx)",
+      "first_seen": "2026-11-15T22:42:31.114876+00:00"
     },
     "JR-024395": {
       "title": "Senior Software Engineer – Cloud Migration Tooling (Idira)",
+      "first_seen": "2026-11-15T16:13:48.243984+00:00"
+    },
+    "JR-024404": {
+      "title": "Senior Principal / Principal Data Scientist Data Scientist - Cloud Team AI&ML  (Cortex)",
       "first_seen": "2026-11-15T16:13:48.243984+00:00"
     },
     "JR-023108": {
@@ -460,5 +464,5 @@
       "first_seen": "2026-08-23T09:01:22.409577+00:00"
     }
   },
-  "last_board_total": 115
+  "last_board_total": 116
 }
