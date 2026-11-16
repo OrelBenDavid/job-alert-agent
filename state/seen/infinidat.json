@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.669077+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-16T19:29:33.118458+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "C6.D60": {
@@ -44,7 +44,7 @@
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "17.D69": {
-      "title": "Python Infrastructure Engineer",
+      "title": "Python Backend Developer",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "4C.D6F": {
@@ -78,11 +78,7 @@
     "AA.472": {
       "title": "Talent Acquisition Partner (Temporary Position)",
       "first_seen": "2026-11-02T00:30:53.578956+00:00"
-    },
-    "84.C65": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 35
 }

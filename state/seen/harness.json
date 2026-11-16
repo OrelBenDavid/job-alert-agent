@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.664392+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-16T19:29:33.113489+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "5287440007": {
@@ -10,10 +10,6 @@
     "5198641007": {
       "title": "Content Engineer, Developer Relations",
       "first_seen": "2026-08-18T19:28:26.391856+00:00"
-    },
-    "5256226007": {
-      "title": "Customer Experience Engineer I/II",
-      "first_seen": "2026-10-08T00:54:45.476320+00:00"
     },
     "5266036007": {
       "title": "Forward Deployed Engineer - DevOps/SRE",
@@ -52,5 +48,5 @@
       "first_seen": "2026-10-08T00:54:45.476320+00:00"
     }
   },
-  "last_board_total": 67
+  "last_board_total": 65
 }

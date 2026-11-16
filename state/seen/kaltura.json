@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-16T06:02:40.673493+00:00",
+  "last_success": "2026-11-16T19:29:33.123503+00:00",
   "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
@@ -32,7 +32,7 @@
       "first_seen": "2026-08-13T11:24:25.544419+00:00"
     },
     "EE.474": {
-      "title": "GTM Operations manager",
+      "title": "GTM Operations Manager",
       "first_seen": "2026-11-09T15:56:38.639269+00:00"
     },
     "00.570": {

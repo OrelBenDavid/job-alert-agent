@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-11-16T06:02:40.727783+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-16T19:29:33.206682+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "6D.F63": {
       "title": "AI Engineering Tech Lead – Hands-on",
       "first_seen": "2026-08-25T18:50:07.844799+00:00"
+    },
+    "15.579": {
+      "title": "Product Manager",
+      "first_seen": "2026-11-16T19:29:33.206682+00:00"
     }
   },
-  "last_board_total": 1
+  "last_board_total": 2
 }

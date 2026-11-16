@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.627640+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-16T19:29:33.053944+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "E8.37C": {
@@ -10,10 +10,6 @@
     "A5.C6D": {
       "title": "FP&A",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "9B.477": {
-      "title": "Partnerships Manager (Academy) - Temp",
-      "first_seen": "2026-11-12T19:47:36.820572+00:00"
     },
     "8E.07C": {
       "title": "Payroll Controller",
@@ -38,11 +34,7 @@
     "64.F64": {
       "title": "Senior Backend JavaScript Developer (DCA IDE Team)",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
-    },
-    "A1.84B": {
-      "title": "Technical Customer Support Rep- Student Position",
-      "first_seen": "2026-11-11T10:40:02.370700+00:00"
     }
   },
-  "last_board_total": 23
+  "last_board_total": 21
 }

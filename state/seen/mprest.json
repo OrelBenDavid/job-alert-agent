@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.695044+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-16T19:29:33.157411+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "F9.569": {
@@ -26,10 +26,6 @@
     "00.968": {
       "title": "International Sales Manager",
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
-    },
-    "16.07F": {
-      "title": "Junior Project Manager – Air Defense Systems",
-      "first_seen": "2026-10-15T11:17:05.858277+00:00"
     },
     "5C.17E": {
       "title": "Product Maker",
@@ -60,5 +56,5 @@
       "first_seen": "2026-08-13T11:24:34.268453+00:00"
     }
   },
-  "last_board_total": 14
+  "last_board_total": 13
 }

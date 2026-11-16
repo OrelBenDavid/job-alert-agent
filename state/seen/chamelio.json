@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.632514+00:00",
-  "last_count": 8,
+  "last_success": "2026-11-16T19:29:33.063148+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "20792f61-d947-4535-acb2-2f55814ce733": {
@@ -34,7 +34,11 @@
     "bffcf439-e56b-4c4e-b35e-5508f3cf5a38": {
       "title": "Senior Security Operations Engineer",
       "first_seen": "2026-11-15T22:42:31.042384+00:00"
+    },
+    "301a34e9-b79e-41ac-8f1f-d72381592196": {
+      "title": "Office Admin & Operations Manager (part time)",
+      "first_seen": "2026-11-16T19:29:33.063148+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

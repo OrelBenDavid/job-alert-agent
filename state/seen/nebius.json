@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.697584+00:00",
-  "last_count": 69,
+  "last_success": "2026-11-16T19:29:33.160080+00:00",
+  "last_count": 68,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -79,10 +79,6 @@
       "title": "Group Product Manager - Platform Experience",
       "first_seen": "2026-09-25T17:02:02.577111+00:00"
     },
-    "4961188101": {
-      "title": "Head of Proactive Security",
-      "first_seen": "2026-08-28T15:14:37.408613+00:00"
-    },
     "5004681101": {
       "title": "Intercompany Accountant",
       "first_seen": "2026-11-12T19:47:37.706471+00:00"
@@ -109,10 +105,6 @@
     },
     "4869782101": {
       "title": "Partner Solutions Architect",
-      "first_seen": "2026-10-22T17:01:56.108561+00:00"
-    },
-    "5001806101": {
-      "title": "Product Manager - Anti Fraud",
       "first_seen": "2026-10-22T17:01:56.108561+00:00"
     },
     "4937238101": {
@@ -151,6 +143,10 @@
       "title": "Senior AP Accountant",
       "first_seen": "2026-11-11T19:29:48.292169+00:00"
     },
+    "4537282101": {
+      "title": "Senior Application Security Engineer",
+      "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
     "4990886101": {
       "title": "Senior Applied Scientist, Efficient LLM Inference & Model Optimization",
       "first_seen": "2026-09-30T22:09:48.653631+00:00"
@@ -167,13 +163,17 @@
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-30T09:51:47.480406+00:00"
     },
+    "4982904101": {
+      "title": "Senior Data Engineer",
+      "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    },
     "4724503101": {
       "title": "Senior Data Engineer",
       "first_seen": "2026-09-09T16:27:11.356104+00:00"
     },
-    "4982904101": {
-      "title": "Senior Data Engineer",
-      "first_seen": "2026-09-23T11:20:30.692096+00:00"
+    "4811809101": {
+      "title": "Senior Fullstack Engineer",
+      "first_seen": "2026-11-16T19:29:33.160080+00:00"
     },
     "5024849101": {
       "title": "Senior / Lead Program Manager",
@@ -182,10 +182,6 @@
     "4986448101": {
       "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
       "first_seen": "2026-09-24T11:33:41.909860+00:00"
-    },
-    "5035316101": {
-      "title": "Senior Manager, Integrated Marketing Campaigns",
-      "first_seen": "2026-11-12T19:47:37.706471+00:00"
     },
     "4906640101": {
       "title": "Senior ML Engineer, Search Optimization (Agentic Search)",
@@ -243,13 +239,13 @@
       "title": "Senior SRE (Search)",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "4537282101": {
-      "title": "Senior/Staff Application Security Engineer",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4767377101": {
       "title": "Senior Technical Program Manager - New Data Center Launches",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "4844282101": {
+      "title": "Senior Technical Project Manager (Base Infra)",
+      "first_seen": "2026-11-16T19:29:33.160080+00:00"
     },
     "4965339101": {
       "title": "Senior U.S Securities and Transactional Counsel",
@@ -267,18 +263,18 @@
       "title": "Threat Hunting Team Lead (Cyber Security)",
       "first_seen": "2026-10-12T10:35:45.189751+00:00"
     },
-    "4913573101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-21T17:02:52.811980+00:00"
-    },
     "4995853101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-16T16:30:21.568679+00:00"
+    },
+    "4913573101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-21T17:02:52.811980+00:00"
     },
     "4794078101": {
       "title": "Warehouse Logistics Specialist",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 371
+  "last_board_total": 372
 }

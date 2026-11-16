@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.756489+00:00",
-  "last_count": 7,
+  "last_success": "2026-11-16T19:29:33.247441+00:00",
+  "last_count": 8,
   "consecutive_failures": 0,
   "jobs": {
     "8143530": {
@@ -30,7 +30,11 @@
     "8211515": {
       "title": "Staff Engineer - Office of the CTO",
       "first_seen": "2026-09-17T21:14:08.486973+00:00"
+    },
+    "8392400": {
+      "title": "SW Engineer- Frontend Infra",
+      "first_seen": "2026-11-16T19:29:33.247441+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }

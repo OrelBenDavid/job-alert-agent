@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-16T06:02:40.728887+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-16T19:29:33.207941+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
+    "7712720003": {
+      "title": "Engineering Manager - Windows Endpoint",
+      "first_seen": "2026-11-16T19:29:33.207941+00:00"
+    },
     "7994122003": {
       "title": "Key Solutions Architect, Prompt",
       "first_seen": "2026-10-08T10:21:48.833661+00:00"
@@ -10,10 +14,6 @@
     "8190495003": {
       "title": "Senior Engineering Manager, Generative AI Security- Prompt Security",
       "first_seen": "2026-11-10T19:36:40.255536+00:00"
-    },
-    "8005090003": {
-      "title": "Senior Manager, Detection Ops & Threat Research Infrastructure",
-      "first_seen": "2026-09-30T00:18:14.040195+00:00"
     },
     "7996120003": {
       "title": "Senior Security Researcher - AI Detection",
@@ -30,10 +30,6 @@
     "8038687003": {
       "title": "Senior Software Engineer in Test, Prompt",
       "first_seen": "2026-10-26T12:44:14.748211+00:00"
-    },
-    "7799385003": {
-      "title": "Senior Solutions Engineer - Prompt",
-      "first_seen": "2026-08-13T11:24:41.044983+00:00"
     },
     "8007921003": {
       "title": "Senior Threat researcher",
@@ -76,5 +72,5 @@
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
     }
   },
-  "last_board_total": 255
+  "last_board_total": 254
 }

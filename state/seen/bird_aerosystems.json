@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.624528+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-16T19:29:33.048228+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "51.05B": {
@@ -47,6 +47,10 @@
       "title": "Quality Control Inspector (QC)",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     },
+    "A5.863": {
+      "title": "Radar Systems Engineer",
+      "first_seen": "2026-11-16T19:29:33.048228+00:00"
+    },
     "4D.549": {
       "title": "RT SW Developer",
       "first_seen": "2026-09-08T16:30:33.482649+00:00"
@@ -54,6 +58,10 @@
     "AD.76C": {
       "title": "Sales, Marketing & BD Director",
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
+    },
+    "07.477": {
+      "title": "Senior RF Engineer",
+      "first_seen": "2026-11-16T19:29:33.048228+00:00"
     },
     "83.E60": {
       "title": "Solutions System Engineer",
@@ -68,5 +76,5 @@
       "first_seen": "2026-08-19T09:41:24.926419+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 18
 }

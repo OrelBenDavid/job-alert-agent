@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.734926+00:00",
-  "last_count": 27,
+  "last_success": "2026-11-16T19:29:33.215693+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "A7.37B": {
@@ -22,6 +22,10 @@
     "9D.862": {
       "title": "Debug Practical Engineer",
       "first_seen": "2026-08-13T11:24:41.058684+00:00"
+    },
+    "A5.274": {
+      "title": "Embedded Control Engineer - Data Centers",
+      "first_seen": "2026-11-16T19:29:33.215693+00:00"
     },
     "F2.B65": {
       "title": "Embedded Infrastructure Engineer",
@@ -60,7 +64,7 @@
       "first_seen": "2026-10-20T14:14:49.897181+00:00"
     },
     "CA.474": {
-      "title": "NPI Material and Production Planner",
+      "title": "NPI Material and Production Planner - Temporary position",
       "first_seen": "2026-11-02T10:52:36.090570+00:00"
     },
     "D2.E62": {
@@ -112,5 +116,5 @@
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
     }
   },
-  "last_board_total": 86
+  "last_board_total": 87
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.659758+00:00",
-  "last_count": 16,
+  "last_success": "2026-11-16T19:29:33.108711+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "F6.477": {
@@ -35,10 +35,6 @@
       "title": "Marketing Content Writer",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
     },
-    "BC.84D": {
-      "title": "NOC Engineer- Student Position",
-      "first_seen": "2026-08-13T11:24:25.527383+00:00"
-    },
     "32.963": {
       "title": "Payroll Specialist",
       "first_seen": "2026-08-13T11:24:25.527383+00:00"
@@ -68,5 +64,5 @@
       "first_seen": "2026-09-09T11:10:07.712162+00:00"
     }
   },
-  "last_board_total": 45
+  "last_board_total": 43
 }

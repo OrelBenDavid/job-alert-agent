@@ -1,19 +1,15 @@
 {
-  "last_success": "2026-11-16T06:02:40.757276+00:00",
+  "last_success": "2026-11-16T19:29:33.255806+00:00",
   "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
-    "97.37D": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-10-04T12:11:38.563539+00:00"
+    "9F.471": {
+      "title": "MacOS Developer",
+      "first_seen": "2026-11-16T19:29:33.255806+00:00"
     },
     "CC.473": {
       "title": "Product Marketing Manager",
       "first_seen": "2026-11-04T21:13:28.763885+00:00"
-    },
-    "00.14D": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-08-13T11:24:49.435617+00:00"
     },
     "4A.47A": {
       "title": "Senior Technical Support Engineer",
@@ -22,6 +18,10 @@
     "2D.350": {
       "title": "Software Team Lead",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
+    },
+    "8F.47F": {
+      "title": "Windows Developer",
+      "first_seen": "2026-11-16T19:29:33.255806+00:00"
     }
   },
   "last_board_total": 11

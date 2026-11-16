@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.677599+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-16T19:29:33.131314+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -37,10 +37,6 @@
     },
     "e0559560-e074-4993-9f2d-65d706708f28": {
       "title": "Senior Car Insurance Pricing Expert",
-      "first_seen": "2026-08-18T22:29:25.511367+00:00"
-    },
-    "2b3ef179-4dd6-42d6-895a-6f53e70115e8": {
-      "title": "Staff Product Manager",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
     },
     "90ae496e-94ac-48e9-bf6b-28dd768b1a91": {
@@ -108,5 +104,5 @@
       "first_seen": "2026-11-03T16:57:44.576641+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 40
 }

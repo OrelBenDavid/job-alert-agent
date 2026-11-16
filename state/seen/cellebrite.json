@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.631194+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-16T19:29:33.058016+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "7C.276": {
@@ -14,6 +14,14 @@
     "01.37F": {
       "title": "Android Vulnerability Researcher",
       "first_seen": "2026-09-24T21:25:46.769788+00:00"
+    },
+    "A4.570": {
+      "title": "Assistant Corporate Controller",
+      "first_seen": "2026-11-16T19:29:33.058016+00:00"
+    },
+    "E0.470": {
+      "title": "Associate Account Executive",
+      "first_seen": "2026-11-16T19:29:33.058016+00:00"
     },
     "DE.B60": {
       "title": "Director of Global Procurement",
@@ -60,5 +68,5 @@
       "first_seen": "2026-10-19T12:52:14.718746+00:00"
     }
   },
-  "last_board_total": 34
+  "last_board_total": 37
 }

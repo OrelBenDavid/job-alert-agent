@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-16T06:02:40.634457+00:00",
-  "last_count": 11,
+  "last_success": "2026-11-16T19:29:33.065432+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "CE.079": {
@@ -31,6 +31,10 @@
       "title": "LLM Engineer",
       "first_seen": "2026-11-04T14:18:43.003539+00:00"
     },
+    "3C.374": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-11-16T19:29:33.065432+00:00"
+    },
     "EA.471": {
       "title": "Security Data Analyst",
       "first_seen": "2026-11-05T17:16:52.292946+00:00"
@@ -43,10 +47,14 @@
       "title": "Software Architect",
       "first_seen": "2026-11-09T15:56:38.587709+00:00"
     },
+    "25.57D": {
+      "title": "Tech Lead Platform Software Engineer",
+      "first_seen": "2026-11-16T19:29:33.065432+00:00"
+    },
     "63.472": {
       "title": "Vulnerability Research Team Lead",
       "first_seen": "2026-10-19T12:52:14.722274+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 34
 }
