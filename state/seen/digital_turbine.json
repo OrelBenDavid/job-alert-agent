@@ -1,7 +1,7 @@
 {
-  "last_success": "2026-11-15T22:42:31.053293+00:00",
+  "last_success": "2026-11-17T03:39:32.325949+00:00",
   "last_count": 7,
-  "consecutive_failures": 2,
+  "consecutive_failures": 0,
   "jobs": {
     "JR101044": {
       "title": "Senior Data Scientist | Research, Code & Impact",
