@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.378588+00:00",
-  "last_count": 147,
+  "last_success": "2026-11-17T15:51:27.233615+00:00",
+  "last_count": 146,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -103,20 +103,12 @@
       "title": "Data Engineering Team Leader",
       "first_seen": "2026-11-12T19:47:37.701020+00:00"
     },
-    "02a8ccb8-8d69-4862-a85a-5b28b5777716": {
-      "title": "Data Product Manager",
-      "first_seen": "2026-11-16T19:29:33.143551+00:00"
-    },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Science Product Lead - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
     "c359a528-8058-4393-818b-52e162418a58": {
       "title": "Deep Learning Algorithm Developer",
-      "first_seen": "2026-11-16T19:29:33.143551+00:00"
-    },
-    "48bc6d00-8668-41e4-803d-22fe7c74fcf8": {
-      "title": "Deep Learning Algorithm Developer - SUN",
       "first_seen": "2026-11-16T19:29:33.143551+00:00"
     },
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
@@ -126,10 +118,6 @@
     "01a16cde-2ce4-4c80-a6df-fe56bc223816": {
       "title": "Deep Learning Algorithm Engineer | Learned-Policy Group",
       "first_seen": "2026-11-16T19:29:33.143551+00:00"
-    },
-    "173fb0c4-6d9d-4131-93d4-a41845dc6398": {
-      "title": "Deep Learning Developer - REM Modeling",
-      "first_seen": "2026-11-16T06:02:40.689864+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -166,6 +154,10 @@
     "cbb56190-180f-4d21-8a21-95418a3eb8a5": {
       "title": "Embedded Systems Software Architect  - OS Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "461ba53a-1ea9-4dac-a213-0a34c3b77d6e": {
+      "title": "Execution Program Manager",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
     },
     "8d09a950-7497-409c-a7d2-4a72458435de": {
       "title": "Execution Program Manager",
@@ -215,10 +207,6 @@
       "title": "Experienced Formal Verification  Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
-    "4defafe4-48ba-444b-8037-a56119c0956d": {
-      "title": "Experienced Laboratory Integration Engineer",
-      "first_seen": "2026-11-05T17:16:53.363700+00:00"
-    },
     "49084f32-4a0d-4641-a034-c22310218bb1": {
       "title": "Experienced Physical Design Engineer",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -267,6 +255,14 @@
       "title": "HW Board Design Engineer",
       "first_seen": "2026-10-22T17:01:56.097307+00:00"
     },
+    "913ec43a-f4de-4470-ac27-907240164fea": {
+      "title": "IC Package Layout Engineer",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
+    },
+    "a1aa0e47-f672-4998-b371-8fa0009d5527": {
+      "title": "IC Package Layout Engineer",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
+    },
     "f405d1be-1fde-4d92-8710-96d8ed0cc620": {
       "title": "IC Package Layout Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
@@ -291,9 +287,21 @@
       "title": "Linux Lab Systems Engineer",
       "first_seen": "2026-11-02T21:39:34.126367+00:00"
     },
+    "1b3f71b9-fe39-41d3-bd43-4ae7ad18f92e": {
+      "title": "Machine Learning Software Engineer",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
+    },
+    "72e986e2-94b4-49f6-be5f-74a48de8a71d": {
+      "title": "Machine Learning Software Engineer",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
+    },
     "eb3dfa0f-563f-4734-824f-39c3ae88685e": {
       "title": "Mechanical Test Engineer",
       "first_seen": "2026-10-07T13:08:47.179245+00:00"
+    },
+    "2aa6daf7-93a0-4053-ae47-6d4d5f6bcebc": {
+      "title": "NPI Logistic and Operations Student - Radar",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
     },
     "12c753a2-6aea-4528-b700-5c96ec833c35": {
       "title": "Operations Control Center Operator - Student Position",
@@ -359,13 +367,13 @@
       "title": "Senior AI Researcher - Visual GenAI",
       "first_seen": "2026-09-29T12:38:07.422231+00:00"
     },
-    "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
-      "title": "Senior Algorithm Engineer - Model Training & Optimization",
-      "first_seen": "2026-08-11T14:24:50.143668+00:00"
-    },
     "14e467d6-6412-479d-a827-fb9184522869": {
       "title": "Senior Algorithm Engineer - Objects Perception",
       "first_seen": "2026-08-13T09:40:45.264644+00:00"
+    },
+    "115adbc6-d6e5-49fc-95e4-8b71e5b15d04": {
+      "title": "Senior AV Product Manager - Drive & Urban",
+      "first_seen": "2026-11-17T15:51:27.233615+00:00"
     },
     "a2369d4c-e0ef-41e7-bf8a-db12cc46c79e": {
       "title": "Senior Backend Engineer",
@@ -386,6 +394,10 @@
     "0d17f0b5-29db-4e7e-8688-08f69d91ad0f": {
       "title": "Senior Data & ML Engineer - 3D Perception Team",
       "first_seen": "2026-10-25T11:10:18.615752+00:00"
+    },
+    "b88433c6-bee5-47be-a91b-9bd8ebe50d00": {
+      "title": "Senior Deep Learning Algorithm Engineer",
+      "first_seen": "2026-08-11T14:24:50.143668+00:00"
     },
     "aed812a3-0f66-4ec1-baf9-a0bbb4e9c8d2": {
       "title": "Senior Deep Learning Researcher",
@@ -471,10 +483,6 @@
       "title": "Senior Technical Project Manager",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
-    "72b82d00-3d08-499b-84ca-c90b12db479d": {
-      "title": "Senior Technical Project Manager (Autonomous Driving)",
-      "first_seen": "2026-11-02T21:39:34.126367+00:00"
-    },
     "813744d9-4a1c-4f6a-9980-8658b0f842b2": {
       "title": "Senior Validation Project Manager- Reliability Lab",
       "first_seen": "2026-10-18T20:27:50.121958+00:00"
@@ -531,18 +539,6 @@
       "title": "System Integration Engineer",
       "first_seen": "2026-11-16T19:29:33.143551+00:00"
     },
-    "35d41f76-5f20-4fc8-b108-f761582083f2": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-10-28T12:37:13.831250+00:00"
-    },
-    "5aeac1a2-386c-4444-ac70-584f3a96a19d": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-10-28T12:37:13.831250+00:00"
-    },
-    "79932ba7-840a-4c1b-8dca-80722712d51b": {
-      "title": "Talent Acquisition Partner - Temporary (1 year)",
-      "first_seen": "2026-10-28T12:37:13.831250+00:00"
-    },
     "072a02e8-0ac6-47e8-b36d-a7c50b896ca6": {
       "title": "Talent Sourcer",
       "first_seen": "2026-11-01T13:07:06.541381+00:00"
@@ -592,5 +588,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 172
+  "last_board_total": 173
 }

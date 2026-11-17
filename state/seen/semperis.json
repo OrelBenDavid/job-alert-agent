@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-11-17T03:39:32.418404+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-17T15:51:27.295204+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "3f94a301-ea11-457f-b98c-db36c6eb995e": {
+      "title": "Cloud Architect",
+      "first_seen": "2026-11-17T15:51:27.295204+00:00"
+    },
     "60055110-5514-476c-b385-f189558695bf": {
       "title": "Product Support Engineer, Team Lead",
       "first_seen": "2026-09-01T18:20:52.225151+00:00"
+    },
+    "06730f38-f96a-40c7-b5a4-6c2e2b7d41e9": {
+      "title": "Devops Engineering Team Lead",
+      "first_seen": "2026-11-17T15:51:27.295204+00:00"
     },
     "71d4c46d-70bb-4de7-9e51-bc19181a157a": {
       "title": "Office Manager",
@@ -24,5 +32,5 @@
       "first_seen": "2026-11-14T01:22:57.570780+00:00"
     }
   },
-  "last_board_total": 24
+  "last_board_total": 26
 }

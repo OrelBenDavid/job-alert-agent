@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.397539+00:00",
-  "last_count": 15,
+  "last_success": "2026-11-17T15:51:27.261485+00:00",
+  "last_count": 16,
   "consecutive_failures": 0,
   "jobs": {
     "32.371": {
@@ -19,10 +19,6 @@
       "title": "Internal Auditor",
       "first_seen": "2026-08-23T09:01:23.825516+00:00"
     },
-    "DE.27D": {
-      "title": "Lead Solutions Architect",
-      "first_seen": "2026-09-24T11:33:41.922853+00:00"
-    },
     "DE.279": {
       "title": "Marketing Automation Specialist",
       "first_seen": "2026-09-22T11:24:08.054314+00:00"
@@ -31,6 +27,10 @@
       "title": "NOC Engineer",
       "first_seen": "2026-11-10T10:57:45.450333+00:00"
     },
+    "DE.27D": {
+      "title": "Solutions Architect",
+      "first_seen": "2026-09-24T11:33:41.922853+00:00"
+    },
     "56.274": {
       "title": "מנהל/ת צוות שירות לקוחות - PassportCard Relocation",
       "first_seen": "2026-09-09T11:10:07.757095+00:00"
@@ -38,6 +38,10 @@
     "2F.340": {
       "title": "מנהל/ת צוות שירות לקוחות פספורטכארד",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "AB.476": {
+      "title": "נציג/ת Back Office",
+      "first_seen": "2026-11-17T15:51:27.261485+00:00"
     },
     "52.B27": {
       "title": "נציג/ת שירות ומכירה לנתב\"ג",
@@ -64,5 +68,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 15
+  "last_board_total": 16
 }

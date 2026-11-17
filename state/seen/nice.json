@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.386379+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-17T15:51:27.247612+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "5011031101": {
@@ -31,10 +31,6 @@
       "title": "Senior Technology Procurement: SW, SaaS & Cloud",
       "first_seen": "2026-11-10T19:36:40.215594+00:00"
     },
-    "5036387101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-11-16T19:29:33.163571+00:00"
-    },
     "5034959101": {
       "title": "Telephony Network Engineer, Tech Lead",
       "first_seen": "2026-11-12T19:47:37.709085+00:00"
@@ -44,5 +40,5 @@
       "first_seen": "2026-11-12T19:47:37.709085+00:00"
     }
   },
-  "last_board_total": 116
+  "last_board_total": 114
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.394275+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-17T15:51:27.253164+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "B4.074": {
@@ -27,6 +27,10 @@
       "title": "Sales Development Representative - France",
       "first_seen": "2026-10-14T11:38:22.555908+00:00"
     },
+    "36.577": {
+      "title": "Sales Development Representative - Iberia & Italy",
+      "first_seen": "2026-11-17T15:51:27.253164+00:00"
+    },
     "BC.27B": {
       "title": "Senior Backend Engineer - Vibesec",
       "first_seen": "2026-09-16T21:12:04.457314+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-10-22T11:36:45.926783+00:00"
     }
   },
-  "last_board_total": 36
+  "last_board_total": 37
 }

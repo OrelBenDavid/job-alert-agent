@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-17T03:39:32.412153+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-17T15:51:27.281572+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
+    "56.575": {
+      "title": "AI Engineering",
+      "first_seen": "2026-11-17T15:51:27.281572+00:00"
+    },
     "70.370": {
       "title": "Backend Engineer",
       "first_seen": "2026-09-24T11:33:41.940112+00:00"
@@ -28,5 +32,5 @@
       "first_seen": "2026-11-12T19:47:37.734224+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

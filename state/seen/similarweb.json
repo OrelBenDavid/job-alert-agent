@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.421746+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-17T15:51:27.298277+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "6897277": {
@@ -68,7 +68,7 @@
       "first_seen": "2026-10-07T13:08:47.264424+00:00"
     },
     "8273657": {
-      "title": "Product Manager",
+      "title": "Product Manager – AI Transformation",
       "first_seen": "2026-10-12T10:35:45.216313+00:00"
     },
     "8382497": {
@@ -78,10 +78,6 @@
     "7894254": {
       "title": "Sales Manager",
       "first_seen": "2026-09-04T11:05:18.657150+00:00"
-    },
-    "8299494": {
-      "title": "Senior Backend Engineer",
-      "first_seen": "2026-10-19T12:52:15.561809+00:00"
     },
     "8312429": {
       "title": "Senior BI Engineer",
@@ -108,5 +104,5 @@
       "first_seen": "2026-10-14T17:00:25.393209+00:00"
     }
   },
-  "last_board_total": 62
+  "last_board_total": 63
 }

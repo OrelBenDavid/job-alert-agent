@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.444149+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-17T15:51:27.317967+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "EB.F6D": {
@@ -11,6 +11,10 @@
       "title": "Finance Operations Specialist",
       "first_seen": "2026-09-24T17:00:04.701961+00:00"
     },
+    "05.57A": {
+      "title": "Product Manager",
+      "first_seen": "2026-11-17T15:51:27.317967+00:00"
+    },
     "48.B47": {
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-13T11:24:49.432846+00:00"
@@ -18,7 +22,11 @@
     "AB.B35": {
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-13T11:24:49.432846+00:00"
+    },
+    "05.578": {
+      "title": "Senior Product Manager",
+      "first_seen": "2026-11-17T15:51:27.317967+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 8
 }

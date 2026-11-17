@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.325511+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-17T15:51:27.187810+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "B5.071": {
@@ -63,6 +63,10 @@
       "title": "Product Marketing Manager - GTM Content",
       "first_seen": "2026-08-13T11:24:19.173800+00:00"
     },
+    "76.573": {
+      "title": "Senior Backend Software Engineer",
+      "first_seen": "2026-11-17T15:51:27.187810+00:00"
+    },
     "B4.572": {
       "title": "Senior SEO & GEO Specialist",
       "first_seen": "2026-11-15T16:13:48.140800+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-09-03T16:17:31.985903+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 31
 }

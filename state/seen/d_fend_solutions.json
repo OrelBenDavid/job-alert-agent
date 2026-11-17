@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.323052+00:00",
-  "last_count": 27,
+  "last_success": "2026-11-17T15:51:27.185606+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
@@ -42,10 +42,6 @@
     "ad96d5f9-f12e-4b56-a3da-73f50e71a99c": {
       "title": "Professional Services Engineer – Integrated Solutions",
       "first_seen": "2026-08-13T13:24:49.366336+00:00"
-    },
-    "40a419f4-f041-4e3d-851a-08b2c7ad8858": {
-      "title": "Python Automation Developer",
-      "first_seen": "2026-11-16T19:29:33.081029+00:00"
     },
     "0d303979-2039-4391-adb8-080ba4f1c97e": {
       "title": "Quality Engineer (Hardware & Manufacturing)",
@@ -103,14 +99,10 @@
       "title": "System Engineering Team Leader",
       "first_seen": "2026-11-10T19:36:40.140715+00:00"
     },
-    "ac2a5dc9-4c35-4032-b26f-782f3ac36746": {
-      "title": "Talent Acquisition Partner",
-      "first_seen": "2026-11-16T19:29:33.081029+00:00"
-    },
     "5c2062dc-1b68-44b2-b02d-cdbb0d569e33": {
       "title": "Warehouse Manager",
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 31
 }

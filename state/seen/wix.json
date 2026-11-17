@@ -1,8 +1,28 @@
 {
-  "last_success": "2026-11-17T03:39:32.281338+00:00",
-  "last_count": 38,
+  "last_success": "2026-11-17T15:51:27.135083+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-6ba48d9d-95b7-5c05-9ea0-7c01685d5b39-T1792661965-744000162060209": {
+      "title": "Talent Acquisition Partner - Sourcing Expert (Temp Position)",
+      "first_seen": "2026-11-17T15:51:27.135083+00:00"
+    },
+    "https://careers.wix.com/position/oracle-4c288ed1-4610-57c1-8e12-fef8b5786298-T1794733091-744000162021416": {
+      "title": "Developer Relations Expert",
+      "first_seen": "2026-11-17T15:51:27.135083+00:00"
+    },
+    "https://careers.wix.com/position/oracle-208a12aa-caff-5a3d-9dce-9f2994efeb61-T1792405436-744000162017310": {
+      "title": "Full stack organic growth marketer",
+      "first_seen": "2026-11-17T15:51:27.135083+00:00"
+    },
+    "https://careers.wix.com/position/oracle-b9f3d085-d05a-5dcd-b011-916437fb0715-T1793177716-744000162020159": {
+      "title": "Senior Visual Designer – Brand & Motion",
+      "first_seen": "2026-11-17T15:51:27.135083+00:00"
+    },
+    "https://careers.wix.com/position/oracle-3b0bd02f-0d4a-5c3b-9228-81439c3b8384-T1791985242-744000162013160": {
+      "title": "UX/UI Designer - Editor Platform",
+      "first_seen": "2026-11-17T15:51:27.135083+00:00"
+    },
     "https://careers.wix.com/position/oracle-a14977c9-9f5d-50f1-a1b4-3e8b08b47325-T1787493081-744000161860850": {
       "title": "Enterprise Account Executive - Base44",
       "first_seen": "2026-11-16T19:29:33.023413+00:00"
@@ -55,10 +75,6 @@
       "title": "Procurement Business Partner – Base44",
       "first_seen": "2026-10-29T18:22:31.161461+00:00"
     },
-    "https://careers.wix.com/position/oracle-208a12aa-caff-5a3d-9dce-9f2994efeb61-T1792405436-744000158476229": {
-      "title": "Full stack organic growth marketer",
-      "first_seen": "2026-10-29T18:22:31.161461+00:00"
-    },
     "https://careers.wix.com/position/oracle-93eee5ac-c063-552b-9517-1eb363c39af7-T1791474744-744000158476089": {
       "title": "Business Analyst - Wix Marketing",
       "first_seen": "2026-10-29T18:22:31.161461+00:00"
@@ -107,20 +123,12 @@
       "title": "AI Marketing Builder - Base44",
       "first_seen": "2026-11-06T16:42:05.263937+00:00"
     },
-    "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000152173702": {
-      "title": "User Acquisition Analyst- Base44",
-      "first_seen": "2026-11-06T16:42:05.263937+00:00"
-    },
     "https://careers.wix.com/position/oracle-f0b68fb4-042d-5011-a974-42374c8aa125-T1790146037-744000151318039": {
       "title": "Forward Deployed Engineer - Base44",
       "first_seen": "2026-11-06T16:42:05.263937+00:00"
     },
     "https://careers.wix.com/position/oracle-8c781ee6-bfd6-5973-a339-ad327f4d2a74-T1789488963-744000151316848": {
       "title": "Motion Designer - Base44",
-      "first_seen": "2026-11-06T16:42:05.263937+00:00"
-    },
-    "https://careers.wix.com/position/oracle-f91037d7-1912-5abe-bb7b-eefee2c459f0-T1790076726-744000151022358": {
-      "title": "Performance Marketing Analyst - Base44",
       "first_seen": "2026-11-06T16:42:05.263937+00:00"
     },
     "https://careers.wix.com/position/oracle-36bbe828-e19c-5197-bae9-0334b0b79da7-T1789378426-744000149296389": {

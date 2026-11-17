@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T03:39:32.429030+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-17T15:51:27.304595+00:00",
+  "last_count": 17,
   "consecutive_failures": 0,
   "jobs": {
     "8025594": {
@@ -26,10 +26,6 @@
     "8312030": {
       "title": "Product Analyst",
       "first_seen": "2026-11-01T13:07:06.629695+00:00"
-    },
-    "8176690": {
-      "title": "Product Design Team Lead",
-      "first_seen": "2026-09-10T11:06:09.981765+00:00"
     },
     "8305421": {
       "title": "Revenue Operations Director",
@@ -76,5 +72,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 68
+  "last_board_total": 67
 }

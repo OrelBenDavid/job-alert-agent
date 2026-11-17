@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-11-17T03:39:32.418040+00:00",
-  "last_count": 0,
+  "last_success": "2026-11-17T15:51:27.291557+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 5
+  "jobs": {
+    "C4.57D": {
+      "title": "Paid UGC Specialist",
+      "first_seen": "2026-11-17T15:51:27.291557+00:00"
+    }
+  },
+  "last_board_total": 7
 }

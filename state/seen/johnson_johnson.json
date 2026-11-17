@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-16T06:02:40.673067+00:00",
   "last_count": 19,
-  "consecutive_failures": 2,
+  "consecutive_failures": 3,
   "jobs": {
     "R-109017": {
       "title": "Engineering Team Leader",

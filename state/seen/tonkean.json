@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-11-17T03:39:32.433611+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-17T15:51:27.308546+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
     "2fc80472-de52-49ff-8351-ee12979a1d51": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-18T19:28:38.359071+00:00"
-    },
-    "21b00ce8-3b3c-47b7-8c58-b20e2146aa32": {
-      "title": "Workplace & Talent Partner - Maternity Leave Replacement",
-      "first_seen": "2026-10-20T23:45:59.750794+00:00"
     }
   },
-  "last_board_total": 2
+  "last_board_total": 1
 }

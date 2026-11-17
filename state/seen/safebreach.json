@@ -1,16 +1,12 @@
 {
-  "last_success": "2026-11-17T03:39:32.414697+00:00",
-  "last_count": 2,
+  "last_success": "2026-11-17T15:51:27.288635+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
   "jobs": {
-    "4449962009": {
-      "title": "EDR Evasion Specialist",
-      "first_seen": "2026-10-14T11:38:23.215955+00:00"
-    },
     "4260248009": {
       "title": "Security Researcher",
       "first_seen": "2026-08-18T19:28:34.673082+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }
