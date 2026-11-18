@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.426245+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-18T20:20:40.903303+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "A0.576": {
@@ -35,6 +35,10 @@
       "title": "Senior BI Data Engineer",
       "first_seen": "2026-09-14T12:31:04.078302+00:00"
     },
+    "37.57E": {
+      "title": "Senior Business Analyst",
+      "first_seen": "2026-11-18T20:20:40.903303+00:00"
+    },
     "DB.476": {
       "title": "Senior Content Writer, GTM & AI",
       "first_seen": "2026-11-03T16:57:44.581004+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-09-08T16:30:33.555120+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

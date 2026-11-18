@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.348962+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-18T20:20:40.828547+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "4919386101": {
@@ -11,6 +11,10 @@
       "title": "Go To Market Strategist (CSM) IL",
       "first_seen": "2026-08-18T19:28:22.740340+00:00"
     },
+    "5041643101": {
+      "title": "Product Marketing Manager",
+      "first_seen": "2026-11-18T20:20:40.828547+00:00"
+    },
     "4919385101": {
       "title": "R&D Team Lead",
       "first_seen": "2026-08-18T19:28:22.740340+00:00"
@@ -20,5 +24,5 @@
       "first_seen": "2026-08-18T19:28:22.740340+00:00"
     }
   },
-  "last_board_total": 7
+  "last_board_total": 8
 }

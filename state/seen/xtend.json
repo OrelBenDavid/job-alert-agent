@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.515706+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-18T20:20:40.985194+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "DF.665": {
@@ -15,10 +15,14 @@
       "title": "Executive Assistant",
       "first_seen": "2026-11-17T15:51:27.321300+00:00"
     },
+    "37.57C": {
+      "title": "Head of Product Partnership",
+      "first_seen": "2026-11-18T20:20:40.985194+00:00"
+    },
     "2C.F6B": {
       "title": "Senior Guidance Engineer",
       "first_seen": "2026-08-13T11:24:49.435617+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }

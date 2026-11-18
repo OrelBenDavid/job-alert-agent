@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.433432+00:00",
-  "last_count": 146,
+  "last_success": "2026-11-18T20:20:40.909411+00:00",
+  "last_count": 145,
   "consecutive_failures": 0,
   "jobs": {
     "0786ba33-80e3-4c34-a25f-44b4c5d49723": {
@@ -107,10 +107,6 @@
       "title": "Data Science Product Lead - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
     },
-    "c359a528-8058-4393-818b-52e162418a58": {
-      "title": "Deep Learning Algorithm Developer",
-      "first_seen": "2026-11-16T19:29:33.143551+00:00"
-    },
     "48bc6d00-8668-41e4-803d-22fe7c74fcf8": {
       "title": "Deep Learning Algorithm Developer - SUN",
       "first_seen": "2026-11-18T11:28:43.433432+00:00"
@@ -118,10 +114,6 @@
     "3f688c83-654a-49c2-aa7e-d2636adfc6b0": {
       "title": "Deep Learning Algorithm Engineer - REM Semantics",
       "first_seen": "2026-08-27T14:03:31.417061+00:00"
-    },
-    "01a16cde-2ce4-4c80-a6df-fe56bc223816": {
-      "title": "Deep Learning Algorithm Engineer | Learned-Policy Group",
-      "first_seen": "2026-11-16T19:29:33.143551+00:00"
     },
     "e8c3725e-4403-4982-a458-587c6fa25b8f": {
       "title": "Deep Learning Researcher",
@@ -134,6 +126,14 @@
     "eadec8b5-6b58-40f5-a024-5915cef79001": {
       "title": "Director of Algorithm Software Infrastructure & Integration",
       "first_seen": "2026-11-18T11:28:43.433432+00:00"
+    },
+    "7e5223a3-ffe2-4d05-8ae7-07b26e48c049": {
+      "title": "Director of Release Management",
+      "first_seen": "2026-11-18T20:20:40.909411+00:00"
+    },
+    "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
+      "title": "Director of Release Management",
+      "first_seen": "2026-11-18T20:20:40.909411+00:00"
     },
     "04c8ffeb-012c-4461-88a1-58acc073958b": {
       "title": "EHS specialist - Safety Officer",
@@ -546,10 +546,6 @@
     "cb66d92f-f4e9-4578-9d51-2ac0394aca20": {
       "title": "System Integration Engineer",
       "first_seen": "2026-11-16T19:29:33.143551+00:00"
-    },
-    "072a02e8-0ac6-47e8-b36d-a7c50b896ca6": {
-      "title": "Talent Sourcer",
-      "first_seen": "2026-11-01T13:07:06.541381+00:00"
     },
     "abad479b-d0e5-45b9-b217-ad596fc6aedb": {
       "title": "Technical Program Manager",

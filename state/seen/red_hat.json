@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-16T06:02:40.720938+00:00",
   "last_count": 1,
-  "consecutive_failures": 5,
+  "consecutive_failures": 6,
   "jobs": {
     "R-059570": {
       "title": "Senior AI Solutions Consultant – Red Hat Consulting",

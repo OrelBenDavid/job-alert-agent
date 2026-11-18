@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-18T11:28:43.367003+00:00",
+  "last_success": "2026-11-18T20:20:40.850366+00:00",
   "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,9 +7,9 @@
       "title": "DevOps Engineer",
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     },
-    "C4.272": {
-      "title": "Director of Product Management",
-      "first_seen": "2026-09-07T12:15:48.909617+00:00"
+    "46.57C": {
+      "title": "GRC Manager",
+      "first_seen": "2026-11-18T20:20:40.850366+00:00"
     },
     "35.27F": {
       "title": "Senior Software Engineer",

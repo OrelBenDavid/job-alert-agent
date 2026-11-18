@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.402322+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-18T20:20:40.881703+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "F6.B68": {
@@ -31,6 +31,10 @@
       "title": "HRIS Manager",
       "first_seen": "2026-11-08T10:06:45.259830+00:00"
     },
+    "57.578": {
+      "title": "Junior In-House Content Creator & UGC Specialist",
+      "first_seen": "2026-11-18T20:20:40.881703+00:00"
+    },
     "68.37E": {
       "title": "Organic Growth Manager",
       "first_seen": "2026-10-05T21:57:14.719869+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-09-28T21:11:02.396696+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

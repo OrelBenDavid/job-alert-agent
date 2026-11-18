@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-18T11:28:43.483787+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-18T20:20:40.956263+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "8196402003": {
+      "title": "Director of Product Management, Agentic Security - Prompt Security",
+      "first_seen": "2026-11-18T20:20:40.956263+00:00"
+    },
     "7712720003": {
       "title": "Engineering Manager - Windows Endpoint",
       "first_seen": "2026-11-16T19:29:33.207941+00:00"
@@ -47,13 +51,13 @@
       "title": "Staff AI Security Researcher",
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
     },
-    "8038775003": {
-      "title": "Staff Data Scientist",
-      "first_seen": "2026-10-28T12:37:13.886463+00:00"
-    },
     "8206876003": {
       "title": "Staff Data Scientist",
       "first_seen": "2026-11-18T11:28:43.483787+00:00"
+    },
+    "8038775003": {
+      "title": "Staff Data Scientist",
+      "first_seen": "2026-10-28T12:37:13.886463+00:00"
     },
     "7831318003": {
       "title": "Staff Product Manager - AI SIEM, Detection and Response",
@@ -84,5 +88,5 @@
       "first_seen": "2026-09-30T00:18:14.040195+00:00"
     }
   },
-  "last_board_total": 260
+  "last_board_total": 261
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T11:28:43.391565+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-18T20:20:40.872936+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "4A.27B": {
@@ -47,17 +47,21 @@
       "title": "Director of Data Science",
       "first_seen": "2026-09-14T12:31:04.048377+00:00"
     },
-    "B8.E68": {
-      "title": "Engineering Team Lead",
-      "first_seen": "2026-08-13T11:24:25.510473+00:00"
-    },
-    "B8.E68-9D.50A": {
-      "title": "Engineering Team Lead",
-      "first_seen": "2026-08-13T11:24:25.510473+00:00"
-    },
     "33.47F": {
       "title": "IT Team Lead",
       "first_seen": "2026-10-20T08:24:16.463316+00:00"
+    },
+    "B8.E68": {
+      "title": "MLOps Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "B8.E68-9D.50A": {
+      "title": "MLOps Team Lead",
+      "first_seen": "2026-08-13T11:24:25.510473+00:00"
+    },
+    "25.57A": {
+      "title": "Program Manager",
+      "first_seen": "2026-11-18T20:20:40.872936+00:00"
     },
     "93.D6E": {
       "title": "Senior DevOps Engineer",
@@ -72,5 +76,5 @@
       "first_seen": "2026-08-13T11:24:25.510473+00:00"
     }
   },
-  "last_board_total": 33
+  "last_board_total": 34
 }
