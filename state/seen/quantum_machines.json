@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T00:53:02.739521+00:00",
-  "last_count": 25,
+  "last_success": "2026-11-18T11:28:43.467200+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -26,6 +26,10 @@
     "5E.E51": {
       "title": "Customer Success Physicist- Tel Aviv",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
+    },
+    "17.575": {
+      "title": "DevOps / Platforms Engineer",
+      "first_seen": "2026-11-18T11:28:43.467200+00:00"
     },
     "23.E6B": {
       "title": "Failure Analysis and Quality Control Team Leader",
@@ -104,5 +108,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 68
+  "last_board_total": 69
 }

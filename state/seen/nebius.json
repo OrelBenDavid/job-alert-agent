@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T00:53:02.719070+00:00",
-  "last_count": 68,
+  "last_success": "2026-11-18T11:28:43.439787+00:00",
+  "last_count": 69,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -98,6 +98,10 @@
     "5025616101": {
       "title": "OFCI Equipment Procurement Manager",
       "first_seen": "2026-11-04T14:18:43.090358+00:00"
+    },
+    "4982966101": {
+      "title": "Offensive Security Engineer",
+      "first_seen": "2026-11-18T11:28:43.439787+00:00"
     },
     "4869782101": {
       "title": "Partner Solutions Architect",
@@ -276,5 +280,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 371
+  "last_board_total": 372
 }

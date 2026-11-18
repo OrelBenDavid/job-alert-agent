@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T00:53:02.782052+00:00",
-  "last_count": 28,
+  "last_success": "2026-11-18T11:28:43.509861+00:00",
+  "last_count": 29,
   "consecutive_failures": 0,
   "jobs": {
     "4621534006": {
@@ -14,6 +14,10 @@
     "4615162006": {
       "title": "Backend Engineer",
       "first_seen": "2026-08-23T09:01:23.865955+00:00"
+    },
+    "4720879006": {
+      "title": "CTO Data Analyst",
+      "first_seen": "2026-11-18T11:28:43.509861+00:00"
     },
     "4650468006": {
       "title": "CTO Operations Engineer",
@@ -116,5 +120,5 @@
       "first_seen": "2026-08-30T11:45:37.373994+00:00"
     }
   },
-  "last_board_total": 105
+  "last_board_total": 104
 }

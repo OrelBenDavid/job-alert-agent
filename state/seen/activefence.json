@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T00:53:02.614095+00:00",
-  "last_count": 24,
+  "last_success": "2026-11-18T11:28:43.344774+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "2C.370": {
@@ -91,14 +91,10 @@
       "title": "Tech Lead - Malware and Vulnerability Research",
       "first_seen": "2026-10-19T20:31:00.982571+00:00"
     },
-    "63.47F": {
-      "title": "Tech Lead - Penetration Testing, Red Team, Cloud, and ICS/OT",
-      "first_seen": "2026-10-19T20:31:00.982571+00:00"
-    },
     "92.E62": {
       "title": "Technical Fraud Threat Analyst",
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 44
+  "last_board_total": 43
 }

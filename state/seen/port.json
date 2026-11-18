@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-18T00:53:02.736921+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-18T11:28:43.464145+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "FE.27C": {
@@ -39,10 +39,6 @@
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     },
-    "BF.276": {
-      "title": "SEO/GEO Specialist",
-      "first_seen": "2026-09-24T11:33:41.933008+00:00"
-    },
     "D4.47D": {
       "title": "Site Reliability Engineer",
       "first_seen": "2026-10-26T20:24:20.662602+00:00"
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:34.318859+00:00"
     }
   },
-  "last_board_total": 30
+  "last_board_total": 29
 }
