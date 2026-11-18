@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-17T15:51:27.165173+00:00",
+  "last_success": "2026-11-18T00:53:02.636178+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -40,5 +40,5 @@
       "first_seen": "2026-11-16T19:29:33.058601+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 29
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T15:51:27.189635+00:00",
-  "last_count": 41,
+  "last_success": "2026-11-18T00:53:02.652926+00:00",
+  "last_count": 43,
   "consecutive_failures": 0,
   "jobs": {
     "AA.B6C": {
@@ -76,12 +76,16 @@
       "first_seen": "2026-10-06T15:50:15.935694+00:00"
     },
     "51.859": {
-      "title": "QA E2E Engineer- ACO",
+      "title": "QA E2E Engineer",
       "first_seen": "2026-10-14T11:38:22.135350+00:00"
     },
-    "0F.274": {
-      "title": "QA E2E Team Leader",
-      "first_seen": "2026-10-14T11:38:22.135350+00:00"
+    "D0.477": {
+      "title": "QA E2E Team Leader- System",
+      "first_seen": "2026-11-18T00:53:02.652926+00:00"
+    },
+    "96.57C": {
+      "title": "QA Engineer – Firmware Team",
+      "first_seen": "2026-11-18T00:53:02.652926+00:00"
     },
     "4A.371": {
       "title": "Receptionist & People Operations Coordinator",
@@ -122,6 +126,10 @@
     "F6.93A": {
       "title": "Software Engineer",
       "first_seen": "2026-08-13T11:24:19.177817+00:00"
+    },
+    "51.85A": {
+      "title": "Software Engineer - AI Datacenter Networking",
+      "first_seen": "2026-11-18T00:53:02.652926+00:00"
     },
     "2C.37B": {
       "title": "Software Engineer - Data Path",
@@ -168,5 +176,5 @@
       "first_seen": "2026-11-04T14:18:43.022158+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 52
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T15:51:27.271040+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-18T00:53:02.739521+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "C1.37A": {
@@ -59,10 +59,6 @@
       "title": "Product Operations",
       "first_seen": "2026-11-17T15:51:27.271040+00:00"
     },
-    "93.E6E": {
-      "title": "Python Engineer",
-      "first_seen": "2026-11-17T15:51:27.271040+00:00"
-    },
     "82.D69": {
       "title": "QA & Automation Team Lead",
       "first_seen": "2026-11-01T19:29:19.203519+00:00"
@@ -108,5 +104,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 69
+  "last_board_total": 68
 }

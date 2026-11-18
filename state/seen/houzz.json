@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-17T15:51:27.207466+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-18T00:53:02.686153+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "05ef9055-06b9-4d00-b58a-51a65da38830": {
@@ -14,11 +14,7 @@
     "d620a83d-b49a-4e59-bd1d-8103580c427b": {
       "title": "Senior Product Manager",
       "first_seen": "2026-10-21T17:02:52.263229+00:00"
-    },
-    "a39aa638-465f-48a1-adbd-29035dd233a8": {
-      "title": "VP of Accounting",
-      "first_seen": "2026-10-16T20:53:14.953334+00:00"
     }
   },
-  "last_board_total": 4
+  "last_board_total": 3
 }
