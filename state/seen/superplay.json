@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-19T11:25:49.549398+00:00",
+  "last_success": "2026-11-19T20:25:30.334768+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -14,10 +14,6 @@
     "3F.263": {
       "title": "3D Artist",
       "first_seen": "2026-11-16T19:29:33.221810+00:00"
-    },
-    "08.47D": {
-      "title": "AI Art Specialisit",
-      "first_seen": "2026-10-28T12:37:13.895666+00:00"
     },
     "1A.641": {
       "title": "Bookkeeper",
@@ -38,6 +34,10 @@
     "9E.667": {
       "title": "QA & Operations Manager",
       "first_seen": "2026-11-18T20:20:40.962998+00:00"
+    },
+    "A4.57A": {
+      "title": "QA Engineer",
+      "first_seen": "2026-11-19T20:25:30.334768+00:00"
     },
     "DB.47E": {
       "title": "Senior Technical Artist",

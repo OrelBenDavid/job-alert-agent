@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T11:25:49.466382+00:00",
-  "last_count": 30,
+  "last_success": "2026-11-19T20:25:30.259527+00:00",
+  "last_count": 31,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -75,6 +75,10 @@
       "title": "Senior Algorithm Developer — Robotics Team",
       "first_seen": "2026-10-12T00:25:01.795685+00:00"
     },
+    "81.A66": {
+      "title": "Senior Infrastructure & TechOps Engineer",
+      "first_seen": "2026-11-19T20:25:30.259527+00:00"
+    },
     "F2.17C": {
       "title": "Senior Legal Counsel - Commercial",
       "first_seen": "2026-08-31T13:27:00.346481+00:00"
@@ -124,5 +128,5 @@
       "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 39
 }

@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-19T11:25:49.379800+00:00",
-  "last_count": 23,
+  "last_success": "2026-11-19T20:25:30.179943+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "2C.370": {
       "title": "Adversarial AI Research Scientist (Red Team)",
       "first_seen": "2026-10-11T12:36:12.351370+00:00"
+    },
+    "28.577": {
+      "title": "AI Labs Operations Lead",
+      "first_seen": "2026-11-19T20:25:30.179943+00:00"
     },
     "36.07C": {
       "title": "AI Platform Engineer",
@@ -96,5 +100,5 @@
       "first_seen": "2026-08-13T11:24:10.757126+00:00"
     }
   },
-  "last_board_total": 43
+  "last_board_total": 46
 }

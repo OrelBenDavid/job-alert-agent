@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T11:25:49.519027+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-19T20:25:30.307687+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "e7b83c02-55c2-4037-9209-93deb3b7492c": {
@@ -38,7 +38,11 @@
     "2152bd2d-cdf8-418e-9c03-eae970e630a2": {
       "title": "Staff Data Scientist",
       "first_seen": "2026-10-28T05:19:03.970454+00:00"
+    },
+    "df8cc1ce-6850-4231-a5d0-97f55d9248a8": {
+      "title": "Business Development, VIP Acquisition Lead",
+      "first_seen": "2026-11-19T20:25:30.307687+00:00"
     }
   },
-  "last_board_total": 16
+  "last_board_total": 17
 }

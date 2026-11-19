@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T11:25:49.500971+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-19T20:25:30.285804+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "8314100": {
@@ -54,7 +54,11 @@
     "8314105": {
       "title": "Staff Full Stack Engineer - Edge",
       "first_seen": "2026-11-09T15:56:39.513620+00:00"
+    },
+    "8386989": {
+      "title": "Workplace Operations Coordinator",
+      "first_seen": "2026-11-19T20:25:30.285804+00:00"
     }
   },
-  "last_board_total": 237
+  "last_board_total": 235
 }

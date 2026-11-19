@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T11:25:49.456751+00:00",
-  "last_count": 22,
+  "last_success": "2026-11-19T20:25:30.247628+00:00",
+  "last_count": 23,
   "consecutive_failures": 0,
   "jobs": {
     "d1188742-792c-4202-873c-d4600a1f22c1": {
@@ -71,6 +71,10 @@
       "title": "Senior Backend Engineer - Platform Group",
       "first_seen": "2026-11-17T15:51:27.206220+00:00"
     },
+    "efaa7830-c038-4fd1-aa96-fe5836a010a2": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-11-19T20:25:30.247628+00:00"
+    },
     "54598811-7807-4f0e-bfdd-0c0e7ed4d253": {
       "title": "Technical Program Manager",
       "first_seen": "2026-11-17T15:51:27.206220+00:00"
@@ -92,5 +96,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 104
+  "last_board_total": 103
 }

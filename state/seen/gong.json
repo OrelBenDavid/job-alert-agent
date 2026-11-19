@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T11:25:49.452246+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-19T20:25:30.243121+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "4693375006": {
@@ -35,10 +35,6 @@
       "title": "Senior Data Scientist - AI Research & Reliability",
       "first_seen": "2026-11-15T16:13:48.164969+00:00"
     },
-    "4704221006": {
-      "title": "Senior DevSecOps Manager",
-      "first_seen": "2026-08-20T06:58:29.965648+00:00"
-    },
     "4695788006": {
       "title": "Senior Director of Quality",
       "first_seen": "2026-10-19T12:52:14.760121+00:00"
@@ -60,5 +56,5 @@
       "first_seen": "2026-11-11T19:29:47.817810+00:00"
     }
   },
-  "last_board_total": 87
+  "last_board_total": 86
 }
