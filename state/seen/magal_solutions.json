@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-19T02:27:57.983216+00:00",
-  "last_count": 9,
+  "last_success": "2026-11-19T11:25:49.476985+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
+    "48.D51": {
+      "title": "Field IT Technician",
+      "first_seen": "2026-11-19T11:25:49.476985+00:00"
+    },
     "AD.A58": {
       "title": "Field technician",
       "first_seen": "2026-08-20T06:56:54.028386+00:00"
@@ -40,5 +44,5 @@
       "first_seen": "2026-08-20T06:56:54.028386+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

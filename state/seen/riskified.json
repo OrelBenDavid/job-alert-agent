@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-19T02:27:58.017093+00:00",
+  "last_success": "2026-11-19T11:25:49.530783+00:00",
   "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
@@ -24,7 +24,7 @@
       "first_seen": "2026-10-26T12:44:14.739523+00:00"
     },
     "8934490002": {
-      "title": "Legal Counsel",
+      "title": "Legal Counsel (Employment)",
       "first_seen": "2026-11-11T10:40:02.490386+00:00"
     },
     "8882911002": {
@@ -76,5 +76,5 @@
       "first_seen": "2026-11-08T17:52:13.268735+00:00"
     }
   },
-  "last_board_total": 43
+  "last_board_total": 44
 }

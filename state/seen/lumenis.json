@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-19T02:27:57.982482+00:00",
+  "last_success": "2026-11-19T11:25:49.476179+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -16,7 +16,7 @@
       "first_seen": "2026-09-30T17:56:23.230677+00:00"
     },
     "6C.477": {
-      "title": "Director supply chain",
+      "title": "Director of operations",
       "first_seen": "2026-11-18T20:20:40.902882+00:00"
     },
     "7D.378": {
@@ -44,7 +44,7 @@
       "first_seen": "2026-11-18T20:20:40.902882+00:00"
     },
     "17.57F": {
-      "title": "Supplier Quality Employee-Temporary",
+      "title": "Supplier Quality Specialist -Temporary",
       "first_seen": "2026-11-18T11:28:43.423240+00:00"
     }
   },

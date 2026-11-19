@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-19T02:27:58.027818+00:00",
+  "last_success": "2026-11-19T11:25:49.542955+00:00",
   "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
@@ -7,13 +7,13 @@
       "title": "ATE Engineer",
       "first_seen": "2026-10-04T12:11:38.526978+00:00"
     },
+    "A4.F6F": {
+      "title": "ATE HW Engineer",
+      "first_seen": "2026-11-19T11:25:49.542955+00:00"
+    },
     "93.76F": {
       "title": "ATE Testers Technician (Level 2)",
       "first_seen": "2026-08-19T09:41:25.825066+00:00"
-    },
-    "CF.C62": {
-      "title": "Customer Experience & Operation Team Leader",
-      "first_seen": "2026-08-13T11:24:41.058684+00:00"
     },
     "8C.867": {
       "title": "Debug Engineer",

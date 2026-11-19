@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T02:27:57.946313+00:00",
-  "last_count": 25,
+  "last_success": "2026-11-19T11:25:49.432927+00:00",
+  "last_count": 26,
   "consecutive_failures": 0,
   "jobs": {
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
@@ -71,6 +71,10 @@
       "title": "Senior Mechanical Engineer",
       "first_seen": "2026-11-11T19:29:47.798594+00:00"
     },
+    "67b5b100-6c79-4c61-a159-7fe815339187": {
+      "title": "Senior Organizational Development (OD) Lead",
+      "first_seen": "2026-11-19T11:25:49.432927+00:00"
+    },
     "779153a5-5b76-49d3-b1b1-5968224206d0": {
       "title": "Senior Python Automation Developer",
       "first_seen": "2026-11-16T19:29:33.081029+00:00"
@@ -104,5 +108,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 32
 }

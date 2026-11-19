@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T02:27:57.966693+00:00",
-  "last_count": 23,
+  "last_success": "2026-11-19T11:25:49.456751+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "d1188742-792c-4202-873c-d4600a1f22c1": {
@@ -59,6 +59,10 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
+    "53939773-777e-4976-a34c-8d79ee5f8f8f": {
+      "title": "Frontend Engineer",
+      "first_seen": "2026-11-04T21:13:28.672774+00:00"
+    },
     "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
       "title": "Staff Engineer - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
@@ -66,14 +70,6 @@
     "2cd41bc9-25d9-4a47-99e2-0779ce93df42": {
       "title": "Senior Backend Engineer - Platform Group",
       "first_seen": "2026-11-17T15:51:27.206220+00:00"
-    },
-    "efaa7830-c038-4fd1-aa96-fe5836a010a2": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-11-18T20:20:40.883767+00:00"
-    },
-    "53939773-777e-4976-a34c-8d79ee5f8f8f": {
-      "title": "Frontend Engineer",
-      "first_seen": "2026-11-04T21:13:28.672774+00:00"
     },
     "54598811-7807-4f0e-bfdd-0c0e7ed4d253": {
       "title": "Technical Program Manager",
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 105
+  "last_board_total": 104
 }
