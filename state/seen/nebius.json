@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-20T02:12:31.852167+00:00",
+  "last_success": "2026-11-20T11:15:55.606076+00:00",
   "last_count": 68,
   "consecutive_failures": 0,
   "jobs": {
@@ -263,18 +263,18 @@
       "title": "Threat Hunting Team Lead (Cyber Security)",
       "first_seen": "2026-10-12T10:35:45.189751+00:00"
     },
-    "4913573101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-21T17:02:52.811980+00:00"
-    },
     "4995853101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-16T16:30:21.568679+00:00"
+    },
+    "4913573101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-21T17:02:52.811980+00:00"
     },
     "4794078101": {
       "title": "Warehouse Logistics Specialist",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 372
+  "last_board_total": 371
 }
