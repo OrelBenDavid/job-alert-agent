@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-19T20:25:30.266366+00:00",
-  "last_count": 24,
+  "last_success": "2026-11-20T02:12:31.835818+00:00",
+  "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -30,6 +30,10 @@
     "8fbb803d-fd4d-4472-b8e4-a4af6e0cd037": {
       "title": "Data Warehouse Tech Lead",
       "first_seen": "2026-08-18T22:29:25.511367+00:00"
+    },
+    "70be3cf8-107a-4352-bdbe-648de1040e33": {
+      "title": "Associate Insurance Product Manager, Car",
+      "first_seen": "2026-11-20T02:12:31.835818+00:00"
     },
     "e0559560-e074-4993-9f2d-65d706708f28": {
       "title": "Senior Car Insurance Pricing Expert",
@@ -100,5 +104,5 @@
       "first_seen": "2026-11-03T16:57:44.576641+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 42
 }
