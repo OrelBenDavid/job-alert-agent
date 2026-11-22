@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-16T06:02:40.707836+00:00",
   "last_count": 115,
-  "consecutive_failures": 16,
+  "consecutive_failures": 17,
   "jobs": {
     "JR-019817": {
       "title": "AI Engineer (Cortex Agenitx)",

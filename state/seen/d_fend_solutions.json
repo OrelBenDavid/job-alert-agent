@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-22T01:07:54.964325+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-22T11:00:36.934220+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
+    "9ec7fe5f-ce24-4f27-affc-9004f0140d37": {
+      "title": "Billing & Order-to-Cash (O2C) Specialist",
+      "first_seen": "2026-11-22T11:00:36.934220+00:00"
+    },
     "3e6b46ef-3a45-41fa-bec7-338cb9683b82": {
       "title": "Director Of Supply Chain",
       "first_seen": "2026-10-26T12:44:14.668705+00:00"
@@ -34,6 +38,10 @@
     "0d43820f-051c-4e90-8367-1fb9be4784ab": {
       "title": "Multi-Layer C-UAS - Product Manager",
       "first_seen": "2026-11-12T10:52:16.220422+00:00"
+    },
+    "1a0d48a7-b755-440d-8825-40758fd8e4f7": {
+      "title": "Multilayer Systems QA Team Lead",
+      "first_seen": "2026-11-22T11:00:36.934220+00:00"
     },
     "7139e425-aa61-40c1-953d-6df953b055ae": {
       "title": "Operations Finance Controller",
@@ -108,5 +116,5 @@
       "first_seen": "2026-11-08T10:06:45.229763+00:00"
     }
   },
-  "last_board_total": 32
+  "last_board_total": 34
 }

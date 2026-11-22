@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T01:07:55.080867+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-22T11:00:37.084193+00:00",
+  "last_count": 18,
   "consecutive_failures": 0,
   "jobs": {
     "04.965": {
@@ -31,13 +31,13 @@
       "title": "Production chemical technician",
       "first_seen": "2026-10-18T10:50:47.189228+00:00"
     },
+    "08.572": {
+      "title": "Production Shift Manager",
+      "first_seen": "2026-11-22T11:00:37.084193+00:00"
+    },
     "94.F64": {
       "title": "Quality Assurance Engineer (Manufacturing)",
       "first_seen": "2026-08-25T09:43:10.857326+00:00"
-    },
-    "82.47E": {
-      "title": "Sales Operations Rep",
-      "first_seen": "2026-11-11T10:40:02.530537+00:00"
     },
     "88.47F": {
       "title": "Senior Cyber Security Engineer",
@@ -59,10 +59,6 @@
       "title": "טכנאי/הנדסאי אחזקה למערכות ייצור מתקדמות",
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     },
-    "AE.478": {
-      "title": "מנהל/ת רכש קטגוריה",
-      "first_seen": "2026-11-18T20:20:40.976379+00:00"
-    },
     "03.37A": {
       "title": "מפעיל/ת מכונה",
       "first_seen": "2026-09-29T19:55:52.323246+00:00"
@@ -80,5 +76,5 @@
       "first_seen": "2026-08-20T06:56:59.903629+00:00"
     }
   },
-  "last_board_total": 119
+  "last_board_total": 118
 }

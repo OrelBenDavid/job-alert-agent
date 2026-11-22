@@ -1,12 +1,8 @@
 {
-  "last_success": "2026-11-22T01:07:55.087116+00:00",
-  "last_count": 17,
+  "last_success": "2026-11-22T11:00:37.089862+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
-    "8400441": {
-      "title": "Brand Creative Specialist",
-      "first_seen": "2026-11-19T11:25:49.568373+00:00"
-    },
     "8323413": {
       "title": "Enterprise Sales & Partnerships - Retail & New Verticals",
       "first_seen": "2026-10-26T12:44:14.780958+00:00"
@@ -43,14 +39,6 @@
       "title": "Store Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
-    "8395847": {
-      "title": "Strategy & Operations Manager, New Verticals",
-      "first_seen": "2026-11-18T00:53:02.782632+00:00"
-    },
-    "8111554": {
-      "title": "Supply Chain Manager (WM)",
-      "first_seen": "2026-10-18T10:50:47.199629+00:00"
-    },
     "8173457": {
       "title": "Trust and Safety Associate",
       "first_seen": "2026-09-03T20:54:14.844821+00:00"
@@ -72,5 +60,5 @@
       "first_seen": "2026-10-26T20:24:20.719839+00:00"
     }
   },
-  "last_board_total": 181
+  "last_board_total": 178
 }

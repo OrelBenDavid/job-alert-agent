@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T01:07:54.953003+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-22T11:00:36.917272+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "A4.471": {
@@ -31,6 +31,10 @@
       "title": "Edge AI & Sensing Software Senior Team Leader",
       "first_seen": "2026-11-14T22:14:47.135432+00:00"
     },
+    "EF.47F": {
+      "title": "Emulation & CAD Team Leader",
+      "first_seen": "2026-11-22T11:00:36.917272+00:00"
+    },
     "5E.173": {
       "title": "Formal verification engineer",
       "first_seen": "2026-09-01T14:06:10.570475+00:00"
@@ -60,5 +64,5 @@
       "first_seen": "2026-10-04T12:11:37.737128+00:00"
     }
   },
-  "last_board_total": 25
+  "last_board_total": 26
 }

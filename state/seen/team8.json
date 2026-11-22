@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T01:07:55.070444+00:00",
-  "last_count": 40,
+  "last_success": "2026-11-22T11:00:37.075009+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -10,10 +10,6 @@
     "C4.471": {
       "title": "Bluespine-AI Engineer",
       "first_seen": "2026-10-21T11:36:48.121920+00:00"
-    },
-    "46.370": {
-      "title": "Bluespine-Product, Delivery & Operations Lead",
-      "first_seen": "2026-09-30T17:56:23.314059+00:00"
     },
     "13.B63": {
       "title": "Briya- Backend Engineer",
@@ -164,5 +160,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 51
 }

@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-22T01:07:54.923206+00:00",
+  "last_success": "2026-11-22T11:00:36.878815+00:00",
   "last_count": 38,
   "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-47a69c62-0416-5276-89ca-72f04f83b23d-T1795088628-744000163091929": {
+      "title": "Travel Coordinator (Student)",
+      "first_seen": "2026-11-22T11:00:36.878815+00:00"
+    },
     "https://careers.wix.com/position/oracle-7aba6c53-8db3-55f0-a35d-ae607103c84a-T1792057102-744000162961849": {
       "title": "Visual and Web designer - DesignDev team",
       "first_seen": "2026-11-21T19:01:37.677741+00:00"
@@ -62,10 +66,6 @@
     "https://careers.wix.com/position/oracle-d55e7819-32f2-5cda-9ef2-197144e94782-T1793521555-744000159308349": {
       "title": "IL Benefits Expert",
       "first_seen": "2026-11-03T16:57:44.470943+00:00"
-    },
-    "https://careers.wix.com/position/oracle-329c5d81-7461-5d14-92be-07811f8b2b55-T1792481048-744000158971809": {
-      "title": "Technical Support Team Lead | Customer Care",
-      "first_seen": "2026-11-01T19:29:19.103480+00:00"
     },
     "https://careers.wix.com/position/oracle-93eee5ac-c063-552b-9517-1eb363c39af7-T1791474744-744000158476089": {
       "title": "Business Analyst - Wix Marketing",

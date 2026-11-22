@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-22T01:07:55.044470+00:00",
+  "last_success": "2026-11-22T11:00:37.035430+00:00",
   "last_count": 25,
   "consecutive_failures": 0,
   "jobs": {
@@ -51,10 +51,6 @@
       "title": "Mechanical Engineer - Test Station Development",
       "first_seen": "2026-11-16T19:29:33.187037+00:00"
     },
-    "C1.47B": {
-      "title": "Product & Architecture Lead",
-      "first_seen": "2026-10-16T11:11:26.200781+00:00"
-    },
     "C8.37D": {
       "title": "Product Operations",
       "first_seen": "2026-11-17T15:51:27.271040+00:00"
@@ -67,8 +63,12 @@
       "title": "Quantum Control Systems Engineer (Application Validation Team)",
       "first_seen": "2026-09-28T21:11:02.436159+00:00"
     },
+    "C1.47B": {
+      "title": "Quantum Product Lead",
+      "first_seen": "2026-10-16T11:11:26.200781+00:00"
+    },
     "12.470": {
-      "title": "Quantum Product Research Lead",
+      "title": "Quantum Research Lead",
       "first_seen": "2026-10-16T16:30:22.537170+00:00"
     },
     "9E.47F": {

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T01:07:55.068471+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-22T11:00:37.073162+00:00",
+  "last_count": 12,
   "consecutive_failures": 0,
   "jobs": {
     "8081260": {
@@ -35,10 +35,6 @@
       "title": "Senior Product Manager",
       "first_seen": "2026-10-19T12:52:15.572235+00:00"
     },
-    "8236852": {
-      "title": "Senior Product Manager - Platform Experience & AI",
-      "first_seen": "2026-10-05T14:24:12.549336+00:00"
-    },
     "8070135": {
       "title": "Senior Site Reliability Engineer (SRE)",
       "first_seen": "2026-08-13T11:24:41.066252+00:00"
@@ -56,5 +52,5 @@
       "first_seen": "2026-10-15T11:17:05.928346+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 57
 }
