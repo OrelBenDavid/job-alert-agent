@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T11:00:37.026456+00:00",
-  "last_count": 18,
+  "last_success": "2026-11-22T19:25:28.068857+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -19,6 +19,10 @@
       "title": "Automation Tech Lead",
       "first_seen": "2026-08-24T13:05:04.491623+00:00"
     },
+    "73443969-f834-4d5f-bc2f-f85ac6af4dbe": {
+      "title": "Integration & Validation Engineer",
+      "first_seen": "2026-11-22T19:25:28.068857+00:00"
+    },
     "56786ab6-bdb3-41f2-b749-b77b7c834ef2": {
       "title": "Junior System Integration Engineer",
       "first_seen": "2026-11-05T17:16:54.061663+00:00"
@@ -30,6 +34,10 @@
     "2d33d99a-3c67-4ac9-bdaa-5d738624a439": {
       "title": "PHY System Engineer",
       "first_seen": "2026-11-17T15:51:27.256118+00:00"
+    },
+    "c55d01f0-0ed6-4c17-8e2e-3d8ab227447b": {
+      "title": "PHY System Technical Lead",
+      "first_seen": "2026-11-22T19:25:28.068857+00:00"
     },
     "3fd7bb8a-41d8-47a0-a9bf-95e3ccd406d7": {
       "title": "Product Line Manager",
@@ -76,5 +84,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 50
+  "last_board_total": 52
 }

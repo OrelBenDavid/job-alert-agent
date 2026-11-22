@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T11:00:36.923234+00:00",
-  "last_count": 11,
+  "last_success": "2026-11-22T19:25:27.954337+00:00",
+  "last_count": 10,
   "consecutive_failures": 0,
   "jobs": {
     "0E.C68": {
@@ -14,10 +14,6 @@
     "3C.47E": {
       "title": "Senior Engineering Manager, Infrastructure Platform",
       "first_seen": "2026-11-04T05:56:59.022152+00:00"
-    },
-    "D3.270-20.20A": {
-      "title": "Senior Frontend Engineer",
-      "first_seen": "2026-10-21T11:36:47.985433+00:00"
     },
     "E0.475": {
       "title": "Senior Mobile SDK Engineer",
@@ -48,5 +44,5 @@
       "first_seen": "2026-10-11T12:36:12.387858+00:00"
     }
   },
-  "last_board_total": 65
+  "last_board_total": 62
 }

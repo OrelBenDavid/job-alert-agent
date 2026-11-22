@@ -1,12 +1,32 @@
 {
-  "last_success": "2026-11-22T11:00:36.967043+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-22T19:25:27.982216+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "4713012006": {
+      "title": "AI Security Engineer",
+      "first_seen": "2026-11-22T19:25:27.982216+00:00"
+    },
     "4721467006": {
       "title": "DevOps Team Leader",
       "first_seen": "2026-11-17T15:51:27.195740+00:00"
+    },
+    "4713010006": {
+      "title": "Director, Security Engineering",
+      "first_seen": "2026-11-22T19:25:27.982216+00:00"
+    },
+    "4620939006": {
+      "title": "GRC Operations Specialist",
+      "first_seen": "2026-11-22T19:25:27.982216+00:00"
+    },
+    "4701826006": {
+      "title": "Information Security Engineer",
+      "first_seen": "2026-11-22T19:25:27.982216+00:00"
+    },
+    "4655907006": {
+      "title": "Security Operations Team Lead",
+      "first_seen": "2026-11-22T19:25:27.982216+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 35
 }

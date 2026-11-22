@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-22T11:00:36.884611+00:00",
-  "last_count": 28,
+  "last_success": "2026-11-22T19:25:27.922473+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "4876551101": {
@@ -38,10 +38,6 @@
     "4965332101": {
       "title": "Director of IT Security",
       "first_seen": "2026-09-01T14:06:10.552096+00:00"
-    },
-    "4951044101": {
-      "title": "Director of Product Design",
-      "first_seen": "2026-10-05T21:57:14.665312+00:00"
     },
     "5009493101": {
       "title": "Engineering Team Lead",
@@ -116,5 +112,5 @@
       "first_seen": "2026-11-05T17:16:52.278215+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 36
 }
