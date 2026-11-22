@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-21T19:01:37.790213+00:00",
-  "last_count": 8,
+  "last_success": "2026-11-22T01:07:55.036222+00:00",
+  "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
     "A0.379": {
@@ -14,6 +14,10 @@
     "C6.477": {
       "title": "Business Applications Manager",
       "first_seen": "2026-10-25T15:58:07.782394+00:00"
+    },
+    "C8.575": {
+      "title": "Director Content & Corporate Marketing",
+      "first_seen": "2026-11-22T01:07:55.036222+00:00"
     },
     "E5.075": {
       "title": "Head of AI",
