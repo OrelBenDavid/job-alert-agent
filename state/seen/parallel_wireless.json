@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.261118+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-23T12:10:00.646339+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -67,6 +67,10 @@
       "title": "Sr. Buyer – Global Procurement",
       "first_seen": "2026-11-18T11:28:43.457696+00:00"
     },
+    "18793812-eb0b-498d-871b-b71a7c9ca3bf": {
+      "title": "Sr. CI DevOps Engineer",
+      "first_seen": "2026-11-23T12:10:00.646339+00:00"
+    },
     "d47fdbd3-a0d5-45a8-94a0-19d2a640e3ae": {
       "title": "Sr. Principal, DevOps",
       "first_seen": "2026-09-24T17:00:04.645751+00:00"
@@ -84,5 +88,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 52
+  "last_board_total": 54
 }

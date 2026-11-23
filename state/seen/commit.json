@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-23T01:30:15.233589+00:00",
+  "last_success": "2026-11-23T12:10:00.570201+00:00",
   "last_count": 50,
   "consecutive_failures": 0,
   "jobs": {
@@ -66,10 +66,6 @@
     "2D.375": {
       "title": "Help Desk",
       "first_seen": "2026-10-14T11:38:22.118379+00:00"
-    },
-    "53.276": {
-      "title": "IT Infrastructure Maintenance Team Lead",
-      "first_seen": "2026-10-13T06:35:37.167157+00:00"
     },
     "2D.376": {
       "title": "IT Infrastructure Maintenance Team Lead",
@@ -147,6 +143,10 @@
       "title": "Senior System Architect",
       "first_seen": "2026-10-08T18:46:43.372330+00:00"
     },
+    "53.276": {
+      "title": "Senior Systems Engineer & Integration Lead",
+      "first_seen": "2026-10-13T06:35:37.167157+00:00"
+    },
     "A1.479": {
       "title": "Software Architect",
       "first_seen": "2026-10-15T16:47:46.889604+00:00"
@@ -204,5 +204,5 @@
       "first_seen": "2026-10-12T21:12:11.505587+00:00"
     }
   },
-  "last_board_total": 123
+  "last_board_total": 130
 }

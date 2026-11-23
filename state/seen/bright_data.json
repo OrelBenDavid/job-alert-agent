@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-23T01:30:15.230236+00:00",
+  "last_success": "2026-11-23T12:10:00.558521+00:00",
   "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
@@ -15,9 +15,9 @@
       "title": "FP&A",
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     },
-    "8E.07C": {
-      "title": "Payroll Controller",
-      "first_seen": "2026-08-23T09:01:19.786600+00:00"
+    "9B.477": {
+      "title": "Partnerships Manager (Academy) - Temp",
+      "first_seen": "2026-11-23T12:10:00.558521+00:00"
     },
     "3A.E5D": {
       "title": "Senior Back-End JavaScript Developer - IL",
@@ -32,5 +32,5 @@
       "first_seen": "2026-08-20T06:56:44.562111+00:00"
     }
   },
-  "last_board_total": 18
+  "last_board_total": 17
 }

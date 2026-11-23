@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.244590+00:00",
-  "last_count": 23,
+  "last_success": "2026-11-23T12:10:00.606464+00:00",
+  "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
     "d1188742-792c-4202-873c-d4600a1f22c1": {
@@ -27,13 +27,13 @@
       "title": "Business Development Representative (BDR)",
       "first_seen": "2026-11-12T19:47:36.857205+00:00"
     },
-    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
-      "title": "Account Manager- Mid Market IL",
-      "first_seen": "2026-10-14T17:00:25.314544+00:00"
-    },
     "efc9a66e-b067-40c9-a504-4a94f282b3ca": {
       "title": "VP Revenue Marketing",
       "first_seen": "2026-10-21T21:31:27.227137+00:00"
+    },
+    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
+      "title": "Account Manager- Mid Market IL",
+      "first_seen": "2026-10-14T17:00:25.314544+00:00"
     },
     "ec18133d-9feb-4128-9d7a-05874672cf5f": {
       "title": "Senior Director Product Marketing",
@@ -59,6 +59,10 @@
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
     },
+    "2cd41bc9-25d9-4a47-99e2-0779ce93df42": {
+      "title": "Senior Backend Engineer - Platform Group",
+      "first_seen": "2026-11-17T15:51:27.206220+00:00"
+    },
     "53939773-777e-4976-a34c-8d79ee5f8f8f": {
       "title": "Frontend Engineer",
       "first_seen": "2026-11-04T21:13:28.672774+00:00"
@@ -66,14 +70,6 @@
     "8e6d5b58-8017-46b6-8115-c9123f766a1f": {
       "title": "Staff Engineer - Data Platform",
       "first_seen": "2026-09-08T11:05:09.147673+00:00"
-    },
-    "2cd41bc9-25d9-4a47-99e2-0779ce93df42": {
-      "title": "Senior Backend Engineer - Platform Group",
-      "first_seen": "2026-11-17T15:51:27.206220+00:00"
-    },
-    "efaa7830-c038-4fd1-aa96-fe5836a010a2": {
-      "title": "Backend Engineer",
-      "first_seen": "2026-11-19T20:25:30.247628+00:00"
     },
     "54598811-7807-4f0e-bfdd-0c0e7ed4d253": {
       "title": "Technical Program Manager",
@@ -96,5 +92,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 101
+  "last_board_total": 100
 }

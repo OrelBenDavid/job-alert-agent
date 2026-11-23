@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.253241+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-23T12:10:00.630316+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "8916613002": {
@@ -35,6 +35,10 @@
       "title": "IT Manager",
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     },
+    "8732366002": {
+      "title": "Operations Manager, Oasis",
+      "first_seen": "2026-11-23T12:10:00.630316+00:00"
+    },
     "5315164002": {
       "title": "Senior Full Stack Engineer",
       "first_seen": "2026-10-05T14:24:12.488956+00:00"
@@ -44,5 +48,5 @@
       "first_seen": "2026-08-18T19:28:26.423735+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }

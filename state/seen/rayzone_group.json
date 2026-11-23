@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.265114+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-23T12:10:00.654695+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "C8C39F90A1": {
@@ -22,7 +22,11 @@
     "BB21E1009C": {
       "title": "Software Development Team Lead",
       "first_seen": "2026-09-17T11:28:45.951586+00:00"
+    },
+    "362F368077": {
+      "title": "Solution Engineer",
+      "first_seen": "2026-11-23T12:10:00.654695+00:00"
     }
   },
-  "last_board_total": 5
+  "last_board_total": 6
 }

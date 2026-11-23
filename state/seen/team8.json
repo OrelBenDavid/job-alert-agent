@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.273385+00:00",
-  "last_count": 38,
+  "last_success": "2026-11-23T12:10:00.672774+00:00",
+  "last_count": 39,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -90,6 +90,10 @@
     "EA.278": {
       "title": "Solid- Applied AI Solutions Engineer",
       "first_seen": "2026-09-14T12:31:04.133884+00:00"
+    },
+    "19.571": {
+      "title": "Stealth Cyber Startup-Founding Engineer — Core Team",
+      "first_seen": "2026-11-23T12:10:00.672774+00:00"
     },
     "B6.375": {
       "title": "Team8  -Security & IT Manager",

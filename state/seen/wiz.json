@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T01:30:15.278948+00:00",
-  "last_count": 29,
+  "last_success": "2026-11-23T12:10:00.687064+00:00",
+  "last_count": 28,
   "consecutive_failures": 0,
   "jobs": {
     "4621534006": {
@@ -18,10 +18,6 @@
     "4621708006": {
       "title": "Brand Designer Lead",
       "first_seen": "2026-11-19T20:25:30.357328+00:00"
-    },
-    "4720879006": {
-      "title": "CTO Data Analyst",
-      "first_seen": "2026-11-18T11:28:43.509861+00:00"
     },
     "4650468006": {
       "title": "CTO Operations Engineer",
