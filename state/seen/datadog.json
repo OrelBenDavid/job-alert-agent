@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T12:10:00.579327+00:00",
-  "last_count": 4,
+  "last_success": "2026-11-24T02:06:09.893903+00:00",
+  "last_count": 3,
   "consecutive_failures": 0,
   "jobs": {
     "8245889": {
@@ -11,14 +11,10 @@
       "title": "Director, Engineering",
       "first_seen": "2026-09-21T12:37:04.654198+00:00"
     },
-    "8334003": {
-      "title": "Mid-Market Account Executive",
-      "first_seen": "2026-10-30T17:56:53.132591+00:00"
-    },
     "7297575": {
       "title": "Strategic Account Executive - Israel",
       "first_seen": "2026-10-16T16:30:21.522831+00:00"
     }
   },
-  "last_board_total": 385
+  "last_board_total": 384
 }

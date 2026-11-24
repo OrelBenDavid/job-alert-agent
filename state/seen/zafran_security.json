@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-23T12:10:00.688924+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-24T02:06:10.026425+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "656516a7-d4f7-4ff3-86b8-89461acc2dde": {
@@ -35,6 +35,10 @@
       "title": "AI Team Lead",
       "first_seen": "2026-11-23T12:10:00.688924+00:00"
     },
+    "c6d2f202-b511-4c8b-80cf-f7345cb25dd6": {
+      "title": "Director of Product Partnerships",
+      "first_seen": "2026-11-24T02:06:10.026425+00:00"
+    },
     "62b02f77-ef83-4bcb-b5ee-330a247085a5": {
       "title": "Senior Software Engineer – Remediation Workflows",
       "first_seen": "2026-09-28T13:38:07.604170+00:00"
@@ -60,5 +64,5 @@
       "first_seen": "2026-11-19T11:25:49.570367+00:00"
     }
   },
-  "last_board_total": 35
+  "last_board_total": 36
 }

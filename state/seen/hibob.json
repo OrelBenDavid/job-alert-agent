@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-23T12:10:00.606464+00:00",
+  "last_success": "2026-11-24T02:06:09.910475+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
@@ -18,6 +18,10 @@
     "faa5807c-2256-4e74-9f3f-7e15e083d667": {
       "title": "Finops Lead",
       "first_seen": "2026-11-08T17:52:13.211118+00:00"
+    },
+    "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
+      "title": "SMB Account Manager IL",
+      "first_seen": "2026-10-19T12:52:14.764907+00:00"
     },
     "cd9e273f-8699-4538-ba02-749b151f642d": {
       "title": "GTM AI Engineer",
@@ -51,17 +55,9 @@
       "title": "Senior Account Executive",
       "first_seen": "2026-09-18T11:01:52.076268+00:00"
     },
-    "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
-      "title": "SMB Account Manager IL",
-      "first_seen": "2026-10-19T12:52:14.764907+00:00"
-    },
     "15060fa3-7b16-4f70-8e1f-0190a1e6005b": {
       "title": "Head of Talent, Performance & Capability (Maternity Leave)",
       "first_seen": "2026-09-22T11:24:08.001040+00:00"
-    },
-    "2cd41bc9-25d9-4a47-99e2-0779ce93df42": {
-      "title": "Senior Backend Engineer - Platform Group",
-      "first_seen": "2026-11-17T15:51:27.206220+00:00"
     },
     "53939773-777e-4976-a34c-8d79ee5f8f8f": {
       "title": "Frontend Engineer",
@@ -83,6 +79,10 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-10-12T10:35:45.152916+00:00"
     },
+    "2cd41bc9-25d9-4a47-99e2-0779ce93df42": {
+      "title": "Senior Backend Engineer - Platform Group",
+      "first_seen": "2026-11-17T15:51:27.206220+00:00"
+    },
     "295c2faa-bf71-4700-8c1e-6bf7a6eac8a6": {
       "title": "Senior AI Ops Engineer",
       "first_seen": "2026-09-07T23:25:18.849113+00:00"
@@ -92,5 +92,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 100
+  "last_board_total": 98
 }

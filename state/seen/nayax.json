@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-23T12:10:00.637168+00:00",
+  "last_success": "2026-11-24T02:06:09.960421+00:00",
   "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
@@ -8,7 +8,7 @@
       "first_seen": "2026-08-30T11:45:37.309742+00:00"
     },
     "8A.47D": {
-      "title": "Post Merger Integration Counsel (PMI)",
+      "title": "Post Merger Integration Counsel (PMI)_2582",
       "first_seen": "2026-11-01T19:29:19.183417+00:00"
     },
     "AC.478": {
@@ -28,5 +28,5 @@
       "first_seen": "2026-11-17T15:51:27.244108+00:00"
     }
   },
-  "last_board_total": 31
+  "last_board_total": 29
 }

@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-23T12:10:00.661942+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-24T02:06:09.995674+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "3f94a301-ea11-457f-b98c-db36c6eb995e": {
       "title": "Cloud Architect",
       "first_seen": "2026-11-17T15:51:27.295204+00:00"
+    },
+    "3491def1-f0a7-4e51-83e1-8501602738e2": {
+      "title": "Director, Security Operation",
+      "first_seen": "2026-11-24T02:06:09.995674+00:00"
     },
     "06730f38-f96a-40c7-b5a4-6c2e2b7d41e9": {
       "title": "Devops Engineering Team Lead",
@@ -28,5 +32,5 @@
       "first_seen": "2026-11-14T01:22:57.570780+00:00"
     }
   },
-  "last_board_total": 29
+  "last_board_total": 32
 }
