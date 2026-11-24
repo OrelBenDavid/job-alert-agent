@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-21T10:52:19.438123+00:00",
   "last_count": 9,
-  "consecutive_failures": 7,
+  "consecutive_failures": 8,
   "jobs": {
     "R30185": {
       "title": "Principal Engineer (Hybrid, ISR)",
