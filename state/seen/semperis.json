@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.497933+00:00",
-  "last_count": 7,
+  "last_success": "2026-11-25T19:06:15.997507+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "3f94a301-ea11-457f-b98c-db36c6eb995e": {
@@ -26,10 +26,6 @@
     "71a75c54-c53c-41bc-bbae-4109f0858009": {
       "title": "HR Generalist – Maternity Leave Replacement",
       "first_seen": "2026-11-01T13:07:06.593382+00:00"
-    },
-    "f0715857-a2ca-4d1e-954e-37df89c1756b": {
-      "title": "Business Development Representative- Italian Speaker",
-      "first_seen": "2026-11-14T01:22:57.570780+00:00"
     }
   },
   "last_board_total": 32

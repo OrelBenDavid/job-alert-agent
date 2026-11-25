@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.523767+00:00",
-  "last_count": 14,
+  "last_success": "2026-11-25T19:06:16.028755+00:00",
+  "last_count": 15,
   "consecutive_failures": 0,
   "jobs": {
     "8323413": {
@@ -39,6 +39,10 @@
       "title": "Store Manager",
       "first_seen": "2026-08-18T19:28:38.367077+00:00"
     },
+    "8417144": {
+      "title": "Support Team Lead",
+      "first_seen": "2026-11-25T19:06:16.028755+00:00"
+    },
     "8173457": {
       "title": "Trust and Safety Associate",
       "first_seen": "2026-09-03T20:54:14.844821+00:00"
@@ -60,5 +64,5 @@
       "first_seen": "2026-10-26T20:24:20.719839+00:00"
     }
   },
-  "last_board_total": 186
+  "last_board_total": 180
 }

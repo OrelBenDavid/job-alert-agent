@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-25T08:08:23.206869+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-25T19:06:15.887113+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "9E.074": {
       "title": "AI Algorithms Engineer",
       "first_seen": "2026-11-22T11:00:36.941979+00:00"
+    },
+    "3A.57C": {
+      "title": "Algorithm Developer - Signal Processing",
+      "first_seen": "2026-11-25T19:06:15.887113+00:00"
     },
     "75.478": {
       "title": "Algorithm Developer – Data Intelligence",
@@ -56,5 +60,5 @@
       "first_seen": "2026-11-16T19:29:33.092676+00:00"
     }
   },
-  "last_board_total": 41
+  "last_board_total": 42
 }

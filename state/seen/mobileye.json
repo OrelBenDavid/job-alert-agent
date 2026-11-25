@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.452705+00:00",
-  "last_count": 149,
+  "last_success": "2026-11-25T19:06:15.947456+00:00",
+  "last_count": 152,
   "consecutive_failures": 0,
   "jobs": {
     "7aa00e13-3ae1-4dd7-a853-cb5b2a535c6a": {
@@ -27,9 +27,17 @@
       "title": "Algorithm Developer for Objects Modeling",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
     },
+    "331ce77a-8179-444a-924c-189f131afd50": {
+      "title": "Algorithm Developer for Radar/Lidar Group",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
+    },
     "c14fbc4f-8047-421b-968f-a3b5bd2c5146": {
       "title": "Algorithm Developer for Radar/Lidar Group",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "0ea9583a-7cee-48d2-91b7-efaa08725de2": {
+      "title": "Algorithm Developer Student",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
     "6e32e4d7-2df4-4ff2-b404-a6dba0444e84": {
       "title": "Algorithm Engineer Senior Technical Expert - Objects Perception",
@@ -63,20 +71,20 @@
       "title": "AV Perception Product Manager",
       "first_seen": "2026-11-24T02:06:09.953477+00:00"
     },
-    "0fda07a5-aa04-431b-9eb1-a1f92f1c6884": {
-      "title": "AV support specialist",
-      "first_seen": "2026-11-25T08:08:23.452705+00:00"
-    },
     "73a2fc5d-ed55-4bd5-b421-ba40955d8247": {
       "title": "Backend Team Lead - REM Engineering",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
+    },
+    "3598731b-e2b3-4bd2-8bce-7a17aecf7421": {
+      "title": "Business Operations Coordinator",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
     "da4f0a8d-6af3-4150-9acf-1898e83d5a61": {
       "title": "C++ Developer – Neural Network Integration & Production 3D Sensing Systems",
       "first_seen": "2026-11-18T00:53:02.709377+00:00"
     },
     "fb6ae5c4-6bcc-46a9-8107-ac537b8a546e": {
-      "title": "C++ Embedded Software Team Leader – In-Vehicle HD Maps",
+      "title": "C++ Embedded Software Team Leader",
       "first_seen": "2026-11-24T13:30:12.645433+00:00"
     },
     "9495066e-ebcc-49ed-bac5-0480be15753f": {
@@ -98,6 +106,10 @@
     "da962759-96d7-4810-9927-351ecc4b6ceb": {
       "title": "Cyber Security Solution Architect",
       "first_seen": "2026-08-16T18:39:15.555736+00:00"
+    },
+    "342bbac1-839f-4aff-a050-ceb39ceef9aa": {
+      "title": "Data Analytics Project Manager",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
     "9ef5fd2f-54b4-4ddd-b7ac-2139d91abd88": {
       "title": "Data Engineering Team Leader",
@@ -190,6 +202,10 @@
     "b6db859a-bb49-4e66-ac3d-d111eeb03bd1": {
       "title": "Execution Program Manager",
       "first_seen": "2026-11-08T17:52:13.236717+00:00"
+    },
+    "abe9ac0a-0991-47fb-a7c4-633ce93b1e55": {
+      "title": "Experienced Bookkeeper",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
     "0029e8b1-bdf1-4d0a-9895-7b5ee22c4837": {
       "title": "Experienced Control Algorithms Engineer",
@@ -307,6 +323,10 @@
       "title": "Integration and Validation Architect",
       "first_seen": "2026-11-04T14:18:43.080260+00:00"
     },
+    "0fda07a5-aa04-431b-9eb1-a1f92f1c6884": {
+      "title": "IT & Multimedia Support Specialist",
+      "first_seen": "2026-11-25T08:08:23.452705+00:00"
+    },
     "fffb9601-ec01-4f84-b021-905146110b25": {
       "title": "IT DevOps Team Lead",
       "first_seen": "2026-11-24T13:30:12.645433+00:00"
@@ -386,6 +406,10 @@
     "cfd0e9f7-d62e-408b-90e5-91d3046d130e": {
       "title": "Reinforcement Learning Researcher | Learned-Policy Group",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
+    },
+    "603cb801-760e-4155-be2c-f7f8951d75dc": {
+      "title": "Research Engineer, Applied AI & Multimodal Models",
+      "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
     "18798a36-f350-4166-a3aa-1d863708cfc9": {
       "title": "Safety Architect",
@@ -491,10 +515,6 @@
       "title": "Senior Network System Architect",
       "first_seen": "2026-11-10T19:36:40.201189+00:00"
     },
-    "bfee467c-d620-41fd-803e-ae9846568ef6": {
-      "title": "Senior Product Manager - Autonomous Urban Driving",
-      "first_seen": "2026-11-18T11:28:43.433432+00:00"
-    },
     "16bfb65e-79eb-4a25-b803-0a24f40489b8": {
       "title": "Senior Python Developer for Map Management",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -518,14 +538,6 @@
     "fa8e04f5-58b3-49be-87a3-5dcc561fd48c": {
       "title": "SOC Analyst (Student position)",
       "first_seen": "2026-11-02T21:39:34.126367+00:00"
-    },
-    "2a817378-710e-43df-929b-a53ce94f1daa": {
-      "title": "Software Developer",
-      "first_seen": "2026-10-19T12:52:15.517986+00:00"
-    },
-    "c57aff9f-88fb-4fa2-b970-60c59a16b58b": {
-      "title": "Software Developer",
-      "first_seen": "2026-11-12T10:52:16.271512+00:00"
     },
     "999d5e75-7d50-42f1-879b-18035226641f": {
       "title": "Software Group Manager - OS Integration & Automation",
@@ -600,5 +612,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 173
+  "last_board_total": 177
 }

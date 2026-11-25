@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-25T08:08:23.230372+00:00",
+  "last_success": "2026-11-25T19:06:15.917721+00:00",
   "last_count": 9,
   "consecutive_failures": 0,
   "jobs": {
@@ -16,7 +16,7 @@
       "first_seen": "2026-11-19T02:27:57.969173+00:00"
     },
     "c1825311-a1b1-4b1f-89ca-abf94e55a0f2": {
-      "title": "Fraud Analytics Manager",
+      "title": "Senior Data Analyst, Fraud Risk",
       "first_seen": "2026-11-06T22:58:43.241583+00:00"
     },
     "8f34c896-27f7-426a-a6e2-441114385ac4": {
@@ -40,5 +40,5 @@
       "first_seen": "2026-11-24T23:49:58.121054+00:00"
     }
   },
-  "last_board_total": 21
+  "last_board_total": 22
 }

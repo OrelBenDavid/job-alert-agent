@@ -1,12 +1,16 @@
 {
-  "last_success": "2026-11-25T08:08:23.235116+00:00",
-  "last_count": 1,
+  "last_success": "2026-11-25T19:06:15.923733+00:00",
+  "last_count": 2,
   "consecutive_failures": 0,
   "jobs": {
     "706cd16e-0181-415e-9f27-37e2fd19f385": {
       "title": "Senior Account Executive Defense - Israel",
       "first_seen": "2026-08-25T18:50:07.809548+00:00"
+    },
+    "c055c904-5d42-4334-a39d-22cb28b30fcd": {
+      "title": "Staff Product Manager",
+      "first_seen": "2026-11-25T19:06:15.923733+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }

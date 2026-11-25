@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.437887+00:00",
-  "last_count": 28,
+  "last_success": "2026-11-25T19:06:15.925212+00:00",
+  "last_count": 27,
   "consecutive_failures": 0,
   "jobs": {
     "53.764": {
@@ -47,9 +47,17 @@
       "title": "Mechanical Design Engineer",
       "first_seen": "2026-09-28T13:38:07.495801+00:00"
     },
+    "4F.472": {
+      "title": "Mechanical Design Engineer- Ground Robotics Group",
+      "first_seen": "2026-11-25T19:06:15.925212+00:00"
+    },
     "57.867": {
       "title": "Member of Technical Staff",
       "first_seen": "2026-08-20T06:56:54.012511+00:00"
+    },
+    "57.47D": {
+      "title": "QA Automation Engineer",
+      "first_seen": "2026-11-25T19:06:15.925212+00:00"
     },
     "B5.F6C": {
       "title": "Resident",
@@ -62,10 +70,6 @@
     "7E.476": {
       "title": "Security Operations Engineer",
       "first_seen": "2026-11-08T10:06:45.273276+00:00"
-    },
-    "6C.372": {
-      "title": "Senior Algorithm Developer — Robotics Team",
-      "first_seen": "2026-10-12T00:25:01.795685+00:00"
     },
     "81.A66": {
       "title": "Senior Infrastructure & TechOps Engineer",
@@ -82,10 +86,6 @@
     "BF.476": {
       "title": "Senior Marketing Designer",
       "first_seen": "2026-11-18T11:28:43.413361+00:00"
-    },
-    "A3.D68": {
-      "title": "Senior Software Engineer — Base Protection",
-      "first_seen": "2026-08-20T06:56:54.012511+00:00"
     },
     "D6.762": {
       "title": "Senior System Engineer",
@@ -107,14 +107,10 @@
       "title": "Support Engineer (NOC / Tier 1)",
       "first_seen": "2026-08-31T13:27:00.346481+00:00"
     },
-    "C4.472": {
-      "title": "Tech Leader- UAE",
-      "first_seen": "2026-11-05T23:31:43.075402+00:00"
-    },
     "E5.27F": {
       "title": "Technical Program Manager",
       "first_seen": "2026-09-08T16:30:33.547116+00:00"
     }
   },
-  "last_board_total": 56
+  "last_board_total": 57
 }

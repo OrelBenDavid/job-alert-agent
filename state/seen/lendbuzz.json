@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.442249+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-25T19:06:15.935820+00:00",
+  "last_count": 5,
   "consecutive_failures": 0,
   "jobs": {
     "39015135-c274-4048-9a67-5cbd59a60a58": {
@@ -19,14 +19,10 @@
       "title": "Senior Cloud Engineer",
       "first_seen": "2026-08-18T19:28:26.407768+00:00"
     },
-    "7c977c98-4c56-4946-a4e9-35498b6f7cad": {
-      "title": "Senior DevOps / Site Reliability Engineer (SRE)",
-      "first_seen": "2026-08-18T19:28:26.407768+00:00"
-    },
     "11f0ac1b-9dba-425a-85f5-4ceacdc8794e": {
       "title": "Skip Charge Off Associate",
       "first_seen": "2026-11-04T21:13:28.695968+00:00"
     }
   },
-  "last_board_total": 55
+  "last_board_total": 54
 }

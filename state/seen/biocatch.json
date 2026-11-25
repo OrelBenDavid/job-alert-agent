@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.182394+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-25T19:06:15.852656+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "29.477": {
@@ -14,10 +14,6 @@
     "F6.B6E": {
       "title": "IT Team Lead",
       "first_seen": "2026-09-05T10:26:46.515603+00:00"
-    },
-    "EE.27D": {
-      "title": "Mobile Developer",
-      "first_seen": "2026-09-22T11:24:07.947135+00:00"
     },
     "32.F6C": {
       "title": "Senior AI & Software Infra Engineer",
@@ -52,5 +48,5 @@
       "first_seen": "2026-08-13T11:24:10.791826+00:00"
     }
   },
-  "last_board_total": 28
+  "last_board_total": 26
 }

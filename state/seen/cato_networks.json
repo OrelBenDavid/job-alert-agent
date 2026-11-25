@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.187803+00:00",
-  "last_count": 39,
+  "last_success": "2026-11-25T19:06:15.862342+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -22,6 +22,10 @@
     "5041536101": {
       "title": "DevOps Engineer",
       "first_seen": "2026-11-19T20:25:30.203432+00:00"
+    },
+    "5042127101": {
+      "title": "DevOps Engineer",
+      "first_seen": "2026-11-25T19:06:15.862342+00:00"
     },
     "4853323101": {
       "title": "Full Stack Developer",
@@ -115,21 +119,21 @@
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "5024653101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-11-03T16:57:44.503344+00:00"
-    },
-    "5030362101": {
+    "5030360101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-10T19:36:40.115616+00:00"
     },
-    "5030360101": {
+    "5030362101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-10T19:36:40.115616+00:00"
     },
     "5036503101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-17T15:51:27.161943+00:00"
+    },
+    "5024653101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-11-03T16:57:44.503344+00:00"
     },
     "5028381101": {
       "title": "Software Engineer Data Platform",

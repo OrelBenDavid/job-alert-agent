@@ -1,11 +1,19 @@
 {
-  "last_success": "2026-11-25T08:08:23.492648+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-25T19:06:15.987368+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
+    "8961954002": {
+      "title": "Account Executive - Emerging Products",
+      "first_seen": "2026-11-25T19:06:15.987368+00:00"
+    },
     "8891146002": {
       "title": "Application Security Architect",
       "first_seen": "2026-10-19T12:52:15.552849+00:00"
+    },
+    "8961781002": {
+      "title": "Commercial Channel Partnership Manager",
+      "first_seen": "2026-11-25T19:06:15.987368+00:00"
     },
     "8653104002": {
       "title": "Data Scientist",
@@ -51,9 +59,9 @@
       "title": "Product Sales Specialist",
       "first_seen": "2026-10-14T04:36:53.845335+00:00"
     },
-    "8888283002": {
+    "8962309002": {
       "title": "Sales Engineer",
-      "first_seen": "2026-10-14T21:32:18.489455+00:00"
+      "first_seen": "2026-11-25T19:06:15.987368+00:00"
     },
     "8805509002": {
       "title": "Security Engineer",

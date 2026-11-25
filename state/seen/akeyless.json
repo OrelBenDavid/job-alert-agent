@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-25T08:08:23.172708+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-25T19:06:15.835686+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
     "EC.A6C": {
@@ -19,10 +19,14 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-11-24T02:06:09.858295+00:00"
     },
-    "E0.65E": {
-      "title": "Software Engineering Team Lead",
-      "first_seen": "2026-08-20T06:56:44.546300+00:00"
+    "AA.57B": {
+      "title": "Senior Cloud Security Engineer",
+      "first_seen": "2026-11-25T19:06:15.835686+00:00"
+    },
+    "AA.570": {
+      "title": "Senior Product Security Engineer",
+      "first_seen": "2026-11-25T19:06:15.835686+00:00"
     }
   },
-  "last_board_total": 9
+  "last_board_total": 10
 }

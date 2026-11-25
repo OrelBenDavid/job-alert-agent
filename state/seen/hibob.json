@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-25T08:08:23.227636+00:00",
+  "last_success": "2026-11-25T19:06:15.908446+00:00",
   "last_count": 22,
   "consecutive_failures": 0,
   "jobs": {
+    "150b1f11-4711-46d3-b7f9-88a4e0215713": {
+      "title": "Customer Experience Engineer",
+      "first_seen": "2026-11-25T19:06:15.908446+00:00"
+    },
     "d1188742-792c-4202-873c-d4600a1f22c1": {
       "title": "Customer Experience Specialist",
       "first_seen": "2026-11-11T19:29:47.829113+00:00"
@@ -18,10 +22,6 @@
     "faa5807c-2256-4e74-9f3f-7e15e083d667": {
       "title": "Finops Lead",
       "first_seen": "2026-11-08T17:52:13.211118+00:00"
-    },
-    "27a2d278-6a83-45b1-8ef1-02d8e6b8d361": {
-      "title": "SMB Account Manager IL",
-      "first_seen": "2026-10-19T12:52:14.764907+00:00"
     },
     "cd9e273f-8699-4538-ba02-749b151f642d": {
       "title": "GTM AI Engineer",
@@ -92,5 +92,5 @@
       "first_seen": "2026-08-13T12:03:53.803704+00:00"
     }
   },
-  "last_board_total": 98
+  "last_board_total": 99
 }
