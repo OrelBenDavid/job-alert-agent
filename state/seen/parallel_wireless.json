@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-24T23:49:58.152552+00:00",
-  "last_count": 22,
+  "last_success": "2026-11-25T08:08:23.476257+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "6a2da84e-9d36-4c7f-9713-5492dd72c338": {
@@ -22,10 +22,6 @@
     "73443969-f834-4d5f-bc2f-f85ac6af4dbe": {
       "title": "Integration & Validation Engineer",
       "first_seen": "2026-11-22T19:25:28.068857+00:00"
-    },
-    "56786ab6-bdb3-41f2-b749-b77b7c834ef2": {
-      "title": "Junior System Integration Engineer",
-      "first_seen": "2026-11-05T17:16:54.061663+00:00"
     },
     "22903dae-4ee6-4aa5-b22c-eb66ab0565dd": {
       "title": "PHY Algorithms Senior Engineer - AI/ML",
@@ -92,5 +88,5 @@
       "first_seen": "2026-09-14T12:31:04.096013+00:00"
     }
   },
-  "last_board_total": 57
+  "last_board_total": 56
 }

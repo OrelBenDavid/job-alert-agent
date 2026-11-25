@@ -1,8 +1,28 @@
 {
-  "last_success": "2026-11-21T10:52:19.470309+00:00",
-  "last_count": 20,
-  "consecutive_failures": 9,
+  "last_success": "2026-11-25T08:08:23.235475+00:00",
+  "last_count": 25,
+  "consecutive_failures": 0,
   "jobs": {
+    "R-111941": {
+      "title": "NPD Quality Engineer",
+      "first_seen": "2026-11-25T08:08:23.235475+00:00"
+    },
+    "R-111939": {
+      "title": "VP Haifa Technology Incubator Electrophysiology",
+      "first_seen": "2026-11-25T08:08:23.235475+00:00"
+    },
+    "R-111642": {
+      "title": "Customer Service Representative- Temp position",
+      "first_seen": "2026-11-25T08:08:23.235475+00:00"
+    },
+    "R-112573": {
+      "title": "Associate Product Specialist- Center",
+      "first_seen": "2026-11-25T08:08:23.235475+00:00"
+    },
+    "R-112572": {
+      "title": "Associate Product Specialist- North",
+      "first_seen": "2026-11-25T08:08:23.235475+00:00"
+    },
     "R-111595": {
       "title": "Associate Product Specialist- South",
       "first_seen": "2026-11-21T10:52:19.470309+00:00"
@@ -84,5 +104,5 @@
       "first_seen": "2026-08-23T09:01:19.830908+00:00"
     }
   },
-  "last_board_total": 22
+  "last_board_total": 26
 }

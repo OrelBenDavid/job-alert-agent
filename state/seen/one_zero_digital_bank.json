@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-24T23:49:58.150222+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-25T08:08:23.467942+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "B4.277": {
@@ -14,6 +14,10 @@
     "C9.763": {
       "title": "Data Engineering Team Leader",
       "first_seen": "2026-10-13T16:52:25.862063+00:00"
+    },
+    "19.570": {
+      "title": "Fraud Operations Specialist",
+      "first_seen": "2026-11-25T08:08:23.467942+00:00"
     },
     "2B.47D": {
       "title": "Marketing Automation & GTM Specialist",
@@ -52,5 +56,5 @@
       "first_seen": "2026-11-09T15:56:39.536111+00:00"
     }
   },
-  "last_board_total": 12
+  "last_board_total": 13
 }
