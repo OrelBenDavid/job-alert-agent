@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.481295+00:00",
-  "last_count": 10,
+  "last_success": "2026-11-26T16:44:07.609386+00:00",
+  "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
     "69.766": {
@@ -39,10 +39,14 @@
       "title": "Senior C++ Developer",
       "first_seen": "2026-10-19T12:52:14.698100+00:00"
     },
+    "8D.07C": {
+      "title": "Senior Full-Stack Mobile Developer",
+      "first_seen": "2026-11-26T16:44:07.609386+00:00"
+    },
     "6C.168": {
       "title": "Senior Product Manager",
       "first_seen": "2026-08-13T11:24:10.788867+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 11
 }

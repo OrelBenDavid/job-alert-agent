@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-26T03:28:11.561233+00:00",
+  "last_success": "2026-11-26T16:44:07.748070+00:00",
   "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
@@ -52,7 +52,7 @@
       "first_seen": "2026-10-21T11:36:48.081195+00:00"
     },
     "A594672B43": {
-      "title": "Senior Post-Merger Integration Manager (PMI) - EMEA",
+      "title": "Senior Manager, Integration Management Office",
       "first_seen": "2026-08-20T13:03:13.977268+00:00"
     },
     "A6966550BE": {
@@ -60,5 +60,5 @@
       "first_seen": "2026-11-10T10:57:45.442964+00:00"
     }
   },
-  "last_board_total": 63
+  "last_board_total": 60
 }

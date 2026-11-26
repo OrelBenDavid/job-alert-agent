@@ -1,11 +1,15 @@
 {
-  "last_success": "2026-11-26T03:28:11.544885+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-26T16:44:07.708590+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "28.376": {
       "title": "AI Business Automation Engineer",
       "first_seen": "2026-10-05T14:24:12.473232+00:00"
+    },
+    "2E.572": {
+      "title": "Backend Engineer",
+      "first_seen": "2026-11-26T16:44:07.708590+00:00"
     },
     "4C.471": {
       "title": "Browser Infrastructure Architect",
@@ -28,5 +32,5 @@
       "first_seen": "2026-11-16T19:29:33.134552+00:00"
     }
   },
-  "last_board_total": 11
+  "last_board_total": 12
 }

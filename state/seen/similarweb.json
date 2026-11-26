@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.591395+00:00",
-  "last_count": 20,
+  "last_success": "2026-11-26T16:44:07.800752+00:00",
+  "last_count": 19,
   "consecutive_failures": 0,
   "jobs": {
     "6897277": {
@@ -43,10 +43,6 @@
       "title": "Finance Operation specialist",
       "first_seen": "2026-10-28T12:37:13.889424+00:00"
     },
-    "8260908": {
-      "title": "Product Designer - Maternity Leave",
-      "first_seen": "2026-10-07T13:08:47.264424+00:00"
-    },
     "8273657": {
       "title": "Product Manager – AI Transformation",
       "first_seen": "2026-10-12T10:35:45.216313+00:00"
@@ -84,5 +80,5 @@
       "first_seen": "2026-10-14T17:00:25.393209+00:00"
     }
   },
-  "last_board_total": 58
+  "last_board_total": 57
 }

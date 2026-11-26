@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.532184+00:00",
-  "last_count": 6,
+  "last_success": "2026-11-26T16:44:07.690945+00:00",
+  "last_count": 7,
   "consecutive_failures": 0,
   "jobs": {
     "25.471": {
@@ -23,10 +23,14 @@
       "title": "Senior AI Engineer",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     },
+    "7E.572": {
+      "title": "Senior AI Researcher – Computational Pathology",
+      "first_seen": "2026-11-26T16:44:07.690945+00:00"
+    },
     "B8.767": {
       "title": "Staff Architect, Data & AI Infra",
       "first_seen": "2026-08-20T06:56:53.996569+00:00"
     }
   },
-  "last_board_total": 10
+  "last_board_total": 12
 }

@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.599361+00:00",
-  "last_count": 38,
+  "last_success": "2026-11-26T16:44:07.820058+00:00",
+  "last_count": 40,
   "consecutive_failures": 0,
   "jobs": {
     "23.474": {
@@ -38,6 +38,10 @@
     "5D.86D": {
       "title": "Espresso Clinical - Senior Full Stack Developer",
       "first_seen": "2026-10-15T11:17:05.930300+00:00"
+    },
+    "99.576": {
+      "title": "Lumia Security- AI Engineer",
+      "first_seen": "2026-11-26T16:44:07.820058+00:00"
     },
     "F0.157": {
       "title": "Lumia Security- Senior Software Engineer",
@@ -99,6 +103,10 @@
       "title": "Team8  -Security & IT Manager",
       "first_seen": "2026-10-01T12:58:35.360009+00:00"
     },
+    "3E.578": {
+      "title": "Team8 Cyber Stealth Startup - AI Engineer",
+      "first_seen": "2026-11-26T16:44:07.820058+00:00"
+    },
     "FB.D63": {
       "title": "Team8 Cyber Stealth Startup- Business Development Representative (BDR)",
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
@@ -156,5 +164,5 @@
       "first_seen": "2026-08-13T11:24:41.070265+00:00"
     }
   },
-  "last_board_total": 48
+  "last_board_total": 50
 }

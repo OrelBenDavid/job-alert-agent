@@ -1,8 +1,12 @@
 {
-  "last_success": "2026-11-26T03:28:11.496237+00:00",
-  "last_count": 5,
+  "last_success": "2026-11-26T16:44:07.650305+00:00",
+  "last_count": 6,
   "consecutive_failures": 0,
   "jobs": {
+    "b82a7907-b582-4f22-9ba0-9a2506a26e15": {
+      "title": "Account Manager - (Digital Accounts EMEA)",
+      "first_seen": "2026-11-26T16:44:07.650305+00:00"
+    },
     "a24bff9c-0b9e-4084-9be9-fc9de916b9b3": {
       "title": "Customer Success Manager, Enterprise Accounts",
       "first_seen": "2026-11-24T23:49:58.098895+00:00"
@@ -24,5 +28,5 @@
       "first_seen": "2026-08-13T11:24:19.135360+00:00"
     }
   },
-  "last_board_total": 8
+  "last_board_total": 9
 }

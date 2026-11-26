@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-26T03:28:11.473996+00:00",
+  "last_success": "2026-11-26T16:44:07.594441+00:00",
   "last_count": 11,
   "consecutive_failures": 0,
   "jobs": {
@@ -11,13 +11,13 @@
       "title": "Deputy Production Manager",
       "first_seen": "2026-09-29T12:38:07.329408+00:00"
     },
+    "D1.B36": {
+      "title": "Electronics Technician in Production",
+      "first_seen": "2026-11-26T16:44:07.594441+00:00"
+    },
     "7E.F65": {
       "title": "EMS Subcontractor Manager",
       "first_seen": "2026-09-29T12:38:07.329408+00:00"
-    },
-    "F1.37F": {
-      "title": "Junior Electronics Technician in Production",
-      "first_seen": "2026-09-28T13:38:07.402049+00:00"
     },
     "44.C62": {
       "title": "QC Inspector",

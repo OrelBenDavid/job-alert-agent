@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.552942+00:00",
-  "last_count": 152,
+  "last_success": "2026-11-26T16:44:07.724783+00:00",
+  "last_count": 150,
   "consecutive_failures": 0,
   "jobs": {
     "7aa00e13-3ae1-4dd7-a853-cb5b2a535c6a": {
@@ -18,6 +18,10 @@
     "5b373ab2-fb86-4ce5-a393-5d838e28b2c4": {
       "title": "Algo Software Engineer",
       "first_seen": "2026-11-24T23:49:58.136821+00:00"
+    },
+    "a9dc5853-1894-40c8-ae40-0297a99f352e": {
+      "title": "Algorithm Data Analyst - Objects Modeling",
+      "first_seen": "2026-11-26T16:44:07.724783+00:00"
     },
     "4445a729-d5ec-4ae4-b1f6-5bea979b4dce": {
       "title": "Algorithm Developer - Vision Algorithms",
@@ -111,14 +115,6 @@
       "title": "Data Analytics Project Manager",
       "first_seen": "2026-11-25T19:06:15.947456+00:00"
     },
-    "9ef5fd2f-54b4-4ddd-b7ac-2139d91abd88": {
-      "title": "Data Engineering Team Leader",
-      "first_seen": "2026-11-12T19:47:37.701020+00:00"
-    },
-    "7a25ec5f-8955-4538-94bd-5c0e847475b4": {
-      "title": "Data Manager",
-      "first_seen": "2026-11-24T23:49:58.136821+00:00"
-    },
     "e0c886ae-e178-4c78-b59c-4a20a70a1048": {
       "title": "Data Science Product Lead - Algorithms Division",
       "first_seen": "2026-10-22T11:36:45.523068+00:00"
@@ -158,10 +154,6 @@
     "f8acdfa6-bd0d-4a64-a3e1-709d62e4c554": {
       "title": "Director of Release Management",
       "first_seen": "2026-11-18T20:20:40.909411+00:00"
-    },
-    "04c8ffeb-012c-4461-88a1-58acc073958b": {
-      "title": "EHS specialist - Safety Officer",
-      "first_seen": "2026-09-22T16:46:15.959623+00:00"
     },
     "8ff038b2-d755-4a6c-8c52-0da314ad932e": {
       "title": "Electrical Validation Engineer",
@@ -303,10 +295,6 @@
       "title": "IC Package Layout Engineer",
       "first_seen": "2026-10-11T12:36:12.433855+00:00"
     },
-    "4e512957-1993-4606-bd4e-4f271c38943b": {
-      "title": "Image Quality Verification and Validation Engineer",
-      "first_seen": "2026-11-23T12:10:00.631587+00:00"
-    },
     "c964c792-eff5-4427-a847-38144b9cd7cd": {
       "title": "Information Security Engineer",
       "first_seen": "2026-10-13T16:52:25.844896+00:00"
@@ -378,10 +366,6 @@
     "e30e12dd-f44c-48db-93bf-82835f5cde3d": {
       "title": "Product Execution Manager",
       "first_seen": "2026-10-19T12:52:15.517986+00:00"
-    },
-    "ad23da3b-e74e-4b41-84b5-bb8abfa125a6": {
-      "title": "Production Quality Engineer",
-      "first_seen": "2026-10-27T08:51:47.627042+00:00"
     },
     "b571e504-4e18-4de1-a12f-eaac1392bf8f": {
       "title": "Production Software Engineer for Algo Objects",
@@ -523,6 +507,10 @@
       "title": "Senior Signal Integrity Engineer-AV Hardware",
       "first_seen": "2026-08-12T10:15:21.611278+00:00"
     },
+    "b5f72105-89cb-49a4-ac8a-2422a6142db1": {
+      "title": "Senior Signal Processing Algorithm Developer",
+      "first_seen": "2026-11-26T16:44:07.724783+00:00"
+    },
     "ffd7b3b0-bde6-447f-89cd-1c7f9abf17e5": {
       "title": "Senior System Architect",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -571,6 +559,10 @@
       "title": "System Integration Engineer - Temporary Position",
       "first_seen": "2026-11-19T11:25:49.487584+00:00"
     },
+    "072a02e8-0ac6-47e8-b36d-a7c50b896ca6": {
+      "title": "Talent Sourcer",
+      "first_seen": "2026-11-26T16:44:07.724783+00:00"
+    },
     "1beaa9a2-6edd-468a-a719-d2f320c7ee70": {
       "title": "Technical PM",
       "first_seen": "2026-08-11T14:24:50.143668+00:00"
@@ -612,5 +604,5 @@
       "first_seen": "2026-10-25T15:58:07.767024+00:00"
     }
   },
-  "last_board_total": 177
+  "last_board_total": 180
 }

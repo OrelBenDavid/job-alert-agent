@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.579083+00:00",
-  "last_count": 26,
+  "last_success": "2026-11-26T16:44:07.771095+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "13.05B": {
@@ -42,10 +42,6 @@
     "1A.C34": {
       "title": "Logic Design Engineer - Israel",
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
-    },
-    "0B.47E": {
-      "title": "Logistics Coordinator",
-      "first_seen": "2026-11-02T21:39:34.179265+00:00"
     },
     "11.475": {
       "title": "Mechanical Engineer - Test Station Development",
@@ -95,10 +91,6 @@
       "title": "Talent Acquisition Partner",
       "first_seen": "2026-11-11T01:11:08.855896+00:00"
     },
-    "9C.47B": {
-      "title": "Technical Program Manager",
-      "first_seen": "2026-11-04T21:13:28.727738+00:00"
-    },
     "B0.372-47.20D": {
       "title": "Validation Engineer- Quantum Control Systems",
       "first_seen": "2026-09-28T13:38:07.560989+00:00"
@@ -108,5 +100,5 @@
       "first_seen": "2026-08-20T06:56:56.899705+00:00"
     }
   },
-  "last_board_total": 71
+  "last_board_total": 69
 }

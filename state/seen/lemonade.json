@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.542019+00:00",
-  "last_count": 25,
+  "last_success": "2026-11-26T16:44:07.705422+00:00",
+  "last_count": 24,
   "consecutive_failures": 0,
   "jobs": {
     "9a6153da-639d-413e-b9bf-68ebf5f8c269": {
@@ -75,10 +75,6 @@
       "title": "Sr. Compliance Analyst",
       "first_seen": "2026-09-02T20:55:41.971813+00:00"
     },
-    "0d702fd8-32aa-4d9a-ba84-bfafdc71c339": {
-      "title": "User Acquisition Manager",
-      "first_seen": "2026-09-06T10:45:34.100069+00:00"
-    },
     "db5a4007-49a2-42d1-8104-d185c19b066a": {
       "title": "Director of Business Technology & AI Ops",
       "first_seen": "2026-09-07T12:15:49.278666+00:00"
@@ -104,5 +100,5 @@
       "first_seen": "2026-11-03T16:57:44.576641+00:00"
     }
   },
-  "last_board_total": 42
+  "last_board_total": 41
 }

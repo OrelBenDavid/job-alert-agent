@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.519769+00:00",
-  "last_count": 13,
+  "last_success": "2026-11-26T16:44:07.682944+00:00",
+  "last_count": 14,
   "consecutive_failures": 0,
   "jobs": {
     "F6.477": {
@@ -22,6 +22,10 @@
     "4A.57D": {
       "title": "E-commerce and merchandising specialist",
       "first_seen": "2026-11-24T23:49:58.109672+00:00"
+    },
+    "6E.576": {
+      "title": "Legal Counsel",
+      "first_seen": "2026-11-26T16:44:07.682944+00:00"
     },
     "C5.D6C": {
       "title": "Marketing Content Writer",
@@ -56,5 +60,5 @@
       "first_seen": "2026-09-14T12:31:04.055441+00:00"
     }
   },
-  "last_board_total": 37
+  "last_board_total": 39
 }

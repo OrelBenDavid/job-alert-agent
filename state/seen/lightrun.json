@@ -1,7 +1,12 @@
 {
-  "last_success": "2026-11-26T03:28:11.543141+00:00",
-  "last_count": 0,
+  "last_success": "2026-11-26T16:44:07.706598+00:00",
+  "last_count": 1,
   "consecutive_failures": 0,
-  "jobs": {},
-  "last_board_total": 0
+  "jobs": {
+    "5049634101": {
+      "title": "Senior SAP Solution Architect",
+      "first_seen": "2026-11-26T16:44:07.706598+00:00"
+    }
+  },
+  "last_board_total": 1
 }

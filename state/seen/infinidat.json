@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.533954+00:00",
-  "last_count": 19,
+  "last_success": "2026-11-26T16:44:07.692964+00:00",
+  "last_count": 20,
   "consecutive_failures": 0,
   "jobs": {
     "4C.D6A": {
@@ -38,6 +38,10 @@
     "17.476": {
       "title": "IT Infrastructure Engineer",
       "first_seen": "2026-11-01T19:29:19.156279+00:00"
+    },
+    "3D.173": {
+      "title": "Junior Software Engineer",
+      "first_seen": "2026-11-26T16:44:07.692964+00:00"
     },
     "FD.F6B": {
       "title": "NPI Engineer",
@@ -80,5 +84,5 @@
       "first_seen": "2026-11-22T11:00:36.982368+00:00"
     }
   },
-  "last_board_total": 38
+  "last_board_total": 39
 }

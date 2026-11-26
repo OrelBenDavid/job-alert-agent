@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.585042+00:00",
-  "last_count": 3,
+  "last_success": "2026-11-26T16:44:07.792719+00:00",
+  "last_count": 4,
   "consecutive_failures": 0,
   "jobs": {
     "44.36A": {
@@ -11,10 +11,14 @@
       "title": "IT Specialist",
       "first_seen": "2026-10-25T11:10:18.639712+00:00"
     },
+    "6E.577": {
+      "title": "Product Monetization Manager",
+      "first_seen": "2026-11-26T16:44:07.792719+00:00"
+    },
     "64.D60": {
       "title": "Technical Product Manager",
       "first_seen": "2026-08-20T06:56:56.915754+00:00"
     }
   },
-  "last_board_total": 6
+  "last_board_total": 7
 }

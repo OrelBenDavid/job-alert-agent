@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.492044+00:00",
-  "last_count": 40,
+  "last_success": "2026-11-26T16:44:07.627612+00:00",
+  "last_count": 37,
   "consecutive_failures": 0,
   "jobs": {
     "4951235101": {
@@ -111,17 +111,9 @@
       "title": "Senior Software Engineer - Next Gen DLP",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
     },
-    "5007077101": {
-      "title": "Senior Video Creator & Producer",
-      "first_seen": "2026-11-22T11:00:36.910856+00:00"
-    },
     "4632362101": {
       "title": "Software Architect",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "5036503101": {
-      "title": "Software Engineer",
-      "first_seen": "2026-11-17T15:51:27.161943+00:00"
     },
     "5024653101": {
       "title": "Software Engineer",
@@ -134,6 +126,10 @@
     "5030362101": {
       "title": "Software Engineer",
       "first_seen": "2026-11-10T19:36:40.115616+00:00"
+    },
+    "5036503101": {
+      "title": "Software Engineer",
+      "first_seen": "2026-11-17T15:51:27.161943+00:00"
     },
     "5028381101": {
       "title": "Software Engineer Data Platform",
@@ -154,15 +150,7 @@
     "4648864101": {
       "title": "SW Engineer - Enterprise Browser team",
       "first_seen": "2026-08-18T19:28:22.756143+00:00"
-    },
-    "5035117101": {
-      "title": "Web Marketing Manager — Contract",
-      "first_seen": "2026-11-18T11:28:43.364025+00:00"
-    },
-    "5024509101": {
-      "title": "Web Operations Manager - Contractor Position",
-      "first_seen": "2026-11-08T17:52:13.174961+00:00"
     }
   },
-  "last_board_total": 119
+  "last_board_total": 117
 }

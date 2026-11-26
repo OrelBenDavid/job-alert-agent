@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.557299+00:00",
-  "last_count": 63,
+  "last_success": "2026-11-26T16:44:07.734741+00:00",
+  "last_count": 65,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -50,6 +50,10 @@
     "4930968101": {
       "title": "DFIR Lead",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "5032014101": {
+      "title": "Director, Power Procurement",
+      "first_seen": "2026-11-26T16:44:07.734741+00:00"
     },
     "4902513101": {
       "title": "Director, Pricing",
@@ -115,6 +119,10 @@
       "title": "Security Architect Manager (Corporate & Cloud Security)",
       "first_seen": "2026-08-26T09:51:33.853611+00:00"
     },
+    "4997919101": {
+      "title": "Security Compliance Coordinator",
+      "first_seen": "2026-11-26T16:44:07.734741+00:00"
+    },
     "4958485101": {
       "title": "Security Engineering Lead",
       "first_seen": "2026-08-27T14:03:31.438634+00:00"
@@ -143,13 +151,13 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "5009601101": {
-      "title": "Senior Customer AI Engineer - Token Factory",
-      "first_seen": "2026-10-30T09:51:47.480406+00:00"
-    },
     "5000504101": {
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
+    },
+    "5009601101": {
+      "title": "Senior Customer AI Engineer - Token Factory",
+      "first_seen": "2026-10-30T09:51:47.480406+00:00"
     },
     "4724503101": {
       "title": "Senior Data Engineer",
@@ -243,18 +251,18 @@
       "title": "Technical Project Manager (Hardware)",
       "first_seen": "2026-08-19T09:41:25.394014+00:00"
     },
-    "4995853101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-16T16:30:21.568679+00:00"
-    },
     "4913573101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-21T17:02:52.811980+00:00"
+    },
+    "4995853101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-16T16:30:21.568679+00:00"
     },
     "4794078101": {
       "title": "Warehouse Logistics Specialist",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 345
+  "last_board_total": 344
 }

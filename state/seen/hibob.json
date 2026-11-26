@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T03:28:11.529894+00:00",
-  "last_count": 22,
+  "last_success": "2026-11-26T16:44:07.688381+00:00",
+  "last_count": 21,
   "consecutive_failures": 0,
   "jobs": {
     "150b1f11-4711-46d3-b7f9-88a4e0215713": {
@@ -34,10 +34,6 @@
     "efc9a66e-b067-40c9-a504-4a94f282b3ca": {
       "title": "VP Revenue Marketing",
       "first_seen": "2026-10-21T21:31:27.227137+00:00"
-    },
-    "31cdd4ce-cc2a-411f-84e7-9e8b901dcd6e": {
-      "title": "Account Manager- Mid Market IL",
-      "first_seen": "2026-10-14T17:00:25.314544+00:00"
     },
     "ec18133d-9feb-4128-9d7a-05874672cf5f": {
       "title": "Senior Director Product Marketing",
