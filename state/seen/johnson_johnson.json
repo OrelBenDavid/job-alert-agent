@@ -1,7 +1,7 @@
 {
   "last_success": "2026-11-25T08:08:23.235475+00:00",
   "last_count": 25,
-  "consecutive_failures": 1,
+  "consecutive_failures": 2,
   "jobs": {
     "R-111941": {
       "title": "NPD Quality Engineer",
