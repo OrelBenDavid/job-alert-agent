@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-26T16:44:07.812603+00:00",
-  "last_count": 12,
+  "last_success": "2026-11-27T01:38:35.703817+00:00",
+  "last_count": 13,
   "consecutive_failures": 0,
   "jobs": {
     "88.E47": {
@@ -39,6 +39,10 @@
       "title": "Monetization Graphic Designer",
       "first_seen": "2026-11-26T16:44:07.812603+00:00"
     },
+    "6E.578": {
+      "title": "Office Manger",
+      "first_seen": "2026-11-27T01:38:35.703817+00:00"
+    },
     "04.47A": {
       "title": "Product Manager",
       "first_seen": "2026-10-20T14:14:49.902223+00:00"
@@ -52,5 +56,5 @@
       "first_seen": "2026-08-16T09:35:33.190901+00:00"
     }
   },
-  "last_board_total": 19
+  "last_board_total": 20
 }
