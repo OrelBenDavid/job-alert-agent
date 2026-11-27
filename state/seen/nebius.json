@@ -1,6 +1,6 @@
 {
-  "last_success": "2026-11-27T11:58:36.871599+00:00",
-  "last_count": 65,
+  "last_success": "2026-11-27T21:05:06.286969+00:00",
+  "last_count": 64,
   "consecutive_failures": 0,
   "jobs": {
     "5002272101": {
@@ -139,10 +139,6 @@
       "title": "Senior AP Accountant",
       "first_seen": "2026-11-11T19:29:48.292169+00:00"
     },
-    "4537282101": {
-      "title": "Senior Application Security Engineer",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
-    },
     "4990886101": {
       "title": "Senior Applied Scientist, Efficient LLM Inference & Model Optimization",
       "first_seen": "2026-09-30T22:09:48.653631+00:00"
@@ -151,13 +147,13 @@
       "title": "Senior Backend Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
-    "5009601101": {
-      "title": "Senior Customer AI Engineer - Token Factory",
-      "first_seen": "2026-10-30T09:51:47.480406+00:00"
-    },
     "5000504101": {
       "title": "Senior Customer AI Engineer - Token Factory",
       "first_seen": "2026-10-09T18:17:00.437800+00:00"
+    },
+    "5009601101": {
+      "title": "Senior Customer AI Engineer - Token Factory",
+      "first_seen": "2026-10-30T09:51:47.480406+00:00"
     },
     "4724503101": {
       "title": "Senior Data Engineer",
@@ -251,18 +247,18 @@
       "title": "Technical Project Manager (Hardware)",
       "first_seen": "2026-08-19T09:41:25.394014+00:00"
     },
-    "4995853101": {
-      "title": "Transportation Logistics Specialist",
-      "first_seen": "2026-10-16T16:30:21.568679+00:00"
-    },
     "4913573101": {
       "title": "Transportation Logistics Specialist",
       "first_seen": "2026-10-21T17:02:52.811980+00:00"
+    },
+    "4995853101": {
+      "title": "Transportation Logistics Specialist",
+      "first_seen": "2026-10-16T16:30:21.568679+00:00"
     },
     "4794078101": {
       "title": "Warehouse Logistics Specialist",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 341
+  "last_board_total": 340
 }
