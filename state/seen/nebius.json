@@ -1,5 +1,5 @@
 {
-  "last_success": "2026-11-27T01:38:35.665496+00:00",
+  "last_success": "2026-11-27T11:58:36.871599+00:00",
   "last_count": 65,
   "consecutive_failures": 0,
   "jobs": {
@@ -38,10 +38,6 @@
     "5008588101": {
       "title": "Deputy SOC Manager",
       "first_seen": "2026-10-20T14:14:49.866807+00:00"
-    },
-    "4918986101": {
-      "title": "Detection & Response Engineer",
-      "first_seen": "2026-08-18T19:28:34.654195+00:00"
     },
     "5010269101": {
       "title": "DFIR Expert",
@@ -134,6 +130,10 @@
     "4945568101": {
       "title": "Security Solutions Engineer",
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
+    },
+    "5028371101": {
+      "title": "Senior AI Infrastructure Systems Engineer (R&D / GPU / AI)",
+      "first_seen": "2026-11-27T11:58:36.871599+00:00"
     },
     "5030796101": {
       "title": "Senior AP Accountant",
@@ -264,5 +264,5 @@
       "first_seen": "2026-08-18T19:28:34.654195+00:00"
     }
   },
-  "last_board_total": 343
+  "last_board_total": 341
 }
