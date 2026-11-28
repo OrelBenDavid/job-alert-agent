@@ -1,8 +1,24 @@
 {
-  "last_success": "2026-11-26T03:28:11.466682+00:00",
-  "last_count": 37,
-  "consecutive_failures": 4,
+  "last_success": "2026-11-28T07:28:35.057090+00:00",
+  "last_count": 29,
+  "consecutive_failures": 0,
   "jobs": {
+    "https://careers.wix.com/position/oracle-e5453493-4085-5ab6-a869-8dcd1ca5ca14-T1795688093-744000163861429": {
+      "title": "Infra Security Architect",
+      "first_seen": "2026-11-28T07:28:35.057090+00:00"
+    },
+    "https://careers.wix.com/position/oracle-05895129-b233-500b-9772-47e2877835ab-T1795687196-744000163856678": {
+      "title": "Solution Engineer - Base44",
+      "first_seen": "2026-11-28T07:28:35.057090+00:00"
+    },
+    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000163823190": {
+      "title": "IT Engineer",
+      "first_seen": "2026-11-28T07:28:35.057090+00:00"
+    },
+    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000163823249": {
+      "title": "System Administrator",
+      "first_seen": "2026-11-28T07:28:35.057090+00:00"
+    },
     "https://careers.wix.com/position/oracle-61c93244-effb-5796-acd6-51a85405e16b-T1781619782-744000163704673": {
       "title": "Senior Applied Researcher - Base44",
       "first_seen": "2026-11-26T03:28:11.466682+00:00"
@@ -13,10 +29,6 @@
     },
     "https://careers.wix.com/position/oracle-b9f3d085-d05a-5dcd-b011-916437fb0715-T1793177716-744000163409922": {
       "title": "Brand Designer",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-208a12aa-caff-5a3d-9dce-9f2994efeb61-T1792405436-744000163407916": {
-      "title": "Full stack organic growth marketer",
       "first_seen": "2026-11-26T03:28:11.466682+00:00"
     },
     "https://careers.wix.com/position/oracle-bae92baf-9383-54fe-b396-32fa2ce83cbf-T1791961696-744000163397859": {
@@ -103,52 +115,8 @@
       "title": "DevOps Engineer - Cloud Infra Team",
       "first_seen": "2026-11-26T03:28:11.466682+00:00"
     },
-    "https://careers.wix.com/position/oracle-a1c943c8-a8af-51aa-bd2f-8b613db73235-T1786617998-744000155710054": {
-      "title": "IT Professional Services",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
     "https://careers.wix.com/position/oracle-00dd8145-594a-52e2-9db7-79b3288c1b23-T1791899586-744000155273100": {
       "title": "AI Engineer - Base44",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-95a6acf6-c476-51f1-8f67-73d97a6e17cb-T1790858013-744000152930574": {
-      "title": "DevOps Engineer - Base44",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-7e18f090-fe25-593f-a526-605f43d6920a-T1790767998-744000152864758": {
-      "title": "AI Marketing Builder - Base44",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-f0b68fb4-042d-5011-a974-42374c8aa125-T1790146037-744000151318039": {
-      "title": "Forward Deployed Engineer - Base44",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-8c781ee6-bfd6-5973-a339-ad327f4d2a74-T1789488963-744000151316848": {
-      "title": "Motion Designer - Base44",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/oracle-e22fb8c0-fe63-532d-9c7c-0472b3c1776c-T1783338042-744000160559549": {
-      "title": "Senior AI Engineer - Marketing AI Transformation",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000159080790": {
-      "title": "Senior Full Stack Engineer - Data Services",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000156782609": {
-      "title": "Full Stack Engineer - Wix Code",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000152028049": {
-      "title": "xEngineer (Backend oriented), Premium Billing Platform",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000149304000": {
-      "title": "xEngineer for Wix Headless",
-      "first_seen": "2026-11-26T03:28:11.466682+00:00"
-    },
-    "https://careers.wix.com/position/REF3097W-744000144261939": {
-      "title": "xEngineer (Backend Oriented) for Wix Code Infrastructure",
       "first_seen": "2026-11-26T03:28:11.466682+00:00"
     }
   }

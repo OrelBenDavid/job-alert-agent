@@ -1,9 +1,9 @@
 {
-  "last_run_at": "2026-11-27T11:58:36.908753+00:00",
+  "last_run_at": "2026-11-28T07:28:35.192595+00:00",
   "last_run": {
     "role": {
-      "target_role": 1,
-      "off_target": 0,
+      "target_role": 3,
+      "off_target": 1,
       "unclassified_sent": 0,
       "unclassified_dropped": 0
     },
@@ -11,21 +11,21 @@
       "rejected_by_title": 1,
       "passed_with_number": 0,
       "rejected_with_number": 0,
-      "undetermined": 0,
+      "undetermined": 2,
       "undetermined_signals": 0
     }
   },
   "totals": {
     "experience": {
-      "rejected_by_title": 2044,
+      "rejected_by_title": 2045,
       "passed_with_number": 122,
       "rejected_with_number": 827,
-      "undetermined": 587,
+      "undetermined": 589,
       "undetermined_signals": 210
     },
     "role": {
-      "target_role": 2651,
-      "off_target": 976,
+      "target_role": 2654,
+      "off_target": 977,
       "unclassified_sent": 935,
       "unclassified_dropped": 0
     }
